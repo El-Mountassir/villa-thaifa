@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sync Investigation Report v1.1 | Villa Thaifa</title>
+  <title>Sync Investigation Report v1.2 | Villa Thaifa</title>
   <style>
     :root {
       --bg-primary: #0D1117;
@@ -415,6 +415,51 @@
       margin: 0;
     }
 
+    /* Caveat Box (NEW) */
+    .caveat-box {
+      background: rgba(163, 113, 247, 0.1);
+      border: 1px solid var(--accent-purple);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+
+    .caveat-box h5 {
+      color: var(--accent-purple);
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .caveat-box p {
+      color: var(--text-secondary);
+      font-size: 0.9375rem;
+      margin: 0;
+    }
+
+    /* Mitigation Box (NEW) */
+    .mitigation-box {
+      background: rgba(63, 185, 80, 0.1);
+      border: 1px solid var(--accent-green);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+
+    .mitigation-box h5 {
+      color: var(--accent-green);
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .mitigation-box p {
+      color: var(--text-secondary);
+      font-size: 0.9375rem;
+      margin: 0;
+    }
+
     /* Timeline */
     .timeline {
       position: relative;
@@ -627,6 +672,12 @@
       margin-top: 0.25rem;
     }
 
+    .action-status {
+      font-size: 0.8125rem;
+      color: var(--accent-orange);
+      margin-top: 0.25rem;
+    }
+
     .action-group-title {
       font-size: 0.875rem;
       font-weight: 600;
@@ -779,6 +830,10 @@
       font-size: 0.875rem;
     }
 
+    .update-log tr.current {
+      background: rgba(63, 185, 80, 0.1);
+    }
+
     /* Footer */
     .footer {
       background: var(--bg-secondary);
@@ -891,7 +946,7 @@
           <span class="logo-icon">&#127968;</span>
           <span class="logo-text">Villa Thaifa</span>
         </div>
-        <h1 class="header-title">Sync Investigation Report v1.1</h1>
+        <h1 class="header-title">Sync Investigation Report v1.2</h1>
         <div class="header-actions">
           <button id="theme-toggle" class="btn btn-icon" title="Toggle theme">
             <span class="icon-sun">&#9728;</span>
@@ -908,6 +963,7 @@
       <div class="nav-track">
         <a href="#p0-actions" class="nav-item">P0 Actions</a>
         <a href="#executive-summary" class="nav-item">Summary</a>
+        <a href="#connectivity" class="nav-item">Connectivity</a>
         <a href="#timeline" class="nav-item">Timeline</a>
         <a href="#root-cause" class="nav-item">Root Cause</a>
         <a href="#evidence" class="nav-item">Evidence</a>
@@ -958,7 +1014,7 @@
             </div>
 
             <div class="discovery-box">
-              <h4>Key Discovery: "Allocation Type" Setting</h4>
+              <h4>&#128161; Key Discovery: "Allocation Type" Setting</h4>
               <p>In HotelRunner &#8594; Channels &#8594; Booking.com &#8594; Room type mapping &#8594; <strong>Advanced settings</strong>:</p>
               <div class="table-container">
                 <table>
@@ -973,7 +1029,7 @@
                     <tr>
                       <td><strong>Allocation Type</strong></td>
                       <td><strong>"No changes"</strong></td>
-                      <td><span class="status-warning">Likely prevents availability push!</span></td>
+                      <td><span class="status-warning">&#9888; Likely prevents availability push!</span></td>
                     </tr>
                     <tr>
                       <td>Base allotment</td>
@@ -983,14 +1039,18 @@
                     <tr>
                       <td>Last imported</td>
                       <td>Dec 08, 2025</td>
-                      <td>3 weeks stale</td>
+                      <td><span class="status-warning">3 weeks stale</span></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <div class="recommendation-box">
-                <h5>Recommendation</h5>
+                <h5>&#128204; Recommendation</h5>
                 <p>Change "Allocation Type" from "No changes" to an active sync mode. Contact HotelRunner support for guidance on correct setting.</p>
+              </div>
+              <div class="caveat-box">
+                <h5>&#9888; Note</h5>
+                <p>We could not view the dropdown options for "Allocation Type" during this investigation. HotelRunner support should advise on the correct setting value.</p>
               </div>
             </div>
           </div>
@@ -1050,6 +1110,76 @@
                 <li><strong>Sabah Gouram</strong>: Dec 31, 2025 - Jan 3, 2026 (Room 4)</li>
                 <li><strong>Famille Benchekroune</strong>: Dec 31, 2025 - Jan 2, 2026 (Room 5)</li>
               </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- HotelRunner Connectivity Status (NEW) -->
+        <section class="section" id="connectivity">
+          <div class="section-header" onclick="toggleSection(this.parentElement)">
+            <span class="section-icon">&#128279;</span>
+            <div>
+              <h2 class="section-title">
+                HotelRunner Connectivity Status
+                <span class="badge badge-success">ALL ACTIVE</span>
+                <span class="collapse-icon">&#9660;</span>
+              </h2>
+              <p class="section-subtitle">All services show active connection to Booking.com (2025-12-29)</p>
+            </div>
+          </div>
+          <div class="section-content">
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Service</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Connection status</td>
+                    <td><span class="status-check">&#10003; Connection is active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Content</td>
+                    <td><span class="status-check">&#10003; Connection is active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Guest Reviews</td>
+                    <td><span class="status-check">&#10003; Connection is active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Messaging</td>
+                    <td><span class="status-check">&#10003; Connection is active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Performance Data And Insights</td>
+                    <td><span class="status-check">&#10003; Connection is active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Photos</td>
+                    <td><span class="status-check">&#10003; Connection is active</span></td>
+                  </tr>
+                  <tr style="background: rgba(63, 185, 80, 0.1);">
+                    <td><strong>Rate and Availability</strong></td>
+                    <td><span class="status-check"><strong>&#10003; Connection is active</strong></span></td>
+                  </tr>
+                  <tr>
+                    <td>Reporting</td>
+                    <td><span class="status-check">&#10003; Connection is active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Reservations</td>
+                    <td><span class="status-check">&#10003; Connection is active</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="info-box note">
+              <div class="info-box-title">&#128161; Implication</div>
+              <p style="margin: 0;">The capability to sync availability <strong>EXISTS</strong>. The issue is likely <strong>configuration</strong> (Allocation Type setting), not a missing feature.</p>
             </div>
           </div>
         </section>
@@ -1153,7 +1283,7 @@
             <p style="color: var(--text-secondary); margin-bottom: 1rem;">The XML connection is configured for <strong>reservation synchronization</strong> (pulling Booking.com reservations) but NOT for <strong>availability push</strong> (sending internal reservations to block Booking.com calendar).</p>
 
             <div class="discovery-box">
-              <h4>NEW FINDING</h4>
+              <h4>&#128161; NEW FINDING</h4>
               <p>The "Allocation Type" setting in Room type mapping &#8594; Advanced settings is set to <strong>"No changes"</strong>, which likely means HotelRunner does NOT push availability updates to Booking.com for this room type.</p>
             </div>
 
@@ -1307,19 +1437,19 @@
                     <td>Dec 31</td>
                     <td><strong>0</strong> (Both Room 4 & 5 occupied)</td>
                     <td><strong>1</strong></td>
-                    <td class="discrepancy">+1 extra room shown</td>
+                    <td class="discrepancy">&#128308; +1 extra room shown</td>
                   </tr>
                   <tr>
                     <td>Jan 1</td>
                     <td><strong>0</strong> (Both Room 4 & 5 occupied)</td>
                     <td><strong>2</strong></td>
-                    <td class="discrepancy">+2 extra rooms shown</td>
+                    <td class="discrepancy">&#128308; +2 extra rooms shown</td>
                   </tr>
                   <tr>
                     <td>Jan 2</td>
                     <td><strong>1</strong> (Only Room 4 occupied)</td>
                     <td><strong>2</strong></td>
-                    <td class="discrepancy">+1 extra room shown</td>
+                    <td class="discrepancy">&#128308; +1 extra room shown</td>
                   </tr>
                   <tr>
                     <td>Jan 3</td>
@@ -1329,6 +1459,11 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
+
+            <div class="mitigation-box">
+              <h5>&#9989; UPDATE 2025-12-29</h5>
+              <p>Dates Dec 31 - Jan 2 have been <strong>MANUALLY BLOCKED</strong> via Booking.com Open/Close Rooms wizard. The discrepancy above reflects the state BEFORE mitigation was applied. Double-booking risk for these specific dates is now <strong>mitigated</strong>.</p>
             </div>
 
             <h3 style="font-size: 1rem; margin: 1.5rem 0 1rem; color: var(--text-secondary);">Key Observations</h3>
@@ -1386,7 +1521,7 @@
           </div>
           <div class="section-content">
             <div class="action-list" id="action-list">
-              <div class="action-group-title">Immediate (Today) - COMPLETED</div>
+              <div class="action-group-title">Immediate (Today) - P0</div>
 
               <div class="action-item checked" data-id="action-1" onclick="toggleAction(this)">
                 <div class="action-checkbox">&#10003;</div>
@@ -1396,7 +1531,7 @@
                     Manually block Dec 31 - Jan 2 on Booking.com calendar
                   </div>
                   <div class="action-owner">Owner: Claude</div>
-                  <div class="action-result">"Chambre Double Superieur 4;5" closed via Open/Close Rooms wizard</div>
+                  <div class="action-result">&#10003; "Chambre Double Superieur 4;5" closed via Open/Close Rooms wizard</div>
                 </div>
               </div>
 
@@ -1408,7 +1543,7 @@
                     Verify if "Sync Availability" option exists in HotelRunner channel settings
                   </div>
                   <div class="action-owner">Owner: Claude</div>
-                  <div class="action-result">Found "Allocation Type" setting - currently set to "No changes"</div>
+                  <div class="action-result">&#10003; Found "Allocation Type" setting - currently set to "No changes"</div>
                 </div>
               </div>
 
@@ -1420,19 +1555,21 @@
                     Contact HotelRunner support with this investigation report
                   </div>
                   <div class="action-owner">Owner: Omar</div>
+                  <div class="action-status">&#9203; Pending</div>
                 </div>
               </div>
 
-              <div class="action-group-title">Short-term (This Week)</div>
+              <div class="action-group-title">Short-term (This Week) - P1</div>
 
               <div class="action-item" data-id="action-4" onclick="toggleAction(this)">
                 <div class="action-checkbox">&#10003;</div>
                 <div class="action-content">
                   <div class="action-label">
                     <span class="action-priority priority-p1">P1</span>
-                    Review HotelRunner channel settings for "Availability Sync" toggle
+                    Review HotelRunner "Allocation Type" dropdown options
                   </div>
                   <div class="action-owner">Owner: Omar</div>
+                  <div class="action-status">&#9203; Pending (Claude couldn't open dropdown)</div>
                 </div>
               </div>
 
@@ -1441,9 +1578,10 @@
                 <div class="action-content">
                   <div class="action-label">
                     <span class="action-priority priority-p1">P1</span>
-                    Check if there's a "Manual Sync" or "Force Sync" button
+                    Test "Import reservations" button to force sync
                   </div>
                   <div class="action-owner">Owner: Omar</div>
+                  <div class="action-status">&#9203; Pending</div>
                 </div>
               </div>
 
@@ -1455,10 +1593,11 @@
                     Verify Booking.com extranet for any NON-XML settings
                   </div>
                   <div class="action-owner">Owner: Omar</div>
+                  <div class="action-status">&#9203; Pending</div>
                 </div>
               </div>
 
-              <div class="action-group-title">Medium-term</div>
+              <div class="action-group-title">Medium-term - P2</div>
 
               <div class="action-item" data-id="action-7" onclick="toggleAction(this)">
                 <div class="action-checkbox">&#10003;</div>
@@ -1503,9 +1642,10 @@
             <div>
               <h2 class="section-title">
                 Support Ticket Draft
+                <span class="badge badge-info">UPDATED</span>
                 <span class="collapse-icon">&#9660;</span>
               </h2>
-              <p class="section-subtitle">Ready to send to HotelRunner Support</p>
+              <p class="section-subtitle">Ready to send to HotelRunner Support (v1.2 with new observations)</p>
             </div>
           </div>
           <div class="section-content">
@@ -1540,10 +1680,15 @@ Observations:
 - Room mapping correct (8 room types, no Read Only)
 - Transaction logs show 3,588 successes, 0 failures
 - Reservations FROM Booking.com appear correctly
+- "Allocation Type" setting in Room type mapping > Advanced settings is set to "No changes"
+- Last import from Booking.com: December 08, 2025 (3 weeks ago)
+- Connectivity status shows "Rate and Availability: Connection is active"
 
-Question:
-Is there a setting to enable availability sync for internal/manual reservations?
-Or is this a bug in the sync mechanism?
+Questions:
+1. What does "Allocation Type: No changes" mean? Should this be changed to enable availability sync?
+2. How do we trigger a manual sync to push availability updates to Booking.com?
+3. Why hasn't the import run automatically since December 08?
+4. Is there a setting to enable availability sync for internal/manual reservations?
 
 Please advise urgently - we risk double-bookings during high season.
 
@@ -1585,6 +1730,11 @@ Villa Thaifa Management</div>
                     <td>1.1</td>
                     <td>P0 actions completed: Booking.com dates blocked, HotelRunner settings audited</td>
                   </tr>
+                  <tr class="current">
+                    <td>2025-12-29</td>
+                    <td><strong>1.2</strong></td>
+                    <td>Added connectivity evidence, updated support ticket, calendar mitigation note, Allocation Type caveat</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -1597,7 +1747,7 @@ Villa Thaifa Management</div>
     <footer class="footer">
       <div class="footer-content">
         <span>Investigation completed: 2025-12-29 | P0 Actions completed: 2025-12-29</span>
-        <span>Report version: 1.1</span>
+        <span>Report version: 1.2</span>
       </div>
     </footer>
   </div>

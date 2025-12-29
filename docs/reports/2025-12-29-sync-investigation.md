@@ -210,11 +210,11 @@ If a reservation is made for "Room 4" specifically on HotelRunner, the system ma
 
 ### Short-term (This Week)
 
-| Priority | Action                                                | Owner | Status                                          |
-| -------- | ----------------------------------------------------- | ----- | ----------------------------------------------- |
-| 🟠 P1    | Review HotelRunner "Allocation Type" dropdown options | Omar  | ⏳ Pending (Claude couldn't open dropdown)      |
-| 🟠 P1    | Test "Import reservations" button to force sync       | Omar  | ⏳ Pending                                      |
-| 🟠 P1    | Verify Booking.com extranet for any NON-XML settings  | Omar  | ⏳ Pending                                      |
+| Priority | Action                                                | Owner | Status                                     |
+| -------- | ----------------------------------------------------- | ----- | ------------------------------------------ |
+| 🟠 P1    | Review HotelRunner "Allocation Type" dropdown options | Omar  | ⏳ Pending (Claude couldn't open dropdown) |
+| 🟠 P1    | Test "Import reservations" button to force sync       | Omar  | ⏳ Pending                                 |
+| 🟠 P1    | Verify Booking.com extranet for any NON-XML settings  | Omar  | ⏳ Pending                                 |
 
 ### Medium-term
 
