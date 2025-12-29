@@ -1,0 +1,400 @@
+/* Villa Thaifa - Professional Report Stylesheet */
+/* Version 1.0 - December 2025 */
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+@page {
+  size: A4;
+  margin: 2cm 2.5cm;
+
+  @top-right {
+    content: "Villa Thaifa";
+    font-size: 9pt;
+    color: #718096;
+  }
+
+  @bottom-center {
+    content: counter(page) " / " counter(pages);
+    font-size: 9pt;
+    color: #718096;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.5;
+  color: #2d3748;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1 {
+  font-size: 24pt;
+  font-weight: 700;
+  color: #1a365d;
+  margin: 0 0 0.5em 0;
+  padding-bottom: 0.3em;
+  border-bottom: 3px solid #1a365d;
+}
+
+h2 {
+  font-size: 16pt;
+  font-weight: 600;
+  color: #2c5282;
+  margin: 1.5em 0 0.5em 0;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+h3 {
+  font-size: 13pt;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 1.2em 0 0.4em 0;
+}
+
+h4 {
+  font-size: 11pt;
+  font-weight: 600;
+  color: #4a5568;
+  margin: 1em 0 0.3em 0;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+strong {
+  font-weight: 600;
+  color: #1a202c;
+}
+
+/* ============================================
+   HEADER / METADATA
+   ============================================ */
+
+.report-header {
+  text-align: center;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #1a365d;
+}
+
+.report-header .title {
+  font-size: 28pt;
+  font-weight: 700;
+  color: #1a365d;
+  margin: 0;
+}
+
+.report-header .subtitle {
+  font-size: 14pt;
+  color: #4a5568;
+  margin: 0.3em 0;
+}
+
+.report-header .date {
+  font-size: 11pt;
+  color: #718096;
+  margin-top: 0.5em;
+}
+
+.report-header .confidential {
+  display: inline-block;
+  background: #edf2f7;
+  color: #4a5568;
+  font-size: 9pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.3em 0.8em;
+  border-radius: 3px;
+  margin-top: 1em;
+}
+
+/* ============================================
+   ALERT BOX - URGENT
+   ============================================ */
+
+.alert-urgent {
+  background: linear-gradient(135deg, #c53030 0%, #9b2c2c 100%);
+  color: white;
+  padding: 1.2em 1.5em;
+  border-radius: 8px;
+  margin: 1.5em 0;
+  box-shadow: 0 4px 6px rgba(197, 48, 48, 0.3);
+}
+
+.alert-urgent h3,
+.alert-urgent strong {
+  color: white;
+  margin-top: 0;
+}
+
+.alert-urgent .alert-title {
+  font-size: 14pt;
+  font-weight: 700;
+  margin: 0 0 0.5em 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.alert-urgent .alert-title::before {
+  content: "⚠";
+  font-size: 16pt;
+}
+
+.alert-urgent p {
+  margin: 0.3em 0;
+  font-size: 11pt;
+}
+
+.alert-urgent .action {
+  background: rgba(255,255,255,0.2);
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  margin-top: 0.8em;
+  font-weight: 600;
+}
+
+/* ============================================
+   PROPOSAL BOX - PENDING VALIDATION
+   ============================================ */
+
+.proposal-box {
+  background: #ebf8ff;
+  border: 2px solid #3182ce;
+  border-radius: 8px;
+  padding: 1.2em 1.5em;
+  margin: 1.5em 0;
+}
+
+.proposal-box h3 {
+  color: #2b6cb0;
+  margin-top: 0;
+  font-size: 13pt;
+}
+
+.proposal-box .pending-label {
+  display: inline-block;
+  background: #3182ce;
+  color: white;
+  font-size: 9pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.2em 0.6em;
+  border-radius: 3px;
+  margin-bottom: 0.8em;
+}
+
+.proposal-box p {
+  color: #2c5282;
+  font-size: 10pt;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+/* ============================================
+   EXECUTIVE SUMMARY
+   ============================================ */
+
+.executive-summary {
+  background: #f7fafc;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin: 1.5em 0;
+}
+
+.kpi-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+.kpi-card {
+  flex: 1;
+  min-width: 120px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 1em;
+  text-align: center;
+}
+
+.kpi-card .value {
+  font-size: 24pt;
+  font-weight: 700;
+  color: #1a365d;
+  line-height: 1;
+}
+
+.kpi-card .label {
+  font-size: 9pt;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: 0.3em;
+}
+
+.kpi-card.highlight {
+  border-color: #3182ce;
+  border-width: 2px;
+}
+
+.kpi-card.highlight .value {
+  color: #2b6cb0;
+}
+
+/* ============================================
+   TABLES
+   ============================================ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 10pt;
+}
+
+thead {
+  background: #1a365d;
+  color: white;
+}
+
+th {
+  padding: 0.8em 1em;
+  text-align: left;
+  font-weight: 600;
+  font-size: 9pt;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+td {
+  padding: 0.7em 1em;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:nth-child(even) {
+  background: #f7fafc;
+}
+
+tbody tr:hover {
+  background: #edf2f7;
+}
+
+/* Highlight urgent row */
+tbody tr.urgent {
+  background: #fff5f5;
+  font-weight: 600;
+}
+
+tbody tr.urgent td {
+  border-bottom-color: #fc8181;
+}
+
+/* ============================================
+   OCCUPATION BAR
+   ============================================ */
+
+.occupation-bar {
+  background: #e2e8f0;
+  border-radius: 4px;
+  height: 24px;
+  overflow: hidden;
+  margin: 0.5em 0;
+}
+
+.occupation-bar .fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3182ce 0%, #2b6cb0 100%);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.5em;
+  color: white;
+  font-size: 9pt;
+  font-weight: 600;
+  min-width: 30px;
+}
+
+/* ============================================
+   SECTION DIVIDERS
+   ============================================ */
+
+hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 2em 0;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.report-footer {
+  margin-top: 3em;
+  padding-top: 1em;
+  border-top: 1px solid #e2e8f0;
+  font-size: 9pt;
+  color: #718096;
+  text-align: center;
+}
+
+.report-footer .author {
+  font-weight: 600;
+  color: #4a5568;
+}
+
+/* ============================================
+   PRINT OPTIMIZATIONS
+   ============================================ */
+
+@media print {
+  body {
+    font-size: 10pt;
+  }
+
+  .alert-urgent {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .proposal-box {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  thead {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .kpi-card {
+    break-inside: avoid;
+  }
+
+  table {
+    break-inside: avoid;
+  }
+
+  h2, h3 {
+    break-after: avoid;
+  }
+}
