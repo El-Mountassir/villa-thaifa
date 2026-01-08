@@ -29,11 +29,11 @@
 
 ### Admin
 
-| Fichier                                                              | Contenu                     |
-| -------------------------------------------------------------------- | --------------------------- |
-| [.env.example](.env.example) | Structure credentials (voir .env pour valeurs réelles) |
-| [data/admin/client/CONTACT.md](data/admin/client/CONTACT.md)         | Contacts (M. Thaifa, Ikram) |
-| [data/admin/client/PROFILE.md](data/admin/client/PROFILE.md)         | Profil client complet       |
+| Fichier                                                      | Contenu                                                |
+| ------------------------------------------------------------ | ------------------------------------------------------ |
+| [.env.example](.env.example)                                 | Structure credentials (voir .env pour valeurs réelles) |
+| [data/admin/client/CONTACT.md](data/admin/client/CONTACT.md) | Contacts (M. Thaifa, Ikram)                            |
+| [data/admin/client/PROFILE.md](data/admin/client/PROFILE.md) | Profil client complet                                  |
 
 ### Communication
 
@@ -79,10 +79,10 @@
 
 ## Règles Critiques
 
-| Règle               | Fichier                                                                                                |
-| ------------------- | ------------------------------------------------------------------------------------------------------ |
+| Règle               | Fichier                                                                                                    |
+| ------------------- | ---------------------------------------------------------------------------------------------------------- |
 | Platform Operations | [rules/universal/ops/platform/platform-operations.md](rules/universal/ops/platform/platform-operations.md) |
-| Lessons Learned     | [docs/lessons-learned.md](docs/lessons-learned.md)                                                     |
+| Lessons Learned     | [docs/lessons-learned.md](docs/lessons-learned.md)                                                         |
 
 > **AVANT toute action client** : Lire `docs/lessons-learned.md`
 

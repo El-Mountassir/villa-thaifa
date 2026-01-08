@@ -127,7 +127,7 @@
 
 - [ ] **Préparer brief structuré pour futurs agents** — Documentation workflow HotelRunner
 - [ ] **Investiguer portail Jisr l'Mokawala** — Go Siyaha / Maroc PME
-- [ ] **RDV lundi 22 déc 10h** — Première rencontre officielle avec M. Thaifa
+- [x] **RDV lundi 22 déc 10h** — Première rencontre officielle avec M. Thaifa - Déjà faite.. mais TRèS MAL Demmarer selon les critères d'Omar ... La découverte, documentation, capture, contract, etc n'est clairment pas bien (voir pas faite du tou) été faite..
 
 ### 🔵 P4 — Nice-to-have
 
@@ -212,14 +212,14 @@
 
 ### Contexte client
 
-- **Client** : Said Thaifa (+60 ans)
+- **Client** : Said Thaifa (+70 ans)
 - **Établissement** : Villa Thaifa (maison d'hôtes, Marrakech)
 - **Relation** : Nouveau client potentiel (high-ticket)
 - **Communication** : Formelle, respectueuse, vouvoiement obligatoire
 
 ### Prochaine échéance
 
-- **Lundi 22 décembre 2025, 10h** — RDV avec M. Thaifa
+- **Lundi 22 décembre 2025, 10h** — RDV avec M. Thaifa // Déjàa fait..
 
 ---
 

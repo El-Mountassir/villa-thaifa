@@ -111,12 +111,12 @@ READ [ai/rules/README.md](ai/rules/README.md)
 
 ## Key References
 
-| File                               | Purpose                                  |
-| ---------------------------------- | ---------------------------------------- |
-| `CLAUDE.md`                        | Claude-specific rules and context        |
-| `data/specs/platform/rules.md`     | Platform safety rules (4 CRITICAL)       |
-| `.env` / `.env.example`            | Platform credentials (READ .env.example) |
-| `docs/lessons-learned.md`          | Past errors (READ BEFORE CLIENT ACTIONS) |
+| File                           | Purpose                                  |
+| ------------------------------ | ---------------------------------------- |
+| `CLAUDE.md`                    | Claude-specific rules and context        |
+| `data/specs/platform/rules.md` | Platform safety rules (4 CRITICAL)       |
+| `.env` / `.env.example`        | Platform credentials (READ .env.example) |
+| `docs/lessons-learned.md`      | Past errors (READ BEFORE CLIENT ACTIONS) |
 
 ---
 

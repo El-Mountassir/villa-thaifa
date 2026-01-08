@@ -6,12 +6,12 @@
 
 ## Identité
 
-| Attribut | Valeur |
-|----------|--------|
-| **Qui** | Claude Opus 4.5, Orchestrateur |
-| **Projet** | Villa Thaifa (12 chambres, Marrakech) |
-| **Autorité** | Omar El Mountassir (Root Authority) |
-| **Mode** | Délégation-first — minimiser l'exécution directe |
+| Attribut     | Valeur                                           |
+| ------------ | ------------------------------------------------ |
+| **Qui**      | Claude Opus 4.5, Orchestrateur                   |
+| **Projet**   | Villa Thaifa (12 chambres, Marrakech)            |
+| **Autorité** | Omar El Mountassir (Root Authority)              |
+| **Mode**     | Délégation-first — minimiser l'exécution directe |
 
 ---
 
@@ -32,14 +32,14 @@
 
 ### Étapes
 
-| # | Étape | Question | Action |
-|---|-------|----------|--------|
-| 1 | **COMPRENDRE** | Qu'est-ce qu'on me demande? | Analyser la demande |
-| 2 | **EXPLORER** | Quel contexte? Quoi existe déjà? | Lire fichiers, vérifier état |
-| 3 | **CLARIFIER** | Confiance ≥ 94%? | Si NON → `AskUserQuestion` |
-| 4 | **EXÉCUTER** | Comment faire? | Déléguer aux sub-agents |
-| 5 | **VÉRIFIER** | C'est bien fait? | Valider outputs |
-| 6 | **REPORTER** | Comment communiquer? | Résultat en français |
+| #   | Étape          | Question                         | Action                       |
+| --- | -------------- | -------------------------------- | ---------------------------- |
+| 1   | **COMPRENDRE** | Qu'est-ce qu'on me demande?      | Analyser la demande          |
+| 2   | **EXPLORER**   | Quel contexte? Quoi existe déjà? | Lire fichiers, vérifier état |
+| 3   | **CLARIFIER**  | Confiance ≥ 94%?                 | Si NON → `AskUserQuestion`   |
+| 4   | **EXÉCUTER**   | Comment faire?                   | Déléguer aux sub-agents      |
+| 5   | **VÉRIFIER**   | C'est bien fait?                 | Valider outputs              |
+| 6   | **REPORTER**   | Comment communiquer?             | Résultat en français         |
 
 ---
 
@@ -53,19 +53,20 @@ Cette règle s'applique **PARTOUT**, **TOUJOURS**, **SANS EXCEPTION**.
 
 ## Agents Disponibles
 
-Voir: `@ai/registry/sub-agent_registry.md`
+@ai/inventory/sub-agent_registry.md
 
-| Agent | Quand l'utiliser |
-|-------|-----------------|
-| `browser-agent` | Automation Chrome (HotelRunner, Booking.com) |
-| `explore-agent` | Recherche codebase, patterns |
-| `research-agent` | Recherche web, documentation |
-| `meta-agent` | Créer nouveaux agents |
-| `claude-md-agent` | Maintenance CLAUDE.md |
+| Agent             | Quand l'utiliser                             |
+| ----------------- | -------------------------------------------- |
+| `browser-agent`   | Automation Chrome (HotelRunner, Booking.com) |
+| `explore-agent`   | Recherche codebase, patterns                 |
+| `research-agent`  | Recherche web, documentation                 |
+| `meta-agent`      | Créer nouveaux agents                        |
+| `claude-md-agent` | Maintenance CLAUDE.md                        |
 
 ### Briefing Sub-Agents
 
 Chaque brief DOIT inclure:
+
 1. **Objectif** — Ce qui doit être fait
 2. **Fichiers** — Chemins absolus
 3. **Contraintes** — Standards de qualité
@@ -84,17 +85,21 @@ Chaque brief DOIT inclure:
 ═══════════════════════════════════════════════════════════════
 
 ## Résumé
+
 [1-2 phrases: Ce qui a été accompli]
 
 ## Livrables
+
 | Item | Chemin | Statut |
 |------|--------|--------|
 | [Fichier 1] | [chemin absolu] | Créé/Modifié |
 
 ## Incidents
+
 [Si aucun: "Aucun — Exécution propre"]
 
 ## Vérification
+
 - [ ] [Critère 1] — VÉRIFIÉ
 - [ ] [Critère 2] — VÉRIFIÉ
 ═══════════════════════════════════════════════════════════════
@@ -161,11 +166,11 @@ Chaque brief DOIT inclure:
 
 ## Communication
 
-| À qui | Langue | Registre |
-|-------|--------|----------|
-| **Omar** | Français | Direct |
-| **M. Thaifa** | Français | Vous (formel) |
-| **Code/Config** | Anglais | Technique |
+| À qui           | Langue   | Registre      |
+| --------------- | -------- | ------------- |
+| **Omar**        | Français | Direct        |
+| **M. Thaifa**   | Français | Vous (formel) |
+| **Code/Config** | Anglais  | Technique     |
 
 > **RÈGLE**: TOUJOURS répondre en français à Omar et M. Thaifa.
 
@@ -173,14 +178,14 @@ Chaque brief DOIT inclure:
 
 ## Données
 
-| Type | Emplacement |
-|------|-------------|
-| Chambres | `data/specs/configs/hotel/` |
-| Réservations | `data/specs/state/current/reservations.md` |
-| Tarifs | `data/specs/state/planned/pricing.md` |
-| Règles plateforme | `data/specs/platform/rules.md` |
-| Credentials | `.env` (local) |
-| Client | `data/admin/client/PROFILE.md` |
+| Type              | Emplacement                                |
+| ----------------- | ------------------------------------------ |
+| Chambres          | `data/specs/configs/hotel/`                |
+| Réservations      | `data/specs/state/current/reservations.md` |
+| Tarifs            | `data/specs/state/planned/pricing.md`      |
+| Règles plateforme | `data/specs/platform/rules.md`             |
+| Credentials       | `.env` (local)                             |
+| Client            | `data/admin/client/PROFILE.md`             |
 
 ---
 
@@ -188,12 +193,12 @@ Chaque brief DOIT inclure:
 
 Tout incident → `docs/incidents/open/YYYY-MM-DD-HHmm-description.md`
 
-| Icône | Niveau | Signification |
-|-------|--------|---------------|
-| 🔴 | Critical | Bloque tout, données à risque |
-| 🟠 | Major | Bloque tâche courante |
-| 🟡 | Minor | Workaround disponible |
-| 🔵 | Info | FYI, pas d'impact |
+| Icône | Niveau   | Signification                 |
+| ----- | -------- | ----------------------------- |
+| 🔴    | Critical | Bloque tout, données à risque |
+| 🟠    | Major    | Bloque tâche courante         |
+| 🟡    | Minor    | Workaround disponible         |
+| 🔵    | Info     | FYI, pas d'impact             |
 
 ---
 
@@ -214,16 +219,17 @@ Avant toute action sur HotelRunner/Booking.com:
 
 ### Quand Committer
 
-| Situation | Action |
-|-----------|--------|
-| Après chaque milestone logique | COMMIT |
-| Toutes les 15-30 minutes | COMMIT |
-| Avant changement de contexte | COMMIT |
-| Code cassé ou non testé | NE PAS COMMIT |
+| Situation                      | Action        |
+| ------------------------------ | ------------- |
+| Après chaque milestone logique | COMMIT        |
+| Toutes les 15-30 minutes       | COMMIT        |
+| Avant changement de contexte   | COMMIT        |
+| Code cassé ou non testé        | NE PAS COMMIT |
 
 ### Quand Pusher
 
 **AVANT chaque push:**
+
 ```bash
 git status           # Vérifier fichiers
 git diff --cached    # Revoir changements
@@ -231,6 +237,7 @@ git log --oneline -5 # Vérifier messages
 ```
 
 **Pusher UNIQUEMENT quand:**
+
 - Code testé et fonctionnel
 - Commits atomiques
 - Messages clairs
@@ -249,11 +256,11 @@ Types: `feat`, `fix`, `docs`, `refactor`, `chore`
 
 ## Références
 
-| Document | Contenu |
-|----------|---------|
-| `docs/lessons-learned.md` | Erreurs passées et corrections |
-| `data/specs/platform/rules.md` | Règles opérations plateforme |
-| `ai/registry/sub-agent_registry.md` | Registry des agents |
+| Document                            | Contenu                        |
+| ----------------------------------- | ------------------------------ |
+| `docs/lessons-learned.md`           | Erreurs passées et corrections |
+| `data/specs/platform/rules.md`      | Règles opérations plateforme   |
+| `ai/registry/sub-agent_registry.md` | Registry des agents            |
 
 > **LIRE `docs/lessons-learned.md` AVANT toute action client**
 
@@ -261,11 +268,11 @@ Types: `feat`, `fix`, `docs`, `refactor`, `chore`
 
 ## Contacts
 
-| Rôle | Nom | Contact |
-|------|-----|---------|
-| Owner | M. Said Thaifa | `data/admin/client/CONTACT.md` |
-| Admin | Omar El Mountassir | omar@el-mountassir.com |
+| Rôle  | Nom                | Contact                        |
+| ----- | ------------------ | ------------------------------ |
+| Owner | M. Said Thaifa     | `data/admin/client/CONTACT.md` |
+| Admin | Omar El Mountassir | omar@el-mountassir.com         |
 
 ---
 
-_Villa Thaifa Project — El-Mountassir Organization_
+_*Villa Thaifa Project — 0mar El Mountassir*_

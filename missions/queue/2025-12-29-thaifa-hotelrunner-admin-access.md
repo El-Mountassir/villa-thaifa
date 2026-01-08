@@ -20,6 +20,7 @@ tags:
 ## Contexte
 
 Dans le fichier `.env`, on a configuré:
+
 ```
 HOTELRUNNER_ADMIN_EMAIL=omar@el-mountassir.com
 HOTELRUNNER_ADMIN_PASSWORD=Na5%a?h5c9Rm2+K
@@ -30,13 +31,14 @@ Cependant, cet accès admin n'est **pas encore actif**. Il faut contacter le sup
 ## Objectif
 
 Contacter le support HotelRunner pour:
+
 1. Demander comment ajouter un admin supplémentaire (omar@el-mountassir.com)
 2. Ou demander s'il faut une procédure spécifique
 3. Obtenir les instructions/confirmation
 
 ## Actions requises
 
-- [ ] Contacter Ikram (support HWS) — voir `data/admin/client/CONTACT.md`
+- [x] Contacter Ikram (support HWS) — voir `data/admin/client/CONTACT.md`
 - [ ] Expliquer le besoin: ajouter un compte admin pour Omar
 - [ ] Obtenir les instructions ou confirmation
 - [ ] Mettre à jour `.env` si les credentials changent

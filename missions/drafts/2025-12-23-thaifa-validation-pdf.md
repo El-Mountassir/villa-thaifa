@@ -33,6 +33,7 @@ verification:
 ## Context
 
 Create professional PDF report for M. Said Thaifa to:
+
 1. Review proposed room structure
 2. Validate/correct information
 3. Provide missing details
@@ -56,14 +57,14 @@ Create professional PDF report for M. Said Thaifa to:
 
 ## Success Criteria
 
-| #   | Criterion                                    | Status | Evidence |
-| --- | -------------------------------------------- | ------ | -------- |
-| 1   | PDF template designed                        | ⬜     |          |
-| 2   | All 12 rooms have fiches                     | ⬜     |          |
-| 3   | Facilities section included                  | ⬜     |          |
-| 4   | Missing info section clearly marked          | ⬜     |          |
-| 5   | Signature/validation section present         | ⬜     |          |
-| 6   | PDF generated and saved                      | ⬜     |          |
+| #   | Criterion                            | Status | Evidence |
+| --- | ------------------------------------ | ------ | -------- |
+| 1   | PDF template designed                | ⬜     |          |
+| 2   | All 12 rooms have fiches             | ⬜     |          |
+| 3   | Facilities section included          | ⬜     |          |
+| 4   | Missing info section clearly marked  | ⬜     |          |
+| 5   | Signature/validation section present | ⬜     |          |
+| 6   | PDF generated and saved              | ⬜     |          |
 
 ---
 

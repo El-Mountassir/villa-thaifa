@@ -52,15 +52,15 @@ After state-management restructuring, we presented data to M. Said Thaifa. He pr
 
 ## Success Criteria
 
-| #   | Criterion                               | Status | Evidence |
-| --- | --------------------------------------- | ------ | -------- |
-| 1   | 12 room files exist in rooms/           | ⬜     |          |
-| 2   | 4 facility files exist in facilities/   | ⬜     |          |
-| 3   | hotel/README.md indexes all rooms       | ⬜     |          |
-| 4   | facilities/README.md indexes all        | ⬜     |          |
-| 5   | rooms.md has deprecation notice         | ⬜     |          |
-| 6   | pricing.md references new structure     | ⬜     |          |
-| 7   | CLAUDE.md data locations updated        | ⬜     |          |
+| #   | Criterion                             | Status | Evidence |
+| --- | ------------------------------------- | ------ | -------- |
+| 1   | 12 room files exist in rooms/         | ⬜     |          |
+| 2   | 4 facility files exist in facilities/ | ⬜     |          |
+| 3   | hotel/README.md indexes all rooms     | ⬜     |          |
+| 4   | facilities/README.md indexes all      | ⬜     |          |
+| 5   | rooms.md has deprecation notice       | ⬜     |          |
+| 6   | pricing.md references new structure   | ⬜     |          |
+| 7   | CLAUDE.md data locations updated      | ⬜     |          |
 
 ---
 
@@ -77,35 +77,36 @@ After state-management restructuring, we presented data to M. Said Thaifa. He pr
 
 ### Requirements
 
-| ID      | Description                        | Acceptance Criteria               | Priority | Status |
-| ------- | ---------------------------------- | --------------------------------- | -------- | ------ |
-| REQ-001 | Individual room files              | 12 files, each with template data | MUST     | ⬜     |
-| REQ-002 | Facilities directory               | spa, pool, garden, hall files     | MUST     | ⬜     |
-| REQ-003 | Master indexes                     | README.md in hotel/ and facilities/ | MUST   | ⬜     |
-| REQ-004 | Cross-reference updates            | pricing.md, CLAUDE.md updated     | MUST     | ⬜     |
-| REQ-005 | Deprecation notice                 | rooms.md header warns users       | SHOULD   | ⬜     |
+| ID      | Description             | Acceptance Criteria                 | Priority | Status |
+| ------- | ----------------------- | ----------------------------------- | -------- | ------ |
+| REQ-001 | Individual room files   | 12 files, each with template data   | MUST     | ⬜     |
+| REQ-002 | Facilities directory    | spa, pool, garden, hall files       | MUST     | ⬜     |
+| REQ-003 | Master indexes          | README.md in hotel/ and facilities/ | MUST     | ⬜     |
+| REQ-004 | Cross-reference updates | pricing.md, CLAUDE.md updated       | MUST     | ⬜     |
+| REQ-005 | Deprecation notice      | rooms.md header warns users         | SHOULD   | ⬜     |
 
 ### Task Breakdown
 
-| ID       | Task                                      | Requirement | Status | Evidence |
-| -------- | ----------------------------------------- | ----------- | ------ | -------- |
-| TASK-001 | Create rooms/ directory                   | REQ-001     | ⬜     |          |
-| TASK-002 | Create 12 room files from template        | REQ-001     | ⬜     |          |
-| TASK-003 | Fill room data from rooms.md              | REQ-001     | ⬜     |          |
-| TASK-004 | Create facilities/ directory              | REQ-002     | ⬜     |          |
-| TASK-005 | Create spa.md (includes hammam)           | REQ-002     | ⬜     |          |
-| TASK-006 | Create pool.md                            | REQ-002     | ⬜     |          |
-| TASK-007 | Create garden.md                          | REQ-002     | ⬜     |          |
-| TASK-008 | Create hall.md                            | REQ-002     | ⬜     |          |
-| TASK-009 | Create hotel/README.md index              | REQ-003     | ⬜     |          |
-| TASK-010 | Create facilities/README.md index         | REQ-003     | ⬜     |          |
-| TASK-011 | Update pricing.md references              | REQ-004     | ⬜     |          |
-| TASK-012 | Update CLAUDE.md data locations           | REQ-004     | ⬜     |          |
-| TASK-013 | Add deprecation notice to rooms.md        | REQ-005     | ⬜     |          |
+| ID       | Task                               | Requirement | Status | Evidence |
+| -------- | ---------------------------------- | ----------- | ------ | -------- |
+| TASK-001 | Create rooms/ directory            | REQ-001     | ⬜     |          |
+| TASK-002 | Create 12 room files from template | REQ-001     | ⬜     |          |
+| TASK-003 | Fill room data from rooms.md       | REQ-001     | ⬜     |          |
+| TASK-004 | Create facilities/ directory       | REQ-002     | ⬜     |          |
+| TASK-005 | Create spa.md (includes hammam)    | REQ-002     | ⬜     |          |
+| TASK-006 | Create pool.md                     | REQ-002     | ⬜     |          |
+| TASK-007 | Create garden.md                   | REQ-002     | ⬜     |          |
+| TASK-008 | Create hall.md                     | REQ-002     | ⬜     |          |
+| TASK-009 | Create hotel/README.md index       | REQ-003     | ⬜     |          |
+| TASK-010 | Create facilities/README.md index  | REQ-003     | ⬜     |          |
+| TASK-011 | Update pricing.md references       | REQ-004     | ⬜     |          |
+| TASK-012 | Update CLAUDE.md data locations    | REQ-004     | ⬜     |          |
+| TASK-013 | Add deprecation notice to rooms.md | REQ-005     | ⬜     |          |
 
 ### Technical Plan
 
 **Directory Structure**:
+
 ```
 data/specs/configs/
 ├── hotel/

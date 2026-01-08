@@ -51,13 +51,13 @@ Villa Thaifa has 12 rooms. The new room-centric structure needs individual chara
 
 ## Success Criteria
 
-| #   | Criterion                                        | Status | Evidence |
-| --- | ------------------------------------------------ | ------ | -------- |
-| 1   | Booking.com listing accessed                     | ⬜     |          |
-| 2   | All 12 rooms checked for individual data         | ⬜     |          |
-| 3   | Extraction report generated                      | ⬜     |          |
-| 4   | "Not available" documented if type-level only    | ⬜     |          |
-| 5   | Room files updated with any extracted data       | ⬜     |          |
+| #   | Criterion                                     | Status | Evidence |
+| --- | --------------------------------------------- | ------ | -------- |
+| 1   | Booking.com listing accessed                  | ⬜     |          |
+| 2   | All 12 rooms checked for individual data      | ⬜     |          |
+| 3   | Extraction report generated                   | ⬜     |          |
+| 4   | "Not available" documented if type-level only | ⬜     |          |
+| 5   | Room files updated with any extracted data    | ⬜     |          |
 
 ---
 
@@ -74,20 +74,20 @@ Villa Thaifa has 12 rooms. The new room-centric structure needs individual chara
 
 ### Data to Extract (per room if available)
 
-| Data Point | Source | Priority |
-|------------|--------|----------|
-| Room size (m²) | Booking.com room details | High |
-| View type | Booking.com or photos | High |
-| Unique features | Room description | Medium |
-| Room-specific photos | Photo gallery | Low |
+| Data Point           | Source                   | Priority |
+| -------------------- | ------------------------ | -------- |
+| Room size (m²)       | Booking.com room details | High     |
+| View type            | Booking.com or photos    | High     |
+| Unique features      | Room description         | Medium   |
+| Room-specific photos | Photo gallery            | Low      |
 
 ### Expected Outcomes
 
-| Scenario | Action |
-|----------|--------|
-| Per-room data available | Extract and update room files |
-| Only type-level data | Document limitation, Omar to ask Said |
-| Data partially available | Extract what's there, mark rest TBD |
+| Scenario                 | Action                                |
+| ------------------------ | ------------------------------------- |
+| Per-room data available  | Extract and update room files         |
+| Only type-level data     | Document limitation, Omar to ask Said |
+| Data partially available | Extract what's there, mark rest TBD   |
 
 ---
 

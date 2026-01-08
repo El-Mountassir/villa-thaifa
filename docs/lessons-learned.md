@@ -275,11 +275,11 @@ Dates mentionnées sans année explicite, créant confusion entre 2024 et 2025. 
 
 ### Contexte Business
 
-| Canal | Commission | Sur 1000€ |
-|-------|------------|-----------|
-| Booking.com | **25%** | Net: 750€ |
-| Expedia, etc. | ~15-25% | Variable |
-| Direct (téléphone, email) | **0%** | Net: 1000€ |
+| Canal                     | Commission | Sur 1000€  |
+| ------------------------- | ---------- | ---------- |
+| Booking.com               | **25%**    | Net: 750€  |
+| Expedia, etc.             | ~15-25%    | Variable   |
+| Direct (téléphone, email) | **0%**     | Net: 1000€ |
 
 ### Pourquoi c'est ÉNORME
 
@@ -296,6 +296,7 @@ Réservation directe = +33% de marge nette vs Booking.com
 > Même pour des clients qui ne sont pas amis/famille.
 
 **TOUJOURS COMPRENDRE**:
+
 - Réservation "directe" sur HotelRunner = client qui a contacté directement = 0% commission
 - Réservation via Booking/Expedia = 25% de commission perdue
 - Quand M. Thaifa dit "réservation directe" → c'est pour économiser les commissions
@@ -312,6 +313,7 @@ Réservation directe = +33% de marge nette vs Booking.com
 ### L'erreur (Tunnel Vision)
 
 Une instance IA a vu:
+
 - Chambre 5 réservée sur HotelRunner (Benchekroum)
 - Mais pas visible sur Booking.com
 
@@ -320,9 +322,11 @@ Une instance IA a vu:
 ### Ce qui a été manqué (ZOOM OUT)
 
 La vraie question aurait dû être:
+
 > "Cette réservation est-elle CENSÉE être sur Booking.com?"
 
 **Réponse probable**: Non. C'est une réservation directe.
+
 - Les réservations directes sont créées sur HotelRunner uniquement
 - Elles ne sont PAS synchronisées vers Booking.com automatiquement
 - Il faut bloquer manuellement les dates sur Booking.com
@@ -330,12 +334,14 @@ La vraie question aurait dû être:
 ### Le vrai problème
 
 Ce n'est pas un "bug de sync" — c'est:
+
 1. Un gap de connaissance sur le fonctionnement des plateformes
 2. Un workflow non documenté pour les réservations directes
 
 ### Pattern Anti-Tunnel Vision
 
 Avant de créer une mission "investigation de bug", TOUJOURS demander:
+
 ```
 1. Est-ce un bug ou un comportement que je ne comprends pas?
 2. Ai-je ZOOM OUT sur le contexte business?
@@ -354,6 +360,7 @@ Avant de créer une mission "investigation de bug", TOUJOURS demander:
 ### Constat
 
 Ni les agents IA ni Omar ne maîtrisent vraiment:
+
 - HotelRunner (Channel Manager)
 - Booking.com Extranet
 - Le room mapping entre les deux
@@ -362,6 +369,7 @@ Ni les agents IA ni Omar ne maîtrisent vraiment:
 ### Risque
 
 Sans cette maîtrise:
+
 - Erreurs de réservation possibles
 - Problèmes de sync incompris
 - Tunnel vision sur des "bugs" qui n'en sont pas

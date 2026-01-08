@@ -1,8 +1,9 @@
 ---
 name: research-agent
-description: Delegate web research tasks including searching for best practices, documentation lookup, technology comparisons, and gathering external information.
+description: Documentation researcher. Finds and synthesizes best practices from multiple sources. Use PROACTIVELY when external knowledge or documentation lookup is needed.
 tools: WebSearch, WebFetch, Read, Write
 model: haiku
+color: green
 ---
 
 # Purpose

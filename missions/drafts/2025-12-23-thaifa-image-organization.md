@@ -50,14 +50,14 @@ Omar mentioned `images/` folder with professional photos from HWS/HotelRunner ph
 
 ## Success Criteria
 
-| #   | Criterion                                    | Status | Evidence |
-| --- | -------------------------------------------- | ------ | -------- |
-| 1   | Images directory audited                     | ⬜     |          |
-| 2   | rooms/ subdirectories created (01-12)        | ⬜     |          |
-| 3   | facilities/ subdirectories created           | ⬜     |          |
-| 4   | Photos organized into correct locations      | ⬜     |          |
-| 5   | Missing photos documented (Room 12)          | ⬜     |          |
-| 6   | images/README.md index created               | ⬜     |          |
+| #   | Criterion                               | Status | Evidence |
+| --- | --------------------------------------- | ------ | -------- |
+| 1   | Images directory audited                | ⬜     |          |
+| 2   | rooms/ subdirectories created (01-12)   | ⬜     |          |
+| 3   | facilities/ subdirectories created      | ⬜     |          |
+| 4   | Photos organized into correct locations | ⬜     |          |
+| 5   | Missing photos documented (Room 12)     | ⬜     |          |
+| 6   | images/README.md index created          | ⬜     |          |
 
 ---
 
@@ -95,15 +95,15 @@ images/
 
 ### Task Breakdown
 
-| ID       | Task                              | Status | Evidence |
-| -------- | --------------------------------- | ------ | -------- |
-| TASK-001 | Verify images/ exists             | ⬜     |          |
-| TASK-002 | Inventory current photos          | ⬜     |          |
-| TASK-003 | Create directory structure        | ⬜     |          |
-| TASK-004 | Organize photos by room           | ⬜     |          |
-| TASK-005 | Organize photos by facility       | ⬜     |          |
-| TASK-006 | Document missing (Room 12)        | ⬜     |          |
-| TASK-007 | Create README.md index            | ⬜     |          |
+| ID       | Task                        | Status | Evidence |
+| -------- | --------------------------- | ------ | -------- |
+| TASK-001 | Verify images/ exists       | ⬜     |          |
+| TASK-002 | Inventory current photos    | ⬜     |          |
+| TASK-003 | Create directory structure  | ⬜     |          |
+| TASK-004 | Organize photos by room     | ⬜     |          |
+| TASK-005 | Organize photos by facility | ⬜     |          |
+| TASK-006 | Document missing (Room 12)  | ⬜     |          |
+| TASK-007 | Create README.md index      | ⬜     |          |
 
 ---
 

@@ -256,12 +256,12 @@ Template "Villa Thaifa"
 
 ## 📚 RÉFÉRENCES
 
-| Document                           | Purpose                  |
-| ---------------------------------- | ------------------------ |
-| `CLAUDE.md`                        | Context IA               |
-| `data/specs/`                      | Specs métier (SSOT)      |
-| `docs/lessons-learned.md`          | Erreurs & apprentissages |
-| `.env` / `.env.example`            | Accès plateformes        |
+| Document                  | Purpose                  |
+| ------------------------- | ------------------------ |
+| `CLAUDE.md`               | Context IA               |
+| `data/specs/`             | Specs métier (SSOT)      |
+| `docs/lessons-learned.md` | Erreurs & apprentissages |
+| `.env` / `.env.example`   | Accès plateformes        |
 
 ---
 
