@@ -1,0 +1,324 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-01-15T12:00:00Z",
+  "project": "villa-thaifa",
+  "total_agents": 17,
+  "agents": {
+    "active": {
+      "pricing-analyst": {
+        "id": "pricing-analyst",
+        "name": "pricing-analyst",
+        "description": "Revenue optimization strategist. Analyzes occupancy data, competitor rates, and seasonal demand to produce pricing recommendations.",
+        "domain": "ops",
+        "model": "opus",
+        "color": "blue",
+        "tools": ["Read", "Glob", "Grep", "WebSearch"],
+        "permission_mode": "plan",
+        "agent_file": ".claude/agents/pricing-analyst.md",
+        "context_path": "$DOCS/agents/context/domain/ops/",
+        "capabilities": "$DOCS/agents/capabilities/pricing-analyst.json",
+        "dependencies": ["calendar-agent"],
+        "tags": ["pricing", "revenue", "operations", "hospitality"]
+      },
+      "reservation-manager": {
+        "id": "reservation-manager",
+        "name": "reservation-manager",
+        "description": "Reservation lifecycle engineer. Manages creation, modification, and cancellation of reservations with platform coordination.",
+        "domain": "ops",
+        "model": "sonnet",
+        "color": "purple",
+        "tools": ["Read", "Write", "Edit", "Glob", "Grep"],
+        "permission_mode": "default",
+        "agent_file": ".claude/agents/reservation-manager.md",
+        "context_path": "$DOCS/agents/context/domain/ops/",
+        "capabilities": "$DOCS/agents/capabilities/reservation-manager.json",
+        "dependencies": ["platform-validator", "calendar-agent"],
+        "tags": ["reservations", "lifecycle", "operations", "hospitality"]
+      },
+      "calendar-agent": {
+        "id": "calendar-agent",
+        "name": "calendar-agent",
+        "description": "Room availability analyst. Analyzes booking calendars across all 12 rooms at Villa Thaifa.",
+        "domain": "ops",
+        "model": "sonnet",
+        "color": "green",
+        "tools": ["Read", "Glob", "Grep"],
+        "permission_mode": "plan",
+        "agent_file": ".claude/agents/calendar-agent.md",
+        "context_path": "$DOCS/agents/context/domain/ops/",
+        "capabilities": "$DOCS/agents/capabilities/calendar-agent.json",
+        "dependencies": [],
+        "tags": ["availability", "calendar", "occupancy", "hospitality"]
+      },
+      "platform-validator": {
+        "id": "platform-validator",
+        "name": "platform-validator",
+        "description": "Platform data validator. Validates all inputs before platform operations to prevent costly errors.",
+        "domain": "tech",
+        "model": "sonnet",
+        "color": "yellow",
+        "tools": ["Read", "Glob", "Grep"],
+        "permission_mode": "plan",
+        "agent_file": ".claude/agents/platform-validator.md",
+        "context_path": "$DOCS/agents/context/domain/tech/",
+        "capabilities": "$DOCS/agents/capabilities/platform-validator.json",
+        "dependencies": [],
+        "tags": ["validation", "platform", "quality", "technical"]
+      },
+      "browser-agent": {
+        "id": "browser-agent",
+        "name": "browser-agent",
+        "description": "Browser automation specialist. Handles Chrome automation for scraping, form filling, and platform interactions.",
+        "domain": "tech",
+        "model": "sonnet",
+        "color": "cyan",
+        "version": "0.1.0-alpha.0",
+        "tools": ["Read", "Write", "mcp__claude-in-chrome__computer", "mcp__claude-in-chrome__navigate", "mcp__claude-in-chrome__read_page", "mcp__claude-in-chrome__find", "mcp__claude-in-chrome__form_input", "mcp__claude-in-chrome__screenshot", "mcp__claude-in-chrome__tabs_context_mcp", "mcp__claude-in-chrome__tabs_create_mcp", "mcp__claude-in-chrome__javascript_tool", "mcp__claude-in-chrome__get_page_text"],
+        "agent_file": ".claude/agents/browser-agent.md",
+        "context_path": "$DOCS/agents/context/domain/tech/",
+        "capabilities": "$DOCS/agents/capabilities/browser-agent.json",
+        "dependencies": [],
+        "tags": ["browser", "automation", "hotelrunner", "booking.com", "chrome"]
+      },
+      "guest-communicator": {
+        "id": "guest-communicator",
+        "name": "guest-communicator",
+        "description": "Guest communication specialist. Drafts professional welcome messages, check-in instructions, and response templates.",
+        "domain": "hospitality",
+        "model": "sonnet",
+        "color": "pink",
+        "tools": ["Read", "Write"],
+        "permission_mode": "default",
+        "agent_file": ".claude/agents/guest-communicator.md",
+        "context_path": "$DOCS/agents/context/domain/ops/",
+        "capabilities": "$DOCS/agents/capabilities/guest-communicator.json",
+        "dependencies": [],
+        "tags": ["communication", "guest", "hospitality", "multilingual"]
+      },
+      "meta-agent": {
+        "id": "meta-agent",
+        "name": "meta-agent",
+        "description": "Agent configuration generator. Creates new sub-agents from descriptions.",
+        "domain": "meta",
+        "model": "opus",
+        "color": "red",
+        "tools": ["Read", "Write", "Edit", "WebFetch", "WebSearch"],
+        "agent_file": ".claude/agents/meta-agent.md",
+        "context_path": "$DOCS/agents/context/domain/meta/",
+        "capabilities": "$DOCS/agents/capabilities/meta-agent.json",
+        "dependencies": [],
+        "tags": ["meta", "generation", "configuration", "standards"]
+      },
+      "research-agent": {
+        "id": "research-agent",
+        "name": "research-agent",
+        "description": "Documentation researcher for LOW criticality topics. For HIGH criticality, use deep-research-agent instead.",
+        "domain": "meta",
+        "model": "haiku",
+        "color": "green",
+        "tools": ["WebSearch", "WebFetch", "Read", "Write"],
+        "agent_file": ".claude/agents/research-agent.md",
+        "context_path": "$DOCS/agents/context/domain/meta/",
+        "capabilities": "$DOCS/agents/capabilities/research-agent.json",
+        "dependencies": [],
+        "tags": ["research", "documentation", "web"]
+      },
+      "auditor": {
+        "id": "auditor",
+        "name": "auditor",
+        "description": "Expert Auditor for brutal excellence standards. Grades code, documentation, and architecture with uncompromising standards.",
+        "domain": "methodology",
+        "model": "sonnet",
+        "color": "purple",
+        "type": "protocol",
+        "status": "stable",
+        "version": "0.1.0-alpha.0",
+        "tools": ["Read", "Write", "mcp__claude-in-chrome__computer", "mcp__claude-in-chrome__navigate", "mcp__claude-in-chrome__read_page", "mcp__claude-in-chrome__find", "mcp__claude-in-chrome__form_input", "mcp__claude-in-chrome__screenshot", "mcp__claude-in-chrome__tabs_context_mcp", "mcp__claude-in-chrome__tabs_create_mcp", "mcp__claude-in-chrome__javascript_tool", "mcp__claude-in-chrome__get_page_text"],
+        "agent_file": ".claude/agents/auditor.md",
+        "context_path": "$DOCS/agents/context/domain/meta/",
+        "capabilities": "$DOCS/agents/capabilities/auditor.json",
+        "dependencies": [],
+        "tags": ["audit", "standards", "brutal-excellence", "s-tier", "methodology"]
+      },
+      "security-auditor": {
+        "id": "security-auditor",
+        "name": "security-auditor",
+        "description": "Review code for vulnerabilities, implement secure authentication, and ensure OWASP compliance.",
+        "domain": "security",
+        "model": "opus",
+        "tools": ["Read", "Write", "Edit", "Bash"],
+        "agent_file": ".claude/agents/security-auditor.md",
+        "context_path": "$DOCS/agents/context/domain/tech/",
+        "capabilities": "$DOCS/agents/capabilities/security-auditor.json",
+        "dependencies": [],
+        "tags": ["security", "owasp", "authentication", "vulnerability", "audit"]
+      },
+      "translation-agent": {
+        "id": "translation-agent",
+        "name": "translation-agent",
+        "description": "Multilingual translation utility. Translates guest communications between French, English, and Arabic with cultural sensitivity.",
+        "domain": "hospitality",
+        "model": "haiku",
+        "color": "cyan",
+        "tools": ["Read", "Write"],
+        "permission_mode": "default",
+        "agent_file": ".claude/agents/translation-agent.md",
+        "context_path": "$DOCS/agents/context/domain/ops/",
+        "capabilities": "$DOCS/agents/capabilities/translation-agent.json",
+        "dependencies": [],
+        "tags": ["translation", "multilingual", "communication", "hospitality"]
+      },
+      "data-sync-checker": {
+        "id": "data-sync-checker",
+        "name": "data-sync-checker",
+        "description": "Data synchronization validator. Compares local SSOT with HotelRunner/Booking.com platform exports to detect discrepancies.",
+        "domain": "ops",
+        "model": "sonnet",
+        "color": "yellow",
+        "tools": ["Read", "Glob", "Grep"],
+        "permission_mode": "plan",
+        "agent_file": ".claude/agents/data-sync-checker.md",
+        "context_path": "$DOCS/agents/context/domain/ops/",
+        "capabilities": "$DOCS/agents/capabilities/data-sync-checker.json",
+        "dependencies": [],
+        "tags": ["sync", "validation", "platform", "data", "operations"]
+      },
+      "incident-reporter": {
+        "id": "incident-reporter",
+        "name": "incident-reporter",
+        "description": "Incident documentation specialist. Creates structured incident reports when errors, failures, or unexpected behavior occurs.",
+        "domain": "meta",
+        "model": "haiku",
+        "color": "orange",
+        "tools": ["Read", "Write", "Glob"],
+        "agent_file": ".claude/agents/incident-reporter.md",
+        "context_path": "$DOCS/agents/context/domain/meta/",
+        "capabilities": "$DOCS/agents/capabilities/incident-reporter.json",
+        "dependencies": [],
+        "tags": ["incident", "documentation", "error", "reporting"]
+      },
+      "html-report-generator": {
+        "id": "html-report-generator",
+        "name": "html-report-generator",
+        "description": "Generate professional HTML reports from markdown or structured content with dark/light themes and interactivity.",
+        "domain": "reporting",
+        "model": "opus",
+        "tools": ["Read", "Write", "Glob"],
+        "agent_file": ".claude/agents/html-report-generator.md",
+        "context_path": "$DOCS/agents/context/domain/meta/",
+        "capabilities": "$DOCS/agents/capabilities/html-report-generator.json",
+        "dependencies": [],
+        "tags": ["reporting", "html", "visualization", "documentation"]
+      },
+      "claude-md-agent": {
+        "id": "claude-md-agent",
+        "name": "claude-md-agent",
+        "description": "CLAUDE.md maintenance specialist. Optimizes project instructions following Claude Code best practices.",
+        "domain": "governance",
+        "model": "opus",
+        "color": "white",
+        "tools": ["Read", "Edit", "Write", "Glob", "WebSearch", "WebFetch"],
+        "agent_file": ".claude/agents/claude-md-agent.md",
+        "context_path": "$DOCS/agents/context/domain/meta/",
+        "capabilities": "$DOCS/agents/capabilities/claude-md-agent.json",
+        "dependencies": [],
+        "tags": ["governance", "claudemd", "best-practices", "maintenance"]
+      },
+      "smart-contract-auditor": {
+        "id": "smart-contract-auditor",
+        "name": "smart-contract-auditor",
+        "description": "Smart contract security auditor. Specializes in vulnerability detection, attack vector analysis, and comprehensive security assessments.",
+        "domain": "security",
+        "color": "red",
+        "tools": ["Read", "Write", "Edit"],
+        "agent_file": ".claude/agents/smart-contract-auditor.md",
+        "context_path": "$DOCS/agents/context/domain/tech/",
+        "capabilities": "$DOCS/agents/capabilities/smart-contract-auditor.json",
+        "dependencies": [],
+        "tags": ["security", "smart-contract", "audit", "blockchain", "vulnerability"]
+      },
+      "decision-evaluator": {
+        "id": "decision-evaluator",
+        "name": "decision-evaluator-agent",
+        "description": "Multi-criteria decision analysis for comparing approaches. Researches best practices and scores options.",
+        "domain": "meta",
+        "model": "opus",
+        "tools": ["Read", "Write", "WebSearch", "WebFetch"],
+        "agent_file": ".claude/agents/decision-evaluator.md",
+        "context_path": "$DOCS/agents/context/domain/meta/",
+        "capabilities": "$DOCS/agents/capabilities/decision-evaluator.json",
+        "dependencies": [],
+        "tags": ["decision", "analysis", "comparison", "research"]
+      }
+    }
+  },
+  "domains": {
+    "ops": {
+      "name": "Operations",
+      "description": "Operational agents for pricing, reservations, and calendar management",
+      "agents": ["pricing-analyst", "reservation-manager", "calendar-agent", "data-sync-checker"]
+    },
+    "tech": {
+      "name": "Technical",
+      "description": "Technical agents for platform validation, browser automation, and security",
+      "agents": ["platform-validator", "browser-agent", "security-auditor", "smart-contract-auditor"]
+    },
+    "meta": {
+      "name": "Meta",
+      "description": "Meta agents for research, configuration, and methodology",
+      "agents": ["meta-agent", "research-agent", "auditor", "incident-reporter", "html-report-generator", "claude-md-agent", "decision-evaluator"]
+    },
+    "hospitality": {
+      "name": "Hospitality",
+      "description": "Guest-facing communication and translation",
+      "agents": ["guest-communicator", "translation-agent"]
+    },
+    "security": {
+      "name": "Security",
+      "description": "Security auditing and vulnerability assessment",
+      "agents": ["security-auditor", "smart-contract-auditor"]
+    },
+    "methodology": {
+      "name": "Methodology",
+      "description": "Standards and methodology enforcement",
+      "agents": ["auditor"]
+    },
+    "reporting": {
+      "name": "Reporting",
+      "description": "Report generation and visualization",
+      "agents": ["html-report-generator"]
+    },
+    "governance": {
+      "name": "Governance",
+      "description": "Project governance and best practices",
+      "agents": ["claude-md-agent"]
+    }
+  },
+  "models": {
+    "opus": {
+      "agents": ["pricing-analyst", "meta-agent", "security-auditor", "html-report-generator", "claude-md-agent", "smart-contract-auditor", "decision-evaluator"],
+      "count": 7,
+      "use_case": "Complex reasoning, deep analysis, research"
+    },
+    "sonnet": {
+      "agents": ["reservation-manager", "calendar-agent", "platform-validator", "browser-agent", "guest-communicator", "auditor", "data-sync-checker"],
+      "count": 7,
+      "use_case": "General tasks, workflow execution, validation"
+    },
+    "haiku": {
+      "agents": ["research-agent", "translation-agent", "incident-reporter"],
+      "count": 3,
+      "use_case": "Simple tasks, translation, reporting"
+    }
+  },
+  "statistics": {
+    "total_agents": 17,
+    "ops_agents": 4,
+    "tech_agents": 4,
+    "meta_agents": 7,
+    "hospitality_agents": 2,
+    "opus_models": 7,
+    "sonnet_models": 7,
+    "haiku_models": 3
+  }
+}

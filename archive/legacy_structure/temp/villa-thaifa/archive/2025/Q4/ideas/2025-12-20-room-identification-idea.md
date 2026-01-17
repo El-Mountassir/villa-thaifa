@@ -1,0 +1,2 @@
+Idéalement, avoir un numéro d'identifié séparé pour chaque chambre afin de faciliter les réservations pour nos clients afin qu'ils puissent choisir leur chambre préféré (example: vu sur piscine, jardin, balcon/ pas balcon etc) (en ayant accès aux photos)
+Et prendre en compte le fait que 

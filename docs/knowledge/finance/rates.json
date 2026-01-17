@@ -1,0 +1,103 @@
+{
+  "_comment": "PLACEHOLDER FILE - Grille tarifaire à compléter avec les vrais prix",
+  "version": "1.0.0",
+  "last_updated": "2026-01-15T12:00:00Z",
+  "status": "placeholder",
+  "currency": "MAD",
+  "rates": {
+    "room_types": [
+      {
+        "type": "TODO",
+        "base_rate": "TODO",
+        "seasonal_variations": {
+          "low_season": {
+            "months": ["TODO"],
+            "rate": "TODO"
+          },
+          "high_season": {
+            "months": ["TODO"],
+            "rate": "TODO"
+          },
+          "peak_season": {
+            "months": ["TODO"],
+            "rate": "TODO"
+          }
+        },
+        "occupancy_based_pricing": {
+          "1_person": "TODO",
+          "2_people": "TODO",
+          "extra_person": "TODO"
+        }
+      }
+    ],
+    "services": {
+      "breakfast": {
+        "included": true,
+        "extra_cost": "TODO"
+      },
+      "airport_transfer": {
+        "included": false,
+        "cost": "TODO",
+        "details": "TODO"
+      },
+      "laundry": {
+        "included": false,
+        "pricing": "TODO"
+      },
+      "guided_tours": {
+        "included": false,
+        "pricing": "TODO"
+      }
+    },
+    "policies": {
+      "discounts": {
+        "long_stay": {
+          "nights_min": "TODO",
+          "discount_percentage": "TODO"
+        },
+        "early_booking": {
+          "days_in_advance": "TODO",
+          "discount_percentage": "TODO"
+        },
+        "returning_guest": {
+          "discount_percentage": "TODO"
+        }
+      },
+      "deposit": {
+        "percentage": "TODO",
+        "payment_methods": ["TODO"]
+      },
+      "cancellation": {
+        "free_cancellation_until": "TODO",
+        "penalties": {
+          "late_cancellation": "TODO",
+          "no_show": "TODO"
+        }
+      }
+    }
+  },
+  "pricing_strategy": {
+    "dynamic_pricing": {
+      "enabled": "TODO",
+      "factors": [
+        "Occupancy rate",
+        "Seasonality",
+        "Demand",
+        "Competitor pricing",
+        "Events in Marrakech"
+      ]
+    },
+    "competitor_monitoring": {
+      "competitors": ["TODO"],
+      "frequency": "TODO"
+    }
+  },
+  "tags": ["placeholder", "to_complete", "finance", "rates"],
+  "todo": [
+    "Ajouter tous les types de chambres avec prix",
+    "Documenter variations saisonnières",
+    "Lister tous les services supplémentaires",
+    "Définir politique de remises",
+    "Compléter politique d'annulation"
+  ]
+}

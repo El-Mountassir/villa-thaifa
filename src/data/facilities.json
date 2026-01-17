@@ -1,0 +1,47 @@
+[
+  {
+    "id": "hall",
+    "name": "Hall / Salle de Reception",
+    "description": "L'espace de reception et hall de Villa Thaifa.",
+    "features": [
+      { "label": "Capacite", "value": "A confirmer - M. Thaifa" },
+      { "label": "Usage evenements", "value": "A confirmer" }
+    ]
+  },
+  {
+    "id": "garden",
+    "name": "Jardin",
+    "description": "Le jardin de Villa Thaifa dans la Palmeraie de Marrakech.",
+    "features": [
+      { "label": "Surface", "value": "A confirmer - M. Thaifa" },
+      { "label": "Palmiers", "value": "A confirmer" },
+      { "label": "Orangers", "value": "A confirmer" }
+    ]
+  },
+  {
+    "id": "pool",
+    "name": "Piscine",
+    "description": "La piscine de Villa Thaifa.",
+    "features": [
+      { "label": "Dimensions", "value": "A confirmer - M. Thaifa" },
+      { "label": "Profondeur", "value": "A confirmer" },
+      { "label": "Chauffee", "value": "A confirmer" },
+      { "label": "Horaires", "value": "A confirmer" },
+      { "label": "Transats", "value": "A confirmer" },
+      { "label": "Parasols", "value": "A confirmer" },
+      { "label": "Bar piscine", "value": "A confirmer" }
+    ]
+  },
+  {
+    "id": "spa",
+    "name": "Spa & Hammam",
+    "description": "Le spa et hammam de Villa Thaifa offrent une experience de bien-etre traditionnelle marocaine.",
+    "features": [
+      { "label": "Capacite Hammam", "value": "A confirmer - M. Thaifa" },
+      { "label": "Horaires", "value": "A confirmer" },
+      { "label": "Inclus sejour", "value": "A confirmer" },
+      { "label": "Nombre de tables", "value": "A confirmer" },
+      { "label": "Types de soins", "value": "A confirmer" }
+    ]
+  }
+]

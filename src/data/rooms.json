@@ -1,0 +1,246 @@
+[
+  {
+    "id": "01",
+    "number": "01",
+    "type": "Deluxe Triple Room",
+    "capacity": {
+      "adults": 3,
+      "description": "3 personnes"
+    },
+    "beds": ["1 Lit King", "1 Canapé-lit"],
+    "price": {
+      "amount": 200,
+      "currency": "EUR"
+    },
+    "features": {
+      "view": "Jardin",
+      "floor": "Rez-de-chaussée"
+    },
+    "description": "Chambre 1 triple de luxe - Vue jardin avec un canapé lit pour 2 personnes et au rez de chaussée de la villa Thaifa"
+  },
+  {
+    "id": "02",
+    "number": "02",
+    "type": "Deluxe Double Room",
+    "capacity": {
+      "adults": 2,
+      "description": "2 personnes"
+    },
+    "beds": ["1 Lit King"],
+    "price": {
+      "amount": 200,
+      "currency": "EUR"
+    },
+    "features": {
+      "view": "Jardin",
+      "terrace": "40 m²"
+    },
+    "description": "Chambre 2 chambre double de luxe avec un terrasse de 40 m2 vue jardin"
+  },
+  {
+    "id": "03",
+    "number": "03",
+    "type": "Deluxe Triple Room",
+    "capacity": {
+      "adults": 3,
+      "description": "3 personnes"
+    },
+    "beds": ["1 Lit King", "1 Canapé-lit"],
+    "price": {
+      "amount": 200,
+      "currency": "EUR"
+    },
+    "features": {
+      "view": "Jardin",
+      "floor": "Rez-de-chaussée",
+      "terrace": "Petite terrasse (3-4 m²)"
+    },
+    "description": "Ch 3 triple de luxe avec une petite terrasse vue jardin au rez de chaussée"
+  },
+  {
+    "id": "04",
+    "number": "04",
+    "type": "Double Room Superior",
+    "capacity": {
+      "adults": 2,
+      "description": "2 personnes"
+    },
+    "beds": ["1 Lit King"],
+    "price": {
+      "amount": 160,
+      "currency": "EUR"
+    },
+    "features": {
+      "view": "Piscine (Accès direct)"
+    },
+    "description": "Ch 4 chambre double supérieur accès piscine et le bar"
+  },
+  {
+    "id": "05",
+    "number": "05",
+    "type": "Double Room Superior",
+    "capacity": {
+      "adults": 2,
+      "description": "2 personnes"
+    },
+    "beds": ["1 Lit King"],
+    "price": {
+      "amount": 160,
+      "currency": "EUR"
+    },
+    "features": {
+      "view": "Piscine",
+      "floor": "1er étage"
+    },
+    "description": "Ch 5 chambre double supérieur vue piscine du premier etage"
+  },
+  {
+    "id": "06",
+    "number": "06",
+    "type": "Executive Suite",
+    "capacity": {
+      "adults": 3,
+      "description": "3 personnes"
+    },
+    "beds": ["1 Lit King", "1 Canapé-lit"],
+    "price": {
+      "amount": 240,
+      "currency": "EUR"
+    },
+    "features": {
+      "view": "Piscine, Atlas, Jardin",
+      "floor": "1er étage",
+      "terrace": "100 m²"
+    },
+    "description": "Suite excecutive 6 très belle avec une terrasse de 100 mètres carrés vue piscine et atlas et jardin top au premier étage"
+  },
+  {
+    "id": "07",
+    "number": "07",
+    "type": "Deluxe King Suite",
+    "capacity": {
+      "adults": 4,
+      "description": "4 personnes"
+    },
+    "beds": ["1 Lit King", "2 Canapés-lit"],
+    "price": {
+      "amount": 440,
+      "currency": "EUR"
+    },
+    "features": {
+      "view": "Piscine, Atlas",
+      "floor": "1er étage",
+      "terrace": "60 m²",
+      "amenities": ["Salon", "Cheminée", "Salle à manger"]
+    },
+    "description": "Suite de luxe King size avec salon à part et une cheminée et 2 canapés et salle à manger et une terrasse de 60 m2 vue piscine et atlas le top"
+  },
+  {
+    "id": "08",
+    "number": "08",
+    "type": "Deluxe Triple Room",
+    "capacity": {
+      "adults": 3,
+      "description": "3 personnes"
+    },
+    "beds": ["1 Lit King", "1 Canapé-lit"],
+    "price": {
+      "amount": 200,
+      "currency": "EUR"
+    },
+    "features": {
+      "view": "Jardin",
+      "floor": "1er étage"
+    },
+    "description": "Chambre 8 avec un canapé lit vue jardin et au premier étage"
+  },
+  {
+    "id": "09",
+    "number": "09",
+    "type": "Family Suite",
+    "capacity": {
+      "adults": 4,
+      "description": "4 personnes"
+    },
+    "beds": ["1 Lit King", "2 Canapés-lit"],
+    "price": {
+      "amount": 227,
+      "currency": "EUR"
+    },
+    "features": {
+      "view": "Piscine + Acces direct piscine",
+      "floor": "Rez-de-chaussée",
+      "terrace": "Double terrasse",
+      "amenities": ["Cheminée"]
+    },
+    "description": "Suite familiale accès piscine directe avec 2 canapés lits qui peut loger 4 personnes et avec double terrasse et une cheminée"
+  },
+  {
+    "id": "10",
+    "number": "10",
+    "type": "Suite",
+    "capacity": {
+      "adults": 3,
+      "description": "3 personnes"
+    },
+    "beds": ["1 Lit King", "1 Canapé-lit"],
+    "price": {
+      "amount": 267,
+      "currency": "EUR"
+    },
+    "features": {
+      "view": "Piscine + Acces direct piscine",
+      "terrace": "Double terrasse spacieuse"
+    },
+    "description": "Suite spacieuse avec double terrasse et accès direct piscine."
+  },
+  {
+    "id": "11",
+    "number": "11",
+    "type": "Family Suite",
+    "capacity": {
+      "adults": 4,
+      "description": "4 personnes"
+    },
+    "beds": ["1 Lit King", "2 Canapés-lit"],
+    "price": {
+      "amount": 240,
+      "currency": "EUR"
+    },
+    "features": {
+      "view": "Piscine + Acces direct piscine",
+      "floor": "Rez-de-chaussée",
+      "terrace": "Double terrasse",
+      "amenities": ["Salon", "Cheminée"]
+    },
+    "description": "Chambre familiale accès directe piscine avec double terrasse et avec un salon et une cheminée et avec 2 canapés lits spacieuses"
+  },
+  {
+    "id": "12",
+    "number": "12",
+    "type": "Presidential Suite",
+    "capacity": {
+      "adults": 4,
+      "description": "4 personnes"
+    },
+    "beds": ["1 Lit King", "2 Canapés-lit"],
+    "price": {
+      "amount": 600,
+      "currency": "EUR"
+    },
+    "features": {
+      "view": "Piscine + Acces direct piscine",
+      "terrace": "Double terrasse",
+      "area": "82 m2",
+      "amenities": [
+        "Salon",
+        "Salle à manger",
+        "Bar",
+        "Mini bar",
+        "Coffre fort",
+        "Douche italienne"
+      ]
+    },
+    "description": "Suite présidentielle de 82 m2 avec une salle à manger et de un salon lit pour dormir et une douche italienne et un petit bar top"
+  }
+]
