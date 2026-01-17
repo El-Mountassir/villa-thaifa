@@ -10,6 +10,12 @@
 - **Owner**: Omar El Mountassir
 - **Capabilities Required**: `fs_read`, `fs_write`, `cli_exec`.
 
+## 🚨 PRIME DIRECTIVE (Governance)
+
+> **RULE #1**: ALL WORK MUST BE REGISTERED IN `ROADMAP.md` FIRST.
+> No agent shall execute a task that is not explicitly defined in the Project Roadmap.
+> If a task is missing, **STOP**, update `ROADMAP.md`, and request user approval.
+
 ## 📌 References (The "Constitution")
 
 | Concept             | Source                                                                                                               |

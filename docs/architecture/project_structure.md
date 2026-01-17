@@ -5,6 +5,15 @@
 
 ## Root Directory
 
+- **Essential Root Files**:
+  - `AGENTS.md` (Master Manifest & Entry Point - MUST BE IN ROOT)
+  - `GEMINI.md` (Gemini/Antigravity specific context - MUST BE IN ROOT)
+  - `CLAUDE.md` (Claude Code CLI specific context - MUST BE IN ROOT)
+  - `README.md` (Human Entry)
+  - `ROADMAP.md` (Plan)
+  - `package.json`
+  - `tsconfig.json`
+
 | Directory         | Purpose                                            |
 | :---------------- | :------------------------------------------------- |
 | **`/.ai/`**       | Agent workspace (Memory, automated workflows).     |

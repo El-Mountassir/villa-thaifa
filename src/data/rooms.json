@@ -16,7 +16,8 @@
       "view": "Jardin",
       "floor": "Rez-de-chaussée"
     },
-    "description": "Chambre 1 triple de luxe - Vue jardin avec un canapé lit pour 2 personnes et au rez de chaussée de la villa Thaifa"
+    "description": "Chambre 1 triple de luxe - Vue jardin avec un canapé lit pour 2 personnes et au rez de chaussée de la villa Thaifa",
+    "images": ["/images/rooms/01_main.jpg"]
   },
   {
     "id": "02",
@@ -35,7 +36,8 @@
       "view": "Jardin",
       "terrace": "40 m²"
     },
-    "description": "Chambre 2 chambre double de luxe avec un terrasse de 40 m2 vue jardin"
+    "description": "Chambre 2 chambre double de luxe avec un terrasse de 40 m2 vue jardin",
+    "images": ["/images/rooms/02_main.jpg"]
   },
   {
     "id": "03",
@@ -55,7 +57,8 @@
       "floor": "Rez-de-chaussée",
       "terrace": "Petite terrasse (3-4 m²)"
     },
-    "description": "Ch 3 triple de luxe avec une petite terrasse vue jardin au rez de chaussée"
+    "description": "Ch 3 triple de luxe avec une petite terrasse vue jardin au rez de chaussée",
+    "images": ["/images/rooms/03_main.jpg"]
   },
   {
     "id": "04",
@@ -73,7 +76,8 @@
     "features": {
       "view": "Piscine (Accès direct)"
     },
-    "description": "Ch 4 chambre double supérieur accès piscine et le bar"
+    "description": "Ch 4 chambre double supérieur accès piscine et le bar",
+    "images": ["/images/rooms/04_main.jpg"]
   },
   {
     "id": "05",
@@ -92,7 +96,8 @@
       "view": "Piscine",
       "floor": "1er étage"
     },
-    "description": "Ch 5 chambre double supérieur vue piscine du premier etage"
+    "description": "Ch 5 chambre double supérieur vue piscine du premier etage",
+    "images": ["/images/rooms/05_main.jpg"]
   },
   {
     "id": "06",
@@ -112,7 +117,8 @@
       "floor": "1er étage",
       "terrace": "100 m²"
     },
-    "description": "Suite excecutive 6 très belle avec une terrasse de 100 mètres carrés vue piscine et atlas et jardin top au premier étage"
+    "description": "Suite excecutive 6 très belle avec une terrasse de 100 mètres carrés vue piscine et atlas et jardin top au premier étage",
+    "images": ["/images/rooms/06_main.jpg"]
   },
   {
     "id": "07",
@@ -133,7 +139,8 @@
       "terrace": "60 m²",
       "amenities": ["Salon", "Cheminée", "Salle à manger"]
     },
-    "description": "Suite de luxe King size avec salon à part et une cheminée et 2 canapés et salle à manger et une terrasse de 60 m2 vue piscine et atlas le top"
+    "description": "Suite de luxe King size avec salon à part et une cheminée et 2 canapés et salle à manger et une terrasse de 60 m2 vue piscine et atlas le top",
+    "images": ["/images/rooms/07_main.jpg"]
   },
   {
     "id": "08",
@@ -152,7 +159,8 @@
       "view": "Jardin",
       "floor": "1er étage"
     },
-    "description": "Chambre 8 avec un canapé lit vue jardin et au premier étage"
+    "description": "Chambre 8 avec un canapé lit vue jardin et au premier étage",
+    "images": ["/images/rooms/08_main.jpg"]
   },
   {
     "id": "09",
@@ -173,7 +181,8 @@
       "terrace": "Double terrasse",
       "amenities": ["Cheminée"]
     },
-    "description": "Suite familiale accès piscine directe avec 2 canapés lits qui peut loger 4 personnes et avec double terrasse et une cheminée"
+    "description": "Suite familiale accès piscine directe avec 2 canapés lits qui peut loger 4 personnes et avec double terrasse et une cheminée",
+    "images": ["/images/rooms/09_main.jpg"]
   },
   {
     "id": "10",
@@ -192,7 +201,8 @@
       "view": "Piscine + Acces direct piscine",
       "terrace": "Double terrasse spacieuse"
     },
-    "description": "Suite spacieuse avec double terrasse et accès direct piscine."
+    "description": "Suite spacieuse avec double terrasse et accès direct piscine.",
+    "images": ["/images/rooms/10_main.jpg"]
   },
   {
     "id": "11",
@@ -213,7 +223,8 @@
       "terrace": "Double terrasse",
       "amenities": ["Salon", "Cheminée"]
     },
-    "description": "Chambre familiale accès directe piscine avec double terrasse et avec un salon et une cheminée et avec 2 canapés lits spacieuses"
+    "description": "Chambre familiale accès directe piscine avec double terrasse et avec un salon et une cheminée et avec 2 canapés lits spacieuses",
+    "images": ["/images/rooms/11_main.jpg"]
   },
   {
     "id": "12",
@@ -241,6 +252,7 @@
         "Douche italienne"
       ]
     },
-    "description": "Suite présidentielle de 82 m2 avec une salle à manger et de un salon lit pour dormir et une douche italienne et un petit bar top"
+    "description": "Suite présidentielle de 82 m2 avec une salle à manger et de un salon lit pour dormir et une douche italienne et un petit bar top",
+    "images": ["/images/rooms/12_main.jpg"]
   }
 ]

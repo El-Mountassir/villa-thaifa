@@ -49,14 +49,31 @@ export default async function RoomPage({
               height: "400px",
               backgroundColor: "#eee",
               borderRadius: "8px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              overflow: "hidden",
               marginBottom: "2rem",
-              color: "#999",
+              position: "relative",
             }}
           >
-            {room.type} Image Placeholder
+            {room.images && room.images[0] ? (
+              <img
+                src={room.images[0]}
+                alt={room.type}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            ) : (
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "#999",
+                }}
+              >
+                {room.type} Image Placeholder
+              </div>
+            )}
           </div>
           <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
             {room.type}
