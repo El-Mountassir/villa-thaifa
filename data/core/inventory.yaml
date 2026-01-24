@@ -1,0 +1,205 @@
+# =============================================================================
+# VILLA THAIFA — MASTER INVENTORY
+# =============================================================================
+# STATUS: ACTIVE (SSOT)
+# LAST VALIDATED: 2026-01-24
+# PRICING SOURCE: docs/specs/knowledge/logs/pricing.md (Live 2026-01-13)
+# =============================================================================
+
+rooms:
+  - id: "01"
+    number: "01"
+    type: "Deluxe Triple Room"
+    type_fr: "Triple Deluxe"
+    capacity:
+      adults: 3
+    beds: ["1 Lit King", "1 Canapé-lit"]
+    pricing:
+      standard_rate: 169
+      currency: "EUR"
+    features:
+      view: "Jardin"
+      floor: "Rez-de-chaussée"
+    images: ["/images/rooms/01_main.jpg"]
+
+  - id: "02"
+    number: "02"
+    type: "Deluxe Double Room"
+    type_fr: "Deluxe Double"
+    capacity:
+      adults: 2
+    beds: ["1 Lit King"]
+    pricing:
+      standard_rate: 159
+      currency: "EUR"
+    features:
+      view: "Jardin"
+      terrace: "40 m²"
+    images: ["/images/rooms/02_main.jpg"]
+
+  - id: "03"
+    number: "03"
+    type: "Deluxe Triple Room"
+    type_fr: "Triple Deluxe"
+    capacity:
+      adults: 3
+    beds: ["1 Lit King", "1 Canapé-lit"]
+    pricing:
+      standard_rate: 169
+      currency: "EUR"
+    features:
+      view: "Jardin"
+      floor: "Rez-de-chaussée"
+      terrace: "Petite terrasse (3-4 m²)"
+    images: ["/images/rooms/03_main.jpg"]
+
+  - id: "04"
+    number: "04"
+    type: "Double Room Superior"
+    type_fr: "Double Supérieure"
+    capacity:
+      adults: 2
+    beds: ["1 Lit King"]
+    pricing:
+      standard_rate: 149
+      currency: "EUR"
+    features:
+      view: "Piscine (Accès direct)"
+    images: ["/images/rooms/04_main.jpg"]
+
+  - id: "05"
+    number: "05"
+    type: "Double Room Superior"
+    type_fr: "Double Supérieure"
+    capacity:
+      adults: 2
+    beds: ["1 Lit King"]
+    pricing:
+      standard_rate: 149
+      currency: "EUR"
+    features:
+      view: "Piscine"
+      floor: "1er étage"
+    images: ["/images/rooms/05_main.jpg"]
+
+  - id: "06"
+    number: "06"
+    type: "Executive Suite"
+    type_fr: "Suite Exécutive"
+    capacity:
+      adults: 3
+    beds: ["1 Lit King", "1 Canapé-lit"]
+    pricing:
+      standard_rate: 169
+      currency: "EUR"
+    features:
+      view: "Piscine, Atlas, Jardin"
+      floor: "1er étage"
+      terrace: "100 m²"
+    images: ["/images/rooms/06_main.jpg"]
+
+  - id: "07"
+    number: "07"
+    type: "Deluxe King Suite"
+    type_fr: "Suite Deluxe King"
+    capacity:
+      adults: 4
+    beds: ["1 Lit King", "2 Canapés-lit"]
+    pricing:
+      standard_rate: 329
+      currency: "EUR"
+    features:
+      view: "Piscine, Atlas"
+      floor: "1er étage"
+      terrace: "60 m²"
+      amenities: ["Salon", "Cheminée", "Salle à manger"]
+    images: ["/images/rooms/07_main.jpg"]
+
+  - id: "08"
+    number: "08"
+    type: "Deluxe Triple Room"
+    type_fr: "Triple Deluxe"
+    capacity:
+      adults: 3
+    beds: ["1 Lit King", "1 Canapé-lit"]
+    pricing:
+      standard_rate: 169
+      currency: "EUR"
+    features:
+      view: "Jardin"
+      floor: "1er étage"
+    images: ["/images/rooms/08_main.jpg"]
+
+  - id: "09"
+    number: "09"
+    type: "Family Suite"
+    type_fr: "Suite Familiale"
+    capacity:
+      adults: 4
+    beds: ["1 Lit King", "2 Canapés-lit"]
+    pricing:
+      standard_rate: 189
+      currency: "EUR"
+    features:
+      view: "Piscine + Acces direct piscine"
+      floor: "Rez-de-chaussée"
+      terrace: "Double terrasse"
+      amenities: ["Cheminée"]
+    images: ["/images/rooms/09_main.jpg"]
+
+  - id: "10"
+    number: "10"
+    type: "Suite"
+    type_fr: "Suite"
+    capacity:
+      adults: 3
+    beds: ["1 Lit King", "1 Canapé-lit"]
+    pricing:
+      standard_rate: 179
+      currency: "EUR"
+    features:
+      view: "Piscine + Acces direct piscine"
+      terrace: "Double terrasse spacieuse"
+    images: ["/images/rooms/10_main.jpg"]
+
+  - id: "11"
+    number: "11"
+    type: "Family Suite"
+    type_fr: "Suite Familiale"
+    capacity:
+      adults: 4
+    beds: ["1 Lit King", "2 Canapés-lit"]
+    pricing:
+      standard_rate: 189
+      currency: "EUR"
+    features:
+      view: "Piscine + Acces direct piscine"
+      floor: "Rez-de-chaussée"
+      terrace: "Double terrasse"
+      amenities: ["Salon", "Cheminée"]
+    images: ["/images/rooms/11_main.jpg"]
+
+  - id: "12"
+    number: "12"
+    type: "Presidential Suite"
+    type_fr: "Suite Présidentielle"
+    capacity:
+      adults: 4
+    beds: ["1 Lit King", "2 Canapés-lit"]
+    pricing:
+      standard_rate: 449
+      currency: "EUR"
+    features:
+      view: "Piscine + Acces direct piscine"
+      terrace: "Double terrasse"
+      area: "82 m2"
+      amenities:
+        [
+          "Salon",
+          "Salle à manger",
+          "Bar",
+          "Mini bar",
+          "Coffre fort",
+          "Douche italienne",
+        ]
+    images: ["/images/rooms/12_main.jpg"]
