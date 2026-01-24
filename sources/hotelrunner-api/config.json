@@ -1,0 +1,37 @@
+{
+  "id": "hotelrunner-api",
+  "slug": "hotelrunner-api",
+  "name": "HotelRunner API",
+  "type": "api",
+  "provider": "hotelrunner",
+  "description": "HotelRunner PMS REST API (HR-v1) - Manage reservations, rooms, rates, and availability for Villa Thaifa",
+  "icon": "🏨",
+  "enabled": false,
+  "api": {
+    "baseUrl": "https://am.hotelrunner.com/custom-apps/rest-api",
+    "version": "HR-v1",
+    "authType": "header",
+    "credentials": {
+      "tokenKey": "HOTELRUNNER_TOKEN",
+      "hrIdKey": "HOTELRUNNER_HR_ID"
+    },
+    "rateLimit": {
+      "requestsPerDay": 250,
+      "requestsPerMinute": 5
+    }
+  },
+  "documentation": "https://developers.hotelrunner.com/custom-apps/rest-api",
+  "permissions": [
+    "rooms:read",
+    "reservations:read",
+    "reservations:push:confirmed",
+    "reservations:push:modified",
+    "reservations:push:cancelled",
+    "calendar:write"
+  ],
+  "metadata": {
+    "created": "2026-01-24",
+    "integrationType": "HR-v1",
+    "contactEmail": "omar@el-mountassir.com"
+  }
+}
