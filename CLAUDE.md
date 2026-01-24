@@ -59,6 +59,7 @@
 - **Access**: Read file at runtime, extract needed credentials
 - **Default**: Use ADMIN (Omar) accounts, not OWNER (Said) accounts
 - **Security**: Never log or output credentials
+- **🔴 CRITICAL**: See [`docs/operations/.env.rules.md`](docs/operations/.env.rules.md) before ANY modification to `.env.local`
 - **Full Guide**: [`docs/operations/CREDENTIALS.md`](docs/operations/CREDENTIALS.md)
 
 **Quick access pattern:**

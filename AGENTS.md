@@ -25,6 +25,7 @@
 | **Structure**       | [`docs/architecture/project_structure.md`](docs/architecture/project_structure.md)                                   |
 | **Code of Conduct** | [`docs/project/standards/agents/code_of_conduct.md`](docs/project/standards/agents/code_of_conduct.md)               |
 | **Collaboration**   | [`docs/project/standards/agents/collaboration_protocol.md`](docs/project/standards/agents/collaboration_protocol.md) |
+| **🔴 Credentials**  | [`docs/operations/.env.rules.md`](docs/operations/.env.rules.md) **READ BEFORE MODIFYING .env**                     |
 
 ## 🚀 Active Context
 

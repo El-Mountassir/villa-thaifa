@@ -28,6 +28,7 @@ Read tool: .env.local
 **URL**: https://app.hotelrunner.com
 
 **Admin Account (Omar)** - ⭐ USE THIS BY DEFAULT
+
 ```env
 HOTELRUNNER_URL=https://app.hotelrunner.com
 HOTELRUNNER_ADMIN_EMAIL=omar@el-mountassir.com
@@ -35,12 +36,14 @@ HOTELRUNNER_ADMIN_PASSWORD=[stored in .env.local]
 ```
 
 **Owner Account (Said)** - ⚠️ DO NOT USE unless explicitly requested
+
 ```env
 HOTELRUNNER_OWNER_EMAIL=said_thaifa@hotmail.fr
 HOTELRUNNER_OWNER_PASSWORD=[stored in .env.local]
 ```
 
 **Why use Admin account:**
+
 - Avoids disturbing client with login notifications
 - Maintains audit trail under consultant identity
 - Client retains full owner privileges
@@ -50,6 +53,7 @@ HOTELRUNNER_OWNER_PASSWORD=[stored in .env.local]
 **URL**: https://admin.booking.com
 
 **Admin Account (Omar)** - ⭐ USE THIS BY DEFAULT
+
 ```env
 BOOKING_URL=https://admin.booking.com
 BOOKING_ADMIN_EMAIL=omar@el-mountassir.com
@@ -57,6 +61,7 @@ BOOKING_ADMIN_PASSWORD=[stored in .env.local]
 ```
 
 **Owner Account (Said)** - ⚠️ DO NOT USE unless explicitly requested
+
 ```env
 BOOKING_OWNER_EMAIL=said_thaifa@hotmail.fr
 BOOKING_OWNER_PASSWORD=[stored in .env.local]
@@ -69,11 +74,13 @@ BOOKING_OWNER_PASSWORD=[stored in .env.local]
 ### Account Selection
 
 **ALWAYS use ADMIN (Omar) accounts unless:**
+
 - ❗ Omar explicitly requests using owner account
 - ❗ Operation requires owner-level permissions
 - ❗ Admin account is unavailable/locked
 
 **NEVER use owner (Said) accounts for:**
+
 - ❌ Routine operations
 - ❌ Testing or exploration
 - ❌ Data extraction or analysis
@@ -84,12 +91,14 @@ BOOKING_OWNER_PASSWORD=[stored in .env.local]
 ### Credential Security
 
 **DO:**
+
 - ✅ Read credentials from `.env.local` at runtime
 - ✅ Keep credentials in memory only during operation
 - ✅ Never log credentials in output or files
 - ✅ Never commit credentials to git
 
 **DON'T:**
+
 - ❌ Store credentials in variables across sessions
 - ❌ Write credentials to any file
 - ❌ Include credentials in screenshots or reports
@@ -112,6 +121,7 @@ Read(".env.local")
 ### Step 2: Extract needed credentials
 
 **Example for HotelRunner Admin:**
+
 ```
 1. Read .env.local
 2. Find line starting with "HOTELRUNNER_ADMIN_EMAIL="
@@ -123,6 +133,7 @@ Read(".env.local")
 ### Step 3: Use in automation
 
 **With agent-browser:**
+
 ```bash
 # Navigate to login
 agent-browser open "$HOTELRUNNER_URL"
@@ -144,6 +155,7 @@ agent-browser click "button[type='submit']"
 **Both platforms send OTP via email on login**
 
 **Process:**
+
 1. Agent fills email/password
 2. Platform sends OTP to email
 3. **STOP** - Agent must request OTP from Omar
@@ -151,6 +163,7 @@ agent-browser click "button[type='submit']"
 5. Agent fills OTP and continues
 
 **Agent behavior:**
+
 ```
 1. Detect OTP input field
 2. Output: "OTP required. Check email: [email]"
@@ -163,12 +176,14 @@ agent-browser click "button[type='submit']"
 **May appear on login**
 
 **Process:**
+
 1. Agent detects reCAPTCHA
 2. **STOP** - Cannot be solved by AI
 3. Request Omar to solve manually
 4. Continue after solved
 
 **Agent behavior:**
+
 ```
 1. Check for reCAPTCHA iframe/challenge
 2. Output: "reCAPTCHA detected. Manual intervention required."
@@ -202,6 +217,7 @@ BOOKING_OWNER_PASSWORD=actual_password_here
 ### .env.example (Documentation only)
 
 **DO NOT use values from .env.example for real operations**
+
 - Contains example/placeholder values only
 - Serves as documentation and structure reference
 - Real credentials are ONLY in .env.local
@@ -241,6 +257,7 @@ BOOKING_OWNER_PASSWORD=actual_password_here
 ### Common Tasks
 
 **Task: Login to HotelRunner**
+
 ```bash
 1. Read .env.local
 2. Extract HOTELRUNNER_ADMIN_EMAIL and HOTELRUNNER_ADMIN_PASSWORD
@@ -252,6 +269,7 @@ BOOKING_OWNER_PASSWORD=actual_password_here
 ```
 
 **Task: Login to Booking.com**
+
 ```bash
 1. Read .env.local
 2. Extract BOOKING_ADMIN_EMAIL and BOOKING_ADMIN_PASSWORD
@@ -266,12 +284,12 @@ BOOKING_OWNER_PASSWORD=actual_password_here
 
 ## 📚 Related Documentation
 
-| Document | Purpose |
-|----------|---------|
-| [`.env.example`](../../.env.example) | Credential structure reference |
-| [`.env.local`](../../.env.local) | Actual credentials (read-only) |
-| [`STAKEHOLDERS.md`](../leadership/STAKEHOLDERS.md) | Account usage policy |
-| [`profiles/OMAR-EL-MOUNTASSIR.md`](../leadership/profiles/OMAR-EL-MOUNTASSIR.md) | Admin account ownership |
+| Document                                                                         | Purpose                        |
+| -------------------------------------------------------------------------------- | ------------------------------ |
+| [`.env.example`](../../.env.example)                                             | Credential structure reference |
+| [`.env.local`](../../.env.local)                                                 | Actual credentials (read-only) |
+| [`STAKEHOLDERS.md`](../leadership/STAKEHOLDERS.md)                               | Account usage policy           |
+| [`profiles/OMAR-EL-MOUNTASSIR.md`](../leadership/profiles/OMAR-EL-MOUNTASSIR.md) | Admin account ownership        |
 
 ---
 
@@ -304,6 +322,7 @@ A: You can't. `.env.example` values are placeholders only.
 **Last reviewed**: 2026-01-24
 
 **When to update:**
+
 - New platform added
 - Credentials rotated
 - Account structure changes
