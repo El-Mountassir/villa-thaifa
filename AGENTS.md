@@ -93,6 +93,77 @@ agent-browser close
 
 **Documentation**: Run `agent-browser --help` for full command reference
 
+### **HotelRunner API** - Property Management System
+
+**Status**: ⏳ Setup In Progress (Credentials Pending) - Jan 2026
+
+HotelRunner REST API (HR-v1) provides programmatic access to Villa Thaifa's property management system for automation.
+
+**API Details**:
+- **Base URL**: `https://am.hotelrunner.com/custom-apps/rest-api`
+- **Authentication**: TOKEN + HR_ID (header-based)
+- **Rate Limits**: 250 requests/day, 5 requests/minute
+- **Integration Type**: HR-v1 (REST API with JSON)
+
+**Key Capabilities**:
+- **Rooms**: Get room list, manage inventory
+- **Reservations**: Retrieve bookings, search by date/status
+- **Calendar**: Update rates and availability for specific dates
+- **Webhooks**: Real-time push notifications (confirmed, modified, cancelled)
+
+**Credentials** (`.env.local`):
+```bash
+HOTELRUNNER_TOKEN=<pending>     # API authentication token
+HOTELRUNNER_HR_ID=<pending>      # Hotel property ID
+```
+
+**Quick Example** (Python):
+```python
+import os
+import requests
+
+headers = {
+    'Authorization': f'Bearer {os.getenv("HOTELRUNNER_TOKEN")}',
+    'HR-ID': os.getenv('HOTELRUNNER_HR_ID')
+}
+
+# Get today's reservations
+response = requests.get(
+    'https://am.hotelrunner.com/custom-apps/rest-api/reservations',
+    headers=headers
+)
+```
+
+**App Configuration**:
+- **Name**: Villa Thaifa AI Automation
+- **Type**: PMS (Property Management System)
+- **Created**: 2026-01-24
+- **Permissions**: Full access (rooms, reservations, calendar, webhooks)
+
+**Best Practices**:
+- Cache room/rate data to minimize API calls
+- Monitor daily/minute rate limits carefully
+- Implement retry logic with exponential backoff
+- Never log or commit credentials
+
+**Documentation**:
+- **Setup Progress**: [`sources/hotelrunner-api/SETUP.md`](sources/hotelrunner-api/SETUP.md) - **Check this for current status**
+- **Usage Guide**: [`sources/hotelrunner-api/guide.md`](sources/hotelrunner-api/guide.md)
+- **Quick Reference**: [`sources/hotelrunner-api/README.md`](sources/hotelrunner-api/README.md)
+- **Official Docs**: https://developers.hotelrunner.com/custom-apps/rest-api
+
+**Current Progress** (as of 2026-01-24 13:30):
+- ✅ Research completed - API section located
+- ✅ Integration type selected (HR-v1)
+- ✅ App creation form filled
+- ✅ Source folder created with full documentation
+- ⏳ Awaiting app creation completion
+- ⏳ Credentials (TOKEN + HR_ID) pending
+- ❌ Connection test not yet performed
+- ❌ Source not yet enabled
+
+**Next Steps**: Complete app creation in dashboard, obtain credentials, test connection.
+
 ---
 
 _*Created during the "AI-First" Refactor - Jan 2026*_

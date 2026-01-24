@@ -55,6 +55,8 @@ docs/leadership/
 | **Do I need Omar's approval?** | [STAKEHOLDERS.md](./STAKEHOLDERS.md) → Decision Guide | 1 min |
 | **What accounts do I use?** | [STAKEHOLDERS.md](./STAKEHOLDERS.md) → Account Usage | 30 sec |
 | **Where are platform credentials?** | [../operations/CREDENTIALS.md](../operations/CREDENTIALS.md) | 5 min |
+| **How do I use HotelRunner API?** | [../../sources/hotelrunner-api/guide.md](../../sources/hotelrunner-api/guide.md) | 5 min |
+| **What's the API setup status?** | [../../sources/hotelrunner-api/SETUP.md](../../sources/hotelrunner-api/SETUP.md) | 2 min |
 
 ---
 
@@ -84,6 +86,11 @@ docs/leadership/
 1. [STAKEHOLDERS.md](./STAKEHOLDERS.md) → Account Usage + Approval Rules
 2. [../operations/CREDENTIALS.md](../operations/CREDENTIALS.md) → How to access credentials
 3. [profiles/OMAR-EL-MOUNTASSIR.md](./profiles/OMAR-EL-MOUNTASSIR.md) → Decision Authority
+
+**For HotelRunner API automation:**
+1. [../../sources/hotelrunner-api/SETUP.md](../../sources/hotelrunner-api/SETUP.md) → Current setup status
+2. [../../sources/hotelrunner-api/guide.md](../../sources/hotelrunner-api/guide.md) → API usage guide
+3. [../operations/CREDENTIALS.md](../operations/CREDENTIALS.md) → Credential access
 
 ### Strategic/Budget Decision
 
@@ -140,6 +147,14 @@ docs/leadership/
 |----------|---------|
 | [../architecture/](../architecture/) | System architecture |
 | [../project/standards/agents/](../project/standards/agents/) | Agent protocols |
+| [../operations/CREDENTIALS.md](../operations/CREDENTIALS.md) | Platform credentials guide |
+
+### Sources & Integrations
+
+| Document | Purpose | Status |
+|----------|---------|--------|
+| [../../sources/agent-browser/](../../sources/agent-browser/) | Browser automation CLI | ✅ Active |
+| [../../sources/hotelrunner-api/](../../sources/hotelrunner-api/) | HotelRunner REST API | ⏳ Setup in progress |
 
 ### Business Context
 
@@ -185,6 +200,7 @@ docs/leadership/
 **Last Updated**: 2026-01-24
 
 **Recent Changes**:
+- 2026-01-24 13:30: Added HotelRunner API source documentation and references
 - 2026-01-24: Created profiles/ directory, refactored STAKEHOLDERS.md to slim version
 - 2026-01-24: Created OMAR-EL-MOUNTASSIR.md detailed profile
 - 2026-01-24: Moved PROFILE.md → SAID-THAIFA.md

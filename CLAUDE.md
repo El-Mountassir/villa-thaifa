@@ -38,6 +38,17 @@
 
 **Capabilities**: Web scraping, form automation, screenshots, PDF export, data extraction, JavaScript execution.
 
+**HotelRunner API** - You have access to HotelRunner REST API for property management.
+
+- **Type**: REST API (HR-v1)
+- **Status**: ⏳ Setup in progress (credentials pending)
+- **Documentation**: [`sources/hotelrunner-api/guide.md`](sources/hotelrunner-api/guide.md)
+- **Setup Progress**: [`sources/hotelrunner-api/SETUP.md`](sources/hotelrunner-api/SETUP.md)
+- **Credentials**: `.env.local` (HOTELRUNNER_TOKEN, HOTELRUNNER_HR_ID)
+- **Rate Limits**: 250 requests/day, 5 requests/minute
+
+**Capabilities**: Manage rooms, retrieve reservations, update calendar (rates/availability), real-time booking webhooks.
+
 **See**: [`AGENTS.md`](AGENTS.md) for full capabilities list.
 
 ### Platform Credentials
