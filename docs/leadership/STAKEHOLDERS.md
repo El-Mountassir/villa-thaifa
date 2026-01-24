@@ -1,294 +1,192 @@
 # Stakeholders - Villa Thaifa Project
 
-> **Single Source of Truth** pour les parties prenantes du projet
+> **Quick Reference** pour les parties prenantes du projet
 > **Last Updated**: 2026-01-24
+> **Read Time**: < 2 minutes
 
 ---
 
-## 🎯 Vue d'Ensemble
+## 🎯 Project Overview
 
-**Nature du Projet**: Mission de transformation digitale et optimisation opérationnelle
-**Type**: Consulting / Workforce Agentic
-**Début**: Décembre 2025
-**Status**: Phase 1 - Stabilisation & Cleanup
+**Mission**: Digital transformation of Villa Thaifa from manual operations to optimized, automated systems
+**Type**: Consulting / AI-First Workforce
+**Timeline**: Dec 2025 → Ongoing
+**Phase**: 1 - Stabilization & Cleanup
 
 ---
 
-## 👥 Parties Prenantes
+## 👥 Stakeholders
 
 ### 1. Client - Said Thaifa
 
-**Rôle**: Propriétaire & Opérateur de Villa Thaifa
+**Role**: Owner & Operator of Villa Thaifa
 
-| Attribut | Valeur |
-|----------|--------|
-| **Nom complet** | Said Thaifa |
-| **Âge** | 78 ans |
-| **Email principal** | said_thaifa@hotmail.fr |
-| **Email secondaire** | saidthaifa@gmail.com |
-| **Téléphone/WhatsApp** | +212 661-134194 |
-| **Canal préféré** | WhatsApp |
+| Field | Value |
+|-------|-------|
+| **Contact** | said_thaifa@hotmail.fr / +212 661-134194 (WhatsApp ⭐) |
+| **Age** | 78 years |
+| **Property** | Villa Thaifa (12 rooms, 4★, Palmeraie Marrakech) |
+| **Platform Accounts** | HotelRunner, Booking.com (Owner access) |
 
-**Background Professionnel**:
-- Propriétaire et hôte de Villa Thaifa (avec son épouse Nezha)
-- CEO / Agent immobilier à Marrakech
-- Spécialités: Ventes, achats, locations saisonnières
-- Réputation: Accueil chaleureux exceptionnel (Staff noté 9.7/10 sur Booking.com)
+**Key Facts**:
+- 🏆 Booking.com rating: 9.3/10 ("Wonderful")
+- 🎯 Business: Fully manual, everything memorized
+- 💡 Goal: Reduce operational burden, optimize revenue
+- 🚨 **Communication**: ALWAYS use vouvoiement (formal French), WhatsApp preferred
 
-**Son Établissement**:
-- **Villa Thaifa**: Maison d'hôtes 4★ de charme
-- **Localisation**: Route de Fès, Km 12 - Palmeraie, Marrakech
-- **Capacité**: 12 chambres (8 types différents)
-- **Note Booking.com**: 9.3/10 (80 avis) - "Wonderful"
-- **Gamme tarifaire**: 160-600 €/nuit
+**⚠️ Critical Rule for Agents**: Scout → Rapport → Questions → Action
+(Never ask for info without first reporting what you've discovered)
 
-**Contexte Business**:
-- PMS actuel: Aucun - tout mémorisé
-- Channel Manager: HotelRunner (actif depuis déc 2025)
-- OTAs: Booking.com (25% commission), Airbnb & Expedia en attente
-- Situation: "En a marre de gérer" - envisage vente ou location
-
-**Douleurs Principales**:
-1. Gestion 100% manuelle
-2. Dépendance totale à Booking.com
-3. Commission élevée (25% vs 15% standard)
-4. Difficulté recrutement staff qualifié
-5. Fatigue opérationnelle (78 ans)
-
-**Protocole de Communication** ⚠️ IMPORTANT:
-- ✅ **Vouvoiement obligatoire** - Ton formel mais chaleureux
-- ✅ **Canal**: WhatsApp préféré
-- ✅ **Pattern**: Scout → Rapport → Questions → Action
-- ❌ **RÈGLE**: Ne JAMAIS demander des infos sans d'abord faire un rapport de ce qui a été découvert
-
-**Comptes Plateformes (Owner)**:
-- HotelRunner: said_thaifa@hotmail.fr
-- Booking.com: said_thaifa@hotmail.fr
-
-**Profil Détaillé**: [`legacy/archive_v1/admin/client/PROFILE.md`](../../legacy/archive_v1/admin/client/PROFILE.md)
+**📄 Detailed Profile**: [`profiles/SAID-THAIFA.md`](./profiles/SAID-THAIFA.md)
 
 ---
 
 ### 2. Consultant - Omar El Mountassir
 
-**Rôle**: CEO & Leader du Projet de Transformation Digitale
+**Role**: CEO & Project Leader
 
-| Attribut | Valeur |
-|----------|--------|
-| **Nom complet** | Omar El Mountassir |
-| **Email** | omar@el-mountassir.com |
-| **Rôle projet** | CEO, Stratège Digital, Chef d'Orchestre |
+| Field | Value |
+|-------|-------|
+| **Contact** | omar@el-mountassir.com |
+| **Responsibilities** | Strategy, team leadership, client relations, final approvals |
+| **Team** | 17 AI agents + Claude (CTO) |
+| **Platform Accounts** | HotelRunner, Booking.com (Admin access) |
 
-**Responsabilités**:
-1. **Vision & Stratégie**: Direction du projet de transformation digitale
-2. **Leadership d'Équipe**: Management de 17 agents IA spécialisés
-3. **Relation Client**: Interface avec Said Thaifa, validation décisions
-4. **Décisions Finales**: Approbation budget, timeline, priorités
-5. **Supervision**: Contrôle qualité, validation opérations plateformes
+**Key Facts**:
+- 🎯 Philosophy: "AI-First" - Agents are co-workers, not tools
+- 🔐 Manages admin accounts for security & traceability
+- ✅ Must approve all critical operations (pricing, platforms, client comm)
+- 📊 Data-driven, systematic, documented decision-making
 
-**Approche**:
-- **Philosophie**: "AI-First" - Les agents IA sont des co-workers autonomes, pas des outils
-- **Méthodologie**: Scout → Rapport → Questions → Action (avec Said)
-- **Structure**: Workforce agentic avec 17 agents spécialisés sous sa direction
-
-**Comptes Plateformes (Admin)**:
-- HotelRunner: omar@el-mountassir.com
-- Booking.com: omar@el-mountassir.com
-
-**Note**: Omar gère les comptes admin pour sécurité et traçabilité, mais les comptes owner restent à Said Thaifa.
+**📄 Detailed Profile**: [`profiles/OMAR-EL-MOUNTASSIR.md`](./profiles/OMAR-EL-MOUNTASSIR.md)
 
 ---
 
-### 3. Équipe Technique - Agents IA
+### 3. Technical Team - AI Agents
 
-**CTO/Architecte**: Claude (instances successives via Craft Agent)
+**CTO/Architect**: Claude (successive instances)
+**Workforce**: 17 specialized AI agents
 
-**Effectif**: 17 agents IA spécialisés
+| Category | Count | Function |
+|----------|-------|----------|
+| Operations | 4 | Pricing, reservations, calendar, sync |
+| Technical | 4 | Validation, browser, security, audits |
+| Meta | 7 | Research, reporting, documentation |
+| Hospitality | 2 | Guest communication, translation |
 
-| Catégorie | Agents | Fonction |
-|-----------|--------|----------|
-| **Operations** (4) | pricing-analyst, reservation-manager, calendar-agent, data-sync-checker | Gestion quotidienne villa |
-| **Technical** (4) | platform-validator, browser-agent, security-auditor, smart-contract-auditor | Infrastructure & sécurité |
-| **Meta** (7) | meta-agent, research-agent, auditor, incident-reporter, html-report-generator, claude-md-agent, decision-evaluator | Support & amélioration continue |
-| **Hospitality** (2) | guest-communicator, translation-agent | Relation clients guests |
-
-**Documentation Équipe**: [`docs/leadership/TEAM.md`](./TEAM.md)
+**📄 Team Structure**: [`TEAM.md`](./TEAM.md)
 
 ---
 
-## 🔗 Relation Client-Consultant
-
-### Structure Hiérarchique
+## 🔗 Relationship Structure
 
 ```
 Said Thaifa (Client/Owner)
-    ↓ [Mandate pour transformation digitale]
+    ↓ Mandate
 Omar El Mountassir (Consultant/CEO)
-    ↓ [Direction & supervision]
-Claude (CTO/Architecte)
-    ↓ [Management technique]
-17 Agents IA Spécialisés
+    ↓ Leadership
+Claude (CTO/Architect)
+    ↓ Management
+17 AI Agents (Specialized Workforce)
 ```
 
-### Flux de Décision
+---
 
-**Décisions Stratégiques** (Budget, Vision, Vente/Location):
-1. Omar analyse & recommande
-2. Said Thaifa décide
-3. Omar exécute via équipe IA
+## ⚡ Decision Hierarchy
 
-**Décisions Opérationnelles** (Pricing, Setup, OTAs):
-1. Agents IA analysent & proposent
-2. Omar valide
-3. Said Thaifa informé (rapport)
-4. Exécution
-
-**Décisions Techniques** (Architecture, Stack):
-1. Claude (CTO) propose
-2. Omar valide
-3. Exécution autonome
-
-### Responsabilités Partagées
-
-| Domaine | Said | Omar | Agents IA |
-|---------|------|------|-----------|
-| **Vision long terme** | Décide | Conseille | Analyse |
-| **Budget** | Approuve | Propose | Calcule |
-| **Pricing strategy** | Valide | Valide | Recommande |
-| **Operations quotidiennes** | Informe | Supervise | Exécute |
-| **Relations guests** | Gère (direct) | Supporte | Assiste (comm) |
-| **Plateformes tech** | Owner | Admin | Automatise |
-| **Décisions plateformes** | Informé | Valide | Prépare |
+| Type | Process |
+|------|---------|
+| **Strategic** (Vision, Budget, Exit) | Omar recommends → Said decides → Omar executes |
+| **Operational** (Pricing, OTAs, Setup) | Agents analyze → Claude validates → Omar approves → Execute |
+| **Technical** (Architecture, Tools) | Claude proposes → Omar validates → Execute |
 
 ---
 
-## 📋 Objectifs du Projet
+## 🚨 Critical Rules for AI Agents
 
-### Objectifs Client (Said Thaifa)
+### Platform Operations
 
-**Court Terme** (Q1 2026):
-- ✅ Réduire charge mentale (tout dans la tête → systématisé)
-- ✅ Diversifier sources réservations (Airbnb, Expedia)
-- ✅ Optimiser revenue (pricing dynamique)
-- ✅ Réduire commission OTAs (25% → 20%)
+**ALWAYS** get Omar approval before:
+- ❗ Modifying pricing, availability, or reservations
+- ❗ Communicating with Said Thaifa
+- ❗ Making budget or timeline decisions
+- ❗ Executing platform changes
 
-**Moyen Terme** (2026):
-- ✅ PMS adapté en place
-- ✅ 10% réservations directes
-- ✅ Staff qualifié stable
-- ✅ Taux occupation 70%+
+### Account Usage
 
-**Long Terme** (Vision):
-- Option A: Délégation complète (location à société)
-- Option B: Vente sans intermédiaire
-- Option C: Optimisation continue avec support tech
+- ✅ **USE**: Omar's admin accounts (omar@el-mountassir.com)
+- ❌ **NEVER USE**: Said's owner accounts (unless explicit Omar approval)
 
-### Objectifs Consultant (Omar)
+### Communication with Said
 
-**Livrables**:
-- ✅ Transformation digitale complète
-- ✅ Stack technique optimisé
-- ✅ Processus automatisés
-- ✅ Formation équipe (si applicable)
-- ✅ Documentation exhaustive
+**Required Protocol**:
+1. ✅ Vouvoiement obligatoire (formal "vous")
+2. ✅ WhatsApp preferred channel
+3. ✅ Scout → Rapport → Questions → Action
+4. ❌ NEVER ask questions without reporting findings first
 
-**KPIs**:
-- Réduction charge opérationnelle: -50%
-- Augmentation revenue: +20%
-- Satisfaction client: Maintenir 9.3/10
-- ROI transformation: Positif sous 6 mois
+### Emergency Protocol
+
+If critical issue (platform bug, lost reservation, pricing error):
+1. **STOP** all operations
+2. **DOCUMENT** incident immediately
+3. **NOTIFY** Omar
+4. **WAIT** for instructions
 
 ---
 
-## 🚨 Règles Critiques pour Agents IA
+## 📋 Quick Decision Guide for Agents
 
-### 1. Communication avec Said Thaifa
+**Can Proceed Autonomously**:
+- ✅ Research & analysis
+- ✅ Documentation updates
+- ✅ Non-critical bug fixes
+- ✅ Internal reports
 
-**TOUJOURS**:
-- ✅ Vouvoiement obligatoire
-- ✅ Ton respectueux mais chaleureux
-- ✅ Rapporter avant de questionner
-- ✅ Passer par Omar pour validation
-
-**JAMAIS**:
-- ❌ Tutoiement
-- ❌ Questions sans contexte
-- ❌ Décisions sans validation Omar
-- ❌ Modifications plateformes sans double confirmation
-
-### 2. Hiérarchie de Validation
-
-**Opérations Critiques** (Prix, Réservations, Plateformes):
-1. Agent prépare → 2. Claude valide → 3. Omar approuve → 4. (Si besoin) Said informé → 5. Exécution
-
-**Opérations Standard** (Rapports, Analyse):
-1. Agent exécute → 2. Claude supervise → 3. Omar notifié
-
-**Recherche & Investigation**:
-1. Agent autonome → 2. Rapport à Omar
-
-### 3. Accès aux Comptes
-
-**Comptes Owner** (said_thaifa@hotmail.fr):
-- ❌ **NE JAMAIS UTILISER** sauf instruction explicite Omar
-- Usage: Validation initiale, accès ultime uniquement
-
-**Comptes Admin** (omar@el-mountassir.com):
-- ✅ **UTILISER PAR DÉFAUT** pour toutes opérations
-- Usage: Gestion quotidienne, modifications, setup
-
-### 4. Protocole d'Urgence
-
-Si problème critique (bug plateforme, réservation perdue, erreur pricing):
-1. **STOP** toute opération
-2. **DOCUMENTER** incident (incident-reporter)
-3. **NOTIFIER** Omar immédiatement
-4. **ATTENDRE** instruction avant de continuer
+**Must Get Omar Approval**:
+- ❗ All platform operations
+- ❗ Client communications
+- ❗ Financial decisions
+- ❗ Timeline changes
 
 ---
 
-## 📂 Documentation de Référence
+## 📚 Documentation Map
 
-### Profils Détaillés
-
-| Document | Sujet | Localisation |
-|----------|-------|--------------|
-| Client Profile | Said Thaifa | [`legacy/archive_v1/admin/client/PROFILE.md`](../../legacy/archive_v1/admin/client/PROFILE.md) |
-| Team Structure | Agents IA | [`docs/leadership/TEAM.md`](./TEAM.md) |
-| Communication Protocol | Règles comm client | [`docs/project/standards/agents/collaboration_protocol.md`](../project/standards/agents/collaboration_protocol.md) |
-
-### Contexte Opérationnel
-
-| Document | Sujet |
-|----------|-------|
-| [`ROADMAP.md`](../../ROADMAP.md) | Plan projet & milestones |
-| [`tasks/active.md`](../../tasks/active.md) | Tâches en cours |
-| [`data/specs/hotel/rooms.md`](../../data/specs/hotel/rooms.md) | Chambres & pricing |
-| [`docs/testing/FINAL-REPORT-2026-01-16.md`](../testing/FINAL-REPORT-2026-01-16.md) | État actuel détaillé |
+| Need | Document |
+|------|----------|
+| **Who is Said?** | [`profiles/SAID-THAIFA.md`](./profiles/SAID-THAIFA.md) (detailed profile) |
+| **Who is Omar?** | [`profiles/OMAR-EL-MOUNTASSIR.md`](./profiles/OMAR-EL-MOUNTASSIR.md) (detailed profile) |
+| **Team structure?** | [`TEAM.md`](./TEAM.md) (17 AI agents) |
+| **What to do?** | [`../../ROADMAP.md`](../../ROADMAP.md) (project plan) |
+| **Current tasks?** | [`../../tasks/active.md`](../../tasks/active.md) (active work) |
+| **How to work?** | [`../project/standards/agents/`](../project/standards/agents/) (protocols) |
+| **Navigate docs?** | [`INDEX.md`](./INDEX.md) (documentation index) |
 
 ---
 
-## 🎯 Pour les Agents IA: Quick Reference
+## ✅ Before Starting Any Task
 
-**Avant toute action, TOUJOURS se poser ces questions**:
+**Checklist for AI Agents**:
 
-1. ✅ Est-ce que j'ai lu ce document (STAKEHOLDERS.md) ?
-2. ✅ Est-ce que je connais mon rôle dans la hiérarchie ?
-3. ✅ Est-ce que cette action nécessite validation Omar ?
-4. ✅ Est-ce que je respecte le protocole de communication avec Said ?
-5. ✅ Est-ce que j'utilise le bon compte (admin vs owner) ?
-6. ✅ Est-ce que j'ai documenté mon travail pour handover ?
+1. ☐ Read this document (STAKEHOLDERS.md)?
+2. ☐ Understand my role in the hierarchy?
+3. ☐ Know if I need Omar approval?
+4. ☐ Using correct accounts (admin vs owner)?
+5. ☐ Respecting communication protocol with Said?
+6. ☐ Ready to document my work?
 
-**Si une seule réponse est NON → STOP et consulter documentation**
-
----
-
-## 📞 Contact d'Urgence
-
-**Omar El Mountassir**: omar@el-mountassir.com
-**Said Thaifa**: +212 661-134194 (WhatsApp) / said_thaifa@hotmail.fr
+**If ANY answer is NO → STOP and read the relevant documentation**
 
 ---
 
-_Document créé le 2026-01-24 - Source unique de vérité pour stakeholders_
-_Toute modification doit être validée par Omar El Mountassir_
+## 📞 Emergency Contacts
+
+- **Omar El Mountassir**: omar@el-mountassir.com
+- **Said Thaifa**: +212 661-134194 (WhatsApp) / said_thaifa@hotmail.fr
+
+---
+
+_Single Source of Truth for stakeholder relationships_
+_For detailed profiles, see [`profiles/`](./profiles/) directory_
+_Last updated: 2026-01-24 by Omar El Mountassir_

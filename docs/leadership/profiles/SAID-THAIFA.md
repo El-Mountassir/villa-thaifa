@@ -1,10 +1,21 @@
-# Client Profile — Villa Thaifa
+# Said Thaifa - Client Profile (Detailed)
 
-> **Status:** Lead (RDV planifié)
-> **Priority:** HIGH
-> **Next:** RDV découverte — Lundi 22 décembre 2025, 10h (Done)
-> **Created:** 2025-12-19
-> **Last Updated:** 2025-12-20
+> **Quick Reference**: See [../STAKEHOLDERS.md](../STAKEHOLDERS.md) for overview
+> **Related**: [OMAR-EL-MOUNTASSIR.md](./OMAR-EL-MOUNTASSIR.md) (Consultant profile)
+> **Last Updated**: 2026-01-24 (Refactored from legacy/archive_v1/admin/client/PROFILE.md)
+
+---
+
+## Document Status
+
+| Field | Value |
+|-------|-------|
+| **Client Status** | Active - Digital Transformation Project |
+| **Project Phase** | Phase 1 - Stabilization & Cleanup |
+| **Priority** | HIGH |
+| **Created** | 2025-12-19 |
+| **Last Major Update** | 2025-12-20 |
+| **Refactored** | 2026-01-24 |
 
 ---
 
@@ -441,5 +452,14 @@ _Base: 12 chambres × 365 jours × prix moyen ~200€_
 
 ---
 
-_Profil réorganisé — Structure 12 sections — 2025-12-20_
-_Pipeline: `archive/2025/Q4/reports/profile-reorganization/`_
+## See Also
+
+- [../STAKEHOLDERS.md](../STAKEHOLDERS.md) - Quick reference for all stakeholders
+- [OMAR-EL-MOUNTASSIR.md](./OMAR-EL-MOUNTASSIR.md) - Consultant profile
+- [../INDEX.md](../INDEX.md) - Documentation navigation guide
+
+---
+
+_Detailed client profile - Part of docs/leadership/profiles/_
+_Original: legacy/archive_v1/admin/client/PROFILE.md (2025-12-20)_
+_Refactored: 2026-01-24 - Moved to new structure, cross-references added_
