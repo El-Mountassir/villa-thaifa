@@ -1,35 +1,70 @@
 # Guide de Reprise - Après Migration Pop!_OS 24.04 LTS
 
-> **Date**: 2026-01-24 14:45
-> **Context**: Migration système en cours
-> **Objectif**: Reprendre travail sans perte d'information
+> **Date création**: 2026-01-24 14:45
+> **Dernière mise à jour**: 2026-01-24 18:54
+> **Context**: Migration Pop!_OS 24.04 LTS complétée
+> **Objectif**: État complet pour reprise travail
 
 ---
 
-## ✅ État Sauvegardé - Session HotelRunner
+## ✅ État Sauvegardé - Session Complète
 
 ### Travail Complété Aujourd'hui
 
-**Durée session** : ~4.5 heures (13:24 - 14:45)
-**Commits** : 17
-**Documentation** : ~3500 lignes
+**Durée totale** : ~7 heures (13:24 - 18:54)
+**Commits** : **26 commits** (sauvegardés sur `wip/pre-migration-20260124`)
+**Documentation** : ~4000+ lignes
 
-### Résumé
+### Résumé Travail Pré-Migration (13:24 - 14:56)
 
 1. ✅ **Intégration HotelRunner analysée** (6 options)
 2. ✅ **Browser automation testée** (96 réservations extraites)
 3. ✅ **Limitation découverte** (profile persistence ne fonctionne pas)
 4. ✅ **Documentation exhaustive** créée
 5. ✅ **Agents futurs informés** (AGENTS.md, CLAUDE.md)
+6. ✅ **Configuration workspace** sauvegardée (21 commits)
+
+### Résumé Travail Pendant Migration (14:56 - 18:54)
+
+7. ✅ **Mission Said stop-sell complétée** (Mars 8-12 bloqué à 17:38)
+8. ✅ **Structure data/ créée** (inventory.yaml, communication WhatsApp)
+9. ✅ **Pricing 2026 consolidé** (rooms.json mis à jour)
+10. ✅ **Nouvelle mission** documentée (extend-pricing-2026)
+11. ✅ **Documentation mise à jour** (CLAUDE.md, SAID-THAIFA.md)
+12. ✅ **Tout sauvegardé** (26 commits sur wip branch)
 
 ### Statut Final
 
-**Solution opérationnelle** : Extraction manuelle HotelRunner (5-10 min/jour)
-**Automatisation complète** : Bloquée par limitation profile (en investigation)
+**HotelRunner** : Extraction manuelle opérationnelle (5-10 min/jour)
+**Mission urgente** : ✅ Stop-sell Mars 8-12 COMPLÉTÉE
+**Prochaine mission** : Extension pricing 2026 (à exécuter)
+**Infrastructure** : Data layer centralisée (inventory.yaml SSOT)
 
 ---
 
 ## 📁 Fichiers Créés (À Conserver)
+
+### 🆕 Nouveaux Fichiers (Pendant Migration)
+
+**Data Layer** : `/data/`
+
+| Fichier | Description | Critique |
+|---------|-------------|----------|
+| **data/core/inventory.yaml** | **SSOT - 12 chambres + pricing validé** | ⭐⭐⭐ |
+| data/communication/whatsapp/2026-01-24-stop-sell-confirmation-dutch.md | Template confirmation pour Said | ⭐⭐ |
+
+**Missions** : `/tasks/`
+
+| Fichier | Description | Statut |
+|---------|-------------|--------|
+| tasks/2026-01-24-stop-sell-mars.md | Stop-sell Mars 8-12 | ✅ COMPLÉTÉ |
+| tasks/2026-01-24-extend-pricing-2026.md | Extension tarifs 2026 | 📋 À FAIRE |
+
+**Archive** : `/archive/legacy_structure/`
+
+| Fichier | Description |
+|---------|-------------|
+| rooms_deprecated_20260124.md | Ancien fichier rooms.md (remplacé par inventory.yaml) |
 
 ### Documentation HotelRunner
 
@@ -71,79 +106,103 @@
 ### Branch
 
 ```bash
-Branch: develop
-Ahead of origin: 17 commits
+Branch: wip/pre-migration-20260124
+Status: ✅ Pushed to GitHub
+Commits: 26 commits (sauvegardés)
 ```
 
-### Derniers Commits
+### Derniers Commits (10 derniers)
 
 ```bash
+af83242 - docs: update identity and Said's profile
+22bb8dd - docs: add mission to extend 2026 pricing through year-end
+875c4a8 - feat: complete Said's stop-sell mission for March 8-12
+fceb9c0 - refactor: update room pricing to 2026 validated rates
+1977a25 - feat: add centralized data structure with master inventory
+5ca4b84 - feat: add Craft Agent workspace configuration
+1fbdf3d - chore: add Craft Agent files to gitignore
+766f049 - style: fix markdown table formatting in leadership docs
+240ee27 - docs: add migration preparation and Said's stop-sell mission
 4c70e57 - docs: update agent documentation with profile persistence limitation
-70420b4 - docs: add final status document for HotelRunner integration
-080881f - test: document agent-browser profile persistence limitation
-0c2b5e2 - docs: add comprehensive session summary for 2026-01-24
-3a690dc - feat: production-ready HotelRunner data extraction via browser automation
-da279f3 - test: successful HotelRunner browser automation POC
-5d05c9d - docs: add HotelRunner integration decision brief for Omar
-...
 ```
 
-**Total** : 17 commits à pousser vers GitHub
+**Total** : **26 commits** sauvegardés sur GitHub (`wip/pre-migration-20260124`)
 
 ---
 
-## 🎯 Mission en Cours
+## 🎯 Missions Said
 
-### Nouvelle Demande de Said (2026-01-24 14:45)
+### ✅ Mission 1 : Stop-Sell Mars 8-12 (COMPLÉTÉE)
 
 **Demande** : "Bloquer / Stop sell du 8 au 12 mars toute la villa"
 
-**Fichier créé** : [`tasks/2026-01-24-stop-sell-mars.md`](../tasks/2026-01-24-stop-sell-mars.md)
+**Fichier** : [`tasks/2026-01-24-stop-sell-mars.md`](../tasks/2026-01-24-stop-sell-mars.md)
 
-**Action recommandée** : Dashboard manuel HotelRunner (5 min)
+**Statut** : ✅ **COMPLÉTÉ le 2026-01-24 à 17:38**
+- Méthode : Browser automation (Daily Calendar manual updates)
+- Résultat : Toute la villa bloquée (Availability 0 + Stop Sell Oui)
+- Screenshot : `calendar_confirmed_march_stop_sell_1769273168872.png`
+- Said informé : Oui (via Antigravity en Dutch)
 
-**Statut** : 📋 À faire après migration
+### 📋 Mission 2 : Extension Pricing 2026 (À FAIRE)
+
+**Demande** : Étendre grille tarifaire 2026-01-13 jusqu'à fin d'année
+
+**Fichier** : [`tasks/2026-01-24-extend-pricing-2026.md`](../tasks/2026-01-24-extend-pricing-2026.md)
+
+**Statut** : 📋 **À EXÉCUTER**
+- Période cible : 11 février - 31 décembre 2026
+- Méthode : HotelRunner Bulk Update
+- Pricing : Grille validée dans `data/core/inventory.yaml`
 
 ---
 
-## 📋 Actions Après Migration
+## 📋 Checklist Post-Migration
 
-### 1. Vérifier Environnement (5 min)
+### ✅ Déjà Complété Pendant Migration
+
+- [x] Mission Said stop-sell (Mars 8-12) - **COMPLÉTÉ 17:38**
+- [x] Structure data/ créée avec inventory.yaml
+- [x] Pricing 2026 consolidé dans rooms.json
+- [x] Documentation mise à jour (CLAUDE.md, SAID-THAIFA.md)
+- [x] 26 commits sauvegardés sur wip/pre-migration-20260124
+- [x] Confirmation WhatsApp Dutch préparée pour Said
+
+### 📋 Prochaines Actions
+
+#### 1️⃣ PRIORITÉ : Vérifier Système Après Migration (5 min)
 
 ```bash
 # Naviguer vers projet
 cd /home/omar/omar-el-mountassir/projects/clients/villa-thaifa
 
-# Vérifier git
+# Vérifier git status
 git status
-git log --oneline -5
+git log --oneline -10
+
+# Vérifier branch wip existe
+git branch -a | grep wip
 
 # Vérifier agent-browser installé
 agent-browser --version
 
-# Vérifier Python
-python3 --version
+# Vérifier credentials
+cat .env.local | grep HOTELRUNNER
 ```
 
-### 2. Pousser Commits vers GitHub (2 min)
+#### 2️⃣ NORMAL : Exécuter Mission Extend Pricing (15-20 min)
 
-```bash
-cd /home/omar/omar-el-mountassir/projects/clients/villa-thaifa
+**Fichier** : [`tasks/2026-01-24-extend-pricing-2026.md`](../tasks/2026-01-24-extend-pricing-2026.md)
 
-# Vérifier branch
-git branch
+**Actions** :
+1. Lire le fichier mission
+2. Se connecter à HotelRunner
+3. Utiliser Bulk Update pour appliquer tarifs
+4. Période : 11 février - 31 décembre 2026
+5. Screenshot confirmation
+6. Mettre à jour fichier mission
 
-# Pousser vers origin
-git push origin develop
-```
-
-### 3. Lire Documentation de Reprise (5 min)
-
-**Lire en priorité** :
-1. [STATUS-FINAL.md](../sources/hotelrunner-api/STATUS-FINAL.md) - État HotelRunner
-2. [tasks/2026-01-24-stop-sell-mars.md](../tasks/2026-01-24-stop-sell-mars.md) - Mission Said
-
-### 4. Exécuter Mission Said (5-10 min)
+#### 3️⃣ OPTIONNEL : Test Extraction HotelRunner (10 min)
 
 **Suivre** : [`tasks/2026-01-24-stop-sell-mars.md`](../tasks/2026-01-24-stop-sell-mars.md)
 
