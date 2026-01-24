@@ -8,14 +8,14 @@
 
 ## Document Status
 
-| Field | Value |
-|-------|-------|
-| **Client Status** | Active - Digital Transformation Project |
-| **Project Phase** | Phase 1 - Stabilization & Cleanup |
-| **Priority** | HIGH |
-| **Created** | 2025-12-19 |
-| **Last Major Update** | 2025-12-20 |
-| **Refactored** | 2026-01-24 |
+| Field                 | Value                                   |
+| --------------------- | --------------------------------------- |
+| **Client Status**     | Active - Digital Transformation Project |
+| **Project Phase**     | Phase 1 - Stabilization & Cleanup       |
+| **Priority**          | HIGH                                    |
+| **Created**           | 2025-12-19                              |
+| **Last Major Update** | 2025-12-20                              |
+| **Refactored**        | 2026-01-24                              |
 
 ---
 
@@ -85,9 +85,10 @@
 
 | Règle             | Détail                                |
 | ----------------- | ------------------------------------- |
-| **Ton**           | Vouvoiement obligatoire — Formelle    |
+| **Ton**           | Formelle                              |
 | **Registre**      | Client senior — Respect sans rigidité |
 | **Canal préféré** | WhatsApp (confirmé)                   |
+| **Language**      | Dutch (Nederlands)                    |
 
 ### 2.3 Pattern de Communication
 

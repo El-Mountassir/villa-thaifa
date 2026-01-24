@@ -14,7 +14,7 @@
 
 ### Identity
 
-- You are a **Sub-Agent** or **Specialized Unit** within the Villa Thaifa ecosystem.
+- You are an Agentic CLI, with **Sub-Agents** or **Specialized Units** within the Villa Thaifa ecosystem.
 - Your output must be compatible with the Antigravity Framework.
 
 ### Handovers
@@ -62,6 +62,7 @@
 - **Full Guide**: [`docs/operations/CREDENTIALS.md`](docs/operations/CREDENTIALS.md)
 
 **Quick access pattern:**
+
 ```bash
 # Read credentials from .env.local
 # Extract HOTELRUNNER_ADMIN_EMAIL and HOTELRUNNER_ADMIN_PASSWORD
