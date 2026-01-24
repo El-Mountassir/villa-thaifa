@@ -40,6 +40,23 @@
 
 **See**: [`AGENTS.md`](AGENTS.md) for full capabilities list.
 
+### Platform Credentials
+
+**For HotelRunner, Booking.com, and other platforms:**
+
+- **Location**: `.env.local` (project root)
+- **Access**: Read file at runtime, extract needed credentials
+- **Default**: Use ADMIN (Omar) accounts, not OWNER (Said) accounts
+- **Security**: Never log or output credentials
+- **Full Guide**: [`docs/operations/CREDENTIALS.md`](docs/operations/CREDENTIALS.md)
+
+**Quick access pattern:**
+```bash
+# Read credentials from .env.local
+# Extract HOTELRUNNER_ADMIN_EMAIL and HOTELRUNNER_ADMIN_PASSWORD
+# Use with agent-browser or API calls
+```
+
 ---
 
 _For all other contexts (Vision, Architecture, Roadmap), refer to `AGENTS.md`._

@@ -54,6 +54,7 @@ docs/leadership/
 | **How do I communicate with Said?** | [STAKEHOLDERS.md](./STAKEHOLDERS.md) → Communication Protocol | 1 min |
 | **Do I need Omar's approval?** | [STAKEHOLDERS.md](./STAKEHOLDERS.md) → Decision Guide | 1 min |
 | **What accounts do I use?** | [STAKEHOLDERS.md](./STAKEHOLDERS.md) → Account Usage | 30 sec |
+| **Where are platform credentials?** | [../operations/CREDENTIALS.md](../operations/CREDENTIALS.md) | 5 min |
 
 ---
 
@@ -81,7 +82,8 @@ docs/leadership/
 
 **Must read:**
 1. [STAKEHOLDERS.md](./STAKEHOLDERS.md) → Account Usage + Approval Rules
-2. [profiles/OMAR-EL-MOUNTASSIR.md](./profiles/OMAR-EL-MOUNTASSIR.md) → Decision Authority
+2. [../operations/CREDENTIALS.md](../operations/CREDENTIALS.md) → How to access credentials
+3. [profiles/OMAR-EL-MOUNTASSIR.md](./profiles/OMAR-EL-MOUNTASSIR.md) → Decision Authority
 
 ### Strategic/Budget Decision
 

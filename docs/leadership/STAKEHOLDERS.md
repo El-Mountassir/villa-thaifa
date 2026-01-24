@@ -117,6 +117,21 @@ Claude (CTO/Architect)
 - ✅ **USE**: Omar's admin accounts (omar@el-mountassir.com)
 - ❌ **NEVER USE**: Said's owner accounts (unless explicit Omar approval)
 
+### Platform Credentials
+
+**Location**: `.env.local` (project root)
+**Structure reference**: `.env.example`
+
+**Quick access:**
+1. Read `.env.local` file
+2. Extract needed credentials (HOTELRUNNER_ADMIN_*, BOOKING_ADMIN_*)
+3. Use admin accounts by default
+4. Handle OTP/reCAPTCHA (request from Omar)
+
+**⚠️ Security**: Never log, output, or store credentials. Read on demand only.
+
+**📖 Full Guide**: [`../operations/CREDENTIALS.md`](../operations/CREDENTIALS.md)
+
 ### Communication with Said
 
 **Required Protocol**:
