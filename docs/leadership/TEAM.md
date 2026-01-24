@@ -18,49 +18,49 @@ Ils travaillent de manière **autonome** avec supervision humaine.
 
 ### Leadership
 
-| Rôle | Qui | Responsabilités |
-|------|-----|-----------------|
-| **CEO & Leader** | Omar El Mountassir | Vision, stratégie, décisions finales |
-| **CTO/Architecte** | Claude | Architecture technique, systèmes agents, décisions techniques |
+| Rôle               | Qui                | Responsabilités                                               |
+| ------------------ | ------------------ | ------------------------------------------------------------- |
+| **CEO & Leader**   | Omar El Mountassir | Vision, stratégie, décisions finales                          |
+| **CTO/Architecte** | Claude             | Architecture technique, systèmes agents, décisions techniques |
 
 ### Agents IA (17 co-workers)
 
 #### Operations (4 agents)
 
-| Agent | Modèle | Spécialité |
-|-------|--------|------------|
-| **pricing-analyst** | Opus | Stratégie pricing, revenus |
-| **reservation-manager** | Sonnet | Gestion réservations |
-| **calendar-agent** | Sonnet | Disponibilités, occupancy |
-| **data-sync-checker** | Sonnet | Validation sync plateformes |
+| Agent                   | Modèle | Spécialité                  |
+| ----------------------- | ------ | --------------------------- |
+| **pricing-analyst**     | Opus   | Stratégie pricing, revenus  |
+| **reservation-manager** | Sonnet | Gestion réservations        |
+| **calendar-agent**      | Sonnet | Disponibilités, occupancy   |
+| **data-sync-checker**   | Sonnet | Validation sync plateformes |
 
 #### Technical (4 agents)
 
-| Agent | Modèle | Spécialité |
-|-------|--------|------------|
-| **platform-validator** | Sonnet | Validation avant opérations plateforme |
-| **browser-agent** | Sonnet | Automatisation Chrome, scraping |
-| **security-auditor** | Opus | Sécurité, OWASP |
-| **smart-contract-auditor** | Opus | Audit smart contracts (si besoin) |
+| Agent                      | Modèle | Spécialité                             |
+| -------------------------- | ------ | -------------------------------------- |
+| **platform-validator**     | Sonnet | Validation avant opérations plateforme |
+| **browser-agent**          | Sonnet | Automatisation Chrome, scraping        |
+| **security-auditor**       | Opus   | Sécurité, OWASP                        |
+| **smart-contract-auditor** | Opus   | Audit smart contracts (si besoin)      |
 
 #### Meta (7 agents)
 
-| Agent | Modèle | Spécialité |
-|-------|--------|------------|
-| **meta-agent** | Opus | Création de nouveaux agents |
-| **research-agent** | Haiku | Recherche web (low criticality) |
-| **auditor** | Sonnet | Audit brutal excellence |
-| **incident-reporter** | Haiku | Documentation incidents |
-| **html-report-generator** | Opus | Rapports HTML |
-| **claude-md-agent** | Opus | Maintenance CLAUDE.md |
-| **decision-evaluator** | Opus | Analyse multi-critères |
+| Agent                     | Modèle | Spécialité                      |
+| ------------------------- | ------ | ------------------------------- |
+| **meta-agent**            | Opus   | Création de nouveaux agents     |
+| **research-agent**        | Haiku  | Recherche web (low criticality) |
+| **auditor**               | Sonnet | Audit brutal excellence         |
+| **incident-reporter**     | Haiku  | Documentation incidents         |
+| **html-report-generator** | Opus   | Rapports HTML                   |
+| **claude-md-agent**       | Opus   | Maintenance CLAUDE.md           |
+| **decision-evaluator**    | Opus   | Analyse multi-critères          |
 
 #### Hospitality (2 agents)
 
-| Agent | Modèle | Spécialité |
-|-------|--------|------------|
+| Agent                  | Modèle | Spécialité            |
+| ---------------------- | ------ | --------------------- |
 | **guest-communicator** | Sonnet | Communications guests |
-| **translation-agent** | Haiku | Traduction FR/EN/AR |
+| **translation-agent**  | Haiku  | Traduction FR/EN/AR   |
 
 ---
 
@@ -73,6 +73,7 @@ Ils travaillent de manière **autonome** avec supervision humaine.
 **Template**: `docs/agents/handovers/template.md`
 
 **Format YAML**:
+
 - Tâches complétées
 - Tâches en cours
 - Blocages
@@ -83,6 +84,7 @@ Ils travaillent de manière **autonome** avec supervision humaine.
 ### Dépendances
 
 Exemples:
+
 - `reservation-manager` dépend de `platform-validator`
 - `pricing-analyst` dépend de `calendar-agent`
 
@@ -92,12 +94,12 @@ Exemples:
 
 ### KPIs Agents
 
-| Métrique | Target | Actuel |
-|----------|--------|--------|
-| Autonomie | 80% | TODO% |
-| Taux de succès | 90% | TODO% |
-| Handovers complétés | 100% | TODO% |
-| Incidents documentés | 100% | TODO% |
+| Métrique             | Target | Actuel |
+| -------------------- | ------ | ------ |
+| Autonomie            | 80%    | TODO%  |
+| Taux de succès       | 90%    | TODO%  |
+| Handovers complétés  | 100%   | TODO%  |
+| Incidents documentés | 100%   | TODO%  |
 
 ---
 

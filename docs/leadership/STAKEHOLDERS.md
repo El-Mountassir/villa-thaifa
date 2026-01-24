@@ -21,14 +21,15 @@
 
 **Role**: Owner & Operator of Villa Thaifa
 
-| Field | Value |
-|-------|-------|
-| **Contact** | said_thaifa@hotmail.fr / +212 661-134194 (WhatsApp ⭐) |
-| **Age** | 78 years |
-| **Property** | Villa Thaifa (12 rooms, 4★, Palmeraie Marrakech) |
-| **Platform Accounts** | HotelRunner, Booking.com (Owner access) |
+| Field                 | Value                                                  |
+| --------------------- | ------------------------------------------------------ |
+| **Contact**           | said_thaifa@hotmail.fr / +212 661-134194 (WhatsApp ⭐) |
+| **Age**               | 78 years                                               |
+| **Property**          | Villa Thaifa (12 rooms, 4★, Palmeraie Marrakech)       |
+| **Platform Accounts** | HotelRunner, Booking.com (Owner access)                |
 
 **Key Facts**:
+
 - 🏆 Booking.com rating: 9.3/10 ("Wonderful")
 - 🎯 Business: Fully manual, everything memorized
 - 💡 Goal: Reduce operational burden, optimize revenue
@@ -45,14 +46,15 @@
 
 **Role**: CEO & Project Leader
 
-| Field | Value |
-|-------|-------|
-| **Contact** | omar@el-mountassir.com |
-| **Responsibilities** | Strategy, team leadership, client relations, final approvals |
-| **Team** | 17 AI agents + Claude (CTO) |
-| **Platform Accounts** | HotelRunner, Booking.com (Admin access) |
+| Field                 | Value                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| **Contact**           | omar@el-mountassir.com                                       |
+| **Responsibilities**  | Strategy, team leadership, client relations, final approvals |
+| **Team**              | 17 AI agents + Claude (CTO)                                  |
+| **Platform Accounts** | HotelRunner, Booking.com (Admin access)                      |
 
 **Key Facts**:
+
 - 🎯 Philosophy: "AI-First" - Agents are co-workers, not tools
 - 🔐 Manages admin accounts for security & traceability
 - ✅ Must approve all critical operations (pricing, platforms, client comm)
@@ -67,12 +69,12 @@
 **CTO/Architect**: Claude (successive instances)
 **Workforce**: 17 specialized AI agents
 
-| Category | Count | Function |
-|----------|-------|----------|
-| Operations | 4 | Pricing, reservations, calendar, sync |
-| Technical | 4 | Validation, browser, security, audits |
-| Meta | 7 | Research, reporting, documentation |
-| Hospitality | 2 | Guest communication, translation |
+| Category    | Count | Function                              |
+| ----------- | ----- | ------------------------------------- |
+| Operations  | 4     | Pricing, reservations, calendar, sync |
+| Technical   | 4     | Validation, browser, security, audits |
+| Meta        | 7     | Research, reporting, documentation    |
+| Hospitality | 2     | Guest communication, translation      |
 
 **📄 Team Structure**: [`TEAM.md`](./TEAM.md)
 
@@ -94,11 +96,11 @@ Claude (CTO/Architect)
 
 ## ⚡ Decision Hierarchy
 
-| Type | Process |
-|------|---------|
-| **Strategic** (Vision, Budget, Exit) | Omar recommends → Said decides → Omar executes |
+| Type                                   | Process                                                     |
+| -------------------------------------- | ----------------------------------------------------------- |
+| **Strategic** (Vision, Budget, Exit)   | Omar recommends → Said decides → Omar executes              |
 | **Operational** (Pricing, OTAs, Setup) | Agents analyze → Claude validates → Omar approves → Execute |
-| **Technical** (Architecture, Tools) | Claude proposes → Omar validates → Execute |
+| **Technical** (Architecture, Tools)    | Claude proposes → Omar validates → Execute                  |
 
 ---
 
@@ -107,6 +109,7 @@ Claude (CTO/Architect)
 ### Platform Operations
 
 **ALWAYS** get Omar approval before:
+
 - ❗ Modifying pricing, availability, or reservations
 - ❗ Communicating with Said Thaifa
 - ❗ Making budget or timeline decisions
@@ -123,8 +126,9 @@ Claude (CTO/Architect)
 **Structure reference**: `.env.example`
 
 **Quick access:**
+
 1. Read `.env.local` file
-2. Extract needed credentials (HOTELRUNNER_ADMIN_*, BOOKING_ADMIN_*)
+2. Extract needed credentials (HOTELRUNNER*ADMIN*_, BOOKING*ADMIN*_)
 3. Use admin accounts by default
 4. Handle OTP/reCAPTCHA (request from Omar)
 
@@ -135,6 +139,7 @@ Claude (CTO/Architect)
 ### Communication with Said
 
 **Required Protocol**:
+
 1. ✅ Vouvoiement obligatoire (formal "vous")
 2. ✅ WhatsApp preferred channel
 3. ✅ Scout → Rapport → Questions → Action
@@ -143,6 +148,7 @@ Claude (CTO/Architect)
 ### Emergency Protocol
 
 If critical issue (platform bug, lost reservation, pricing error):
+
 1. **STOP** all operations
 2. **DOCUMENT** incident immediately
 3. **NOTIFY** Omar
@@ -153,12 +159,14 @@ If critical issue (platform bug, lost reservation, pricing error):
 ## 📋 Quick Decision Guide for Agents
 
 **Can Proceed Autonomously**:
+
 - ✅ Research & analysis
 - ✅ Documentation updates
 - ✅ Non-critical bug fixes
 - ✅ Internal reports
 
 **Must Get Omar Approval**:
+
 - ❗ All platform operations
 - ❗ Client communications
 - ❗ Financial decisions
@@ -168,15 +176,15 @@ If critical issue (platform bug, lost reservation, pricing error):
 
 ## 📚 Documentation Map
 
-| Need | Document |
-|------|----------|
-| **Who is Said?** | [`profiles/SAID-THAIFA.md`](./profiles/SAID-THAIFA.md) (detailed profile) |
-| **Who is Omar?** | [`profiles/OMAR-EL-MOUNTASSIR.md`](./profiles/OMAR-EL-MOUNTASSIR.md) (detailed profile) |
-| **Team structure?** | [`TEAM.md`](./TEAM.md) (17 AI agents) |
-| **What to do?** | [`../../ROADMAP.md`](../../ROADMAP.md) (project plan) |
-| **Current tasks?** | [`../../tasks/active.md`](../../tasks/active.md) (active work) |
-| **How to work?** | [`../project/standards/agents/`](../project/standards/agents/) (protocols) |
-| **Navigate docs?** | [`INDEX.md`](./INDEX.md) (documentation index) |
+| Need                | Document                                                                                |
+| ------------------- | --------------------------------------------------------------------------------------- |
+| **Who is Said?**    | [`profiles/SAID-THAIFA.md`](./profiles/SAID-THAIFA.md) (detailed profile)               |
+| **Who is Omar?**    | [`profiles/OMAR-EL-MOUNTASSIR.md`](./profiles/OMAR-EL-MOUNTASSIR.md) (detailed profile) |
+| **Team structure?** | [`TEAM.md`](./TEAM.md) (17 AI agents)                                                   |
+| **What to do?**     | [`../../ROADMAP.md`](../../ROADMAP.md) (project plan)                                   |
+| **Current tasks?**  | [`../../tasks/active.md`](../../tasks/active.md) (active work)                          |
+| **How to work?**    | [`../project/standards/agents/`](../project/standards/agents/) (protocols)              |
+| **Navigate docs?**  | [`INDEX.md`](./INDEX.md) (documentation index)                                          |
 
 ---
 

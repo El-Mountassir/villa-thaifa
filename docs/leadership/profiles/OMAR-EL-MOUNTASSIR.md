@@ -17,10 +17,10 @@
 
 ## 📧 Contact Information
 
-| Field | Value |
-|-------|-------|
-| **Email** | omar@el-mountassir.com |
-| **Role** | CEO, Strategist, Project Leader |
+| Field     | Value                           |
+| --------- | ------------------------------- |
+| **Email** | omar@el-mountassir.com          |
+| **Role**  | CEO, Strategist, Project Leader |
 
 ---
 
@@ -59,6 +59,7 @@
 ### Mission
 
 Transform Villa Thaifa's operations from fully manual (everything in Said's head) to digitally optimized with:
+
 - Professional PMS (Property Management System)
 - Multi-channel distribution (Booking, Airbnb, Expedia)
 - Automated pricing and revenue optimization
@@ -67,12 +68,14 @@ Transform Villa Thaifa's operations from fully manual (everything in Said's head
 ### Approach
 
 **Philosophy**: "AI-First"
+
 - AI agents are co-workers, not tools
 - Autonomous execution with human supervision
 - Systematic documentation and handovers
 - Continuous improvement through agent collaboration
 
 **Methodology**: Scout → Rapport → Questions → Action
+
 - Never ask questions without first reporting findings
 - Always provide context before requesting information
 - Validate before executing
@@ -85,11 +88,13 @@ Transform Villa Thaifa's operations from fully manual (everything in Said's head
 ### Admin Accounts (Primary Use)
 
 **HotelRunner**:
+
 - Email: omar@el-mountassir.com
 - Role: Admin/Manager
 - Purpose: Daily operations, configuration, management
 
 **Booking.com**:
+
 - Email: omar@el-mountassir.com
 - Role: Admin/Manager
 - Purpose: Property management, updates, analytics
@@ -97,6 +102,7 @@ Transform Villa Thaifa's operations from fully manual (everything in Said's head
 ### Owner Accounts (Reference Only)
 
 **Said Thaifa's Accounts**:
+
 - HotelRunner: said_thaifa@hotmail.fr
 - Booking.com: said_thaifa@hotmail.fr
 
@@ -109,16 +115,19 @@ Transform Villa Thaifa's operations from fully manual (everything in Said's head
 ### Decision Hierarchy
 
 **Strategic Decisions** (Vision, Budget, Exit Strategy):
+
 ```
 Omar analyzes & recommends → Said decides → Omar executes
 ```
 
 **Operational Decisions** (Pricing, OTAs, Setup):
+
 ```
 AI agents analyze → Claude validates → Omar approves → (Said informed) → Execute
 ```
 
 **Technical Decisions** (Architecture, Stack, Tools):
+
 ```
 Claude proposes → Omar validates → Execute autonomously
 ```
@@ -126,6 +135,7 @@ Claude proposes → Omar validates → Execute autonomously
 ### Approval Requirements
 
 **Omar Must Approve**:
+
 - ✅ All platform operations (pricing, reservations, availability)
 - ✅ Client communications (Said Thaifa)
 - ✅ Budget allocations
@@ -133,6 +143,7 @@ Claude proposes → Omar validates → Execute autonomously
 - ✅ Vendor selection (PMS, tools, services)
 
 **Omar Can Delegate** (to Claude/Agents):
+
 - ✅ Research and analysis
 - ✅ Documentation
 - ✅ Technical implementation
@@ -140,6 +151,7 @@ Claude proposes → Omar validates → Execute autonomously
 - ✅ Non-critical automation
 
 **Omar Does NOT Handle** (Said's Domain):
+
 - ❌ Guest relations (direct)
 - ❌ On-site operations
 - ❌ Staff management
@@ -159,14 +171,14 @@ Claude proposes → Omar validates → Execute autonomously
 
 ### Roles Clarity
 
-| Aspect | Said (Client) | Omar (Consultant) |
-|--------|---------------|-------------------|
-| **Ownership** | 100% | 0% (consultant) |
-| **Vision** | Decides | Advises |
-| **Execution** | Delegates | Manages |
-| **Operations** | Informs | Implements |
-| **Budget** | Approves | Proposes |
-| **Success** | Benefits | Delivers |
+| Aspect         | Said (Client) | Omar (Consultant) |
+| -------------- | ------------- | ----------------- |
+| **Ownership**  | 100%          | 0% (consultant)   |
+| **Vision**     | Decides       | Advises           |
+| **Execution**  | Delegates     | Manages           |
+| **Operations** | Informs       | Implements        |
+| **Budget**     | Approves      | Proposes          |
+| **Success**    | Benefits      | Delivers          |
 
 ---
 
@@ -191,20 +203,21 @@ Claude proposes → Omar validates → Execute autonomously
 ### Long Term (Beyond 2026)
 
 Support Said's chosen path:
+
 - **Option A**: Delegation to professional management company
 - **Option B**: Direct sale (no intermediary)
 - **Option C**: Continued optimization with tech support
 
 ### Success Metrics
 
-| KPI | Baseline | Target |
-|-----|----------|--------|
-| **Operational Load** | 100% manual | -50% |
-| **Revenue** | Current | +20% |
-| **OTA Commission** | 25% | 20% |
-| **Booking.com Rating** | 9.3/10 | Maintain 9.0+ |
-| **Direct Bookings** | 0% | 10% |
-| **Occupancy Rate** | ~50% | 70% |
+| KPI                    | Baseline    | Target        |
+| ---------------------- | ----------- | ------------- |
+| **Operational Load**   | 100% manual | -50%          |
+| **Revenue**            | Current     | +20%          |
+| **OTA Commission**     | 25%         | 20%           |
+| **Booking.com Rating** | 9.3/10      | Maintain 9.0+ |
+| **Direct Bookings**    | 0%          | 10%           |
+| **Occupancy Rate**     | ~50%        | 70%           |
 
 ---
 
@@ -241,6 +254,7 @@ Support Said's chosen path:
 **Phase**: 1 - Stabilization & Cleanup
 **Status**: Active
 **Focus**:
+
 - Rescue and migrate data
 - Fix platform configurations
 - Establish baseline systems
@@ -256,12 +270,14 @@ Support Said's chosen path:
 ### Access Control
 
 **Omar's Responsibility**:
+
 - Secure credential management
 - Platform access governance
 - Agent permission levels
 - Data privacy compliance
 
 **Never Share**:
+
 - ❌ Platform passwords
 - ❌ API keys
 - ❌ Client personal data
@@ -270,6 +286,7 @@ Support Said's chosen path:
 ### Audit Trail
 
 All operations must be:
+
 - ✅ Documented in git commits
 - ✅ Logged in appropriate tools
 - ✅ Reviewable by Omar
@@ -307,6 +324,7 @@ All operations must be:
 ### Continuous Improvement
 
 Omar expects:
+
 - Regular agent performance reviews
 - Process optimization suggestions
 - Technology updates consideration
@@ -348,6 +366,7 @@ Omar expects:
 ### When to Escalate to Omar
 
 **Always Escalate**:
+
 - ❗ Platform operations (pricing, availability, reservations)
 - ❗ Client communication with Said
 - ❗ Budget/financial decisions
@@ -355,6 +374,7 @@ Omar expects:
 - ❗ Critical errors or incidents
 
 **Can Proceed Autonomously**:
+
 - ✅ Research and analysis
 - ✅ Documentation updates
 - ✅ Internal tool usage
@@ -363,6 +383,7 @@ Omar expects:
 ### Communication Format
 
 **Good**:
+
 ```
 Subject: [Agent-Name] Brief summary of topic
 
@@ -375,6 +396,7 @@ Next: What happens after approval
 ```
 
 **Bad**:
+
 ```
 "Hey, what should I do about X?"
 (No context, no research, no proposal)
@@ -387,11 +409,13 @@ Next: What happens after approval
 **Email**: omar@el-mountassir.com
 
 **Response Time**:
+
 - Critical issues: Within 2 hours
 - Standard requests: Within 24 hours
 - Research/analysis: As appropriate
 
 **Escalation Path**:
+
 1. Agent identifies issue
 2. Claude (CTO) reviews
 3. Omar decides
@@ -401,12 +425,12 @@ Next: What happens after approval
 
 ## 🔗 Related Documentation
 
-| Document | Purpose |
-|----------|---------|
+| Document                                | Purpose                                        |
+| --------------------------------------- | ---------------------------------------------- |
 | [`STAKEHOLDERS.md`](../STAKEHOLDERS.md) | Overview of all stakeholders and relationships |
-| [`SAID-THAIFA.md`](./SAID-THAIFA.md) | Detailed client profile |
-| [`TEAM.md`](../TEAM.md) | AI agent team structure |
-| [`ROADMAP.md`](../../ROADMAP.md) | Project roadmap and milestones |
+| [`SAID-THAIFA.md`](./SAID-THAIFA.md)    | Detailed client profile                        |
+| [`TEAM.md`](../TEAM.md)                 | AI agent team structure                        |
+| [`ROADMAP.md`](../../ROADMAP.md)        | Project roadmap and milestones                 |
 
 ---
 
