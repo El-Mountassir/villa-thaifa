@@ -20,6 +20,7 @@
 
 | Concept             | Source                                                                                                               |
 | :------------------ | :------------------------------------------------------------------------------------------------------------------- |
+| **Stakeholders** ⭐ | [`docs/leadership/STAKEHOLDERS.md`](docs/leadership/STAKEHOLDERS.md) **READ FIRST**                                |
 | **Team & Roles**    | [`docs/leadership/TEAM.md`](docs/leadership/TEAM.md)                                                                 |
 | **Structure**       | [`docs/architecture/project_structure.md`](docs/architecture/project_structure.md)                                   |
 | **Code of Conduct** | [`docs/project/standards/agents/code_of_conduct.md`](docs/project/standards/agents/code_of_conduct.md)               |

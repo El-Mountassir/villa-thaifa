@@ -5,9 +5,10 @@
 
 ## ⚡ Quick Start
 
-1.  **Read the Rules**: `docs/project/standards/agents/code_of_conduct.md`.
-2.  **Read the Brain**: `GEMINI.md` contains the Strategic Vision.
-3.  **Check The Team**: `docs/leadership/TEAM.md`.
+1.  **Know Your Stakeholders** ⭐: [`docs/leadership/STAKEHOLDERS.md`](docs/leadership/STAKEHOLDERS.md) - Who is who, roles, rules
+2.  **Read the Rules**: `docs/project/standards/agents/code_of_conduct.md`.
+3.  **Read the Brain**: `GEMINI.md` contains the Strategic Vision.
+4.  **Check The Team**: `docs/leadership/TEAM.md`.
 
 ## 🤖 Claude-Specific Context
 
