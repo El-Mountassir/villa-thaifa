@@ -9,7 +9,7 @@
     },
     "beds": ["1 Lit King", "1 Canapé-lit"],
     "price": {
-      "amount": 200,
+      "amount": 169,
       "currency": "EUR"
     },
     "features": {
@@ -29,7 +29,7 @@
     },
     "beds": ["1 Lit King"],
     "price": {
-      "amount": 200,
+      "amount": 159,
       "currency": "EUR"
     },
     "features": {
@@ -49,7 +49,7 @@
     },
     "beds": ["1 Lit King", "1 Canapé-lit"],
     "price": {
-      "amount": 200,
+      "amount": 169,
       "currency": "EUR"
     },
     "features": {
@@ -70,7 +70,7 @@
     },
     "beds": ["1 Lit King"],
     "price": {
-      "amount": 160,
+      "amount": 149,
       "currency": "EUR"
     },
     "features": {
@@ -89,7 +89,7 @@
     },
     "beds": ["1 Lit King"],
     "price": {
-      "amount": 160,
+      "amount": 149,
       "currency": "EUR"
     },
     "features": {
@@ -109,7 +109,7 @@
     },
     "beds": ["1 Lit King", "1 Canapé-lit"],
     "price": {
-      "amount": 240,
+      "amount": 169,
       "currency": "EUR"
     },
     "features": {
@@ -130,7 +130,7 @@
     },
     "beds": ["1 Lit King", "2 Canapés-lit"],
     "price": {
-      "amount": 440,
+      "amount": 329,
       "currency": "EUR"
     },
     "features": {
@@ -152,7 +152,7 @@
     },
     "beds": ["1 Lit King", "1 Canapé-lit"],
     "price": {
-      "amount": 200,
+      "amount": 169,
       "currency": "EUR"
     },
     "features": {
@@ -172,7 +172,7 @@
     },
     "beds": ["1 Lit King", "2 Canapés-lit"],
     "price": {
-      "amount": 227,
+      "amount": 189,
       "currency": "EUR"
     },
     "features": {
@@ -194,7 +194,7 @@
     },
     "beds": ["1 Lit King", "1 Canapé-lit"],
     "price": {
-      "amount": 267,
+      "amount": 179,
       "currency": "EUR"
     },
     "features": {
@@ -214,7 +214,7 @@
     },
     "beds": ["1 Lit King", "2 Canapés-lit"],
     "price": {
-      "amount": 240,
+      "amount": 189,
       "currency": "EUR"
     },
     "features": {
@@ -236,7 +236,7 @@
     },
     "beds": ["1 Lit King", "2 Canapés-lit"],
     "price": {
-      "amount": 600,
+      "amount": 449,
       "currency": "EUR"
     },
     "features": {
