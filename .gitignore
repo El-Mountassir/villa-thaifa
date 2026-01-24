@@ -25,3 +25,7 @@ pnpm-debug.log*
 # Local Env Files
 .env*.local
 .env
+
+# Craft Agent
+/sessions/
+/tmp/*.pdf
