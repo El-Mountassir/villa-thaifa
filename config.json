@@ -1,0 +1,21 @@
+{
+  "id": "ws_ea24f8ba",
+  "name": "villa-thaifa",
+  "slug": "villa-thaifa",
+  "defaults": {
+    "model": "claude-sonnet-4-5-20250929",
+    "permissionMode": "safe",
+    "cyclablePermissionModes": [
+      "safe",
+      "ask",
+      "allow-all"
+    ],
+    "thinkingLevel": "max",
+    "enabledSourceSlugs": []
+  },
+  "localMcpServers": {
+    "enabled": true
+  },
+  "createdAt": 1769250279117,
+  "updatedAt": 1769250554532
+}
