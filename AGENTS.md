@@ -55,7 +55,7 @@ Use this sequence for every operational task:
 2. Work from short-lived branches with explicit scope.
 3. Never keep critical local-only changes unpushed.
 
-Current note: if `.git` is not initialized in this folder, treat GitHub sync as BLOCKED and log it in `ops/status/working.md` until bootstrap is completed.
+Current note: Git is initialized. If local and remote histories diverge, stop force operations and record an integration plan in `ops/status/working.md` before proceeding.
 
 ## Definition of Done (Per Domain)
 
