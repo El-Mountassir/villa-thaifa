@@ -40,7 +40,8 @@
 - **`docs/knowledge/`**: Business facts, Client profiles.
 - **`docs/project/standards/`**: Rules, Protocols, Code of Conduct.
 
-### `content/` (The Data)
+### `docs/content/` (Content Lanes)
 
-- **`content/facilities/`**: Room descriptions, photos.
-- **`content/policies/`**: Hotel rules.
+- **`docs/content/reference/`**: Raw/historical room and facilities sources.
+- **`docs/content/active/`**: Approved operational content.
+- **`docs/content/pending/`**: Intake lane for unprocessed content.

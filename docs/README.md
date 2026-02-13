@@ -9,6 +9,7 @@ Use this file to avoid confusion.
 - `docs/project/templates/`
 - `docs/agents/instructions/`
 - `docs/project/management/missions/` (queue/completed workflow context)
+- `docs/content/active/`
 
 ## 2) Canonical Reference Docs (domain truth support)
 
@@ -20,6 +21,7 @@ Use this file to avoid confusion.
 - `docs/reference/knowledge/library/`
 - `docs/reference/agents/standards/`
 - `docs/reference/knowledge/duplicates/`
+- `docs/content/reference/`
 
 These are valuable but potentially outdated or conflicting.
 Treat as contestable unless promoted into active operational docs.
@@ -34,6 +36,7 @@ Never use them as canonical or planning input.
 ## 5) Draft / Unverified Docs
 
 - `docs/drafts/client-admin/drafts/`
+- `docs/content/pending/`
 
 Never treat draft files as canonical input without explicit review.
 

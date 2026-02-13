@@ -28,6 +28,13 @@ This roadmap prioritizes operational safety, traceability, and fast execution wi
 4. Governance baseline exists:
 - `AGENTS.md`, `README.md`, `CHANGELOG.md`
 - `ops/status/*`, `ops/intake/unprocessed/*`
+5. Physical isolation completed for pending/backups/reference lanes:
+- `data/core/property/inventory/pending/`
+- `data/core/property/inventory/backups/`
+- `data/pending/finance/`
+- `docs/backups/`
+- `docs/reference/knowledge/duplicates/`
+- `docs/content/{active,reference,pending}/`
 
 ### What remains coupled or ambiguous
 
@@ -36,8 +43,9 @@ This roadmap prioritizes operational safety, traceability, and fast execution wi
 - `facilities.md`
 - `beds.md`
 - `inventory.md`
-2. Rooms backups are still co-located with canonical files.
-3. `docs/` contains mixed layers (active operations + historical archives + draft material).
+2. `docs/content/reference/` is large and still contestable until triaged/promoted.
+3. Duplicate stakeholders set needs merge/delete decision:
+- `docs/reference/knowledge/duplicates/stakeholders-2026-02-13/`
 4. Remote `main` has independent history; integration path is pending.
 
 ## Decision Rules (Mandatory)
@@ -134,8 +142,8 @@ Done when:
 ### Week 2
 
 - complete beds and inventory canonical decisions
-- decide rooms-backup relocation policy
-- publish docs decoupling map
+- triage `docs/content/reference/` into active vs archive
+- decide duplicate stakeholders merge/delete strategy
 
 ### Week 3
 

@@ -75,3 +75,32 @@ All must be true:
 - `ops/status/canonical.md`
 - `ops/status/archived.md`
 - `ops/intake/unprocessed/manifest.csv`
+
+## Latest Isolation Snapshot (2026-02-13)
+
+1. Inventory isolation completed:
+- canonical: `data/core/property/inventory/rooms/rooms.md`
+- pending: `data/core/property/inventory/pending/*`
+- backups: `data/core/property/inventory/backups/rooms/*`
+2. Finance pending isolation completed:
+- `data/pending/finance/`
+3. Docs isolation completed:
+- historical reference: `docs/reference/`
+- backups: `docs/backups/`
+- drafts: `docs/drafts/`
+- content lanes: `docs/content/active/`, `docs/content/reference/`, `docs/content/pending/`
+
+## Open Loops To Preserve (Do Not Drop)
+
+1. Pending inventory domain decisions:
+- `data/core/property/inventory/pending/amenities.md`
+- `data/core/property/inventory/pending/facilities.md`
+- `data/core/property/inventory/pending/beds.md`
+- `data/core/property/inventory/pending/inventory.md`
+2. Contestable docs duplicate set:
+- `docs/reference/knowledge/duplicates/stakeholders-2026-02-13/`
+3. Pending content triage:
+- `docs/content/reference/` (large raw media + source markdown)
+- `docs/content/pending/` (intake lane for new content)
+4. SCM integration open item:
+- safe integration plan for `origin/main` vs `origin/bootstrap/2026-02-13-baseline`

@@ -6,5 +6,7 @@ path,domain,state,priority,owner,last_reviewed,next_action,notes
 "data/core/property/inventory/backups/rooms",inventory_backups,planned,P2,"Omar+Agent",2026-02-13,"define backup retention policy","isolated from canonical rooms folder"
 "docs/backups",documentation_backups,planned,P2,"Omar+Agent",2026-02-13,"define backup retention policy","backup artifacts isolated from active docs paths"
 "docs/reference/knowledge/duplicates/stakeholders-2026-02-13",documentation_duplicates,inbox,P2,"Omar+Agent",2026-02-13,"decide merge/delete strategy against docs/client","contestable duplicate set isolated from active knowledge paths"
+"docs/content/reference",content,inbox,P2,"Omar+Agent",2026-02-13,"triage and promote approved subset to docs/content/active","raw content isolated in reference lane"
+"docs/content/pending",content,inbox,P3,"Omar+Agent",2026-02-13,"use as intake lane for new unprocessed content","empty lane prepared for controlled intake"
 "data/pending/finance",finance,inbox,P2,"Omar+Agent",2026-02-13,"inventory and classify files","physically isolated pending finance domain"
 "origin/main",scm,working,P1,"Omar+Agent",2026-02-13,"non-destructive integration plan","remote main has independent history; bootstrap branch is synced"

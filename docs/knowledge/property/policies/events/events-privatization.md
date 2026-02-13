@@ -263,7 +263,7 @@ TOTAL ESTIMÉ : 7 000 - 10 000 € (selon options)
 
 - [Inventaire Chambres](../../data/core/inventory.yaml)
 - [Profil Said Thaifa](../../../leadership/profiles/SAID-THAIFA.md)
-- [Installations](../../content/facilities/README.md)
+- [Installations](../../../../content/reference/facilities/)
 - [Tarifs Standard](../pricing/standard-rates.md) (à créer)
 
 ---
