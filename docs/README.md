@@ -1,6 +1,6 @@
 # docs/ — Navigation and Authority Map
 
-This folder includes both active operations docs and historical material.
+This folder includes active operations docs, historical references, and drafts.
 Use this file to avoid confusion.
 
 ## 1) Active Operational Docs (authoritative first)
@@ -17,15 +17,15 @@ Use this file to avoid confusion.
 
 ## 3) Historical / Reference Archive (not auto-authoritative)
 
-- `docs/knowledge/library/`
-- `docs/agents/standards/`
+- `docs/reference/knowledge/library/`
+- `docs/reference/agents/standards/`
 
 These are valuable but potentially outdated or conflicting.
 Treat as contestable unless promoted into active operational docs.
 
 ## 4) Draft / Unverified Docs
 
-- `docs/client/admin/drafts/`
+- `docs/drafts/client-admin/drafts/`
 
 Never treat draft files as canonical input without explicit review.
 
