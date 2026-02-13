@@ -4,5 +4,7 @@ path,domain,state,priority,owner,last_reviewed,next_action,notes
 "data/core/property/inventory/pending/facilities.md",facilities,planned,P1,"Omar+Agent",2026-02-13,"create contract + reconciliation log","target after amenities"
 "data/core/property/inventory/pending/beds.md",beds,inbox,P2,"Omar+Agent",2026-02-13,"schema triage","unclear if canonical standalone or subordinate to rooms"
 "data/core/property/inventory/backups/rooms",inventory_backups,planned,P2,"Omar+Agent",2026-02-13,"define backup retention policy","isolated from canonical rooms folder"
+"docs/backups",documentation_backups,planned,P2,"Omar+Agent",2026-02-13,"define backup retention policy","backup artifacts isolated from active docs paths"
+"docs/reference/knowledge/duplicates/stakeholders-2026-02-13",documentation_duplicates,inbox,P2,"Omar+Agent",2026-02-13,"decide merge/delete strategy against docs/client","contestable duplicate set isolated from active knowledge paths"
 "data/pending/finance",finance,inbox,P2,"Omar+Agent",2026-02-13,"inventory and classify files","physically isolated pending finance domain"
 "origin/main",scm,working,P1,"Omar+Agent",2026-02-13,"non-destructive integration plan","remote main has independent history; bootstrap branch is synced"

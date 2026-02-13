@@ -14,6 +14,11 @@ This snapshot lists files requiring triage or consolidation decisions.
 ## Backup Candidates (Isolated)
 
 - `data/core/property/inventory/backups/rooms/*.backup-2026-02-13*`
+- `docs/backups/**/*`
+
+## Contestable Duplicates (Isolated)
+
+- `docs/reference/knowledge/duplicates/stakeholders-2026-02-13/`
 
 ## Next Action
 

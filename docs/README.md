@@ -19,11 +19,19 @@ Use this file to avoid confusion.
 
 - `docs/reference/knowledge/library/`
 - `docs/reference/agents/standards/`
+- `docs/reference/knowledge/duplicates/`
 
 These are valuable but potentially outdated or conflicting.
 Treat as contestable unless promoted into active operational docs.
 
-## 4) Draft / Unverified Docs
+## 4) Backups (do not use as input)
+
+- `docs/backups/`
+
+Backup artifacts are retained for rollback only.
+Never use them as canonical or planning input.
+
+## 5) Draft / Unverified Docs
 
 - `docs/drafts/client-admin/drafts/`
 
