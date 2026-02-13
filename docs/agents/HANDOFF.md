@@ -22,3 +22,7 @@
 3. Run verification scripts before closing task.
 4. Log decisions in status and reconciliation artifacts.
 5. Ask Omar for high-impact ambiguities with options + recommendation.
+
+## Ultra-Fast Entry
+
+- `docs/agents/AI-SESSION-STARTER.md`
