@@ -1,0 +1,87 @@
+{
+  "_comment": "PLACEHOLDER FILE - Processus de facturation à documenter",
+  "version": "1.0.0",
+  "last_updated": "2026-01-15T12:00:00Z",
+  "status": "placeholder",
+  "billing": {
+    "payment_methods": [
+      {
+        "method": "Espèces",
+        "accepted": true,
+        "currency": "MAD",
+        "change_policy": "TODO"
+      },
+      {
+        "method": "Carte bancaire",
+        "accepted": "true",
+        "types": ["Visa", "Mastercard", "TODO"],
+        "fees": "TODO"
+      },
+      {
+        "method": "Virement bancaire",
+        "accepted": "TODO",
+        "rib": "TODO",
+        "for_reservations": true
+      },
+      {
+        "method": "Booking.com",
+        "accepted": true,
+        "payment_type": "TODO",
+        "fees": "TODO"
+      },
+      {
+        "method": "Autres",
+        "details": "TODO"
+      }
+    ],
+    "invoice": {
+      "template": "TODO",
+      "required_fields": [
+        "Date",
+        "Numéro de facture",
+        "Nom client",
+        "Dates de séjour",
+        "Chambre",
+        "Montant",
+        "Mode de paiement",
+        "Signature"
+      ],
+      "numbering": "TODO (séquence annuelle? continue?)"
+    },
+    "receipt": {
+      "provided_for": ["Espèces", "Carte bancaire"],
+      "template": "TODO"
+    }
+  },
+  "accounting": {
+    "software": "TODO",
+    "chart_of_accounts": "TODO",
+    "tax_registration": {
+      "rc_number": "TODO",
+      "ice_number": "TODO",
+      "tax_regime": "TODO"
+    },
+    "reporting": {
+      "daily_revenue": {
+        "tracked": "TODO",
+        "who": "TODO",
+        "how": "TODO"
+      },
+      "monthly_expenses": {
+        "tracked": "TODO",
+        "categories": ["TODO"]
+      },
+      "profit_loss": {
+        "frequency": "TODO",
+        "prepared_by": "TODO"
+      }
+    }
+  },
+  "tags": ["placeholder", "to_complete", "finance", "billing"],
+  "todo": [
+    "Définir modes de paiement acceptés",
+    "Créer template facture",
+    "Documenter processus comptabilité",
+    "Ajouter numéros RC et ICE"
+  ]
+}

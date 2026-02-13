@@ -1,0 +1,82 @@
+{
+  "_comment": "PLACEHOLDER FILE - Canaux de communication à documenter",
+  "version": "1.0.0",
+  "last_updated": "2026-01-15T12:00:00Z",
+  "status": "placeholder",
+  "channels": {
+    "whatsapp": {
+      "enabled": true,
+      "number": "TODO",
+      "usage": "Communication principale avec les clients",
+      "response_time": "TODO",
+      "automation": {
+        "auto_replies": "TODO",
+        "templates": "TODO"
+      }
+    },
+    "email": {
+      "enabled": true,
+      "address": "TODO",
+      "usage": "Réservations, confirmations, rapports",
+      "response_time": "TODO",
+      "templates": "templates/FR/, templates/EN/, templates/AR/"
+    },
+    "phone": {
+      "enabled": true,
+      "number": "TODO",
+      "usage": "Urgences, appels vocaux",
+      "response_time": "TODO"
+    },
+    "booking_com": {
+      "enabled": true,
+      "usage": "Réservations via Booking.com",
+      "response_time": "TODO",
+      "management": "via browser-agent et platform-validator"
+    },
+    "hotelrunner": {
+      "enabled": true,
+      "usage": "PMS, gestion des réservations",
+      "response_time": "TODO",
+      "management": "via browser-agent et data-sync-checker"
+    },
+    "social_media": {
+      "instagram": {
+        "enabled": "TODO",
+        "handle": "TODO",
+        "usage": "Marketing, photos, stories"
+      },
+      "facebook": {
+        "enabled": "TODO",
+        "handle": "TODO",
+        "usage": "Marketing, événements"
+      },
+      "tripadvisor": {
+        "enabled": "TODO",
+        "handle": "TODO",
+        "usage": "Avis, réponses aux reviews"
+      }
+    }
+  },
+  "protocols": {
+    "greeting": "TODO",
+    "closing": "TODO",
+    "tone": "Professional mais chaleureux, hospitalier marocain",
+    "languages": {
+      "primary": "Français",
+      "secondary": "Anglais",
+      "tertiary": "Arabe"
+    },
+    "response_expectations": {
+      "urgent": "TODO (1h? 2h?)",
+      "normal": "TODO (24h?)",
+      "low_priority": "TODO (48h?)"
+    }
+  },
+  "tags": ["placeholder", "to_complete", "communications"],
+  "todo": [
+    "Ajouter tous les numéros de téléphone",
+    "Créer templates de messages dans 3 langues",
+    "Définir temps de réponse par canal",
+    "Documenter automation WhatsApp"
+  ]
+}

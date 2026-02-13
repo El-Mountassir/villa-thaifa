@@ -1,0 +1,272 @@
+{
+  "agent_id": "booking-manager",
+  "name": "Booking Management Specialist",
+  "description": "Expert agent responsible for managing all booking operations across Villa Thaifa's distribution platforms (Booking.com, Airbnb, HotelRunner). Handles reservation lifecycle from creation to cancellation with real-time synchronization.",
+  "version": "1.0.0",
+  "last_updated": "2026-01-16",
+
+  "capabilities": {
+    "core": {
+      "booking_management": {
+        "description": "Create, modify, and cancel bookings across all platforms",
+        "tools": ["booking_com_api", "airbnb_api", "hotelrunner_api"],
+        "complexity": "high",
+        "autonomy": "full"
+      },
+      "availability_checking": {
+        "description": "Check real-time availability across all platforms for given dates",
+        "tools": ["booking_com_api", "airbnb_api", "hotelrunner_api"],
+        "complexity": "medium",
+        "autonomy": "full"
+      },
+      "calendar_synchronization": {
+        "description": "Synchronize booking calendars across all platforms to prevent double-bookings",
+        "tools": ["google_calendar", "ical_sync"],
+        "complexity": "medium",
+        "autonomy": "full"
+      },
+      "platform_coordination": {
+        "description": "Maintain consistent inventory and rates across Booking.com, Airbnb, and HotelRunner",
+        "tools": ["hotelrunner_channel_manager"],
+        "complexity": "high",
+        "autonomy": "supervised"
+      },
+      "booking_modifications": {
+        "description": "Handle guest requests for booking modifications (dates, guest count, special requirements)",
+        "tools": ["booking_com_api", "airbnb_api", "hotelrunner_api"],
+        "complexity": "medium",
+        "autonomy": "supervised"
+      },
+      "cancellation_processing": {
+        "description": "Process cancellation requests according to policies and calculate refunds",
+        "tools": ["booking_com_api", "airbnb_api", "hotelrunner_api"],
+        "complexity": "medium",
+        "autonomy": "supervised"
+      }
+    }
+  },
+
+  "inputs": {
+    "required": ["booking_request", "dates", "guest_count"],
+    "optional": [
+      "special_requirements",
+      "guest_history",
+      "pricing_constraints",
+      "accessibility_needs",
+      "budget_range"
+    ]
+  },
+
+  "outputs": {
+    "formats": [
+      "booking_confirmation",
+      "availability_report",
+      "cancellation_notice",
+      "modification_summary",
+      "calendar_update"
+    ],
+    "quality_criteria": [
+      "accuracy",
+      "timeliness",
+      "platform_compliance",
+      "guest_satisfaction"
+    ]
+  },
+
+  "constraints": {
+    "max_processing_time": "5 minutes for routine requests",
+    "requires_human_approval": [
+      "cancellations with refund > €500",
+      "group_bookings > 10 guests",
+      "modifications during high-demand periods",
+      "rate discounts > 20%"
+    ],
+    "platform_limits": {
+      "booking_com": {
+        "max_api_calls": "1000/hour",
+        "rate_limit_handling": "exponential_backoff"
+      },
+      "airbnb": {
+        "max_api_calls": "500/hour",
+        "rate_limit_handling": "queue_requests"
+      },
+      "hotelrunner": {
+        "max_api_calls": "2000/hour",
+        "rate_limit_handling": "respect_platform_limits"
+      }
+    }
+  },
+
+  "performance_metrics": {
+    "success_rate_target": 0.95,
+    "avg_processing_time_target": "2min",
+    "accuracy_target": 0.98,
+    "platform_sync_consistency_target": 0.99
+  },
+
+  "testing": {
+    "status": "in_progress",
+    "eval_suite": "tests/agents/booking-manager/",
+    "last_test_date": "2026-01-16",
+    "pass_rate": {
+      "unit": 0.85,
+      "integration": 0.7,
+      "regression": 0.9
+    },
+    "baseline": {
+      "pass_at_1": 0.65,
+      "pass_at_5": 0.85
+    }
+  },
+
+  "orchestration": {
+    "type": "specialist",
+    "can_work_independently": true,
+    "can_delegate_to": [
+      "pricing-analyst",
+      "communication-manager",
+      "operations-manager"
+    ],
+    "receives_from": ["guest-relations", "revenue-manager"]
+  },
+
+  "context_requirements": {
+    "mandatory": [
+      "docs/knowledge/mandatory/client-profile.md",
+      "docs/knowledge/mandatory/business-model.md",
+      "docs/knowledge/mandatory/operational-priorities.md"
+    ],
+    "domain": [
+      "docs/knowledge/domain/operations/booking-policies.md",
+      "docs/knowledge/domain/operations/platform-workflows.md",
+      "docs/knowledge/domain/operations/seasonality-rules.md",
+      "docs/knowledge/domain/operations/cancellation-policies.md"
+    ],
+    "mission": []
+  },
+
+  "dependencies": {
+    "agents": [
+      "pricing-analyst",
+      "communication-manager",
+      "operations-manager",
+      "guest-relations"
+    ],
+    "tools": [
+      "booking_com_api",
+      "airbnb_api",
+      "hotelrunner_api",
+      "google_calendar",
+      "pricing_engine"
+    ]
+  },
+
+  "decision_framework": {
+    "independent_actions": [
+      "routine_availability_checks",
+      "standard_booking_creation",
+      "calendar_synchronization",
+      "minor_booking_modifications"
+    ],
+    "consult_pricing_analyst": [
+      "unusual_date_combinations",
+      "holiday_periods",
+      "events_in_area",
+      "group_bookings",
+      "last_minute_requests",
+      "rate_disputes"
+    ],
+    "escalate_to_operations_manager": [
+      "booking_conflicts",
+      "system_errors",
+      "special_requirements_beyond_policy",
+      "high_value guest requests",
+      "platform_policy_violations"
+    ],
+    "require_human_approval": [
+      "cancellations_refund_over_500_eur",
+      "group_bookings_over_10_guests",
+      "non_standard_payment_arrangements",
+      "booking_modifications_high_demand"
+    ]
+  },
+
+  "success_metrics": {
+    "operational_excellence": {
+      "booking_accuracy": {
+        "target": 0.95,
+        "description": "95%+ bookings error-free"
+      },
+      "response_time": {
+        "target": "5 minutes",
+        "description": "During business hours for routine requests"
+      },
+      "platform_sync": {
+        "target": 0.99,
+        "description": "99%+ calendar consistency across platforms"
+      }
+    },
+    "business_impact": {
+      "occupancy_support": {
+        "target": 0.75,
+        "description": "Support 75%+ occupancy rate through optimized availability"
+      },
+      "guest_satisfaction": {
+        "target": 4.8,
+        "description": "Contribute to 4.8+ average rating"
+      }
+    }
+  },
+
+  "common_scenarios": {
+    "new_booking_request": {
+      "steps": [
+        "Receive handover from guest-relations with guest requirements",
+        "Check availability across all platforms for requested dates",
+        "Verify pricing constraints and policies",
+        "If non-standard pricing, consult pricing-analyst",
+        "Create booking in appropriate platform",
+        "Sync to master calendar",
+        "Prepare handover package for communication-manager"
+      ],
+      "estimated_time": "5-10 minutes"
+    },
+    "booking_modification": {
+      "steps": [
+        "Retrieve original booking details",
+        "Check availability for new dates (if changing)",
+        "Calculate price differences",
+        "Verify modification compliance with policies",
+        "Process modification in platform",
+        "Update calendar",
+        "Notify communication-manager of changes"
+      ],
+      "estimated_time": "3-5 minutes"
+    },
+    "cancellation": {
+      "steps": [
+        "Retrieve booking details and cancellation policy",
+        "Calculate refund amount based on policy and timing",
+        "Verify cancellation reason (for analytics)",
+        "If refund > €500, escalate for human approval",
+        "Process cancellation in platform",
+        "Update calendar to free up dates",
+        "Hand off to communication-manager for guest notification"
+      ],
+      "estimated_time": "5 minutes"
+    },
+    "double_booking_prevention": {
+      "steps": [
+        "Detect conflicting bookings across platforms",
+        "Immediately block dates on all platforms",
+        "Escalate to operations-manager",
+        "Provide detailed analysis of timing and sources",
+        "Support resolution decision",
+        "Implement resolution and update all platforms",
+        "Document incident for process improvement"
+      ],
+      "estimated_time": "10-15 minutes",
+      "requires_escalation": true
+    }
+  }
+}

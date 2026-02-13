@@ -1,0 +1,7 @@
+path,domain,state,priority,owner,last_reviewed,next_action,notes
+"data/core/property/inventory/inventory.md",property_inventory,inbox,P1,"Omar+Agent",2026-02-13,"classify canonical vs legacy role","cross-domain summary file; needs routing decision"
+"data/core/property/inventory/amenities.md",amenities,planned,P1,"Omar+Agent",2026-02-13,"create contract + reconciliation log","target next domain after rooms"
+"data/core/property/inventory/facilities.md",facilities,planned,P1,"Omar+Agent",2026-02-13,"create contract + reconciliation log","target next domain after amenities"
+"data/core/property/inventory/beds.md",beds,inbox,P2,"Omar+Agent",2026-02-13,"schema triage","unclear if canonical standalone or subordinate to rooms"
+"data/finance",finance,inbox,P2,"Omar+Agent",2026-02-13,"inventory and classify files","domain not yet onboarded to canonical workflow"
+"/home/director/villa-thaifa",scm,blocked,P1,"Omar+Agent",2026-02-13,"initialize git or connect remote","github sync policy blocked until .git exists"

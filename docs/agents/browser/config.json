@@ -1,0 +1,14 @@
+{
+  "id": "agent-browser",
+  "name": "Agent Browser",
+  "slug": "agent-browser",
+  "type": "local",
+  "provider": "vercel-labs",
+  "description": "Fast headless browser automation CLI for web scraping, form filling, and browser control.",
+  "icon": "🌐",
+  "enabled": true,
+  "local": {
+    "path": "/usr/local/bin/agent-browser",
+    "command": "agent-browser"
+  }
+}

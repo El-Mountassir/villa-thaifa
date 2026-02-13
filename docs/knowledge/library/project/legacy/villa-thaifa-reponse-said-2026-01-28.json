@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-01-28T23:33:54.245Z",
+  "demande_client": {
+    "date_reception": "2026-01-28 20:16",
+    "personnes": 30,
+    "adultes": 20,
+    "enfants": 10,
+    "dates": "14-17 mai 2026",
+    "nuits": 3,
+    "type_evenement": "Anniversaire"
+  },
+  "reponses_said": {
+    "disponibilite": "oui",
+    "disponibilite_details": "",
+    "age_limite_gratuit": "",
+    "tarif_enfant_pourcentage": "",
+    "politique_enfants_details": "",
+    "petit_dej_inclus": "inclus",
+    "tarif_petit_dej": "",
+    "horaire_limite_musique": "d",
+    "supplement_traiteur": "",
+    "tarif_spa_groupe": "",
+    "capacite_spa_simultanee": "",
+    "spa_details": "z",
+    "tarif_menu_groupe": "",
+    "acompte_pourcentage": "",
+    "caution_montant": "",
+    "conditions_annulation": "",
+    "notes_said": "",
+    "autorisations": []
+  }
+}

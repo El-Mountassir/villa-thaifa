@@ -1,0 +1,15 @@
+[project]
+name = "villa-thaifa-ops"
+version = "0.1.0"
+description = "Operational data validation scripts for Villa Thaifa canonical markdown datasets"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

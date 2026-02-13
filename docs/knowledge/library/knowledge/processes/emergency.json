@@ -1,0 +1,115 @@
+{
+  "_comment": "PLACEHOLDER FILE - Procédures d'urgence à documenter",
+  "version": "1.0.0",
+  "last_updated": "2026-01-15T12:00:00Z",
+  "status": "placeholder",
+  "process": {
+    "id": "emergency",
+    "name": "Procédures d'Urgence",
+    "description": "Protocoles d'urgence pour le personnel et la sécurité des clients"
+  },
+  "emergency_contacts": {
+    "police": {
+      "number": "19 ou 05 24 00 00 00 (Marrakech)",
+      "when": "Crime, danger imminent, trouble"
+    },
+    "ambulance": {
+      "number": "15 ou 05 24 00 00 00 (Marrakech)",
+      "when": "Urgence médicale"
+    },
+    "fire": {
+      "number": "15 ou 05 24 00 00 00 (Marrakech)",
+      "when": "Incendie"
+    },
+    "owner": {
+      "name": "Said Thaifa",
+      "phone": "TODO",
+      "when": "Toute urgence ou problème majeur"
+    },
+    "manager": {
+      "name": "TODO",
+      "phone": "TODO",
+      "when": "Problèmes quotidiens"
+    }
+  },
+  "emergency_types": {
+    "medical": {
+      "priority": "CRITIQUE",
+      "steps": [
+        "Appeler ambulance (15)",
+        "Appeler propriétaire",
+        "Rester avec le client",
+        "Donner les premiers soins si formé",
+        "Orienter les secours",
+        "Documenter l'incident"
+      ],
+      "nearest_hospital": "TODO"
+    },
+    "fire": {
+      "priority": "CRITIQUE",
+      "steps": [
+        "Appeler pompiers (15)",
+        "Évacuer tous les clients",
+        "Fermer portes pour contenir le feu",
+        "Utiliser extincteur si sûr et petit feu",
+        "Ne jamais prendre d'ascenseur",
+        "Rassemblement au point de réunions: TODO",
+        "Appeler propriétaire"
+      ]
+    },
+    "theft": {
+      "priority": "HIGH",
+      "steps": [
+        "Appeler police (19)",
+        "Ne pas toucher aux preuves",
+        "Interroger témoins si possible",
+        "Appeler propriétaire",
+        "Documenter ce qui a été pris",
+        "Conserver vidéo surveillance si disponible"
+      ]
+    },
+    "guest_dispute": {
+      "priority": "HIGH",
+      "steps": [
+        "Rester calme et professionnel",
+        "Écouter les deux parties",
+        "Séparer si nécessaire",
+        "Appeler manager ou propriétaire",
+        "Ne jamais mettre en danger le personnel",
+        "Documenter l'incident"
+      ]
+    },
+    "utility_failure": {
+      "priority": "HIGH",
+      "steps": [
+        "Identifier le problème (eau, électricité, gaz)",
+        "Si fuite de gaz: évacuer et appeler urgence",
+        "Appeler technicien compétent",
+        "Informer les clients",
+        "Proposer solutions alternatives",
+        "Appeler propriétaire"
+      ]
+    }
+  },
+  "prevention": {
+    "fire_safety": {
+      "extinguishers": "Localisation: TODO, Vérification: TODO",
+      "smoke_detectors": "Localisation: TODO, Test: TODO",
+      "emergency_exits": "Localisation: TODO, Toujours dégagées: true",
+      "evacuation_plan": "Affiché: TODO"
+    },
+    "first_aid": {
+      "kits_location": "TODO",
+      "trained_staff": "TODO",
+      "restocking": "TODO"
+    }
+  },
+  "tags": ["placeholder", "to_complete", "emergency", "safety"],
+  "todo": [
+    "Compléter tous les numéros d'urgence",
+    "Identifier l'hôpital le plus proche",
+    "Créer plan d'évacuation",
+    "Former le personnel aux procédures",
+    "Afficher numéros d'urgence en plusieurs endroits"
+  ]
+}

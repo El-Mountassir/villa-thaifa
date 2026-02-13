@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "name": "Villa Thaifa Strict Audit System",
+    "version": "2.0",
+    "philosophy": "Maniacal Detail or Nothing"
+  },
+  "criteria": {
+    "architecture": {
+      "weight": 30,
+      "checks": [
+        "Is 'Feature-Based MVC' strictly followed?",
+        "Are 'bindings' used for all cross-domain communication?",
+        "Is the 'src/' directory clean of legacy artifacts?",
+        "Are components 'atomic' and reusable?"
+      ]
+    },
+    "code_quality": {
+      "weight": 20,
+      "checks": [
+        "No 'any' types in TypeScript?",
+        "Are all props strictly typed?",
+        "Are magic strings replaced by constants/enums?",
+        "Is there 0% console error noise?"
+      ]
+    },
+    "documentation": {
+      "weight": 20,
+      "checks": [
+        "Does 'ROADMAP.md' exist and is it active?",
+        "Are ADRs created for major decisions?",
+        "Is 'README.md' a clear dashboard?",
+        "Do complex functions have JSDoc?"
+      ]
+    },
+    "data_integrity": {
+      "weight": 20,
+      "checks": [
+        "Is 'Single Source of Truth' (JSON) strictly enforced?",
+        "Are Zod schemas used for all data validation?",
+        "Is legacy data archived and not linked?"
+      ]
+    },
+    "ux_ui": {
+      "weight": 10,
+      "checks": [
+        "Is the design 'Premium' (ADR-003)?",
+        "Is it responsive?",
+        "Are loading states handled?",
+        "Is the navigation persistent?"
+      ]
+    }
+  },
+  "rating_scale": {
+    "0-40": "Critical Failure (Ghost)",
+    "41-70": "Functional Skeleton (MVP)",
+    "71-90": "Professional Product",
+    "91-100": "Luxury Excellence"
+  }
+}

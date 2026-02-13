@@ -1,0 +1,84 @@
+{
+  "_comment": "PLACEHOLDER FILE - Workflow ménage à documenter",
+  "version": "1.0.0",
+  "last_updated": "2026-01-15T12:00:00Z",
+  "status": "placeholder",
+  "process": {
+    "id": "housekeeping",
+    "name": "Housekeeping & Entretien Workflow",
+    "description": "Processus de ménage et entretien des chambres et parties communes"
+  },
+  "daily_cleaning": {
+    "frequency": "quotidien",
+    "timing": "TODO (matin? après-midi?)",
+    "steps": [
+      {
+        "step": 1,
+        "action": "Lit",
+        "details": "Refaire le lit, changer draps si nécessaire"
+      },
+      {
+        "step": 2,
+        "action": "Salle de bain",
+        "details": "Nettoyer lavabo, douche, WC, remplir serviettes"
+      },
+      {
+        "step": 3,
+        "action": "Poubelles",
+        "details": "Vider toutes les poubelles"
+      },
+      {
+        "step": 4,
+        "action": "Poussière",
+        "details": "Dépoussiérer surfaces"
+      },
+      {
+        "step": 5,
+        "action": "Sol",
+        "details": "Balayer ou passer l'aspirateur"
+      },
+      {
+        "step": 6,
+        "action": "Amenities",
+        "details": "Compléter savon, shampooing, papier toilette"
+      }
+    ],
+    "checklist": [
+      "Lit fait",
+      "Salle de bain propre",
+      "Poubelles vidées",
+      "Amenities complétées",
+      "Rien d'oublié par le client"
+    ]
+  },
+  "deep_cleaning": {
+    "frequency": "TODO (hebdomadaire? entre chaque client?)",
+    "scope": "TODO",
+    "steps": [
+      "Changement draps et serviettes",
+      "Nettoyage vitres",
+      "Nettoyage frigo (si présent)",
+      "Détachage si nécessaire"
+    ]
+  },
+  "maintenance_issues": {
+    "reporting": "TODO (comment signaler?)",
+    "priority_levels": {
+      "urgent": "Sécurité ou empêche l'usage",
+      "high": "Gêne significative",
+      "normal": "Peut attendre"
+    },
+    "examples": {
+      "urgent": ["Fuite d'eau", "Climatisation en panne", "Porte bloquée"],
+      "high": ["TV ne marche pas", "WiFi instable"],
+      "normal": ["Peinture écaillée", "Rail coulissant un peu dur"]
+    }
+  },
+  "tags": ["placeholder", "to_complete", "process", "housekeeping", "maintenance"],
+  "todo": [
+    "Définir horaires de ménage",
+    "Créer checklist pour le staff",
+    "Définir fréquence nettoyage profond",
+    "Documenter système de tickets maintenance"
+  ]
+}

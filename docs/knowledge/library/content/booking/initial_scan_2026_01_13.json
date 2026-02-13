@@ -1,0 +1,452 @@
+{
+  "metadata": {
+    "generated_at": "2026-01-14",
+    "status": "in_progress",
+    "description": "Baseline structure for Booking.com Room Types. Fields set to null will be populated during the serial backup process.",
+    "note": "Current amenity lists reflect ACTIVE features only. Exhaustive dictionary scrape (including unchecked items) is scheduled."
+  },
+  "master_amenity_dictionary": {
+    "room_amenities": [
+      "Cots",
+      "Clothes rack",
+      "Drying rack for clothing",
+      "Fold-up bed",
+      "Sofa bed",
+      "Trash cans",
+      "Heated pool",
+      "Infinity pool",
+      "Plunge pool",
+      "Pool cover",
+      "Pool towels",
+      "Pool with a view",
+      "Rooftop pool",
+      "Salt water pool",
+      "Shallow end",
+      "Air conditioning",
+      "Private pool",
+      "Tumble dryer",
+      "Wardrobe or closet",
+      "Carpeted",
+      "Dressing room",
+      "Extra long beds (> 2 metres)",
+      "Fan",
+      "Fireplace",
+      "Heating",
+      "Interconnected room(s) available",
+      "Iron",
+      "Ironing facilities",
+      "Hot tub",
+      "Mosquito net",
+      "Private entrance",
+      "Safety deposit box",
+      "Sofa",
+      "Soundproofing",
+      "Seating Area",
+      "Tile/marble floor",
+      "Pants press",
+      "Washing machine",
+      "Hardwood or parquet floors",
+      "Desk",
+      "Hypoallergenic",
+      "Cleaning products",
+      "Electric blankets",
+      "Pajamas",
+      "Yukata",
+      "Socket near the bed",
+      "Adapter",
+      "Feather pillow",
+      "Non-feather pillow",
+      "Hypoallergenic pillow"
+    ],
+    "bathroom": [
+      "Private bathroom",
+      "Shared bathroom",
+      "Toilet paper",
+      "Bath",
+      "Bidet",
+      "Bath or shower",
+      "Bathrobe",
+      "Free toiletries",
+      "Additional toilet",
+      "Hairdryer",
+      "Spa bath",
+      "Shared toilet",
+      "Sauna",
+      "Shower",
+      "Slippers",
+      "Toilet",
+      "Additional bathroom",
+      "Toothbrush",
+      "Shampoo",
+      "Conditioner",
+      "Body soap",
+      "Shower cap"
+    ],
+    "media_technology": [
+      "Game console – PS4",
+      "Game console – Wii U",
+      "Game console – Xbox One",
+      "Computer",
+      "Game console",
+      "Game console – Nintendo Wii",
+      "Game console – PS2",
+      "Game console – PS3",
+      "Game console – Xbox 360",
+      "Laptop",
+      "iPad",
+      "Cable channels",
+      "CD player",
+      "DVD player",
+      "Fax",
+      "iPod dock",
+      "Laptop safe",
+      "Flat-screen TV",
+      "Pay-per-view channels",
+      "Radio",
+      "Satellite channels",
+      "Telephone",
+      "TV",
+      "Video",
+      "Video games",
+      "Blu-ray player",
+      "Mobile hotspot device",
+      "Smartphone",
+      "Streaming service (like Netflix)"
+    ],
+    "food_drink": [
+      "Dining area",
+      "Dining table",
+      "Wine glasses",
+      "Bottle of water",
+      "Chocolate or cookies",
+      "Fruits",
+      "Wine or champagne",
+      "Barbecue",
+      "Oven",
+      "Stovetop",
+      "Toaster",
+      "Dishwasher",
+      "Electric kettle",
+      "Outdoor dining area",
+      "Outdoor furniture",
+      "Minibar",
+      "Kitchen",
+      "Kitchenette",
+      "Kitchenware",
+      "Microwave",
+      "Refrigerator",
+      "Tea/Coffee maker",
+      "Coffee machine",
+      "Children's high chair"
+    ],
+    "services_extras": [
+      "Key card access",
+      "Lockers",
+      "Key access",
+      "Executive lounge access",
+      "Alarm clock",
+      "Wake-up service",
+      "Wake up service/Alarm clock",
+      "Linen",
+      "Towels",
+      "Towels/sheets (extra fee)"
+    ],
+    "outdoor_view": [
+      "Balcony",
+      "Patio",
+      "View",
+      "Terrace",
+      "City view",
+      "Garden view",
+      "Lake view",
+      "Landmark view",
+      "Mountain view",
+      "Pool view",
+      "River view",
+      "Sea view",
+      "Inner courtyard view",
+      "Quiet street view"
+    ],
+    "accessibility": [
+      "Accessible by lift",
+      "Entire unit located on ground floor",
+      "Entire unit wheelchair accessible",
+      "Hearing accessible",
+      "Upper floors accessible by elevator",
+      "Upper floors accessible by stairs only",
+      "Adapted bath",
+      "Emergency cord in bathroom",
+      "Raised toilet",
+      "Lowered sink",
+      "Roll-in shower",
+      "Shower chair",
+      "Toilet with grab rails",
+      "Walk-in shower"
+    ],
+    "entertainment_family_services": [
+      "Baby safety gates",
+      "Board games/puzzles",
+      "Books, DVDs, or music for children",
+      "Child safety socket covers"
+    ],
+    "safety_security": [
+      "Carbon monoxide detector",
+      "Carbon monoxide sources",
+      "Smoke alarm",
+      "Fire extinguisher"
+    ],
+    "safety_features": ["Air purifiers"],
+    "physical_distancing": [
+      "Single-room air conditioning for guest accommodation"
+    ],
+    "cleanliness_disinfecting": ["Hand sanitiser"]
+  },
+  "rooms": [
+    {
+      "id": "544684730",
+      "name_official": "Chambre Double Superieur 4 ; 5",
+      "name_custom": "Chambre Double Superieur 4 ; 5",
+      "occupancy": {
+        "max_guests": 2,
+        "max_adults": 2,
+        "max_children": 1
+      },
+      "specs": {
+        "room_size": "24.00 m²",
+        "bed_configuration": "1 Extra-large double bed (Super-king size)",
+        "smoking_policy": "Mixed (Smoking & Non-smoking options)",
+        "views": ["Patio", "View", "Terrace"]
+      },
+      "amenities": {
+        "summary": "1 Extra-large double bed (Super-king size), smoking/non-smoking options, floor location selection.",
+        "features_list": [
+          "Extra-long beds (> 2 metres)",
+          "Seating Area",
+          "Safety deposit box",
+          "Heating",
+          "Mosquito net",
+          "Socket near the bed",
+          "Bath",
+          "Shower",
+          "Toilet",
+          "Toilet paper",
+          "Free toiletries",
+          "Shampoo",
+          "Body soap",
+          "Flat-screen TV",
+          "Cable channels",
+          "Satellite channels",
+          "Electric kettle",
+          "Wine glasses",
+          "Bottle of water",
+          "Patio",
+          "Terrace"
+        ]
+      },
+      "media": {
+        "photo_count": null,
+        "gallery_verified": false
+      },
+      "settings": {
+        "is_renaming_possible": true,
+        "min_price": null
+      }
+    },
+    {
+      "id": "544684732",
+      "name_official": "Suite Executive 6",
+      "name_custom": null,
+      "occupancy": {
+        "max_guests": 2,
+        "max_adults": 2,
+        "max_children": 1
+      },
+      "specs": {
+        "room_size": null,
+        "bed_configuration": null,
+        "smoking_policy": null,
+        "views": null
+      },
+      "amenities": {
+        "summary": "1 Extra-large double bed, suite layout.",
+        "features_list": null
+      },
+      "media": {
+        "photo_count": null,
+        "gallery_verified": false
+      },
+      "settings": {
+        "is_renaming_possible": null,
+        "min_price": null
+      }
+    },
+    {
+      "id": "544684733",
+      "name_official": "Suite De Luxe King Size 7",
+      "name_custom": null,
+      "occupancy": {
+        "max_guests": 3,
+        "max_adults": 3,
+        "max_children": 2
+      },
+      "specs": {
+        "room_size": null,
+        "bed_configuration": null,
+        "smoking_policy": null,
+        "views": null
+      },
+      "amenities": {
+        "summary": "King size bed, capacity for 3 adults.",
+        "features_list": null
+      },
+      "media": {
+        "photo_count": null,
+        "gallery_verified": false
+      },
+      "settings": {
+        "is_renaming_possible": null,
+        "min_price": null
+      }
+    },
+    {
+      "id": "544684736",
+      "name_official": "Suite Familiale 9 ; 11",
+      "name_custom": null,
+      "occupancy": {
+        "max_guests": 4,
+        "max_adults": 4,
+        "max_children": 3
+      },
+      "specs": {
+        "room_size": null,
+        "bed_configuration": null,
+        "smoking_policy": null,
+        "views": null
+      },
+      "amenities": {
+        "summary": "Family suite accommodating up to 4 adults and 3 children.",
+        "features_list": null
+      },
+      "media": {
+        "photo_count": null,
+        "gallery_verified": false
+      },
+      "settings": {
+        "is_renaming_possible": null,
+        "min_price": null
+      }
+    },
+    {
+      "id": "544684737",
+      "name_official": "Suite 10",
+      "name_custom": null,
+      "occupancy": {
+        "max_guests": 2,
+        "max_adults": 2,
+        "max_children": 1
+      },
+      "specs": {
+        "room_size": null,
+        "bed_configuration": null,
+        "smoking_policy": null,
+        "views": null
+      },
+      "amenities": {
+        "summary": "Standard suite for 2 guests.",
+        "features_list": null
+      },
+      "media": {
+        "photo_count": null,
+        "gallery_verified": false
+      },
+      "settings": {
+        "is_renaming_possible": null,
+        "min_price": null
+      }
+    },
+    {
+      "id": "544684739",
+      "name_official": "suite Presidentiel 12",
+      "name_custom": null,
+      "occupancy": {
+        "max_guests": 4,
+        "max_adults": 4,
+        "max_children": 3
+      },
+      "specs": {
+        "room_size": null,
+        "bed_configuration": null,
+        "smoking_policy": null,
+        "views": null
+      },
+      "amenities": {
+        "summary": "Presidential suite, maximum occupancy 4 adults.",
+        "features_list": null
+      },
+      "media": {
+        "photo_count": null,
+        "gallery_verified": false
+      },
+      "settings": {
+        "is_renaming_possible": null,
+        "min_price": null
+      }
+    },
+    {
+      "id": "544684740",
+      "name_official": "Chambre Triple de Luxe 1 ; 3 ; 8",
+      "name_custom": null,
+      "occupancy": {
+        "max_guests": 3,
+        "max_adults": 3,
+        "max_children": 2
+      },
+      "specs": {
+        "room_size": null,
+        "bed_configuration": null,
+        "smoking_policy": null,
+        "views": null
+      },
+      "amenities": {
+        "summary": "Triple room configuration for 3 adults.",
+        "features_list": null
+      },
+      "media": {
+        "photo_count": null,
+        "gallery_verified": false
+      },
+      "settings": {
+        "is_renaming_possible": null,
+        "min_price": null
+      }
+    },
+    {
+      "id": "544684742",
+      "name_official": "Chambre Double De luxe 2",
+      "name_custom": null,
+      "occupancy": {
+        "max_guests": 2,
+        "max_adults": 2,
+        "max_children": 1
+      },
+      "specs": {
+        "room_size": null,
+        "bed_configuration": null,
+        "smoking_policy": null,
+        "views": null
+      },
+      "amenities": {
+        "summary": "Deluxe double room for 2 guests.",
+        "features_list": null
+      },
+      "media": {
+        "photo_count": null,
+        "gallery_verified": false
+      },
+      "settings": {
+        "is_renaming_possible": null,
+        "min_price": null
+      }
+    }
+  ]
+}

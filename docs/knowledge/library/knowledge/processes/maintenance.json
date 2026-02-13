@@ -1,0 +1,70 @@
+{
+  "_comment": "PLACEHOLDER FILE - Workflow maintenance à documenter",
+  "version": "1.0.0",
+  "last_updated": "2026-01-15T12:00:00Z",
+  "status": "placeholder",
+  "process": {
+    "id": "maintenance",
+    "name": "Maintenance & Réparations Workflow",
+    "description": "Processus de maintenance préventive et corrective"
+  },
+  "preventive_maintenance": {
+    "frequency": "mensuelle",
+    "checklist": [
+      {
+        "area": "Plomberie",
+        "items": ["Vérifier fuites", "Tester pression eau", "Vérifier éviers", "Tester WC"]
+      },
+      {
+        "area": "Électricité",
+        "items": ["Tester prises", "Vérifier éclairage", "Test interrupteurs"]
+      },
+      {
+        "area": "Climatisation",
+        "items": ["Nettoyer filtres", "Test fonctionnement", "Vérifier bruits"]
+      },
+      {
+        "area": "Piscine",
+        "items": ["Test pH", "Nettoyage filtre", "Vérifier niveau eau"]
+      },
+      {
+        "area": "Sécurité",
+        "items": ["Test extincteurs", "Vérifier éclairage secours", "Test portes"]
+      }
+    ]
+  },
+  "corrective_maintenance": {
+    "reporting": {
+      "how": "TODO (formulaire? WhatsApp? application?)",
+      "to_whom": "TODO",
+      "information_required": ["Lieu", "Problème", "Urgence", "Photos si possible"]
+    },
+    "response_times": {
+      "urgent": "TODO (immédiat? 2h?)",
+      "high": "TODO (24h?)",
+      "normal": "TODO (48-72h?)"
+    },
+    "workflow": [
+      "Signalement",
+      "Diagnostic",
+      "Réparation ou remplacement",
+      "Test",
+      "Validation",
+      "Documentation"
+    ]
+  },
+  "suppliers": {
+    "plumber": "TODO",
+    "electrician": "TODO",
+    "ac_technician": "TODO",
+    "pool_maintenance": "TODO",
+    "general_handyman": "TODO"
+  },
+  "tags": ["placeholder", "to_complete", "process", "maintenance"],
+  "todo": [
+    "Lister tous les fournisseurs avec contacts",
+    "Définir temps de réponse par priorité",
+    "Créer système de tickets",
+    "Documenter historique maintenance"
+  ]
+}

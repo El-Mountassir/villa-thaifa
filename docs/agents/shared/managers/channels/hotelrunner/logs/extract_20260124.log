@@ -1,0 +1,57 @@
+2026-01-24 14:20:44,027 - INFO - HotelRunner Reservations Extractor v1.0
+2026-01-24 14:20:44,028 - INFO - Execution time: 2026-01-24 14:20:44
+2026-01-24 14:20:44,028 - INFO - ================================================================================
+2026-01-24 14:20:44,028 - INFO - Starting HotelRunner reservations extraction
+2026-01-24 14:20:44,028 - INFO - Profile: /home/node/.hotelrunner-profile
+2026-01-24 14:20:44,028 - INFO - Output directory: /home/omar/omar-el-mountassir/projects/clients/villa-thaifa/sources/hotelrunner-api/data/reservations
+2026-01-24 14:20:44,028 - INFO - Step 1: Opening HotelRunner dashboard...
+2026-01-24 14:20:55,122 - INFO - ✓ Browser opened successfully
+2026-01-24 14:20:55,122 - INFO - Step 2: Waiting for page load...
+2026-01-24 14:20:58,127 - INFO - Step 3: Verifying authentication...
+2026-01-24 14:20:58,166 - ERROR - Not authenticated! reCAPTCHA may be required.
+2026-01-24 14:20:58,166 - ERROR - Please run: agent-browser --headed --profile ~/.hotelrunner-profile open https://app.hotelrunner.com
+2026-01-24 14:20:58,166 - ERROR - And login manually once to save the session.
+2026-01-24 14:20:58,261 - INFO - 
+Closing browser...
+2026-01-24 14:20:58,273 - INFO - ✓ Browser closed
+2026-01-24 14:20:58,273 - INFO - ================================================================================
+2026-01-24 14:20:58,273 - ERROR - 
+❌ Extraction failed!
+2026-01-24 14:22:03,106 - INFO - HotelRunner Reservations Extractor v1.0
+2026-01-24 14:22:03,106 - INFO - Execution time: 2026-01-24 14:22:03
+2026-01-24 14:22:03,106 - INFO - ================================================================================
+2026-01-24 14:22:03,106 - INFO - Starting HotelRunner reservations extraction
+2026-01-24 14:22:03,106 - INFO - Profile: /home/node/.hotelrunner-profile
+2026-01-24 14:22:03,106 - INFO - Output directory: /home/omar/omar-el-mountassir/projects/clients/villa-thaifa/sources/hotelrunner-api/data/reservations
+2026-01-24 14:22:03,106 - INFO - Step 1: Opening HotelRunner dashboard...
+2026-01-24 14:22:06,781 - INFO - ✓ Browser opened successfully
+2026-01-24 14:22:06,781 - INFO - Step 2: Waiting for page load...
+2026-01-24 14:22:09,790 - INFO - Step 3: Verifying authentication...
+2026-01-24 14:22:09,870 - ERROR - Not authenticated! reCAPTCHA may be required.
+2026-01-24 14:22:09,871 - ERROR - Please run: agent-browser --headed --profile ~/.hotelrunner-profile open https://app.hotelrunner.com
+2026-01-24 14:22:09,871 - ERROR - And login manually once to save the session.
+2026-01-24 14:22:09,991 - INFO - 
+Closing browser...
+2026-01-24 14:22:10,024 - INFO - ✓ Browser closed
+2026-01-24 14:22:10,024 - INFO - ================================================================================
+2026-01-24 14:22:10,024 - ERROR - 
+❌ Extraction failed!
+2026-01-24 14:23:41,267 - INFO - HotelRunner Reservations Extractor v1.0
+2026-01-24 14:23:41,267 - INFO - Execution time: 2026-01-24 14:23:41
+2026-01-24 14:23:41,267 - INFO - ================================================================================
+2026-01-24 14:23:41,267 - INFO - Starting HotelRunner reservations extraction
+2026-01-24 14:23:41,267 - INFO - Profile: /home/node/.hotelrunner-profile
+2026-01-24 14:23:41,267 - INFO - Output directory: /home/omar/omar-el-mountassir/projects/clients/villa-thaifa/sources/hotelrunner-api/data/reservations
+2026-01-24 14:23:41,267 - INFO - Step 1: Opening HotelRunner dashboard...
+2026-01-24 14:23:47,258 - INFO - ✓ Browser opened successfully
+2026-01-24 14:23:47,259 - INFO - Step 2: Waiting for page load...
+2026-01-24 14:23:50,265 - INFO - Step 3: Verifying authentication...
+2026-01-24 14:23:50,299 - ERROR - Not authenticated! reCAPTCHA may be required.
+2026-01-24 14:23:50,300 - ERROR - Please run: agent-browser --headed --profile ~/.hotelrunner-profile open https://app.hotelrunner.com
+2026-01-24 14:23:50,300 - ERROR - And login manually once to save the session.
+2026-01-24 14:23:50,386 - INFO - 
+Closing browser...
+2026-01-24 14:23:50,403 - INFO - ✓ Browser closed
+2026-01-24 14:23:50,403 - INFO - ================================================================================
+2026-01-24 14:23:50,404 - ERROR - 
+❌ Extraction failed!

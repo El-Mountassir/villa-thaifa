@@ -1,0 +1,91 @@
+{
+  "_comment": "PLACEHOLDER FILE - À compléter avec les vraies données de la propriété",
+  "version": "1.0.0",
+  "last_updated": "2026-01-15T12:00:00Z",
+  "status": "placeholder",
+  "property": {
+    "id": "villa-thaifa",
+    "name": "Villa Thaifa",
+    "type": "Maison d'hôte / Riad",
+    "location": {
+      "address": "TODO",
+      "city": "Marrakech",
+      "country": "Maroc",
+      "coordinates": {"lat": "TODO", "lng": "TODO"},
+      "neighborhood": "TODO"
+    },
+    "rating": {
+      "booking_com": 9.3,
+      "tripadvisor": "TODO",
+      "google": "TODO"
+    },
+    "capacity": {
+      "total_rooms": 12,
+      "total_beds": "TODO",
+      "max_guests": "TODO"
+    },
+    "facilities": {
+      "pool": {
+        "type": "infinity pool",
+        "size": "TODO",
+        "heated": true
+      },
+      "spa": {
+        "hammam": true,
+        "massage": "TODO",
+        "other": "TODO"
+      },
+      "restaurant": {
+        "on_site": true,
+        "breakfast_rating": 10,
+        "capacity": "TODO"
+      },
+      "parking": {
+        "available": "TODO",
+        "type": "TODO"
+      },
+      "wifi": {
+        "available": true,
+        "type": "TODO"
+      }
+    },
+    "room_types": [
+      {
+        "type": "TODO",
+        "count": "TODO",
+        "features": ["TODO"]
+      }
+    ],
+    "amenities": {
+      "air_conditioning": true,
+      "heating": "TODO",
+      "safe": "TODO",
+      "mini_bar": "TODO",
+      "terrace": "TODO",
+      "garden": "TODO"
+    },
+    "services": {
+      "airport_transfer": "TODO",
+      "laundry": "TODO",
+      "room_service": "TODO",
+      "concierge": "TODO",
+      "tours": "TODO"
+    },
+    "policies": {
+      "check_in": "TODO",
+      "check_out": "TODO",
+      "cancellation": "TODO",
+      "payment_methods": ["TODO"],
+      "children_policy": "TODO",
+      "pets_policy": "TODO",
+      "smoking_policy": "TODO"
+    }
+  },
+  "tags": ["placeholder", "to_complete", "property"],
+  "todo": [
+    "Compléter l'adresse exacte",
+    "Détailler les 12 chambres (types, capacités)",
+    "Ajouter photos dans ASSETS.md",
+    "Compléter les policies"
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Villa Thaifa Agent Capability Schema",
+  "description": "Schema standard pour documenter les capacités d'un agent AI",
+  "type": "object",
+  "required": [
+    "agent_id",
+    "name",
+    "description",
+    "version",
+    "capabilities",
+    "inputs",
+    "outputs",
+    "constraints",
+    "performance_metrics"
+  ],
+  "properties": {
+    "agent_id": {
+      "type": "string",
+      "description": "ID unique de l'agent (kebab-case)",
+      "pattern": "^[a-z0-9-]+$",
+      "examples": ["booking-manager", "pricing-analyst", "communication-manager"]
+    },
+    "name": {
+      "type": "string",
+      "description": "Nom lisible de l'agent",
+      "examples": ["Booking Management Specialist", "Pricing Analyst Agent"]
+    },
+    "description": {
+      "type": "string",
+      "description": "Description courte de l'agent (1-2 phrases)",
+      "maxLength": 200
+    },
+    "version": {
+      "type": "string",
+      "description": "Version de la spec (Semantic Versioning)",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "capabilities": {
+      "type": "object",
+      "description": "Capacités principales de l'agent",
+      "required": ["core"],
+      "properties": {
+        "core": {
+          "type": "object",
+          "description": "Capacités core (map: capability_id -> capability_spec)",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["description", "complexity", "autonomy"],
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Description de la capacité"
+              },
+              "tools": {
+                "type": "array",
+                "description": "Outils utilisés pour cette capacité",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "complexity": {
+                "type": "string",
+                "enum": ["low", "medium", "high"],
+                "description": "Complexité de la capacité"
+              },
+              "autonomy": {
+                "type": "string",
+                "enum": ["full", "supervised", "human_required"],
+                "description": "Niveau d'autonomie"
+              }
+            }
+          }
+        }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "description": "Inputs attendus par l'agent",
+      "required": ["required"],
+      "properties": {
+        "required": {
+          "type": "array",
+          "description": "Inputs obligatoires",
+          "items": {
+            "type": "string"
+          }
+        },
+        "optional": {
+          "type": "array",
+          "description": "Inputs optionnels",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "description": "Outputs produits par l'agent",
+      "required": ["formats"],
+      "properties": {
+        "formats": {
+          "type": "array",
+          "description": "Formats de sortie",
+          "items": {
+            "type": "string"
+          }
+        },
+        "quality_criteria": {
+          "type": "array",
+          "description": "Critères de qualité",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "description": "Contraintes opérationnelles",
+      "required": ["max_processing_time"],
+      "properties": {
+        "max_processing_time": {
+          "type": "string",
+          "description": "Temps max de traitement",
+          "examples": ["5 minutes", "30 minutes", "2 hours"]
+        },
+        "requires_human_approval": {
+          "type": "array",
+          "description": "Cas requérant approbation humaine",
+          "items": {
+            "type": "string"
+          }
+        },
+        "platform_limits": {
+          "type": "object",
+          "description": "Limites par plateforme (si applicable)",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "max_api_calls": {
+                "type": "string",
+                "description": "Limite d'API calls",
+                "examples": ["1000/hour", "500/day"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "performance_metrics": {
+      "type": "object",
+      "description": "Métriques de performance cibles",
+      "required": ["success_rate_target"],
+      "properties": {
+        "success_rate_target": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Taux de succès cible (0-1)",
+          "examples": [0.95, 0.98]
+        },
+        "avg_processing_time_target": {
+          "type": "string",
+          "description": "Temps moyen de traitement cible",
+          "examples": ["2min", "5min"]
+        },
+        "accuracy_target": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Précision cible (0-1)",
+          "examples": [0.98, 0.99]
+        }
+      }
+    },
+    "testing": {
+      "type": "object",
+      "description": "Informations de testing",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["pending", "in_progress", "passing", "failing"]
+        },
+        "eval_suite": {
+          "type": "string",
+          "description": "Path vers suite de tests",
+          "examples": ["tests/agents/booking-manager/"]
+        },
+        "last_test_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Dernier test (YYYY-MM-DD)"
+        },
+        "pass_rate": {
+          "type": "object",
+          "description": "Taux de passe par type de test",
+          "properties": {
+            "unit": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "integration": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "regression": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "baseline": {
+          "type": "object",
+          "description": "Baseline pass@k metrics",
+          "properties": {
+            "pass_at_1": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "description": "Succès au 1er essai"
+            },
+            "pass_at_5": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "description": "Succès en 5 essais max"
+            }
+          }
+        }
+      }
+    },
+    "orchestration": {
+      "type": "object",
+      "description": "Informations d'orchestration multi-agent",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["specialist", "generalist", "coordinator"],
+          "description": "Type d'orchestration"
+        },
+        "can_work_independently": {
+          "type": "boolean",
+          "description": "Peut travailler sans supervision"
+        },
+        "can_delegate_to": {
+          "type": "array",
+          "description": "Agents auxquels peut déléguer",
+          "items": {
+            "type": "string"
+          }
+        },
+        "receives_from": {
+          "type": "array",
+          "description": "Agents desquels reçoit des tâches",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "context_requirements": {
+      "type": "object",
+      "description": "Contexte requis pour l'agent",
+      "properties": {
+        "mandatory": {
+          "type": "array",
+          "description": "Fichiers de contexte obligatoires (TOUJOURS chargés)",
+          "items": {
+            "type": "string"
+          },
+          "examples": [
+            "docs/knowledge/mandatory/client-profile.md",
+            "docs/knowledge/mandatory/operational-priorities.md"
+          ]
+        },
+        "domain": {
+          "type": "array",
+          "description": "Fichiers de contexte par domaine (chargés selon type d'agent)",
+          "items": {
+            "type": "string"
+          },
+          "examples": [
+            "docs/knowledge/domain/operations/booking-policies.md",
+            "docs/knowledge/domain/operations/platform-workflows.md"
+          ]
+        },
+        "mission": {
+          "type": "array",
+          "description": "Fichiers de contexte temporaire (mission spécifique)",
+          "items": {
+            "type": "string"
+          },
+          "examples": [
+            "docs/knowledge/missions/pms-rollout-2026/constraints.md"
+          ]
+        }
+      }
+    },
+    "dependencies": {
+      "type": "object",
+      "description": "Dépendances (agents et outils)",
+      "properties": {
+        "agents": {
+          "type": "array",
+          "description": "Agents avec lesquels collabore",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tools": {
+          "type": "array",
+          "description": "Outils/APIs utilisés",
+          "items": {
+            "type": "string"
+          },
+          "examples": [
+            "booking_com_api",
+            "airbnb_api",
+            "google_calendar"
+          ]
+        }
+      }
+    }
+  }
+}

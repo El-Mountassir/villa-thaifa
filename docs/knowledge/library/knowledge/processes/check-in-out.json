@@ -1,0 +1,104 @@
+{
+  "_comment": "PLACEHOLDER FILE - Workflow check-in/check-out à documenter",
+  "version": "1.0.0",
+  "last_updated": "2026-01-15T12:00:00Z",
+  "status": "placeholder",
+  "process": {
+    "id": "check-in-out",
+    "name": "Check-in / Check-out Workflow",
+    "description": "Processus complet d'arrivée et de départ des clients"
+  },
+  "check_in": {
+    "timing": {
+      "standard_time": "14:00",
+      "early_check_in": "sur demande",
+      "late_check_in": "TODO"
+    },
+    "steps": [
+      {
+        "step": 1,
+        "action": "Vérifier la réservation",
+        "details": "Confirmer dates, chambre, nombre de personnes, prix"
+      },
+      {
+        "step": 2,
+        "action": "Enregistrer le client",
+        "details": "Formulaire d'enregistrement, pièce d'identité, caution"
+      },
+      {
+        "step": 3,
+        "action": "Remettre la clé",
+        "details": "Clé de la chambre + clé d'accès principale"
+      },
+      {
+        "step": 4,
+        "action": "Présenter les installations",
+        "details": "Chambre, piscine, restaurant, horaires petit-déjeuner"
+      },
+      {
+        "step": 5,
+        "action": "Expliquer les services",
+        "details": "WiFi, petit-déjeuner, horaires, contact"
+      }
+    ],
+    "documents": [
+      "Formulaire d'enregistrement (à créer)",
+      "Carte de visite avec WiFi et contacts",
+      "Règlement intérieur"
+    ],
+    "checklist": [
+      "Réservation confirmée",
+      "Pièce d'identité enregistrée",
+      "Caution réglée",
+      "Clé remise",
+      "Client informé des horaires"
+    ]
+  },
+  "check_out": {
+    "timing": {
+      "standard_time": "11:00",
+      "late_check_out": "sur demande"
+    },
+    "steps": [
+      {
+        "step": 1,
+        "action": "Récupérer la clé",
+        "details": "Vérifier que toutes les clés sont rendues"
+      },
+      {
+        "step": 2,
+        "action": "Vérifier la chambre",
+        "details": "État général, dégâts éventuels, objets oubliés"
+      },
+      {
+        "step": 3,
+        "action": "Régler la note",
+        "details": "Services supplémentaires consommés"
+      },
+      {
+        "step": 4,
+        "action": "Feedback",
+        "details": "Demander si tout s'est bien passé"
+      },
+      {
+        "step": 5,
+        "action": "Au revoir",
+        "details": "Remerciements, invitation à revenir"
+      }
+    ],
+    "checklist": [
+      "Clés récupérées",
+      "Chambre vérifiée",
+      "Note réglée",
+      "Feedback collecté",
+      "Objets oubliés signalés"
+    ]
+  },
+  "tags": ["placeholder", "to_complete", "process", "checkin", "checkout"],
+  "todo": [
+    "Documenter les horaires exacts",
+    "Créer le formulaire d'enregistrement",
+    "Définir la politique early/late check-in out",
+    "Ajouter exemples de scripts pour le staff"
+  ]
+}
