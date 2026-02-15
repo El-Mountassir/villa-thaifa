@@ -1,0 +1,957 @@
+# Artifact Inventory Manifest
+
+_Generated: 2026-02-15 18:54 UTC_
+_Total files scanned: 875_
+_Taxonomy: Tri-State Lifecycle (source / meta / audit)_
+
+## Summary
+
+| Category | Count | Total Size | Centralizable? |
+|---|---:|---:|:---:|
+| `agent:config` | 23 | 118.0 KB | — |
+| `client:data` | 24 | 278.9 KB | — |
+| `content` | 468 | 645.5 MB | — |
+| `ops:status` | 15 | 195.9 KB | — |
+| `source:configuration` | 8 | 10.8 KB | — |
+| `source:data` | 32 | 172.8 KB | — |
+| `source:data:pending` | 2 | 4.4 KB | — |
+| `source:implementation` | 10 | 81.2 KB | — |
+| `unknown` | 293 | 3.3 MB | — |
+
+**Total context files (meta + audit): 0** (out of 875 total)
+
+---
+
+## Context Files — Candidates for `context/`
+
+---
+
+## Source & Operational Files (Stay in Place)
+
+### agent:config
+_Agent instructions, contracts, workspace files_
+
+- `AGENTS.md`
+- `CLAUDE.md`
+- `GEMINI.md`
+- `README.md`
+- `docs/README.md`
+- `docs/agents/AI-SESSION-STARTER.md`
+- `docs/agents/HANDOFF.md`
+- `docs/agents/browser/EXAMPLES.md`
+- `docs/agents/browser/README.md`
+- `docs/agents/browser/guide.md`
+- `docs/agents/instructions/AGENTS.md`
+- `docs/agents/instructions/CLAUDE.md`
+- `docs/agents/instructions/GEMINI.md`
+- `docs/agents/shared/managers/channels/booking/capabilities.json`
+- `docs/agents/shared/managers/channels/hotelrunner/DECISION-BRIEF.md`
+- `docs/agents/shared/managers/channels/hotelrunner/EXTRACTION-GUIDE.md`
+- `docs/agents/shared/managers/channels/hotelrunner/OPTIONS-ANALYSIS.md`
+- `docs/agents/shared/managers/channels/hotelrunner/README.md`
+- `docs/agents/shared/managers/channels/hotelrunner/SETUP.md`
+- `docs/agents/shared/managers/channels/hotelrunner/STATUS-FINAL.md`
+- `docs/agents/shared/managers/channels/hotelrunner/TEST-RESULTS.md`
+- `docs/agents/shared/managers/channels/hotelrunner/guide.md`
+- `docs/agents/shared/managers/channels/hotelrunner/logs/extract_20260124.log`
+
+### client:data
+_Client/stakeholder profiles, communication records_
+
+- `docs/client/COMMUNICATION.md`
+- `docs/client/CONTACT.md`
+- `docs/client/DECISIONS.md`
+- `docs/client/HISTORY.md`
+- `docs/client/OMAR.md`
+- `docs/client/PREFERENCES.md`
+- `docs/client/PRIORITIES.md`
+- `docs/client/PROFILE.json`
+- `docs/client/PROFILE.md`
+- `docs/client/README.md`
+- `docs/client/STAKEHOLDERS.md`
+- `docs/client/TEAM.md`
+- `docs/client/VISION.md`
+- `docs/client/admin/CONTACT.md`
+- `docs/client/admin/kiss_principle_notes.md`
+- `docs/client/admin/project_history_transcript_lux.md`
+- `docs/client/admin/syntax_brainstorming.md`
+- `docs/client/client-profile.md`
+- `docs/client/decisions_needed.md`
+- `docs/client/email-intel-2026-02-09.md`
+- `docs/client/general_inquiries.md`
+- `docs/client/profiles/OMAR-EL-MOUNTASSIR.md`
+- `docs/client/profiles/SAID-THAIFA.md`
+- `docs/client/support/README.md`
+
+### content
+_Marketing content, guest-facing material, media refs_
+
+- `docs/content/2026-01-28-demande-anniversaire-30-personnes.html`
+- `docs/content/MANIFEST.md`
+- `docs/content/MESSAGE-POUR-SAID.txt`
+- `docs/content/README.md`
+- `docs/content/booking/initial_scan_2026_01_13.json`
+- `docs/content/pending/reference/IMG_20260126_0001.pdf`
+- `docs/content/pending/reference/Trip.com_GDA.pdf`
+- `docs/content/pending/reference/facilities/hall/hall.md`
+- `docs/content/pending/reference/facilities/hall/images/_DSC1586-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC1589-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC1592-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC1598-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC1613-HDR-Pano.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC1622-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC1628-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC7410-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC7413-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC7416-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC7419-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC7422-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC7425-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC7428-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC7434-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC7567-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC7570-HDR.jpg`
+- `docs/content/pending/reference/facilities/hall/images/_DSC7573-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/garden.md`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC1634-HDR-Modifier.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC1640-HDR-Modifier.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC1643-HDR-Modifier.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC1652-HDR-Modifier.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC1655-HDR-Modifier.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC1661-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC1916-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC1931-HDR-Modifier.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7516-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7519-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7522-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7525-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7528-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7531-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7534-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7537-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7543-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7546-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7549-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7552-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7555-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7558-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7564-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7579-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/images/_DSC7582-HDR.jpg`
+- `docs/content/pending/reference/facilities/pool-garden/pool.md`
+- `docs/content/pending/reference/facilities/spa-hammam/images/_DSC1685-HDR.jpg`
+- `docs/content/pending/reference/facilities/spa-hammam/images/_DSC1688-HDR.jpg`
+- `docs/content/pending/reference/facilities/spa-hammam/images/_DSC1694-HDR.jpg`
+- `docs/content/pending/reference/facilities/spa-hammam/images/_DSC1702-HDR.jpg`
+- `docs/content/pending/reference/facilities/spa-hammam/images/_DSC1719-HDR.jpg`
+- `docs/content/pending/reference/facilities/spa-hammam/images/_DSC1721-HDR.jpg`
+- `docs/content/pending/reference/facilities/spa-hammam/images/_DSC1724-HDR.jpg`
+- `docs/content/pending/reference/facilities/spa-hammam/images/_DSC1727-HDR.jpg`
+- `docs/content/pending/reference/facilities/spa-hammam/images/_DSC1736-HDR-Modifier.jpg`
+- `docs/content/pending/reference/facilities/spa-hammam/images/_DSC1739-HDR.jpg`
+- `docs/content/pending/reference/facilities/spa-hammam/spa.md`
+- `docs/content/pending/reference/rooms/01/01-deluxe-triple.md`
+- `docs/content/pending/reference/rooms/01/R01_Deluxe_Triple.md`
+- `docs/content/pending/reference/rooms/01/images/WhatsApp Image 2025-12-29 at 17.53.11 (1).jpeg`
+- `docs/content/pending/reference/rooms/01/images/WhatsApp Image 2025-12-29 at 17.53.11 (2).jpeg`
+- `docs/content/pending/reference/rooms/01/images/WhatsApp Image 2025-12-29 at 17.53.11 (3).jpeg`
+- `docs/content/pending/reference/rooms/01/images/WhatsApp Image 2025-12-29 at 17.53.11.jpeg`
+- `docs/content/pending/reference/rooms/01/images/WhatsApp Image 2025-12-29 at 17.53.12 (1).jpeg`
+- `docs/content/pending/reference/rooms/01/images/WhatsApp Image 2025-12-29 at 17.53.12 (2).jpeg`
+- `docs/content/pending/reference/rooms/01/images/WhatsApp Image 2025-12-29 at 17.53.12 (3).jpeg`
+- `docs/content/pending/reference/rooms/01/images/WhatsApp Image 2025-12-29 at 17.53.12.jpeg`
+- `docs/content/pending/reference/rooms/01/images/_DSC7200-HDR.jpg`
+- `docs/content/pending/reference/rooms/01/images/_DSC7203-HDR.jpg`
+- `docs/content/pending/reference/rooms/01/images/_DSC7206-HDR.jpg`
+- `docs/content/pending/reference/rooms/01/images/_DSC7209-HDR.jpg`
+- `docs/content/pending/reference/rooms/01/images/_DSC7212-HDR.jpg`
+- `docs/content/pending/reference/rooms/01/images/_DSC7215-HDR.jpg`
+- `docs/content/pending/reference/rooms/01/images/_DSC7218-HDR.jpg`
+- `docs/content/pending/reference/rooms/01/images/_DSC7221-HDR.jpg`
+- `docs/content/pending/reference/rooms/01/images/_DSC7224-HDR.jpg`
+- `docs/content/pending/reference/rooms/01/images/main.jpg`
+- `docs/content/pending/reference/rooms/01/images/photo-01.jpg`
+- `docs/content/pending/reference/rooms/01/images/photo-02.jpg`
+- `docs/content/pending/reference/rooms/01/images/photo-03.jpg`
+- `docs/content/pending/reference/rooms/01/images/photo-04.jpg`
+- `docs/content/pending/reference/rooms/01/images/photo-05.jpg`
+- `docs/content/pending/reference/rooms/01/images/photo-06.jpg`
+- `docs/content/pending/reference/rooms/01/images/photo-07.jpg`
+- `docs/content/pending/reference/rooms/01/images/photo-08.jpg`
+- `docs/content/pending/reference/rooms/02/02-deluxe-double.md`
+- `docs/content/pending/reference/rooms/02/R02_Deluxe_Double.md`
+- `docs/content/pending/reference/rooms/02/images/WhatsApp Image 2025-12-29 at 17.59.21 (1).jpeg`
+- `docs/content/pending/reference/rooms/02/images/WhatsApp Image 2025-12-29 at 17.59.21 (2).jpeg`
+- `docs/content/pending/reference/rooms/02/images/WhatsApp Image 2025-12-29 at 17.59.21 (3).jpeg`
+- `docs/content/pending/reference/rooms/02/images/WhatsApp Image 2025-12-29 at 17.59.21.jpeg`
+- `docs/content/pending/reference/rooms/02/images/WhatsApp Image 2025-12-29 at 17.59.22 (1).jpeg`
+- `docs/content/pending/reference/rooms/02/images/WhatsApp Image 2025-12-29 at 17.59.22 (2).jpeg`
+- `docs/content/pending/reference/rooms/02/images/WhatsApp Image 2025-12-29 at 17.59.22.jpeg`
+- `docs/content/pending/reference/rooms/02/images/_DSC7231-HDR.jpg`
+- `docs/content/pending/reference/rooms/02/images/_DSC7239-HDR.jpg`
+- `docs/content/pending/reference/rooms/02/images/_DSC7242-HDR.jpg`
+- `docs/content/pending/reference/rooms/02/images/_DSC7243-HDR.jpg`
+- `docs/content/pending/reference/rooms/02/images/_DSC7246-HDR.jpg`
+- `docs/content/pending/reference/rooms/02/images/_DSC7249-HDR.jpg`
+- `docs/content/pending/reference/rooms/02/images/_DSC7252-HDR.jpg`
+- `docs/content/pending/reference/rooms/02/images/_DSC7258-HDR.jpg`
+- `docs/content/pending/reference/rooms/02/images/_DSC7261-HDR.jpg`
+- `docs/content/pending/reference/rooms/02/images/main.jpg`
+- `docs/content/pending/reference/rooms/02/images/photo-01.jpg`
+- `docs/content/pending/reference/rooms/02/images/photo-02.jpg`
+- `docs/content/pending/reference/rooms/02/images/photo-03.jpg`
+- `docs/content/pending/reference/rooms/02/images/photo-04.jpg`
+- `docs/content/pending/reference/rooms/02/images/photo-05.jpg`
+- `docs/content/pending/reference/rooms/02/images/photo-06.jpg`
+- `docs/content/pending/reference/rooms/02/images/photo-07.jpg`
+- `docs/content/pending/reference/rooms/02/images/photo-08.jpg`
+- `docs/content/pending/reference/rooms/03/03-deluxe-triple.md`
+- `docs/content/pending/reference/rooms/03/R03_Deluxe_Triple.md`
+- `docs/content/pending/reference/rooms/03/images/WhatsApp Image 2025-12-29 at 18.00.48 (1).jpeg`
+- `docs/content/pending/reference/rooms/03/images/WhatsApp Image 2025-12-29 at 18.00.48 (2).jpeg`
+- `docs/content/pending/reference/rooms/03/images/WhatsApp Image 2025-12-29 at 18.00.48.jpeg`
+- `docs/content/pending/reference/rooms/03/images/WhatsApp Image 2025-12-29 at 18.13.15.jpeg`
+- `docs/content/pending/reference/rooms/03/images/WhatsApp Image 2025-12-29 at 18.13.16 (1).jpeg`
+- `docs/content/pending/reference/rooms/03/images/WhatsApp Image 2025-12-29 at 18.13.16 (2).jpeg`
+- `docs/content/pending/reference/rooms/03/images/WhatsApp Image 2025-12-29 at 18.13.16 (3).jpeg`
+- `docs/content/pending/reference/rooms/03/images/WhatsApp Image 2025-12-29 at 18.13.16.jpeg`
+- `docs/content/pending/reference/rooms/03/images/WhatsApp Image 2025-12-29 at 18.13.17 (1).jpeg`
+- `docs/content/pending/reference/rooms/03/images/WhatsApp Image 2025-12-29 at 18.13.17 (2).jpeg`
+- `docs/content/pending/reference/rooms/03/images/WhatsApp Image 2025-12-29 at 18.13.17.jpeg`
+- `docs/content/pending/reference/rooms/03/images/_DSC7264-HDR.jpg`
+- `docs/content/pending/reference/rooms/03/images/_DSC7267-HDR.jpg`
+- `docs/content/pending/reference/rooms/03/images/_DSC7270-HDR.jpg`
+- `docs/content/pending/reference/rooms/03/images/_DSC7276-HDR.jpg`
+- `docs/content/pending/reference/rooms/03/images/_DSC7279-HDR.jpg`
+- `docs/content/pending/reference/rooms/03/images/_DSC7282-HDR.jpg`
+- `docs/content/pending/reference/rooms/03/images/_DSC7285-HDR.jpg`
+- `docs/content/pending/reference/rooms/03/images/_DSC7291-HDR.jpg`
+- `docs/content/pending/reference/rooms/03/images/main.jpg`
+- `docs/content/pending/reference/rooms/03/images/photo-01.jpg`
+- `docs/content/pending/reference/rooms/03/images/photo-02.jpg`
+- `docs/content/pending/reference/rooms/03/images/photo-03.jpg`
+- `docs/content/pending/reference/rooms/03/images/photo-04.jpg`
+- `docs/content/pending/reference/rooms/03/images/photo-05.jpg`
+- `docs/content/pending/reference/rooms/03/images/photo-06.jpg`
+- `docs/content/pending/reference/rooms/03/images/photo-07.jpg`
+- `docs/content/pending/reference/rooms/04/04-double-superior.md`
+- `docs/content/pending/reference/rooms/04/R04_Double_Superior.md`
+- `docs/content/pending/reference/rooms/04/images/WhatsApp Image 2025-12-29 at 18.17.29 (1).jpeg`
+- `docs/content/pending/reference/rooms/04/images/WhatsApp Image 2025-12-29 at 18.17.29.jpeg`
+- `docs/content/pending/reference/rooms/04/images/WhatsApp Image 2025-12-29 at 18.17.30 (1).jpeg`
+- `docs/content/pending/reference/rooms/04/images/WhatsApp Image 2025-12-29 at 18.17.30 (2).jpeg`
+- `docs/content/pending/reference/rooms/04/images/WhatsApp Image 2025-12-29 at 18.17.30.jpeg`
+- `docs/content/pending/reference/rooms/04/images/_DSC7296-HDR.jpg`
+- `docs/content/pending/reference/rooms/04/images/_DSC7297-HDR.jpg`
+- `docs/content/pending/reference/rooms/04/images/_DSC7300-HDR.jpg`
+- `docs/content/pending/reference/rooms/04/images/_DSC7303-HDR.jpg`
+- `docs/content/pending/reference/rooms/04/images/_DSC7306-HDR.jpg`
+- `docs/content/pending/reference/rooms/04/images/_DSC7310-HDR.jpg`
+- `docs/content/pending/reference/rooms/04/images/_DSC7313-HDR.jpg`
+- `docs/content/pending/reference/rooms/04/images/_DSC7316-HDR.jpg`
+- `docs/content/pending/reference/rooms/04/images/_DSC7319-HDR.jpg`
+- `docs/content/pending/reference/rooms/04/images/main.jpg`
+- `docs/content/pending/reference/rooms/04/images/photo-01.jpg`
+- `docs/content/pending/reference/rooms/04/images/photo-02.jpg`
+- `docs/content/pending/reference/rooms/04/images/photo-03.jpg`
+- `docs/content/pending/reference/rooms/04/images/photo-04.jpg`
+- `docs/content/pending/reference/rooms/04/images/photo-05.jpg`
+- `docs/content/pending/reference/rooms/04/images/photo-06.jpg`
+- `docs/content/pending/reference/rooms/04/images/photo-07.jpg`
+- `docs/content/pending/reference/rooms/04/images/photo-08.jpg`
+- `docs/content/pending/reference/rooms/05/05-double-superior.md`
+- `docs/content/pending/reference/rooms/05/R05_Double_Superior.md`
+- `docs/content/pending/reference/rooms/05/images/WhatsApp Image 2025-12-29 at 18.19.21 (1).jpeg`
+- `docs/content/pending/reference/rooms/05/images/WhatsApp Image 2025-12-29 at 18.19.21 (2).jpeg`
+- `docs/content/pending/reference/rooms/05/images/WhatsApp Image 2025-12-29 at 18.19.21 (3).jpeg`
+- `docs/content/pending/reference/rooms/05/images/WhatsApp Image 2025-12-29 at 18.19.21.jpeg`
+- `docs/content/pending/reference/rooms/05/images/WhatsApp Image 2025-12-29 at 18.19.22.jpeg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7296-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7297-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7300-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7303-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7306-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7310-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7313-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7316-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7319-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7325-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7328-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7334-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7343-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7347-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7350-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7353-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7356-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/_DSC7359-HDR.jpg`
+- `docs/content/pending/reference/rooms/05/images/main.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-01.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-02.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-03.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-04.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-05.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-06.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-07.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-08.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-09.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-10.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-11.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-12.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-13.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-14.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-15.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-16.jpg`
+- `docs/content/pending/reference/rooms/05/images/photo-17.jpg`
+- `docs/content/pending/reference/rooms/06/06-executive-suite.md`
+- `docs/content/pending/reference/rooms/06/R06_Executive_Suite.md`
+- `docs/content/pending/reference/rooms/06/images/WhatsApp Image 2025-12-29 at 18.22.09 (1).jpeg`
+- `docs/content/pending/reference/rooms/06/images/WhatsApp Image 2025-12-29 at 18.22.09 (2).jpeg`
+- `docs/content/pending/reference/rooms/06/images/WhatsApp Image 2025-12-29 at 18.22.09 (3).jpeg`
+- `docs/content/pending/reference/rooms/06/images/WhatsApp Image 2025-12-29 at 18.22.09.jpeg`
+- `docs/content/pending/reference/rooms/06/images/WhatsApp Image 2025-12-29 at 18.22.10.jpeg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7296-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7297-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7300-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7303-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7306-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7310-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7313-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7316-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7319-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7365-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7374-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7377-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7380-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7383-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7386-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7389-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7392-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7398-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7401-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7404-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/_DSC7407-HDR.jpg`
+- `docs/content/pending/reference/rooms/06/images/main.jpg`
+- `docs/content/pending/reference/rooms/06/images/photo-01.jpg`
+- `docs/content/pending/reference/rooms/06/images/photo-02.jpg`
+- `docs/content/pending/reference/rooms/06/images/photo-03.jpg`
+- `docs/content/pending/reference/rooms/06/images/photo-04.jpg`
+- `docs/content/pending/reference/rooms/06/images/photo-05.jpg`
+- `docs/content/pending/reference/rooms/06/images/photo-06.jpg`
+- `docs/content/pending/reference/rooms/06/images/photo-07.jpg`
+- `docs/content/pending/reference/rooms/06/images/photo-08.jpg`
+- `docs/content/pending/reference/rooms/06/images/photo-09.jpg`
+- `docs/content/pending/reference/rooms/06/images/photo-10.jpg`
+- `docs/content/pending/reference/rooms/07/07-deluxe-king-suite.md`
+- `docs/content/pending/reference/rooms/07/R07_Deluxe_King_Suite.md`
+- `docs/content/pending/reference/rooms/07/images/WhatsApp Image 2025-12-29 at 18.25.30 (1).jpeg`
+- `docs/content/pending/reference/rooms/07/images/WhatsApp Image 2025-12-29 at 18.25.30.jpeg`
+- `docs/content/pending/reference/rooms/07/images/WhatsApp Image 2025-12-29 at 18.25.31 (1).jpeg`
+- `docs/content/pending/reference/rooms/07/images/WhatsApp Image 2025-12-29 at 18.25.31 (2).jpeg`
+- `docs/content/pending/reference/rooms/07/images/WhatsApp Image 2025-12-29 at 18.25.31 (3).jpeg`
+- `docs/content/pending/reference/rooms/07/images/WhatsApp Image 2025-12-29 at 18.25.31.jpeg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7296-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7297-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7300-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7303-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7306-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7310-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7313-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7316-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7319-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7437-HDR-Modifier.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7440-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7443-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7446-HDR-Modifier.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7449-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7452-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7455-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7459-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7468-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7471-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7474-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7480-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7483-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7486-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/_DSC7489-HDR.jpg`
+- `docs/content/pending/reference/rooms/07/images/main.jpg`
+- `docs/content/pending/reference/rooms/07/images/photo-01.jpg`
+- `docs/content/pending/reference/rooms/07/images/photo-02.jpg`
+- `docs/content/pending/reference/rooms/07/images/photo-03.jpg`
+- `docs/content/pending/reference/rooms/07/images/photo-04.jpg`
+- `docs/content/pending/reference/rooms/07/images/photo-05.jpg`
+- `docs/content/pending/reference/rooms/07/images/photo-06.jpg`
+- `docs/content/pending/reference/rooms/07/images/photo-07.jpg`
+- `docs/content/pending/reference/rooms/07/images/photo-08.jpg`
+- `docs/content/pending/reference/rooms/07/images/photo-09.jpg`
+- `docs/content/pending/reference/rooms/07/images/photo-10.jpg`
+- `docs/content/pending/reference/rooms/08/08-deluxe-triple.md`
+- `docs/content/pending/reference/rooms/08/R08_Deluxe_Triple.md`
+- `docs/content/pending/reference/rooms/08/images/WhatsApp Image 2025-12-29 at 18.26.56 (1).jpeg`
+- `docs/content/pending/reference/rooms/08/images/WhatsApp Image 2025-12-29 at 18.26.56 (2).jpeg`
+- `docs/content/pending/reference/rooms/08/images/WhatsApp Image 2025-12-29 at 18.26.56.jpeg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7296-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7297-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7300-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7303-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7306-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7310-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7313-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7316-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7319-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7492-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7495-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7498-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7501-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7507-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7510-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/_DSC7513-HDR.jpg`
+- `docs/content/pending/reference/rooms/08/images/main.jpg`
+- `docs/content/pending/reference/rooms/08/images/photo-01.jpg`
+- `docs/content/pending/reference/rooms/08/images/photo-02.jpg`
+- `docs/content/pending/reference/rooms/08/images/photo-03.jpg`
+- `docs/content/pending/reference/rooms/08/images/photo-04.jpg`
+- `docs/content/pending/reference/rooms/08/images/photo-05.jpg`
+- `docs/content/pending/reference/rooms/08/images/photo-06.jpg`
+- `docs/content/pending/reference/rooms/09/09-family-suite.md`
+- `docs/content/pending/reference/rooms/09/R09_Family_Suite.md`
+- `docs/content/pending/reference/rooms/09/images/16c97eec-db21-4e5e-be2d-2b05ac313f03.jpeg`
+- `docs/content/pending/reference/rooms/09/images/22b6495c-4dc3-460f-8d4a-e7f1fb232d07.jpeg`
+- `docs/content/pending/reference/rooms/09/images/2839f125-782d-4bc3-8be6-e49137b62603.jpeg`
+- `docs/content/pending/reference/rooms/09/images/353c9e76-ce9d-4d6f-8c85-8ad0f68ef0b6.jpeg`
+- `docs/content/pending/reference/rooms/09/images/3d45401f-d841-4b81-b790-58d57975fed2.jpeg`
+- `docs/content/pending/reference/rooms/09/images/683872b2-5c03-406f-b55d-2d82c355fc6e.jpeg`
+- `docs/content/pending/reference/rooms/09/images/69cff1e5-ceb3-4e74-af1d-3371fe3f0611.jpeg`
+- `docs/content/pending/reference/rooms/09/images/6ec253c5-0d88-4307-9f98-a15b20c3e635.jpeg`
+- `docs/content/pending/reference/rooms/09/images/9cc5df3b-fb13-48ee-893e-5b5cfb910e2d.jpeg`
+- `docs/content/pending/reference/rooms/09/images/WhatsApp Image 2025-12-29 at 18.31.56.jpeg`
+- `docs/content/pending/reference/rooms/09/images/WhatsApp Image 2025-12-29 at 18.31.57 (1).jpeg`
+- `docs/content/pending/reference/rooms/09/images/WhatsApp Image 2025-12-29 at 18.31.57 (2).jpeg`
+- `docs/content/pending/reference/rooms/09/images/WhatsApp Image 2025-12-29 at 18.31.57 (3).jpeg`
+- `docs/content/pending/reference/rooms/09/images/WhatsApp Image 2025-12-29 at 18.31.57.jpeg`
+- `docs/content/pending/reference/rooms/09/images/_DSC1745-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC1754-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC1757-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC1760-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC1763-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC1769-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC1775-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC1781-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC1788-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC7296-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC7297-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC7300-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC7303-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC7306-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC7310-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC7313-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC7316-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/_DSC7319-HDR.jpg`
+- `docs/content/pending/reference/rooms/09/images/a7fe10cb-124d-4f1d-98a4-3f06ba888084.jpeg`
+- `docs/content/pending/reference/rooms/09/images/main.jpg`
+- `docs/content/pending/reference/rooms/09/images/photo-07.jpg`
+- `docs/content/pending/reference/rooms/09/images/photo-14.jpg`
+- `docs/content/pending/reference/rooms/09/images/photo-15.jpg`
+- `docs/content/pending/reference/rooms/09/images/photo-16.jpg`
+- `docs/content/pending/reference/rooms/09/images/photo-17.jpg`
+- `docs/content/pending/reference/rooms/09/images/photo-23.jpg`
+- `docs/content/pending/reference/rooms/09/images/photo-24.jpg`
+- `docs/content/pending/reference/rooms/09/images/photo-30.jpg`
+- `docs/content/pending/reference/rooms/09/images/photo-31.jpg`
+- `docs/content/pending/reference/rooms/10/10-suite.md`
+- `docs/content/pending/reference/rooms/10/R10_Suite.md`
+- `docs/content/pending/reference/rooms/10/images/16c97eec-db21-4e5e-be2d-2b05ac313f03.jpeg`
+- `docs/content/pending/reference/rooms/10/images/2839f125-782d-4bc3-8be6-e49137b62603.jpeg`
+- `docs/content/pending/reference/rooms/10/images/28edfbc6-3e6d-4a6f-8049-cd5704cd49f1.jpeg`
+- `docs/content/pending/reference/rooms/10/images/353c9e76-ce9d-4d6f-8c85-8ad0f68ef0b6.jpeg`
+- `docs/content/pending/reference/rooms/10/images/4faf97ea-3e4f-43bb-9948-efde5cee3024.jpeg`
+- `docs/content/pending/reference/rooms/10/images/7d3fce83-5676-4702-a087-7794d7d62047.jpeg`
+- `docs/content/pending/reference/rooms/10/images/99d08b81-b2cd-4f5c-bd96-500349b2267e.jpeg`
+- `docs/content/pending/reference/rooms/10/images/9cc5df3b-fb13-48ee-893e-5b5cfb910e2d.jpeg`
+- `docs/content/pending/reference/rooms/10/images/_DSC1790-HDR.jpg`
+- `docs/content/pending/reference/rooms/10/images/_DSC1799-HDR.jpg`
+- `docs/content/pending/reference/rooms/10/images/_DSC1841-HDR.jpg`
+- `docs/content/pending/reference/rooms/10/images/_DSC1844-HDR.jpg`
+- `docs/content/pending/reference/rooms/10/images/_DSC1847-HDR.jpg`
+- `docs/content/pending/reference/rooms/10/images/_DSC1850-HDR.jpg`
+- `docs/content/pending/reference/rooms/10/images/_DSC1856-HDR.jpg`
+- `docs/content/pending/reference/rooms/10/images/_DSC1859-HDR.jpg`
+- `docs/content/pending/reference/rooms/10/images/_DSC1862-HDR.jpg`
+- `docs/content/pending/reference/rooms/10/images/b47cf4b3-e431-4b69-94a7-8938ce0d3cd7.jpeg`
+- `docs/content/pending/reference/rooms/10/images/d26235fc-3eac-4eb8-b17e-a35388846bca.jpeg`
+- `docs/content/pending/reference/rooms/10/images/dbf42976-0b0a-4428-8a32-accf7ab2c5e3.jpeg`
+- `docs/content/pending/reference/rooms/10/images/main.jpg`
+- `docs/content/pending/reference/rooms/10/images/photo-01.jpg`
+- `docs/content/pending/reference/rooms/10/images/photo-02.jpg`
+- `docs/content/pending/reference/rooms/10/images/photo-03.jpg`
+- `docs/content/pending/reference/rooms/10/images/photo-04.jpg`
+- `docs/content/pending/reference/rooms/10/images/photo-05.jpg`
+- `docs/content/pending/reference/rooms/10/images/photo-06.jpg`
+- `docs/content/pending/reference/rooms/10/images/photo-07.jpg`
+- `docs/content/pending/reference/rooms/10/images/photo-08.jpg`
+- `docs/content/pending/reference/rooms/10/images/photo-09.jpg`
+- `docs/content/pending/reference/rooms/10/images/photo-10.jpg`
+- `docs/content/pending/reference/rooms/11/11-family-suite.md`
+- `docs/content/pending/reference/rooms/11/R11_Family_Suite.md`
+- `docs/content/pending/reference/rooms/11/images/0d8c4561-6084-4df5-ac5c-27f54c93ff77.jpeg`
+- `docs/content/pending/reference/rooms/11/images/154f7a31-c702-4335-a59c-e7e1aaa66bd1.jpeg`
+- `docs/content/pending/reference/rooms/11/images/2542c4d5-03cb-42bf-84e0-fd1c4ca4d48b.jpeg`
+- `docs/content/pending/reference/rooms/11/images/2fdaca0f-f2b6-4bef-a060-89b39b2f5047.jpeg`
+- `docs/content/pending/reference/rooms/11/images/3457046e-7ccb-4a0d-989b-59c2e91a3289.jpeg`
+- `docs/content/pending/reference/rooms/11/images/36c6ddb7-5a5d-4273-806b-4200e43b761f.jpeg`
+- `docs/content/pending/reference/rooms/11/images/3a07ff24-547c-41c6-bc43-52d64b05fe0b.jpeg`
+- `docs/content/pending/reference/rooms/11/images/57f8cbd5-821e-46ad-a044-8e52616bdc68.jpeg`
+- `docs/content/pending/reference/rooms/11/images/6af9af24-56c9-4923-acf2-956ff3a4f443.jpeg`
+- `docs/content/pending/reference/rooms/11/images/6d6a27f7-d063-47da-9e35-657993905df5.jpeg`
+- `docs/content/pending/reference/rooms/11/images/8a9cd811-bb91-4941-ac46-a4cfca1eeca5.jpeg`
+- `docs/content/pending/reference/rooms/11/images/8f2f8be2-0474-4c17-aa2f-703fa4d69bf7.jpeg`
+- `docs/content/pending/reference/rooms/11/images/_DSC1877-HDR.jpg`
+- `docs/content/pending/reference/rooms/11/images/_DSC1880-HDR.jpg`
+- `docs/content/pending/reference/rooms/11/images/_DSC1883-HDR.jpg`
+- `docs/content/pending/reference/rooms/11/images/_DSC1886-HDR.jpg`
+- `docs/content/pending/reference/rooms/11/images/_DSC1892-HDR.jpg`
+- `docs/content/pending/reference/rooms/11/images/_DSC1895-HDR.jpg`
+- `docs/content/pending/reference/rooms/11/images/_DSC1898-HDR.jpg`
+- `docs/content/pending/reference/rooms/11/images/_DSC1901-HDR.jpg`
+- `docs/content/pending/reference/rooms/11/images/_DSC1904-HDR.jpg`
+- `docs/content/pending/reference/rooms/11/images/_DSC1910-HDR.jpg`
+- `docs/content/pending/reference/rooms/11/images/_DSC1913-HDR.jpg`
+- `docs/content/pending/reference/rooms/11/images/df267932-da7a-4fb7-b129-a03a84e86b95.jpeg`
+- `docs/content/pending/reference/rooms/11/images/e4c9406a-3004-4ed9-bbe1-8279d75e4344.jpeg`
+- `docs/content/pending/reference/rooms/11/images/main.jpg`
+- `docs/content/pending/reference/rooms/11/images/photo-01.jpg`
+- `docs/content/pending/reference/rooms/11/images/photo-02.jpg`
+- `docs/content/pending/reference/rooms/11/images/photo-03.jpg`
+- `docs/content/pending/reference/rooms/11/images/photo-04.jpg`
+- `docs/content/pending/reference/rooms/11/images/photo-05.jpg`
+- `docs/content/pending/reference/rooms/11/images/photo-06.jpg`
+- `docs/content/pending/reference/rooms/11/images/photo-07.jpg`
+- `docs/content/pending/reference/rooms/11/images/photo-08.jpg`
+- `docs/content/pending/reference/rooms/11/images/photo-09.jpg`
+- `docs/content/pending/reference/rooms/11/images/photo-10.jpg`
+- `docs/content/pending/reference/rooms/11/images/photo-11.jpg`
+- `docs/content/pending/reference/rooms/11/images/photo-12.jpg`
+- `docs/content/pending/reference/rooms/11/images/photo-13.jpg`
+- `docs/content/pending/reference/rooms/12/12-presidential-suite.md`
+- `docs/content/pending/reference/rooms/12/R12_Presidential_Suite.md`
+- `docs/content/pending/reference/rooms/12/images/14ab27e3-a52d-4073-a065-42364299a8bf.jpeg`
+- `docs/content/pending/reference/rooms/12/images/43e062e4-eec4-49cd-a74f-3c1293cb6dc4.jpeg`
+- `docs/content/pending/reference/rooms/12/images/9f916def-bd85-445d-bc6c-a8b21c5c0130.jpeg`
+- `docs/content/pending/reference/rooms/12/images/a93c5caf-6dfe-4587-843b-2be731c4a59d.jpeg`
+- `docs/content/pending/reference/rooms/12/images/b5432b13-c317-4ab6-b878-a0319952b997.jpeg`
+- `docs/content/pending/reference/rooms/12/images/bad3ec5f-fdd2-44cc-85da-41783b7c247e.jpeg`
+- `docs/content/pending/reference/rooms/12/images/bd76b680-2fef-4f99-9c30-bd509cf31f24.jpeg`
+- `docs/content/pending/reference/rooms/12/images/d2e88491-f9a5-4631-af4e-1d753f47d7ff.jpeg`
+- `docs/content/pending/reference/rooms/12/images/f283b53b-938a-4884-abf1-5bb9927cd5f3.jpeg`
+- `docs/content/pending/reference/rooms/12/images/f84b0bbf-948f-4bac-97b1-7d1e7f6784bc.jpeg`
+- `docs/content/pending/reference/rooms/12/images/main.jpg`
+- `docs/content/pending/reference/rooms/12/images/photo-01.jpg`
+- `docs/content/pending/reference/rooms/12/images/photo-02.jpg`
+- `docs/content/pending/reference/rooms/12/images/photo-03.jpg`
+- `docs/content/pending/reference/rooms/12/images/photo-04.jpg`
+- `docs/content/pending/reference/rooms/12/images/photo-05.jpg`
+- `docs/content/pending/reference/rooms/12/images/photo-06.jpg`
+- `docs/content/pending/reference/rooms/12/images/photo-07.jpg`
+- `docs/content/pending/reference/rooms/12/images/photo-08.jpg`
+- `docs/content/pending/reference/rooms/12/images/photo-09.jpg`
+- `docs/content/services-transport.md`
+
+### ops:status
+_Operational status and intake tracking_
+
+- `ops/intake/unprocessed/README.md`
+- `ops/intake/unprocessed/manifest.csv`
+- `ops/intake/unprocessed/unprocessed-files.md`
+- `ops/status/2026-02-13-isolation-report-full-depth.md`
+- `ops/status/2026-02-13-isolation-report.md`
+- `ops/status/INDEX.md`
+- `ops/status/archived.md`
+- `ops/status/artifact-inventory-manifest.md`
+- `ops/status/canonical.md`
+- `ops/status/context-inventory-manifest.md`
+- `ops/status/inbox.md`
+- `ops/status/migration-log.md`
+- `ops/status/phase1-migration-log.md`
+- `ops/status/planned.md`
+- `ops/status/working.md`
+
+### source:configuration
+_Project configuration (pyproject.toml, Makefile, etc.)_
+
+- `.gitignore`
+- `CHANGELOG.md`
+- `Makefile`
+- `config/agents/browser.json`
+- `config/agents/hotelrunner-api.json`
+- `config/labels.json`
+- `pyproject.toml`
+- `uv.lock`
+
+### source:data
+_Source-of-truth data (rooms, property, etc.)_
+
+- `data/core/property/README.md`
+- `data/core/property/inventory/STATUS.md`
+- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-access-col`
+- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-booking-col`
+- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-meta-cols`
+- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-plan-exec`
+- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-rooms2-consolidation`
+- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-size-sync`
+- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-smoking-kitchen`
+- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13`
+- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-access-col`
+- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-booking-col`
+- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-meta-cols`
+- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-plan-exec`
+- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-rooms2-consolidation`
+- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-size-sync`
+- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-smoking-kitchen`
+- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-step0`
+- `data/core/property/inventory/pending/amenities.md`
+- `data/core/property/inventory/pending/beds.md`
+- `data/core/property/inventory/pending/facilities.md`
+- `data/core/property/inventory/pending/inventory.md`
+- `data/core/property/inventory/pending/property-db-migration.md`
+- `data/core/property/inventory/rooms/backup/rooms-backup-2026-02-13-pre-profile-schema.md`
+- `data/core/property/inventory/rooms/exports/booking-room-listings.csv`
+- `data/core/property/inventory/rooms/exports/expedia-room-listings.csv`
+- `data/core/property/inventory/rooms/rooms-reconciliation-log.md`
+- `data/core/property/inventory/rooms/rooms.md`
+- `data/core/property/inventory/status/archived.md`
+- `data/core/property/inventory/status/backups.md`
+- `data/core/property/inventory/status/canonical.md`
+- `data/core/property/inventory/status/pending.md`
+
+### source:data:pending
+_Data awaiting reconciliation/triage_
+
+- `data/pending/finance/billing.json`
+- `data/pending/finance/rates.json`
+
+### source:implementation
+_Scripts, source code, tests_
+
+- `scripts/artifact_inventory.py`
+- `scripts/artifact_migrate.py`
+- `scripts/check_unique_info.py`
+- `scripts/domain_verify.py`
+- `scripts/hotelrunner/extract_reservations.py`
+- `scripts/inventory/export-ota.py`
+- `scripts/organization/reorganize_room_images.py`
+- `scripts/validate_contracts.py`
+- `src/villa_ops/README.md`
+- `tests/test_scripts.py`
+
+### unknown
+_Unclassified — needs manual review_
+
+- `context/audit/history/2026-01-29-agent-unification.md`
+- `context/audit/history/2026-01-29-inter-agent-sync.md`
+- `context/audit/history/Agentic Mastery.md`
+- `context/audit/history/BRIEFING-COMPLET-29-JANVIER-2026.md`
+- `context/audit/history/CHANGELOG.md`
+- `context/audit/history/INDEX-SESSION-28-JANVIER-2026.md`
+- `context/audit/history/MISSION.md`
+- `context/audit/history/SESSION-SUMMARY-2026-01-24.md`
+- `context/audit/history/STATE.md`
+- `context/audit/history/VERSION`
+- `context/audit/history/WhatsApp Chat with Said Thaifa.txt`
+- `context/audit/history/WhatsApp Ptt 2026-02-06 at 13.03.07.ogg`
+- `context/audit/history/WhatsApp Ptt 2026-02-06 at 13.03.07.txt`
+- `context/audit/history/changelog-promotions.md`
+- `context/audit/history/changelog-reservations.md`
+- `context/audit/history/pricing.md`
+- `context/audit/quality/2025-12-19-exploration-reservations-hotelrunner.md`
+- `context/audit/quality/2025-12-19-rapport-reservations-said.md`
+- `context/audit/quality/2025-12-19-rapport-reservations-said.pdf`
+- `context/audit/quality/2025-12-20-rapport-reservations-v2.md`
+- `context/audit/quality/2025-12-20_resilience-erreurs-techniques.md`
+- `context/audit/quality/2025-12-29-sync-investigation.html`
+- `context/audit/quality/2025-12-29-sync-investigation.md`
+- `context/audit/quality/2025-12-29-webfetch-access-errors.md`
+- `context/audit/quality/2026-01-08-property-type-scout-report.md`
+- `context/audit/quality/2026-01-17_audit.md`
+- `context/audit/quality/2026-01-28-migration-plan-completed.md`
+- `context/audit/quality/BRUTAL-AUDIT-REPORT-2026-01-16.md`
+- `context/audit/quality/FINAL-REPORT-2026-01-16.md`
+- `context/audit/quality/MIGRATION-REPORT.md`
+- `context/audit/quality/Nouveau.md`
+- `context/audit/quality/OPTIMIZATION-PLAN.md`
+- `context/audit/quality/PHASE-2-COMPLETION-REPORT.md`
+- `context/audit/quality/README.md`
+- `context/audit/quality/ULTIMATE-PROPOSAL-2026-01-16.html`
+- `context/audit/quality/agent-registry-overview.md`
+- `context/audit/quality/app_readiness_audit.md`
+- `context/audit/quality/audit-promotions-booking.md`
+- `context/audit/quality/blocage-prix-booking.md`
+- `context/audit/quality/client-profile-optimization--final.md`
+- `context/audit/quality/client-profile-optimization--patterns.md`
+- `context/audit/quality/client-profile-optimization--sources.md`
+- `context/audit/quality/client-profile-optimization--step-back.md`
+- `context/audit/quality/client-profile-optimization--synthesis.md`
+- `context/audit/quality/credential-management-evaluation.md`
+- `context/audit/quality/decision-card-001.md`
+- `context/audit/quality/execution-log-001.md`
+- `context/audit/quality/execution-log-002.md`
+- `context/audit/quality/execution-log-booking.md`
+- `context/audit/quality/execution-log-hotelrunner.md`
+- `context/audit/quality/gemini_task_history.md`
+- `context/audit/quality/gemini_walkthrough.md`
+- `context/audit/quality/grille-tarifaire-officielle.md`
+- `context/audit/quality/guest-testimonials.md`
+- `context/audit/quality/hotelrunner-browser-test-results.md`
+- `context/audit/quality/plan-promotions-booking.md`
+- `context/audit/quality/pm-template-selection--final.md`
+- `context/audit/quality/pm-template-selection--patterns.md`
+- `context/audit/quality/pm-template-selection--sources.md`
+- `context/audit/quality/pm-template-selection--step-back.md`
+- `context/audit/quality/pm-template-selection--synthesis.md`
+- `context/audit/quality/profile-reorganization--final.md`
+- `context/audit/quality/project_standards.md`
+- `context/audit/quality/prompt-en.md`
+- `context/audit/quality/prompt.md`
+- `context/audit/quality/rapport-audit-v2.md`
+- `context/audit/quality/rapport-demo-20-dec-2025.md`
+- `context/audit/quality/rapport-promotions-msaid.md`
+- `context/audit/quality/rapport-promotions-msaid.pdf`
+- `context/audit/quality/rapport-session-20-dec-2025.md`
+- `context/audit/quality/rdv-prep-agenda.md`
+- `context/audit/quality/rdv-prep-checklist.md`
+- `context/audit/quality/scenarios.md`
+- `context/audit/quality/status_report_v1.md`
+- `context/audit/quality/verification-promotions-booking--final.md`
+- `context/audit/quality/verification-promotions-booking--patterns.md`
+- `context/audit/quality/verification-promotions-booking--sources.md`
+- `context/audit/quality/verification-promotions-booking--step-back.md`
+- `context/audit/quality/verification-promotions-booking--synthesis.md`
+- `context/audit/snapshots/2025-12-20-pre-audit.md`
+- `context/audit/snapshots/CLIENT.md`
+- `context/audit/snapshots/ROADMAP.md`
+- `context/audit/snapshots/STRUCTURE.txt`
+- `context/audit/snapshots/STRUCTURE_CLEAN.txt`
+- `context/audit/snapshots/assignments.md`
+- `context/audit/snapshots/baseline--README.md`
+- `context/audit/snapshots/blockers.md`
+- `context/audit/snapshots/client--README.md`
+- `context/audit/snapshots/client-profile.md`
+- `context/audit/snapshots/context.md`
+- `context/audit/snapshots/execution--README.md`
+- `context/audit/snapshots/history--README.md`
+- `context/audit/snapshots/library--state--current--README.md`
+- `context/audit/snapshots/library--state--planned--README.md`
+- `context/audit/snapshots/pricing.md`
+- `context/audit/snapshots/project_structure.md`
+- `context/audit/snapshots/reservations.md`
+- `context/audit/snapshots/state--README.md`
+- `context/audit/snapshots/temporary_capture.md`
+- `context/audit/snapshots/villa-thaifa--state--current--README.md`
+- `context/audit/snapshots/villa-thaifa--state--planned--README.md`
+- `context/audit/snapshots/villa-thaifa-reponse-said-2026-01-28.json`
+- `context/meta/architecture/ADR-001-structure.md`
+- `context/meta/architecture/VERSION.txt`
+- `context/meta/architecture/architecture--README.md`
+- `context/meta/architecture/stack--README.md`
+- `context/meta/architecture/tech-stack-decision.md`
+- `context/meta/architecture/tech_stack.md`
+- `context/meta/knowledge/.gitkeep`
+- `context/meta/knowledge/2025-12-28-platform-mastery-strategy.md`
+- `context/meta/knowledge/2025-12-29-multi-agent-orchestration-patterns.md`
+- `context/meta/knowledge/CLAUDE.md`
+- `context/meta/knowledge/Expedia_Group_Partner_Central.md`
+- `context/meta/knowledge/OVERVIEW.md`
+- `context/meta/knowledge/Onboarding.md`
+- `context/meta/knowledge/Onboarding_-_Policies_and_Settings.md`
+- `context/meta/knowledge/accounting.md`
+- `context/meta/knowledge/api-reference.md`
+- `context/meta/knowledge/archive-policy.md`
+- `context/meta/knowledge/baseline.md`
+- `context/meta/knowledge/booking-com-data.md`
+- `context/meta/knowledge/booking_extranet_guide.md`
+- `context/meta/knowledge/booking_extranet_incidents.md`
+- `context/meta/knowledge/chambre_et_vue.md`
+- `context/meta/knowledge/channel-mapping.md`
+- `context/meta/knowledge/channels.json`
+- `context/meta/knowledge/channels_codes.csv`
+- `context/meta/knowledge/check-in-out.json`
+- `context/meta/knowledge/communications--README.md`
+- `context/meta/knowledge/credential-management-evaluation.md`
+- `context/meta/knowledge/current.md`
+- `context/meta/knowledge/decision-evaluator-agent-pattern.md`
+- `context/meta/knowledge/emergency.json`
+- `context/meta/knowledge/events-privatization.md`
+- `context/meta/knowledge/expedia_central_partner.md`
+- `context/meta/knowledge/finance--README.md`
+- `context/meta/knowledge/git-session-start.md`
+- `context/meta/knowledge/guest-communication.md`
+- `context/meta/knowledge/hotelrunner--README.md`
+- `context/meta/knowledge/hotelrunner-api.md`
+- `context/meta/knowledge/hotelrunner.md`
+- `context/meta/knowledge/housekeeping.json`
+- `context/meta/knowledge/hr_airbnb_reqs.png`
+- `context/meta/knowledge/hr_api_auth_details.png`
+- `context/meta/knowledge/hr_channels_status.png`
+- `context/meta/knowledge/hr_expedia_reqs.png`
+- `context/meta/knowledge/hr_rooms_list.png`
+- `context/meta/knowledge/legacy_transfer.md`
+- `context/meta/knowledge/lessons-learned.md`
+- `context/meta/knowledge/logo-design-brief.md`
+- `context/meta/knowledge/maintenance.json`
+- `context/meta/knowledge/platform-mapping.md`
+- `context/meta/knowledge/pricing.md`
+- `context/meta/knowledge/processes--README.md`
+- `context/meta/knowledge/protocols.md`
+- `context/meta/knowledge/reservation.md`
+- `context/meta/knowledge/rules.md`
+- `context/meta/knowledge/support--README.md`
+- `context/meta/knowledge/ui-nuances.md`
+- `context/meta/knowledge/villa-thaifa--README.md`
+- `context/meta/knowledge/workflows--README.md`
+- `context/meta/knowledge/xml-lock.md`
+- `context/meta/planning/.env.rules.md`
+- `context/meta/planning/.md`
+- `context/meta/planning/01-01-PLAN.md`
+- `context/meta/planning/01-01-SUMMARY.md`
+- `context/meta/planning/01-02-PLAN.md`
+- `context/meta/planning/01-RESEARCH.md`
+- `context/meta/planning/2025-12-23-thaifa-booking-data.md`
+- `context/meta/planning/2025-12-23-thaifa-image-organization.md`
+- `context/meta/planning/2025-12-23-thaifa-room-restructuring.md`
+- `context/meta/planning/2025-12-23-thaifa-validation-pdf.md`
+- `context/meta/planning/2025-12-28-thaifa-chambre4-gouram.md`
+- `context/meta/planning/2025-12-28-thaifa-chambre5-sync-investigation.md`
+- `context/meta/planning/2025-12-28-thaifa-hotelrunner-api-scout.md`
+- `context/meta/planning/2025-12-29-thaifa-hotelrunner-admin-access.md`
+- `context/meta/planning/2026-01-08-claude-md-externalization.md`
+- `context/meta/planning/2026-01-08-core-loop-simplification.md`
+- `context/meta/planning/2026-01-08-document-evaluation.md`
+- `context/meta/planning/2026-01-08-thaifa-property-type-investigation.md`
+- `context/meta/planning/2026-01-13-room-mapping-investigation.md`
+- `context/meta/planning/2026-01-24-extend-pricing-2026.md`
+- `context/meta/planning/2026-01-24-stop-sell-mars.md`
+- `context/meta/planning/2026-01-28-expedia-tax-correction.md`
+- `context/meta/planning/2026-02-13-agentic-kiss-transformation-plan.md`
+- `context/meta/planning/2026-02-13-agentic-operating-playbook.md`
+- `context/meta/planning/2026-02-13-next-7-days.md`
+- `context/meta/planning/2026-02-14-room-modularization.md`
+- `context/meta/planning/ANALYSIS-ARCHITECTURE.md`
+- `context/meta/planning/ARCHITECTURE-PROPOSAL.md`
+- `context/meta/planning/ARCHITECTURE.md`
+- `context/meta/planning/CONCERNS.md`
+- `context/meta/planning/CONFLICT-MAP.md`
+- `context/meta/planning/CONSOLIDATION-PLAN.md`
+- `context/meta/planning/CONVENTIONS.md`
+- `context/meta/planning/CREDENTIALS.md`
+- `context/meta/planning/DATA-INVENTORY.md`
+- `context/meta/planning/FICHE-MISSION-OMAR-29-JANVIER.md`
+- `context/meta/planning/HANDOFF-EM-191.md`
+- `context/meta/planning/INTEGRATIONS.md`
+- `context/meta/planning/NEXT_STEPS.md`
+- `context/meta/planning/PROJECT.md`
+- `context/meta/planning/REPRISE-APRES-MIGRATION.md`
+- `context/meta/planning/ROADMAP-2.md`
+- `context/meta/planning/ROADMAP.md`
+- `context/meta/planning/ROOM_DATA_SHEET_FOR_SAID.md`
+- `context/meta/planning/STACK.md`
+- `context/meta/planning/STATE.md`
+- `context/meta/planning/TESTING.md`
+- `context/meta/planning/TODOs.md`
+- `context/meta/planning/VILLA_THAIFA.json`
+- `context/meta/planning/VISION-DRAFT.md`
+- `context/meta/planning/VISION-ENRICHED.md`
+- `context/meta/planning/active.md`
+- `context/meta/planning/amenities_gap_analysis.md`
+- `context/meta/planning/amenities_gap_analysis_FR.md`
+- `context/meta/planning/amenities_recommendation.md`
+- `context/meta/planning/amenities_recommendation_FR.md`
+- `context/meta/planning/audit--REQUIREMENTS.md`
+- `context/meta/planning/audit_tracker.md`
+- `context/meta/planning/briefs--BRIEF.md`
+- `context/meta/planning/comprehensive-transformation-plan.md`
+- `context/meta/planning/comprehensive_work_log.md`
+- `context/meta/planning/developer_onboarding_guide.md`
+- `context/meta/planning/generate-structure-map.md`
+- `context/meta/planning/git-branching-strategy.md`
+- `context/meta/planning/git.md`
+- `context/meta/planning/hotelrunner-poc-2025-12-19.md`
+- `context/meta/planning/implementation_plan_expedia.md`
+- `context/meta/planning/jisr-mokawala-investigation-2025-12.md`
+- `context/meta/planning/linear-github-setup.md`
+- `context/meta/planning/linear-workflow.md`
+- `context/meta/planning/management--briefs--2025-12-22-hws-introduction.md`
+- `context/meta/planning/missions--README.md`
+- `context/meta/planning/onboarding_capture_v1.md`
+- `context/meta/planning/planning--REQUIREMENTS.md`
+- `context/meta/planning/project--BRIEF.md`
+- `context/meta/planning/project--briefs--2025-12-22-hws-introduction.md`
+- `context/meta/planning/repository_tree.txt`
+- `context/meta/planning/rules--README.md`
+- `context/meta/planning/scope_audit.md`
+- `context/meta/planning/specs--README.md`
+- `context/meta/planning/strategic_reframing.md`
+- `context/meta/planning/tasks--README.md`
+- `context/meta/planning/unified-workspace-governance.md`
+- `context/meta/planning/verification.md`
+- `context/meta/planning/vision_2026.md`
+- `context/meta/planning/workspace-standardization-plan.md`
+- `context/meta/planning/workspace.md`
+- `context/meta/templates/2026-01-09-10-44-55-villa-thaifa-najib-insights-brief-strategy.txt`
+- `context/meta/templates/README.md`
+- `context/meta/templates/ROOM_MASTER_TEMPLATE.md`
+- `context/meta/templates/agent-capabilities.md`
+- `context/meta/templates/agent-capability-schema.json`
+- `context/meta/templates/agent-cheatsheet.md`
+- `context/meta/templates/canonical-domain-template.md`
+- `context/meta/templates/claude-code-hotelrunner-investigation-prompt.md`
+- `context/meta/templates/code_of_conduct.md`
+- `context/meta/templates/collaboration_protocol.md`
+- `context/meta/templates/deletion-safety-report-template.md`
+- `context/meta/templates/frontmatter-schema.md`
+- `context/meta/templates/gemini-lux-action-plan.md`
+- `context/meta/templates/gemini-onboarding-prompt.md`
+- `context/meta/templates/gemini-system-prompt.md`
+- `context/meta/templates/google-ai-studio-quick-guide.md`
+- `context/meta/templates/lhcm-os-strategy-execution-plan-v0.1.0.md`
+- `context/meta/templates/najib-conversation-part1-analysis-v0.1.0.md`
+- `context/meta/templates/najib-mountassir-context-v0.1.0.md`
+- `context/meta/templates/reconciliation-entry-template.md`
+- `context/meta/templates/registry.md`
+- `context/meta/templates/reservation-report-template.md`
+- `context/meta/templates/scoring-system.json`
+- `context/meta/templates/tech-stack-omar-v0.1.3-lux-annotated.md`
+- `context/meta/templates/template.md`
+- `context/meta/templates/villa-thaifa-artifacts-inventory-v0.1.0.md`
+- `context/meta/templates/villa-thaifa-client-brief-v0.1.0.md`
+- `context/meta/templates/villa-thaifa-client-brief-v0.2.0.md`
+- `context/meta/templates/villa-thaifa-decisions-log-v0.1.0.md`
+- `context/meta/templates/villa-thaifa-execution-plan-2025-01-09-night.md`
+- `context/meta/templates/villa-thaifa-internal-app-requirements-v0.1.0.md`
+- `context/meta/templates/villa-thaifa-migration-plan-v0.1.0.md`
+- `context/meta/templates/villa-thaifa-migration-progress-report-v0.1.0.md`
+- `context/meta/templates/villa-thaifa-mission-lundi-12h00.md`
+- `context/meta/templates/villa-thaifa-open-questions-v0.1.0.md`
+- `context/meta/templates/villa-thaifa-project-brief-v0.2.0.md`
+- `context/meta/templates/villa-thaifa-quick-start-v0.1.0.md`
+- `context/meta/templates/villa-thaifa-repo-exploration-v0.1.0.md`
+- `context/meta/templates/villa-thaifa-research-findings-v0.1.0.md`
+- `context/meta/templates/villa-thaifa-technical-context-v0.1.0.md`
+- `context/meta/templates/villa-thaifa-workstream-master-v0.1.0.md`
+- `context/meta/templates/weekly-summary-template.md`
+- `data/README.md`
+- `data/sub-agent_registry.md`
+
+---
+
+## Proposed Centralized Structure
+
+```
+context/
+├── meta/
+│   ├── architecture/ (0 files)
+│   ├── knowledge/ (0 files)
+│   ├── planning/ (0 files)
+│   ├── templates/ (0 files)
+└── audit/
+    ├── history/ (0 files)
+    ├── quality/ (0 files)
+    ├── snapshots/ (0 files)
+```

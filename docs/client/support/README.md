@@ -14,3 +14,4 @@
 | Date 1er contact   | 2025-12-22                                  |
 
 > **Note**: HWS = distributeur/partenaire officiel HotelRunner au Maroc.
+> Demande API en cours — Ikram vérifie avec équipe technique.

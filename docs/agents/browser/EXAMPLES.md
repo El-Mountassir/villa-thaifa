@@ -7,6 +7,7 @@ Quick reference for common browser automation tasks.
 ## 🚀 Quick Tests
 
 ### Test 1: Basic Navigation
+
 ```bash
 agent-browser open https://example.com && \
   agent-browser get title && \
@@ -14,6 +15,7 @@ agent-browser open https://example.com && \
 ```
 
 ### Test 2: Screenshot
+
 ```bash
 agent-browser open https://news.ycombinator.com && \
   agent-browser screenshot --full hn.png && \
@@ -21,6 +23,7 @@ agent-browser open https://news.ycombinator.com && \
 ```
 
 ### Test 3: Interactive Elements
+
 ```bash
 agent-browser open https://github.com && \
   agent-browser snapshot -i -c && \
@@ -32,6 +35,7 @@ agent-browser open https://github.com && \
 ## 🔍 Web Scraping
 
 ### Extract Article Titles
+
 ```bash
 agent-browser open https://news.ycombinator.com
 agent-browser eval "Array.from(document.querySelectorAll('.titleline > a')).map(a => a.textContent).slice(0, 10)"
@@ -39,6 +43,7 @@ agent-browser close
 ```
 
 ### Get All Links
+
 ```bash
 agent-browser open https://example.com
 agent-browser eval "Array.from(document.querySelectorAll('a')).map(a => ({text: a.textContent, href: a.href}))"
@@ -46,6 +51,7 @@ agent-browser close
 ```
 
 ### Extract Prices from E-commerce
+
 ```bash
 agent-browser open https://shop.example.com/products
 agent-browser snapshot -i --json > products.json
@@ -58,6 +64,7 @@ agent-browser close
 ## 📝 Form Automation
 
 ### Google Search
+
 ```bash
 agent-browser open https://www.google.com
 agent-browser fill "textarea[name='q']" "Claude AI"
@@ -68,6 +75,7 @@ agent-browser close
 ```
 
 ### Contact Form
+
 ```bash
 agent-browser open https://example.com/contact
 agent-browser snapshot -i -c
@@ -82,6 +90,7 @@ agent-browser close
 ```
 
 ### Newsletter Signup
+
 ```bash
 agent-browser open https://blog.example.com
 agent-browser fill "input[type='email']" "user@example.com"
@@ -96,6 +105,7 @@ agent-browser close
 ## 🔐 Authentication & Sessions
 
 ### Login Once, Reuse Session
+
 ```bash
 # First time - login
 agent-browser --profile ~/.profiles/twitter open https://twitter.com
@@ -113,6 +123,7 @@ agent-browser close
 ```
 
 ### Multiple Accounts (Isolated Sessions)
+
 ```bash
 # Account 1
 agent-browser --session acc1 --profile ~/.profiles/acc1 open https://site.com
@@ -128,6 +139,7 @@ agent-browser --session acc2 --profile ~/.profiles/acc2 open https://site.com
 ## 📸 Screenshots & Documentation
 
 ### Full Page Screenshot
+
 ```bash
 agent-browser open https://tailwindcss.com
 agent-browser screenshot --full tailwind-docs.png
@@ -135,6 +147,7 @@ agent-browser close
 ```
 
 ### Multiple Screenshots (Monitoring)
+
 ```bash
 for i in {1..5}; do
   agent-browser --session monitor open https://status.example.com
@@ -145,6 +158,7 @@ agent-browser --session monitor close
 ```
 
 ### Export to PDF
+
 ```bash
 agent-browser open https://en.wikipedia.org/wiki/Artificial_intelligence
 agent-browser pdf wikipedia-ai.pdf
@@ -156,6 +170,7 @@ agent-browser close
 ## 🎯 Interactive Navigation
 
 ### Click Through Menu
+
 ```bash
 agent-browser open https://example.com
 agent-browser snapshot -i -c
@@ -168,6 +183,7 @@ agent-browser close
 ```
 
 ### Pagination
+
 ```bash
 agent-browser open https://example.com/products
 for i in {1..5}; do
@@ -183,6 +199,7 @@ agent-browser close
 ## 🧪 Testing & Validation
 
 ### Check Element Visibility
+
 ```bash
 agent-browser open https://example.com
 agent-browser is visible "button.submit"
@@ -191,6 +208,7 @@ agent-browser close
 ```
 
 ### Verify Page Content
+
 ```bash
 agent-browser open https://example.com
 TITLE=$(agent-browser get title)
@@ -203,6 +221,7 @@ agent-browser close
 ```
 
 ### Monitor Page Changes
+
 ```bash
 # Initial state
 agent-browser open https://example.com
@@ -220,6 +239,7 @@ agent-browser close
 ## 📊 Data Collection
 
 ### Scrape Table Data
+
 ```bash
 agent-browser open https://example.com/table
 agent-browser eval "
@@ -231,6 +251,7 @@ agent-browser close
 ```
 
 ### Extract Metadata
+
 ```bash
 agent-browser open https://example.com
 agent-browser eval "{
@@ -243,6 +264,7 @@ agent-browser close
 ```
 
 ### Get All Images
+
 ```bash
 agent-browser open https://example.com/gallery
 agent-browser eval "Array.from(document.querySelectorAll('img')).map(img => ({
@@ -259,6 +281,7 @@ agent-browser close
 ## 🔄 Advanced Workflows
 
 ### Complete Research Workflow
+
 ```bash
 #!/bin/bash
 
@@ -286,6 +309,7 @@ agent-browser close
 ```
 
 ### E-commerce Price Monitor
+
 ```bash
 #!/bin/bash
 
@@ -303,6 +327,7 @@ agent-browser close
 ```
 
 ### Automated Testing
+
 ```bash
 #!/bin/bash
 
@@ -328,6 +353,7 @@ agent-browser close
 ## 🎨 Creative Uses
 
 ### Generate Social Media Previews
+
 ```bash
 agent-browser open https://myblog.com/post/123
 agent-browser set viewport 1200 630  # Twitter card size
@@ -336,6 +362,7 @@ agent-browser close
 ```
 
 ### Archive Website State
+
 ```bash
 DATE=$(date +%Y%m%d)
 agent-browser open https://important-site.com
@@ -346,6 +373,7 @@ agent-browser close
 ```
 
 ### Compare Two Sites
+
 ```bash
 agent-browser --session site1 open https://site1.com
 agent-browser --session site1 screenshot site1.png
@@ -365,6 +393,7 @@ compare site1.png site2.png diff.png
 ## 💡 Pro Tips
 
 ### Chain Multiple Operations
+
 ```bash
 agent-browser open URL && \
   agent-browser snapshot -i -c && \
@@ -374,6 +403,7 @@ agent-browser open URL && \
 ```
 
 ### Use JSON Output for Processing
+
 ```bash
 agent-browser open https://api.github.com
 DATA=$(agent-browser eval "JSON.parse(document.body.textContent)" --json)
@@ -382,6 +412,7 @@ agent-browser close
 ```
 
 ### Persistent Monitoring Session
+
 ```bash
 # Open once
 agent-browser --session monitor open https://status.example.com

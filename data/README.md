@@ -10,9 +10,11 @@ This data workspace is being normalized domain by domain.
 ## Inventory Domain Control
 
 Primary status file:
+
 - `data/core/property/inventory/STATUS.md`
 
 Per-state files:
+
 - `data/core/property/inventory/status/canonical.md`
 - `data/core/property/inventory/status/pending.md`
 - `data/core/property/inventory/status/archived.md`

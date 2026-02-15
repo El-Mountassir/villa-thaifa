@@ -18,8 +18,11 @@ Use this file to avoid confusion.
 
 ## 3) Historical / Reference Archive (not auto-authoritative)
 
+- `docs/reference/library/` (legacy dump from `library/` root)
 - `docs/reference/knowledge/library/`
-- `docs/reference/agents/standards/`
+- `docs/reference/client/` (historical client context)
+- `docs/reference/architecture/` (old architectural docs)
+- `docs/reference/Api.md` (legacy API reference)
 - `docs/reference/knowledge/duplicates/`
 - `docs/content/reference/`
 
@@ -43,6 +46,7 @@ Never treat draft files as canonical input without explicit review.
 ## Usage Rule
 
 When sources conflict:
+
 1. prefer canonical data contracts and reconciliation logs
 2. then active operational docs
 3. then historical/reference docs

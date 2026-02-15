@@ -19,17 +19,26 @@
 ## Must-Preserve Open Loops
 
 1. Pending inventory domains:
+
 - `data/core/property/inventory/pending/amenities.md`
 - `data/core/property/inventory/pending/facilities.md`
 - `data/core/property/inventory/pending/beds.md`
 - `data/core/property/inventory/pending/inventory.md`
+
 2. Pending finance domain:
+
 - `data/pending/finance/`
+
 3. Contestable duplicate docs:
+
 - `docs/reference/knowledge/duplicates/stakeholders-2026-02-13/`
+
 4. Content triage backlog:
+
 - `docs/content/reference/`
+
 5. SCM integration backlog:
+
 - safe integration plan for `origin/main`
 
 ## Mandatory Behavior

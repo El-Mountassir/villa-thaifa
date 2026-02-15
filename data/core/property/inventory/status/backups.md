@@ -1,7 +1,9 @@
-# Inventory Backup Artifacts
+# Backup Artifacts
 
-Rooms backups are isolated from canonical files in:
-- `data/core/property/inventory/backups/rooms/`
+Backups are isolated from canonical files in:
+
+- `archives/backups/`
 
 Pattern:
-- `*.backup-2026-02-13*`
+
+- `YYYY/MM/DD/*.backup-HHMMSS.md`

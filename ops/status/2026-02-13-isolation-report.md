@@ -32,9 +32,11 @@ Snapshot of what is processed, what is archived, and what is still unprocessed b
 ## Legacy Backups Pending Cleanup Decision
 
 Rooms domain currently has multiple `*.backup-2026-02-13-*` files in:
+
 - `data/core/property/inventory/rooms/`
 
 Decision pending:
+
 1. Keep in-place until global cleanup sprint
 2. Move to a dedicated archive-backups location
 

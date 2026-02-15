@@ -3,9 +3,11 @@
 ## Scan Method
 
 Command used:
+
 - `tree -a --dirsfirst` (full depth, no `-L`)
 
 Tree totals observed:
+
 - `254 directories`
 - `1530 files`
 
@@ -25,16 +27,19 @@ Tree totals observed:
 ## Isolated: Processed / Controlled Scope
 
 ### Canonical operational data (processed)
+
 - `data/core/property/inventory/rooms/rooms.md`
 - `data/core/property/inventory/rooms/rooms-reconciliation-log.md`
 
 ### Validation stack (processed)
+
 - `scripts/domain_verify.py`
 - `scripts/validate_contracts.py`
 - `scripts/check_unique_info.py`
 - `tests/test_scripts.py`
 
 ### Governance and workflow controls (processed)
+
 - `AGENTS.md`
 - `README.md`
 - `CHANGELOG.md`
@@ -44,6 +49,7 @@ Tree totals observed:
 - `ops/intake/unprocessed/*`
 
 ### Archived completed sources (processed)
+
 - `archive/rooms/2026-02-13/rooms-3.md`
 - `archive/rooms/2026-02-13/rooms-4.md`
 - `archive/rooms/2026-02-13/rooms-legacy-checksums.sha256`
@@ -59,18 +65,22 @@ Tree totals observed:
 ## Isolated: Pending Cleanup Decisions
 
 ### Rooms backup artifacts (kept intentionally for safety)
+
 Location:
+
 - `data/core/property/inventory/rooms/`
-Pattern:
+  Pattern:
 - `*.backup-2026-02-13*`
 
 Decision still needed:
+
 1. Keep in place until all inventory domains are stabilized
 2. Move to a dedicated backup archive location
 
 ## Large Legacy Knowledge Zone (out of immediate cleanup scope)
 
 High-volume areas identified by full-depth tree:
+
 - `docs/knowledge/library/...`
 - `docs/agents/standards/...`
 - historical planning/reports and migration artifacts
