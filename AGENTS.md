@@ -2,37 +2,11 @@
 
 ## Repository Structure
 
-```
-villa-thaifa/
-├── data/                 ← canonical source-of-truth
-│   ├── rooms/            ← room inventory, reconciliation, OTA exports
-│   ├── finance/          ← billing, rates (pending onboarding)
-│   ├── pending-domains/  ← amenities, beds, facilities (awaiting hardening)
-│   └── status/           ← per-domain tracking
-├── docs/                 ← operational documentation
-│   ├── agents/           ← AI agent configs + integrations
-│   ├── booking/          ← OTA contracts, booking requests
-│   ├── client/           ← stakeholder profiles, admin notes
-│   ├── facilities/       ← facility docs, transport
-│   ├── rooms/            ← room photos, per-room profiles
-│   └── pending/          ← unprocessed content
-├── context/              ← reference material (read-only)
-│   ├── meta/             ← architecture, planning, knowledge, templates
-│   └── audit/            ← history, quality reports, snapshots
-├── ops/                  ← status dashboards, intake queue
-├── scripts/              ← validation and tooling
-├── src/                  ← application code
-└── tests/                ← test suite
-```
+@STRUCTURE.md
 
 ## Mission
 
-Build a reliable operating system for Omar, Said, and AI agents with:
-
-- canonical data sources
-- deterministic verification
-- auditable reconciliation
-- safe archive/deletion decisions
+@MISSION.md
 
 ## Mandatory Workflow
 

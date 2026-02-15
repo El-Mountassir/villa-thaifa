@@ -4,15 +4,7 @@ Operational workspace for Villa Thaifa digital transformation.
 
 ## Structure
 
-```
-├── data/         canonical source-of-truth (rooms, finance, pending domains)
-├── docs/         operational docs, agent configs, client info, media
-├── context/      reference material — architecture, planning, audits (read-only)
-├── ops/          status dashboards, intake queue, migration logs
-├── scripts/      validation and tooling utilities
-├── src/          application code
-└── tests/        pytest suite
-```
+[Repository Structure](STRUCTURE.md)
 
 ## Quick Start
 
@@ -23,4 +15,4 @@ make test
 
 ## Governance
 
-Read first: `AGENTS.md`, then `ops/status/INDEX.md`.
+Read first: [AGENTS.md](AGENTS.md), then [Operational Status](ops/status/INDEX.md).
