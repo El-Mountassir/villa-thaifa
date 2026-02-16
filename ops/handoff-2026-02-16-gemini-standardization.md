@@ -30,10 +30,25 @@ Standardized Gemini CLI integration and model delegation strategy.
    - Correct Gemini CLI model IDs (gotcha: -preview suffix required)
    - Model delegation decision
 
+## Facilities Directory Audit
+
+**docs/facilities/** contains 53 image files (all .jpg) across 3 subdirectories:
+- `hall/images/` — 18 images (hall/reception area photos)
+- `pool-garden/images/` — 25 images (pool and garden area photos)
+- `spa-hammam/images/` — 10 images (spa/hammam area photos)
+
+**No markdown files remain** in docs/facilities/ — all 5 facility profiles were successfully migrated to `data/property/facilities/` (garden.md, hall-reception.md, pool.md, services.md, spa-hammam.md).
+
+**Status:** The images in docs/facilities/ are the original facility photos. They were not part of the markdown migration. These need to be either:
+1. Moved to `data/property/facilities/{facility}/images/` to co-locate with their profiles, or
+2. Left in docs/facilities/ if docs/ is the intended media home.
+
+Currently `data/property/facilities/` has no images subdirectory — only the 5 .md profile files.
+
 ## Open Items
 - [ ] Comprehensive model routing strategy (DSC-NEW in ~/omar/operational/productivity/TASKS.md) — needs dedicated session(s)
-- [ ] Data Consolidation Phase A continuation (see ops/session-recovery-017eb935.md)
 - [ ] Merge bootstrap/2026-02-13-baseline → main
+- [ ] Decide on facility images location: move docs/facilities/*/images/ → data/property/facilities/*/images/ to match room image pattern, or keep in docs/
 
 ## Image Duplication Check
 **Result: No duplicates found. Migration is clean.**
