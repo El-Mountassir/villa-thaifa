@@ -2,11 +2,25 @@
 
 ## Repository Structure
 
-@STRUCTURE.md
+@docs/core/STRUCTURE.md
+
+### File Organization Rules
+
+**Files that MUST remain at repository root:**
+
+- `AGENTS.md` — AI agent workspace contract (this file)
+- `CLAUDE.md` — Claude Code project instructions
+- `GEMINI.md` — Gemini AI project instructions
+- `README.md` — Standard repository documentation (universal convention)
+- `CHANGELOG.md` — Version history (standard convention)
+
+**Rationale:** AI agent contract files (AGENTS.md, CLAUDE.md, GEMINI.md) must be at root for AI systems to discover and load them. README.md and CHANGELOG.md follow universal open-source conventions.
+
+**Foundational definitions** (MISSION, STRUCTURE, PRINCIPLES) live in `docs/core/`.
 
 ## Mission
 
-@MISSION.md
+@docs/core/MISSION.md
 
 ## Mandatory Workflow
 
@@ -17,17 +31,21 @@ Use this sequence for every operational task:
 3. QUESTIONS
 4. ACTION
 
+## Scope
+
+This repo is **Villa Thaifa operations** — property data, rooms, bookings, guest comms, WhatsApp integration, Said Thaifa (owner) context.
+
+## LHCM-OS (broader vision)
+
+LHCM-OS (Lightweight Hotel Channel Management OS) is a separate, broader product vision where Villa Thaifa is the first pilot. LHCM-OS lives at `~/omar/professional/projects/lhcm-os/` — NOT in this repo. You may reference LHCM-OS docs but do not duplicate or merge them here.
+
 ## Core Principles
 
-1. Canonical-first: one active source of truth per domain.
-2. One-file-at-a-time changes for sensitive inventory domains.
-3. Backup before mutation using `cp file archives/YYYY/QQ/file.backup-YYYY-MM-DD-HHMMSS.md`.
-4. No deletion without a documented reconciliation gate.
-5. Keep state visible in `ops/status/`.
-6. KISS default: markdown-first until contracts are stable.
-7. If confidence is low, mark as `owner_pending` and escalate.
+@docs/core/PRINCIPLES.md
 
-## Contestability Policy (Critical)
+## Policies
+
+### Contestability Policy (Critical)
 
 1. Treat all unprocessed data as potentially outdated, suboptimal, or contestable.
 2. Do not silently trust legacy sources.
@@ -35,14 +53,14 @@ Use this sequence for every operational task:
 4. When asking, provide short options with one recommended default.
 5. Log the chosen decision in status/reconciliation artifacts.
 
-## Data Handling Policy
+### Data Handling Policy
 
 1. Legacy files are reference-only until reconciled.
 2. Archive with checksum before removal from active scope.
 3. Record accepted/rejected conflicts in domain reconciliation logs.
 4. Do not overwrite conflicting values without trusted evidence.
 
-## Git/GitHub Sync Policy
+### Git/GitHub Sync Policy
 
 1. Keep repo synced at least:
    - start of day
