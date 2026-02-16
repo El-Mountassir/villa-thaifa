@@ -19,7 +19,11 @@
       "type": "string",
       "description": "ID unique de l'agent (kebab-case)",
       "pattern": "^[a-z0-9-]+$",
-      "examples": ["booking-manager", "pricing-analyst", "communication-manager"]
+      "examples": [
+        "booking-manager",
+        "pricing-analyst",
+        "communication-manager"
+      ]
     },
     "name": {
       "type": "string",
@@ -318,11 +322,7 @@
           "items": {
             "type": "string"
           },
-          "examples": [
-            "booking_com_api",
-            "airbnb_api",
-            "google_calendar"
-          ]
+          "examples": ["booking_com_api", "airbnb_api", "google_calendar"]
         }
       }
     }

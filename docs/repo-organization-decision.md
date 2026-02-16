@@ -8,13 +8,13 @@
 
 ## Constraints (Settled)
 
-| File | Location | Why |
-|------|----------|-----|
-| AGENTS.md | Root | AI agent discoverability (Claude Code loads from root) |
-| CLAUDE.md | Root | Claude Code requires root placement |
-| GEMINI.md | Root | Gemini requires root placement |
-| README.md | Root | Universal convention, GitHub displays first |
-| CHANGELOG.md | Root | Industry standard, changelog tools expect root |
+| File         | Location | Why                                                    |
+| ------------ | -------- | ------------------------------------------------------ |
+| AGENTS.md    | Root     | AI agent discoverability (Claude Code loads from root) |
+| CLAUDE.md    | Root     | Claude Code requires root placement                    |
+| GEMINI.md    | Root     | Gemini requires root placement                         |
+| README.md    | Root     | Universal convention, GitHub displays first            |
+| CHANGELOG.md | Root     | Industry standard, changelog tools expect root         |
 
 Documented in AGENTS.md under "File Organization Rules".
 
@@ -22,7 +22,7 @@ Documented in AGENTS.md under "File Organization Rules".
 
 ## Target Structure (After All Actions)
 
-```
+```sh
 Root (5 .md files + config):
 ├── AGENTS.md          AI agent workspace contract
 ├── CLAUDE.md          Claude Code project instructions
@@ -54,19 +54,24 @@ docs/core/ (foundational definitions):
 - [x] Rename `docs/core/PRINCIPLES` → `docs/core/PRINCIPLES.md` (was already .md)
 - [x] Update `AGENTS.md`: `@docs/core/PRINCIPLES.md` (verified — already correct)
 - [x] Update `STRUCTURE.md` content to reflect its new location and final layout
-- [x] Verify @reference chain works: CLAUDE.md → AGENTS.md → docs/core/* (ALL PASS)
+- [x] Verify @reference chain works: CLAUDE.md → AGENTS.md → docs/core/\* (ALL PASS)
 - [x] Delete redundant files:
   - `docs/research-repo-organization.md` (deleted)
   - `~/omar/knowledge/research/development/repo-organization/contracts-directory-decision.md` (deleted)
 
-### Missing Items (identified by research)
+### Governance Items — DECIDED (Full Governance, adapted for AI agents — 8.85/10)
 
-- [ ] Verify/add `LICENSE` at root (required for tool detection, currently absent)
-- [ ] Review `README.md` content (should have project overview + links to docs/core/)
-- [ ] Decide: Add `.github/` directory? (for CODEOWNERS, issue templates, workflows)
-- [ ] Decide: Add `CONTRIBUTING.md`? (root or docs/ — only if expecting contributions)
-- [ ] Decide: Add `CODE_OF_CONDUCT.md`? (only if open-source)
-- [ ] Decide: Add `SECURITY.md`? (only if open-source)
+- [ ] Add `LICENSE` at root (proprietary, protect IP)
+- [ ] Update `README.md` content (project overview + quick-start + links to docs/core/)
+- [ ] Create `.github/` directory (PR template, issue template for Linear integration, CODEOWNERS)
+- [ ] Add `CONTRIBUTING.md` at root — migrate workflow ("SCOUT, REPORT, QUESTIONS, ACTION") from AGENTS.md here. AGENTS.md references @CONTRIBUTING.md (DRY fix)
+- [ ] Add `CODE_OF_CONDUCT.md` at root — adapted for AI agents (behavioral boundaries, data ethics, decision constraints)
+- [ ] Add `SECURITY.md` at root — agent security policies (data access rules, secret handling, vulnerability reporting)
+- [ ] Update `AGENTS.md` — replace Mandatory Workflow section with @CONTRIBUTING.md reference, update File Organization Rules with new root files
+- [ ] Update `docs/core/STRUCTURE.md` — add new governance files to layout
+- [ ] Verify root file count stays under 15
+
+Full analysis: `~/omar/knowledge/research/development/repo-organization/governance-items-decision.md`
 
 ---
 
