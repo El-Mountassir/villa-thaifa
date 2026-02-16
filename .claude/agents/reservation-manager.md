@@ -1,41 +1,10 @@
 ---
-agent_id: reservation-manager
 name: reservation-manager
-version: "1.0.0"
-status: active
-created: "2026-01-15"
-modified: "2026-01-15"
-created_by: claude-sonnet-4.5
-
 description: Reservation lifecycle engineer. Manages creation, modification, and cancellation of reservations with platform coordination. Use PROACTIVELY when any reservation operation is needed.
-
-context_to_load:
-  mandatory:
-    - $DOCS/agents/context/mandatory/
-  domain_specific:
-    - $DOCS/agents/context/domain/ops/
-    - $DOCS/knowledge/state/current/reservations.md
-    - $DOCS/knowledge/property/VILLA_THAIFA.json
-  mission_specific:
-    - $DOCS/agents/context/mission/
-
-dependencies:
-  - platform-validator (for data validation before platform sync)
-  - calendar-agent (for availability checks)
-
 tools: Read, Write, Edit, Glob, Grep
-output_format: structured_confirmation_with_details
 model: sonnet
 color: purple
-permission_mode: default
-
-domain: hospitality/reservations
-tags: [reservations, lifecycle, operations, hospitality]
-
-changelog:
-  - version: "1.0.0"
-    date: "2026-01-15"
-    notes: "Initial version with standardized frontmatter"
+permissionMode: default
 ---
 
 # Purpose

@@ -1,40 +1,10 @@
 ---
-agent_id: data-sync-checker
 name: data-sync-checker
-version: "1.0.0"
-status: active
-created: "2026-01-15"
-modified: "2026-01-15"
-created_by: claude-sonnet-4.5
-
 description: Data synchronization validator. Compares local SSOT with HotelRunner/Booking.com platform exports to detect discrepancies. Use BEFORE any sync operation or when data drift is suspected.
-
-context_to_load:
-  mandatory:
-    - $DOCS/agents/context/mandatory/
-  domain_specific:
-    - $DOCS/agents/context/domain/ops/
-    - $DOCS/knowledge/state/current/reservations.md
-    - $DOCS/knowledge/platforms/hotelrunner/
-    - $DOCS/knowledge/platforms/booking/
-  mission_specific:
-    - $DOCS/agents/context/mission/
-
-dependencies: []
-
 tools: Read, Glob, Grep
-output_format: sync_status_report_with_recommendations
 model: sonnet
 color: yellow
-permission_mode: plan
-
-domain: operations/synchronization
-tags: [sync, validation, platform, data, operations]
-
-changelog:
-  - version: "1.0.0"
-    date: "2026-01-15"
-    notes: "Initial version with standardized frontmatter"
+permissionMode: plan
 ---
 
 # Purpose

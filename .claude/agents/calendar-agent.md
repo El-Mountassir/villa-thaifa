@@ -1,39 +1,10 @@
 ---
-agent_id: calendar-agent
 name: calendar-agent
-version: "1.0.0"
-status: active
-created: "2026-01-15"
-modified: "2026-01-15"
-created_by: claude-sonnet-4.5
-
 description: Room availability analyst. Analyzes booking calendars across all 12 rooms at Villa Thaifa. Use when checking availability, identifying gaps, or detecting booking conflicts.
-
-context_to_load:
-  mandatory:
-    - $DOCS/agents/context/mandatory/
-  domain_specific:
-    - $DOCS/agents/context/domain/ops/
-    - $DOCS/knowledge/state/current/reservations.md
-    - $DOCS/knowledge/property/VILLA_THAIFA.json
-  mission_specific:
-    - $DOCS/agents/context/mission/
-
-dependencies: []
-
 tools: Read, Glob, Grep
-output_format: availability_matrix_with_insights
 model: sonnet
 color: green
-permission_mode: plan
-
-domain: hospitality/occupancy
-tags: [availability, calendar, occupancy, hospitality]
-
-changelog:
-  - version: "1.0.0"
-    date: "2026-01-15"
-    notes: "Initial version with standardized frontmatter"
+permissionMode: plan
 ---
 
 # Purpose

@@ -1,40 +1,10 @@
 ---
-agent_id: pricing-analyst
 name: pricing-analyst
-version: "1.0.0"
-status: active
-created: "2026-01-15"
-modified: "2026-01-15"
-created_by: claude-sonnet-4.5
-
 description: Revenue optimization strategist. Analyzes occupancy data, competitor rates, and seasonal demand to produce pricing recommendations. Use PROACTIVELY when pricing strategy review or rate optimization is needed.
-
-context_to_load:
-  mandatory:
-    - $DOCS/agents/context/mandatory/
-  domain_specific:
-    - $DOCS/agents/context/domain/ops/
-    - $DOCS/knowledge/state/planned/pricing.md
-    - $DOCS/knowledge/state/current/reservations.md
-  mission_specific:
-    - $DOCS/agents/context/mission/
-
-dependencies:
-  - calendar-agent (for availability checks)
-
 tools: Read, Glob, Grep, WebSearch
-output_format: structured_report_with_recommendations
 model: opus
 color: blue
-permission_mode: plan
-
-domain: hospitality/pricing
-tags: [pricing, revenue, operations, hospitality]
-
-changelog:
-  - version: "1.0.0"
-    date: "2026-01-15"
-    notes: "Initial version with standardized frontmatter"
+permissionMode: plan
 ---
 
 # Purpose
