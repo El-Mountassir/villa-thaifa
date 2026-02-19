@@ -1,24 +1,27 @@
 {
-  "_comment": "PARTIAL — Online research applied 2026-02-19. Remaining TODOs need Said confirmation.",
+  "_comment": "PARTIAL — Google Maps data applied 2026-02-19. Remaining TODOs need Said confirmation.",
   "version": "1.0.0",
-  "last_updated": "2026-02-19T00:00:00Z",
+  "last_updated": "2026-02-19T12:00:00Z",
   "status": "partial",
   "property": {
     "id": "villa-thaifa",
     "name": "Villa Thaifa",
     "type": "Maison d'hôte / Riad",
     "location": {
-      "address": "Route de Fes km 12, Ouled Jelal, 40000 Marrakech, Morocco",
+      "address": "Route de Fès, Marrakech, Marrakech-Tensift-Al Haouz, Morocco",
       "city": "Marrakech",
       "country": "Morocco",
-      "coordinates": {"lat": 31.6539, "lng": -7.8786},
-      "neighborhood": "Ouled Jelal / Palmeraie"
+      "coordinates": {"lat": 31.6539756, "lng": -7.8778661},
+      "neighborhood": "Ouled Jelal / Palmeraie",
+      "phone": "06 62 14 69 49"
     },
     "rating": {
       "booking_com": 9.3,
       "tripadvisor": "3.0/5",
       "tripadvisor_notes": "Ranked #1078 of 1284 B&Bs/inns in Marrakech. Source: TripAdvisor listing, 2026-02-19.",
-      "google": "TODO"
+      "google": "4.5",
+      "google_review_count": 22,
+      "google_notes": "Source: Google Maps, 2026-02-19."
     },
     "capacity": {
       "total_rooms": 12,
@@ -44,12 +47,12 @@
         "capacity": "TODO"
       },
       "parking": {
-        "available": "TODO",
-        "type": "TODO"
+        "available": true,
+        "type": "Free parking"
       },
       "wifi": {
         "available": true,
-        "type": "TODO"
+        "type": "Free Wi-Fi"
       }
     },
     "room_types": [
@@ -68,7 +71,7 @@
       "garden": "TODO"
     },
     "services": {
-      "airport_transfer": "TODO",
+      "airport_transfer": true,
       "laundry": "TODO",
       "room_service": "TODO",
       "concierge": "TODO",
@@ -89,15 +92,14 @@
   "tags": ["partial", "to_complete", "property"],
   "todo": [
     "Said to confirm: check-out time (internal=11:00 vs destinia OTA=13:30)",
-    "Said to confirm: GPS coordinates (lat 31.6539, lng -7.8786 sourced from trabber.us — verify on Google Maps)",
-    "Said to confirm or deny: Google rating (not found online)",
+    "Said to confirm: GPS coordinates (31.6539756, -7.8778661 sourced from Google Maps)",
+    "Said to confirm: phone number (06 62 14 69 49 sourced from Google Maps)",
     "Said to fill: pool size, spa massage/other services",
-    "Said to fill: parking availability and type",
-    "Said to fill: WiFi type (fiber/ADSL/etc)",
+    "Said to fill: WiFi technology type (fiber/ADSL/etc) — confirmed Free Wi-Fi from Google Maps",
     "Said to fill: room types breakdown (12 rooms — how many of each type)",
     "Said to fill: total beds and max guests",
     "Said to fill: heating, safe, mini_bar, terrace, garden availability",
-    "Said to fill: airport transfer, laundry, room service, concierge, tours",
+    "Said to fill: laundry, room service, concierge, tours availability",
     "Said to fill: cancellation policy details",
     "Said to fill: accepted payment methods",
     "Said to fill: smoking policy"
