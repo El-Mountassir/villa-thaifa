@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Added
 
+- add automated changelog generation via git-cliff — - Install git-cliff 2.12.0 for Conventional Commits → Keep a Changelog
 - migrate 14 Villa Thaifa files from ~/omar/ with contract-compliant paths — Audited and migrated VT-specific content from ~/omar/ to this repo:
 - complete agent team with 7 new specialized agents — - Add incident-reporter (orange): structured error documentation
 - add property type investigation mission + scout report — - Created mission to investigate Booking.com property type (Hotel vs Maison d'Hôtes)
