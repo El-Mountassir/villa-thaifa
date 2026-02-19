@@ -15,6 +15,9 @@
 **/secrets/
 *.secret
 
+# WhatsApp SQLite databases (PII, binary)
+data/pending-domains/whatsapp/*.db
+
 # -----------------------------------------------------------------------------
 # TEMPORARY & BUILD FILES
 # -----------------------------------------------------------------------------

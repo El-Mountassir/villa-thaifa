@@ -38,6 +38,7 @@
 - 🎯 Business: Fully manual, everything memorized
 - 💡 Goal: Reduce operational burden, optimize revenue
 - 🚨 **Communication**: ALWAYS use vouvoiement (formal French), WhatsApp preferred
+- 📅 Active client since December 2025
 
 **⚠️ Critical Rule for Agents**: Scout → Rapport → Questions → Action
 (Never ask for info without first reporting what you've discovered)
