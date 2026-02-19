@@ -63,12 +63,31 @@
 | **Téléphone** | +212 661-134194          |
 | **WhatsApp**  | +212 661-134194          |
 
+**Langues parlées** :
+
+| Langue      | Niveau  |
+| ----------- | ------- |
+| Arabe       | Natif   |
+| Français    | Courant |
+| Anglais     | Basique |
+| Néerlandais | Courant |
+
 **Background professionnel** :
 
-- Propriétaire et hôte de Villa Thaifa (avec son épouse Nezha)
+- Propriétaire et hôte de Villa Thaifa (avec son épouse Nezha Thaifa)
 - CEO / Agent immobilier à Marrakech
 - Spécialités : ventes, achats, locations saisonnières
 - Réputation : accueil chaleureux, fait que les clients se sentent "comme chez eux"
+
+**Contact secondaire — Nezha Thaifa** :
+
+| Champ  | Valeur                                       |
+| ------ | -------------------------------------------- |
+| **Nom**  | Nezha Thaifa                               |
+| **Rôle** | Co-gérante / Épouse de M. Said             |
+| **Note** | Accueil chaleureux, petits-déjeuners copieux — contribue à l'ambiance "en famille" |
+
+> Source: Booking.com profil établissement + `data/admin/client/CONTACT.md`
 
 ### 2.2 Protocole de Communication
 

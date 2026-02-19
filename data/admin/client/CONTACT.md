@@ -1,51 +1,31 @@
 # Contact - Client
 
-- **Relation** : Nouveau client potentiel (high-ticket)
-
-## Principal
-
-| Champ    | Valeur                   |
-| -------- | ------------------------ |
-| Nom      | Said Thaifa              |
-| Âge      | 78 ans                   |
-| WhatsApp | +212 661-134194          |
-| Email    | <said_thaifa@hotmail.fr> |
-| Email    | <saidthaifa@gmail.com>   |
-
-### Langues Parlées
-
-| Langue      | Niveau  |
-| ----------- | ------- |
-| Arabe       | Natif   |
-| Français    | Courant |
-| Anglais     | Basique |
-| Néerlandais | Courant |
-
-## Secondaire
-
-| Champ | Valeur                                       |
-| ----- | -------------------------------------------- |
-| Nom   | Nezha Thaifa                                 |
-| Rôle  | Co-gérante / Épouse de M. Said               |
-| Note  | Accueil chaleureux, petits-déjeuners copieux |
-
-> **Réputation** : Appréciée pour son hospitalité, contribuant à une ambiance détendue et confortable pour les voyageurs. Reviews mentionnent une atmosphère "comme en famille".
-
-## Établissement
-
-| Champ    | Valeur           |
-| -------- | ---------------- |
-| Nom      | Villa Thaifa     |
-| Type     | Maison d'hôtes   |
-| Ville    | Marrakech, Maroc |
-| Chambres | 12               |
-
-> Source: Booking.com profil établissement
+> **Canonical source**: `data/admin/client/PROFILE.md` — all profile data lives there.
+> This file is a quick-reference card for contact lookup only.
 
 ---
 
-## Notes
+## Said Thaifa (Owner)
 
-- Communication formelle
-- Client senior — respect sans rigidité
-- Said et Nezha gèrent ensemble la Villa
+| Champ       | Valeur                   |
+| ----------- | ------------------------ |
+| WhatsApp    | +212 661-134194          |
+| Email       | <said_thaifa@hotmail.fr> |
+| Email       | <saidthaifa@gmail.com>   |
+| Langues     | Arabe (natif), Français (courant), Anglais (basique), Néerlandais (courant) |
+
+## Nezha Thaifa (Co-gérante / Épouse)
+
+| Champ  | Valeur                                       |
+| ------ | -------------------------------------------- |
+| Rôle   | Co-gérante — accueil, petits-déjeuners       |
+
+## Communication
+
+- Canal préféré: WhatsApp
+- Ton: Vouvoiement obligatoire — Formelle
+- Protocol: Scout → Rapport → Questions → Action
+
+---
+
+_Full profile: `data/admin/client/PROFILE.md`_

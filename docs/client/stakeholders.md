@@ -43,7 +43,7 @@
 **⚠️ Critical Rule for Agents**: Scout → Rapport → Questions → Action
 (Never ask for info without first reporting what you've discovered)
 
-**📄 Detailed Profile**: [`profiles/SAID-THAIFA.md`](./profiles/SAID-THAIFA.md)
+**📄 Detailed Profile**: [`data/admin/client/PROFILE.md`](../../data/admin/client/PROFILE.md)
 
 ---
 
@@ -183,7 +183,7 @@ If critical issue (platform bug, lost reservation, pricing error):
 
 | Need                | Document                                                                                |
 | ------------------- | --------------------------------------------------------------------------------------- |
-| **Who is Said?**    | [`profiles/SAID-THAIFA.md`](./profiles/SAID-THAIFA.md) (detailed profile)               |
+| **Who is Said?**    | [`data/admin/client/PROFILE.md`](../../data/admin/client/PROFILE.md) (detailed profile) |
 | **Who is Omar?**    | [`profiles/OMAR-EL-MOUNTASSIR.md`](./profiles/OMAR-EL-MOUNTASSIR.md) (detailed profile) |
 | **Team structure?** | [`TEAM.md`](./TEAM.md) (17 AI agents)                                                   |
 | **What to do?**     | [`../../ROADMAP.md`](../../ROADMAP.md) (project plan)                                   |

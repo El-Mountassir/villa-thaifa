@@ -27,12 +27,12 @@ Hotel management platform for Villa Thaifa, a 4-star boutique maison d'hôtes in
 
 ## Technical Details
 
-| Component          | Status      | Notes                           |
-| ------------------ | ----------- | ------------------------------- |
-| Next.js frontend   | ✅ Working  | Basic dashboard                 |
-| HotelRunner API    | ✅ Connected| 250 req/day limit               |
-| Booking.com        | ✅ Connected| Via browser automation          |
-| Agent-browser      | ✅ Installed| Headless automation tool        |
+| Component        | Status      | Notes                    |
+| ---------------- | ----------- | ------------------------ |
+| Next.js frontend | ✅ Working   | Basic dashboard          |
+| HotelRunner API  | ✅ Connected | 250 req/day limit        |
+| Booking.com      | ✅ Connected | Via browser automation   |
+| Agent-browser    | ✅ Installed | Headless automation tool |
 
 ## Files Location
 

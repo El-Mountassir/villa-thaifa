@@ -102,16 +102,25 @@ VT-44 (hook E2E test) — independent, can run anytime
 
 ### Recommended Execution Sequence
 
-**Wave 1 — Blockers (do first, can parallel)**:
+**Wave 1 — Blockers — COMPLETED (2026-02-19)**:
 
-1. VT-42: Fix Linear GitHub integration (P1, 2pts) — verify Omar's config, test branch linking
-2. VT-43: Define gitignore strategy for SQLite/PII (P1, 4pts) — audit PII files, update .gitignore
-3. VT-44: E2E test delegation hooks (P1, 4pts) — run real HTML task, verify hook fires
+1. VT-42: Fix Linear GitHub integration — DONE (investigation). Manual UI fix required by Omar. Report: `~/omar/knowledge/research/development/vt-42-github-integration-investigation.md`
+2. VT-43: Define gitignore strategy — DONE (implemented). .gitignore hardened, WhatsApp chat untracked. **URGENT: Omar must rotate 4 exposed passwords** (HotelRunner, Booking.com x2, OVH). Report: `~/omar/knowledge/research/development/vt-43-gitignore-pii-audit.md`
+3. VT-44: E2E test delegation hooks — DONE (closed in Linear). 4/4 tests passed.
 
 **Wave 2 — Quick Wins (parallel, low effort)**:
 4. VT-52: Consolidate Said profile (P3, 2pts, Quick Win)
 5. VT-53: Review communications.md (P3, 1pt, Quick Win)
 6. VT-51: GitHub identity strategy (P3, 2pts) — decision session with Omar
+
+**GitHub Migration — EXECUTED (2026-02-19)**:
+- Repo transferred: `omar-elmountassir/villa-thaifa` → `El-Mountassir/villa-thaifa`
+- Old repo archived: `El-Mountassir/villa-thaifa-property-management`
+- Git remote updated locally
+- Linear integration: VT team correctly linked, issue sync working, branch linking untested
+- 2 old GitHub issues migrated to Linear: VT-56 (MarocPME form), VT-57 (website elements)
+- Remaining cleanup: see `ops/decisions/github-migration-to-org.md` § Cleanup Remaining
+- Omar manual actions: verify Linear integration, rotate 4 exposed passwords, remove old repo from EM team
 
 **Wave 3 — Deep Work (sequential, high effort)**:
 7. VT-47: Move 10 misplaced docs (P2, 4pts) — read + move + update refs
@@ -195,9 +204,8 @@ ls /tmp/triage-*.md /tmp/scan-items-evaluation.md 2>/dev/null || echo "Triage re
 
 ### Linear State Post-Audit
 
-- Total VT issues: 55 (was 41)
-- Done: 11 | Canceled: 11 | Backlog: 33
-- New issues created this session: VT-42 through VT-55 (14 issues)
+- Total VT issues: 57 (was 55, +VT-56 MarocPME, +VT-57 website elements). Done: 13 (+VT-44, VT-52, VT-53). Canceled: 11. Backlog: 33.
+- New issues created this session: VT-42 through VT-55 (14 issues), VT-56 and VT-57 from GitHub migration
 - SSOT Migration project: fully closed (4 issues)
 
 ### Remaining Work (tracked in Linear)
