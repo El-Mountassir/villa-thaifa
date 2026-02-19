@@ -8,6 +8,8 @@
 .env
 .env.local
 .env.*.local
+.env.production
+.env.staging
 *.pem
 
 # Local secrets folders
@@ -15,8 +17,17 @@
 **/secrets/
 *.secret
 
-# WhatsApp SQLite databases (PII, binary)
-data/pending-domains/whatsapp/*.db
+# Databases (SQLite — PII risk)
+*.db
+*.sqlite
+*.sqlite3
+
+# WhatsApp exports (contain PII)
+WhatsApp Chat*.md
+WhatsApp Chat*.txt
+WhatsApp Ptt*.md
+*.vcf
+*.vcard
 
 # -----------------------------------------------------------------------------
 # TEMPORARY & BUILD FILES

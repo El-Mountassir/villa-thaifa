@@ -24,11 +24,13 @@ The villa-thaifa codebase underwent massive restructuring (200+ files relocated,
 ## Progress (2026-02-19 Session)
 
 ### Phase 1: Unblock — COMPLETED
+
 1. **Linear-GitHub integration** — Already active. Discovered repo alignment issue: Linear points to `El-Mountassir/villa-thaifa-property-management` (old) but current repo is `omar-elmountassir/villa-thaifa`. Filed to `ops/intake/linear-github-repo-alignment.md`.
 2. **VT-26 P0 blocker** — Closed as Done. Architecture audit completed via Safe Harbor migration + February restructuring. 6 downstream issues unblocked.
 3. **Linear MCP tools** — Work from orchestrator, not sub-agents. Persisted in MEMORY.md.
 
 ### Phase 2: Audit — COMPLETED
+
 - **15 issues closed** (total 41 → 26 remaining):
   - Done (4): VT-15, VT-28, VT-29, VT-41
   - Cancelled (11): VT-14, VT-16, VT-17, VT-18, VT-19, VT-20, VT-2, VT-30, VT-31, VT-32, VT-33
@@ -101,6 +103,7 @@ VT-44 (hook E2E test) — independent, can run anytime
 ### Recommended Execution Sequence
 
 **Wave 1 — Blockers (do first, can parallel)**:
+
 1. VT-42: Fix Linear GitHub integration (P1, 2pts) — verify Omar's config, test branch linking
 2. VT-43: Define gitignore strategy for SQLite/PII (P1, 4pts) — audit PII files, update .gitignore
 3. VT-44: E2E test delegation hooks (P1, 4pts) — run real HTML task, verify hook fires
@@ -144,6 +147,7 @@ The next session MUST:
 ### Triage Reports (from Phase 3)
 
 These /tmp/ files contain the triage results. They are EPHEMERAL and will be lost on reboot:
+
 - `/tmp/triage-context-meta-knowledge.md` — 51 files: 28 keep, 21 archive, 2 extraction
 - `/tmp/triage-context-meta-planning.md` — 96 files: 29 keep, 53 archive, 14 extraction
 - `/tmp/triage-ops-audit-quality.md` — 62 files: 18 keep, 38 archive, 6 extraction
@@ -190,22 +194,26 @@ ls /tmp/triage-*.md /tmp/scan-items-evaluation.md 2>/dev/null || echo "Triage re
 **All 3 phases COMPLETED** as of 2026-02-19.
 
 ### Linear State Post-Audit
+
 - Total VT issues: 55 (was 41)
 - Done: 11 | Canceled: 11 | Backlog: 33
 - New issues created this session: VT-42 through VT-55 (14 issues)
 - SSOT Migration project: fully closed (4 issues)
 
 ### Remaining Work (tracked in Linear)
+
 - VT-42: Fix GitHub integration (P1)
 - VT-43: Gitignore/PII strategy (P1)
 - VT-44: Hook E2E testing (P1)
 - 11 more issues at P2-P3 priority
 
 ### Rules Updated This Session
+
 - rules.md: Delegation Thresholds rewritten (zero tolerance), Linear MCP cap (2 calls max)
 - universal.md: Completion Integrity, Task-First Execution, Prompt-to-Task Pipeline rules added
 - delegate skill: Timeout guide + retry protocol added
 - MEMORY.md: Post-audit state, Gemini delegation pattern, Linear spelling anti-pattern
 
 ### This Handoff File
+
 This file can be ARCHIVED after Omar confirms all phases are satisfactory. Follow Capture Before Archive protocol — extract any remaining actionable items to Linear before archiving.
