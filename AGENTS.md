@@ -4,6 +4,58 @@
 
 @docs/core/STRUCTURE.md
 
+## Structure Documentation System
+
+The codebase uses a tiered structure documentation approach to balance context relevance with token efficiency.
+
+### Available Structure Files
+
+| File                                 | Token Cost | When to Use                               |
+| ------------------------------------ | ---------- | ----------------------------------------- |
+| `docs/core/STRUCTURE.md`             | ~3KB       | General overview (hybrid: curated + auto-stats) |
+| `docs/core/STRUCTURE-card-{role}.md` | 1-2KB      | Role-specific context          |
+| `docs/core/STRUCTURE-filtered.txt`   | ~15KB      | Detailed exploration           |
+| `STRUCTURE.txt`                      | ~50KB      | Full tree (deep dive only)     |
+
+### Role-Based Structure Cards
+
+Structure cards provide pre-filtered context for specific agent roles:
+
+- **booking**: `data/rooms/`, `data/bookings/`, `data/finance/`
+- **browser**: `context/agents/browser/`, `data/property/`
+- **hotelrunner**: `scripts/hotelrunner/`, `data/rooms/`
+- **admin**: `data/admin/`, `data/operations/`
+- **finance**: `data/finance/`, `data/bookings/`
+- **guest-comms**: `data/bookings/requests/`, `context/agents/`
+
+Load the card for your role: `docs/core/STRUCTURE-card-{role}.md`
+
+### Maintenance Commands
+
+```bash
+make structure-cards    # Regenerate all role cards
+make structure-update   # Full structure refresh
+```
+
+### When to Regenerate
+
+Run `make structure-cards` when:
+
+- Adding new agent definitions to `.claude/agents/`
+- Creating new data domains in `data/`
+- Reorganizing directory structure
+- Onboarding new AI agents
+
+Role mappings are configured in: `scripts/structure/role_mappings.yaml`
+
+### STRUCTURE.md Maintenance
+
+This file uses a hybrid model:
+- **Auto-generated**: Header stats (timestamp, file counts)
+- **Curated by humans**: ASCII tree and annotations
+
+Run `make structure-update` to refresh stats. Manually update tree when adding top-level directories.
+
 ### File Organization Rules
 
 **Files that MUST remain at repository root:**
@@ -261,7 +313,17 @@ All must be true:
 4. Legacy files are archived/deleted with explicit justification.
 5. Status files are updated.
 
-## Open Loops (Do Not Drop)
+## Task Tracking
+
+**Primary backlog**: [Linear](https://linear.app/el-mountassir) — all durable work items live here.
+
+- Teams: `VT` (Villa Thaifa), `EM` (El Mountassir)
+- Issue format: `EM-XXX` or `VT-XXX`
+- Workflow conventions: `context/meta/planning/linear-workflow.md`
+
+**Session-local tasks**: Use `TaskCreate` for breaking a Linear issue into execution steps within a single session. Linear = WHAT needs doing, TaskCreate = HOW to do it this session.
+
+### Open Loops (Migrate to Linear)
 
 1. Pending data domains: `data/pending-domains/` -- facilities.md awaiting hardening into `data/property/`
 2. Large directory triage: `context/meta/knowledge/` (54 files), `context/meta/planning/` (96 files), `ops/audit/quality/` (62 files) need triage for archiving vs reclassification

@@ -55,14 +55,14 @@ La page publique de Booking.com fait référence à Villa Thaifa comme un **"hô
 
 ### Screenshots Capturés
 
-| Screenshot ID | Description | Emplacement |
-|---------------|-------------|-------------|
+| Screenshot ID  | Description                         | Emplacement   |
+| -------------- | ----------------------------------- | ------------- |
 | `ss_32906p0bs` | Page d'accueil Extranet Booking.com | À sauvegarder |
-| `ss_33049zmj1` | Page Réservations Extranet | À sauvegarder |
-| `ss_0530isdkg` | Menu Établissement ouvert | À sauvegarder |
-| `ss_90203eps4` | Infos sur l'établissement | À sauvegarder |
-| `ss_8139u51ht` | Page Équipements et services | À sauvegarder |
-| `ss_7856m5kwm` | **Page publique Villa Thaifa** | À sauvegarder |
+| `ss_33049zmj1` | Page Réservations Extranet          | À sauvegarder |
+| `ss_0530isdkg` | Menu Établissement ouvert           | À sauvegarder |
+| `ss_90203eps4` | Infos sur l'établissement           | À sauvegarder |
+| `ss_8139u51ht` | Page Équipements et services        | À sauvegarder |
+| `ss_7856m5kwm` | **Page publique Villa Thaifa**      | À sauvegarder |
 
 ---
 
@@ -92,9 +92,11 @@ La page publique de Booking.com fait référence à Villa Thaifa comme un **"hô
 ## Conclusion
 
 ### État Actuel
+
 ✅ **CONFIRMÉ**: Villa Thaifa est actuellement catégorisée comme **"Hôtel"** sur Booking.com
 
 ### Écart Identifié
+
 ❌ **ÉCART**: Le type actuel ("Hôtel") ne correspond PAS au type souhaité ("Maison d'Hôtes")
 
 ### Implications
@@ -109,16 +111,19 @@ La page publique de Booking.com fait référence à Villa Thaifa comme un **"hô
 ## Prochaines Étapes Recommandées
 
 ### Option 1: Modification via Support Booking.com
+
 1. Contacter le support Booking.com (Ikram - voir `data/admin/client/support/README.md`)
 2. Demander le changement de type: "Hôtel" → "Maison d'Hôtes" / "Bed & Breakfast"
 3. Fournir justification: nature de l'établissement, services offerts
 
 ### Option 2: Exploration Plus Approfondie
+
 1. Chercher section "Type de propriété" dans d'autres menus Extranet
 2. Vérifier dans HotelRunner si le type peut être modifié là-bas
 3. Consulter documentation Booking.com sur changement de type
 
 ### Option 3: Évaluation de l'Impact
+
 1. Analyser si le type "Hôtel" a un impact négatif sur les réservations
 2. Comparer avec des établissements similaires
 3. Décider si le changement est prioritaire
@@ -148,5 +153,5 @@ La page publique de Booking.com fait référence à Villa Thaifa comme un **"hô
 
 ---
 
-*Rapport de Reconnaissance — Villa Thaifa Property Type Scout*
-*Date: 2026-01-08*
+_Rapport de Reconnaissance — Villa Thaifa Property Type Scout_
+_Date: 2026-01-08_

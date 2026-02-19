@@ -9,33 +9,33 @@
 
 ## Summary
 
-| Action | Quantity | Status |
-|--------|----------|--------|
-| P0 Deactivations | 6 | ✅ Done |
-| P1 Reductions | 2 | ✅ Done |
-| **Total actions** | **8** | ✅ Completed |
+| Action            | Quantity | Status       |
+| ----------------- | -------- | ------------ |
+| P0 Deactivations  | 6        | ✅ Done      |
+| P1 Reductions     | 2        | ✅ Done      |
+| **Total actions** | **8**    | ✅ Completed |
 
 ---
 
 ## P0 Actions — Deactivations
 
-| # | Promotion | Discount | Time | Reason | Status |
-|---|-----------|----------|------|--------|--------|
-| 1 | Early Booker Deal | 40% | ~19:30 | Insufficient margin | ✅ DEACTIVATED |
-| 2 | Basic Deal | 38% | ~19:35 | Insufficient margin | ✅ DEACTIVATED |
-| 3 | Late Escape Deal | 43% | ~19:40 | Destructive discount | ✅ DEACTIVATED |
-| 4 | Late Escape Deal | 42% | ~19:45 | Destructive discount | ✅ DEACTIVATED |
-| 5 | Geo-targeted Europe | 10% | ~19:50 | Stacking risk (overestimated) | ✅ DEACTIVATED |
-| 6 | Geo-targeted Morocco | 10% | ~19:55 | Stacking risk (overestimated) | ✅ DEACTIVATED |
+| #   | Promotion            | Discount | Time   | Reason                        | Status         |
+| --- | -------------------- | -------- | ------ | ----------------------------- | -------------- |
+| 1   | Early Booker Deal    | 40%      | ~19:30 | Insufficient margin           | ✅ DEACTIVATED |
+| 2   | Basic Deal           | 38%      | ~19:35 | Insufficient margin           | ✅ DEACTIVATED |
+| 3   | Late Escape Deal     | 43%      | ~19:40 | Destructive discount          | ✅ DEACTIVATED |
+| 4   | Late Escape Deal     | 42%      | ~19:45 | Destructive discount          | ✅ DEACTIVATED |
+| 5   | Geo-targeted Europe  | 10%      | ~19:50 | Stacking risk (overestimated) | ✅ DEACTIVATED |
+| 6   | Geo-targeted Morocco | 10%      | ~19:55 | Stacking risk (overestimated) | ✅ DEACTIVATED |
 
 ---
 
 ## P1 Actions — Reductions
 
-| # | Promotion | Before | After | Time | Status |
-|---|-----------|--------|-------|------|--------|
-| 1 | Basic Deal (3 nights min) | 33% | **15%** | ~20:00 | ✅ MODIFIED |
-| 2 | Basic Deal (Standard) | 30% | **10%** | ~20:05 | ✅ MODIFIED |
+| #   | Promotion                 | Before | After   | Time   | Status      |
+| --- | ------------------------- | ------ | ------- | ------ | ----------- |
+| 1   | Basic Deal (3 nights min) | 33%    | **15%** | ~20:00 | ✅ MODIFIED |
+| 2   | Basic Deal (Standard)     | 30%    | **10%** | ~20:05 | ✅ MODIFIED |
 
 ---
 

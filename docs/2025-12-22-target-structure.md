@@ -100,12 +100,12 @@ thaifa/
 
 From [Anthropic's Context Engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents):
 
-| Component | Folder | Purpose |
-|-----------|--------|---------|
-| **Contexts** | `core/contexts/` | Domain-specific context definitions |
-| **Models** | `core/models/` | Model configs, temperature, parameters |
-| **Prompts** | `core/prompts/` | System prompts, templates, few-shot |
-| **Tools** | `core/tools/` | Tool definitions (MCP-style) |
+| Component    | Folder           | Purpose                                |
+| ------------ | ---------------- | -------------------------------------- |
+| **Contexts** | `core/contexts/` | Domain-specific context definitions    |
+| **Models**   | `core/models/`   | Model configs, temperature, parameters |
+| **Prompts**  | `core/prompts/`  | System prompts, templates, few-shot    |
+| **Tools**    | `core/tools/`    | Tool definitions (MCP-style)           |
 
 ### 🎭 Hierarchical CLAUDE.md Pattern
 
@@ -121,13 +121,13 @@ Each level inherits from parent + adds local context.
 
 ### Key EaC Principles Applied
 
-| Principle | Folder | What's "as Code" |
-|-----------|--------|------------------|
-| **Docs-as-Code** | `docs/` | Markdown, version-controlled |
-| **Config-as-Code** | `.claude/`, `infra/envs/` | Agent config, environments |
-| **Infra-as-Code** | `infra/` | Docker, deployments |
-| **Data-as-Code** | `data/specs/` | Business rules as structured files |
-| **Agents-as-Code** | `core/` | Context, models, prompts, tools |
+| Principle          | Folder                    | What's "as Code"                   |
+| ------------------ | ------------------------- | ---------------------------------- |
+| **Docs-as-Code**   | `docs/`                   | Markdown, version-controlled       |
+| **Config-as-Code** | `.claude/`, `infra/envs/` | Agent config, environments         |
+| **Infra-as-Code**  | `infra/`                  | Docker, deployments                |
+| **Data-as-Code**   | `data/specs/`             | Business rules as structured files |
+| **Agents-as-Code** | `core/`                   | Context, models, prompts, tools    |
 
 ---
 
@@ -137,12 +137,12 @@ From [monorepo best practices](https://lucapette.me/writing/how-to-structure-a-m
 
 ### EaC Folder Additions
 
-| Folder | Purpose | Examples |
-|--------|---------|----------|
-| `infra/` | Infrastructure-as-Code | Terraform, Docker, K8s manifests |
-| `config/` | Configuration-as-Code | ESLint, linters, CI/CD configs |
-| `envs/` | Environment configs | dev/, staging/, prod/ |
-| `tools/` | Build/utility scripts | Scripts, CLI tools |
+| Folder    | Purpose                | Examples                         |
+| --------- | ---------------------- | -------------------------------- |
+| `infra/`  | Infrastructure-as-Code | Terraform, Docker, K8s manifests |
+| `config/` | Configuration-as-Code  | ESLint, linters, CI/CD configs   |
+| `envs/`   | Environment configs    | dev/, staging/, prod/            |
+| `tools/`  | Build/utility scripts  | Scripts, CLI tools               |
 
 ### Monorepo Pattern (from [Monadical](https://monadical.com/posts/from-chaos-to-cohesion.html))
 
@@ -218,18 +218,15 @@ project/
 Before implementing, answer these:
 
 1. **What is `project/` for exactly?**
-
    - Day-to-day task tracking?
    - Strategic planning?
    - Both?
 
 2. **Does `specs/` need subfolders?**
-
    - `specs/hotel/` vs flat `specs/rooms.md`?
    - Is hierarchy helpful or overkill?
 
 3. **Where do NEW reports go?**
-
    - `docs/` (documentation)?
    - `archive/` (historical)?
    - Temporary in `.claude/output/` then archive?

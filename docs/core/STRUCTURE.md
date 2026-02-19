@@ -1,8 +1,27 @@
 # Structure
 
+> **Last Updated:** 2026-02-19
+> **Total Files:** 637 | **Total Directories:** 89
+
+## Quick Stats
+
+| Directory   | Files | Purpose                      |
+|-------------|-------|------------------------------|
+| data/       | 412   | Canonical source-of-truth    |
+| context/    | 156   | Read-only reference material |
+| docs/       | 42    | Operational documentation    |
+| ops/        | 18    | Live operational state       |
+| scripts/    | 8     | Validation and tooling       |
+| tests/      | 1     | Test suite                   |
+
+---
+
+## Directory Overview
+
 ```sh
 # Directories
 ├── data/                       CANONICAL source-of-truth for all domain data
+│   ├── admin/                  client profiles, contact info
 │   ├── archive/                archived data versions
 │   ├── bookings/               booking data
 │   │   ├── exports/            channel export files
@@ -10,7 +29,7 @@
 │   │   └── reservations/       confirmed reservations
 │   ├── finance/                billing.json, rates.json
 │   ├── operations/             operational configs (channels, check-in, emergency, housekeeping, maintenance)
-│   ├── pending-domains/        domains awaiting hardening (amenities, beds, facilities, inventory)
+│   ├── pending-domains/        domains awaiting hardening
 │   ├── property/               property-level data
 │   │   ├── facilities/         facility descriptions + images (hall, pool-garden, spa-hammam)
 │   │   └── property-config.json
@@ -50,13 +69,15 @@
 │   ├── audit/                  audit scripts + rules
 │   ├── hotelrunner/            HotelRunner integration scripts
 │   ├── inventory/              inventory management scripts
-│   └── organization/           repo organization scripts
+│   ├── organization/           repo organization scripts
+│   └── structure/              structure card generation
 │
+├── archive/                    legacy archived files
 ├── tests/                      pytest suite
 ├── logs/                       log files (gitignored)
 ├── tmp/                        temporary files (gitignored)
 ├── .claude/                    Claude Code configuration
-└── .secrets/                   credentials storage (gitignored)
+└── .archived/                  old archived content
 
 # Root files (MUST stay at root)
 ├── AGENTS.md      AI agent workspace contract
@@ -64,11 +85,19 @@
 ├── GEMINI.md      Gemini AI project instructions
 ├── README.md      Repository documentation
 ├── CHANGELOG.md   Version history
+├── ROADMAP.md     Project roadmap
 ├── Makefile       build and convenience tasks
 ├── pyproject.toml Python project config
 ├── uv.lock        dependency lock file
 ├── .gitignore     git ignore patterns
+├── .structureignore  structure tree filter patterns
 └── .labels.json   label definitions
 ```
 
+---
+
 **File placement rules:** See AGENTS.md "File Placement Decision Tree" and "Directory Contract" sections.
+
+---
+
+_Stats refreshed via `make structure-update` | Tree curated manually_

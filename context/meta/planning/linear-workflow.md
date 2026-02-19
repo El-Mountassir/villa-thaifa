@@ -1,6 +1,6 @@
 # Linear Workflow Rules
 
-> **Status**: 🟡 Linear MCP configured, task migration pending
+> **Status**: 🟢 Linear MCP active, Phase 1 audit complete, migration in progress
 >
 > This document defines how we use Linear for project management.
 
@@ -90,28 +90,44 @@ Omar validates:
 
 ## Labels & Organization
 
-### Feature Labels
+### Labels (Current Workspace)
 
-- `feature` - New functionality
-- `bug` - Something broken
-- `refactor` - Code improvement
-- `docs` - Documentation
-- `test` - Testing infrastructure
-- `chore` - Maintenance
+**Type labels** (built-in):
+- `Feature` - New functionality
+- `Bug` - Something broken
+- `Improvement` - Enhancement to existing
 
-### Component Labels
+**Domain labels** (emoji-prefixed):
+- `🤖 AI/Agents` - AI-related work (prompts, agents, models)
+- `🎨 Frontend` - Frontend work (UI, design, Astro, Tailwind)
+- `🗄️ Backend` - Backend work (API, DB, serverless)
+- `🔧 DevOps` - DevOps, CI/CD, deployment, infrastructure
+- `📚 Documentation` - Documentation, guides, references
+- `🔬 Research` - Investigation, analysis, research
+- `⚙️ Config` - Configuration, setup, installation
 
-- `frontend` - UI/UX work
-- `backend` - API/server work
-- `database` - Schema/migrations
-- `integration` - External systems
-- `ai-agent` - Agent development
+**Status labels** (emoji-prefixed):
+- `🚫 Blocked` - Blocked by external dependency
+- `👀 Needs Review` - Awaiting review or validation
+- `⏸️ On Hold` - Voluntarily paused
+- `🔥 This Week` - Due this week
+- `📅 Next Week` - Planned for next week
 
-### Status Labels
+**Effort labels**:
+- `⚡ Quick Win` - Quick task (< 30 min)
+- `🎯 Deep Work` - Deep focus work requiring 2h+
 
-- `blocked` - Waiting on dependency
-- `needs-review` - Requires decision
-- `needs-testing` - Awaiting validation
+**Scope labels**:
+- `🏠 Internal` - Internal El-Mountassir work
+- `💰 Client` - External client work
+- `🔄 Recurring` - Recurring task or maintenance
+- `🏆 Win` - Victory or milestone achieved
+
+**Meta labels** (Ways of Working):
+- `thinking` - Way of Thinking — foundational concepts, theory
+- `working` - Way of Working — methodology, processes
+- `supporting` - Way of Supporting — tools, templates, infrastructure
+- `representing` - Way of Representing — visualization, communication
 
 ## Sprints & Milestones
 
@@ -147,11 +163,26 @@ When PR merges to `main`:
 ### Branch Naming
 
 ```bash
-agent/<name>/<date>-EM-<issue-id>
-# Example: agent/claude/2026-01-30-EM-123
+{type}/EM-{N}-{description}
+# Examples:
+# fix/EM-42-billing-rates
+# feat/EM-155-direct-booking
+# chore/EM-277-english-labels
 ```
 
 Links git branch to Linear issue.
+
+### Commit Messages
+
+Include Linear issue ID in commit messages:
+
+```
+{type}({scope}): {description} [EM-{N}]
+# Examples:
+# fix(billing): correct rate calculation [EM-42]
+# feat(rooms): add bed configuration schema [VT-10]
+# chore(labels): translate French descriptions to English [EM-277]
+```
 
 ## Director Workflow (Omar)
 
@@ -231,27 +262,23 @@ Post comments when:
 **ETA**: Tomorrow EOD
 ```
 
-## Integration with Workstream
+## Integration Status
 
-During migration period (Track A Phase 2):
-
-- Linear = New canonical source
-- `workstream/` = Legacy, to be archived
-- Both maintained until migration complete
-
-Post-migration:
-
-- Linear = Single source of truth
-- `workstream/` = Archived
+- **Linear**: Primary task tracking (active)
+- **GitHub**: Code hosting, PRs, CI/CD
+- **Linear ↔ GitHub**: Auto-sync configured (2026-02-09)
+- **TaskCreate (session graph)**: Session-local execution steps (scoping TBD)
 
 ## When Linear Migration Complete
 
-**Success Criteria:**
+**Migration Progress (as of 2026-02-17):**
 
-- [ ] All active tasks migrated from `workstream/` → Linear
+- [x] Linear MCP connected and authenticated
+- [x] Workspace audited (165 issues, 2 teams, 25 labels)
+- [x] French label descriptions translated to English
+- [ ] Issue triage (in progress — marking stale/completed)
+- [ ] Agent conventions documented in AGENTS.md
+- [ ] Task scoping model defined (Linear vs TaskCreate)
+- [ ] Migrate scattered backlog items to Linear
 - [ ] All agents use Linear for task tracking
-- [ ] Linear ↔ GitHub sync active
-- [ ] Old `workstream/` files archived
-- [ ] Documentation updated (AGENTS.md references)
-
-**Status**: Track A Phase 2 (pending)
+- [ ] Old tracking files deprecated

@@ -47,9 +47,9 @@ apps/{app-name}/
 
 This directory is prepared for future development:
 
-- Dashboard for M. Thaifa
+- Dashboard for Admin/Management
 - API for integrations
-- Automation for HotelRunner/Booking.com
+- Automation for HotelRunner and OTAs (Booking.com, Expedia, etc.)
 
 ---
 

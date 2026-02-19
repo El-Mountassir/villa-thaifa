@@ -63,6 +63,7 @@ Provide a summary in this format:
 **Generated Report**: `<absolute-file-path>`
 
 **Features Included**:
+
 - [ ] Dark/light theme toggle with localStorage persistence
 - [ ] Interactive checkboxes with state persistence
 - [ ] Collapsible sections

@@ -1,0 +1,99 @@
+# role_mappings.yaml - Role-to-path mappings for structure card generation
+# Each role defines paths as:
+#   - critical: Must-know files for this role (highlighted, counted)
+#   - reference: Useful context files (listed but de-emphasized)
+#   - ignore: Irrelevant paths for this role (excluded from card)
+
+booking:
+  description: "Booking.com channel management agent"
+  critical:
+    - "data/rooms/"
+    - "data/bookings/"
+    - "data/operations/channels.json"
+    - "data/finance/rates.json"
+    - "context/agents/booking/"
+  reference:
+    - "context/meta/knowledge/booking_extranet_guide.md"
+    - "context/meta/knowledge/booking_extranet_incidents.md"
+    - "context/meta/knowledge/booking-com-data.md"
+    - "context/meta/knowledge/channel-mapping.md"
+    - "context/meta/knowledge/guest-communication.md"
+  ignore:
+    - "data/rooms/*/images/"
+    - "context/meta/planning/"
+    - "ops/audit/quality/"
+    - "scripts/hotelrunner/"
+
+browser:
+  description: "Web browsing and automation agent"
+  critical:
+    - "context/agents/browser/"
+    - "data/property/"
+    - "data/rooms/"
+  reference:
+    - "context/meta/knowledge/"
+    - "docs/workflows/"
+  ignore:
+    - "data/rooms/*/images/"
+    - "data/property/*/images/"
+    - "context/meta/planning/"
+    - "ops/audit/"
+
+hotelrunner:
+  description: "HotelRunner PMS integration agent"
+  critical:
+    - "scripts/hotelrunner/"
+    - "context/agents/hotelrunner/"
+    - "data/rooms/"
+    - "data/operations/"
+  reference:
+    - "context/meta/knowledge/hotelrunner-api.md"
+    - "context/meta/knowledge/hotelrunner-README.md"
+    - "context/meta/knowledge/hotelrunner.md"
+  ignore:
+    - "data/rooms/*/images/"
+    - "context/meta/planning/"
+    - "ops/audit/quality/"
+
+admin:
+  description: "Administrative and operations agent"
+  critical:
+    - "data/"
+    - "ops/"
+    - "docs/core/"
+  reference:
+    - "context/"
+    - "scripts/"
+  ignore:
+    - "data/rooms/*/images/"
+    - "data/property/*/images/"
+    - ".ruff_cache/"
+    - "__pycache__/"
+
+finance:
+  description: "Financial and billing agent"
+  critical:
+    - "data/finance/"
+    - "data/bookings/"
+    - "data/rooms/"
+  reference:
+    - "context/meta/knowledge/finance-README.md"
+    - "context/meta/knowledge/accounting.md"
+  ignore:
+    - "data/rooms/*/images/"
+    - "context/meta/planning/"
+    - "ops/audit/quality/"
+
+guest-comms:
+  description: "Guest communication agent"
+  critical:
+    - "data/operations/"
+    - "context/meta/knowledge/guest-communication.md"
+    - "context/meta/knowledge/communications-README.md"
+  reference:
+    - "context/meta/knowledge/"
+    - "docs/workflows/"
+  ignore:
+    - "data/rooms/*/images/"
+    - "context/meta/planning/"
+    - "scripts/hotelrunner/"

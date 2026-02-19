@@ -1,0 +1,68 @@
+# .structureignore - Filter patterns for structure tree output
+# Similar to .gitignore format - files/directories matching these patterns
+# will be excluded from `tree` output in filtered mode.
+
+# ===========================================
+# Binary and media files (no text content)
+# ===========================================
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.pdf
+*.ogg
+*.mp3
+*.mp4
+*.webp
+*.ico
+*.svg
+*.woff
+*.woff2
+*.ttf
+*.eot
+
+# ===========================================
+# Cache directories (generated, not source)
+# ===========================================
+__pycache__/
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+node_modules/
+.cache/
+
+# ===========================================
+# Gitignored directories (not in repo)
+# ===========================================
+logs/
+tmp/
+.env
+.venv/
+venv/
+.env.local
+*.pyc
+
+# ===========================================
+# Collapse verbose directories
+# These will be shown with count placeholders
+# instead of full file listings
+# ===========================================
+
+# Knowledge files (reference material)
+# context/meta/knowledge/** → [54 knowledge files]
+
+# Planning files
+# context/meta/planning/** → [96 planning files]
+
+# Audit quality files
+# ops/audit/quality/** → [62 audit files]
+
+# Room images (per room)
+# data/rooms/*/images/** → [room images]
+
+# ===========================================
+# Build artifacts
+# ===========================================
+dist/
+build/
+*.egg-info/

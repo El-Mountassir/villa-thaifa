@@ -22,27 +22,28 @@ Lors de l'évaluation des différentes approches pour gérer les credentials (`.
 
 ### Exemple de Critères (Credentials)
 
-| Critère | Poids | Description |
-|---------|-------|-------------|
-| Sécurité | 30% | Protection contre les fuites |
-| AI Compatibility | 25% | Facilité pour Claude Code |
-| Developer Experience | 20% | Friction quotidienne |
-| CI/CD Readiness | 15% | Compatibilité GitHub Actions |
-| Maintainability | 10% | Facilité de rotation |
+| Critère              | Poids | Description                  |
+| -------------------- | ----- | ---------------------------- |
+| Sécurité             | 30%   | Protection contre les fuites |
+| AI Compatibility     | 25%   | Facilité pour Claude Code    |
+| Developer Experience | 20%   | Friction quotidienne         |
+| CI/CD Readiness      | 15%   | Compatibilité GitHub Actions |
+| Maintainability      | 10%   | Facilité de rotation         |
 
 ### Format de Scoring
 
-| Score | Signification |
-|-------|---------------|
-| 5 | Excellent — Meilleure solution |
-| 4 | Bon — Approche solide |
-| 3 | Acceptable — Compromis notables |
-| 2 | Faible — Problèmes significatifs |
-| 1 | Inadéquat — Risques majeurs |
+| Score | Signification                    |
+| ----- | -------------------------------- |
+| 5     | Excellent — Meilleure solution   |
+| 4     | Bon — Approche solide            |
+| 3     | Acceptable — Compromis notables  |
+| 2     | Faible — Problèmes significatifs |
+| 1     | Inadéquat — Risques majeurs      |
 
 ## Quand Créer l'Agent
 
 Créer un `decision-evaluator-agent` si ce pattern est réutilisé 2-3 fois de plus pour:
+
 - Comparaisons technologiques
 - Choix d'architecture
 - Évaluation d'approches alternatives
