@@ -14,7 +14,7 @@
 - **Kitchen**: [ ] No
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
 - **Layout**: [x] Laptop friendly workspace, [ ] Desk (No)
-- **Pricing**: 179 EUR (Need MAD)
+- **Pricing**: 179 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 
 ### R10 — Suite

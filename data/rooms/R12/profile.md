@@ -15,7 +15,7 @@
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
 - **Layout**: [x] Laptop friendly workspace, [x] Separate sitting area, [x] Separate dining area, [ ] Desk (No)
 - **Features**: Salon, Dining area, Bar
-- **Pricing**: 449 EUR (Need MAD)
+- **Pricing**: 449 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 
 ### R12 — Presidential Suite

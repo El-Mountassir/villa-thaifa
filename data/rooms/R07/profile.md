@@ -15,7 +15,7 @@
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
 - **Layout**: [x] Laptop friendly workspace, [x] Separate sitting area, [x] Separate dining area, [ ] Desk (No)
 - **Features**: Fireplace
-- **Pricing**: 329 EUR (Need MAD)
+- **Pricing**: 329 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 
 ### R07 — Deluxe King Suite

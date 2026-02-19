@@ -5,6 +5,8 @@
   "exchange_rate": 10.72,
   "last_updated": "2026-02-19",
   "data_confidence": "confirmed",
+  "locked_until": "2026-12-31",
+  "lock_source": "Said Thaifa via HotelRunner, confirmed by WhatsApp (Jan 2026)",
   "rooms": [
     {
       "room_id": "R01",

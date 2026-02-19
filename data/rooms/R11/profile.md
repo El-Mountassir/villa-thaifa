@@ -15,7 +15,7 @@
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
 - **Layout**: [x] Laptop friendly workspace, [ ] Desk (No)
 - **Features**: Salon, Fireplace
-- **Pricing**: 189 EUR (Need MAD)
+- **Pricing**: 189 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 
 ### R11 — Family Suite
