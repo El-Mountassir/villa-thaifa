@@ -56,6 +56,7 @@ category_code: SUITE
 internal_name: Suite
 expedia_type: Suite
 booking_label: Suite
+booking_label_fr: Suite
 floor: Ground Floor (implied)
 capacity: "3 adults"
 max_occupancy: 3

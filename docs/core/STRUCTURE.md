@@ -13,6 +13,8 @@
 | ops/      | 18    | Live operational state       |
 | scripts/  | 8     | Validation and tooling       |
 | tests/    | 1     | Test suite                   |
+| infra/    | 0     | Infrastructure configuration |
+| src/      | 0     | Application source code      |
 
 ---
 
@@ -74,6 +76,8 @@
 │
 ├── archive/                    legacy archived files
 ├── tests/                      pytest suite
+├── infra/                      infrastructure-as-code, deployment configs
+├── src/                        application source code
 ├── logs/                       log files (gitignored)
 ├── tmp/                        temporary files (gitignored)
 ├── .claude/                    Claude Code configuration

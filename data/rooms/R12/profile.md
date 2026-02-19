@@ -57,7 +57,8 @@ room_number: "12"
 category_code: PRESIDENTIAL_SUITE
 internal_name: Presidential Suite
 expedia_type: Presidential Suite
-booking_label: Suite Presidentiel
+booking_label: Presidential Suite
+booking_label_fr: Suite Presidentiel
 floor: Ground Floor
 capacity: "4 adults"
 max_occupancy: 4

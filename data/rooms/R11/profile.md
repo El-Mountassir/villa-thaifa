@@ -56,7 +56,8 @@ room_number: "11"
 category_code: FAMILY_SUITE
 internal_name: Family Suite
 expedia_type: Family Suite
-booking_label: Suite Familiale
+booking_label: Family Suite
+booking_label_fr: Suite Familiale
 floor: Ground Floor
 capacity: "4 adults"
 max_occupancy: 4

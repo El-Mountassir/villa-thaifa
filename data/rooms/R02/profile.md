@@ -53,7 +53,8 @@ room_number: "02"
 category_code: DELUXE_DOUBLE
 internal_name: Deluxe Double Room
 expedia_type: Double Room
-booking_label: Chambre Double De luxe
+booking_label: Deluxe Double Room
+booking_label_fr: Chambre Double De luxe
 floor: Ground Floor
 capacity: "2 adults"
 max_occupancy: 2

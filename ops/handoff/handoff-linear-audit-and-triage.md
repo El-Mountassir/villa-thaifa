@@ -173,10 +173,10 @@ VT-44 (hook E2E test) — independent, can run anytime
 | **Wave 2 — Quick Wins** | VT-52 | Consolidate Said profile | P2 | 2pts | **DONE** | Canonical: `data/admin/client/PROFILE.md` |
 | | VT-53 | Review communications.md | P2 | 2pts | **DONE** | Archived to `ops/archive/2026-02/` |
 | | VT-51 | GitHub identity strategy | P2 | 2pts | **DONE** | Option B (migrate to org) executed same session |
-| **Wave 3 — Deep Work** | VT-47 | Move 10 misplaced docs | P2 | 4pts | Backlog | read + move + update refs |
-| | VT-48 | Language audit — French removal | P2 | 8pts | Backlog | grep scan + remediate |
-| | VT-49 | Post-bootstrap migration audit | P2 | 8pts | Backlog | exhaustive file scan |
-| | VT-50 | Process manifest.csv | P2 | 4pts | Backlog | read CSV, create individual issues |
+| **Wave 3 — Deep Work** | VT-47 | Move 10 misplaced docs | P2 | 4pts | **Done** | All 10 docs already correct, no moves needed |
+| | VT-48 | Language audit — French removal | P2 | 8pts | **In Progress** | 8 files translated, OTA titles done. ~80 historical exempt. Said comms exempt. |
+| | VT-49 | Post-bootstrap migration audit | P2 | 8pts | **In Progress** | Audit complete. missions/ archived (5 issues VT-66-70). docs/reports/ deduped. data/specs/ plan ready. |
+| | VT-50 | Process manifest.csv | P2 | 4pts | **Done** | 7 issues created (VT-59-65). CSV archived. |
 | **Wave 4 — Epics** | VT-45 | Harden facilities domain | P2 | 8pts | Backlog | needs Said input |
 | | VT-46 | Phase 3 triage — 212 files | P2 | 16pts | Backlog | triage reports at `/tmp/` |
 | | VT-55 | Archive old repo | P3 | 1pt | Blocked | blocked by VT-51 (now done — unblocked) |
@@ -215,6 +215,36 @@ The next session MUST:
 4. Mark tasks in_progress before starting, completed when done
 5. Delegate ALL execution to sub-agents (orchestrator = 0 MCP calls, 0 file writes for non-rules content)
 6. Update this handoff at end of session
+
+### Wave 3 Execution — IN PROGRESS
+
+**Work completed this sub-session:**
+
+| Item | Source | Action Taken | Outcome |
+|---|---|---|---|
+| OTA title translation | VT-48 | Translated R01-R12 booking_label to English, added booking_label_fr | 12 rooms updated |
+| Expand directory contract | VT-49 | Updated AGENTS.md + STRUCTURE.md to include infra/ + src/ | Directory contract expanded |
+| Archive missions/ | VT-49 | Capture Before Archive — extracted to Linear, then archived | 5 issues created (VT-66-70), dir archived |
+| Dedup docs/reports/ | VT-49 | Compared vs ops/audit/, rescued unique files | 40 dupes archived, 2 unique rescued |
+| Scope data/specs/ migration | VT-49 | Analyzed 196 files, produced migration plan | Plan at ~/omar/knowledge/research/development/vt-49-data-specs-migration-plan.md |
+
+**New Linear issues this sub-session**: VT-59-65 (from manifest.csv), VT-66-70 (from missions/ extraction)
+
+**Pending decisions (from missions/ archive)**:
+- chambre5-sync-investigation: Dec 2025 P0 sync problem — dates expired but root cause unclear
+- validation-pdf: French sign-off doc for Said — still needed or obsolete?
+- rooms.md deprecation: Should master table get deprecation notice pointing to R01-R12 profiles?
+
+**Pending decisions (from data/specs/ scoping)**:
+- R7/R12 premium pricing: Were decisions made? (440€ vs 280€ for R7, 600€ vs 350€ for R12)
+- Image anomaly: R05-R09 share R04 image filenames — intentional or copy error?
+- chambre_et_vue.md extraction: 12 lines of Said's notes on room views/terrace/spa not in profiles
+- HDR originals: Verify specs images are genuinely same as canonical (not different resolutions)
+
+**Remaining Wave 3 work (tracked in Linear)**:
+- VT-48: Close once OTA title translation confirmed (~80 historical files exempt, Said comms exempt)
+- VT-49: Execute data/specs/ migration (~85 min after Omar answers 4 questions above). Close after migration done.
+- Migration plan reference: `~/omar/knowledge/research/development/vt-49-data-specs-migration-plan.md`
 
 ### Triage Reports (from Phase 3)
 
@@ -273,11 +303,12 @@ ls /tmp/triage-*.md /tmp/scan-items-evaluation.md 2>/dev/null || echo "Triage re
 
 | Metric | Count | Notes |
 |---|---|---|
-| Total VT issues | 57 | Was 55; +VT-56 MarocPME, +VT-57 website elements |
-| Done | 13 | +VT-44, VT-52, VT-53 this session |
+| Total VT issues | ~69 | Was 57; +VT-59-65 (manifest.csv), +VT-66-70 (missions/ extraction) = 12 new this sub-session |
+| Done | 15 | +VT-47, VT-50 this sub-session (in addition to prior 13) |
 | Canceled | 11 | — |
-| Backlog | 33 | — |
+| Backlog | ~43 | VT-48, VT-49 in progress; remainder backlog |
 | New issues this session | 16 | VT-42→VT-55 (14) + VT-56, VT-57 from GitHub migration |
+| New issues this sub-session | 12 | VT-59-65 (manifest.csv), VT-66-70 (missions/ extraction) |
 | SSOT Migration project | Closed | All 4 issues closed as obsolete |
 
 ### Remaining Work (tracked in Linear)

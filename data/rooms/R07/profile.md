@@ -56,7 +56,8 @@ room_number: "07"
 category_code: DELUXE_KING_SUITE
 internal_name: Deluxe King Suite
 expedia_type: Suite
-booking_label: Suite De Luxe King Size
+booking_label: Deluxe King Suite
+booking_label_fr: Suite De Luxe King Size
 floor: First Floor
 capacity: "4 adults"
 max_occupancy: 4

@@ -249,6 +249,22 @@ Each top-level directory has a defined purpose, inclusion criteria, and exclusio
 
 **What does NOT go here:** Production scripts, documentation, data.
 
+### infra/ -- Infrastructure Configuration
+
+**Purpose:** Infrastructure-as-code, deployment configs, and environment setup.
+
+**What GOES here:** Docker configs, CI/CD pipelines, deployment scripts, infrastructure definitions.
+
+**What does NOT go here:** Application code, documentation, data.
+
+### src/ -- Application Source Code
+
+**Purpose:** Application source code for any software components of the project.
+
+**What GOES here:** Application code, libraries, modules.
+
+**What does NOT go here:** Scripts/tooling (belongs in `scripts/`), tests (belongs in `tests/`), data.
+
 ### logs/ -- Log Files (gitignored)
 
 **Purpose:** Runtime log output. Gitignored -- not committed to the repository.

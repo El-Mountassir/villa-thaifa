@@ -53,7 +53,8 @@ room_number: "05"
 category_code: DOUBLE_SUPERIOR
 internal_name: Double Room Superior
 expedia_type: Double Room
-booking_label: Chambre Double Superieur
+booking_label: Double Room Superior
+booking_label_fr: Chambre Double Superieur
 floor: First Floor
 capacity: "2 adults"
 max_occupancy: 2

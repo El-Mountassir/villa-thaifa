@@ -54,7 +54,8 @@ room_number: "08"
 category_code: DELUXE_TRIPLE
 internal_name: Deluxe Triple Room
 expedia_type: Triple Room
-booking_label: Chambre Triple de Luxe
+booking_label: Deluxe Triple Room
+booking_label_fr: Chambre Triple de Luxe
 floor: First Floor
 capacity: "3 adults"
 max_occupancy: 3

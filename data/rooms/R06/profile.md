@@ -54,7 +54,8 @@ room_number: "06"
 category_code: EXECUTIVE_SUITE
 internal_name: Executive Suite
 expedia_type: Executive Suite
-booking_label: Suite Executive
+booking_label: Executive Suite
+booking_label_fr: Suite Executive
 floor: First Floor
 capacity: "3 adults"
 max_occupancy: 3
