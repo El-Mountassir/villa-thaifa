@@ -32,7 +32,7 @@ The villa-thaifa codebase underwent massive restructuring (200+ files relocated,
 ### Phase 2: Audit (depends on Phase 1)
 
 4. **Audit all 41 VT issues** — Compare each against current codebase. Close completed, update stale, flag overdue. Key items:
-   - VT-26: likely completed (architecture audit done)
+   - VT-26: likely completed but we aren't sure.. (architecture audit done but might need to be reviewed or redo)
    - VT-19: overdue anniversary event — needs decision
    - SSOT Migration issues (VT-30 to VT-33): check relevance
    - Room Management issues: check against current data/rooms/ state
@@ -51,6 +51,13 @@ The villa-thaifa codebase underwent massive restructuring (200+ files relocated,
    - context/meta/knowledge/ (54 files) — archive obsolete, keep relevant
    - context/meta/planning/ (96 files) — archive completed plans, keep active
    - ops/audit/quality/ (62 files) — archive old audits, keep current
+
+   **CRITICAL**: Follow the "Capture Before Archive" rule (universal.md). Before archiving ANY file:
+   - Read it completely
+   - Extract: tasks → Linear, decisions → ops/decisions/, knowledge → context/meta/knowledge/
+   - Verify extractions landed
+   - Only then archive
+   - Process in batches of 5-10 files
 
 ---
 
