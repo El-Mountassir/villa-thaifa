@@ -115,11 +115,12 @@ After migration, these files reference the old URL and need updating:
 
 ## Cleanup Remaining
 
-1. **Remove old repo from EM team**: In Linear settings, disconnect `El-Mountassir/villa-thaifa-property-management` from EM team (repo is archived)
-2. **Clean up test branch**: Run `git checkout main && git push origin --delete omar/vt-42-test && git branch -d omar/vt-42-test`
+1. ~~**Remove old repo from EM team**~~ — DONE by Omar (2026-02-19)
+2. ~~**Clean up test branch**~~ — DONE (`omar/vt-42-test` deleted)
 3. **Test branch linking on a clean issue**: Try pushing a branch referencing a NEW VT issue (not VT-42 which has a GitHub #2 conflict)
-4. **Update Step 5 references**: Mark `ops/intake/linear-github-repo-alignment.md` as resolved
-5. **Create Trip.com issue**: Trip.com GDA contract is still relevant — create new VT issue (VT-2 was canceled during audit)
+4. **Remove redundant `omar-elmountassir` personal connection**: In Linear GitHub settings, disconnect the personal account connection (repo is now in org, personal connection is redundant)
+5. **Update Step 5 references**: Mark `ops/intake/linear-github-repo-alignment.md` as resolved
+6. ~~**Create Trip.com issue**~~ — DONE: VT-58 created
 
 ---
 
