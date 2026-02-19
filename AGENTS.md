@@ -48,6 +48,10 @@ Run `make structure-cards` when:
 
 Role mappings are configured in: `scripts/structure/role_mappings.yaml`
 
+### Structure Freshness Rule
+
+After creating new directories or adding 3+ files in a single task, run `make structure-update` before concluding the task. This keeps structure cards and stats current for subsequent agents.
+
 ### STRUCTURE.md Maintenance
 
 This file uses a hybrid model:
@@ -264,6 +268,7 @@ Use this sequence for every operational task:
 2. REPORT
 3. QUESTIONS
 4. ACTION
+5. COMMIT — After completing a major task (migration, restructure, feature), prompt Omar: "Ready to commit these changes?" Committing is Tier 3 (ASK) — never auto-commit, always prompt.
 
 ## Scope
 
