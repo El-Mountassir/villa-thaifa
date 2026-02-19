@@ -4,7 +4,7 @@
 - **Class**: Deluxe
 - **Floor**: Ground Floor (Rez-de-chaussée)
 - **Occupancy**: 3 Adults
-- **Size**: 24 m² (Booking Scan)
+- **Size**: 44 m² <!-- NOTE: Booking.com scan showed 24 m²; canonical value is 44 m² per YAML + OTA copy. Verify on-site. -->
 - **Sleeping**:
   - 1 King Bed (200cm)
   - 1 Sofa Bed

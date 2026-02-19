@@ -148,9 +148,9 @@ Major goals tied to dates:
 
 ## Linear ↔ GitHub Sync
 
-> **Status**: ✅ Configured (2026-02-09)
-> **Repo**: `El-Mountassir/villa-thaifa-property-management`
-> **Setup Guide**: [`docs/operations/linear-github-setup.md`](../../docs/operations/linear-github-setup.md)
+> **Status**: ✅ Configured (2026-02-19, reconfigured after repo transfer)
+> **Repo**: `El-Mountassir/villa-thaifa`
+> **Setup Guide**: [`context/meta/planning/linear-github-setup.md`](linear-github-setup.md)
 
 ### Auto-Close Rules
 

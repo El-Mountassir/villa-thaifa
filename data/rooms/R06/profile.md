@@ -4,7 +4,7 @@
 - **Class**: Executive
 - **Floor**: 1st Floor
 - **Occupancy**: 3 Adults
-- **Size**: ? m²
+- **Size**: 40 m² <!-- OWNER_PENDING: room size needs Said's confirmation -->
 - **Sleeping**:
   - 1 King Bed (200cm)
   - 1 Sofa Bed

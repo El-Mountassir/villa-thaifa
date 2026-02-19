@@ -1,22 +1,23 @@
 {
-  "_comment": "PLACEHOLDER FILE - À compléter avec les vraies données de la propriété",
+  "_comment": "PARTIAL — Online research applied 2026-02-19. Remaining TODOs need Said confirmation.",
   "version": "1.0.0",
-  "last_updated": "2026-01-15T12:00:00Z",
-  "status": "placeholder",
+  "last_updated": "2026-02-19T00:00:00Z",
+  "status": "partial",
   "property": {
     "id": "villa-thaifa",
     "name": "Villa Thaifa",
     "type": "Maison d'hôte / Riad",
     "location": {
-      "address": "TODO",
+      "address": "Route de Fes km 12, Ouled Jelal, 40000 Marrakech, Morocco",
       "city": "Marrakech",
-      "country": "Maroc",
-      "coordinates": {"lat": "TODO", "lng": "TODO"},
-      "neighborhood": "TODO"
+      "country": "Morocco",
+      "coordinates": {"lat": 31.6539, "lng": -7.8786},
+      "neighborhood": "Ouled Jelal / Palmeraie"
     },
     "rating": {
       "booking_com": 9.3,
-      "tripadvisor": "TODO",
+      "tripadvisor": "3.0/5",
+      "tripadvisor_notes": "Ranked #1078 of 1284 B&Bs/inns in Marrakech. Source: TripAdvisor listing, 2026-02-19.",
       "google": "TODO"
     },
     "capacity": {
@@ -74,20 +75,31 @@
       "tours": "TODO"
     },
     "policies": {
-      "check_in": "TODO",
-      "check_out": "TODO",
+      "check_in": "14:00",
+      "check_in_notes": "Source: OTA listings (booking.com policy, destinia). Confirmed by internal check-in-out.json.",
+      "check_out": "11:00",
+      "check_out_notes": "Source: internal check-in-out.json (11:00). Note: destinia shows 13:30 — confirm with Said which is authoritative.",
       "cancellation": "TODO",
       "payment_methods": ["TODO"],
-      "children_policy": "TODO",
-      "pets_policy": "TODO",
+      "children_policy": "Children allowed. Ages 2-12: €30/person/night when using existing bed. Source: OTA policy data.",
+      "pets_policy": "Allowed, no extra charge. Source: OTA policy data.",
       "smoking_policy": "TODO"
     }
   },
-  "tags": ["placeholder", "to_complete", "property"],
+  "tags": ["partial", "to_complete", "property"],
   "todo": [
-    "Compléter l'adresse exacte",
-    "Détailler les 12 chambres (types, capacités)",
-    "Ajouter photos dans ASSETS.md",
-    "Compléter les policies"
+    "Said to confirm: check-out time (internal=11:00 vs destinia OTA=13:30)",
+    "Said to confirm: GPS coordinates (lat 31.6539, lng -7.8786 sourced from trabber.us — verify on Google Maps)",
+    "Said to confirm or deny: Google rating (not found online)",
+    "Said to fill: pool size, spa massage/other services",
+    "Said to fill: parking availability and type",
+    "Said to fill: WiFi type (fiber/ADSL/etc)",
+    "Said to fill: room types breakdown (12 rooms — how many of each type)",
+    "Said to fill: total beds and max guests",
+    "Said to fill: heating, safe, mini_bar, terrace, garden availability",
+    "Said to fill: airport transfer, laundry, room service, concierge, tours",
+    "Said to fill: cancellation policy details",
+    "Said to fill: accepted payment methods",
+    "Said to fill: smoking policy"
   ]
 }

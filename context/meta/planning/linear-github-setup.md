@@ -20,7 +20,7 @@
 
 ### Step 3: Link Repository
 
-1. Find `villa-thaifa-property-management` in the repo list
+1. Find `villa-thaifa` (under El-Mountassir org) in the repo list
 2. Click **Connect**
 3. Map to **El Mountassir** team (or create a Villa Thaifa team)
 

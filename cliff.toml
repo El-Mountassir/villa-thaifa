@@ -10,7 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).\n
 """
 body = """
 {%- macro remote_url() -%}
-  https://github.com/omar-elmountassir/villa-thaifa
+  https://github.com/El-Mountassir/villa-thaifa
 {%- endmacro -%}
 
 {% if version -%}

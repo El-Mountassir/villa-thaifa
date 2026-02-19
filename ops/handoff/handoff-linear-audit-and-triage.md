@@ -241,6 +241,14 @@ The next session MUST:
 | Validation PDF completeness audit       | VT-48/49 | Check all fields from original sign-off template         | Done   | 15 gaps found (G1-G15), 7 Linear issues created |
 | Create Linear issues for gaps           | VT-48/49 | G2-G15 tracked as VT-71 through VT-77                   | Done   | 7 issues in backlog                        |
 
+| data/specs/ migration          | VT-49 | 36 .md files archived, 160 images left for rename                  | Done   | ops/archive/data-specs/                                              |
+| Old repo ref cleanup           | VT-55 | 3 active files updated to El-Mountassir/villa-thaifa               | Done   | cliff.toml, linear-workflow, linear-github-setup                     |
+| Fix R01/R06 sizes              | G7-G8 | Align header sizes with YAML values                                | Done   | R01: 44m², R06: 40m² (owner_pending)                                 |
+| Fix R07 sofa beds              | G4    | Align header with YAML: 2 sofa beds                                | Done   | VT-73 closed                                                         |
+| Research property config       | G10-G15 | Address, GPS, ratings, check-in times from web                   | Done   | property-config.json updated                                         |
+| Populate facility files        | G2    | Extract data from specs, OTA, Said's notes                         | Done   | 4 files populated, Said gaps remain                                  |
+| Said validation checklist      | G3+G5-G9 | Consolidated all owner_pending fields                           | Done   | data/admin/said-data-validation-checklist.md                         |
+
 **New Linear issues this sub-session**: VT-59-65 (from manifest.csv), VT-66-70 (from missions/ extraction), VT-71-77 (validation gaps)
 
 **Pending decisions (from missions/ archive)**:
@@ -320,7 +328,7 @@ ls /tmp/triage-*.md /tmp/scan-items-evaluation.md 2>/dev/null || echo "Triage re
 | Metric                      | Count  | Notes                                                                                        |
 | --------------------------- | ------ | -------------------------------------------------------------------------------------------- |
 | Total VT issues             | ~77    | Was 57; +VT-59-65 (manifest.csv), +VT-66-70 (missions/ extraction), +VT-71-77 (validation gaps) = 19 new this sub-session |
-| Done                        | 17     | +VT-47, VT-50 (earlier this sub-session) + validation work (follow-up items)                 |
+| Done                        | ~21    | +VT-49, VT-55, VT-73, VT-75 closed this round; +VT-48 from earlier; VT-71/72/74/76/77 partially done (awaiting Said) |
 | Canceled                    | 11     | —                                                                                            |
 | Backlog                     | ~49    | VT-48, VT-49 in progress; remainder backlog                                                  |
 | New issues this session     | 16     | VT-42→VT-55 (14) + VT-56, VT-57 from GitHub migration                                        |

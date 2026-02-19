@@ -1,29 +1,51 @@
-# Jardin — Villa Thaifa
+# Garden — Villa Thaifa
 
-**Derniere mise a jour** : 2025-12-23
+**Last updated**: 2026-02-19
 
 ---
 
 ## Description
 
-Le jardin de Villa Thaifa dans la Palmeraie de Marrakech.
+Lush garden at Villa Thaifa, located in the Palmeraie district of Marrakech.
+Described in the official Booking.com property description as a "jardin luxuriant" (lush garden).
+Used as an outdoor event space for cocktails and ceremonies.
 
 ---
 
-## Caracteristiques
+## Characteristics
 
-| Attribut     | Valeur                    |
-| ------------ | ------------------------- |
-| **Surface**  | [A confirmer - M. Thaifa] |
-| **Palmiers** | [A confirmer]             |
-| **Orangers** | [A confirmer]             |
+| Attribute         | Value                                                                       |
+| ----------------- | --------------------------------------------------------------------------- |
+| **Location**      | Palmeraie de Marrakech — Source: Booking.com listing                        |
+| **Surface area**  | owner_pending                                                               |
+| **Palm trees**    | owner_pending                                                               |
+| **Orange trees**  | owner_pending                                                               |
+| **Outdoor furniture** | Yes — Source: Booking.com (mobilier d'extérieur)                        |
+
+---
+
+## Views from Rooms
+
+| Room(s) | View / Access                             | Source                                               |
+| ------- | ----------------------------------------- | ---------------------------------------------------- |
+| 1, 2, 3, 8 | Garden view                            | Said Thaifa — ops/archive/data-specs/chambre-et-vue-said-notes.md |
+| 3       | Small terrace ~3-4 m2, garden view        | Same source                                          |
+| 2       | Large/medium terrace ~40 m2, garden view  | Same source                                          |
+| 7       | Large terrace ~80-100 m2, garden + Atlas view | Same source                                      |
+
+---
+
+## Event Use
+
+- Outdoor cocktails and ceremonies — Source: context/meta/knowledge/events-privatization.md
+- Included in privatization package (2,000 EUR/night) — Source: same
 
 ---
 
 ## Notes
 
-[Espace pour notes specifiques]
+- Photo set: 24 images in `data/property/facilities/pool-garden/images/` (pool and garden combined)
 
 ---
 
-_Fiche installation — Villa Thaifa_
+_Facility file — Villa Thaifa_

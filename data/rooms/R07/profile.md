@@ -7,7 +7,7 @@
 - **Size**: ? m²
 - **Sleeping**:
   - 1 King Bed (200cm)
-  - 2 Sofa Beds (Check count)
+  - 2 Sofa Beds
 - **View**: [x] Pool view, [x] Mountain view (Atlas), [x] Garden view
 - **Outdoor**: [x] Furnished balcony (~80-100 m² Terrace)
 - **Bathroom**: [x] Shower/tub combination, [x] Hair dryer
