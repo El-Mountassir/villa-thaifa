@@ -58,10 +58,11 @@ git fetch      # test connection
 4. Select `El-Mountassir/villa-thaifa` as the linked repo
 
 **Status: PARTIALLY VERIFIED** (2026-02-19)
+
 - VT team correctly linked to `El-Mountassir/villa-thaifa` (confirmed via Linear settings page)
 - Bi-directional issue sync WORKING (new Linear issues appear in GitHub)
 - Branch auto-linking NOT confirmed — test branch `omar/vt-42-test` didn't show on VT-42 (likely because VT-42 was already synced with GitHub issue #2, causing a conflict)
-- `omar-elmountassir` personal account also connected (redundant but harmless)
+- `omar-elmountassir` personal account also connected (kept for future use per Omar's decision)
 - EM team still linked to archived `villa-thaifa-property-management` — Omar should remove this connection
 
 **Verify**: Create a test branch `omar/vt-42-test`, push it, check it shows in Linear VT-42, then delete it:
@@ -118,7 +119,7 @@ After migration, these files reference the old URL and need updating:
 1. ~~**Remove old repo from EM team**~~ — DONE by Omar (2026-02-19)
 2. ~~**Clean up test branch**~~ — DONE (`omar/vt-42-test` deleted)
 3. **Test branch linking on a clean issue**: Try pushing a branch referencing a NEW VT issue (not VT-42 which has a GitHub #2 conflict)
-4. **Remove redundant `omar-elmountassir` personal connection**: In Linear GitHub settings, disconnect the personal account connection (repo is now in org, personal connection is redundant)
+4. ~~**Remove redundant `omar-elmountassir` personal connection**~~ — KEPT (Omar's decision — needed for future use)
 5. **Update Step 5 references**: Mark `ops/intake/linear-github-repo-alignment.md` as resolved
 6. ~~**Create Trip.com issue**~~ — DONE: VT-58 created
 

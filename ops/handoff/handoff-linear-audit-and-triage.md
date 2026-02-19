@@ -1,8 +1,23 @@
 # Session Handoff: Linear Audit + File Triage
 
-**Created**: 2026-02-19
-**Workspace**: ~/villa-thaifa/
-**Priority**: High — Linear issues are stale and blocking effective work tracking
+**Created**: 2026-02-19 | **Workspace**: `~/villa-thaifa/` | **Priority**: High
+
+---
+
+## Quick Navigation
+
+| Section | Status |
+|---|---|
+| [Context](#context) | Background + Linear state snapshot |
+| [Phase 1: Unblock](#phase-1-unblock--completed) | COMPLETED |
+| [Phase 2: Audit](#phase-2-audit--completed) | COMPLETED |
+| [Phase 3: Scan + Triage](#phase-3-scan--triage--in-progress) | IN PROGRESS |
+| [Rules Updated](#rules-updated-this-session) | 4 files updated |
+| [Execution Roadmap](#execution-roadmap--next-sessions) | Waves 1-5 + Deferred |
+| [Omar Manual Actions](#omar-manual-actions--pending) | Pending |
+| [Triage Reports](#triage-reports-from-phase-3) | /tmp/ — ephemeral |
+| [Key Files](#key-files) | Reference links |
+| [Completion Status](#completion-status) | Post-audit Linear state |
 
 ---
 
@@ -12,12 +27,14 @@ The villa-thaifa codebase underwent massive restructuring (200+ files relocated,
 
 **Current Linear state (as of 2026-02-19):**
 
-- 4 VT projects: Room Management, Q1 2026 Operations, OTA Integration, SSOT Migration (all Backlog status)
-- 41 total issues: 36 Backlog, 6 Done, 1 In Progress (VT-26 P0 blocker)
-- GitHub integration: NOT active
-- VT-26 (P0 "Codebase Architecture Audit") is likely completed by recent restructuring work
-- VT-19 (Anniversary event) is 19 days overdue
-- VT-40 (Logo design) and VT-41 (Resume ops) were just created this session
+| Item | State |
+|---|---|
+| VT projects | 4: Room Management, Q1 2026 Operations, OTA Integration, SSOT Migration (all Backlog) |
+| Total issues | 41: 36 Backlog, 6 Done, 1 In Progress |
+| GitHub integration | NOT active |
+| VT-26 (P0 Architecture Audit) | Likely completed by recent restructuring |
+| VT-19 (Anniversary event) | 19 days overdue |
+| VT-40, VT-41 | Just created this session (Logo design, Resume ops) |
 
 ---
 
@@ -25,60 +42,106 @@ The villa-thaifa codebase underwent massive restructuring (200+ files relocated,
 
 ### Phase 1: Unblock — COMPLETED
 
-1. **Linear-GitHub integration** — Already active. Discovered repo alignment issue: Linear points to `El-Mountassir/villa-thaifa-property-management` (old) but current repo is `omar-elmountassir/villa-thaifa`. Filed to `ops/intake/linear-github-repo-alignment.md`.
-2. **VT-26 P0 blocker** — Closed as Done. Architecture audit completed via Safe Harbor migration + February restructuring. 6 downstream issues unblocked.
-3. **Linear MCP tools** — Work from orchestrator, not sub-agents. Persisted in MEMORY.md.
+| Issue / Item | Action | Outcome |
+|---|---|---|
+| Linear-GitHub integration | Investigated current state | Already active; repo alignment mismatch found — filed to `ops/intake/linear-github-repo-alignment.md` |
+| VT-26 P0 blocker | Closed as Done | Architecture audit complete via Safe Harbor + Feb restructuring; 6 downstream issues unblocked |
+| Linear MCP tools | Documented working pattern | Orchestrator calls only (not sub-agents); persisted in MEMORY.md |
 
 ### Phase 2: Audit — COMPLETED
 
-- **15 issues closed** (total 41 → 26 remaining):
-  - Done (4): VT-15, VT-28, VT-29, VT-41
-  - Cancelled (11): VT-14, VT-16, VT-17, VT-18, VT-19, VT-20, VT-2, VT-30, VT-31, VT-32, VT-33
-- **VT-2 merged into VT-9** — sub-issues VT-3→8 re-parented
-- **SSOT Migration project** — all 4 issues closed as obsolete
-- **Anniversary event** — cancelled by Said, all 5 issues closed
-- **VT-22** (agent brief) kept open — partially done is NOT done
-- **Completion Integrity rule** added to universal.md
-- **Delegation Thresholds** strengthened in rules.md (zero tolerance)
-- Dashboard: `~/omar/artifacts/dashboards/vt-linear-audit-2026-02-19.html`
+**15 issues closed** (41 → 26 remaining):
 
-### Phase 3: Scan + Triage — COMPLETED
+| Category | Issues | Count |
+|---|---|---|
+| Done | VT-15, VT-28, VT-29, VT-41 | 4 |
+| Cancelled | VT-14, VT-16, VT-17, VT-18, VT-19, VT-20, VT-2, VT-30, VT-31, VT-32, VT-33 | 11 |
+
+**Other actions:**
+
+| Item | Outcome |
+|---|---|
+| VT-2 merged into VT-9 | Sub-issues VT-3→8 re-parented |
+| SSOT Migration project | All 4 issues closed as obsolete |
+| Anniversary event | Cancelled by Said; all 5 issues closed |
+| VT-22 (agent brief) | Kept open — partially done is NOT done |
+| Completion Integrity rule | Added to universal.md |
+| Delegation Thresholds | Strengthened in rules.md (zero tolerance) |
+| Dashboard | `~/omar/artifacts/dashboards/vt-linear-audit-2026-02-19.html` |
+
+### Phase 3: Scan + Triage — IN PROGRESS
 
 **Scans (3a):** 4 parallel scans completed:
-- AGENTS.md Open Loops: 2 items found (facilities hardening, 212-file triage)
-- ops/intake/: 25+ items found (GitHub strategy, migration conflicts, manifest CSV)
-- ops/handoff/: 13 new items found (repo alignment, language audit, archive lifecycle, governance)
-- data/pending-domains/: 2 items found (facilities.md, WhatsApp DBs)
+
+| Source | Items Found | Topics |
+|---|---|---|
+| AGENTS.md Open Loops | 2 | facilities hardening, 212-file triage |
+| ops/intake/ | 25+ | GitHub strategy, migration conflicts, manifest CSV |
+| ops/handoff/ | 13 | repo alignment, language audit, archive lifecycle, governance |
+| data/pending-domains/ | 2 | facilities.md, WhatsApp DBs |
 
 **Triage (3b):** 3 directories triaged (209 files total):
-- context/meta/knowledge/: 51 files — 28 KEEP, 21 ARCHIVE, 2 NEEDS-EXTRACTION
-- context/meta/planning/: 96 files — 29 KEEP, 53 ARCHIVE, 14 NEEDS-EXTRACTION
-- ops/audit/quality/: 62 files — 18 KEEP, 38 ARCHIVE, 6 NEEDS-EXTRACTION
+
+| Directory | Total | KEEP | ARCHIVE | NEEDS-EXTRACTION |
+|---|---|---|---|---|
+| context/meta/knowledge/ | 51 | 28 | 21 | 2 |
+| context/meta/planning/ | 96 | 29 | 53 | 14 |
+| ops/audit/quality/ | 62 | 18 | 38 | 6 |
+| **Total** | **209** | **75** | **112** | **22** |
 
 **Linear issues created (3c):** 14 new issues (VT-42 through VT-55):
-- Batch 1 (P1): VT-42 (GitHub integration fix), VT-43 (gitignore/PII strategy), VT-44 (hook E2E test)
-- Batch 2 (P2): VT-45 (facilities hardening), VT-46 (212-file triage), VT-47 (repath 10 docs), VT-48 (language audit), VT-49 (migration audit), VT-50 (manifest CSV processing)
-- Batch 3 (P3): VT-51 (GitHub identity strategy), VT-52 (Said profile consolidation), VT-53 (communications.md review), VT-54 (TTS decision), VT-55 (archive old repo)
 
-**Deferred items (6):** Stale GitHub issues migration, old repo archive strategy, ~/omar/ repo strategy, WhatsApp domain work, archive/lifecycle system design, WOS architecture
-**Skipped items (3):** Create ops/archive/sessions/ (ACT-tier), resume project (stale), GitHub template repos (blocked)
+| Batch | Priority | Issues |
+|---|---|---|
+| Batch 1 | P1 | VT-42 (GitHub integration fix), VT-43 (gitignore/PII strategy), VT-44 (hook E2E test) |
+| Batch 2 | P2 | VT-45 (facilities hardening), VT-46 (212-file triage), VT-47 (repath 10 docs), VT-48 (language audit), VT-49 (migration audit), VT-50 (manifest CSV processing) |
+| Batch 3 | P3 | VT-51 (GitHub identity strategy), VT-52 (Said profile consolidation), VT-53 (communications.md review), VT-54 (TTS decision), VT-55 (archive old repo) |
 
-**Triage reports:** `/tmp/triage-context-meta-knowledge.md`, `/tmp/triage-context-meta-planning.md`, `/tmp/triage-ops-audit-quality.md`
-**Scan evaluation:** `/tmp/scan-items-evaluation.md`
-**Dashboard:** `~/omar/artifacts/dashboards/vt-scan-consolidation-2026-02-19.html`
+**Deferred items (6):** Not yet promoted to Linear issues:
+
+| Item | Reason |
+|---|---|
+| Stale GitHub issues migration | After VT-42 |
+| Old repo archive strategy | After VT-51 |
+| ~/omar/ repo strategy | Strategic decision needed |
+| WhatsApp domain work | After VT-43 |
+| Archive/lifecycle system design | Strategic session |
+| WOS architecture | Strategic session |
+
+**Skipped items (3):**
+
+| Item | Reason |
+|---|---|
+| Create ops/archive/sessions/ | ACT-tier — do it directly |
+| Resume project | Stale |
+| GitHub template repos | Blocked |
+
+**Phase 3 artifacts:**
+
+| Artifact | Path |
+|---|---|
+| Triage report — knowledge | `/tmp/triage-context-meta-knowledge.md` |
+| Triage report — planning | `/tmp/triage-context-meta-planning.md` |
+| Triage report — audit quality | `/tmp/triage-ops-audit-quality.md` |
+| Scan evaluation | `/tmp/scan-items-evaluation.md` |
+| Dashboard | `~/omar/artifacts/dashboards/vt-scan-consolidation-2026-02-19.html` |
 
 ### Rules Updated This Session
 
-- `~/.claude/rules/rules.md`: Delegation Thresholds rewritten with zero-tolerance enforcement
-- `~/omar/core/resources/rules/universal.md`: Completion Integrity rule added
-- `~/.claude/skills/delegate/SKILL.md`: Gemini-from-Claude-Code pattern documented
-- `~/.claude/projects/-home-director-villa-thaifa/memory/MEMORY.md`: Gemini delegation pattern added
+| File | Change |
+|---|---|
+| `~/.claude/rules/rules.md` | Delegation Thresholds rewritten with zero-tolerance enforcement |
+| `~/omar/core/resources/rules/universal.md` | Completion Integrity rule added |
+| `~/.claude/skills/delegate/SKILL.md` | Gemini-from-Claude-Code pattern documented |
+| `~/.claude/projects/-home-director-villa-thaifa/memory/MEMORY.md` | Gemini delegation pattern added |
 
 ### New Files Created
 
-- `ops/intake/linear-github-repo-alignment.md` — repo naming mismatch problem
-- `~/omar/artifacts/dashboards/vt-linear-audit-2026-02-19.html` — audit dashboard
-- `~/omar/knowledge/research/business/vt-linear-audit-verification-2026-02-19.md` — verification report (pending)
+| File | Purpose |
+|---|---|
+| `ops/intake/linear-github-repo-alignment.md` | Repo naming mismatch problem |
+| `~/omar/artifacts/dashboards/vt-linear-audit-2026-02-19.html` | Audit dashboard |
+| `~/omar/knowledge/research/business/vt-linear-audit-verification-2026-02-19.md` | Verification report (pending) |
 
 ---
 
@@ -102,53 +165,46 @@ VT-44 (hook E2E test) — independent, can run anytime
 
 ### Recommended Execution Sequence
 
-**Wave 1 — Blockers — COMPLETED (2026-02-19)**:
-
-1. VT-42: Fix Linear GitHub integration — DONE (investigation). Manual UI fix required by Omar. Report: `~/omar/knowledge/research/development/vt-42-github-integration-investigation.md`
-2. VT-43: Define gitignore strategy — DONE (implemented). .gitignore hardened, WhatsApp chat untracked. **URGENT: Omar must rotate 4 exposed passwords** (HotelRunner, Booking.com x2, OVH). Report: `~/omar/knowledge/research/development/vt-43-gitignore-pii-audit.md`
-3. VT-44: E2E test delegation hooks — DONE (closed in Linear). 4/4 tests passed.
-
-**Wave 2 — Quick Wins (parallel, low effort)**:
-4. VT-52: Consolidate Said profile — DONE (closed in Linear). Canonical: data/admin/client/PROFILE.md
-5. VT-53: Review communications.md — DONE (closed in Linear). Archived to ops/archive/2026-02/
-6. VT-51: GitHub identity strategy — DONE (Option B: migrate to org). Executed same session.
+| Wave | Issue | Description | Priority | Effort | Status | Notes |
+|---|---|---|---|---|---|---|
+| **Wave 1 — Blockers** | VT-42 | Fix Linear GitHub integration | P1 | 2pts | **DONE** | Investigation done; manual UI fix required by Omar. Report: `~/omar/knowledge/research/development/vt-42-github-integration-investigation.md` |
+| | VT-43 | Define gitignore strategy | P1 | 2pts | **DONE** | .gitignore hardened, WhatsApp chat untracked. **URGENT: Omar must rotate 4 exposed passwords** (HotelRunner, Booking.com x2, OVH). Report: `~/omar/knowledge/research/development/vt-43-gitignore-pii-audit.md` |
+| | VT-44 | E2E test delegation hooks | P1 | 2pts | **DONE** | 4/4 tests passed; closed in Linear |
+| **Wave 2 — Quick Wins** | VT-52 | Consolidate Said profile | P2 | 2pts | **DONE** | Canonical: `data/admin/client/PROFILE.md` |
+| | VT-53 | Review communications.md | P2 | 2pts | **DONE** | Archived to `ops/archive/2026-02/` |
+| | VT-51 | GitHub identity strategy | P2 | 2pts | **DONE** | Option B (migrate to org) executed same session |
+| **Wave 3 — Deep Work** | VT-47 | Move 10 misplaced docs | P2 | 4pts | Backlog | read + move + update refs |
+| | VT-48 | Language audit — French removal | P2 | 8pts | Backlog | grep scan + remediate |
+| | VT-49 | Post-bootstrap migration audit | P2 | 8pts | Backlog | exhaustive file scan |
+| | VT-50 | Process manifest.csv | P2 | 4pts | Backlog | read CSV, create individual issues |
+| **Wave 4 — Epics** | VT-45 | Harden facilities domain | P2 | 8pts | Backlog | needs Said input |
+| | VT-46 | Phase 3 triage — 212 files | P2 | 16pts | Backlog | triage reports at `/tmp/` |
+| | VT-55 | Archive old repo | P3 | 1pt | Blocked | blocked by VT-51 (now done — unblocked) |
+| **Wave 5 — Decisions** | VT-54 | TTS provider decision | P3 | 2pts | Backlog | ElevenLabs vs alternatives; requires Omar |
+| **Deferred** | — | Migrate stale GitHub issues | — | — | Deferred | after VT-42 |
+| | — | WhatsApp domain work | — | — | Deferred | after VT-43 |
+| | — | Archive/Lifecycle system design | — | — | Deferred | strategic session |
+| | — | Governance templates decision | — | — | Deferred | needs /decide |
+| | — | WOS Architecture | — | — | Deferred | strategic session |
 
 **GitHub Migration — EXECUTED (2026-02-19)**:
-- Repo transferred: `omar-elmountassir/villa-thaifa` → `El-Mountassir/villa-thaifa`
-- Old repo archived: `El-Mountassir/villa-thaifa-property-management`
-- Git remote updated locally
-- Linear integration: VT team correctly linked, issue sync working, branch linking untested
-- 2 old GitHub issues migrated to Linear: VT-56 (MarocPME form), VT-57 (website elements)
-- Remaining cleanup: see `ops/decisions/github-migration-to-org.md` § Cleanup Remaining
-- Omar manual actions: verify Linear integration, rotate 4 exposed passwords, remove old repo from EM team
 
-**Omar Manual Actions — PENDING**:
-- [ ] Rotate 4 exposed passwords (HotelRunner, Booking.com x2, OVH) — URGENT security
-- [ ] Remove redundant `omar-elmountassir` personal connection from Linear GitHub settings (https://linear.app/el-mountassir/settings/integrations/github)
-- [ ] Test branch linking: push a branch referencing a NEW VT issue (not VT-42 — it has a GitHub #2 conflict that prevents branch auto-linking). Use format: `omar/vt-XX-description`
-- [ ] Verify Linear branch auto-linking works on the clean issue
-- Full migration checklist: `ops/decisions/github-migration-to-org.md`
+| Item | Result |
+|---|---|
+| Repo transfer | `omar-elmountassir/villa-thaifa` → `El-Mountassir/villa-thaifa` |
+| Old repo | Archived: `El-Mountassir/villa-thaifa-property-management` |
+| Git remote | Updated locally |
+| Linear integration | VT team correctly linked; issue sync working; branch linking untested |
+| GitHub issues migrated | VT-56 (MarocPME form), VT-57 (website elements) |
+| Remaining cleanup | `ops/decisions/github-migration-to-org.md` § Cleanup Remaining |
 
-**Wave 3 — Deep Work (sequential, high effort)**:
-7. VT-47: Move 10 misplaced docs (P2, 4pts) — read + move + update refs
-8. VT-48: Language audit French removal (P2, 8pts, Deep Work) — grep scan + remediate
-9. VT-49: Post-bootstrap migration audit (P2, 8pts, Deep Work) — exhaustive file scan
-10. VT-50: Process manifest.csv (P2, 4pts) — read CSV, create individual issues
+### Omar Manual Actions — PENDING
 
-**Wave 4 — Epics (plan before executing)**:
-11. VT-45: Harden facilities domain (P2, 8pts, Deep Work) — needs Said input
-12. VT-46: Phase 3 triage 212 files (P2, 16pts, Deep Work) — triage reports ready at /tmp/
-13. VT-55: Archive old repo (P3, 1pt) — blocked by VT-51
-
-**Wave 5 — Decisions (require Omar)**:
-14. VT-54: TTS provider decision (P3, 2pts) — ElevenLabs vs alternatives
-
-**Deferred (not yet Linear issues)**:
-- Migrate stale GitHub issues (after VT-42)
-- WhatsApp domain work (after VT-43)
-- Archive/Lifecycle system design (strategic)
-- Governance templates decision (needs /decide)
-- WOS Architecture (strategic session)
+| Action | Status | Notes |
+|---|---|---|
+| Test branch linking | Pending | Push a branch referencing a NEW VT issue (not VT-42 — GitHub #2 conflict prevents auto-linking). Format: `omar/vt-XX-description` |
+| Verify Linear branch auto-linking | Pending | Confirm it works on a clean issue |
+| Full migration checklist | Reference | `ops/decisions/github-migration-to-org.md` |
 
 ### Task Graph Instructions for Next Instance
 
@@ -162,31 +218,35 @@ The next session MUST:
 
 ### Triage Reports (from Phase 3)
 
-These /tmp/ files contain the triage results. They are EPHEMERAL and will be lost on reboot:
+These `/tmp/` files are EPHEMERAL — lost on reboot:
 
-- `/tmp/triage-context-meta-knowledge.md` — 51 files: 28 keep, 21 archive, 2 extraction
-- `/tmp/triage-context-meta-planning.md` — 96 files: 29 keep, 53 archive, 14 extraction
-- `/tmp/triage-ops-audit-quality.md` — 62 files: 18 keep, 38 archive, 6 extraction
-- `/tmp/scan-items-evaluation.md` — 23 items evaluated, 14 promoted
+| File | Contents |
+|---|---|
+| `/tmp/triage-context-meta-knowledge.md` | 51 files: 28 keep, 21 archive, 2 extraction |
+| `/tmp/triage-context-meta-planning.md` | 96 files: 29 keep, 53 archive, 14 extraction |
+| `/tmp/triage-ops-audit-quality.md` | 62 files: 18 keep, 38 archive, 6 extraction |
+| `/tmp/scan-items-evaluation.md` | 23 items evaluated, 14 promoted |
 
-**CRITICAL**: If /tmp/ files are gone, VT-46 (triage epic) will need to re-run the triage agents. The file categorizations are also captured in the VT-46 issue description.
+**CRITICAL**: If `/tmp/` files are gone, VT-46 (triage epic) will need to re-run the triage agents. File categorizations are also captured in the VT-46 issue description.
 
 ---
 
 ## Key Files
 
-- AGENTS.md: directory contract + open loops
-- ops/intake/migration-conflict-check.md: migration audit from this session
-- ops/intake/migration-path-validation.md: path compliance audit
-- context/meta/planning/linear-workflow.md: Linear workflow conventions
-- ops/handoff/handoff-linear-migration-preparation.md: prior Linear session handoff
-- Scan evaluation: /tmp/scan-items-evaluation.md (ephemeral)
-- Triage reports: /tmp/triage-*.md (ephemeral — will be lost on reboot)
-- Scan dashboard: ~/omar/artifacts/dashboards/vt-scan-consolidation-2026-02-19.html
-- Audit dashboard: ~/omar/artifacts/dashboards/vt-linear-audit-2026-02-19.html
-- Rules updated: ~/.claude/rules/rules.md (zero-tolerance delegation, 0 MCP)
-- Universal rules: ~/omar/core/resources/rules/universal.md (Completion Integrity, Task-First)
-- Delegate skill: ~/.claude/skills/delegate/SKILL.md (timeout guide, retry protocol)
+| File | Purpose |
+|---|---|
+| `AGENTS.md` | Directory contract + open loops |
+| `ops/intake/migration-conflict-check.md` | Migration audit from this session |
+| `ops/intake/migration-path-validation.md` | Path compliance audit |
+| `context/meta/planning/linear-workflow.md` | Linear workflow conventions |
+| `ops/handoff/handoff-linear-migration-preparation.md` | Prior Linear session handoff |
+| `/tmp/scan-items-evaluation.md` | Scan evaluation — ephemeral |
+| `/tmp/triage-*.md` | Triage reports — ephemeral (lost on reboot) |
+| `~/omar/artifacts/dashboards/vt-scan-consolidation-2026-02-19.html` | Scan dashboard |
+| `~/omar/artifacts/dashboards/vt-linear-audit-2026-02-19.html` | Audit dashboard |
+| `~/.claude/rules/rules.md` | Rules updated: zero-tolerance delegation, 0 MCP |
+| `~/omar/core/resources/rules/universal.md` | Universal rules: Completion Integrity, Task-First |
+| `~/.claude/skills/delegate/SKILL.md` | Delegate skill: timeout guide, retry protocol |
 
 ---
 
@@ -207,27 +267,36 @@ ls /tmp/triage-*.md /tmp/scan-items-evaluation.md 2>/dev/null || echo "Triage re
 
 ## Completion Status
 
-**All 3 phases COMPLETED** as of 2026-02-19.
+**Phases 1 & 2 COMPLETED; Phase 3 IN PROGRESS** as of 2026-02-19. (Triage of 209 files not yet complete.)
 
 ### Linear State Post-Audit
 
-- Total VT issues: 57 (was 55, +VT-56 MarocPME, +VT-57 website elements). Done: 13 (+VT-44, VT-52, VT-53). Canceled: 11. Backlog: 33.
-- New issues created this session: VT-42 through VT-55 (14 issues), VT-56 and VT-57 from GitHub migration
-- SSOT Migration project: fully closed (4 issues)
+| Metric | Count | Notes |
+|---|---|---|
+| Total VT issues | 57 | Was 55; +VT-56 MarocPME, +VT-57 website elements |
+| Done | 13 | +VT-44, VT-52, VT-53 this session |
+| Canceled | 11 | — |
+| Backlog | 33 | — |
+| New issues this session | 16 | VT-42→VT-55 (14) + VT-56, VT-57 from GitHub migration |
+| SSOT Migration project | Closed | All 4 issues closed as obsolete |
 
 ### Remaining Work (tracked in Linear)
 
-- VT-42: Fix GitHub integration (P1)
-- VT-43: Gitignore/PII strategy (P1)
-- VT-44: Hook E2E testing (P1)
-- 11 more issues at P2-P3 priority
+| Issue | Description | Priority |
+|---|---|---|
+| VT-42 | Fix GitHub integration | P1 |
+| VT-43 | Gitignore/PII strategy | P1 |
+| VT-44 | Hook E2E testing | P1 |
+| VT-47–VT-55 | 9 issues at P2-P3 priority | P2–P3 |
 
 ### Rules Updated This Session
 
-- rules.md: Delegation Thresholds rewritten (zero tolerance), Linear MCP cap (2 calls max)
-- universal.md: Completion Integrity, Task-First Execution, Prompt-to-Task Pipeline rules added
-- delegate skill: Timeout guide + retry protocol added
-- MEMORY.md: Post-audit state, Gemini delegation pattern, Linear spelling anti-pattern
+| File | Changes |
+|---|---|
+| `rules.md` | Delegation Thresholds rewritten (zero tolerance), Linear MCP cap |
+| `universal.md` | Completion Integrity, Task-First Execution, Prompt-to-Task Pipeline added |
+| `delegate skill` | Timeout guide + retry protocol added |
+| `MEMORY.md` | Post-audit state, Gemini delegation pattern, Linear spelling anti-pattern |
 
 ### This Handoff File
 
