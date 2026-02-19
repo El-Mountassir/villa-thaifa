@@ -1,5 +1,7 @@
 # Villa Thaifa — Room Master Table
 
+> **Note**: Individual room profiles at `data/rooms/R01-R12/profile.md` are the canonical source of truth. This file is a read-only summary for quick reference. Do not update room data here — edit the per-room profile instead.
+
 This document provides a normalized, single-table view of all 12 Villa Thaifa rooms, including operational specs and multilingual narrative profiles.
 
 ## Repository Metadata

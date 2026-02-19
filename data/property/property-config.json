@@ -33,7 +33,9 @@
       "spa": {
         "hammam": true,
         "massage": "TODO",
-        "other": "TODO"
+        "other": "TODO",
+        "booking_policy": "Reservation required in advance",
+        "minimum_guests": 4
       },
       "restaurant": {
         "on_site": true,

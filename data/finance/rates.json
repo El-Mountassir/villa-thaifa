@@ -3,8 +3,8 @@
   "currency_primary": "EUR",
   "currency_secondary": "MAD",
   "exchange_rate": 10.72,
-  "last_updated": "2026-02-16",
-  "data_confidence": "owner_pending",
+  "last_updated": "2026-02-19",
+  "data_confidence": "confirmed",
   "rooms": [
     {
       "room_id": "R01",
@@ -19,8 +19,8 @@
       "room_id": "R02",
       "internal_name": "Deluxe Double Room",
       "category_code": "DELUXE_DOUBLE",
-      "base_rate_eur": 159,
-      "base_rate_mad": 1704,
+      "base_rate_eur": 149,
+      "base_rate_mad": 1597,
       "capacity": "2 adults",
       "max_occupancy": 2
     },
@@ -37,8 +37,8 @@
       "room_id": "R04",
       "internal_name": "Double Room Superior",
       "category_code": "DOUBLE_SUPERIOR",
-      "base_rate_eur": 149,
-      "base_rate_mad": 1597,
+      "base_rate_eur": 159,
+      "base_rate_mad": 1704,
       "capacity": "2 adults",
       "max_occupancy": 2
     },
@@ -46,8 +46,8 @@
       "room_id": "R05",
       "internal_name": "Double Room Superior",
       "category_code": "DOUBLE_SUPERIOR",
-      "base_rate_eur": 149,
-      "base_rate_mad": 1597,
+      "base_rate_eur": 159,
+      "base_rate_mad": 1704,
       "capacity": "2 adults",
       "max_occupancy": 2
     },
@@ -55,8 +55,8 @@
       "room_id": "R06",
       "internal_name": "Executive Suite",
       "category_code": "EXECUTIVE_SUITE",
-      "base_rate_eur": 169,
-      "base_rate_mad": 1812,
+      "base_rate_eur": 179,
+      "base_rate_mad": 1919,
       "capacity": "3 adults",
       "max_occupancy": 3
     },

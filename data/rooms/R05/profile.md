@@ -13,7 +13,7 @@
 - **Kitchen**: [ ] No
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
 - **Layout**: [x] Laptop friendly workspace, [ ] Desk (No)
-- **Pricing**: 149 EUR (Need MAD)
+- **Pricing**: 159 EUR (Need MAD)
 
 
 ### R05 — Double Room Superior
@@ -61,8 +61,8 @@ max_occupancy: 2
 smoking_allowed: false
 has_kitchen: false
 size_m2: 24
-base_rate_mad: 1597
-base_rate_eur: 149
+base_rate_mad: 1704
+base_rate_eur: 159
 beds:
   - type: king
     size_cm: 200

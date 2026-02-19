@@ -8,8 +8,8 @@
 - **Sleeping**:
   - 1 King Bed (200cm)
   - 2 Sofa Beds (Check count)
-- **View**: [x] Pool view, [x] Mountain view
-- **Outdoor**: [x] Furnished balcony (60 m² Terrace)
+- **View**: [x] Pool view, [x] Mountain view (Atlas), [x] Garden view
+- **Outdoor**: [x] Furnished balcony (~80-100 m² Terrace)
 - **Bathroom**: [x] Shower/tub combination, [x] Hair dryer
 - **Kitchen**: [ ] No
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
@@ -28,8 +28,8 @@
 
 #### Narrative
 
-- **Description (EN)**: Deluxe king suite with separate living room, fireplace, 2 sofa beds, dining room, 60 m² terrace with pool and Atlas views.
-- **Description (FR)**: Suite de luxe King size avec salon à part et une cheminée et 2 canapés et salle à manger et une terrasse de 60 m2 vue piscine et atlas le top.
+- **Description (EN)**: Deluxe king suite with separate living room, fireplace, 2 sofa beds, dining room, ~80-100 m² terrace with pool, Atlas, and garden views.
+- **Description (FR)**: Suite de luxe King size avec salon à part et une cheminée et 2 canapés et salle à manger et une terrasse d'environ 80-100 m2 vue piscine, atlas et jardin le top.
 - **Tagline**: The pinnacle of comfort with fireplace and mountain views
 
 #### Marketing Hooks
@@ -37,16 +37,16 @@
 - **Target Persona**: Luxury seekers, extended families, special occasions, longer stays
 - **Highlights**:
   - Separate living and dining areas with fireplace
-  - 61 m² suite with 60 m² terrace
+  - 61 m² suite with ~80-100 m² terrace
   - Sleeps 4 with king bed and two sofa beds
-  - Pool and Atlas Mountain views
+  - Pool, Atlas Mountain, and garden views
 
 #### OTA Fields
 
 - **Expedia Title**: Deluxe King Suite, Mountain View (32 chars)
 - **Booking.com Title**: Suite De Luxe King Size (23 chars)
-- **Short Description (EN)**: 61 m² luxury suite with separate living/dining, fireplace, king bed, 2 sofa beds, and 60 m² terrace. (100 chars)
-- **Short Description (FR)**: Suite 61 m² avec salon/salle à manger séparés, cheminée, lit king, 2 canapés-lits et terrasse 60 m². (100 chars)
+- **Short Description (EN)**: 61 m² luxury suite with separate living/dining, fireplace, king bed, 2 sofa beds, and ~80-100 m² terrace. (105 chars)
+- **Short Description (FR)**: Suite 61 m² avec salon/salle à manger séparés, cheminée, lit king, 2 canapés-lits et terrasse ~80-100 m². (106 chars)
 
 #### Structured Data (YAML)
 
@@ -75,9 +75,10 @@ beds:
 views:
   - pool view
   - mountain view
+  - garden view
 access: null
 access_notes: null
-outdoor: Furnished balcony; 60 m² terrace
+outdoor: Furnished balcony; ~80-100 m² terrace
 bathroom: Shower/tub combination; Hair dryer
 climate: Independent air conditioning; Heating control
 layout: Laptop-friendly workspace; Separate sitting area; Separate dining area; Fireplace
@@ -88,6 +89,8 @@ status: VERIFIED
 #### Provenance
 
 - **Legacy Features (Alias)**: rooms-2: 60 m² Terrace | rooms-4: Piscine, Atlas, 1er étage, 60 m² Terrace
+- **Discrepancy**: Legacy sources say 60 m²; Said's note (chambre_et_vue.md) says ~80-100 m². Updated to ~80-100 m² per owner authority. Verify on-site.
+- **View added**: Garden view added per chambre_et_vue.md (was missing from legacy sources).
 - **Legacy Amenities (Alias)**: Salon, Cheminée, Salle à manger
 - **Profile Source**: rooms-2.md + rooms-4.md (alias enrichment)
 - **Last Verified**: 2026-02-13

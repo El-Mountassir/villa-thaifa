@@ -9,7 +9,7 @@
   - 1 King Bed (200cm)
   - 1 Sofa Bed
 - **View**: [x] Garden view
-- **Outdoor**: [x] Furnished patio (Small terrace)
+- **Outdoor**: [x] Furnished patio (Small terrace, ~3-4 m²)
 - **Bathroom**: [x] Shower/tub combination, [x] Hair dryer
 - **Kitchen**: [ ] No
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
@@ -74,7 +74,7 @@ views:
   - garden
 access: null
 access_notes: null
-outdoor: Furnished patio; Small terrace
+outdoor: Furnished patio; Small terrace (~3-4 m²)
 bathroom: Shower/tub combination; Hair dryer
 climate: Independent air conditioning; Heating control
 layout: Laptop-friendly workspace
