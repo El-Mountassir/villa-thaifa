@@ -296,7 +296,23 @@ Use this sequence for every operational task:
 2. REPORT
 3. QUESTIONS
 4. ACTION
-5. COMMIT — Run `make changelog`, then commit silently. Committing is Tier 1 (ACT) — commit proactively after completing a logical batch of work. No announcement needed. Pushing remains Tier 3 (ASK) — always ask before `git push`.
+5. SYNC — After any state-changing action, identify and update ALL impacted files. Use the checklist below.
+6. COMMIT — Run `make changelog`, then commit silently. Committing is Tier 1 (ACT) — commit proactively after completing a logical batch of work. No announcement needed. Pushing remains Tier 3 (ASK) — always ask before `git push`.
+
+### SYNC Checklist
+
+After ACTION, ask: "What files are impacted by this change?" Then update each:
+
+| If you changed...              | Also update...                                |
+| ------------------------------ | --------------------------------------------- |
+| A decision was made/resolved   | `ops/decisions/`, `ops/decisions/open-conflicts-registry.md`, `ops/status/truth.md` |
+| Data files (rates, rooms, etc) | `ops/status/truth.md`, reconciliation logs    |
+| A conflict was resolved        | `ops/decisions/open-conflicts-registry.md`, `ops/status/truth.md §6` |
+| Repository structure changed   | `docs/core/STRUCTURE.md` (`make structure-update`), AGENTS.md if top-level |
+| A tech stack decision was made | `ops/decisions/tech-decisions.md`, `context/meta/planning/vt-app-vision.md §Tech Stack` |
+| A handoff was created/updated  | `ops/handoff/HANDOFF.md` (index), `ops/status/truth.md` |
+
+**Rule**: If unsure whether a file is impacted, err on the side of checking. Silent drift is worse than an unnecessary update.
 
 ## Project Contract
 
@@ -358,7 +374,7 @@ All must be true:
 - Issue format: `EM-XXX` or `VT-XXX`
 - Workflow conventions: `~/omar/operational/productivity/protocols/linear-workflow.md`
 
-**Session-local tasks**: Use `TaskCreate` for breaking a Linear issue into execution steps within a single session. Linear = WHAT needs doing, TaskCreate = HOW to do it this session.
+**Session-local tasks**: Optional. Use `TaskCreate` only for genuinely complex multi-step tasks where tracking provides clear value. Not mandatory.
 
 **Work overview**: `ops/status/work-overview.md` — comprehensive task dashboard with all pending work, priorities (P0-P5 MoSCoW+Eisenhower), dependencies, Omar/Said time estimates, and workstream grouping. Template: `~/omar/Templates/WORK-OVERVIEW.md`. Agents MUST:
 - Read work-overview.md at session start to understand current state

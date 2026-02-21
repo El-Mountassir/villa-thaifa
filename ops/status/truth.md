@@ -146,11 +146,13 @@
 
 > **Canonical source: `ops/decisions/open-conflicts-registry.md`** (created 2026-02-21)
 
-| #   | Conflict         | Source A                                   | Source B / C                                              | Status         |
-| --- | ---------------- | ------------------------------------------ | --------------------------------------------------------- | -------------- |
-| 1   | Pets policy      | property-config.json: "Allowed, no charge" | booking-com-data.md: "Not allowed" / Expedia Step 4: "No" | **RESOLVED: Not allowed — Omar 2026-02-21** |
-| 2   | R06 terrace size | rooms.md: 100 m²                           | Said's handwritten notes: ~120 m²                         | Awaiting: Said |
-| 3   | R07 terrace size | rooms.md: 60 m²                            | Said's handwritten notes: 80-100 m²                       | Awaiting: Said |
+| #   | Conflict              | Source A                                   | Source B / C                                              | Status         |
+| --- | --------------------- | ------------------------------------------ | --------------------------------------------------------- | -------------- |
+| 1   | Pets policy           | property-config.json: "Allowed, no charge" | booking-com-data.md: "Not allowed" / Expedia Step 4: "No" | **RESOLVED: Not allowed — Omar 2026-02-21** |
+| 2   | R06 terrace size      | rooms.md: 100 m²                           | Said's handwritten notes: ~120 m²                         | Awaiting: Said |
+| 3   | R07 terrace size      | rooms.md: 60 m²                            | Said's handwritten notes: 80-100 m²                       | Awaiting: Said |
+| 4   | Tech stack (VT app)   | json-render abstraction                    | Direct Next.js + Tailwind + shadcn/ui                     | **RESOLVED: Direct stack — 2026-02-21** |
+| 5   | VT app build approach | Build immediately                          | Vision-first (PRD/SRS before code)                        | In Progress    |
 
 **Rule:** Do NOT guess on these. Escalate to Said. The open-conflicts-registry.md is the authoritative tracker — update it when resolved.
 
@@ -167,12 +169,14 @@
 | Check-in/out workflow     | `data/operations/check-in-out.json`                   | PLACEHOLDER — needs real workflow  |
 | Distribution channels     | `data/operations/channels.json`                       | PLACEHOLDER — most details missing |
 | Client profile            | `data/admin/client/PROFILE.md`                        | ACTIVE — last updated 2026-02-21   |
-| Open conflicts            | `ops/decisions/open-conflicts-registry.md`            | ACTIVE — 3 open items              |
+| Open conflicts            | `ops/decisions/open-conflicts-registry.md`            | ACTIVE — 3 resolved, 2 open       |
 | Bookings / reservations   | `data/bookings/reservations/`                         | ACTIVE                             |
 | Facilities                | `data/property/facilities/`                           | PARTIAL — needs Said               |
 | Reconciliation log        | `data/rooms/rooms-reconciliation-log.md`              | ACTIVE                             |
 | Said validation checklist | `data/admin/said-data-validation-checklist.md`        | ACTIVE — hand-off form for Said    |
 | Said pending questions    | `data/admin/said-pending-questions.md`                | ACTIVE — operational registry      |
+| VT app vision            | `context/meta/planning/vt-app-vision.md`              | SEED — needs PRD, SRS, architecture |
+| json-render evaluation   | `ops/decisions/json-render-evaluation.md`             | CLOSED — REJECTED                  |
 
 **Superseded / do not use:**
 
@@ -216,6 +220,9 @@
 | 1   | Create villa-thaifa PROJECT-CONTRACT.md from template      | Task #112 |
 | 2   | Create ~/omar/ PROJECT-CONTRACT.md from template           | Task #113 |
 | 3   | Merge browser-agent.md into global browser.md + VT context | Task #116 |
+| 4   | VT app: write PRD from vision seed                         | Pending   |
+| 5   | VT app: write SRS + architecture doc                       | Pending   |
+| 6   | Evaluate IndyDevDan approach for VT app dev workflow       | Pending   |
 
 ---
 
@@ -234,3 +241,18 @@ Source of truth: HotelRunner deployment confirmed 2026-01-13 via WhatsApp messag
 
 **Fixed 2026-02-21:** rates.json corrected. rooms.md required no changes.
 **Decision record:** `ops/decisions/room-pricing-hotelrunner-confirmation.md`
+
+---
+
+## 10. VT App & Tech Stack Status (2026-02-21)
+
+| Item                    | Status                            | Detail                                                                 |
+| ----------------------- | --------------------------------- | ---------------------------------------------------------------------- |
+| json-render framework   | **REJECTED**                      | Immature, poor DX, no ecosystem. Decision: `ops/decisions/json-render-evaluation.md` |
+| Frontend stack          | Next.js + Tailwind + shadcn/ui    | Direct implementation, no abstraction layer. NOT finalized — IndyDevDan approach TBD. |
+| VT app vision           | SEED created                      | `context/meta/planning/vt-app-vision.md` — needs PRD, SRS, architecture before build |
+| frontend-ui agent       | CREATED                           | New agent for frontend work                                            |
+| data/specs/ archive     | DONE                              | 160 images verified as 100% duplicates of canonical locations, archived |
+| json-render demo        | PRESERVED                         | `~/omar/labs/demos/json-render-villa-thaifa/`                          |
+
+**Next steps:** PRD from vision seed, then SRS + architecture doc. No code until planning docs approved.

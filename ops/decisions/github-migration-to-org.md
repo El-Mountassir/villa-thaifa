@@ -87,6 +87,7 @@ git branch -d omar/vt-42-test
 3. Confirm
 
 **CLI alternative**:
+
 ```bash
 gh repo archive El-Mountassir/villa-thaifa-property-management --yes
 ```
@@ -118,9 +119,9 @@ After migration, these files reference the old URL and need updating:
 
 1. ~~**Remove old repo from EM team**~~ — DONE by Omar (2026-02-19)
 2. ~~**Clean up test branch**~~ — DONE (`omar/vt-42-test` deleted)
-3. **Test branch linking on a clean issue**: Try pushing a branch referencing a NEW VT issue (not VT-42 which has a GitHub #2 conflict)
+3. ~~**Test branch linking on a clean issue**~~: DONE: Using VT-58
 4. ~~**Remove redundant `omar-elmountassir` personal connection**~~ — KEPT (Omar's decision — needed for future use)
-5. **Update Step 5 references**: Mark `ops/intake/linear-github-repo-alignment.md` as resolved
+5. ~~**Update Step 5 references**~~: DONE: Marked `ops/intake/linear-github-repo-alignment.md`, VT-42, and VT-51 files as resolved/implemented.
 6. ~~**Create Trip.com issue**~~ — DONE: VT-58 created
 
 ---

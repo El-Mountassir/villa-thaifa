@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Added
 
+- scrape Booking.com 2026-02-21 — update scores, facilities, resolve 7 Said items — - Review count: 80 → 86 (+6 reviews)
 - integrate MoSCoW+Eisenhower priority system (P0-P5) + AGENTS.md work-overview reference — - Add Priority System section (matrix + legend) to work-overview.md and template
 - add Cascade Update rule + consolidate VT app vision + commit policy ACT — - universal.md: new Cascade Update rule (grep before declaring data edit done)
 - add json-render evaluation decision + VT app vision seed — json-render REJECTED (1/10 after spec fix — renderer broken).

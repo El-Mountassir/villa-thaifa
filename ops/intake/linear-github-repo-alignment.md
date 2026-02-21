@@ -2,7 +2,7 @@
 
 **Discovered**: 2026-02-19
 **Priority**: High — Linear links point to wrong repos
-**Status**: Needs planning
+**Status**: Resolved
 
 ## Problem
 
@@ -10,12 +10,12 @@ Linear's GitHub integration and issue attachments reference repos that no longer
 
 ### Current GitHub State
 
-| Repo | Status | Purpose |
-|---|---|---|
-| `omar-elmountassir/villa-thaifa` | **Active** (public) | Current VT workspace (data + ops) |
-| `El-Mountassir/villa-thaifa-property-management` | **Stale** (exists) | Old VT repo, Linear links here |
-| `omar-elmountassir/villa-thaifa-pms` | **Active** (private) | Next.js PMS app (separate) |
-| `omar-elmountassir/grid` | **Stale** (exists) | Old monorepo, now `~/omar/` (NOT a git repo locally) |
+| Repo                                             | Status               | Purpose                                              |
+| ------------------------------------------------ | -------------------- | ---------------------------------------------------- |
+| `omar-elmountassir/villa-thaifa`                 | **Active** (public)  | Current VT workspace (data + ops)                    |
+| `El-Mountassir/villa-thaifa-property-management` | **Stale** (exists)   | Old VT repo, Linear links here                       |
+| `omar-elmountassir/villa-thaifa-pms`             | **Active** (private) | Next.js PMS app (separate)                           |
+| `omar-elmountassir/grid`                         | **Stale** (exists)   | Old monorepo, now `~/omar/` (NOT a git repo locally) |
 
 ### Issues
 
