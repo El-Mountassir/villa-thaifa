@@ -1,7 +1,7 @@
 {
-  "_comment": "PARTIAL — Google Maps data applied 2026-02-19. Remaining TODOs need Said confirmation.",
-  "version": "1.0.0",
-  "last_updated": "2026-02-19T12:00:00Z",
+  "_comment": "PARTIAL — Google Maps data applied 2026-02-19. External listing data applied 2026-02-21. Remaining TODOs need Said confirmation.",
+  "version": "1.1.0",
+  "last_updated": "2026-02-21T00:00:00Z",
   "status": "partial",
   "property": {
     "id": "villa-thaifa",
@@ -10,11 +10,24 @@
     "type": "Maison d'hôte / Riad",
     "languages_spoken": ["Arabic", "Dutch", "English", "French"],
     "location": {
-      "address": "Route de Fès, Marrakech, Marrakech-Tensift-Al Haouz, Morocco",
+      "address": "Route de Fès, Km 12, Ouled Jelal, Marrakech 40000, Morocco",
       "city": "Marrakech",
+      "postal_code": "40000",
       "country": "Morocco",
-      "coordinates": {"lat": 31.6539756, "lng": -7.8778661},
+      "coordinates": {
+        "lat": 31.6539756,
+        "lng": -7.8778661,
+        "confidence": "Confirmed (Google Maps 2026-02-19)",
+        "rough_ref": "31.65° N, -7.88° W (external listing)"
+      },
       "neighborhood": "Ouled Jelal / Palmeraie",
+      "airport_code": "RAK",
+      "distance_from_airport_km": 15.8,
+      "distance_from_airport_km_notes": "~10 km straight-line / 15.8 km drive. Source: external listing 2026-02-21.",
+      "drive_time_airport_min": "15-20",
+      "distance_from_center_km": "11.7-13",
+      "distance_from_center_km_notes": "To Djemaa El Fna. Source: external listing 2026-02-21.",
+      "drive_time_center_min": "25-30",
       "phone": "06 62 14 69 49"
     },
     "rating": {
@@ -74,6 +87,11 @@
     },
     "services": {
       "airport_transfer": true,
+      "airport_transfer_notes": "Paid shuttle available through property. Source: external listing 2026-02-21.",
+      "express_checkin_checkout": "pending_confirmation",
+      "express_checkin_checkout_notes": "Mentioned in external listing. Does not conflict with check-in 14:00 / check-out 12:00 (separate service offering). Needs Said to confirm.",
+      "sports_activities": "pending_confirmation",
+      "sports_activities_notes": "Listed externally as available amenity. Said must confirm what activities are offered.",
       "laundry": "TODO",
       "room_service": "TODO",
       "concierge": "TODO",
@@ -95,7 +113,7 @@
   "tags": ["partial", "to_complete", "property"],
   "todo": [
     "Said to confirm: check-out time (internal=11:00 vs destinia OTA=13:30)",
-    "Said to confirm: GPS coordinates (31.6539756, -7.8778661 sourced from Google Maps)",
+    "Said to confirm: GPS coordinates (31.6539756, -7.8778661 sourced from Google Maps) — confidence now set to Confirmed (Google Maps); Said confirmation still pending",
     "Said to confirm: phone number (06 62 14 69 49 sourced from Google Maps)",
     "Said to fill: pool size, spa massage/other services",
     "Said to fill: WiFi technology type (fiber/ADSL/etc) — confirmed Free Wi-Fi from Google Maps",
@@ -105,6 +123,8 @@
     "Said to fill: laundry, room service, concierge, tours availability",
     "Said to fill: cancellation policy details",
     "Said to fill: accepted payment methods",
-    "Said to fill: smoking policy"
+    "Said to fill: smoking policy",
+    "Said to confirm: sports activities available (listed externally — what specifically?)",
+    "Said to confirm: express check-in/check-out service (listed externally — how does it work?)"
   ]
 }
