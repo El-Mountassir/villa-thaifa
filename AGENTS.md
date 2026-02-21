@@ -298,6 +298,10 @@ Use this sequence for every operational task:
 4. ACTION
 5. COMMIT — Run `make changelog`, then commit silently. Committing is Tier 1 (ACT) — commit proactively after completing a logical batch of work. No announcement needed. Pushing remains Tier 3 (ASK) — always ask before `git push`.
 
+## Project Contract
+
+Agents MUST read `PROJECT-CONTRACT.md` at session start. It defines: agent output paths, platform conventions, data flow rules, and external references. See also: `~/omar/PROJECT-CONTRACT.md` for global workspace conventions.
+
 ## Scope
 
 This repo is **Villa Thaifa operations** — property data, rooms, bookings, guest comms, WhatsApp integration, Said Thaifa (owner) context.
@@ -363,5 +367,5 @@ All must be true:
 
 ### Open Loops (Migrate to Linear)
 
-1. Pending data domains: `data/pending-domains/` -- facilities.md awaiting hardening into `data/property/`
-2. Large directory triage: `context/meta/knowledge/` (54 files), `context/meta/planning/` (96 files), `ops/audit/quality/` (62 files) need triage for archiving vs reclassification
+1. Pending data domains: `data/pending-domains/` — contains superseded placeholder files. Active facility data lives in `data/property/facilities/`
+2. Large directory triage: `context/meta/knowledge/` (19 files), `context/meta/planning/` (14 files), `ops/audit/quality/` (3 files) need triage for archiving vs reclassification

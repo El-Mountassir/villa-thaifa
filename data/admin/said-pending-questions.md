@@ -5,7 +5,7 @@
 > **Last Updated**: 2026-02-21
 > **Status tracking**: Linear label "Awaiting: Said" applied to all corresponding issues.
 >
-> Related document: `data/admin/said-data-validation-checklist.md` — the physical walk-through form for Said to fill in.
+> **CANONICAL REGISTRY**: This is the CANONICAL registry for all pending Said items. See also: `data/admin/said-data-validation-checklist.md` (subset formatted for Said's physical walk-through).
 > This file is the operational registry (for agents/Omar). The checklist is the hand-off document (for Said).
 
 ---
