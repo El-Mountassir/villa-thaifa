@@ -144,7 +144,7 @@ The villa-thaifa codebase underwent massive restructuring (200+ files relocated,
 | Batch   | Priority | Issues                                                                                                                                                          |
 | ------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Batch 1 | P1       | VT-42 (GitHub integration fix), VT-43 (gitignore/PII strategy), VT-44 (hook E2E test)                                                                           |
-| Batch 2 | P2       | VT-45 (facilities hardening), VT-46 (212-file triage), VT-47 (repath 10 docs), VT-48 (language audit), VT-49 (migration audit), VT-50 (manifest CSV processing) |
+| Batch 2 | P2       | VT-45 (facilities hardening), VT-46 (212-file triage), VT-47 (repath 10 docs), VT-48 (language audit), VT-49 (data/ migration audit), VT-50 (manifest CSV processing) |
 | Batch 3 | P3       | VT-51 (GitHub identity strategy), VT-52 (Said profile consolidation), VT-53 (communications.md review), VT-54 (TTS decision), VT-55 (archive old repo)          |
 
 **Deferred items (6):** Not yet promoted to Linear issues:
@@ -225,7 +225,7 @@ VT-44 (hook E2E test) — independent, can run anytime
 |                         | VT-51 | GitHub identity strategy        | P2       | 2pts   | **DONE**        | Option B (migrate to org) executed same session                                                                                                                                                                 |
 | **Wave 3 — Deep Work**  | VT-47 | Move 10 misplaced docs          | P2       | 4pts   | **Done**        | All 10 docs already correct, no moves needed                                                                                                                                                                    |
 |                         | VT-48 | Language audit — French removal | P2       | 8pts   | **In Progress** | 8 files translated, OTA titles done. ~80 historical exempt. Said comms exempt.                                                                                                                                  |
-|                         | VT-49 | Post-bootstrap migration audit  | P2       | 8pts   | **In Progress** | Audit complete. missions/ archived (5 issues VT-66-70). docs/reports/ deduped. data/specs/ plan ready.                                                                                                          |
+|                         | VT-49 | Post-bootstrap migration audit  | P2       | 8pts   | **In Progress** | Audit complete. missions/ archived (5 issues VT-66-70). docs/reports/ deduped. data/ migration plan ready.                                                                                                          |
 |                         | VT-50 | Process manifest.csv            | P2       | 4pts   | **Done**        | 7 issues created (VT-59-65). CSV archived.                                                                                                                                                                      |
 | **Wave 4 — Epics**      | VT-45 | Harden facilities domain        | P2       | 8pts   | Backlog         | needs Said input                                                                                                                                                                                                |
 |                         | VT-46 | Phase 3 triage — 212 files      | P2       | 16pts  | **Done**        | 185 files archived, credential eval consolidated                                                                                                                                                                |
@@ -277,7 +277,7 @@ The next session MUST:
 | Expand directory contract   | VT-49  | Updated AGENTS.md + STRUCTURE.md to include infra/ + src/           | Directory contract expanded                                                      |
 | Archive missions/           | VT-49  | Capture Before Archive — extracted to Linear, then archived         | 5 issues created (VT-66-70), dir archived                                        |
 | Dedup docs/reports/         | VT-49  | Compared vs ops/audit/, rescued unique files                        | 40 dupes archived, 2 unique rescued                                              |
-| Scope data/specs/ migration | VT-49  | Analyzed 196 files, produced migration plan                         | Plan at ~/omar/knowledge/research/development/vt-49-data-specs-migration-plan.md |
+| Scope data/ migration | VT-49  | Analyzed 196 files, produced migration plan                         | Plan at ~/omar/knowledge/research/development/vt-49-data-specs-migration-plan.md |
 
 **Work completed this sub-session (Wave 3 follow-up):**
 
@@ -310,7 +310,7 @@ The next session MUST:
 | Validation PDF completeness audit  | VT-48/49 | Check all fields from original sign-off template                 | Done   | 15 gaps found (G1-G15), 7 Linear issues created |
 | Create Linear issues for gaps      | VT-48/49 | G2-G15 tracked as VT-71 through VT-77                            | Done   | 7 issues in backlog                             |
 
-| data/specs/ migration | VT-49 | 36 .md files archived, 160 images left for rename | Done | ops/archive/data-specs/ |
+| data/ migration | VT-49 | 36 .md files archived, 160 images left for rename | Done | ops/archive/2026-02/ |
 | Old repo ref cleanup | VT-55 | 3 active files updated to El-Mountassir/villa-thaifa | Done | cliff.toml, linear-workflow, linear-github-setup |
 | Fix R01/R06 sizes | G7-G8 | Align header sizes with YAML values | Done | R01: 44m², R06: 40m² (owner_pending) |
 | Fix R07 sofa beds | G4 | Align header with YAML: 2 sofa beds | Done | VT-73 closed |
@@ -330,7 +330,7 @@ The next session MUST:
 - validation-pdf: French sign-off doc for Said — still needed or obsolete?
 - rooms.md deprecation: Should master table get deprecation notice pointing to R01-R12 profiles?
 
-**Pending decisions (from data/specs/ scoping)**:
+**Pending decisions (from data/ migration scoping)**:
 
 - R7/R12 premium pricing: Were decisions made? (440€ vs 280€ for R7, 600€ vs 350€ for R12)
 - Image anomaly: R05-R09 share R04 image filenames — intentional or copy error?
@@ -340,7 +340,7 @@ The next session MUST:
 **Remaining Wave 3 work (tracked in Linear)**:
 
 - VT-48: Close once OTA title translation confirmed (~80 historical files exempt, Said comms exempt)
-- VT-49: Execute data/specs/ migration (~85 min after Omar answers 4 questions above). Close after migration done.
+- VT-49: Execute data/ migration (~85 min after Omar answers 4 questions above). Close after migration done.
 - Migration plan reference: `~/omar/knowledge/research/development/vt-49-data-specs-migration-plan.md`
 
 ### Session Summary (2026-02-19, continued)

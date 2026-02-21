@@ -24,7 +24,7 @@ Revenue optimization strategist for Villa Thaifa that analyzes occupancy data, c
 ## Workflow
 
 1. **Receive Request** - Understand the pricing analysis scope (specific rooms, date range, or full property)
-2. **Gather Internal Data** - Read occupancy from `data/specs/state/current/reservations.md`, current pricing from `data/specs/state/planned/pricing.md`, and room configs from `data/specs/configs/hotel/`
+2. **Gather Internal Data** - Read occupancy from `data/bookings/reservations/reservations.md`, current pricing from `data/finance/rates.json`, and room configs from `data/rooms/`
 3. **Research Market** - Use WebSearch to analyze competitor rates for similar properties in Marrakech
 4. **Analyze Seasonality** - Consider Marrakech tourism calendar (high season Dec-Mar, shoulder seasons, Ramadan, local events)
 5. **Generate Recommendations** - Produce specific rate recommendations with percentage changes and justifications

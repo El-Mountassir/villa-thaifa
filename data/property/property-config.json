@@ -5,8 +5,10 @@
   "status": "partial",
   "property": {
     "id": "villa-thaifa",
+    "expedia_property_id": "114807934",
     "name": "Villa Thaifa",
     "type": "Maison d'hôte / Riad",
+    "languages_spoken": ["Arabic", "Dutch", "English", "French"],
     "location": {
       "address": "Route de Fès, Marrakech, Marrakech-Tensift-Al Haouz, Morocco",
       "city": "Marrakech",
@@ -80,9 +82,10 @@
     "policies": {
       "check_in": "14:00",
       "check_in_notes": "Source: OTA listings (booking.com policy, destinia). Confirmed by internal check-in-out.json.",
-      "check_out": "11:00",
-      "check_out_notes": "Source: internal check-in-out.json (11:00). Note: destinia shows 13:30 — confirm with Said which is authoritative.",
-      "cancellation": "TODO",
+      "check_out": "12:00",
+      "check_out_notes": "Updated to 12:00 per Omar decision 2026-02-20. Source: Expedia Partner Central Step 3.",
+      "cancellation": "Free cancellation up to 72 hours before 18:00 on check-in day. Late cancellation or no-show: 1st night + applicable taxes. Timezone: GMT (Casablanca). Source: Expedia Partner Central Step 3, 2026-02-20.",
+      "deposit_required": false,
       "payment_methods": ["TODO"],
       "children_policy": "Children allowed. Ages 2-12: €30/person/night when using existing bed. Source: OTA policy data.",
       "pets_policy": "Allowed, no extra charge. Source: OTA policy data.",

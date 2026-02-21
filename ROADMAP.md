@@ -94,7 +94,7 @@
 
 | Element                    | Status                            |
 | -------------------------- | --------------------------------- |
-| Baseline prices documented | ✅ In `data/specs/hotel/rooms.md` |
+| Baseline prices documented | ✅ In `data/rooms/rooms.md` |
 | Seasonal adjustments       | 🟡 To be defined                  |
 | Promotions strategy        | 🟡 In progress                    |
 
@@ -212,7 +212,7 @@ Inspire existing HWS clients:
 ```
 "Villa Thaifa" Template
     → Clone for new property
-    → Customize data/specs/
+    → Customize data/
     → Connect to platforms
     → AI agent operational in 1 week
 ```
@@ -259,7 +259,7 @@ Inspire existing HWS clients:
 | Document                  | Purpose               |
 | ------------------------- | --------------------- |
 | `CLAUDE.md`               | AI Context            |
-| `data/specs/`             | Business Specs (SSOT) |
+| `data/`             | Business Specs (SSOT) |
 | `docs/lessons-learned.md` | Mistakes & learnings  |
 | `.env` / `.env.example`   | Platform credentials  |
 

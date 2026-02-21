@@ -24,16 +24,16 @@ A gatekeeper agent that validates all data and enforces the platform checklist B
 
 1. **Receive operation request** with proposed data (dates, room, guest, price)
 2. **Read relevant spec files**:
-   - `data/specs/configs/hotel/` for room configurations
-   - `data/specs/state/current/reservations.md` for current reservations
-   - `data/specs/state/planned/pricing.md` for pricing data
-   - `data/specs/platform/rules.md` for platform rules
+   - `data/rooms/` for room configurations
+   - `data/bookings/reservations/reservations.md` for current reservations
+   - `data/finance/rates.json` for pricing data
+   - `data/operations/` for platform rules
 3. **Validate each data point**:
    - Is the room number valid and available?
    - Are dates in correct format and logical (check-out after check-in)?
    - Is the price an exact value (not calculated)?
    - Does the guest name match expected format?
-4. **Run platform checklist** (from `data/specs/platform/rules.md`):
+4. **Run platform checklist** (from `data/operations/`):
    - [ ] Confidence >= 94%?
    - [ ] All details ready to repeat to Omar?
    - [ ] Values exact (copied, not calculated)?

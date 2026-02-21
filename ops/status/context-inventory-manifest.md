@@ -589,44 +589,44 @@ _Project configuration (pyproject.toml, Makefile, etc.)_
 ### source:data
 _Source-of-truth data (rooms, property, etc.)_
 
-- `data/core/property/README.md`
-- `data/core/property/inventory/STATUS.md`
-- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-access-col`
-- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-booking-col`
-- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-meta-cols`
-- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-plan-exec`
-- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-rooms2-consolidation`
-- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-size-sync`
-- `data/core/property/inventory/backups/rooms/archive/rooms-reconciliation-log.md.backup-2026-02-13-smoking-kitchen`
-- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13`
-- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-access-col`
-- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-booking-col`
-- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-meta-cols`
-- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-plan-exec`
-- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-rooms2-consolidation`
-- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-size-sync`
-- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-smoking-kitchen`
-- `data/core/property/inventory/backups/rooms/archive/rooms.md.backup-2026-02-13-step0`
-- `data/core/property/inventory/pending/amenities.md`
-- `data/core/property/inventory/pending/beds.md`
-- `data/core/property/inventory/pending/facilities.md`
-- `data/core/property/inventory/pending/inventory.md`
-- `data/core/property/inventory/pending/property-db-migration.md`
-- `data/core/property/inventory/rooms/backup/rooms-backup-2026-02-13-pre-profile-schema.md`
-- `data/core/property/inventory/rooms/exports/booking-room-listings.csv`
-- `data/core/property/inventory/rooms/exports/expedia-room-listings.csv`
-- `data/core/property/inventory/rooms/rooms-reconciliation-log.md`
-- `data/core/property/inventory/rooms/rooms.md`
-- `data/core/property/inventory/status/archived.md`
-- `data/core/property/inventory/status/backups.md`
-- `data/core/property/inventory/status/canonical.md`
-- `data/core/property/inventory/status/pending.md`
+- `data/property/README.md`
+- `data/rooms/STATUS.md`
+- `data/rooms/backups/rooms-reconciliation-log.md.backup-2026-02-13-access-col`
+- `data/rooms/backups/rooms-reconciliation-log.md.backup-2026-02-13-booking-col`
+- `data/rooms/backups/rooms-reconciliation-log.md.backup-2026-02-13-meta-cols`
+- `data/rooms/backups/rooms-reconciliation-log.md.backup-2026-02-13-plan-exec`
+- `data/rooms/backups/rooms-reconciliation-log.md.backup-2026-02-13-rooms2-consolidation`
+- `data/rooms/backups/rooms-reconciliation-log.md.backup-2026-02-13-size-sync`
+- `data/rooms/backups/rooms-reconciliation-log.md.backup-2026-02-13-smoking-kitchen`
+- `data/rooms/backups/rooms.md.backup-2026-02-13`
+- `data/rooms/backups/rooms.md.backup-2026-02-13-access-col`
+- `data/rooms/backups/rooms.md.backup-2026-02-13-booking-col`
+- `data/rooms/backups/rooms.md.backup-2026-02-13-meta-cols`
+- `data/rooms/backups/rooms.md.backup-2026-02-13-plan-exec`
+- `data/rooms/backups/rooms.md.backup-2026-02-13-rooms2-consolidation`
+- `data/rooms/backups/rooms.md.backup-2026-02-13-size-sync`
+- `data/rooms/backups/rooms.md.backup-2026-02-13-smoking-kitchen`
+- `data/rooms/backups/rooms.md.backup-2026-02-13-step0`
+- `data/pending-domains/amenities.md`
+- `data/pending-domains/beds.md`
+- `data/pending-domains/facilities.md`
+- `data/pending-domains/inventory.md`
+- `data/pending-domains/property-db-migration.md`
+- `data/rooms/backup/rooms-backup-2026-02-13-pre-profile-schema.md`
+- `data/rooms/exports/booking-room-listings.csv`
+- `data/rooms/exports/expedia-room-listings.csv`
+- `data/rooms/rooms-reconciliation-log.md`
+- `data/rooms/rooms.md`
+- `data/rooms/status/archived.md`
+- `data/rooms/status/backups.md`
+- `data/rooms/status/canonical.md`
+- `data/rooms/status/pending.md`
 
 ### source:data:pending
 _Data awaiting reconciliation/triage_
 
-- `data/pending/finance/billing.json`
-- `data/pending/finance/rates.json`
+- `data/finance/billing.json`
+- `data/finance/rates.json`
 
 ### source:implementation
 _Scripts, source code, tests_

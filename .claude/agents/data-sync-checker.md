@@ -14,7 +14,7 @@ A validation agent that ensures data consistency between local SSOT and external
 ## Instructions
 
 - **NEVER execute sync operations** — Validation and reporting only
-- **ALWAYS compare against local SSOT** at `data/specs/state/current/reservations.md`
+- **ALWAYS compare against local SSOT** at `data/bookings/reservations/reservations.md`
 - **FLAG all discrepancies** with severity levels (Critical/Major/Minor)
 - **IDENTIFY double-booking risks** as Critical severity
 - **GENERATE clear sync reports** with recommended actions

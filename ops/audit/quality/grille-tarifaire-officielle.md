@@ -1,105 +1,116 @@
-# Grille Tarifaire Officielle — Villa Thaifa
-
-**Date d'entrée en vigueur** : 20 décembre 2025
-**Validé par** : M. Said Thaifa
-**Commission Booking.com** : 25%
+> **SUPERSEDED** — This document reflects Dec 2025 planning estimates using commission-back calculation (net / 0.75 = Booking display price).
+> - Canonical operational pricing: `data/finance/rates.json` — actual HotelRunner-locked rates confirmed Jan 2026.
+> - Values here are NOT the rates guests are charged. They were planning projections.
 
 ---
 
-## Formule de Calcul
+# Official Pricing Grid — Villa Thaifa
 
-```
-Prix Affiché Booking = Marge Nette Visée / (1 - 0.25)
-Prix Affiché Booking = Marge Nette Visée / 0.75
+**Effective Date**: December 20, 2025
+**Validated By**: Mr. Said Thaifa
+**Booking.com Commission**: 25%
+
+---
+
+## Calculation Formula
+
+```text
+Booking.com Displayed Price = Target Net Margin / (1 - 0.25)
+Booking.com Displayed Price = Target Net Margin / 0.75
 ```
 
 ---
 
-## Tarifs par Type de Chambre
+## Rates by Room Type
 
-### Chambres Standard
+### Standard Rooms
 
-| N° Chambre | Type | Capacité | Marge Nette | Prix Booking | Positionnement Marché |
-|------------|------|----------|-------------|--------------|----------------------|
-| 4 | Double Room Superior | 2 | **120€** | **160€** | ✅ Dans le marché (€130-180) |
-| 5 | Double Room Superior | 2 | **120€** | **160€** | ✅ Dans le marché (€130-180) |
+| Room No. | Type                 | Capacity | Net Margin | Booking Price | Market Positioning          |
+| -------- | -------------------- | -------- | ---------- | ------------- | --------------------------- |
+| 4        | Superior Double Room | 2        | **120€**   | **160€**      | ✅ In the market (€130-180) |
+| 5        | Superior Double Room | 2        | **120€**   | **160€**      | ✅ In the market (€130-180) |
 
-### Chambres Deluxe
+### Deluxe Rooms
 
-| N° Chambre | Type | Capacité | Marge Nette | Prix Booking | Positionnement Marché |
-|------------|------|----------|-------------|--------------|----------------------|
-| 1 | Deluxe Triple Room | 3 | **150€** | **200€** | ✅ Dans le marché (€180-220) |
-| 3 | Deluxe Triple Room | 3 | **150€** | **200€** | ✅ Dans le marché (€180-220) |
-| 8 | Deluxe Triple Room | 3 | **150€** | **200€** | ✅ Dans le marché (€180-220) |
-| 2 | Deluxe Double Room | 2 | **150€** | **200€** | ✅ Dans le marché (€130-180) |
+| Room No. | Type               | Capacity | Net Margin | Booking Price | Market Positioning          |
+| -------- | ------------------ | -------- | ---------- | ------------- | --------------------------- |
+| 1        | Deluxe Triple Room | 3        | **150€**   | **200€**      | ✅ In the market (€180-220) |
+| 3        | Deluxe Triple Room | 3        | **150€**   | **200€**      | ✅ In the market (€180-220) |
+| 8        | Deluxe Triple Room | 3        | **150€**   | **200€**      | ✅ In the market (€180-220) |
+| 2        | Deluxe Double Room | 2        | **150€**   | **200€**      | ✅ In the market (€130-180) |
 
 ### Suites
 
-| N° Chambre | Type | Capacité | Marge Nette | Prix Booking | Positionnement Marché |
-|------------|------|----------|-------------|--------------|----------------------|
-| 6 | Executive Suite | 2 | **180€** | **240€** | ✅ Dans le marché (€200-280) |
-| 9 | Family Suite | 4 | **170€** | **227€** | ✅ Dans le marché (€200-280) |
-| 10 | Suite | 2 | **200€** | **267€** | ✅ Dans le marché (€180-250) |
-| 11 | Family Suite | 4 | **180€** | **240€** | ✅ Dans le marché (€200-280) |
+| Room No. | Type | Capacity | Net Margin | Booking Price | Market Positioning |
+| -------- | ---- | -------- | ---------- | ------------- | ------------------ |
 
-### Suites Premium
+| 6 ```text
+1 × Executive Suite
 
-| N° Chambre | Type | Capacité | Marge Nette | Prix Booking | Positionnement Marché |
-|------------|------|----------|-------------|--------------|----------------------|
-| 7 | Deluxe King Suite | 2 | **330€** | **440€** | ⚠️ Premium (au-dessus marché) |
-| 12 | Presidential Suite | 4+ | **450€** | **600€** | ⚠️ Très Premium |
+```| 2        | **180€**   | **240€**      | ✅ In the market (€200-280) |
+| 9        | Family Suite    | 4        | **170€**   | **227€**      | ✅ In the market (€200-280) |
+| 10       | Suite           | 2        | **200€**   | **267€**      | ✅ In the market (€180-250) |
+| 11       | Family Suite    | 4        | **180€**   | **240€**      | ✅ In the market (€200-280) |
 
----
+### Premium Suites
 
-## Récapitulatif
-
-| Catégorie | Nb Chambres | Marge Min | Marge Max | Prix Min | Prix Max |
-|-----------|-------------|-----------|-----------|----------|----------|
-| Standard | 2 | 120€ | 120€ | 160€ | 160€ |
-| Deluxe | 4 | 150€ | 150€ | 200€ | 200€ |
-| Suites | 4 | 170€ | 200€ | 227€ | 267€ |
-| Premium | 2 | 330€ | 450€ | 440€ | 600€ |
-| **TOTAL** | **12** | -- | -- | -- | -- |
+| Room No. | Type                   | Capacity | Net Margin | Booking Price | Market Positioning        |
+| -------- | ---------------------- | -------- | ---------- | ------------- | ------------------------- |
+| 7        | King Size Luxury Suite | 2        | **330€**   | **440€**      | ⚠️ Premium (above market) |
+| 12       | Presidential Suite     | 4+       | **450€**   | **600€**      | ⚠️ Highly Premium         |
 
 ---
 
-## Politique Promotionnelle (Nouvelle)
+## Summary
 
-### Promotions Autorisées
+| Category  | No. Rooms | Min Margin | Max Margin | Min Price | Max Price |
+| --------- | --------- | ---------- | ---------- | --------- | --------- |
+| Standard  | 2         | 120€       | 120€       | 160€      | 160€      |
+| Deluxe    | 4         | 150€       | 150€       | 200€      | 200€      |
+| Suites    | 4         | 170€       | 200€       | 227€      | 267€      |
+| Premium   | 2         | 330€       | 450€       | 440€      | 600€      |
+| **TOTAL** | **12**    | --         | --         | --        | --        |
 
-| Type | Réduction Max | Conditions |
-|------|---------------|------------|
-| Early Booker | **15%** | Réservation 60+ jours avant |
-| Last Minute | **10%** | Réservation 3 jours avant |
-| Long séjour | **10%** | Séjour 7+ nuits |
+---
 
-### Promotions Interdites
+## Promotional Policy (New)
 
-| Type | Raison |
-|------|--------|
-| Tarifs géociblés | Cumul destructeur |
-| Basic Deal > 15% | Marge insuffisante |
-| Early Booker > 15% | Marge insuffisante |
-| Late Escape > 10% | Marge insuffisante |
+### Authorized Promotions
+
+| Type         | Max Discount | Conditions                      |
+| ------------ | ------------ | ------------------------------- |
+| Early Booker | **15%**      | Reservation 60+ days in advance |
+| Last Minute  | **10%**      | Reservation 3 days in advance   |
+| Long Stay    | **10%**      | Stay of 7+ nights               |
+
+### Prohibited Promotions
+
+| Type               | Reason                   |
+| ------------------ | ------------------------ |
+| Geo-targeted rates | Destructive accumulation |
+| Basic Deal > 15%   | Insufficient margin      |
+| Early Booker > 15% | Insufficient margin      |
+| Late Escape > 10%  | Insufficient margin      |
 
 ---
 
 ## Notes
 
-- Les chambres 7 et 12 sont positionnées en **premium assumé** (validé par M. Said)
-- Les prix incluent le petit-déjeuner (Bed & Breakfast)
-- Période de validité : 20 décembre 2025 → À définir
+- Rooms 7 and 12 are positioned as **assumed premium** (validated by Mr. Said)
+- Prices include breakfast (Bed & Breakfast)
+- Validity period: December 20, 2025 → To be defined
 
 ---
 
-## Historique
+## History
 
-| Date | Modification | Auteur |
-|------|--------------|--------|
-| 20 déc 2025 | Création grille initiale | Claude Code |
-| 20 déc 2025 | Validation M. Said | M. Said Thaifa |
+| Date         | Modification          | Author          |
+| ------------ | --------------------- | --------------- |
+| Dec 20, 2025 | Initial grid creation | Claude Code     |
+| Dec 20, 2025 | Validation Mr. Said   | Mr. Said Thaifa |
 
 ---
 
-_Document officiel — Villa Thaifa_
-_Propriétaire : M. Said Thaifa_
+_Official Document — Villa Thaifa_
+_Owner: Mr. Said Thaifa_
+```

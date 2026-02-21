@@ -1,6 +1,6 @@
 # Rooms Reconciliation Log
 
-This file tracks one-by-one consolidation of room sources into the canonical markdown table at `data/core/property/inventory/rooms/rooms.md`.
+This file tracks one-by-one consolidation of room sources into the canonical markdown table at `data/rooms/rooms.md`.
 
 ## Rules Applied
 

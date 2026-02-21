@@ -4,7 +4,7 @@
 > **Priority:** HIGH
 > **Next:** Discovery meeting — Monday December 22, 2025, 10h (Done)
 > **Created:** 2025-12-19
-> **Last Updated:** 2025-12-20
+> **Last Updated:** 2026-02-21
 
 ---
 
@@ -91,11 +91,13 @@
 
 ### 2.2 Communication Protocol
 
-| Rule                  | Detail                                   |
-| --------------------- | ---------------------------------------- |
-| **Tone**              | Formal register (vouvoiement) mandatory  |
-| **Register**          | Senior client — Respect without rigidity |
-| **Preferred channel** | WhatsApp (confirmed)                     |
+| Rule                  | Detail                                                        |
+| --------------------- | ------------------------------------------------------------- |
+| **Tone**              | Formal register (vouvoiement) mandatory                       |
+| **Register**          | Senior client — Respect without rigidity                      |
+| **Preferred channel** | WhatsApp (confirmed)                                          |
+| **Language**          | Dutch (primary) — Said prefers Dutch over French              |
+| **Format**            | Dual output: NL message for Said + FR summary for Omar review |
 
 ### 2.3 Communication Pattern
 
@@ -433,6 +435,54 @@ _Base: 12 rooms × 365 days × average price ~€200_
 - [Hotelogix - 8 Must-Have PMS Reports](https://blog.hotelogix.com/hotel-reservation-report/)
 - [Villa Palmeraie Marrakech - Booking.com](https://www.booking.com/hotel/ma/villa-palmeraie-marrakech-marrakech1.html)
 - [Villa Al Assala Palmeraie - Booking.com](https://www.booking.com/hotel/ma/villa-al-assala-palmeraie.html)
+
+---
+
+## 13. Business Intelligence (2026-02-09)
+
+> Source: Gemini Gmail Analysis — December 2025–January 2026 correspondence
+
+### 13.1 Trip.com GDA Contract
+
+**Status**: Ready to sign (Said's action required)
+
+| Topic          | Detail                                                              |
+| -------------- | ------------------------------------------------------------------- |
+| Commission     | 18% (North Africa rate — corrected from initial offer)              |
+| Payment        | Monthly bank transfer                                               |
+| Parity         | Narrow parity expected (no disparity with other OTAs)              |
+| Taxes          | VAT prepaid online; tourist tax collected at check-in               |
+| Inventory sync | HotelRunner compatible                                              |
+| Flat rates     | Blackout dates allowed for high season                              |
+| Vendor contact | Lucas Teng (Trip.com) via Hospitality Web Services                  |
+
+**Action required**: Said signs GDA and provides bank notification letter.
+
+### 13.2 Website Creation
+
+**Status**: Blocked — waiting on Said
+
+Elements needed from Said:
+- Template or examples of websites he likes
+- Specific preferences/descriptions to include
+- Color codes (or use logo colors)
+- Logo file
+- Point-of-sale descriptions
+- Social media links
+
+**Vendor**: Hospitality Web Services (request date: 2026-01-09)
+
+### 13.3 MarocPME Action MOUS-17509
+
+**Status**: Blocked — missing legal form info
+**Vendor**: JISR L'MOKAWALA MarocPME (request date: 2026-01-12)
+
+**Issue**: New CLM template requires beneficiary information (legal form of Villa Thaifa).
+**Action required**: Said to provide legal entity information.
+
+### 13.4 Personal Booking Note
+
+Said reserved Suite Executive + Family Suite + Deluxe Triple Room for Dec 31–Jan 2 (personal use).
 
 ---
 

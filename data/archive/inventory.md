@@ -1,6 +1,14 @@
+> **SUPERSEDED** — This file is NOT authoritative. Retained as historical record only.
+> - Canonical room data: `data/rooms/rooms.md` + `data/rooms/R01-R12/profile.md`
+> - Canonical pricing: `data/finance/rates.json` (locked until 2026-12-31)
+> - Known stale prices: R02 shows 159 EUR (correct: 149), R04 shows 149 EUR (correct: 159), R05 shows 149 EUR (correct: 159), R06 shows 169 EUR (correct: 179)
+> - Original date: 2026-01-24. Superseded by room migration Feb 2026.
+
+---
+
 # Villa Thaifa — Master Inventory
 
-**Status**: ACTIVE (SSOT)  
+**Status**: SUPERSEDED (historical reference only)  
 **Last Validated**: 2026-01-24  
 **Pricing Source**: `docs/specs/knowledge/logs/pricing.md` (Live 2026-01-13)
 

@@ -33,6 +33,14 @@
       "response_time": "TODO",
       "management": "via browser-agent et platform-validator"
     },
+    "expedia": {
+      "enabled": true,
+      "property_id": "114807934",
+      "status": "onboarding",
+      "onboarding_step": "5 of 12 — Rooms not yet configured",
+      "usage": "OTA bookings",
+      "notes": "Tax team contact requested (checkbox checked in Step 3). Rooms configuration blocked at Step 5. Steps 6-12 pending."
+    },
     "hotelrunner": {
       "enabled": true,
       "usage": "PMS, gestion des réservations",

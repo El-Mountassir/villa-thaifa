@@ -56,7 +56,7 @@
   },
   "check_out": {
     "timing": {
-      "standard_time": "11:00",
+      "standard_time": "12:00",
       "late_check_out": "sur demande"
     },
     "steps": [

@@ -22,6 +22,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Changed
 
+- commit accumulated content updates across docs, data, and context — Batch of previously uncommitted changes: stakeholder profiles, facility
 - standardize browser-agent to generic global pattern with project context — Browser-agent.md now auto-discovers project-specific context from
 - move Linear docs to ~/omar/, add blocker labels, elevate linear-agent — - Move linear-workflow.md and linear-github-setup.md to ~/omar/protocols/
 - repo restructure — relocate archives to docs/, add structure documentation system — - Relocate archive/2025/Q4/ content to docs/reports/, docs/briefs/, docs/changelogs/

@@ -6,7 +6,7 @@
 2. `ROADMAP.md`
 3. `ops/status/INDEX.md`
 4. `ops/status/working.md`
-5. `data/core/property/inventory/STATUS.md`
+5. `ops/status/canonical.md`
 
 ## 2) Non-negotiable rules
 
@@ -20,8 +20,8 @@
 ## 3) Current truth snapshot
 
 - Rooms domain is stabilized and canonical:
-  - `data/core/property/inventory/rooms/rooms.md`
-  - `data/core/property/inventory/rooms/rooms-reconciliation-log.md`
+  - `data/rooms/rooms.md`
+  - `data/rooms/rooms-reconciliation-log.md`
 - Archived rooms legacy:
   - `archive/rooms/2026-02-13/rooms-3.md`
   - `archive/rooms/2026-02-13/rooms-4.md`
@@ -39,7 +39,7 @@
 - Intake queue:
   - `ops/intake/unprocessed/manifest.csv`
 - Inventory domain state:
-  - `data/core/property/inventory/status/*`
+  - `ops/status/`
 
 ## 5) Branching / sync
 

@@ -9,13 +9,13 @@ permissionMode: default
 
 # Purpose
 
-Manages the complete reservation lifecycle for Villa Thaifa, including creation, modification, and cancellation of reservations. Maintains the SSOT at `data/specs/state/current/reservations.md` and coordinates with browser-agent for platform synchronization on HotelRunner and Booking.com. Ensures data consistency between local records and external platforms.
+Manages the complete reservation lifecycle for Villa Thaifa, including creation, modification, and cancellation of reservations. Maintains the SSOT at `data/bookings/reservations/reservations.md` and coordinates with browser-agent for platform synchronization on HotelRunner and Booking.com. Ensures data consistency between local records and external platforms.
 
 ## Instructions
 
 - ALWAYS read the current reservations file before any operation
 - NEVER modify reservations without validating room availability first
-- ALWAYS check room configurations at `data/specs/configs/hotel/` for capacity and type
+- ALWAYS check room configurations at `data/rooms/` for capacity and type
 - Coordinate with platform-validator BEFORE any platform sync operation
 - Generate complete confirmation details including room, dates, price, and guest info
 - Maintain chronological order in reservation lists by arrival date
@@ -24,7 +24,7 @@ Manages the complete reservation lifecycle for Villa Thaifa, including creation,
 ## Workflow
 
 1. **Receive request** — Understand the reservation operation (create/modify/cancel)
-2. **Read current state** — Load `data/specs/state/current/reservations.md`
+2. **Read current state** — Load `data/bookings/reservations/reservations.md`
 3. **Validate availability** — Check room configs and existing bookings for conflicts
 4. **Execute operation** — Update reservation records with exact data
 5. **Update all sections** — Modify summary, reservation tables, and occupancy forecast

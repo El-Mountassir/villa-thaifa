@@ -6,8 +6,8 @@
 
 ## Prerequisites
 
-- [ ] Read `data/specs/hotel/rooms.md` (current rates)
-- [ ] Read `data/specs/promotions/planned.md` (planned changes)
+- [ ] Read `data/rooms/rooms.md` (current rates)
+- [ ] Read `data/finance/rates.json` (planned changes)
 - [ ] Omar validation on new rates
 
 ---
@@ -17,13 +17,13 @@
 ### 1. BASELINE — Capture current state
 
 ```bash
-cp data/specs/hotel/rooms.md archive/YYYY/QQ/snapshots/rooms-YYYY-MM-DD.md
+cp data/rooms/rooms.md archive/YYYY/QQ/snapshots/rooms-YYYY-MM-DD.md
 ```
 
 ### 2. PLAN — Document changes
 
 ```text
-Update data/specs/promotions/planned.md:
+Update data/finance/rates.json:
 - Old rate
 - New rate
 - Reason for change
@@ -58,7 +58,7 @@ Wait for explicit validation
 ### 6. UPDATE DATA
 
 ```text
-1. Update data/specs/hotel/rooms.md
+1. Update data/rooms/rooms.md
 2. Log in archive/YYYY/QQ/execution/pricing.md
 3. Add entry in archive/YYYY/QQ/changelogs/pricing.md
 ```
@@ -71,7 +71,7 @@ Wait for explicit validation
 | -------------------------- | ---------------------------------------- |
 | HotelRunner/Booking desync | Verify propagation after 15 min          |
 | Input error                | Double-check before validation           |
-| Conflicting promotions     | Check `data/specs/promotions/current.md` |
+| Conflicting promotions     | Check `data/finance/rates.json` |
 
 ---
 

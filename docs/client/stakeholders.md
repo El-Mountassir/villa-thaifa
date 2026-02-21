@@ -133,7 +133,7 @@ Claude (CTO/Architect)
 **Quick access:**
 
 1. Read `.env.local` file
-2. Extract needed credentials (HOTELRUNNER*ADMIN**, BOOKING*ADMIN**)
+2. Extract needed credentials (HOTELRUNNER*ADMIN\*\*, BOOKING*ADMIN\*\*)
 3. Use admin accounts by default
 4. Handle OTP/reCAPTCHA (request from Omar)
 
@@ -215,9 +215,9 @@ If critical issue (platform bug, lost reservation, pricing error):
 
 ---
 
-*Single Source of Truth for stakeholder relationships*
-*For detailed profiles, see [`profiles/`](./profiles/) directory*
-*Last updated: 2026-01-24 by Omar El Mountassir*
+_Single Source of Truth for stakeholder relationships_
+_For detailed profiles, see [`profiles/`](./profiles/) directory_
+_Last updated: 2026-01-24 by Omar El Mountassir_
 
 ---
 
@@ -460,7 +460,7 @@ Never say "I will do it". Say "**It's done**".
 | **Prices configured HotelRunner** | 0/9 types  |
 | **Active promotions Booking**     | 5 (10-15%) |
 
-→ See `data/specs/` for operational details
+→ See `data/` for operational details
 
 ---
 
@@ -553,7 +553,7 @@ Never say "I will do it". Say "**It's done**".
 | **Strengths**      | Quiet, gardens, infinity pool, warm welcome ("feeling at home") |
 | **Location asset** | Quiet and peaceful, away from city noise (14 km from center)    |
 
-→ See `data/specs/hotel/rooms.md` for room details and pricing
+→ See `data/rooms/rooms.md` for room details and pricing
 
 ---
 
@@ -662,7 +662,7 @@ Never say "I will do it". Say "**It's done**".
 | **70%**        | 3,066       | ~€613,200     | ~€459,900              |
 | **90%**        | 3,942       | ~€788,400     | ~€591,300              |
 
-*Base: 12 rooms × 365 days × average price ~200€*
+_Base: 12 rooms × 365 days × average price ~200€_
 
 ### 6.2 Commission Impact
 
@@ -813,9 +813,9 @@ Never say "I will do it". Say "**It's done**".
 
 | File                               | Content                             |
 | ---------------------------------- | ----------------------------------- |
-| `data/specs/hotel/rooms.md`        | Rooms, pricing, HotelRunner mapping |
-| `data/specs/hotel/reservations.md` | Confirmed reservations              |
-| `data/specs/promotions/current.md` | Active promotions                   |
+| `data/rooms/rooms.md`        | Rooms, pricing, HotelRunner mapping |
+| `data/bookings/reservations/reservations.md` | Confirmed reservations              |
+| `data/finance/rates.json` | Active promotions                   |
 
 ### 12.3 Documentation
 
@@ -864,9 +864,9 @@ Never say "I will do it". Say "**It's done**".
 
 ---
 
-*Detailed client profile - Part of docs/leadership/profiles/*
-*Original: legacy/archive_v1/admin/client/PROFILE.md (2025-12-20)*
-*Refactored: 2026-01-24 - Moved to new structure, cross-references added*
+_Detailed client profile - Part of docs/leadership/profiles/_
+_Original: legacy/archive_v1/admin/client/PROFILE.md (2025-12-20)_
+_Refactored: 2026-01-24 - Moved to new structure, cross-references added_
 
 ### Omar El Mountassir — Admin/Consultant
 
@@ -889,7 +889,7 @@ Never say "I will do it". Say "**It's done**".
 
 | Field     | Value                           |
 | --------- | ------------------------------- |
-| **Email** | <omar@el-mountassir.com>          |
+| **Email** | <omar@el-mountassir.com>        |
 | **Role**  | CEO, Strategist, Project Leader |
 
 ---
@@ -1304,9 +1304,9 @@ Next: What happens after approval
 
 ---
 
-*Profile created: 2026-01-24*
-*Last updated: 2026-01-24*
-*Document owner: Omar El Mountassir*
+_Profile created: 2026-01-24_
+_Last updated: 2026-01-24_
+_Document owner: Omar El Mountassir_
 
 ---
 
@@ -1358,7 +1358,7 @@ Next: What happens after approval
 | **HotelRunner prices configured** | 0/9 types  |
 | **Active Booking promotions**     | 5 (10-15%) |
 
-→ See `data/specs/` for operational details
+→ See `data/` for operational details
 
 ---
 
@@ -1450,7 +1450,7 @@ Next: What happens after approval
 | **Strengths**      | Quiet, gardens, infinity pool, warm welcome ("feels like home") |
 | **Location Asset** | Quiet and peaceful, away from city noise (14 km from center)    |
 
-→ See `data/specs/hotel/rooms.md` for room details and pricing
+→ See `data/rooms/rooms.md` for room details and pricing
 
 ---
 
@@ -1559,7 +1559,7 @@ Next: What happens after approval
 | **70%**        | 3,066       | ~€613,200     | ~€459,900              |
 | **90%**        | 3,942       | ~€788,400     | ~€591,300              |
 
-*Basis: 12 rooms × 365 days × average price ~200€*
+_Basis: 12 rooms × 365 days × average price ~200€_
 
 ### 6.2 Commission Impact
 
@@ -1710,9 +1710,9 @@ Next: What happens after approval
 
 | File                               | Content                             |
 | ---------------------------------- | ----------------------------------- |
-| `data/specs/hotel/rooms.md`        | Rooms, pricing, HotelRunner mapping |
-| `data/specs/hotel/reservations.md` | Confirmed reservations              |
-| `data/specs/promotions/current.md` | Active promotions                   |
+| `data/rooms/rooms.md`        | Rooms, pricing, HotelRunner mapping |
+| `data/bookings/reservations/reservations.md` | Confirmed reservations              |
+| `data/finance/rates.json` | Active promotions                   |
 
 ### 12.3 Documentation
 
@@ -1753,8 +1753,8 @@ Next: What happens after approval
 
 ---
 
-*Reorganized profile — 12-section structure — 2025-12-20*
-*Pipeline: `archive/2025/Q4/reports/profile-reorganization/`*
+_Reorganized profile — 12-section structure — 2025-12-20_
+_Pipeline: `archive/2025/Q4/reports/profile-reorganization/`_
 
 ## Overview
 
@@ -1798,10 +1798,10 @@ Next: What happens after approval
 
 ## Key Contacts
 
-| Role  | Name | Contact                |
-| ----- | ---- | ---------------------- |
+| Role  | Name | Contact                  |
+| ----- | ---- | ------------------------ |
 | Owner | Said | <said_thaifa@hotmail.fr> |
-| Admin | Omar | (El Mountassir)        |
+| Admin | Omar | (El Mountassir)          |
 
 ### Omar — Quick Reference
 
@@ -1819,7 +1819,7 @@ Next: What happens after approval
 | **Location**        | Marrakech, Morocco                                      |
 | **Languages**       | French (primary), English (work), Darija (native)       |
 | **Tech Experience** | 29 years                                                |
-| **Email**           | <omar@el-mountassir.com>                                  |
+| **Email**           | <omar@el-mountassir.com>                                |
 
 ## Professional Identity
 

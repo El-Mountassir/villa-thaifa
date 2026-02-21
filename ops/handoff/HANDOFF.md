@@ -6,7 +6,7 @@
 2. `ROADMAP.md`
 3. `ops/status/INDEX.md`
 4. `ops/status/working.md`
-5. `data/core/property/inventory/STATUS.md`
+5. `ops/status/canonical.md`
 
 ## Critical Context
 
@@ -14,28 +14,28 @@
 - Unprocessed sources are contestable by default.
 - Rooms domain is currently the most stabilized inventory domain.
 - Remote main integration is pending; bootstrap branch contains latest local operational baseline.
-- Content lanes exist and must be respected: `docs/content/active`, `docs/content/reference`, `docs/content/pending`.
+- Content lanes exist and must be respected: `data/`, `context/meta/`, `data/pending-domains/`.
 
 ## Must-Preserve Open Loops
 
 1. Pending inventory domains:
 
-- `data/core/property/inventory/pending/amenities.md`
-- `data/core/property/inventory/pending/facilities.md`
-- `data/core/property/inventory/pending/beds.md`
-- `data/core/property/inventory/pending/inventory.md`
+- `data/pending-domains/amenities.md`
+- `data/pending-domains/facilities.md`
+- `data/pending-domains/beds.md`
+- `data/pending-domains/inventory.md`
 
 2. Pending finance domain:
 
-- `data/pending/finance/`
+- `data/finance/`
 
 3. Contestable duplicate docs:
 
-- `docs/reference/knowledge/duplicates/stakeholders-2026-02-13/`
+- `context/meta/knowledge/`
 
 4. Content triage backlog:
 
-- `docs/content/reference/`
+- `context/meta/`
 
 5. SCM integration backlog:
 
@@ -51,4 +51,4 @@
 
 ## Ultra-Fast Entry
 
-- `docs/agents/AI-SESSION-STARTER.md`
+- `ops/handoff/AI-SESSION-STARTER.md`

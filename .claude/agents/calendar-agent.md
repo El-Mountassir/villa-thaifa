@@ -21,8 +21,8 @@ Analyzes room availability across all 12 rooms at Villa Thaifa. Scans reservatio
 
 ## Workflow
 
-1. Read current reservations from `data/specs/state/current/reservations.md`
-2. Load room configurations from `data/specs/configs/hotel/`
+1. Read current reservations from `data/bookings/reservations/reservations.md`
+2. Load room configurations from `data/rooms/`
 3. Build availability matrix for requested date range
 4. Identify gaps (unreserved periods) by room
 5. Check for conflicts (overlapping bookings same room)
