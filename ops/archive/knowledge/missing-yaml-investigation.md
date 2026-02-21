@@ -10,7 +10,7 @@
 
 The allegedly "missing" YAML files (property.yaml, pricing.yaml, policy.yaml, booking.yaml) were never created as separate files. Instead, Omar's workflow consolidated all essential property data into **three SSOT files** that currently exist and are actively maintained:
 
-1. **data/core/inventory.yaml** — Master property inventory (205 lines, validated 2026-01-24)
+1. **data/rooms/inventory.yaml** — Master property inventory (205 lines, validated 2026-01-24)
 2. **data/ssot/rooms.yaml** — Room database export (658 lines, current)
 3. **ssot/rooms.yaml** — Root-level duplicate (659 lines, current)
 
@@ -26,7 +26,7 @@ All property, pricing, and policy information is **present and accessible** in t
 
 - **ssot/** directory exists with only `rooms.yaml`
 - **data/ssot/** exists with `rooms.yaml` (mirrored content)
-- **data/core/** exists with `inventory.yaml` (master SSOT)
+- **data/rooms/** exists with `inventory.yaml` (master SSOT)
 
 No separate property.yaml, pricing.yaml, policy.yaml, or booking.yaml files found anywhere.
 
@@ -53,7 +53,7 @@ No separate property.yaml, pricing.yaml, policy.yaml, or booking.yaml files foun
 **Complete inventory**:
 
 ```
-./data/core/inventory.yaml       (205 lines) - SSOT
+./data/rooms/inventory.yaml       (205 lines) - SSOT
 ./data/ssot/rooms.yaml           (658 lines) - Room export
 ./ssot/rooms.yaml                (659 lines) - Root-level copy
 ./property.db                    (SQLite database, not YAML)
@@ -74,7 +74,7 @@ Commit message: "chore: save work before system reinstall (vision, analysis, sso
 - Added `.planning/` analysis docs (ARCHITECTURE, VISION, audit/)
 - Added `data/ssot/rooms.yaml` (658 lines) — **first creation**
 - Added `ssot/rooms.yaml` (659 lines) — **first creation**
-- Modified `data/core/inventory.yaml`
+- Modified `data/rooms/inventory.yaml`
 
 **No deletions recorded** — the ssot/ directory has never contained anything except rooms.yaml since its creation.
 
@@ -107,7 +107,7 @@ No YAML configs in these locations.
 
 ```
 feat: add centralized data structure with master inventory
-- Add data/core/inventory.yaml (205 lines)
+- Add data/rooms/inventory.yaml (205 lines)
   - SSOT for 12 rooms
   - Validated pricing (standard_rate per room)
   - Bilingual type names (FR + EN)
@@ -130,7 +130,7 @@ chore: save work before system reinstall (vision, analysis, ssot)
 
 At this point, Omar had:
 
-- **Master source**: `data/core/inventory.yaml`
+- **Master source**: `data/rooms/inventory.yaml`
 - **Export versions**: `data/ssot/rooms.yaml` + `ssot/rooms.yaml`
 - **Architectural analysis**: Documented in `.planning/ANALYSIS-ARCHITECTURE.md`
 
@@ -152,7 +152,7 @@ The investigation found **zero evidence** that the following files ever existed:
 
 | File            | Why Not Created                      | Alternative                     | Status                                |
 | --------------- | ------------------------------------ | ------------------------------- | ------------------------------------- |
-| `property.yaml` | Design prioritized unified inventory | `data/core/inventory.yaml`      | ✅ Contains all property config       |
+| `property.yaml` | Design prioritized unified inventory | `data/rooms/inventory.yaml`      | ✅ Contains all property config       |
 | `pricing.yaml`  | Pricing embedded in rooms.yaml       | Room-level pricing in inventory | ✅ All 12 room rates present          |
 | `policy.yaml`   | Policy docs stored as markdown       | `.agents/artifacts/` + Linear   | ✅ In markdown + Linear (EM-x issues) |
 | `booking.yaml`  | OTA config handled in app code       | `src/` app structure            | ✅ In Next.js server actions          |
@@ -163,7 +163,7 @@ The investigation found **zero evidence** that the following files ever existed:
 
 ## Current SSOT Content Map
 
-### data/core/inventory.yaml (Master SSOT)
+### data/rooms/inventory.yaml (Master SSOT)
 
 **Contains** (205 lines):
 
@@ -201,7 +201,7 @@ The investigation found **zero evidence** that the following files ever existed:
 
 ```bash
 git ls-tree -r HEAD | grep -i "\.yaml"
-→ Found only: data/core/inventory.yaml, data/ssot/rooms.yaml, ssot/rooms.yaml
+→ Found only: data/rooms/inventory.yaml, data/ssot/rooms.yaml, ssot/rooms.yaml
 
 git log --all --diff-filter=D --summary | grep "delete mode.*yaml"
 → Found ZERO yaml deletions
@@ -227,9 +227,9 @@ git log --all -- ssot/ 2>/dev/null
 
 | Component             | Data Location                        | Validated  | Current                 |
 | --------------------- | ------------------------------------ | ---------- | ----------------------- |
-| Room specs (12 rooms) | data/core/inventory.yaml             | 2026-01-24 | ✅ Present              |
-| Room pricing          | data/core/inventory.yaml             | 2026-01-24 | ✅ All 12 rates present |
-| Room features         | data/core/inventory.yaml             | 2026-01-24 | ✅ Complete             |
+| Room specs (12 rooms) | data/rooms/inventory.yaml             | 2026-01-24 | ✅ Present              |
+| Room pricing          | data/rooms/inventory.yaml             | 2026-01-24 | ✅ All 12 rates present |
+| Room features         | data/rooms/inventory.yaml             | 2026-01-24 | ✅ Complete             |
 | Rooms export          | data/ssot/rooms.yaml                 | 2026-01-31 | ✅ Current              |
 | Root-level access     | ssot/rooms.yaml                      | 2026-01-31 | ✅ Current              |
 | Pricing source doc    | docs/specs/knowledge/logs/pricing.md | 2026-01-13 | ⚠️ Needs check          |
@@ -300,7 +300,7 @@ git log --all -- ssot/ 2>/dev/null
 
 **No files are missing.** The villa-thaifa project has consolidated property configuration into a unified SSOT structure:
 
-- ✅ Master inventory: `data/core/inventory.yaml` (12 rooms, all pricing, all features)
+- ✅ Master inventory: `data/rooms/inventory.yaml` (12 rooms, all pricing, all features)
 - ✅ Room exports: `data/ssot/rooms.yaml` + `ssot/rooms.yaml` (mirrored, current)
 - ✅ All data present and validated as of 2026-01-24
 

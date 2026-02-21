@@ -22,7 +22,7 @@
 
 ```
 1. PAUSE avant de cliquer/soumettre
-2. VÉRIFIER contre la documentation (data/specs/configs/hotel/rooms.md, etc.)
+2. VÉRIFIER contre la documentation (data/rooms/rooms.md, etc.)
 3. Si incertain → STOP → DEMANDER → Attendre confirmation
 4. JAMAIS deviner ou supposer sur les opérations plateforme
 ```

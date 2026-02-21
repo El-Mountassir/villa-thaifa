@@ -48,7 +48,7 @@ Contact HotelRunner support to:
 
 - Support contact: see `data/admin/client/CONTACT.md`
 - Current credentials: see `.env`
-- HotelRunner documentation: see `data/specs/platform/hotelrunner/`
+- HotelRunner documentation: see `data/operations/hotelrunner/`
 
 ## Notes
 

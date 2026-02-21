@@ -184,7 +184,7 @@
 - HotelRunner connection (Two-Way XML, sync issue noted)
 - Property details (4★, amenities, house rules)
 - Photos status (Rooms 1-11 exist, Room 12 missing)
-- Data structure (SSOT in `data/specs/`)
+- Data structure (SSOT in `data/`)
 - Agent registry
 - Repository structure overview
 - Working vs "Bordel" analysis

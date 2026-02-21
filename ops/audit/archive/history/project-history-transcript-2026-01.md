@@ -1459,7 +1459,7 @@ Analyzed digest findings and strategized progressive integration approach
 ✅ **HotelRunner connecté** (Two-Way XML) → Infrastructure en place  
 ✅ **Property details complets** (amenities, house rules, 4★ positioning)  
 ✅ **Pricing baseline existe** (Room 4 @ 160€, Room 7 @ 440€, etc.)  
-✅ **Data structure propre** (SSOT dans `data/specs/`) → Pas de "bordel" là où ça compte
+✅ **Data structure propre** (SSOT dans `data/`) → Pas de "bordel" là où ça compte
 
 ### ⚠️ **Nouveau Blocker Identifié:**
 
@@ -1893,7 +1893,7 @@ Même avec Claude Code + Gemini CLI + Browser Agent, une app production-ready av
 **Workflow:**
 
 1. **Data Consolidation** (4-6h):
-   - Finalise `data/specs/` (rooms, pricing, property details)
+   - Finalise `data/` (rooms, pricing, property details)
    - Export en format agent-friendly (JSON/YAML)
 2. **Agent Execution** (8-12h):
    - Browser agent + credentials → Crée accounts sur 5-7 major OTAs
@@ -1925,7 +1925,7 @@ Même avec Claude Code + Gemini CLI + Browser Agent, une app production-ready av
 ```
 LHCM-OS Villa Thaifa MVP:
 ├── Database (SQLite/Postgres)
-│   ├── Rooms (SSOT from data/specs/)
+│   ├── Rooms (SSOT from data/)
 │   ├── Reservations (synced from HotelRunner API)
 │   ├── Pricing (historical + current)
 │   └── Guests (profiles, preferences)
@@ -3648,7 +3648,7 @@ Laisse-moi traiter ça méthodiquement:
 
 ### Room Configuration
 
-**Source Files:** `data/specs/configs/hotel/facilities/rooms/*.md` and `data/specs/configs/hotel/platform-mapping.md`
+**Source Files:** `data/configs/hotel/facilities/rooms/*.md` and `data/configs/hotel/platform-mapping.md`
 
 - **Total Count:** 12 Physical Rooms.
 - **Numbering Strategy:** 1 to 12.
@@ -3662,7 +3662,7 @@ Laisse-moi traiter ça méthodiquement:
   - **Room 10:** Suite
   - **Room 12:** Presidential Suite
 - **Booking.com Specifics:** Room 4 & 5 are pooled under ID `544684730`. Same issues for 1 & 3 & 8. And same for 9 & 11.
-- **Pricing:** Baseline pricing exists in `data/specs/configs/hotel/rooms/*.md` (e.g., Room 4 @ 160€, Room 7 @ 440€).
+- **Pricing:** Baseline pricing exists in `data/configs/hotel/rooms/*.md` (e.g., Room 4 @ 160€, Room 7 @ 440€).
 ```
 
 - 3 : Site web réservations: Utiliser site HotelRunner (plus simple) : il attendent qu'on leur files toutes les données à mettre dans le site + Mockup  (cela impliques aussi de faire à nos agents des recherches sur les meilleures sites disponibles en lignes qui pourraient collé avec Villa Thaifa, puis, de leur faire créer le mockup en les équipant de Figma MCP ou autre (ou mieux si un advanced tool use et possible afin d'éviter les MCPs.. et de le rajoutes aux outils de nos agents ! )

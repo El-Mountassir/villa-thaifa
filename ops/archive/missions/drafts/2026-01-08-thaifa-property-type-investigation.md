@@ -52,7 +52,7 @@ Villa Thaifa est officiellement une **Maison d'hôtes de charme / B&B (4★)** s
 
 - **SCOUT ONLY** — Ne pas modifier le type d'établissement
 - Utiliser le compte Admin Omar
-- Respecter les règles plateforme (`data/specs/platform/rules.md`)
+- Respecter les règles plateforme (`data/operations/platform-rules.md`)
 - Documenter tout comportement inattendu
 
 ---

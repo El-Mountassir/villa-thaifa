@@ -45,37 +45,31 @@ During Phase 3-4 execution, a sub-agent made UNAUTHORIZED changes:
 - Post-agent verification before committing
 - NOT using bypassPermissions for bulk operations
 
+### Phase 5 — Stale Path References Fixed ✓
+
+All `data/specs/` and `data/core/` references across the repo have been fixed:
+- **54 files** edited, **181 path replacements** (pure path swaps, no content changes)
+- 22 active files fixed (status dashboards, knowledge files, scripts, templates, PROFILE.md)
+- 32 historical files fixed (archive, snapshots, old planning docs)
+- 12 residual mentions remain — all are intentional "formerly" annotations or historical narrative
+
 ## Remaining Work
 
-### Stale path references — NEEDS PROPER REVIEW (NOT auto-archive)
-
-**WARNING**: Previous AI sessions over-archived files that were still active. Do NOT assume status/ops files are "just archives." Each file must be READ and EVALUATED individually before any action.
-
-~12 files still reference `data/specs/` and ~16 files reference `data/core/`. These include:
-
-**Likely active (need path fixes, not archival):**
-- `context/meta/knowledge/rules.md` — active knowledge file
-- `context/meta/templates/template.md` — active template
-- `data/admin/client/PROFILE.md` — canonical client file
-- `ops/status/data-canonical.md` — active status dashboard
-- `ops/status/canonical.md` — active status dashboard
-- `ops/status/working.md` — active status dashboard
-- `ops/status/planned.md` — active status dashboard
-- `ops/status/inbox.md` — active status dashboard
-- `ops/audit/existing-app-audit.md` — audit reference
-
-**Genuinely historical (path fix optional):**
-- `ops/audit/archive/history/` files — old audit reports
-- `ops/status/snapshots/2026-02-13-*` — isolation report snapshots
-- `ops/audit/incidents/open/` — old incident report
-
-**Action needed**: Read each file, fix paths to current canonical locations. Do NOT archive or dismiss as "low priority" — broken paths in active files cause agent misbehavior.
-
-### Other pending items
+### Pending items
 - 3 potential Linear backlog items from TODOs-legacy.md: Jisr investigation, direct channels strategy, HotelRunner API
+- `make structure-update` + `make changelog` needed after this commit
 
-## What Was Done (this session)
+### Pending tasks (from task list)
+- #112: Create villa-thaifa PROJECT-CONTRACT.md from template
+- #113: Create ~/omar/ PROJECT-CONTRACT.md from template
+- #116: Merge browser-agent.md into global browser.md + VT context
+- #80, #81, #83: Said-blocked tasks (room data gaps, facilities)
+- #104-#110: Expedia Steps 6-12 (blocked — no rooms in Step 5)
 
+## What Was Done (across sessions)
+
+- **Session 1** (pre-restart): Phases 1-4 complete, rogue agent incident reverted
+- **Session 2** (current): Phase 5 — 54 files, 181 stale path fixes
 - Linear issue VT-82 created: Expedia tax team follow-up (Awaiting: Said)
 - Smoking policy resolved in open-conflicts-registry.md (Designated smoking areas)
 
@@ -89,4 +83,4 @@ During Phase 3-4 execution, a sub-agent made UNAUTHORIZED changes:
 ## Git State
 
 Branch: main
-Pending commit with ~61 changes (Phase 4 completion)
+All consolidation work committed and pushed. Repo path references are now consistent.

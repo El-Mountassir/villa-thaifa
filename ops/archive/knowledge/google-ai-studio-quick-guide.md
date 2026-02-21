@@ -140,7 +140,7 @@ Then proceed to create the digest.
 **Indicateurs de Succès:**
 
 - ✅ Format suit le template (EXECUTIVE SUMMARY, CRITICAL FINDINGS, etc.)
-- ✅ File paths inclus ("data/specs/hotel/rooms.md")
+- ✅ File paths inclus ("data/rooms/rooms.md")
 - ✅ Placeholders marqués (`[NOT FOUND IN REPO]`)
 - ✅ Longueur raisonnable (scroll 3-5 pages, pas 20)
 
@@ -244,7 +244,7 @@ Re-extract focusing on facts only.
 
 ```
 Every claim needs a file path for verification.
-Example: "3 rooms configured" → "3 rooms configured in data/specs/hotel/rooms.md"
+Example: "3 rooms configured" → "3 rooms configured in data/rooms/rooms.md"
 Re-extract and include file paths for all facts.
 ```
 

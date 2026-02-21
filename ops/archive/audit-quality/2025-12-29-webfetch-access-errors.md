@@ -52,7 +52,7 @@ Error: Unable to verify if domain developers.hotelrunner.com is safe to fetch
 
 1. **Alternative found**: Used WebSearch to get summarized information
 2. **Omar provided**: Full API documentation copy-pasted in chat
-3. **Saved**: API reference to `data/specs/platform/hotelrunner/api-reference.md`
+3. **Saved**: API reference to `data/operations/hotelrunner/api-reference.md`
 
 ---
 

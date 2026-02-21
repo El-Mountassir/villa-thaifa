@@ -108,7 +108,7 @@ After state-management restructuring, we presented data to M. Said Thaifa. He pr
 **Directory Structure**:
 
 ```
-data/specs/configs/
+data/operations/
 ├── hotel/
 │   ├── README.md                   # INDEX of all assets
 │   ├── rooms.md                    # DEPRECATED (kept for transition)

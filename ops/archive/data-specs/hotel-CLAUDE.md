@@ -38,4 +38,4 @@ Before modifying any file in this directory:
 
 ---
 
-_*Hierarchical context for data/specs/configs/hotel/*_
+_*Hierarchical context for data/rooms/ and data/operations/*_

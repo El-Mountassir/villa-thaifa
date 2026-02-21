@@ -50,7 +50,7 @@
 
 | Fichier | Description | Critique |
 |---------|-------------|----------|
-| **data/core/inventory.yaml** | **SSOT - 12 chambres + pricing validé** | ⭐⭐⭐ |
+| **data/rooms/inventory.yaml** | **SSOT - 12 chambres + pricing validé** | ⭐⭐⭐ |
 | data/communication/whatsapp/2026-01-24-stop-sell-confirmation-dutch.md | Template confirmation pour Said | ⭐⭐ |
 
 **Missions** : `/tasks/`
@@ -153,7 +153,7 @@ fceb9c0 - refactor: update room pricing to 2026 validated rates
 **Statut** : 📋 **À EXÉCUTER**
 - Période cible : 11 février - 31 décembre 2026
 - Méthode : HotelRunner Bulk Update
-- Pricing : Grille validée dans `data/core/inventory.yaml`
+- Pricing : Grille validée dans `data/rooms/inventory.yaml`
 
 ---
 

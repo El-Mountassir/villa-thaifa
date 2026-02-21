@@ -98,9 +98,9 @@ Si confiance < 94% → STOP → AskUserQuestion → Attendre reponse
 
 | Type         | Emplacement               |
 | ------------ | ------------------------- |
-| Chambres     | data/specs/configs/hotel/ |
-| Reservations | data/specs/state/current/ |
-| Platform     | data/specs/platform/      |
+| Chambres     | data/rooms/               |
+| Reservations | data/bookings/            |
+| Platform     | data/operations/          |
 
 ## Incidents
 
@@ -144,8 +144,8 @@ Avant action HotelRunner/Booking.com:
 | `docs/lessons-learned.md`           | Sagesse operationnelle | GARDER                 |
 | `docs/incidents/`                   | Tracking incidents     | GARDER                 |
 | `project/TODOs.md`                  | Mission board          | GARDER                 |
-| `data/specs/`                       | Etat & config          | GARDER (intouche)      |
-| `data/specs/platform/rules.md`      | Regles plateforme      | GARDER (reference)     |
+| `data/`                             | Etat & config          | GARDER (intouche)      |
+| `data/operations/platform-rules.md` | Regles plateforme      | GARDER (reference)     |
 
 ---
 

@@ -46,7 +46,7 @@
 | **Prices configured HotelRunner** | 0/9 types  |
 | **Active Booking promotions**     | 5 (10-15%) |
 
-→ See `data/specs/` for operational details
+→ See `data/rooms/`, `data/finance/`, and `data/operations/` for operational details
 
 ---
 
@@ -159,7 +159,7 @@
 | **Strengths**      | Peaceful setting, gardens, infinity pool, warm welcome ("home away from home") |
 | **Location asset** | Quiet and peaceful, away from city noise (14 km from center)                   |
 
-→ See `data/specs/hotel/rooms.md` for room details and pricing
+→ See `data/rooms/rooms.md` for room details and pricing
 
 ---
 
@@ -419,9 +419,9 @@ _Base: 12 rooms × 365 days × average price ~€200_
 
 | File                               | Content                             |
 | ---------------------------------- | ----------------------------------- |
-| `data/specs/hotel/rooms.md`        | Rooms, pricing, HotelRunner mapping |
-| `data/specs/hotel/reservations.md` | Confirmed reservations              |
-| `data/specs/promotions/current.md` | Active promotions                   |
+| `data/rooms/rooms.md`              | Rooms, pricing, HotelRunner mapping |
+| `data/bookings/reservations/`      | Confirmed reservations              |
+| `data/operations/`                 | Operational configs                 |
 
 ### 12.3 Documentation
 

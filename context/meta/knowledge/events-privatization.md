@@ -261,7 +261,7 @@ ESTIMATED TOTAL: €7,000 - €10,000 (depending on options)
 
 ## 📖 See Also
 
-- [Room Inventory](../../data/core/inventory.yaml)
+- [Room Inventory](../../data/rooms/inventory.yaml)
 - [Said Thaifa Profile](../../../leadership/profiles/SAID-THAIFA.md)
 - [Facilities](../../../../content/reference/facilities/)
 - [Standard Rates](../pricing/standard-rates.md) (to create)

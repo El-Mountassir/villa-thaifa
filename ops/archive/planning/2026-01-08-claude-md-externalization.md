@@ -35,7 +35,7 @@ Omar souhaite:
 | Communication        | 167-175 | Inline                | P2       | Externaliser  | `ai/rules/communication.md`                 | S      |
 | Données              | 179-188 | **REDONDANT**         | P1       | Externaliser  | `ai/inventory/data-locations.md`            | S      |
 | Incidents            | 192-201 | Inline                | P2       | Externaliser  | `ai/protocols/incidents.md`                 | S      |
-| Checklist Plateforme | 205-214 | **REDONDANT**         | P1       | Supprimer     | Pointer vers `data/specs/platform/rules.md` | S      |
+| Checklist Plateforme | 205-214 | **REDONDANT**         | P1       | Supprimer     | Pointer vers `data/operations/platform-rules.md` | S      |
 | Git Workflow         | 218-253 | Inline                | P2       | Externaliser  | `ai/workflows/git.md`                       | S      |
 | Références           | 257-265 | Liste pointeurs       | P3       | Garder inline | -                                           | -      |
 | Contacts             | 269-274 | **REDONDANT**         | P1       | Supprimer     | Pointer vers `data/admin/client/`           | S      |
@@ -47,9 +47,9 @@ Omar souhaite:
 | Contenu              | Dans CLAUDE.md | Aussi dans                           | SSOT            | Action                 | Impact si non corrigé |
 | -------------------- | -------------- | ------------------------------------ | --------------- | ---------------------- | --------------------- |
 | Liste agents         | Lignes 58-64   | `ai/inventory/sub-agent_registry.md` | Registry        | Supprimer de CLAUDE.md | Désynchronisation     |
-| Checklist plateforme | Lignes 205-214 | `data/specs/platform/rules.md`       | Platform rules  | Supprimer, pointer     | Maintenance double    |
+| Checklist plateforme | Lignes 205-214 | `data/operations/platform-rules.md`       | Platform rules  | Supprimer, pointer     | Maintenance double    |
 | Contacts             | Lignes 269-274 | `data/admin/client/CONTACT.md`       | Client folder   | Supprimer, pointer     | Info obsolète         |
-| Emplacements données | Lignes 179-188 | Dispersé dans `data/specs/`          | Nouveau fichier | Créer inventory        | Incohérence           |
+| Emplacements données | Lignes 179-188 | Dispersé dans `data/`          | Nouveau fichier | Créer inventory        | Incohérence           |
 
 ---
 
@@ -369,7 +369,7 @@ Si l'externalisation échoue:
 
 ## Platform
 
-@data/specs/platform/rules.md
+@data/operations/platform-rules.md
 
 ## Client
 

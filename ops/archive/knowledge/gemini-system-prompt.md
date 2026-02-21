@@ -192,7 +192,7 @@ Before returning your digest, verify:
 
 ✅ **Extract, Don't Interpret:**
 
-- "Repo contains 3 rooms configured in data/specs/hotel/rooms.md"
+- "Repo contains 3 rooms configured in data/rooms/rooms.md"
 - NOT "You should configure 3 rooms"
 
 ✅ **Use Placeholders for Missing Data:**
@@ -286,7 +286,7 @@ Before returning your digest, verify:
 Based on the information in the repomix above, extract facts using this sequence:
 
 1. **Scan for file patterns:**
-   - `data/specs/hotel/*` → Property details
+   - `data/rooms/*` → Property and room details
    - `data/hotelrunner/*` → HotelRunner integration
    - `ai/*` → Agent systems
    - `docs/*` → Documentation state

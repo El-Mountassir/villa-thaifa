@@ -17,8 +17,8 @@ This roadmap prioritizes operational safety, traceability, and fast execution wi
 
 1. Rooms canonical domain is operational:
 
-- `data/core/property/inventory/rooms/rooms.md`
-- `data/core/property/inventory/rooms/rooms-reconciliation-log.md`
+- `data/rooms/rooms.md`
+- `data/rooms/rooms-reconciliation-log.md`
 
 2. Rooms legacy files `rooms-3.md` and `rooms-4.md` are archived with checksums:
 
@@ -39,8 +39,8 @@ This roadmap prioritizes operational safety, traceability, and fast execution wi
 
 5. Physical isolation completed for pending/backups/reference lanes:
 
-- `data/core/property/inventory/pending/`
-- `data/core/property/inventory/backups/`
+- `data/rooms/` (formerly data/core/property/inventory/pending/)
+- `data/rooms/` (formerly data/core/property/inventory/backups/)
 - `data/pending/finance/`
 - `docs/backups/`
 - `docs/reference/knowledge/duplicates/`
@@ -74,12 +74,12 @@ This roadmap prioritizes operational safety, traceability, and fast execution wi
 
 ## Workstream A — Data Domain Isolation
 
-Goal: isolate done vs pending for `data/core/property/inventory`.
+Goal: isolate done vs pending for `data/rooms/`.
 
 Steps:
 
-1. Maintain domain status index in `data/core/property/inventory/STATUS.md`.
-2. Maintain per-state files in `data/core/property/inventory/status/`:
+1. Maintain domain status index in `data/rooms/STATUS.md`.
+2. Maintain per-state files in `data/rooms/status/`:
 
 - `canonical.md`
 - `pending.md`
@@ -187,4 +187,4 @@ Use these as daily control panel:
 - `ops/status/INDEX.md`
 - `ops/status/working.md`
 - `ops/intake/unprocessed/manifest.csv`
-- `data/core/property/inventory/STATUS.md`
+- `data/rooms/STATUS.md`

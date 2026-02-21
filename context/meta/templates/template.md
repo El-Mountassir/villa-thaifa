@@ -202,7 +202,7 @@ findings_for_cto: |
   Discovered issues:
   - Obsolete el-mountassir paths in multiple files
   - Some .md files in archive/ are not yet organized
-  - Multiple agents reference data/specs/ files that don't exist yet
+  - Multiple agents reference data/rooms/ and data/operations/ files that may not exist yet
 
   Lessons learned:
   - Standardize frontmatter BEFORE creating future agents
@@ -338,7 +338,7 @@ findings_for_cto: |
 
   Identified problems:
   - Obsolete paths in browser-agent.md and claude-md-agent.md
-  - Multiple nonexistent data/specs/ files referenced
+  - Multiple nonexistent data/rooms/ and data/operations/ files referenced
   - Archive of 103 files to organize
 
   Lessons learned:

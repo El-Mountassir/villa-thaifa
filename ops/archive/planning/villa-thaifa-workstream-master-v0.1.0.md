@@ -197,7 +197,7 @@ Said on terrace at 9am with mint tea, phone vibrates with AI GM brief ("3 VIP ar
 - HotelRunner connected (Two-Way XML)
 - **Sync Issue:** "Allocation Type = No changes" (see Section 4 for NEW INFO)
 - Room 12 photos missing
-- Data structure clean (SSOT in `data/specs/`)
+- Data structure clean (SSOT in `data/`)
 
 **Integration Status:**
 - Findings captured in LHCM-OS Strategy doc (Section 5)
@@ -215,7 +215,7 @@ Said on terrace at 9am with mint tea, phone vibrates with AI GM brief ("3 VIP ar
 ```
 villa-thaifa/
 ├── .claude/agents/          # Browser agent, pricing agent, etc.
-├── data/specs/              # SSOT (rooms, pricing, property)
+├── data/              # SSOT (rooms, pricing, property)
 ├── docs/workflows/          # Operational procedures
 ├── missions/                # Task management
 └── src/                     # Empty (app not built yet)
@@ -292,16 +292,16 @@ villa-thaifa/
 - Allocation Type Setting: "No changes" (Support says leave as is, conflicting with diagnosis)
 
 **Data Structure (SSOT Location):**
-- Room specifications: `data/specs/rooms/`
-- Pricing data: `data/specs/pricing/`
-- Property details: `data/specs/property/`
-- Platform configs: `data/specs/platform/hotelrunner/` and `data/specs/platform/booking/`
+- Room specifications: `data/rooms/`
+- Pricing data: `data/pricing/`
+- Property details: `data/property/`
+- Platform configs: `data/platform/hotelrunner/` and `data/platform/booking/`
 
 ---
 
 **Sync Plan:**
 - After investigation (Section 4), update `docs/incidents/` with HotelRunner findings
-- After OTA activation, update `data/specs/platform/` with new OTA configs
+- After OTA activation, update `data/platform/` with new OTA configs
 - After decisions made, create Phase 0 or Phase 1 execution artifacts in `missions/`
 
 **Responsibility:** Claude Code should update repo as it works
@@ -377,7 +377,7 @@ villa-thaifa/
 **Goal:** Prepare everything needed for browser agent to activate 4-5 OTAs
 
 **Tasks:**
-1. ⏳ Create master data package (JSON/YAML export from `data/specs/`)
+1. ⏳ Create master data package (JSON/YAML export from `data/`)
 2. ⏳ Verify photos availability (Rooms 1-11 exist, Room 12 via Booking.com scrape)
 3. ⏳ Define OTA priority list (4-5 platforms based on Omar's Q5 answer)
 4. ⏳ Prepare credentials handoff protocol (Omar gives login info to agents)
@@ -994,7 +994,7 @@ Villa Thaifa
 ### 🟢 P2 - MEDIUM (Can wait until TOMORROW)
 
 **ACTION P2-1: Create OTA Activation Master Data Package**
-- **What:** Export `data/specs/` to JSON/YAML, validate completeness
+- **What:** Export `data/` to JSON/YAML, validate completeness
 - **Why:** Agents need structured data to create OTA accounts
 - **Who:** Lux (design structure) + Claude Code (execute export)
 - **When:** Tomorrow morning (after investigation complete)
@@ -1428,7 +1428,7 @@ Auto-detects git repo, opens board at `localhost:3000`
 **Technical Approach:**
 - **Competitive research:** Gemini CLI (analyze best boutique hotel sites)
 - **Mockup creation:** Claude Code + Figma Advanced Tool Use (preferred over MCP)
-- **Data compilation:** Extract from existing `data/specs/` + Google Drive
+- **Data compilation:** Extract from existing `data/` + Google Drive
 
 **Status:** ✅ DECIDED
 

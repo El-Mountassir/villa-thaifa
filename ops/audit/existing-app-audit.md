@@ -43,7 +43,7 @@ Villa Thaifa has a **partially functional Next.js application** (App Router, ~63
 
 | File | Format | Content | Records | Status | Notes |
 |------|--------|---------|---------|--------|-------|
-| `data/core/inventory.yaml` | YAML | **Master inventory** - Room types, pricing, beds, features | 12 rooms | **SSOT CLAIMED** | Most complete metadata, includes `type_fr`, `amenities`, validated 2026-01-24 |
+| `data/rooms/inventory.yaml` | YAML | **Master inventory** - Room types, pricing, beds, features | 12 rooms | **SSOT CLAIMED** | Most complete metadata, includes `type_fr`, `amenities`, validated 2026-01-24 |
 | `src/data/rooms.json` | JSON | Public website room data | 12 rooms | **ACTIVE** | Used by public pages, subset of YAML data with descriptions |
 | `src/data/facilities.json` | JSON | Property facilities (pool, spa, garden, hall) | 4 facilities | **ACTIVE** | Placeholder data ("A confirmer - M. Thaifa") |
 | `property.db` (SQLite) | SQLite | **Expedia-spec database** - Rooms, beds, amenities normalized | 12 rooms + relational | **ACTIVE** | Used by admin pages, most structured, has verification_status field |
@@ -150,7 +150,7 @@ Villa Thaifa has a **partially functional Next.js application** (App Router, ~63
 2. **Room Data** (12 rooms with complete metadata)
    - **Why**: Validated pricing (2026-01-13), complete bed/amenity/feature data
    - **Use**: Seed data for new PMS
-   - **Source**: `data/core/inventory.yaml` (most complete)
+   - **Source**: `data/rooms/inventory.yaml` (most complete)
 
 3. **Room Images** (12 professional photos)
    - **Why**: Production-ready assets

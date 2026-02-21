@@ -28,8 +28,8 @@ Tree totals observed:
 
 ### Canonical operational data (processed)
 
-- `data/core/property/inventory/rooms/rooms.md`
-- `data/core/property/inventory/rooms/rooms-reconciliation-log.md`
+- `data/rooms/rooms.md`
+- `data/rooms/rooms-reconciliation-log.md`
 
 ### Validation stack (processed)
 
@@ -56,10 +56,10 @@ Tree totals observed:
 
 ## Isolated: Not Processed Yet (priority operational scope)
 
-- `data/core/property/inventory/amenities.md`
-- `data/core/property/inventory/facilities.md`
-- `data/core/property/inventory/beds.md`
-- `data/core/property/inventory/inventory.md`
+- `data/rooms/amenities.md`
+- `data/property/facilities/`
+- `data/rooms/beds.md`
+- `data/rooms/rooms.md`
 - `data/finance/` (domain not yet routed through canonical workflow)
 
 ## Isolated: Pending Cleanup Decisions
@@ -68,7 +68,7 @@ Tree totals observed:
 
 Location:
 
-- `data/core/property/inventory/rooms/`
+- `data/rooms/`
   Pattern:
 - `*.backup-2026-02-13*`
 

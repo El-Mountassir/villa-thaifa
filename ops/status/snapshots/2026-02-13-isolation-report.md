@@ -6,8 +6,8 @@ Snapshot of what is processed, what is archived, and what is still unprocessed b
 
 ## Processed / Canonical
 
-- `data/core/property/inventory/rooms/rooms.md`
-- `data/core/property/inventory/rooms/rooms-reconciliation-log.md`
+- `data/rooms/rooms.md`
+- `data/rooms/rooms-reconciliation-log.md`
 - Validation scripts:
   - `scripts/domain_verify.py`
   - `scripts/validate_contracts.py`
@@ -23,17 +23,17 @@ Snapshot of what is processed, what is archived, and what is still unprocessed b
 
 ## Unprocessed / Pending Canonical Workflow
 
-- `data/core/property/inventory/amenities.md`
-- `data/core/property/inventory/facilities.md`
-- `data/core/property/inventory/beds.md`
-- `data/core/property/inventory/inventory.md`
+- `data/rooms/amenities.md`
+- `data/property/facilities/`
+- `data/rooms/beds.md`
+- `data/rooms/rooms.md`
 - `data/finance/` (domain not yet onboarded)
 
 ## Legacy Backups Pending Cleanup Decision
 
 Rooms domain currently has multiple `*.backup-2026-02-13-*` files in:
 
-- `data/core/property/inventory/rooms/`
+- `data/rooms/`
 
 Decision pending:
 

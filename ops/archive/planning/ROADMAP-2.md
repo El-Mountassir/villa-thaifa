@@ -96,7 +96,7 @@
 
 | Élément                    | Status                              |
 | -------------------------- | ----------------------------------- |
-| Baseline prices documentés | ✅ Dans `data/specs/hotel/rooms.md` |
+| Baseline prices documentés | ✅ Dans `data/rooms/rooms.md` |
 | Seasonal adjustments       | 🟡 À définir                        |
 | Promotions strategy        | 🟡 En cours                         |
 
@@ -214,7 +214,7 @@ Inspirer des clients HWS existants :
 ```
 Template "Villa Thaifa"
     → Clone pour nouvel établissement
-    → Personnaliser data/specs/
+    → Personnaliser data/
     → Connecter aux plateformes
     → Agent IA opérationnel en 1 semaine
 ```
@@ -261,7 +261,7 @@ Template "Villa Thaifa"
 | Document                  | Purpose                  |
 | ------------------------- | ------------------------ |
 | `CLAUDE.md`               | Context IA               |
-| `data/specs/`             | Specs métier (SSOT)      |
+| `data/`             | Specs métier (SSOT)      |
 | `docs/lessons-learned.md` | Erreurs & apprentissages |
 | `.env` / `.env.example`   | Accès plateformes        |
 

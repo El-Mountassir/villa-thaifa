@@ -374,7 +374,7 @@ Maintenant, Lux:
 - Manual extraction by you:
   - You read repomix in sections
   - You copy/paste ONLY the critical files to me
-  - Example: `data/specs/hotel/rooms.md` content → paste to me
+  - Example: `data/rooms/rooms.md` content → paste to me
   - I process incrementally
 
 ---
@@ -436,7 +436,7 @@ Keep: critical facts, file paths, specific findings, uncertainties.
 ```
 Be more specific about [SECTION X].
 Include: exact file paths, line numbers if relevant, verbatim snippets.
-Example: Instead of "rooms are configured", say "3 rooms configured in data/specs/hotel/rooms.md: Double (Room 1), Twin (Room 2), Suite (Room 3)".
+Example: Instead of "rooms are configured", say "3 rooms configured in data/rooms/rooms.md: Double (Room 1), Twin (Room 2), Suite (Room 3)".
 ```
 
 ---

@@ -87,7 +87,7 @@ DEFAULT_CONFIG = Config(
         Rule("context/audit/quality/**", "audit:quality"),
         Rule("context/audit/history/**", "audit:history"),
         Rule("context/audit/snapshots/**", "audit:snapshot"),
-        Rule("data/core/**", "source:data"),
+        Rule("data/rooms/**", "source:data"),
         Rule("data/pending/**", "source:data:pending"),
         Rule("scripts/**", "source:implementation"),
         Rule("src/**", "source:implementation"),

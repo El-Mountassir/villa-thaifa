@@ -283,7 +283,7 @@ Villa Thaifa Management
 | File                                                       | Purpose                              |
 | ---------------------------------------------------------- | ------------------------------------ |
 | `docs/reports/2025-12-29-sync-investigation.md`            | This report                          |
-| `data/specs/platform/hotelrunner/api-reference.md`         | API documentation (previous session) |
+| `data/operations/hotelrunner/api-reference.md`         | API documentation (previous session) |
 | `docs/incidents/open/2025-12-29-webfetch-access-errors.md` | Web access issues (previous session) |
 
 ---

@@ -22,7 +22,7 @@
 
 ```text
 1. PAUSE before clicking/submitting
-2. VERIFY against documentation (data/specs/configs/hotel/rooms.md, etc.)
+2. VERIFY against documentation (data/rooms/rooms.md, etc.)
 3. If uncertain → STOP → ASK → Wait for confirmation
 4. NEVER guess or assume on platform operations
 ```

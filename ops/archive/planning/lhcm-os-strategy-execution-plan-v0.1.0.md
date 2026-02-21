@@ -419,7 +419,7 @@ Even with Claude Code + Gemini CLI + Browser Agent, production-ready app with:
 
 **Actions:**
 
-- Finalize `data/specs/` (rooms, pricing, property details)
+- Finalize `data/` (rooms, pricing, property details)
 - Export in agent-friendly format (JSON/YAML)
 - Create master data package for agents
 
@@ -448,7 +448,7 @@ Even with Claude Code + Gemini CLI + Browser Agent, production-ready app with:
 1. Navigate to platform signup
 2. Fill property details (from master data)
 3. Configure room types (map to physical rooms)
-4. Upload photos (from `data/specs/configs/hotel/images/`)
+4. Upload photos (from `data/configs/hotel/images/`)
 5. Set pricing strategy (baseline from Najib's "1 hour" rule)
 6. Configure policies (check-in, check-out, cancellation)
 7. Connect to HotelRunner (if supported)
@@ -504,7 +504,7 @@ Even with Claude Code + Gemini CLI + Browser Agent, production-ready app with:
 ```
 LHCM-OS Villa Thaifa MVP
 ├── Database (SQLite for MVP, Postgres for production)
-│   ├── Rooms (SSOT from data/specs/)
+│   ├── Rooms (SSOT from data/)
 │   ├── Reservations (synced from HotelRunner API)
 │   ├── Pricing (historical + current)
 │   ├── Guests (profiles, preferences)
@@ -879,7 +879,7 @@ LHCM-OS Villa Thaifa MVP
 ✅ **Pricing Baseline** exists (e.g., Room 4 @ 160€, Room 7 @ 440€)  
 ✅ **Property Details** complete (4★, amenities, house rules)  
 ✅ **HotelRunner Connected** (Two-Way XML with Booking.com)  
-✅ **Data Structure Clean** (SSOT in `data/specs/`)  
+✅ **Data Structure Clean** (SSOT in `data/`)  
 ✅ **Agent Registry** exists (`ai/inventory/sub-agent_registry.md`)
 
 **What's Blocking (From Digest):**
@@ -908,10 +908,10 @@ LHCM-OS Villa Thaifa MVP
 2. **Room 12 Photos** (P1 - HIGH)
    - [ ] Browser agent scrapes Booking.com (as Omar suggested)
    - [ ] Alternative: Contact Ikram directly for high-res originals
-   - [ ] Add to `data/specs/configs/hotel/images/room-12/`
+   - [ ] Add to `data/configs/hotel/images/room-12/`
 
 3. **Master Data Package** (P0 - CRITICAL)
-   - [ ] Export `data/specs/` to JSON/YAML
+   - [ ] Export `data/` to JSON/YAML
    - [ ] Validate all required fields present (rooms, pricing, amenities, policies, photos)
    - [ ] Test with one agent (can it read and understand the data?)
 
@@ -1203,7 +1203,7 @@ Najib's wisdom:
 - **AI Revenue Manager:** Pricing and distribution agent (HotelRunner manipulation)
 - **AI CTO:** Technical infrastructure agent
 - **MCP:** Model Context Protocol (better than browser automation for API interactions)
-- **SSOT:** Single Source of Truth (centralized data in `data/specs/`)
+- **SSOT:** Single Source of Truth (centralized data in `data/`)
 - **MVP:** Minimum Viable Product (functional but basic)
 - **MLP:** Minimum Lovable Product (functional + polished UX)
 - **Phase 0:** OTA activation proof of concept (THIS WEEK)

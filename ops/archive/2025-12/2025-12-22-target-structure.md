@@ -111,7 +111,7 @@ From [Anthropic's Context Engineering](https://www.anthropic.com/engineering/eff
 
 ```
 CLAUDE.md (root)           ← Orchestrator, global rules
-├── data/specs/hotel/CLAUDE.md    ← Hotel-specific context
+├── data/rooms/CLAUDE.md          ← Hotel-specific context
 ├── docs/workflows/CLAUDE.md      ← Workflow-specific rules
 ├── src/apps/dashboard/CLAUDE.md  ← Dashboard dev context
 └── src/apps/api/CLAUDE.md        ← API dev context
@@ -126,7 +126,7 @@ Each level inherits from parent + adds local context.
 | **Docs-as-Code**   | `docs/`                   | Markdown, version-controlled       |
 | **Config-as-Code** | `.claude/`, `infra/envs/` | Agent config, environments         |
 | **Infra-as-Code**  | `infra/`                  | Docker, deployments                |
-| **Data-as-Code**   | `data/specs/`             | Business rules as structured files |
+| **Data-as-Code**   | `data/`                   | Business rules as structured files |
 | **Agents-as-Code** | `core/`                   | Context, models, prompts, tools    |
 
 ---

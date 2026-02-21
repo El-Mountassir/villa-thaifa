@@ -60,10 +60,10 @@ Use this structure for each work item:
 
 ```bash
 # inventory and context
-ls -la data/core/property/inventory/rooms
+ls -la data/rooms
 
 # strict text scan
-rg -n "pattern" data/core/property/inventory/rooms
+rg -n "pattern" data/rooms
 
 # compare files
 diff -u source.md canonical.md

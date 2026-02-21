@@ -13,7 +13,7 @@ Search conducted for villa-thaifa YAML files (property.yaml, rooms.yaml, pricing
 **Found & Verified**:
 
 - rooms.yaml (ACTIVE — 659-660 lines, in git at 3 locations)
-- inventory.yaml (ACTIVE — at data/core/inventory.yaml)
+- inventory.yaml (ACTIVE — at data/rooms/inventory.yaml)
 - VILLA_THAIFA.json (PLACEHOLDER — skeleton only, not SSOT)
 - Pricing metadata in markdown docs (reference only, not SSOT)
 
@@ -33,7 +33,7 @@ Search conducted for villa-thaifa YAML files (property.yaml, rooms.yaml, pricing
 | --------------------- | --------------------------------------------------------------------- | ------------- | ------------------- | ------------------- |
 | **rooms.yaml**        | /home/director/villa-thaifa/ssot/rooms.yaml                           | ACTIVE (SSOT) | 16.6 KB (659 lines) | 2026-02-13 12:18    |
 | **rooms.yaml**        | /home/director/villa-thaifa/data/ssot/rooms.yaml                      | ACTIVE (SSOT) | 16.5 KB (658 lines) | 2026-01-30 23:02    |
-| **inventory.yaml**    | /home/director/villa-thaifa/data/core/inventory.yaml                  | ACTIVE        | 8.3 KB              | 2026-01-24 (in git) |
+| **inventory.yaml**    | /home/director/villa-thaifa/data/rooms/inventory.yaml                  | ACTIVE        | 8.3 KB              | 2026-01-24 (in git) |
 | **VILLA_THAIFA.json** | /home/director/villa-thaifa/docs/knowledge/property/VILLA_THAIFA.json | PLACEHOLDER   | 3 KB                | 2026-01-15          |
 
 #### rooms.yaml Structure (Sample)
@@ -43,7 +43,7 @@ _meta:
   version: "2.0"
   created: "2026-01-30"
   sources_merged:
-    - "data/core/inventory.yaml (pricing, features, beds)"
+    - "data/rooms/inventory.yaml (pricing, features, beds)"
     - "src/data/rooms.json (descriptions)"
     - "property.db (verification status)"
 
@@ -82,7 +82,7 @@ rooms:
 
 **YAML Files in Current HEAD** (git ls-tree):
 
-- data/core/inventory.yaml
+- data/rooms/inventory.yaml
 - data/ssot/rooms.yaml
 - ssot/rooms.yaml
 
@@ -227,7 +227,7 @@ This suggests property, pricing, and policy data may have been stored in the SQL
 | File Path                                                                                         | Type          | Purpose                                             |
 | ------------------------------------------------------------------------------------------------- | ------------- | --------------------------------------------------- |
 | /home/director/villa-thaifa/ssot/rooms.yaml                                                       | YAML (ACTIVE) | Complete room definitions (SSOT)                    |
-| /home/director/villa-thaifa/data/core/inventory.yaml                                              | YAML (ACTIVE) | Room inventory with pricing (SSOT)                  |
+| /home/director/villa-thaifa/data/rooms/inventory.yaml                                              | YAML (ACTIVE) | Room inventory with pricing (SSOT)                  |
 | /home/director/villa-thaifa/docs/specs/knowledge/logs/pricing.md                                  | MD            | Live pricing rates & strategy (2026-01-13)          |
 | /home/director/villa-thaifa/property.db                                                           | SQLite        | Property data (database — may have historical data) |
 | /home/director/villa-thaifa/docs/knowledge/property/VILLA_THAIFA.json                             | JSON          | Property metadata skeleton (placeholder)            |

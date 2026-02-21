@@ -25,12 +25,12 @@ Extraire :
 - Source (direct, Booking, etc.)
 ```
 
-### 2. VERIFY — Vérifier contre data/specs/
+### 2. VERIFY — Vérifier contre data/rooms/ et data/bookings/
 
 ```
 Consulter :
-- data/specs/hotel/rooms.md → mapping chambre
-- data/specs/hotel/reservations.md → conflits potentiels
+- data/rooms/rooms.md → mapping chambre
+- data/bookings/reservations/ → conflits potentiels
 ```
 
 ### 3. REPEAT BACK — Confirmer avec Omar
@@ -55,7 +55,7 @@ Attendre "oui" ou correction
 
 ```
 1. Vérifier confirmation HotelRunner
-2. Mettre à jour data/specs/hotel/reservations.md
+2. Mettre à jour data/bookings/reservations/
 3. Log dans archive/YYYY/QQ/execution/
 ```
 

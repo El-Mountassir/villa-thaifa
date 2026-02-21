@@ -11,7 +11,7 @@ import csv
 import sys
 from pathlib import Path
 
-ROOMS_FILE = Path(__file__).resolve().parents[2] / "data/core/property/inventory/rooms/rooms.md"
+ROOMS_FILE = Path(__file__).resolve().parents[2] / "data/rooms/rooms.md"
 OUTPUT_DIR = Path(__file__).parent
 
 def extract_yaml_data(content):

@@ -543,8 +543,8 @@ If NO, explain what additional investigation needed:
 **In Villa Thaifa Repo:**
 
 - `docs/reports/2025-12-29-sync-investigation.md` (previous investigation findings)
-- `data/specs/platform/hotelrunner/` (HotelRunner configuration docs)
-- `data/specs/platform/booking/` (Booking.com data)
+- `data/operations/hotelrunner/` (HotelRunner configuration docs)
+- `data/operations/booking/` (Booking.com data)
 
 **In Current Workspace:**
 

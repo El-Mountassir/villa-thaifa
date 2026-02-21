@@ -102,7 +102,7 @@ graph TD
 
 | Data Type | Authoritative Source | Reason |
 |-----------|---------------------|--------|
-| Room pricing | `data/core/inventory.yaml` | Claims SSOT, EUR matches OTAs |
+| Room pricing | `data/rooms/inventory.yaml` | Claims SSOT, EUR matches OTAs |
 | Room descriptions | `src/data/rooms.json` | Only source with descriptions |
 | OTA integration | `property.db` | Schema designed for Expedia/Booking |
 | Facilities | NONE | All placeholder |

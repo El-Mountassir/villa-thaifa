@@ -46,7 +46,7 @@ Current `rooms.md` is a 942-line monolithic file containing:
 ## Final File Structure
 
 ```
-data/core/property/inventory/rooms/
+data/rooms/
 ├── contract.md
 ├── schema.yaml
 ├── rooms/
@@ -272,7 +272,7 @@ columns:
 2. Run `python generate.py view`
 3. Diff generated vs original:
    ```bash
-   diff views/rooms.md data/core/property/inventory/rooms/rooms.md
+   diff views/rooms.md data/rooms/rooms.md
    ```
 4. Run `python generate.py exports`
 5. Verify CSV outputs match current exports
@@ -322,16 +322,16 @@ repos:
     hooks:
       - id: validate-rooms
         name: Validate room YAML files
-        entry: python data/core/property/inventory/rooms/scripts/validate.py --all
+        entry: python data/rooms/scripts/validate.py --all
         language: system
-        files: ^data/core/property/inventory/rooms/rooms/.*\.yaml$
+        files: ^data/rooms/rooms/.*\.yaml$
         pass_filenames: false
       
       - id: generate-rooms
         name: Regenerate room views and exports
-        entry: python data/core/property/inventory/rooms/scripts/generate.py all
+        entry: python data/rooms/scripts/generate.py all
         language: system
-        files: ^data/core/property/inventory/rooms/rooms/.*\.yaml$
+        files: ^data/rooms/rooms/.*\.yaml$
         pass_filenames: false
 ```
 

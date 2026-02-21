@@ -106,7 +106,7 @@ data/
 | File | Purpose |
 |------|---------|
 | `CLAUDE.md` | Claude Code context |
-| `data/specs/hotel/rooms.md` | Room configuration |
+| `data/rooms/rooms.md` | Room configuration |
 | `data/admin/client/CONTACT.md` | Client contacts |
 | `data/admin/client/PROFILE.md` | Client profile |
 
@@ -127,7 +127,7 @@ data/
 **Question:** What systems are already implemented? What's missing?
 
 ### Q2: What's the actual room configuration?
-**File:** `data/specs/hotel/rooms.md`  
+**File:** `data/rooms/rooms.md`  
 **Context:** This is the SSOT for room numbers (critical for Booking.com reconfiguration)
 
 ### Q3: What are the "lessons learned"?

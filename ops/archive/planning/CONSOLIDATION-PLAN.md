@@ -35,7 +35,7 @@
 - [ ] Create `data/ssot/` directory
 - [ ] Create `data/ssot/rooms.yaml` with new schema
 - [ ] Merge data from:
-  - `data/core/inventory.yaml` (pricing, features, beds)
+  - `data/rooms/inventory.yaml` (pricing, features, beds)
   - `src/data/rooms.json` (descriptions)
   - `property.db` rooms table (MAD prices, verification status)
 - [ ] Add `_meta` section with conversion rate (EUR→MAD = 11.0)
@@ -97,7 +97,7 @@ npm run sync:rooms  # Works, generates outputs
 
 ### Tasks
 
-- [ ] Add deprecation header to `data/core/inventory.yaml`:
+- [ ] Add deprecation header to `data/rooms/inventory.yaml`:
   ```yaml
   # ⚠️ DEPRECATED — See data/ssot/rooms.yaml
   # Kept for reference only. DO NOT EDIT.
@@ -189,7 +189,7 @@ After successful migration:
 ```bash
 # Archive deprecated files (don't delete)
 mkdir -p archive/pre-ssot-migration-2026-01
-mv data/core/inventory.yaml archive/pre-ssot-migration-2026-01/
+mv data/rooms/inventory.yaml archive/pre-ssot-migration-2026-01/
 # Keep src/data/rooms.json as auto-generated
 ```
 

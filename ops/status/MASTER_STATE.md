@@ -96,8 +96,8 @@ Tree totals observed:
 
 ### Canonical operational data (processed)
 
-- `data/core/property/inventory/rooms/rooms.md`
-- `data/core/property/inventory/rooms/rooms-reconciliation-log.md`
+- `data/rooms/rooms.md`
+- `data/rooms/rooms-reconciliation-log.md`
 
 ### Validation stack (processed)
 
@@ -124,10 +124,10 @@ Tree totals observed:
 
 ## Isolated: Not Processed Yet (priority operational scope)
 
-- `data/core/property/inventory/amenities.md`
-- `data/core/property/inventory/facilities.md`
-- `data/core/property/inventory/beds.md`
-- `data/core/property/inventory/inventory.md`
+- `data/rooms/amenities.md`
+- `data/property/facilities/`
+- `data/rooms/beds.md`
+- `data/rooms/rooms.md`
 - `data/finance/` (domain not yet routed through canonical workflow)
 
 ## Isolated: Pending Cleanup Decisions
@@ -136,7 +136,7 @@ Tree totals observed:
 
 Location:
 
-- `data/core/property/inventory/rooms/`
+- `data/rooms/`
   Pattern:
 - `*.backup-2026-02-13*`
 
@@ -167,8 +167,8 @@ Snapshot of what is processed, what is archived, and what is still unprocessed b
 
 ## Processed / Canonical
 
-- `data/core/property/inventory/rooms/rooms.md`
-- `data/core/property/inventory/rooms/rooms-reconciliation-log.md`
+- `data/rooms/rooms.md`
+- `data/rooms/rooms-reconciliation-log.md`
 - Validation scripts:
   - `scripts/domain_verify.py`
   - `scripts/validate_contracts.py`
@@ -184,17 +184,17 @@ Snapshot of what is processed, what is archived, and what is still unprocessed b
 
 ## Unprocessed / Pending Canonical Workflow
 
-- `data/core/property/inventory/amenities.md`
-- `data/core/property/inventory/facilities.md`
-- `data/core/property/inventory/beds.md`
-- `data/core/property/inventory/inventory.md`
+- `data/rooms/amenities.md`
+- `data/property/facilities/`
+- `data/rooms/beds.md`
+- `data/rooms/rooms.md`
 - `data/finance/` (domain not yet onboarded)
 
 ## Legacy Backups Pending Cleanup Decision
 
 Rooms domain currently has multiple `*.backup-2026-02-13-*` files in:
 
-- `data/core/property/inventory/rooms/`
+- `data/rooms/`
 
 Decision pending:
 
@@ -1046,8 +1046,8 @@ This roadmap prioritizes operational safety, traceability, and fast execution wi
 
 1. Rooms canonical domain is operational:
 
-- `data/core/property/inventory/rooms/rooms.md`
-- `data/core/property/inventory/rooms/rooms-reconciliation-log.md`
+- `data/rooms/rooms.md`
+- `data/rooms/rooms-reconciliation-log.md`
 
 2. Rooms legacy files `rooms-3.md` and `rooms-4.md` are archived with checksums:
 
@@ -1068,8 +1068,8 @@ This roadmap prioritizes operational safety, traceability, and fast execution wi
 
 5. Physical isolation completed for pending/backups/reference lanes:
 
-- `data/core/property/inventory/pending/`
-- `data/core/property/inventory/backups/`
+- `data/rooms/` (formerly data/core/property/inventory/pending/)
+- `data/rooms/` (formerly data/core/property/inventory/backups/)
 - `data/pending/finance/`
 - `docs/backups/`
 - `docs/reference/knowledge/duplicates/`
@@ -1103,12 +1103,12 @@ This roadmap prioritizes operational safety, traceability, and fast execution wi
 
 ## Workstream A — Data Domain Isolation
 
-Goal: isolate done vs pending for `data/core/property/inventory`.
+Goal: isolate done vs pending for `data/rooms/` (formerly `data/core/property/inventory`).
 
 Steps:
 
-1. Maintain domain status index in `data/core/property/inventory/STATUS.md`.
-2. Maintain per-state files in `data/core/property/inventory/status/`:
+1. Maintain domain status index in `data/rooms/STATUS.md`.
+2. Maintain per-state files in `data/rooms/status/`:
 
 - `canonical.md`
 - `pending.md`
@@ -1216,7 +1216,7 @@ Use these as daily control panel:
 - `ops/status/INDEX.md`
 - `ops/status/working.md`
 - `ops/intake/unprocessed/manifest.csv`
-- `data/core/property/inventory/STATUS.md`
+- `data/rooms/STATUS.md`
 # State Management — Villa Thaifa
 
 > **Single source of truth for operational state and planning.**
@@ -5782,7 +5782,7 @@ Villa Thaifa has a **partially functional Next.js application** (App Router, ~63
 
 | File | Format | Content | Records | Status | Notes |
 |------|--------|---------|---------|--------|-------|
-| `data/core/inventory.yaml` | YAML | **Master inventory** - Room types, pricing, beds, features | 12 rooms | **SSOT CLAIMED** | Most complete metadata, includes `type_fr`, `amenities`, validated 2026-01-24 |
+| `data/rooms/inventory.yaml` | YAML | **Master inventory** - Room types, pricing, beds, features | 12 rooms | **SSOT CLAIMED** | Most complete metadata, includes `type_fr`, `amenities`, validated 2026-01-24 |
 | `src/data/rooms.json` | JSON | Public website room data | 12 rooms | **ACTIVE** | Used by public pages, subset of YAML data with descriptions |
 | `src/data/facilities.json` | JSON | Property facilities (pool, spa, garden, hall) | 4 facilities | **ACTIVE** | Placeholder data ("A confirmer - M. Thaifa") |
 | `property.db` (SQLite) | SQLite | **Expedia-spec database** - Rooms, beds, amenities normalized | 12 rooms + relational | **ACTIVE** | Used by admin pages, most structured, has verification_status field |
@@ -5889,7 +5889,7 @@ Villa Thaifa has a **partially functional Next.js application** (App Router, ~63
 2. **Room Data** (12 rooms with complete metadata)
    - **Why**: Validated pricing (2026-01-13), complete bed/amenity/feature data
    - **Use**: Seed data for new PMS
-   - **Source**: `data/core/inventory.yaml` (most complete)
+   - **Source**: `data/rooms/inventory.yaml` (most complete)
 
 3. **Room Images** (12 professional photos)
    - **Why**: Production-ready assets

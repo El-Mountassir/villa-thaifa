@@ -22,7 +22,7 @@
 
 ## 1. ROOM DATA (3 Sources — CONFLICT)
 
-### 1.1 `data/core/inventory.yaml` — **Claims SSOT**
+### 1.1 `data/rooms/inventory.yaml` — **Claims SSOT**
 
 - **Format**: YAML
 - **Currency**: EUR

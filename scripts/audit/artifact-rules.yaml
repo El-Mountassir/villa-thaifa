@@ -94,7 +94,7 @@ rules:
     category: audit:snapshot
 
   # === DATA ===
-  - match: "data/core/**"
+  - match: "data/rooms/**"
     category: source:data
   - match: "data/pending/**"
     category: source:data:pending
