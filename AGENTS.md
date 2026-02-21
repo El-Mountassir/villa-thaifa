@@ -296,7 +296,7 @@ Use this sequence for every operational task:
 2. REPORT
 3. QUESTIONS
 4. ACTION
-5. COMMIT — Run `make changelog`, then commit. Committing is Tier 2 (INFORM) — commit proactively after completing a logical batch of work, then inform Omar. Pushing remains Tier 3 (ASK) — always ask before `git push`.
+5. COMMIT — Run `make changelog`, then commit silently. Committing is Tier 1 (ACT) — commit proactively after completing a logical batch of work. No announcement needed. Pushing remains Tier 3 (ASK) — always ask before `git push`.
 
 ## Scope
 
