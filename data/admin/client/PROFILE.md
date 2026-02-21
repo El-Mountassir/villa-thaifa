@@ -60,8 +60,8 @@
 | **Age**      | 78 years old             |
 | **Email**    | <said_thaifa@hotmail.fr> |
 | **Email**    | <saidthaifa@gmail.com>   |
-| **Phone**    | +212 661-134194          |
-| **WhatsApp** | +212 661-134194          |
+| **Phone (confirmed WhatsApp)** | +212661134194 — Said's WhatsApp (confirmed by Omar) |
+| **Phone (unverified)**         | +212662146949 (06 62 14 69 49) — Google listing (needs Said clarification) |
 
 **Languages spoken**:
 

@@ -26,7 +26,7 @@
     "tourist_tax_per_night_mad": 3,
     "vat_rate": 0.10,
     "city_tax": 5,
-    "notes": "Tax rates and registration numbers pending from owner (Said)"
+    "notes": "Tax rates and registration numbers pending from owner (Said). See data/admin/said-pending-questions.md §4"
   },
   "invoicing": {
     "template": null,

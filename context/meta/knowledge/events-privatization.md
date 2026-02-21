@@ -44,7 +44,7 @@ Villa Thaifa **accepts private events** and **full property privatization** for:
 
 ### Children Capacity
 
-**⚠️ TO CLARIFY WITH SAID**:
+**⚠️ TO CLARIFY WITH SAID** — See `data/admin/said-pending-questions.md §PO4`
 
 - Child age limit (free vs paid)?
 - Additional child rate?
@@ -65,7 +65,7 @@ Villa Thaifa **accepts private events** and **full property privatization** for:
 
 ### Additional Services
 
-**⚠️ RATES TO CONFIRM WITH SAID**:
+**⚠️ RATES TO CONFIRM WITH SAID** — See `data/admin/said-pending-questions.md §EV1–EV6`:
 
 | Service             | Estimated Rate                           | Status        |
 | ------------------- | ---------------------------------------- | ------------- |

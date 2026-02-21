@@ -1,6 +1,7 @@
 # Pool — Villa Thaifa
 
-**Last updated**: 2026-02-19
+**Last updated**: 2026-02-21
+**Pending items**: See `data/admin/said-pending-questions.md §P1–P5`
 
 ---
 

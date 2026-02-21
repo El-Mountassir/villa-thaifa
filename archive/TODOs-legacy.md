@@ -72,18 +72,18 @@
 
 ### 🟠 P1 — Critical + Not urgent
 
-- [ ] **Assign rooms for Nicolas Lamblain** — Arrival Dec 26
+- [x] **Assign rooms for Nicolas Lamblain** — Arrival Dec 26
   - 2 Double Room Superior reservations
   - Confirmations: 6538291598 / 6538291598-1
   - Deadline: Dec 25
 
-- [ ] **Assign rooms for Jean Damien Aubril** — Arrival Dec 27
+- [x] **Assign rooms for Jean Damien Aubril** — Arrival Dec 27
   - 2 Deluxe Triple Room reservations
   - Confirmations: 5352537667 / 5352537667-1
   - Suggested rooms: 1, 3 or 8
   - Deadline: Dec 26
 
-- [ ] **Assign room for Quentin Warembourg** — Arrival Dec 29
+- [x] **Assign room for Quentin Warembourg** — Arrival Dec 29
   - 1 Suite reservation (Booking.com)
   - Confirmation: 5446634150
   - Suggested room: 10 (Suite)

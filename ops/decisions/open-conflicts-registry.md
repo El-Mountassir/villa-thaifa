@@ -2,6 +2,7 @@
 
 > **Purpose**: Single registry of all known data conflicts requiring human resolution.
 > Agents: check this file before resolving ambiguous data. If a conflict is listed here, do NOT guess — escalate.
+> All Said-blocked conflicts are also tracked in: `data/admin/said-pending-questions.md §1`
 
 ---
 

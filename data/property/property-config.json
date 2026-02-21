@@ -1,5 +1,5 @@
 {
-  "_comment": "PARTIAL — Google Maps data applied 2026-02-19. External listing data applied 2026-02-21. Remaining TODOs need Said confirmation.",
+  "_comment": "PARTIAL — Google Maps data applied 2026-02-19. External listing data applied 2026-02-21. Remaining TODOs need Said confirmation. See data/admin/said-pending-questions.md §3 and §GP1–GP13.",
   "version": "1.1.0",
   "last_updated": "2026-02-21T00:00:00Z",
   "status": "partial",
@@ -28,7 +28,11 @@
       "distance_from_center_km": "11.7-13",
       "distance_from_center_km_notes": "To Djemaa El Fna. Source: external listing 2026-02-21.",
       "drive_time_center_min": "25-30",
-      "phone": "06 62 14 69 49"
+      "primary_phone": "+212661134194",
+      "primary_phone_note": "Said's WhatsApp (confirmed by Omar)",
+      "secondary_phone": "+212662146949",
+      "secondary_phone_local": "06 62 14 69 49",
+      "secondary_phone_note": "Google listing (needs Said clarification)"
     },
     "rating": {
       "booking_com": 9.3,
@@ -40,8 +44,10 @@
     },
     "capacity": {
       "total_rooms": 12,
-      "total_beds": "TODO",
-      "max_guests": "TODO"
+      "total_beds": 25,
+      "total_beds_notes": "Calculated from rooms.md: 12 king beds + 13 sofa beds. Source: data/rooms/rooms.md, verified 2026-02-21.",
+      "max_guests": 37,
+      "max_guests_notes": "Sum of Max Occupancy column in rooms.md (R01-R12). Source: data/rooms/rooms.md, verified 2026-02-21."
     },
     "facilities": {
       "pool": {
@@ -107,23 +113,23 @@
       "payment_methods": ["TODO"],
       "children_policy": "Children allowed. Ages 2-12: €30/person/night when using existing bed. Source: OTA policy data.",
       "pets_policy": "Allowed, no extra charge. Source: OTA policy data.",
-      "smoking_policy": "TODO"
+      "smoking_policy": "Designated smoking areas"
     }
   },
   "tags": ["partial", "to_complete", "property"],
   "todo": [
     "Said to confirm: check-out time (internal=11:00 vs destinia OTA=13:30)",
     "Said to confirm: GPS coordinates (31.6539756, -7.8778661 sourced from Google Maps) — confidence now set to Confirmed (Google Maps); Said confirmation still pending",
-    "Said to confirm: phone number (06 62 14 69 49 sourced from Google Maps)",
+    "Said to confirm: secondary_phone (06 62 14 69 49 sourced from Google Maps) — primary +212661134194 is confirmed by Omar",
     "Said to fill: pool size, spa massage/other services",
     "Said to fill: WiFi technology type (fiber/ADSL/etc) — confirmed Free Wi-Fi from Google Maps",
     "Said to fill: room types breakdown (12 rooms — how many of each type)",
-    "Said to fill: total beds and max guests",
+    "DONE: total_beds=25, max_guests=37 calculated from data/rooms/rooms.md (verified 2026-02-21)",
     "Said to fill: heating, safe, mini_bar, terrace, garden availability",
     "Said to fill: laundry, room service, concierge, tours availability",
     "Said to fill: cancellation policy details",
     "Said to fill: accepted payment methods",
-    "Said to fill: smoking policy",
+    "DONE: smoking_policy set to 'Designated smoking areas' (source: Expedia Step 4, confirmed 2026-02-21)",
     "Said to confirm: sports activities available (listed externally — what specifically?)",
     "Said to confirm: express check-in/check-out service (listed externally — how does it work?)"
   ]

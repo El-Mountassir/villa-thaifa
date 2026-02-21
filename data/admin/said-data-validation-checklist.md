@@ -1,6 +1,7 @@
 # Data Validation Checklist — For Said Thaifa
 
-**Purpose**: Physical confirmation of room and property data before publishing to OTA channels.
+**Purpose**: Physical confirmation of room and property data before publishing to OTA channels. This is the hand-off form for Said to fill in.
+**Operational registry** (for agents/Omar): `data/admin/said-pending-questions.md` — contains all pending items with Linear refs and priorities.
 **Source**: Audit completed 2026-02-19. All items below are unconfirmed in the current system.
 **Instructions**: Read each item. Write your answer in the blank. Circle Yes/No where applicable.
 

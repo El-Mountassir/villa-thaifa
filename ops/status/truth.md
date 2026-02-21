@@ -45,7 +45,8 @@
 | Distance to airport | ~10 km straight-line / 15.8 km drive — 15-20 min                                   | Confirmed (external)       |
 | Distance to center  | 11.7–13 km — 25-30 min drive to Djemaa El Fna                                      | Confirmed (external)       |
 | Postal code         | 40000                                                                               | Confirmed (external)       |
-| Phone               | 06 62 14 69 49 (Google Maps 2026-02-19)                                             | Awaiting: Said             |
+| Phone (confirmed)   | +212661134194 — Said's WhatsApp (confirmed by Omar)                                 | Confirmed                  |
+| Phone (unverified)  | +212662146949 / 06 62 14 69 49 — Google listing (needs Said clarification)          | Awaiting: Said             |
 | Expedia Property ID | 114807934                                                                           | Confirmed                  |
 | Booking.com rating  | 9.3/10 (80 reviews) — "Wonderful"                                                   | Confirmed                  |
 | Google rating       | 4.5/5 (22 reviews)                                                                  | Confirmed                  |
@@ -69,7 +70,7 @@
 | Sports activities   | Mentioned in external listing — type unknown                                        | Pending: Said              |
 | Security            | 24/7, CCTV, safe, alarm                                                             | Confirmed (PROFILE.md)     |
 
-**Pending from Said:** Pool size, spa massage services, WiFi technology type, laundry/room service/concierge/tours availability, total beds and max guests count.
+**Pending from Said:** See consolidated registry: `data/admin/said-pending-questions.md §3`
 
 ---
 
@@ -124,7 +125,8 @@
 | Age                   | 78 years old                                                                               |
 | Co-manager            | Nezha Thaifa (wife)                                                                        |
 | Email                 | said_thaifa@hotmail.fr / saidthaifa@gmail.com                                              |
-| Phone / WhatsApp      | +212 661-134194                                                                            |
+| Phone / WhatsApp (confirmed) | +212661134194 — Said's WhatsApp (confirmed by Omar)                             |
+| Phone (unverified)    | +212662146949 (06 62 14 69 49) — Google listing (needs Said clarification)                 |
 | Preferred language    | Dutch (primary) — prefers Dutch over French                                                |
 | Communication channel | WhatsApp (confirmed)                                                                       |
 | Communication tone    | Formal (vouvoiement mandatory). Senior client — respect without rigidity.                  |
@@ -134,15 +136,7 @@
 | PMS                   | None — everything in Said's memory                                                         |
 | Pain points           | Manual management, OTA dependency (100% Booking), high 25% commission, staffing difficulty |
 
-**Blocking items for Said:**
-
-- Sign Trip.com GDA contract + provide bank notification letter
-- Provide legal entity info for MarocPME (MOUS-17509)
-- Provide website preferences (template, logo, colors, descriptions, social links)
-- Confirm GPS coordinates and phone number
-- Confirm pets policy
-- Confirm R06 and R07 terrace sizes
-- Fill remaining property-config.json gaps (pool size, spa services, WiFi type, etc.)
+**Blocking items for Said:** See `data/admin/said-pending-questions.md` (consolidated registry — do not duplicate here)
 
 ---
 
@@ -175,7 +169,8 @@
 | Bookings / reservations   | `data/bookings/reservations/`                         | ACTIVE                             |
 | Facilities                | `data/property/facilities/`                           | PARTIAL — needs Said               |
 | Reconciliation log        | `data/rooms/rooms-reconciliation-log.md`              | ACTIVE                             |
-| Said validation checklist | `docs/client/said-data-validation-checklist.md`       | ACTIVE — 6 items confirmed         |
+| Said validation checklist | `data/admin/said-data-validation-checklist.md`        | ACTIVE — hand-off form for Said    |
+| Said pending questions    | `data/admin/said-pending-questions.md`                | ACTIVE — operational registry      |
 
 **Superseded / do not use:**
 
@@ -191,17 +186,19 @@
 
 ### Blocked on Said
 
-| #   | Item                                | Impact                          | Ref                                     |
-| --- | ----------------------------------- | ------------------------------- | --------------------------------------- |
-| 1   | Sign Trip.com GDA contract          | New OTA channel at 18% vs 25%   | PROFILE.md §13.1                        |
-| 2   | Pets policy confirmation            | Guest-facing OTA policy error   | Conflict #1, open-conflicts-registry.md |
-| 3   | R06 + R07 terrace size confirmation | Room listing accuracy           | Conflicts #2-3                          |
-| 4   | Legal entity info (MarocPME)        | MOUS-17509 blocked              | PROFILE.md §13.3                        |
-| 5   | Website preferences                 | Site creation blocked           | PROFILE.md §13.2                        |
-| 6   | Legal/financial details             | billing.json incomplete         | billing.json TODOs                      |
-| 7   | Property config gaps                | property-config.json incomplete | property-config.json todo[]             |
-| 8   | WhatsApp number + channels info     | channels.json incomplete        | channels.json TODOs                     |
-| 9   | Room data gaps (VT-72/74/76)        | rooms.md data_confidence gaps   | Task #81                                |
+> Full consolidated registry: `data/admin/said-pending-questions.md`
+
+| #   | Item                                | Impact                          | Ref                                        |
+| --- | ----------------------------------- | ------------------------------- | ------------------------------------------ |
+| 1   | Sign Trip.com GDA contract          | New OTA channel at 18% vs 25%   | said-pending-questions.md §PO2             |
+| 2   | Pets policy confirmation            | Guest-facing OTA policy error   | said-pending-questions.md §C1              |
+| 3   | R06 + R07 terrace size confirmation | Room listing accuracy           | said-pending-questions.md §C2–C3           |
+| 4   | Legal entity info (MarocPME)        | MOUS-17509 blocked              | said-pending-questions.md §F1              |
+| 5   | Website preferences                 | Site creation blocked           | said-pending-questions.md §8               |
+| 6   | Legal/financial details             | billing.json incomplete         | said-pending-questions.md §4               |
+| 7   | Property config gaps                | property-config.json incomplete | said-pending-questions.md §3, §GP1–GP13    |
+| 8   | WhatsApp number + channels info     | channels.json incomplete        | said-pending-questions.md §CH1–CH4         |
+| 9   | Room data gaps (VT-72/74/76)        | rooms.md data_confidence gaps   | said-pending-questions.md §2               |
 
 ### Blocked on Expedia
 

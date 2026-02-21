@@ -31,10 +31,7 @@ and private events. Included in the privatization package.
 
 ## Open Questions (for Said)
 
-1. Exact seated capacity for dining (30 guests feasible?)
-2. Sound system available?
-3. Additional event furniture (tables, chairs) available or to be rented?
-4. Music hours limit?
+See consolidated registry: `data/admin/said-pending-questions.md §H1–H4`
 
 ---
 
