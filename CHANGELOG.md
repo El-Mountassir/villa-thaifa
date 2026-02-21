@@ -81,6 +81,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Fixed
 
+- repo consolidation phases 1-3 + partial phase 4 — Phase 1 — Defuse landmines:
 - mark all room rates CONFIRMED + locked until Dec 2026 — - rates.json: add locked_until and lock_source fields
 - remove 53 verified duplicate images, consolidate credential eval — - Remove 45 DSC7296-7319 duplicates from R05-R09 (MD5 verified vs R04)
 - sync room rates, merge Said's notes, add validation gap tracking — - G1: Fix rate mismatches in R02/R04/R05/R06 profiles (align with rates.json)

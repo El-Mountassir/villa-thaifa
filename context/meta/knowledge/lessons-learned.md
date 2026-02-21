@@ -1,60 +1,60 @@
 # Lessons Learned — Villa Thaifa
 
-> This file documents mistakes and learnings to avoid repeating them.
+> This file documents errors and learnings to prevent repetition.
 > To be consulted by future AI agents and humans working on this project.
 
 ---
 
 ## [2025-12-19] Client Communication: Scout → Report → Action Pattern
 
-### The Error
+### The mistake
 
-Sent a message to Said asking for info (guest name, rate, number of adults) **WITHOUT** first giving him a report of what we had discovered as a scout.
+Sent a message to Said asking for info (guest name, rate, number of adults) WITHOUT first reporting what we had discovered as a scout.
 
-**Context**: Mission to book room 11 on HotelRunner. We successfully logged in, checked availability, prepared the form — but we asked the client for info without communicating this good news first.
+**Context**: Booking mission for room 11 on HotelRunner. We successfully connected, verified availability, prepared the form — but asked the client for info without first communicating the good news.
 
-**Impact**: The client receives questions without context → impression that we don't have the situation under control.
+**Impact**: Client receives questions without context → impression that we don't have the situation under control.
 
 ### What should have been done
 
 ```text
-1. SCOUT    → Explore the platform, check feasibility
-2. REPORT   → Keep Omar informed of discoveries, then determine if Omar (who acts as a bridge between our AI team and our clients) should escalate the information and/or keep it for us (our AI team)
+1. SCOUT    → Explore the platform, verify feasibility
+2. REPORT   → Keep Omar informed of discoveries, then determine if Omar (who serves as a bridge between our AI team and clients) should pass the information along or keep it internal
 3. QUESTIONS → Ask for missing info (with context)
-4. ACTION   → Execute when everything is clear
+4. ACTION   → Execute once everything is clear
 ```
 
-### Correct Pattern
+### Correct pattern
 
-| Phase         | Action                 | Example                            |
-| ------------- | ---------------------- | ---------------------------------- |
-| **Scout**     | Explore as a scout     | Log in, check availability         |
-| **Report**    | Inform the client      | "Good news, the room is available" |
-| **Questions** | Ask for what's missing | "To finalize, I need..."           |
-| **Action**    | Execute                | Create the reservation             |
+| Phase         | Action                  | Example                                    |
+| ------------- | ----------------------- | ------------------------------------------ |
+| **Scout**     | Explore as a scout      | Connect, verify availability               |
+| **Report**    | Inform the client       | "Good news, the room is available"         |
+| **Questions** | Ask for what is missing | "To finalize, I need..."                   |
+| **Action**    | Execute                 | Create the reservation                     |
 
-### Client Communication Checklist
+### Client communication checklist
 
 Before sending a message to Omar, verify:
 
-- [ ] Do I have ALL the **context** to understand the situation or not?
+- [ ] Do I have ALL the **context** to understand the situation?
 - [ ] Have I informed Omar of what I **discovered**?
 - [ ] Does Omar have the **context** to understand my questions?
-- [ ] Does my message show that we **master** the situation or not?
-- [ ] Have I shown **empathy** (put myself in their shoes)?
+- [ ] Does my message show that we **have the situation under control**?
+- [ ] Have I shown **empathy** (putting myself in his place)?
 
-### Corrective Message Sent
+### Corrective message sent
 
-After realizing the error, follow-up message sent:
+After realizing the mistake, a follow-up message was sent:
 
 ```
-By the way Omar, I should have started with this:
+Actually Omar, I should have started with this:
 
-Good news — we successfully logged into HotelRunner and room 11
-(family suite) is indeed AVAILABLE for the 2 nights!
+Good news — we successfully connected to HotelRunner and room 11
+(family suite) is AVAILABLE for the 2 nights!
 
-The booking form is ready, I'm just missing the info
-I asked for in my previous message.
+The reservation form is ready, I just need the info I asked for
+in my previous message.
 
 [Entity name]
 ```
@@ -62,82 +62,82 @@ I asked for in my previous message.
 ### Lesson learned
 
 > **Never assume the client knows what we know.**
-> Always provide a report before asking for actions/info.
-> Client empathy = put yourself in their shoes and imagine what they receive.
+> Always report before asking for actions/info.
+> Client empathy = putting yourself in their place and imagining what they receive.
 
 ---
 
 ## [2025-12-19] Communication Tone: Adapt Register to Context
 
-### The Error
+### The mistake
 
-Proposed messages with too informal/familiar a tone ("tu", relaxed style) for a 60+ year old client in a professional context.
+Messages drafted with too informal/casual a tone ("tu", casual style) for a client aged 60+ in a professional context.
 
 **Problematic example**:
 
 ```
-By the way Said, I should have started with this...
+Actually Said, I should have started with this...
 ```
 
 **What should have been written**:
 
 ```
-Mr. Thaifa,
+Monsieur Thaifa,
 
-Please excuse me, I should have started by informing you that...
+Please accept my apologies, I should have started by informing you that...
 ```
 
-### Factors to Consider
+### Factors to consider
 
-| Factor       | Impact on Register            |
-| ------------ | ----------------------------- |
-| Relationship | New client → formal           |
-| Culture      | Morocco → respect for elders  |
-| Stakes       | High-ticket → professionalism |
+| Factor       | Impact on register              |
+| ------------ | ------------------------------- |
+| Relationship | New client → formal             |
+| Culture      | Morocco → respect for elders    |
+| Stakes       | High-ticket → professionalism   |
 
-### Correct Register for this Client
+### Correct register for this client
 
-- ✅ **Vouvoiement** mandatory
-- ✅ **Respect** without corporate rigidity
-- ❌ No: "Hi", "tu" (informal you), familiar abbreviations
+- Formal register ("vous/vouvoiement") mandatory
+- Respect without corporate rigidity
+- Never use: "Salut", "tu", casual abbreviations
 
-### Adaptation to Channel (WhatsApp)
+### Adaptation by channel (WhatsApp)
 
-| Situation                            | Approach                      |
-| ------------------------------------ | ----------------------------- |
-| **1st message of the day**           | Greeting + signature          |
-| **Following messages (same thread)** | Direct, fluid, no re-greeting |
-| **Important/formal message**         | Greeting + signature          |
+| Situation                      | Approach                              |
+| ------------------------------ | ------------------------------------- |
+| **First message of the day**   | Greeting + signature                  |
+| **Follow-up (same thread)**    | Direct, fluid, no repeated greeting   |
+| **Important/formal message**   | Greeting + signature                  |
 
 **Fluid example (follow-up message)**:
 
 ```
-Excuse me, I should have started there:
+My apologies, I should have started with this:
 Good news — [content]
 ```
 
-**No need for**: "Mr. Thaifa" + "Best regards, Omar" in EVERY message.
+**No need for**: "Monsieur Thaifa" + "Cordialement, Omar" on EVERY message.
 
-### Checklist before sending client message
+### Pre-send checklist for client messages
 
-- [ ] Did I use "vouvoiement"?
+- [ ] Did I use the formal register (vouvoiement)?
 - [ ] Is the tone adapted to the client's age and status?
-- [ ] Is there an appropriate polite formula?
-- [ ] Is the message professionally structured?
+- [ ] Is there an appropriate courtesy phrase?
+- [ ] Is the message structured professionally?
 
 ### Lesson learned
 
-> **Always adapt the communication register to the client's context.**
-> In case of doubt, opt for the more formal register.
-> A message that is too formal is rarely perceived poorly; a message that is too familiar can be.
+> **Always adapt communication register to the client's context.**
+> When in doubt, choose the more formal register.
+> A too-formal message is rarely poorly received; a too-casual one can be.
 
 ---
 
 ## [2025-12-20] Client Deliverables: Ready-to-Use Files
 
-### The Error
+### The mistake
 
-Created an `.md` file with the WhatsApp message containing metadata, explanation sections, context — while Omar needed a `.txt` file ready to be copied and pasted directly.
+Created a `.md` file with the WhatsApp message containing metadata, explanation sections, and context — when Omar needed a `.txt` file ready to copy-paste directly.
 
 **What was done**:
 
@@ -148,32 +148,32 @@ draft-message-rapport-reservations.md  ← Markdown with metadata
 **What was expected**:
 
 ```
-2025-12-20-message-report-reservations.txt  ← Raw text ready to copy
+2025-12-20-message-rapport-reservations.txt  ← Plain text ready to copy
 ```
 
 ### Impact
 
-- Omar has to manually extract the message from the markdown file
-- Loss of time
+- Omar must manually extract the message from the markdown file
+- Wasted time
 - Unnecessary friction in the workflow
 
 ### What should have been done
 
-When preparing a deliverable for client delivery (message, email, document):
+When preparing a client deliverable (message, email, document):
 
-| Type                 | Format           | Naming                             |
-| -------------------- | ---------------- | ---------------------------------- |
-| WhatsApp/SMS Message | `.txt`           | `YYYY-MM-DD-message-[subject].txt` |
-| Email                | `.txt` or `.eml` | `YYYY-MM-DD-email-[subject].txt`   |
-| Report/Document      | `.pdf`           | `report-[subject]-YYYY-MM-DD.pdf`  |
-| Internal Notes       | `.md`            | Free                               |
+| Type                  | Format           | Naming                            |
+| --------------------- | ---------------- | --------------------------------- |
+| WhatsApp/SMS message  | `.txt`           | `YYYY-MM-DD-message-[subject].txt` |
+| Email                 | `.txt` or `.eml` | `YYYY-MM-DD-email-[subject].txt`  |
+| Report/Document       | `.pdf`           | `report-[subject]-YYYY-MM-DD.pdf` |
+| Internal notes        | `.md`            | Free                              |
 
-### Deliverables Structure
+### Deliverable structure
 
 ```
 communication/
 ├── whatsapp/
-│   ├── 2025-12-20-message-report-reservations.txt  ← Ready to copy
+│   ├── 2025-12-20-message-rapport-reservations.txt  ← Ready to copy
 │   └── draft-*.md                                    ← Drafts/notes
 │
 projects/[project]/
@@ -181,70 +181,70 @@ projects/[project]/
     └── report-[subject]-YYYY-MM-DD.pdf               ← Final PDF
 ```
 
-### Checklist before creating client deliverable
+### Pre-creation checklist for client deliverables
 
 - [ ] Is the file **directly usable** without extraction?
-- [ ] Is the format adapted to the use (`.txt` for copying, `.pdf` for sending)?
-- [ ] Does the naming include the **date** and the **subject**?
+- [ ] Is the format appropriate for use (`.txt` to copy, `.pdf` to send)?
+- [ ] Does the naming include the **date** and **subject**?
 - [ ] Is the file in the **correct folder** (deliverables/, whatsapp/)?
 
 ### Lesson learned
 
 > **A client deliverable must be ready to use, not a working document.**
-> Always ask yourself: "Can Omar use this file immediately without manipulation?"
-> If not → wrong format or wrong structure.
+> Always ask: "Can Omar use this file immediately without manipulation?"
+> If no → wrong format or wrong structure.
 
 ---
 
-## [2025-12-22] Date Confusion: Check Years
+## [2025-12-22] Date Confusion: Always Verify the Year
 
-### The Error
+### The mistake
 
-Dates mentioned without explicit year, creating confusion between 2024 and 2025. Particularly problematic during year transition (December → January).
+Dates mentioned without an explicit year, creating confusion between 2024 and 2025. Particularly problematic during year transitions (December → January).
 
 ### Impact
 
 - Misunderstanding of deadlines
 - Risk of incorrect planning
-- Confusion in booking history
+- Confusion in reservation history
 
 ### What must be done
 
-| Situation                     | Action                |
-| ----------------------------- | --------------------- |
-| Client mentions "December 20" | Ask/confirm the year  |
-| Date close to New Year        | Double-check the year |
-| Booking for "January"         | Clarify 2025 or 2026  |
+| Situation                          | Action                         |
+| ---------------------------------- | ------------------------------ |
+| Client mentions "December 20th"    | Ask/confirm the year           |
+| Date near New Year                 | Double-check the year          |
+| Reservation for "January"          | Clarify 2025 or 2026           |
 
-**Verification Pattern**:
+**Verification pattern**:
 
 - Always specify the full year (e.g., "December 20, 2025")
-- Verify the year when a client mentions just the month/day
-- Special attention at year transition (Dec → Jan)
+- Check the year when a client mentions only month/day
+- Extra attention near year transitions (Dec → Jan)
 
 ### Lesson learned
 
-> **Always verify the year.** "December 20" can be 2024 or 2025.
-> Never assume — always be explicit.
+> **Always verify the year.** "December 20th" could be 2024 or 2025.
+> Never assume — always make it explicit.
 
 ---
 
 ## Template for future lessons
 
 ```markdown
-## [YYYY-MM-DD] Short Title
+## [YYYY-MM-DD] Short title
 
-### The Error
+### The mistake
 
 [Factual description of what happened]
 
 ### Impact
 
-[Consequences of the error]
+[Consequences of the mistake]
 
 ### What should have been done
 
-[The right approach]
+[The correct approach]
 
 ### Lesson learned
 
@@ -275,49 +275,49 @@ Dates mentioned without explicit year, creating confusion between 2024 and 2025.
 
 ### Business Context
 
-| Channel               | Commission | On €1000   |
-| --------------------- | ---------- | ---------- |
-| Booking.com           | **25%**    | Net: €750  |
-| Expedia, etc.         | ~15-25%    | Variable   |
-| Direct (phone, email) | **0%**     | Net: €1000 |
+| Channel                    | Commission | On €1000   |
+| -------------------------- | ---------- | ---------- |
+| Booking.com                | **25%**    | Net: €750  |
+| Expedia, etc.              | ~15-25%    | Variable   |
+| Direct (phone, email)      | **0%**     | Net: €1000 |
 
-### Why it's HUGE
+### Why this is HUGE
 
 ```
-Direct booking = +33% net margin vs Booking.com
+Direct reservation = +33% net margin vs Booking.com
 ```
 
-**Villa Thaifa is going to connect 20+ platforms** → The impact of commissions is MASSIVE.
+**Villa Thaifa will connect 20+ platforms** → The commission impact is MASSIVE.
 
 ### Implication for AI Agents
 
-> **Mr. Thaifa prefers direct bookings whenever possible.**
-> This is NOT just a personal preference — it's a rational economic decision.
-> Even for guests who are not friends/family.
+> **Mr. Thaifa prefers direct reservations when possible.**
+> This is NOT just a personal preference — it is a rational economic decision.
+> Even for clients who are not friends/family.
 
 **ALWAYS UNDERSTAND**:
 
-- "Direct" booking on HotelRunner = client who contacted directly = 0% commission
-- Booking via Booking/Expedia = 25% lost commission
-- When Mr. Thaifa says "direct booking" → it's to save commissions
+- "Direct" reservation on HotelRunner = client contacted directly = 0% commission
+- Reservation via Booking/Expedia = 25% commission lost
+- When Mr. Thaifa says "direct reservation" → it is to save on commissions
 
 ### Lesson learned
 
 > **Booking platforms are an ACQUISITION channel, not the goal.**
-> The goal is to maximize net revenues — direct bookings contribute to this.
+> The goal is to maximize net revenue — direct reservations contribute to this.
 
 ---
 
 ## [2025-12-28] Tunnel Vision — Room 5 "Sync Bug" Case
 
-### The Error (Tunnel Vision)
+### The mistake (Tunnel Vision)
 
 An AI instance saw:
 
-- Room 5 booked on HotelRunner (Benchekroum)
+- Room 5 reserved on HotelRunner (Benchekroum)
 - But not visible on Booking.com
 
-**Hasty Conclusion**: "SYNC BUG! P0! URGENT INVESTIGATION!"
+**Hasty conclusion**: "SYNC BUG! P0! URGENT INVESTIGATION!"
 
 ### What was missed (ZOOM OUT)
 
@@ -325,54 +325,54 @@ The real question should have been:
 
 > "Is this reservation SUPPOSED to be on Booking.com?"
 
-**Probable Answer**: No. It's a direct booking.
+**Probable answer**: No. It is a direct reservation.
 
-- Direct bookings are created on HotelRunner only
-- They are NOT synchronized to Booking.com automatically
+- Direct reservations are created on HotelRunner only
+- They are NOT automatically synchronized to Booking.com
 - Dates must be manually blocked on Booking.com
 
 ### The real problem
 
-It's not a "sync bug" — it's:
+This is not a "sync bug" — it is:
 
-1. A knowledge gap on how platforms operate
-2. An undocumented workflow for direct bookings
+1. A knowledge gap about how the platforms work
+2. An undocumented workflow for direct reservations
 
 ### Anti-Tunnel Vision Pattern
 
 Before creating a "bug investigation" mission, ALWAYS ask:
 
 ```
-1. Is it a bug or behavior that I don't understand?
-2. Did I ZOOM OUT on the business context?
-3. Did I check baseline assumptions?
+1. Is this a bug or a behavior I don't understand?
+2. Have I ZOOMED OUT on the business context?
+3. Have I verified the basic assumptions?
 ```
 
-### Associated Documentation
+### Related documentation
 
 - Full strategy: `docs/strategic/2025-12-28-platform-mastery-strategy.md`
 - Skill: `.claude/skills/tunnel-vision-prevention/`
 
 ---
 
-## [2025-12-28] Platforms Knowledge Gap
+## [2025-12-28] Platform Knowledge Gap
 
-### Observation
+### Finding
 
-Neither AI agents nor Omar truly master:
+Neither AI agents nor Omar fully understand:
 
 - HotelRunner (Channel Manager)
 - Booking.com Extranet
-- Room mapping between the two
+- The room mapping between the two
 - Synchronization flows
 
 ### Risk
 
-Without this mastery:
+Without this understanding:
 
-- Possible booking errors
-- Misunderstood sync problems
-- Tunnel vision on "bugs" that aren't bugs
+- Possible reservation errors
+- Misunderstood sync issues
+- Tunnel vision on "bugs" that are not bugs
 
 ### Plan
 
@@ -381,8 +381,8 @@ A "Platform Mastery" project is documented in:
 
 ### Lesson learned
 
-> **Before operating on a platform, ensure we understand it.**
-> If we don't understand → document the gap and plan the learning.
+> **Before operating on a platform, make sure you understand it.**
+> If you don't understand → document the gap and plan the learning.
 
 ---
 
@@ -390,26 +390,26 @@ A "Platform Mastery" project is documented in:
 
 ### Discovery
 
-To modify the price during a manual booking on HotelRunner:
+To modify the price during a manual reservation on HotelRunner:
 
 ### Path
 
 ```
-Reservations > New Reservation > 2. Select room type
+Reservations > New reservation > 2. Select room type
 ```
 
 ### Steps
 
-1. Select the room type (e.g., "Superior Double Room")
-2. Click on the **"No. of rooms"** dropdown
+1. Select the room type (e.g., "Double Superior Room")
+2. Click on the **"Number of rooms"** dropdown
 3. Select the number of rooms (e.g., 1)
 4. Once selected → a **"Price adjustment"** link appears
-5. Click on "Price adjustment"
-6. A pop-up menu opens allowing price modification
+5. Click "Price adjustment"
+6. A pop-up menu opens allowing you to modify the price
 
 ### Use cases
 
-- Direct bookings with negotiated rate
+- Direct reservations with negotiated rate
 - Special promos not configured in the system
 - Friends/family rates
 
@@ -422,25 +422,25 @@ Reservations > New Reservation > 2. Select room type
 
 ## [2025-12-28] Chrome Extension — Issues with HotelRunner
 
-### Observed Problem
+### Observed problem
 
-The Claude in Chrome extension frequently loses connection with HotelRunner tabs. The tabs "detach" after a few interactions.
+The Claude in Chrome extension frequently loses connection with HotelRunner tabs. Tabs "detach" after a few interactions.
 
 ### Impact
 
-- Booking automation difficult
-- Requires frequent re-creation of tabs
+- Reservation automation is difficult
+- Requires frequently recreating tabs
 - Sometimes impossible to complete a task automatically
 
-### Current Workaround
+### Current workaround
 
 - Provide detailed manual instructions to Omar
-- Omar executes manually while the AI guides
+- Omar executes manually while AI guides
 
-### Future Investigation
+### Future investigation
 
-- Check if it's an extension permissions issue
+- Check if it is an extension permissions issue
 - Test with other browsers
-- Explore the HotelRunner API as an alternative
+- Explore HotelRunner API as an alternative
 
 ---

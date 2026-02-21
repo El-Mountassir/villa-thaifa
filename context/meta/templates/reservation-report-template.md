@@ -5,23 +5,23 @@ date: 'YYYY-MM-DD'
 lang: en
 ---
 
-# Template: Reservation Exploration Report
+## Template: Reservation Exploration Report
 
 > **Version**: 0.1.0-alpha.0 | **Based on**: Hotelogix, Cloudbeds, Smartsheet (3 sources triangulation)
 > **Usage**: Villa Thaifa operational reports
 
 ---
 
-## Instructions for Use
+## Instructions for use
 
 1. Copy this template to `~/Templates/ai/agents/clis/{ai-agent-cli}/output/YYYY/QQ/reports/{description}.md`
 2. Fill each section with current data
-3. Delete non-applicable sections
+3. Remove non-applicable sections
 4. Add custom sections if necessary
 
 ---
 
-# [REPORT TITLE]
+## [REPORT TITLE]
 
 **Exploration Date**: YYYY-MM-DD HH:MM
 **Platform**: HotelRunner
@@ -44,16 +44,16 @@ lang: en
 
 ### 1.2 Urgent Alerts
 
-| Priority | Alert         | Required Action | Deadline    |
+| Priority | Alert         | Action Required | Deadline    |
 | -------- | ------------- | --------------- | ----------- |
 | 🔴 P0    | [Description] | [Action]        | [Date/Time] |
 | 🟠 P1    | [Description] | [Action]        | [Date]      |
 
 ### 1.3 3-Point Summary
 
-1. **Key Point 1**: [Major discovery]
-2. **Key Point 2**: [Major discovery]
-3. **Key Point 3**: [Major discovery]
+1. **Key point 1**: [Major discovery]
+2. **Key point 2**: [Major discovery]
+3. **Key point 3**: [Major discovery]
 
 ---
 
@@ -61,25 +61,25 @@ lang: en
 
 ### 2.1 Overview
 
-| Total Pending | Urgent (< 24h) | This Week | This Month |
+| Total Pending | Urgent (< 24h) | This week | This month |
 | ------------- | -------------- | --------- | ---------- |
 | X             | X              | X         | X          |
 
 ### 2.2 Reservation Details
 
-| #   | Ref.   | Guest Name | Room  | Type   | Check-in | Check-out | Nights | Source       | Amount  | Status   | Action            |
-| --- | ------ | ---------- | ----- | ------ | -------- | --------- | ------ | ------------ | ------- | -------- | ----------------- |
-| 1   | HR-XXX | [Name]     | [No.] | [Type] | DD/MM    | DD/MM     | X      | [OTA/Direct] | XXX MAD | [Status] | [Required action] |
-| 2   |        |            |       |        |          |           |        |              |         |          |                   |
+| #   | Ref.   | Guest Name | Room | Type   | Check-in | Check-out | Nights | Source       | Amount  | Status   | Action        |
+| --- | ------ | ---------- | ---- | ------ | -------- | --------- | ------ | ------------ | ------- | -------- | ------------- |
+| 1   | HR-XXX | [Name]     | [N°] | [Type] | DD/MM    | DD/MM     | X      | [OTA/Direct] | XXX MAD | [Status] | [Action req.] |
+| 2   |        |            |      |        |          |           |        |              |         |          |               |
 
 ### 2.3 Status Legend
 
-| Status       | Meaning                  | Typical Action      |
-| ------------ | ------------------------ | ------------------- |
-| `PENDING`    | Waiting for confirmation | Confirm or cancel   |
-| `HOLD`       | Temporarily blocked      | Check expiration    |
-| `WAITLIST`   | Waitlist                 | Propose alternative |
-| `INCOMPLETE` | Missing info             | Contact guest       |
+| Status       | Meaning               | Action Type            |
+| ------------ | --------------------- | ---------------------- |
+| `PENDING`    | Awaiting confirmation | Confirm or cancel      |
+| `HOLD`       | Temporarily blocked   | Check expiration delay |
+| `WAITLIST`   | Waitlist              | Propose alternative    |
+| `INCOMPLETE` | Missing info          | Contact guest          |
 
 ---
 
@@ -103,20 +103,20 @@ lang: en
 
 ### 4.1 Status by Room
 
-| Room | Type               | Status      | Occupant      | Check-out | Notes |
-| ---- | ------------------ | ----------- | ------------- | --------- | ----- |
-| 1    | Deluxe Triple      | 🟢 Free     | -             | -         |       |
-| 2    | Deluxe Double      | 🔵 Occupied | [Name]        | DD/MM     |       |
-| 3    | Deluxe Triple      | 🟢 Free     | -             | -         |       |
-| 4    | Double Superior    | 🟡 Pending  | [Name?]       | DD/MM     |       |
-| 5    | Double Superior    | 🟢 Free     | -             | -         |       |
-| 6    | Executive Suite    | 🟢 Free     | -             | -         |       |
-| 7    | King Suite         | 🟢 Free     | -             | -         |       |
-| 8    | Deluxe Triple      | 🟢 Free     | -             | -         |       |
-| 9    | Family Suite       | 🟢 Free     | -             | -         |       |
-| 10   | Suite              | 🟢 Free     | -             | -         |       |
-| 11   | Family Suite       | 🟡 Pending  | [Current msg] | 21/12     |       |
-| 12   | Presidential Suite | 🟢 Free     | -             | -         |       |
+| Room | Type               | Status      | Occupant          | Check-out | Notes |
+| ---- | ------------------ | ----------- | ----------------- | --------- | ----- |
+| 1    | Deluxe Triple      | 🟢 Free     | -                 | -         |       |
+| 2    | Deluxe Double      | 🔵 Occupied | [Name]            | DD/MM     |       |
+| 3    | Deluxe Triple      | 🟢 Free     | -                 | -         |       |
+| 4    | Superior Double    | 🟡 Pending  | [Name?]           | DD/MM     |       |
+| 5    | Superior Double    | 🟢 Free     | -                 | -         |       |
+| 6    | Executive Suite    | 🟢 Free     | -                 | -         |       |
+| 7    | King Suite         | 🟢 Free     | -                 | -         |       |
+| 8    | Deluxe Triple      | 🟢 Free     | -                 | -         |       |
+| 9    | Family Suite       | 🟢 Free     | -                 | -         |       |
+| 10   | Suite              | 🟢 Free     | -                 | -         |       |
+| 11   | Family Suite       | 🟡 Pending  | [Current mission] | 21/12     |       |
+| 12   | Presidential Suite | 🟢 Free     | -                 | -         |       |
 
 ### 4.2 Legend
 
@@ -140,7 +140,7 @@ lang: en
 | Website          | X        | X%      |       |
 | Booking.com      | X        | X%      |       |
 | Expedia          | X        | X%      |       |
-| Other OTA        | X        | X%      |       |
+| Other OTAs       | X        | X%      |       |
 
 ### 5.2 Observed Patterns
 
@@ -149,9 +149,9 @@ lang: en
 
 ### 5.3 Identified Risks
 
-| Risk     | Probability     | Impact              | Mitigation |
-| -------- | --------------- | ------------------- | ---------- |
-| [Risk 1] | High/Medium/Low | Critical/High/Minor | [Action]   |
+| Risk     | Probability     | Impact                   | Mitigation |
+| -------- | --------------- | ------------------------ | ---------- |
+| [Risk 1] | High/Medium/Low | Critical/Important/Minor | [Action]   |
 
 ---
 
@@ -163,7 +163,7 @@ lang: en
 | --- | -------- | ----- | -------- | ---------- |
 | 1   | [Action] | [Who] | [When]   | [Blocker?] |
 
-### 6.2 This Week's Actions (P2-P3)
+### 6.2 Actions This Week (P2-P3)
 
 | #   | Action   | Owner | Deadline |
 | --- | -------- | ----- | -------- |
@@ -180,10 +180,10 @@ lang: en
 
 ### 7.1 Navigation Logs
 
-```
+```text
 [HH:MM] Action performed
 [HH:MM] Page visited
-[HH:MM] Data extracted
+[HH:MM] Extracted data
 ```
 
 ### 7.2 Screenshots
@@ -193,7 +193,7 @@ lang: en
 
 ### 7.3 Technical Notes
 
-- [Platform observations]
+- [Observations on the platform]
 - [Bugs or unexpected behaviors]
 - [Improvement suggestions]
 
@@ -201,14 +201,14 @@ lang: en
 
 ## 8. Metadata
 
-| Field                    | Value                 |
-| ------------------------ | --------------------- |
-| **Created by**           | [Agent/Omar]          |
-| **Created date**         | YYYY-MM-DD HH:MM      |
-| **Last update**          | YYYY-MM-DD HH:MM      |
-| **Version**              | 1.0                   |
-| **Exploration duration** | X min                 |
-| **Linked files**         | [Links to other docs] |
+| Field                | Value                 |
+| -------------------- | --------------------- |
+| **Created by**       | [Agent/Omar]          |
+| **Creation Date**    | YYYY-MM-DD HH:MM      |
+| **Last Update**      | YYYY-MM-DD HH:MM      |
+| **Version**          | 1.0                   |
+| **Exploration Time** | X min                 |
+| **Linked Files**     | [Links to other docs] |
 
 ---
 

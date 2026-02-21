@@ -27,12 +27,6 @@
 - **Resolution needed**: Physical measurement or Said confirmation
 - **Label**: Awaiting: Said
 
-### 4. Smoking Policy
-- **Source A**: `data/property/property-config.json` → "TODO"
-- **Source B**: Expedia Step 4 extraction → "Designated smoking areas"
-- **Source C**: `context/meta/knowledge/booking-com-data.md` → not mentioned
-- **Resolution needed**: Confirm Expedia value is correct, then apply to property-config.json
-- **Label**: Awaiting: Omar (can confirm from Expedia data)
 
 ---
 
@@ -42,6 +36,7 @@
 |------|----------|------------|--------|
 | 2026-02-21 | Check-out time (11:00 vs 13:30) | 12:00 (Omar decision) | Expedia Step 3 Q&A |
 | 2026-02-21 | VAT treatment (inclusive vs exclusive) | Exclusive / HT (Said confirmed) | Expedia Step 3 Q&A |
+| 2026-02-21 | Smoking Policy | Designated smoking areas | Expedia Step 4 extraction |
 
 ---
 

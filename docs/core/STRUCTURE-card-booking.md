@@ -2,7 +2,7 @@
 
 > Role: Booking.com channel management agent
 
-_Generated: 2026-02-19 11:48 UTC_
+_Generated: 2026-02-21 02:37 UTC_
 
 ---
 
@@ -10,8 +10,8 @@ _Generated: 2026-02-19 11:48 UTC_
 
 Paths essential for this role:
 
-- `data/rooms/` (397 files)
-- `data/bookings/` (5 files)
+- `data/rooms/` (344 files)
+- `data/bookings/` (4 files)
 - `data/operations/channels.json` (1 files)
 - `data/finance/rates.json` (1 files)
 - `context/agents/booking/` (1 files)

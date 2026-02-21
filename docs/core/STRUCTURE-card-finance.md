@@ -2,7 +2,7 @@
 
 > Role: Financial and billing agent
 
-_Generated: 2026-02-19 11:48 UTC_
+_Generated: 2026-02-21 02:37 UTC_
 
 ---
 
@@ -10,16 +10,16 @@ _Generated: 2026-02-19 11:48 UTC_
 
 Paths essential for this role:
 
-- `data/finance/` (2 files)
-- `data/bookings/` (5 files)
-- `data/rooms/` (397 files)
+- `data/finance/` (3 files)
+- `data/bookings/` (4 files)
+- `data/rooms/` (344 files)
 
 ## Reference Paths
 
 Useful context (read as needed):
 
-- `context/meta/knowledge/finance-README.md` (1 files)
-- `context/meta/knowledge/accounting.md` (1 files)
+- `context/meta/knowledge/finance-README.md`
+- `context/meta/knowledge/accounting.md`
 
 ## Ignored Paths
 

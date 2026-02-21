@@ -1,3 +1,9 @@
+⚠️ **SUPERSEDED** — This snapshot is outdated (last updated 2026-02-03). For current operational state, contact info, and business intelligence, see the canonical source: [`data/admin/client/PROFILE.md`](../../data/admin/client/PROFILE.md) (updated 2026-02-21).
+
+**Note**: This file's "Key Unknowns" section (lines 120-133) may still contain discussion points, but most contact fields, operational state, and project details are now stale.
+
+---
+
 # Villa Thaifa -- Client Context
 
 **Last Updated**: 2026-02-03

@@ -2,7 +2,7 @@
 
 > Role: Web browsing and automation agent
 
-_Generated: 2026-02-19 11:48 UTC_
+_Generated: 2026-02-21 02:37 UTC_
 
 ---
 
@@ -10,15 +10,15 @@ _Generated: 2026-02-19 11:48 UTC_
 
 Paths essential for this role:
 
-- `context/agents/browser/` (4 files)
-- `data/property/` (59 files)
-- `data/rooms/` (397 files)
+- `context/agents/browser/` (5 files)
+- `data/property/` (61 files)
+- `data/rooms/` (344 files)
 
 ## Reference Paths
 
 Useful context (read as needed):
 
-- `context/meta/knowledge/` (51 files)
+- `context/meta/knowledge/` (20 files)
 - `docs/workflows/` (2 files)
 
 ## Ignored Paths

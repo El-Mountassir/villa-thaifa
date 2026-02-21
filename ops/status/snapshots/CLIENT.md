@@ -1,3 +1,7 @@
+⚠️ **SUPERSEDED** — This file is outdated. For current client information, see the canonical source: [`data/admin/client/PROFILE.md`](../../data/admin/client/PROFILE.md). Last updated 2026-02-21.
+
+---
+
 # Villa Thaifa — Client Profile
 
 ## Overview

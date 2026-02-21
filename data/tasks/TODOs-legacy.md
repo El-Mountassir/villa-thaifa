@@ -1,3 +1,6 @@
+> **SUPERSEDED** — Task tracking moved to [Linear](https://linear.app/el-mountassir) (VT team). This file is retained as historical reference only.
+> Original date: 2025-12-20. Superseded by Linear migration Feb 2026.
+
 # Tasks — Villa Thaifa
 
 > Last updated : 2025-12-20 21:45
