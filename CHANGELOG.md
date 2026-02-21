@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Added
 
+- integrate MoSCoW+Eisenhower priority system (P0-P5) + AGENTS.md work-overview reference — - Add Priority System section (matrix + legend) to work-overview.md and template
+- add Cascade Update rule + consolidate VT app vision + commit policy ACT — - universal.md: new Cascade Update rule (grep before declaring data edit done)
+- add json-render evaluation decision + VT app vision seed — json-render REJECTED (1/10 after spec fix — renderer broken).
+- add PROJECT-CONTRACT.md + comprehensive work-overview.md — - PROJECT-CONTRACT.md: agent output paths, platform conventions, data flow rules
+- consolidate Said questions (57 items) + DRY enforcement + data fixes — - Create said-pending-questions.md: single registry of all 57 pending Said items
+- enrich property-config.json with location data from external sources — - GPS confirmed (Google Maps, more precise: 31.6539756, -7.8778661)
 - rename 160 spec images with descriptive names and normalized directories — - 14 subdirectories renamed to lowercase/hyphenated convention
 - VT-46 triage (185 files archived), Google Maps data, image visual review — - VT-46: Triage 212 files — 27 KEEP, 185 ARCHIVED across 3 directories
 - G2-G15 fixes, data/specs migration, old repo refs, Said checklist — - Migrate data/specs/ non-image files (36 archived to ops/archive/data-specs/)
@@ -81,6 +87,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Fixed
 
+- close 3 AGENTS.md gaps — stale counts, Said file roles, PROJECT-CONTRACT ref — - Open Loops: update file counts (54→19, 96→14, 62→3), clarify facilities.md status
+- resolve 11 Said items + pets policy (C1) + enrich work-overview with Linear fields — - Mark 11 Said pending items as RESOLVED in Resolution Log (from repo cross-reference)
+- correct room prices in rates.json + add truth.md SSOT file — Prices confirmed via HotelRunner deployment (2026-01-13) + Booking.com sync.
+- fix 181 stale path references across 54 files (data/specs/ and data/core/ → canonical) — All remaining data/specs/ and data/core/ references replaced with current
+- complete repo consolidation phase 4 — relocate docs/, archive legacy, fix snapshots — - Relocate 27 misplaced docs/ files to correct dirs per AGENTS.md contract
 - repo consolidation phases 1-3 + partial phase 4 — Phase 1 — Defuse landmines:
 - mark all room rates CONFIRMED + locked until Dec 2026 — - rates.json: add locked_until and lock_source fields
 - remove 53 verified duplicate images, consolidate credential eval — - Remove 45 DSC7296-7319 duplicates from R05-R09 (MD5 verified vs R04)
