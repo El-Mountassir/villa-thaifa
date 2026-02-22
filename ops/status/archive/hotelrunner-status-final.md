@@ -11,6 +11,7 @@
 **Objectif**: Automatiser extraction données HotelRunner (réservations, calendrier, rapports)
 
 **Résultat**:
+
 - ✅ **Extraction fonctionnelle** : 96 réservations confirmées
 - ✅ **Toutes données accessibles** : 14 champs par réservation
 - ⚠️ **Automatisation partielle** : Nécessite intervention manuelle pour auth
@@ -22,6 +23,7 @@
 ### Browser Automation avec Session Active
 
 **Validé et opérationnel** :
+
 ```bash
 # 1. Ouvrir et s'authentifier
 agent-browser --headed open https://villa-thaifa.hotelrunner.com/login
@@ -37,6 +39,7 @@ agent-browser close
 ```
 
 **Données disponibles (confirmées)**:
+
 - Status, Canal, Nom client, Confirmation #
 - Dates check-in/check-out
 - Type chambre, Prix total, Paiement
@@ -44,6 +47,7 @@ agent-browser close
 - Date réservation, Nationalité
 
 **Performance**:
+
 - Temps: ~15 secondes pour 96 réservations
 - Fiabilité: 100% (tests réussis)
 - Complétude: 100% (tous champs accessibles)
@@ -57,11 +61,13 @@ agent-browser close
 **Problème**: `agent-browser --profile ~/.hotelrunner-profile` ne sauvegarde PAS les cookies
 
 **Conséquence**:
+
 - Session perdue à chaque fermeture browser
 - Authentification manuelle requise à chaque extraction
 - Automatisation complète bloquée
 
 **Investigation requise**:
+
 - Tester versions plus récentes agent-browser
 - Vérifier si bug connu
 - Évaluer alternatives (Selenium, Playwright)
@@ -72,23 +78,23 @@ agent-browser close
 
 ### Pour Agents Futurs
 
-| Document | Purpose | Status |
-|----------|---------|--------|
-| [OPTIONS-ANALYSIS.md](./OPTIONS-ANALYSIS.md) | Analyse 6 options, résultats POC | ✅ Complet |
-| [DECISION-BRIEF.md](./DECISION-BRIEF.md) | Brief décisionnel pour Omar | ✅ Complet |
-| [SETUP.md](./SETUP.md) | Progress tracking détaillé | ✅ À jour |
-| [EXTRACTION-GUIDE.md](./EXTRACTION-GUIDE.md) | Guide d'utilisation avec limitation | ✅ Mis à jour |
-| [TEST-RESULTS.md](./TEST-RESULTS.md) | Tests finaux et limitation | ✅ Créé |
-| [extract_reservations.py](./extract_reservations.py) | Script Python (automatique) | ⚠️ Bloqué par limitation |
-| [README.md](./README.md) | Quick reference | ✅ À jour |
-| [guide.md](./guide.md) | API REST guide (alternatif) | ✅ Existe |
+| Document                                             | Purpose                             | Status                   |
+| ---------------------------------------------------- | ----------------------------------- | ------------------------ |
+| [OPTIONS-ANALYSIS.md](./OPTIONS-ANALYSIS.md)         | Analyse 6 options, résultats POC    | ✅ Complet               |
+| [DECISION-BRIEF.md](./DECISION-BRIEF.md)             | Brief décisionnel pour Omar         | ✅ Complet               |
+| [SETUP.md](./SETUP.md)                               | Progress tracking détaillé          | ✅ À jour                |
+| [EXTRACTION-GUIDE.md](./EXTRACTION-GUIDE.md)         | Guide d'utilisation avec limitation | ✅ Mis à jour            |
+| [TEST-RESULTS.md](./TEST-RESULTS.md)                 | Tests finaux et limitation          | ✅ Créé                  |
+| [extract_reservations.py](./extract_reservations.py) | Script Python (automatique)         | ⚠️ Bloqué par limitation |
+| [README.md](./README.md)                             | Quick reference                     | ✅ À jour                |
+| [guide.md](./guide.md)                               | API REST guide (alternatif)         | ✅ Existe                |
 
 ### Dans /tmp (Références)
 
-| Document | Purpose |
-|----------|---------|
-| [hotelrunner-browser-test-results.md](../../tmp/hotelrunner-browser-test-results.md) | POC test complet |
-| [SESSION-SUMMARY-2026-01-24.md](../../tmp/SESSION-SUMMARY-2026-01-24.md) | Résumé session complète |
+| Document                                                                             | Purpose                 |
+| ------------------------------------------------------------------------------------ | ----------------------- |
+| [hotelrunner-browser-test-results.md](../../tmp/hotelrunner-browser-test-results.md) | POC test complet        |
+| [SESSION-SUMMARY-2026-01-24.md](../../tmp/SESSION-SUMMARY-2026-01-24.md)             | Résumé session complète |
 
 ### Mis à Jour
 
@@ -105,6 +111,7 @@ agent-browser close
 **✅ RECOMMANDÉ: Extraction Manuelle Quotidienne**
 
 **Procédure**:
+
 1. Chaque matin (ou selon besoin)
 2. Ouvrir browser headed et s'authentifier
 3. Exécuter extraction manuelle
@@ -116,11 +123,13 @@ agent-browser close
 **Effort**: 5-10 minutes/jour
 
 **Avantages**:
+
 - ✅ Fonctionne immédiatement
 - ✅ Données fiables et complètes
 - ✅ Pas de dépendance API (rate limits, callback)
 
 **Inconvénient**:
+
 - ⚠️ Intervention manuelle requise
 
 ### Moyen Terme (1-3 mois)
@@ -128,21 +137,25 @@ agent-browser close
 **Options à Explorer**:
 
 **Option 1: Résoudre Profile Persistence**
+
 - Investiguer versions agent-browser
 - Tester modes headed/headless
 - Reporter bug si confirmé
 
 **Option 2: Cookie Export/Import**
+
 - Script pour exporter cookies après auth
 - Réimporter au début de chaque session
 - Automatisation complète possible
 
 **Option 3: Alternative Tool**
+
 - Tester Selenium avec ChromeDriver
 - Tester Playwright (plus moderne)
 - Meilleure gestion profiles
 
 **Option 4: API HotelRunner**
+
 - Si domaine HTTPS disponible
 - Si webhooks temps réel nécessaires
 - Setup callback URL avec webhook.site
@@ -152,6 +165,7 @@ agent-browser close
 ### Long Terme (3+ mois)
 
 **Si volume/fréquence augmente**:
+
 - API HotelRunner pour automatisation complète
 - Webhooks temps réel si critiques
 - Système robuste avec monitoring
@@ -161,24 +175,28 @@ agent-browser close
 ## 📊 État Complet
 
 ### Recherche & Analyse
+
 - ✅ 6 options identifiées et analysées
 - ✅ Browser automation POC réussi
 - ✅ API HotelRunner explorée (en pause)
 - ✅ Décision professionnelle documentée
 
 ### Implémentation
+
 - ✅ Script Python créé (bloqué par limitation)
 - ✅ Extraction manuelle validée (96 réservations)
 - ✅ Documentation exhaustive créée
 - ⚠️ Automatisation complète en attente investigation
 
 ### Tests
+
 - ✅ POC browser automation: SUCCÈS
 - ✅ Extraction réelle données: SUCCÈS (96 réservations)
 - ❌ Script automatique: ÉCHEC (profile persistence)
 - ✅ Extraction manuelle: SUCCÈS
 
 ### Documentation
+
 - ✅ Agents futurs informés (AGENTS.md, CLAUDE.md)
 - ✅ Guides d'utilisation créés
 - ✅ Limitations documentées
@@ -191,16 +209,19 @@ agent-browser close
 **Pour Omar**:
 
 **Action Immédiate**:
+
 1. Choisir fréquence extraction (quotidien ? hebdomadaire ?)
 2. Tester extraction manuelle une fois
 3. Évaluer si cette approche suffit pour besoins actuels
 
 **Si approche manuelle acceptable**:
+
 - ✅ Continuer extraction manuelle selon besoin
 - ✅ Monitorer pendant 1 mois
 - ✅ Réévaluer si limitations apparaissent
 
 **Si automatisation critique**:
+
 - 🔍 Investiguer Option 2 ou 3 (cookie export ou alternative tool)
 - 🔍 Ou reconsidérer API si domaine HTTPS disponible
 
@@ -241,6 +262,7 @@ tmp/
 ## ✅ Checklist Finale
 
 ### Objectifs Atteints
+
 - [x] Analyser toutes options d'intégration (6 options)
 - [x] Tester browser automation (POC réussi)
 - [x] Valider accès données (96 réservations confirmées)
@@ -251,15 +273,17 @@ tmp/
 - [x] Proposer solutions contournement (4 options)
 
 ### Livrables
+
 - [x] Documentation analyse (OPTIONS-ANALYSIS.md, DECISION-BRIEF.md)
 - [x] Script extraction (extract_reservations.py)
 - [x] Guide utilisation (EXTRACTION-GUIDE.md)
 - [x] Test results (TEST-RESULTS.md, POC results)
 - [x] Screenshots (réservations, calendrier)
-- [x] Échantillons données (test-*.json)
+- [x] Échantillons données (test-\*.json)
 - [x] Mise à jour agents (AGENTS.md, CLAUDE.md, INDEX.md)
 
 ### Décision
+
 - [x] Browser automation recommandé (court terme)
 - [x] Extraction manuelle fonctionnelle
 - [x] Limitation documentée

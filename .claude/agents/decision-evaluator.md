@@ -19,7 +19,7 @@ context_to_load:
 
 dependencies: []
 
-tools: Read, Write, WebSearch, WebFetch
+tools: Read, Write, Edit, Bash, Glob, Grep, WebSearch, WebFetch
 output_format: decision_analysis_with_recommendation
 model: opus
 

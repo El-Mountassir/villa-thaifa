@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Added
 
+- scout Booking.com admin extranet — terrain map, room sizes, session learnings — - Admin extranet scouted via Playwright CLI (2FA + CAPTCHA documented)
+- add SYNC workflow step + Linear issues intake + MCP routing fix — - AGENTS.md: add SYNC checklist as step 5 of mandatory workflow
 - scrape Booking.com 2026-02-21 — update scores, facilities, resolve 7 Said items — - Review count: 80 → 86 (+6 reviews)
 - integrate MoSCoW+Eisenhower priority system (P0-P5) + AGENTS.md work-overview reference — - Add Priority System section (matrix + legend) to work-overview.md and template
 - add Cascade Update rule + consolidate VT app vision + commit policy ACT — - universal.md: new Cascade Update rule (grep before declaring data edit done)
@@ -29,6 +31,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Changed
 
+- add session ID to work-overview for resume
 - commit accumulated content updates across docs, data, and context — Batch of previously uncommitted changes: stakeholder profiles, facility
 - standardize browser-agent to generic global pattern with project context — Browser-agent.md now auto-discovers project-specific context from
 - move Linear docs to ~/omar/, add blocker labels, elevate linear-agent — - Move linear-workflow.md and linear-github-setup.md to ~/omar/protocols/

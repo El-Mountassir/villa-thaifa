@@ -20,7 +20,7 @@ context_to_load:
 
 dependencies: []
 
-tools: Read, Write, Edit, WebFetch, WebSearch
+tools: Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch
 output_format: agent_configuration_file
 model: opus
 color: red

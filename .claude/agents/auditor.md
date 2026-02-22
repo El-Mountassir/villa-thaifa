@@ -19,7 +19,7 @@ context_to_load:
 
 dependencies: []
 
-tools: Read, Write
+tools: Read, Write, Edit, Bash, Glob, Grep
 output_format: audit_report_with_verdict
 model: sonnet
 color: purple

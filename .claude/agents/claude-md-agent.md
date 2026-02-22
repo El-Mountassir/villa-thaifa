@@ -20,7 +20,7 @@ context_to_load:
 
 dependencies: []
 
-tools: Read, Edit, Write, Glob, WebSearch, WebFetch
+tools: Read, Edit, Write, Bash, Glob, WebSearch, WebFetch
 output_format: governance_update_report
 model: opus
 color: white
