@@ -14,15 +14,15 @@ Data is currently in markdown/JSON files. Need a database optimized for AI agent
 
 ## Options Evaluated
 
-| Option | Score | Status |
-|--------|-------|--------|
-| Neon (serverless PostgreSQL) | 7.95 | **Selected** |
-| Supabase (hosted PG + BaaS) | 7.70 | Runner-up |
-| Self-hosted PostgreSQL | 6.93 | Viable |
-| SQLite + Turso | 6.23 | Too limited |
-| Neo4j | 5.25 | Paradigm mismatch |
-| Airtable | 4.50 | Rate-limited |
-| Status Quo (files) | 2.80 | Inadequate |
+| Option                       | Score | Status            |
+| ---------------------------- | ----- | ----------------- |
+| Neon (serverless PostgreSQL) | 7.95  | **Selected**      |
+| Supabase (hosted PG + BaaS)  | 7.70  | Runner-up         |
+| Self-hosted PostgreSQL       | 6.93  | Viable            |
+| SQLite + Turso               | 6.23  | Too limited       |
+| Neo4j                        | 5.25  | Paradigm mismatch |
+| Airtable                     | 4.50  | Rate-limited      |
+| Status Quo (files)           | 2.80  | Inadequate        |
 
 ## Why Neon
 

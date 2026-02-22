@@ -1,7 +1,7 @@
 # 🤖 Villa Thaifa Agent Fleet (Registry)
 
 > **Location**: `.claude/agents/` > **Framework**: **Claude Code CLI** (Sub-agents)
-> **Orchestrator**: Antigravity (via Terminal)
+> **Orchestrator**: Nova
 
 ---
 
@@ -30,18 +30,18 @@
 
 ### 🚀 Utility & Meta
 
-| Agent                 | Role      | Capabilities                                | Model  |
-| :-------------------- | :-------- | :------------------------------------------ | :----- |
-| **`meta-agent`**      | Architect | **Creating NEW agents (Self-replication)**  | Opus   |
-| **`browser-agent`**   | Navigator | Web scraping, UI testing (Antigravity Core) | Sonnet |
-| **`research-agent`**  | Scout     | Documentation search, Fast info gathering   | Haiku  |
-| **`claude-md-agent`** | Librarian | Maintaining `CLAUDE.md` / `GEMINI.md`       | Opus   |
+| Agent                 | Role      | Capabilities                               | Model  |
+| :-------------------- | :-------- | :----------------------------------------- | :----- |
+| **`meta-agent`**      | Architect | **Creating NEW agents (Self-replication)** | Opus   |
+| **`browser-agent`**   | Navigator | Web scraping, UI testing                   | Sonnet |
+| **`research-agent`**  | Scout     | Documentation search, Fast info gathering  | Haiku  |
+| **`claude-md-agent`** | Librarian | Maintaining `CLAUDE.md` / `GEMINI.md`      | Opus   |
 
 ---
 
 ## 📜 Usage Protocol
 
-1.  **Define the Task**: "I need to check room availability."
-2.  **Select the Agent**: "`calendar-agent` is best for this."
-3.  **Context Injection**: `claude @.claude/agents/calendar-agent.md "Check availability for..."`
-4.  **Verification**: Antigravity reviews the output.
+1. **Define the Task**: "I need to check room availability."
+2. **Select the Agent**: "`calendar-agent` is best for this."
+3. **Context Injection**: `claude @.claude/agents/calendar-agent.md "Check availability for..."`
+4. **Verification**: Nova & Omar reviews the output.

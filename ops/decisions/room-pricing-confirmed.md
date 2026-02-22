@@ -8,20 +8,20 @@
 
 ## Confirmed Rates (EUR, per night)
 
-| Room | Rate (EUR) | Category                    |
-|------|------------|-----------------------------|
-| R01  | 169€       | Chambre Triple De Luxe      |
-| R02  | 149€       | Chambre Double De Luxe      |
-| R03  | 169€       | Chambre Triple De Luxe      |
-| R04  | 159€       | Chambre Double Superieure   |
-| R05  | 159€       | Chambre Double Superieure   |
-| R06  | 179€       | Suite Executive             |
-| R07  | 329€       | Suite De Luxe King Size     |
-| R08  | 169€       | Chambre Triple De Luxe      |
-| R09  | 189€       | Suite Familiale             |
-| R10  | 179€       | Suite                       |
-| R11  | 189€       | Suite Familiale             |
-| R12  | 449€       | Suite Presidentiel          |
+| Room | Rate (EUR) | Category                  |
+| ---- | ---------- | ------------------------- |
+| R01  | 169€       | Chambre Triple De Luxe    |
+| R02  | 149€       | Chambre Double De Luxe    |
+| R03  | 169€       | Chambre Triple De Luxe    |
+| R04  | 159€       | Chambre Double Superieure |
+| R05  | 159€       | Chambre Double Superieure |
+| R06  | 179€       | Suite Executive           |
+| R07  | 329€       | Suite De Luxe King Size   |
+| R08  | 169€       | Chambre Triple De Luxe    |
+| R09  | 189€       | Suite Familiale           |
+| R10  | 179€       | Suite                     |
+| R11  | 189€       | Suite Familiale           |
+| R12  | 449€       | Suite Presidentiel        |
 
 ## Notable
 
@@ -31,6 +31,7 @@
 ## Changes Applied
 
 `data/finance/rates.json` updated:
+
 - R02: 159€ → 149€
 - R04: 149€ → 159€
 - R05: 149€ → 159€

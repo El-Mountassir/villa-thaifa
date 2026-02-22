@@ -9,20 +9,20 @@
 
 ## Confirmed Prices (EUR, per night)
 
-| Room | Price (EUR) | Internal Name           |
-| ---- | ----------- | ----------------------- |
-| R01  | 169 EUR     | Deluxe Triple Room      |
-| R02  | 159 EUR     | Deluxe Double Room      |
-| R03  | 169 EUR     | Deluxe Triple Room      |
-| R04  | 149 EUR     | Double Room Superior    |
-| R05  | 149 EUR     | Double Room Superior    |
-| R06  | 169 EUR     | Executive Suite         |
-| R07  | 329 EUR     | Deluxe King Suite       |
-| R08  | 169 EUR     | Deluxe Triple Room      |
-| R09  | 189 EUR     | Family Suite            |
-| R10  | 179 EUR     | Suite                   |
-| R11  | 189 EUR     | Family Suite            |
-| R12  | 449 EUR     | Presidential Suite      |
+| Room | Price (EUR) | Internal Name        |
+| ---- | ----------- | -------------------- |
+| R01  | 169 EUR     | Deluxe Triple Room   |
+| R02  | 159 EUR     | Deluxe Double Room   |
+| R03  | 169 EUR     | Deluxe Triple Room   |
+| R04  | 149 EUR     | Double Room Superior |
+| R05  | 149 EUR     | Double Room Superior |
+| R06  | 169 EUR     | Executive Suite      |
+| R07  | 329 EUR     | Deluxe King Suite    |
+| R08  | 169 EUR     | Deluxe Triple Room   |
+| R09  | 189 EUR     | Family Suite         |
+| R10  | 179 EUR     | Suite                |
+| R11  | 189 EUR     | Family Suite         |
+| R12  | 449 EUR     | Presidential Suite   |
 
 ---
 

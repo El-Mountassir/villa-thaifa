@@ -13,7 +13,3 @@
 - **Browser Agent** (Antigravity): Can scrape, test, and debug web UIs.
 - **Artifacts**: Always generate `implementation_plan.md` before coding.
 - **Knowledge**: Write strictly to `docs/specs/knowledge/`.
-
-## The "Golden Rule"
-
-**Context First**: Always check `GEMINI.md` -> `AGENTS.md` before acting.

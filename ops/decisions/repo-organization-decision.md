@@ -81,15 +81,15 @@ Full analysis: `~/omar/knowledge/research/development/repo-organization/governan
 
 Decisions (all approved 2026-02-16):
 
-| # | Decision | Choice | Notes |
-|---|----------|--------|-------|
-| M | Villa Thaifa approach | Incremental fix | Score 7.8/10. Archive /context/, tidy structure, add governance, merge to main. |
-| 1 | Template engine | Copier | External tool with Jinja2, YAML config, template lifecycle management. |
-| 2 | Workflow in CONTRIBUTING.md | Preset-specific | SCOUT/REPORT for ops, Fork/Branch for library, etc. |
-| 3 | Git/GitHub init | Ask-first | Skill asks before git init and GitHub creation. |
-| 4 | Governance templates | Human-standard (with AI adaptation TBD) | Standard open-source format. Pending /decide on whether to adapt for AI agents. |
-| 5 | Skill name | /repo-bootstrap | Clearest combination of scope + intent. |
-| 6 | Implementation | Skill-only (+ GitHub Template Repos later) | Claude Code skill first. GitHub template repos as future enhancement. |
+| #   | Decision                    | Choice                                     | Notes                                                                           |
+| --- | --------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------- |
+| M   | Villa Thaifa approach       | Incremental fix                            | Score 7.8/10. Archive /context/, tidy structure, add governance, merge to main. |
+| 1   | Template engine             | Copier                                     | External tool with Jinja2, YAML config, template lifecycle management.          |
+| 2   | Workflow in CONTRIBUTING.md | Preset-specific                            | SCOUT/REPORT for ops, Fork/Branch for library, etc.                             |
+| 3   | Git/GitHub init             | Ask-first                                  | Skill asks before git init and GitHub creation.                                 |
+| 4   | Governance templates        | Human-standard (with AI adaptation TBD)    | Standard open-source format. Pending /decide on whether to adapt for AI agents. |
+| 5   | Skill name                  | /repo-bootstrap                            | Clearest combination of scope + intent.                                         |
+| 6   | Implementation              | Skill-only (+ GitHub Template Repos later) | Claude Code skill first. GitHub template repos as future enhancement.           |
 
 ---
 

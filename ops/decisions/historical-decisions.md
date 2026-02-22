@@ -58,11 +58,11 @@ Created `.md` file with metadata when Omar needed `.txt` ready to copy.
 
 ### Correction
 
-| Type | Format | Naming |
-|------|--------|--------|
+| Type             | Format | Naming                             |
+| ---------------- | ------ | ---------------------------------- |
 | WhatsApp message | `.txt` | `YYYY-MM-DD-message-[subject].txt` |
-| Client report | `.pdf` | `report-[subject]-YYYY-MM-DD.pdf` |
-| Internal notes | `.md` | Free |
+| Client report    | `.pdf` | `report-[subject]-YYYY-MM-DD.pdf`  |
+| Internal notes   | `.md`  | Free                               |
 
 ### Lesson
 
@@ -112,10 +112,10 @@ Create centralized `state/` structure for all state information.
 
 ### Chosen Approach
 
-| Decision | Omar's Choice |
-|----------|---------------|
-| Data migration | **Strict SSOT** — Remove state sections from reports |
-| Historical level | **Complete** — Changelogs, dated snapshots |
+| Decision         | Omar's Choice                                        |
+| ---------------- | ---------------------------------------------------- |
+| Data migration   | **Strict SSOT** — Remove state sections from reports |
+| Historical level | **Complete** — Changelogs, dated snapshots           |
 
 ### Lesson
 
