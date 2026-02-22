@@ -1,6 +1,8 @@
-# Guest Transport — Villa Thaifa
+# Services — Villa Thaifa
 
-## Context
+## Transport
+
+### Context
 
 Guests frequently ask about transportation options:
 
@@ -13,7 +15,7 @@ State-approved Marrakech transport company, vetted and validated by Mr. Said.
 
 Special rate for our guests: 200 MAD per trip (airport or city center).
 
-## Contact
+### Contact
 
 Mr. Zakaria (Transport) — last name unknown
 

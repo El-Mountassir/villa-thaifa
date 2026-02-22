@@ -33,6 +33,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Changed
 
+- triage context/meta/knowledge/ — relocate 19 of 22 files to correct directories — - rules.md → context/agents/hotelrunner/ (platform ops rules, agent-facing, HR/BC specific)
 - expand agent tool lists + minor hotelrunner archive fix — - auditor: add Edit, Bash, Glob, Grep (was Read, Write only)
 - add session ID to work-overview for resume
 - commit accumulated content updates across docs, data, and context — Batch of previously uncommitted changes: stakeholder profiles, facility
