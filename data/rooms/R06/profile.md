@@ -16,7 +16,7 @@
 - **Layout**: [x] Laptop friendly workspace, [ ] Desk (No)
 - **Features**: Safe (Coffre fort) [assumed]
 - **Mini bar**: owner_pending <!-- Confirmed presence of in-room mini bar. Source required. -->
-- **Pricing**: 179 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
+- **Pricing**: 169 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 
 ### R06 — Executive Suite
@@ -64,8 +64,8 @@ max_occupancy: 3
 smoking_allowed: false
 has_kitchen: false
 size_m2: 40
-base_rate_mad: 1919
-base_rate_eur: 179
+base_rate_mad: 1812
+base_rate_eur: 169
 beds:
   - type: king
     size_cm: 200

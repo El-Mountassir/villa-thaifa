@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Added
 
+- room schema governance + safe/minibar data + price fixes — - Add Room Schema Change Protocol to AGENTS.md (template-first rule)
 - scout Booking.com admin extranet — terrain map, room sizes, session learnings — - Admin extranet scouted via Playwright CLI (2FA + CAPTCHA documented)
 - add SYNC workflow step + Linear issues intake + MCP routing fix — - AGENTS.md: add SYNC checklist as step 5 of mandatory workflow
 - scrape Booking.com 2026-02-21 — update scores, facilities, resolve 7 Said items — - Review count: 80 → 86 (+6 reviews)
