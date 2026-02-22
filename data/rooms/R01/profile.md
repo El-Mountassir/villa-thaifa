@@ -14,6 +14,8 @@
 - **Kitchen**: [ ] No
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
 - **Layout**: [x] Laptop friendly workspace, [ ] Desk (No)
+- **Features**: Safe (Coffre fort) [assumed]
+- **Mini bar**: owner_pending <!-- Confirmed presence of in-room mini bar. Source required. -->
 - **Pricing**: 169 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 ### R01 — Deluxe Triple Room
@@ -48,14 +50,14 @@
 
 ```yaml
 room_id: R01
-room_number: "01"
+room_number: '01'
 category_code: DELUXE_TRIPLE
 internal_name: Deluxe Triple Room
 expedia_type: Triple Room
 booking_label: Deluxe Triple Room
 booking_label_fr: Chambre Triple de Luxe
 floor: Ground Floor
-capacity: "3 adults"
+capacity: '3 adults'
 max_occupancy: 3
 smoking_allowed: false
 has_kitchen: false
@@ -75,7 +77,8 @@ access_notes: null
 outdoor: Furnished patio (Ground Floor)
 bathroom: Shower/tub combination; Hair dryer
 climate: Independent air conditioning; Heating control
-layout: Laptop-friendly workspace
+layout: Laptop-friendly workspace; Safe (Coffre fort) [assumed]
+mini_bar: owner_pending # confirmed=verified present, absent=verified absent, owner_pending=awaiting Said
 data_confidence: owner_pending
 status: VERIFIED
 ```

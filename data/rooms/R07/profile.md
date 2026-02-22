@@ -14,7 +14,8 @@
 - **Kitchen**: [ ] No
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
 - **Layout**: [x] Laptop friendly workspace, [x] Separate sitting area, [x] Separate dining area, [ ] Desk (No)
-- **Features**: Fireplace
+- **Features**: Fireplace, Safe (Coffre fort) [assumed]
+- **Mini bar**: owner_pending <!-- Confirmed presence of in-room mini bar. Source required. -->
 - **Pricing**: 329 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 
@@ -81,7 +82,8 @@ access_notes: null
 outdoor: Furnished balcony; ~80-100 m² terrace
 bathroom: Shower/tub combination; Hair dryer
 climate: Independent air conditioning; Heating control
-layout: Laptop-friendly workspace; Separate sitting area; Separate dining area; Fireplace
+layout: Laptop-friendly workspace; Separate sitting area; Separate dining area; Fireplace; Safe (Coffre fort) [assumed]
+mini_bar: owner_pending # confirmed=verified present, absent=verified absent, owner_pending=awaiting Said
 data_confidence: owner_pending
 status: VERIFIED
 ```

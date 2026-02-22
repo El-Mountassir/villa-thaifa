@@ -326,6 +326,20 @@ This repo is **Villa Thaifa operations** — property data, rooms, bookings, gue
 
 LHCM-OS (Lightweight Hotel Channel Management OS) is a separate, broader product vision where Villa Thaifa is the first pilot. LHCM-OS lives at `~/omar/professional/projects/lhcm-os/` — NOT in this repo. You may reference LHCM-OS docs but do not duplicate or merge them here.
 
+## Room Schema Change Protocol
+
+When adding, removing, or modifying any field in room profiles (`data/rooms/R*/profile.md`):
+
+**MANDATORY sequence — no exceptions:**
+1. Update `context/meta/templates/room-profile-template.md` FIRST
+2. Get approval (or proceed if autonomous tier allows)
+3. Apply the change to ALL 12 room profiles (R01-R12) in one operation
+4. Verify all 12 profiles match the updated template
+
+**Self-check**: "Am I about to edit a room profile field that isn't reflected in the template?" If yes -> update the template first.
+
+**Why**: The template is the schema contract. Rooms diverging from the template = silent data drift = broken agents downstream.
+
 ## Core Principles
 
 @docs/core/PRINCIPLES.md

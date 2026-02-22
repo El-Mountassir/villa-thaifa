@@ -13,7 +13,9 @@
 - **Kitchen**: [ ] No
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
 - **Layout**: [x] Laptop friendly workspace, [ ] Desk (No)
-- **Pricing**: 159 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
+- **Features**: Safe (Coffre fort) [assumed]
+- **Mini bar**: owner_pending <!-- Confirmed presence of in-room mini bar. Source required. -->
+- **Pricing**: 149 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 
 ### R04 — Double Room Superior
@@ -62,7 +64,7 @@ smoking_allowed: false
 has_kitchen: false
 size_m2: 24
 base_rate_mad: 1704
-base_rate_eur: 159
+base_rate_eur: 149
 beds:
   - type: king
     size_cm: 200
@@ -74,7 +76,8 @@ access_notes: Confirmed via Booking screenshot (2026-02-13)
 outdoor: Furnished patio
 bathroom: Shower/tub combination; Hair dryer
 climate: Independent air conditioning; Heating control
-layout: Laptop-friendly workspace
+layout: Laptop-friendly workspace; Safe (Coffre fort) [assumed]
+mini_bar: owner_pending # confirmed=verified present, absent=verified absent, owner_pending=awaiting Said
 data_confidence: verified
 status: VERIFIED
 ```

@@ -27,6 +27,7 @@
   - [Property-Wide: Facilities](#property-wide-facilities)
     - [Spa / Hammam](#spa--hammam)
     - [Pool](#pool)
+    - [In-Room Safe (Coffre fort)](#in-room-safe-coffre-fort)
     - [Garden](#garden)
     - [Hall / Reception](#hall--reception)
   - [Property-Wide: Policies and Services](#property-wide-policies-and-services)
@@ -67,7 +68,7 @@
 - [ ] **Terrace**: Listed as having a 40 m² furnished terrace — is this correct?
       Correct? Yes / No — Actual terrace size: **\_\_\_** m²
 
-- ~~**Rate (PRIORITY)**~~: **RESOLVED** — Rate confirmed at 149 EUR/night, locked until 2026-12-31.
+- ~~**Rate (PRIORITY)**~~: **RESOLVED** — Rate confirmed at 159 EUR/night, locked until 2026-12-31.
 
 ---
 
@@ -96,7 +97,7 @@
 - [ ] **Floor**: Not explicitly confirmed — is this room on the Ground Floor?
       Floor: **\_\_\_** (e.g., Ground Floor / First Floor / Second Floor)
 
-- ~~**Rate (PRIORITY)**~~: **RESOLVED** — Rate confirmed at 159 EUR/night, locked until 2026-12-31.
+- ~~**Rate (PRIORITY)**~~: **RESOLVED** — Rate confirmed at 149 EUR/night, locked until 2026-12-31.
 
 ---
 
@@ -113,7 +114,7 @@
 - [ ] **Balcony**: Listed as having a furnished balcony — is this correct?
       Correct? Yes / No — Notes: \***\*\*\*\*\***\_\_\_\***\*\*\*\*\***
 
-- ~~**Rate (PRIORITY)**~~: **RESOLVED** — Rate confirmed at 159 EUR/night, locked until 2026-12-31.
+- ~~**Rate (PRIORITY)**~~: **RESOLVED** — Rate confirmed at 149 EUR/night, locked until 2026-12-31.
 
 ---
 
@@ -130,7 +131,7 @@
 - [ ] **View**: Listed as Pool + Atlas Mountain + Garden views — is this correct?
       Correct? Yes / No — If no, actual view(s): \***\*\*\*\*\***\_\_\_\***\*\*\*\*\***
 
-- ~~**Rate (PRIORITY)**~~: **RESOLVED** — Rate confirmed at 179 EUR/night, locked until 2026-12-31.
+- ~~**Rate (PRIORITY)**~~: **RESOLVED** — Rate confirmed at 169 EUR/night, locked until 2026-12-31.
 
 ---
 
@@ -273,6 +274,11 @@ R12 size and floor are already confirmed from multiple sources. Only one item ne
 
 - [ ] **Pool bar**: Is there a pool bar?
       Yes / No — If yes, what does it serve? \***\*\*\*\*\***\_\_\_\***\*\*\*\*\***
+
+### In-Room Safe (Coffre fort)
+
+- [ ] **Safe in all rooms**: Based on Booking.com listing, we assume every room has its own in-room safe. Is this correct?
+      All 12 rooms? Yes / No — If no, which rooms do NOT have a safe: ___________
 
 ### Garden
 

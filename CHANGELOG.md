@@ -31,6 +31,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Changed
 
+- expand agent tool lists + minor hotelrunner archive fix — - auditor: add Edit, Bash, Glob, Grep (was Read, Write only)
 - add session ID to work-overview for resume
 - commit accumulated content updates across docs, data, and context — Batch of previously uncommitted changes: stakeholder profiles, facility
 - standardize browser-agent to generic global pattern with project context — Browser-agent.md now auto-discovers project-specific context from

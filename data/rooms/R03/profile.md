@@ -14,6 +14,8 @@
 - **Kitchen**: [ ] No
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
 - **Layout**: [x] Laptop friendly workspace, [ ] Desk (No)
+- **Features**: Safe (Coffre fort) [assumed]
+- **Mini bar**: owner_pending <!-- Confirmed presence of in-room mini bar. Source required. -->
 - **Pricing**: 169 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 
@@ -77,7 +79,8 @@ access_notes: null
 outdoor: Furnished patio; Small terrace (~3-4 m²)
 bathroom: Shower/tub combination; Hair dryer
 climate: Independent air conditioning; Heating control
-layout: Laptop-friendly workspace
+layout: Laptop-friendly workspace; Safe (Coffre fort) [assumed]
+mini_bar: owner_pending # confirmed=verified present, absent=verified absent, owner_pending=awaiting Said
 data_confidence: owner_pending
 status: VERIFIED
 ```

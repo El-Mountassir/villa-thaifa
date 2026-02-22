@@ -14,7 +14,8 @@
 - **Kitchen**: [ ] No
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
 - **Layout**: [x] Laptop friendly workspace, [x] Separate sitting area, [x] Separate dining area, [ ] Desk (No)
-- **Features**: Salon, Dining area, Bar
+- **Features**: Salon, Dining area, Bar, Mini bar, Safe (Coffre fort)
+- **Mini bar**: YES <!-- Confirmed presence of in-room mini bar. Source required. -->
 - **Pricing**: 449 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 
@@ -80,7 +81,8 @@ access_notes: null
 outdoor: Furnished patio; Double terrace/patio
 bathroom: Shower only (walk-in shower); Hair dryer
 climate: Independent air conditioning; Heating control
-layout: Laptop-friendly workspace; Separate sitting area; Separate dining area
+layout: Laptop-friendly workspace; Separate sitting area; Separate dining area; Mini bar; Safe (Coffre fort)
+mini_bar: confirmed # confirmed=verified present, absent=verified absent, owner_pending=awaiting Said
 data_confidence: owner_pending
 status: VERIFIED
 ```
