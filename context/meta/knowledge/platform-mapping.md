@@ -1,3 +1,4 @@
+> **SUPERSEDED** — Pricing data in this file is outdated. Canonical rates: `data/finance/rates.json`. This file kept for historical reference only.
 # Room → Platform Types Mapping — Villa Thaifa
 
 **Last updated**: 2025-12-28

@@ -1,9 +1,9 @@
 > **SUPERSEDED** — Individual facility files in `data/property/facilities/` are now the canonical source.
-> - Pool: `data/property/facilities/pool.md`
-> - Spa/Hammam: `data/property/facilities/spa-hammam.md`
-> - Garden: `data/property/facilities/garden.md`
-> - Hall/Reception: `data/property/facilities/hall-reception.md`
-> - Services/Transport: `data/property/facilities/services.md`
+> - Pool: `data/property/facilities/pool-garden/pool.md`
+> - Garden: `data/property/facilities/pool-garden/garden.md`
+> - Spa/Hammam: `data/property/facilities/spa-hammam-reception/spa-hammam.md`
+> - Hall/Reception: `data/property/facilities/hall/hall-reception.md`
+> - Services/Transport: `data/property/facilities/services/services.md`
 > - This pending document is retained for reference only.
 
 ---
