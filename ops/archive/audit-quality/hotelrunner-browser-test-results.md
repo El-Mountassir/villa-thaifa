@@ -1,3 +1,4 @@
+<!-- Security: Credentials redacted 2026-02-22. Original contained plaintext credentials for HotelRunner. -->
 # HotelRunner Browser Automation - Test Results
 
 > **Date**: 2026-01-24 14:06
@@ -226,7 +227,7 @@ agent-browser --headed --profile ~/.hotelrunner-profile open https://app.hotelru
 
 # 3. Remplir login (automatique avec credentials .env.local)
 agent-browser type @e4 "said_thaifa@hotmail.fr"
-agent-browser type @e5 "Wity.tracy@2025"
+agent-browser type @e5 "[REDACTED — see secure credential storage]"
 agent-browser click @e8
 
 # 4. Navigation

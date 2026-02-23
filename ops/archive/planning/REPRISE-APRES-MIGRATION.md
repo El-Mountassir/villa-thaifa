@@ -1,3 +1,4 @@
+<!-- Security: Credentials redacted 2026-02-22. Original contained plaintext credentials for HotelRunner. -->
 # Guide de Reprise - Après Migration Pop!_OS 24.04 LTS
 
 > **Date création**: 2026-01-24 14:45
@@ -243,7 +244,7 @@ ls -la ~/.hotelrunner-profile/
 
 **Contenu** :
 - `HOTELRUNNER_OWNER_EMAIL=said_thaifa@hotmail.fr`
-- `HOTELRUNNER_OWNER_PASSWORD=Wity.tracy@2025`
+- `HOTELRUNNER_OWNER_PASSWORD=[REDACTED — see secure credential storage]`
 - (Autres credentials Booking.com, etc.)
 
 **Vérifier présence** :

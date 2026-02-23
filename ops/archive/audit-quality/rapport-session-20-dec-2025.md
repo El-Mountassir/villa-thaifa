@@ -1,3 +1,4 @@
+<!-- Security: Credentials redacted 2026-02-22. Original contained plaintext credentials for HotelRunner. -->
 # Rapport Session Stratégie Tarifaire — 20 décembre 2025
 
 **Date** : 20 décembre 2025
@@ -122,7 +123,7 @@
 
 | Plateforme  | Email                    | Password            | Statut   |
 | ----------- | ------------------------ | ------------------- | -------- |
-| HotelRunner | `said_thaifa@hotmail.fr` | `Wity.tracy@2025`   | ✅ Testé |
+| HotelRunner | `said_thaifa@hotmail.fr` | `[REDACTED]`   | ✅ Testé |
 | Booking.com | `said_thaifa@hotmail.fr` | -- (session active) | ✅ Testé |
 
 ---

@@ -1,3 +1,4 @@
+<!-- Security: Credentials redacted 2026-02-22. Original contained plaintext credentials for Booking.com and HotelRunner. -->
 # Codebase Concerns
 
 **Analysis Date:** 2026-01-30
@@ -12,9 +13,9 @@
 - `.env` (lines 27-45)
 
 **Impact:**
-- Booking.com admin password: `Na5%a?h5c9Rm2+K`
-- HotelRunner owner password: `Wity.tracy@2025`
-- Booking.com owner password: `Tracy.wity@2025`
+- Booking.com admin password: `[REDACTED — see secure credential storage]`
+- HotelRunner owner password: `[REDACTED — see secure credential storage]`
+- Booking.com owner password: `[REDACTED — see secure credential storage]`
 - These credentials can be extracted from git history even if deleted
 - Anyone with repo access has full admin access to all property platforms
 

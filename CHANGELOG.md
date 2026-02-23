@@ -33,6 +33,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Changed
 
+- update changelog after Vague B consolidation
 - archive remaining stale ops/status/snapshots/ — Move 8 remaining snapshot files from ops/status/snapshots/ to
 - triage context/meta/knowledge/ — relocate 19 of 22 files to correct directories — - rules.md → context/agents/hotelrunner/ (platform ops rules, agent-facing, HR/BC specific)
 - expand agent tool lists + minor hotelrunner archive fix — - auditor: add Edit, Bash, Glob, Grep (was Read, Write only)

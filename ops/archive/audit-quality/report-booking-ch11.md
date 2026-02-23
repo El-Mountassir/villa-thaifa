@@ -1,3 +1,4 @@
+<!-- Security: Credentials redacted 2026-02-22. Original contained plaintext credentials for HotelRunner. -->
 # Mission Report: Booking Chambre 11
 
 **Date** : 2025-12-19
@@ -18,7 +19,7 @@ Créer une réservation sur HotelRunner pour la **chambre 11** (suite familiale)
 | ------ | ---------------------------------------------- | ------------------------------------------------------- |
 | ~21h00 | Appel de Said — demande urgente de booking     | Brief reçu                                              |
 | ~21h15 | Connexion à HotelRunner — 1ère tentative       | ❌ Email incorrect (`said_taifa` → `said_thaifa`)       |
-| ~21h20 | Connexion — 2ème tentative                     | ❌ Mot de passe incorrect (`Tracy.wity` → `Wity.tracy`) |
+| ~21h20 | Connexion — 2ème tentative                     | ❌ Mot de passe incorrect (password corrected) |
 | ~21h25 | Appel à Said pour vérification credentials     | ✅ Corrections obtenues                                 |
 | ~21h30 | Connexion réussie + vérification OTP par email | ✅ Dashboard accessible                                 |
 | ~21h35 | Navigation Calendar → Overview                 | ✅ Disponibilité confirmée                              |
@@ -81,7 +82,7 @@ Réponse de Said concernant :
 | Erreur initiale         | Correction                              |
 | ----------------------- | --------------------------------------- |
 | `said_taifa@hotmail.fr` | `said_thaifa@hotmail.fr` (ajout du 'h') |
-| `Tracy.wity@2025`       | `Wity.tracy@2025` (inversion)           |
+| `[REDACTED]`       | `[REDACTED]` (inversion)           |
 
 ---
 

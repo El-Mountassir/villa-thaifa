@@ -6121,7 +6121,7 @@ agent-browser --headed open https://villa-thaifa.hotelrunner.com/login
 # 2. Fill in form
 agent-browser snapshot -i  # Get references
 agent-browser type @e4 "said_thaifa@hotmail.fr"
-agent-browser type @e5 "Wity.tracy@2025"
+agent-browser type @e5 "[REDACTED — see secure credential storage]"
 agent-browser click @e8
 
 # 3. Wait for authentication (5 sec)

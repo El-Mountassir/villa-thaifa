@@ -1,3 +1,4 @@
+<!-- Security: Credentials redacted 2026-02-22. Original contained plaintext credentials for HotelRunner. -->
 ---
 id: 2025-12-29-hotelrunner-admin-access
 type: mission
@@ -23,7 +24,7 @@ Dans le fichier `.env`, on a configuré:
 
 ```
 HOTELRUNNER_ADMIN_EMAIL=omar@el-mountassir.com
-HOTELRUNNER_ADMIN_PASSWORD=Na5%a?h5c9Rm2+K
+HOTELRUNNER_ADMIN_PASSWORD=[REDACTED — see secure credential storage]
 ```
 
 Cependant, cet accès admin n'est **pas encore actif**. Il faut contacter le support HotelRunner pour le configurer.

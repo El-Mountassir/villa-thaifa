@@ -1,3 +1,4 @@
+<!-- Security: Credentials redacted 2026-02-22. Original contained plaintext credentials for HotelRunner. -->
 # HotelRunner Browser Automation - Test Final & Limitation Découverte
 
 > **Date**: 2026-01-24 14:20-14:25
@@ -76,7 +77,7 @@ agent-browser --headed open https://villa-thaifa.hotelrunner.com/login
 # 2. Remplir formulaire
 agent-browser snapshot -i  # Obtenir références
 agent-browser type @e4 "said_thaifa@hotmail.fr"
-agent-browser type @e5 "Wity.tracy@2025"
+agent-browser type @e5 "[REDACTED — see secure credential storage]"
 agent-browser click @e8
 
 # 3. Attendre authentification (5 sec)
