@@ -61,12 +61,9 @@ Une fois toutes les infos reçues :
 ### WhatsApp — 1er message du jour
 
 ```
-Bonjour M. [Nom],
+Bonjour Si [Nom],
 
 [Contenu]
-
-Cordialement,
-Omar El Mountassir
 ```
 
 ### WhatsApp — Messages suivants (même fil)

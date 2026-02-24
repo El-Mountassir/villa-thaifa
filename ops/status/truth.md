@@ -11,23 +11,10 @@
 > Confirmed via HotelRunner deployment 2026-01-13, WhatsApp message.
 > rates.json corrected 2026-02-21 (4 wrong values fixed). rooms.md was correct all along.
 
-| ID  | Internal Name        | Category Code      | Capacity | Beds                            | Price (EUR) | Price (MAD) | View                                | Outdoor                                               |
-| --- | -------------------- | ------------------ | -------- | ------------------------------- | ----------- | ----------- | ----------------------------------- | ----------------------------------------------------- |
-| R01 | Deluxe Triple Room   | DELUXE_TRIPLE      | 3 adults | 1x King (200 cm) + 1x Sofa Bed  | 169 EUR     | 1,812 MAD   | Garden view                         | Furnished patio (Ground Floor)                        |
-| R02 | Deluxe Double Room   | DELUXE_DOUBLE      | 2 adults | 1x King (200 cm)                | 159 EUR     | 1,704 MAD   | Garden view                         | Furnished patio; 40 m² terrace                        |
-| R03 | Deluxe Triple Room   | DELUXE_TRIPLE      | 3 adults | 1x King (200 cm) + 1x Sofa Bed  | 169 EUR     | 1,812 MAD   | Garden view                         | Furnished patio; Small terrace                        |
-| R04 | Double Room Superior | DOUBLE_SUPERIOR    | 2 adults | 1x King (200 cm)                | 149 EUR     | 1,597 MAD   | Pool view (direct access)           | Furnished patio                                       |
-| R05 | Double Room Superior | DOUBLE_SUPERIOR    | 2 adults | 1x King (200 cm)                | 149 EUR     | 1,597 MAD   | Pool view                           | Furnished balcony (upper floor)                       |
-| R06 | Executive Suite      | EXECUTIVE_SUITE    | 3 adults | 1x King (200 cm) + 1x Sofa Bed  | 169 EUR     | 1,812 MAD   | Pool + Atlas Mountain + Garden view | Furnished balcony; 100 m² terrace (DISPUTED — see §6) |
-| R07 | Deluxe King Suite    | DELUXE_KING_SUITE  | 4 adults | 1x King (200 cm) + 2x Sofa Beds | 329 EUR     | 3,527 MAD   | Pool + Mountain view                | Furnished balcony; 60 m² terrace (DISPUTED — see §6)  |
-| R08 | Deluxe Triple Room   | DELUXE_TRIPLE      | 3 adults | 1x King (200 cm) + 1x Sofa Bed  | 169 EUR     | 1,812 MAD   | Garden view                         | Furnished balcony                                     |
-| R09 | Family Suite         | FAMILY_SUITE       | 4 adults | 1x King (200 cm) + 2x Sofa Beds | 189 EUR     | 2,026 MAD   | Pool view (direct access)           | Furnished patio; Double terrace                       |
-| R10 | Suite                | SUITE              | 3 adults | 1x King (200 cm) + 1x Sofa Bed  | 179 EUR     | 1,919 MAD   | Pool view (direct access)           | Furnished patio; Double terrace                       |
-| R11 | Family Suite         | FAMILY_SUITE       | 4 adults | 1x King (200 cm) + 2x Sofa Beds | 189 EUR     | 2,026 MAD   | Pool view (direct access)           | Furnished patio; Double terrace                       |
-| R12 | Presidential Suite   | PRESIDENTIAL_SUITE | 4 adults | 1x King (200 cm) + 2x Sofa Beds | 449 EUR     | 4,813 MAD   | Pool view                           | Furnished patio; Double terrace/patio                 |
-
-**Exchange rate:** 1 EUR = 10.72 MAD (as of rates.json v1.0, 2026-02-19)
-**All rooms:** No smoking, no kitchen, AC + heating, shower/tub combo, hair dryer, laptop workspace
+**Canonical sources** (always authoritative):
+- Room rates and exchange rate: `data/finance/rates.json` (locked until 2026-12-31)
+- Room inventory, specs, and views: `data/rooms/rooms.md`
+- Per-room details: `data/rooms/R{01-12}/profile.md`
 
 ---
 

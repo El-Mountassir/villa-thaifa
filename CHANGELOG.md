@@ -33,6 +33,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Changed
 
+- optimize @reference chain — 691→125 lines always-loaded (82% reduction) — Restructure project instructions for context window efficiency:
 - migrate project identity from docs/core/ to project/ — Establishes project/ as the project constitution directory, separating
 - update changelog after Vague B consolidation
 - archive remaining stale ops/status/snapshots/ — Move 8 remaining snapshot files from ops/status/snapshots/ to

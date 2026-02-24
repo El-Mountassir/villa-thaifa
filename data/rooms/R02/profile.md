@@ -15,7 +15,7 @@
 - **Layout**: [x] Laptop friendly workspace, [ ] Desk (No)
 - **Features**: Safe (Coffre fort) [assumed]
 - **Mini bar**: owner_pending <!-- Confirmed presence of in-room mini bar. Source required. -->
-- **Pricing**: 149 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
+- **Pricing**: 159 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 
 ### R02 — Deluxe Double Room
@@ -63,8 +63,8 @@ max_occupancy: 2
 smoking_allowed: false
 has_kitchen: false
 size_m2: 41
-base_rate_mad: 1597
-base_rate_eur: 149
+base_rate_mad: 1704
+base_rate_eur: 159
 beds:
   - type: king
     size_cm: 200
