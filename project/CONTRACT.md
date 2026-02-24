@@ -5,6 +5,8 @@
      This file defines WHO writes WHERE, which platforms are in scope, how data flows,
      and the mandatory workflow, policies, and task tracking conventions. -->
 
+> **Note**: Sections 1 (Project Identity) and 2 (Scope) are also inlined in AGENTS.md for always-loaded context. The Directory Contract (Section 3) is the authoritative reference for per-directory rules; AGENTS.md contains a condensed summary. CONTRACT.md remains the authoritative reference for all operational details.
+
 ---
 
 ## 1. Project Identity
@@ -29,7 +31,159 @@ LHCM-OS (Lightweight Hotel Channel Management OS) is a separate, broader product
 
 ---
 
-## 3. Agent Output Paths
+## 3. Directory Contract
+
+Each top-level directory has a defined purpose, inclusion criteria, and exclusion criteria.
+
+### project/ -- Project Constitution
+
+**Purpose:** The foundational identity, governance, and operational rules for the project.
+
+**What GOES here:** Mission statement, core principles, project structure overview, operational contract (workflow, policies, task tracking), roadmap.
+
+**What does NOT go here:** Structured data (belongs in `data/`), workflow documentation (belongs in `docs/`), operational artifacts (belongs in `ops/`), reference material (belongs in `context/`).
+
+**Example files:** `project/MISSION.md`, `project/CONTRACT.md`, `project/STRUCTURE.md`
+
+### data/ -- Canonical Source of Truth
+
+**Purpose:** The single authoritative location for all structured domain data.
+
+**What GOES here:** Room profiles, booking records, financial data (rates, billing), property configuration, operational configs (channels, housekeeping, check-in rules, emergency procedures, maintenance schedules), facility descriptions and images, inventory data.
+
+**What does NOT go here:** Documentation, operational artifacts (audits, decisions), scripts, reference material, anything that is not structured domain data.
+
+**Example files:** `data/rooms/R01/profile.md`, `data/finance/rates.json`, `data/operations/channels.json`, `data/property/facilities/spa-hammam.md`
+
+**Subdirectories:**
+
+| Directory               | Contents                                                                                 |
+| ----------------------- | ---------------------------------------------------------------------------------------- |
+| `data/rooms/`           | Per-room profiles (R01-R12/), master table, amenities, beds, reconciliation log          |
+| `data/bookings/`        | Exports, requests, reservations                                                          |
+| `data/finance/`         | billing.json, rates.json                                                                 |
+| `data/operations/`      | Operational config JSON files (channels, check-in, emergency, housekeeping, maintenance) |
+| `data/property/`        | Property-level config and facility data (descriptions + images)                          |
+| `data/pending-domains/` | Domains not yet fully hardened (staging area)                                            |
+| `data/archive/`         | Archived data versions                                                                   |
+
+### docs/ -- Operational Documentation
+
+**Purpose:** Human-readable and agent-readable documentation for operating Villa Thaifa.
+
+**What GOES here:** Workflow guides, client and stakeholder information, agent operational docs and logs.
+
+**What does NOT go here:** Structured data (belongs in `data/`), live operational state like audits or decisions (belongs in `ops/`), read-only reference material (belongs in `context/`), scripts (belongs in `scripts/`), project identity files (belongs in `project/`).
+
+**Example files:** `docs/workflows/pricing.md`, `docs/client/stakeholders.md`
+
+**Subdirectories:**
+
+| Directory         | Contents                                                |
+| ----------------- | ------------------------------------------------------- |
+| `docs/workflows/` | Operational procedure guides (pricing, etc.)            |
+| `docs/client/`    | Stakeholder profiles, admin notes, support contacts     |
+
+### context/ -- Read-Only Reference Material
+
+**Purpose:** Background reference material consumed by agents and humans. Not mutated during normal operations.
+
+**What GOES here:** Architecture documents, planning documents, knowledge references, templates, agent configuration files and READMEs.
+
+**What does NOT go here:** Live operational state (belongs in `ops/`), canonical data (belongs in `data/`), workflow documentation (belongs in `docs/`).
+
+**Example files:** `context/meta/architecture/system-overview.md`, `context/agents/booking/README.md`
+
+**Subdirectories:**
+
+| Directory         | Contents                                                            |
+| ----------------- | ------------------------------------------------------------------- |
+| `context/agents/` | Agent reference configs and READMEs (booking, browser, hotelrunner) |
+| `context/meta/`   | Architecture, knowledge, planning, and template reference files     |
+
+### ops/ -- Live Operational State
+
+**Purpose:** The active workspace for operational artifacts: audits, decisions, handoffs, status tracking, and incoming items.
+
+**What GOES here:** Audit reports, decision records, session handoff documents, status dashboards and snapshots, unprocessed intake items, migration logs.
+
+**What does NOT go here:** Canonical data (belongs in `data/`), documentation (belongs in `docs/`), reference material (belongs in `context/`), scripts (belongs in `scripts/`).
+
+**Example files:** `ops/decisions/2026-02-16-database-architecture.md`, `ops/status/canonical.md`, `ops/handoff/HANDOFF.md`
+
+**Subdirectories:**
+
+| Directory        | Contents                                                 |
+| ---------------- | -------------------------------------------------------- |
+| `ops/audit/`     | Audit reports and quality checks                         |
+| `ops/decisions/` | Decision records with date prefix                        |
+| `ops/handoff/`   | Session handoff docs (AI-SESSION-STARTER.md, HANDOFF.md) |
+| `ops/status/`    | Status dashboards, snapshots, indexes                    |
+| `ops/intake/`    | Unprocessed incoming items                               |
+| `ops/archive/`   | Unprocessed legacy/historical migrations (WARNING)       |
+
+### archive/ -- Global Archive
+
+**Purpose:** The final resting place for fully verified, actioned, and deprecated files.
+
+**What GOES here:** Old documents, completed audits, deprecated architecture files, past handoffs that are no longer relevant.
+
+**Example files:** `archive/2026-01-old-strategy.md`
+
+### scripts/ -- Validation and Tooling
+
+**Purpose:** All executable code for validation, auditing, migration, and tooling.
+
+**What GOES here:** Validation scripts, audit automation, data migration tools, integration scripts, organization utilities.
+
+**What does NOT go here:** Documentation, data, operational artifacts.
+
+**Example files:** `scripts/validate_contracts.py`, `scripts/audit/artifact_inventory.py`, `scripts/organization/reorganize_room_images.py`
+
+**Subdirectories:**
+
+| Directory               | Contents                           |
+| ----------------------- | ---------------------------------- |
+| `scripts/audit/`        | Audit scripts and rule definitions |
+| `scripts/hotelrunner/`  | HotelRunner integration scripts    |
+| `scripts/inventory/`    | Inventory management scripts       |
+| `scripts/organization/` | Repository organization utilities  |
+
+### tests/ -- Test Suite
+
+**Purpose:** Pytest test files for validating scripts and data contracts.
+
+**What GOES here:** Test files (test_*.py), test fixtures, conftest.py.
+
+**What does NOT go here:** Production scripts, documentation, data.
+
+### infra/ -- Infrastructure Configuration
+
+**Purpose:** Infrastructure-as-code, deployment configs, and environment setup.
+
+**What GOES here:** Docker configs, CI/CD pipelines, deployment scripts, infrastructure definitions.
+
+**What does NOT go here:** Application code, documentation, data.
+
+### src/ -- Application Source Code
+
+**Purpose:** Application source code for any software components of the project.
+
+**What GOES here:** Application code, libraries, modules.
+
+**What does NOT go here:** Scripts/tooling (belongs in `scripts/`), tests (belongs in `tests/`), data.
+
+### logs/ -- Log Files (gitignored)
+
+**Purpose:** Runtime log output. Gitignored -- not committed to the repository.
+
+### tmp/ -- Temporary Files (gitignored)
+
+**Purpose:** Scratch space for temporary work. Gitignored -- not committed to the repository.
+
+---
+
+## 4. Agent Output Paths
 
 | Agent type       | Output directory                                          | Notes                                      |
 | ---------------- | --------------------------------------------------------- | ------------------------------------------ |
@@ -41,7 +195,7 @@ LHCM-OS (Lightweight Hotel Channel Management OS) is a separate, broader product
 
 ---
 
-## 4. Platform Conventions
+## 5. Platform Conventions
 
 | Platform    | Credentials location        | Agent guide                               | Safety                                 |
 | ----------- | --------------------------- | ----------------------------------------- | -------------------------------------- |
@@ -52,7 +206,7 @@ LHCM-OS (Lightweight Hotel Channel Management OS) is a separate, broader product
 
 ---
 
-## 5. Agent Context Discovery
+## 6. Agent Context Discovery
 
 Pattern: `context/agents/{agent-name}/`
 
@@ -67,7 +221,7 @@ Agents MUST read their own `context/agents/{agent-name}/` directory before takin
 
 ---
 
-## 6. Data Flow Rules
+## 7. Data Flow Rules
 
 ```
 External platform
@@ -90,7 +244,7 @@ Rules:
 
 ---
 
-## 7. External References
+## 8. External References
 
 | Resource                   | Canonical path                                               |
 | -------------------------- | ------------------------------------------------------------ |
@@ -103,7 +257,7 @@ Rules:
 
 ---
 
-## 8. Mandatory Workflow
+## 9. Mandatory Workflow
 
 Use this sequence for every operational task:
 
@@ -116,7 +270,7 @@ Use this sequence for every operational task:
 
 ---
 
-## 9. SYNC Checklist
+## 10. SYNC Checklist
 
 After ACTION, ask: "What files are impacted by this change?" Then update each:
 
@@ -133,7 +287,7 @@ After ACTION, ask: "What files are impacted by this change?" Then update each:
 
 ---
 
-## 10. Policies
+## 11. Policies
 
 ### Contestability Policy (Critical)
 
@@ -161,7 +315,7 @@ After ACTION, ask: "What files are impacted by this change?" Then update each:
 
 ---
 
-## 11. Room Schema Change Protocol
+## 12. Room Schema Change Protocol
 
 When adding, removing, or modifying any field in room profiles (`data/rooms/R*/profile.md`):
 
@@ -178,7 +332,7 @@ When adding, removing, or modifying any field in room profiles (`data/rooms/R*/p
 
 ---
 
-## 12. Definition of Done (Per Domain)
+## 13. Definition of Done (Per Domain)
 
 All must be true:
 
@@ -190,7 +344,7 @@ All must be true:
 
 ---
 
-## 13. Task Tracking
+## 14. Task Tracking
 
 **Primary backlog**: [Linear](https://linear.app/el-mountassir) -- all durable work items live here.
 
@@ -208,7 +362,7 @@ All must be true:
 
 ---
 
-## 14. Open Loops (Migrate to Linear)
+## 15. Open Loops (Migrate to Linear)
 
 1. Pending data domains: `data/pending-domains/` -- contains superseded placeholder files. Active facility data lives in `data/property/facilities/`
 2. Large directory triage: `context/meta/knowledge/` (19 files), `context/meta/planning/` (14 files), `ops/audit/quality/` (3 files) need triage for archiving vs reclassification

@@ -2,7 +2,7 @@
 
 > Role: HotelRunner PMS integration agent
 
-_Generated: 2026-02-21 02:37 UTC_
+_Generated: 2026-02-24 13:36 UTC_
 
 ---
 
@@ -11,17 +11,17 @@ _Generated: 2026-02-21 02:37 UTC_
 Paths essential for this role:
 
 - `scripts/hotelrunner/` (1 files)
-- `context/agents/hotelrunner/` (5 files)
-- `data/rooms/` (344 files)
-- `data/operations/` (7 files)
+- `context/agents/hotelrunner/` (10 files)
+- `data/rooms/` (451 files)
+- `data/operations/` (8 files)
 
 ## Reference Paths
 
 Useful context (read as needed):
 
-- `context/meta/knowledge/hotelrunner-api.md` (1 files)
-- `context/meta/knowledge/hotelrunner-README.md` (1 files)
-- `context/meta/knowledge/hotelrunner.md` (1 files)
+- `context/meta/knowledge/hotelrunner-api.md`
+- `context/meta/knowledge/hotelrunner-README.md`
+- `context/meta/knowledge/hotelrunner.md`
 
 ## Ignored Paths
 
