@@ -92,11 +92,11 @@
 
 ### 2.3 Pricing Strategy
 
-| Element                    | Status                            |
-| -------------------------- | --------------------------------- |
+| Element                    | Status                      |
+| -------------------------- | --------------------------- |
 | Baseline prices documented | ✅ In `data/rooms/rooms.md` |
-| Seasonal adjustments       | 🟡 To be defined                  |
-| Promotions strategy        | 🟡 In progress                    |
+| Seasonal adjustments       | 🟡 To be defined            |
+| Promotions strategy        | 🟡 In progress              |
 
 ### 2.4 Go Siyaha Application
 
@@ -259,7 +259,7 @@ Inspire existing HWS clients:
 | Document                  | Purpose               |
 | ------------------------- | --------------------- |
 | `CLAUDE.md`               | AI Context            |
-| `data/`             | Business Specs (SSOT) |
+| `data/`                   | Business Specs (SSOT) |
 | `docs/lessons-learned.md` | Mistakes & learnings  |
 | `.env` / `.env.example`   | Platform credentials  |
 

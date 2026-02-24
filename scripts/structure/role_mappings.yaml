@@ -60,7 +60,7 @@ admin:
   critical:
     - "data/"
     - "ops/"
-    - "docs/core/"
+    - "project/"
   reference:
     - "context/"
     - "scripts/"

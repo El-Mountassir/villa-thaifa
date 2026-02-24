@@ -12,7 +12,7 @@ Paths essential for this role:
 
 - `data/` (427 files)
 - `ops/` (549 files)
-- `docs/core/` (10 files)
+- `project/` (10 files)
 
 ## Reference Paths
 
@@ -36,7 +36,7 @@ Not relevant for this role:
 
 ```bash
 # View critical structure for admin
-tree -L 3 data/ ops/ docs/core/
+tree -L 3 data/ ops/ project/
 
 # Find specific file
 find . -name 'pattern' -type f

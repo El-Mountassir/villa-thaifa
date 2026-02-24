@@ -1,0 +1,221 @@
+# Project Contract -- Villa Thaifa
+
+<!-- What this file is: the operational constitution for agents working in this project.
+     AGENTS.md defines workspace structure and file placement rules.
+     This file defines WHO writes WHERE, which platforms are in scope, how data flows,
+     and the mandatory workflow, policies, and task tracking conventions. -->
+
+---
+
+## 1. Project Identity
+
+| Field       | Value                       |
+| ----------- | --------------------------- |
+| Name        | Villa Thaifa                |
+| Slug        | villa-thaifa                |
+| Repo        | El-Mountassir/villa-thaifa  |
+| Linear Team | VT                          |
+| Repo root   | /home/director/villa-thaifa |
+
+---
+
+## 2. Scope
+
+This repo is **Villa Thaifa operations** -- property data, rooms, bookings, guest comms, WhatsApp integration, Said Thaifa (owner) context.
+
+### LHCM-OS (broader vision)
+
+LHCM-OS (Lightweight Hotel Channel Management OS) is a separate, broader product vision where Villa Thaifa is the first pilot. LHCM-OS lives at `~/omar/professional/projects/lhcm-os/` -- NOT in this repo. You may reference LHCM-OS docs but do not duplicate or merge them here.
+
+---
+
+## 3. Agent Output Paths
+
+| Agent type       | Output directory                                          | Notes                                      |
+| ---------------- | --------------------------------------------------------- | ------------------------------------------ |
+| browser-agent    | /home/director/villa-thaifa/data/pending-domains/browser/ | Screenshots, scraped HTML, raw extractions |
+| research-agent   | ~/omar/knowledge/research/{DOMAIN}/                       | Findings and reports (global knowledge)    |
+| general-purpose  | /home/director/villa-thaifa/ops/intake/                   | Unclassified artifacts awaiting triage     |
+| linear-agent     | (in-memory only)                                          | Writes to Linear, no local file output     |
+| Default fallback | /home/director/villa-thaifa/ops/intake/                   | When agent type is not listed above        |
+
+---
+
+## 4. Platform Conventions
+
+| Platform    | Credentials location        | Agent guide                               | Safety                                 |
+| ----------- | --------------------------- | ----------------------------------------- | -------------------------------------- |
+| HotelRunner | ~/.hotelrunner (gitignored) | context/agents/hotelrunner/README.md      | Read-only unless explicitly authorized |
+| Booking.com | ~/.booking (gitignored)     | context/agents/booking/README.md          | Read-only                              |
+| Expedia     | (none stored)               | context/agents/browser/browser-context.md | Read-only extraction only              |
+| WhatsApp    | (none stored)               | context/agents/browser/browser-context.md | Read-only unless Omar approves send    |
+
+---
+
+## 5. Agent Context Discovery
+
+Pattern: `context/agents/{agent-name}/`
+
+| File                   | Purpose                                               |
+| ---------------------- | ----------------------------------------------------- |
+| README.md              | Agent role, scope, and operating constraints          |
+| extraction-protocol.md | Step-by-step extraction instructions for the platform |
+| platform-rules.md      | Platform-specific safety and behavioral rules         |
+| capabilities.md        | What this agent can and cannot do in this project     |
+
+Agents MUST read their own `context/agents/{agent-name}/` directory before taking any platform action.
+
+---
+
+## 6. Data Flow Rules
+
+```
+External platform
+      |
+      v
+Raw extraction --> /home/director/villa-thaifa/data/pending-domains/{DOMAIN}/     (unvalidated)
+      |
+      v
+Validated data --> /home/director/villa-thaifa/data/{DOMAIN}/                     (reconciled, sourced)
+      |
+      v
+Canonical truth --> /home/director/villa-thaifa/data/{DOMAIN}/{FILE}.md or .json  (single source of truth)
+```
+
+Rules:
+
+- Raw extractions are NEVER edited in place.
+- Conflicts between raw and canonical are logged before resolving.
+- No data is promoted to canonical without a documented evidence source.
+
+---
+
+## 7. External References
+
+| Resource                   | Canonical path                                               |
+| -------------------------- | ------------------------------------------------------------ |
+| Universal rules            | ~/omar/core/resources/rules/universal.md                     |
+| Claude Code rules          | ~/.claude/rules/rules.md                                     |
+| Agent definitions (shared) | ~/omar/core/resources/agents/                                |
+| Linear workflow protocol   | ~/omar/operational/productivity/protocols/linear-workflow.md |
+| Output styles              | ~/omar/core/context/output-styles/                           |
+| Knowledge base             | ~/omar/knowledge/                                            |
+
+---
+
+## 8. Mandatory Workflow
+
+Use this sequence for every operational task:
+
+1. SCOUT
+2. REPORT
+3. QUESTIONS
+4. ACTION
+5. SYNC -- After any state-changing action, identify and update ALL impacted files. Use the checklist below.
+6. COMMIT -- Run `make changelog`, then commit silently. Committing is Tier 1 (ACT) -- commit proactively after completing a logical batch of work. No announcement needed. Pushing remains Tier 3 (ASK) -- always ask before `git push`.
+
+---
+
+## 9. SYNC Checklist
+
+After ACTION, ask: "What files are impacted by this change?" Then update each:
+
+| If you changed...              | Also update...                                                                          |
+| ------------------------------ | --------------------------------------------------------------------------------------- |
+| A decision was made/resolved   | `ops/decisions/`, `ops/decisions/open-conflicts-registry.md`, `ops/status/truth.md`     |
+| Data files (rates, rooms, etc) | `ops/status/truth.md`, reconciliation logs                                              |
+| A conflict was resolved        | `ops/decisions/open-conflicts-registry.md`, `ops/status/truth.md S6`                    |
+| Repository structure changed   | `project/STRUCTURE.md` (`make structure-update`), AGENTS.md if top-level                |
+| A tech stack decision was made | `ops/decisions/tech-decisions.md`, `context/meta/planning/vt-app-vision.md STech Stack` |
+| A handoff was created/updated  | `ops/handoff/HANDOFF.md` (index), `ops/status/truth.md`                                 |
+
+**Rule**: If unsure whether a file is impacted, err on the side of checking. Silent drift is worse than an unnecessary update.
+
+---
+
+## 10. Policies
+
+### Contestability Policy (Critical)
+
+1. Treat all unprocessed data as potentially outdated, suboptimal, or contestable.
+2. Do not silently trust legacy sources.
+3. Ask Omar for clarification whenever decisions are ambiguous or high impact.
+4. When asking, provide short options with one recommended default.
+5. Log the chosen decision in status/reconciliation artifacts.
+
+### Data Handling Policy
+
+1. Legacy files are reference-only until reconciled.
+2. Archive with checksum before removal from active scope.
+3. Record accepted/rejected conflicts in domain reconciliation logs.
+4. Do not overwrite conflicting values without trusted evidence.
+
+### Git/GitHub Sync Policy
+
+1. Keep repo synced at least:
+   - start of day
+   - after each completed domain milestone
+   - end of day
+2. Work from short-lived branches with explicit scope.
+3. Never keep critical local-only changes unpushed.
+
+---
+
+## 11. Room Schema Change Protocol
+
+When adding, removing, or modifying any field in room profiles (`data/rooms/R*/profile.md`):
+
+**MANDATORY sequence -- no exceptions:**
+
+1. Update `context/meta/templates/room-profile-template.md` FIRST
+2. Get approval (or proceed if autonomous tier allows)
+3. Apply the change to ALL 12 room profiles (R01-R12) in one operation
+4. Verify all 12 profiles match the updated template
+
+**Self-check**: "Am I about to edit a room profile field that isn't reflected in the template?" If yes -> update the template first.
+
+**Why**: The template is the schema contract. Rooms diverging from the template = silent data drift = broken agents downstream.
+
+---
+
+## 12. Definition of Done (Per Domain)
+
+All must be true:
+
+1. Canonical contract is explicit.
+2. Validation scripts pass.
+3. Reconciliation log is updated with evidence.
+4. Legacy files are archived/deleted with explicit justification.
+5. Status files are updated.
+
+---
+
+## 13. Task Tracking
+
+**Primary backlog**: [Linear](https://linear.app/el-mountassir) -- all durable work items live here.
+
+- Teams: `VT` (Villa Thaifa), `EM` (El Mountassir)
+- Issue format: `EM-XXX` or `VT-XXX`
+- Workflow conventions: `~/omar/operational/productivity/protocols/linear-workflow.md`
+
+**Session-local tasks**: Optional. Use `TaskCreate` only for genuinely complex multi-step tasks where tracking provides clear value. Not mandatory.
+
+**Work overview**: `ops/status/work-overview.md` -- comprehensive task dashboard with all pending work, priorities (P0-P5 MoSCoW+Eisenhower), dependencies, Omar/Said time estimates, and workstream grouping. Template: `~/omar/Templates/WORK-OVERVIEW.md`. Agents MUST:
+
+- Read work-overview.md at session start to understand current state
+- Update it after completing tasks (remove completed, update statuses)
+- Follow the priority system defined in the file header
+
+---
+
+## 14. Open Loops (Migrate to Linear)
+
+1. Pending data domains: `data/pending-domains/` -- contains superseded placeholder files. Active facility data lives in `data/property/facilities/`
+2. Large directory triage: `context/meta/knowledge/` (19 files), `context/meta/planning/` (14 files), `ops/audit/quality/` (3 files) need triage for archiving vs reclassification
+
+---
+
+<!-- CONTRACT VERSION: 2.0
+     Merged from: PROJECT-CONTRACT.md (v1.0) + AGENTS.md operational sections
+     Template source: /home/director/Templates/PROJECT-CONTRACT.md
+     Last updated: 2026-02-24 -->

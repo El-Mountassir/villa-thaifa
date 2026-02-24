@@ -97,6 +97,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Fixed
 
+- merge .archived/ into archive/, move LHCM-OS files, redact credentials — - Merge .archived/ into archive/2025/ (strategy doc + 3 workflows preserved, 2 superseded files deleted)
 - Vague A consolidation — misplaced files, duplicates, stale notices — - Add .playwright-cli/ to .gitignore
 - R06 YAML rate 179→169 EUR + data format evaluation + delete superseded inventory — - Fix R06/profile.md YAML: base_rate_eur 179→169, base_rate_mad 1919→1812 (confirmed via Said)
 - close 3 AGENTS.md gaps — stale counts, Said file roles, PROJECT-CONTRACT ref — - Open Loops: update file counts (54→19, 96→14, 62→3), clarify facilities.md status

@@ -6,19 +6,19 @@
 
 ## Quick Navigation
 
-| Section                                                      | Status                             |
-| ------------------------------------------------------------ | ---------------------------------- |
-| [Latest Session (2026-02-21)](#latest-session-2026-02-21)   | 10 work items completed            |
-| [Context](#context)                                          | Background + Linear state snapshot |
-| [Phase 1: Unblock](#phase-1-unblock--completed)              | COMPLETED                          |
-| [Phase 2: Audit](#phase-2-audit--completed)                  | COMPLETED                          |
-| [Phase 3: Scan + Triage](#phase-3-scan--triage--completed)   | COMPLETED                          |
-| [Rules Updated](#rules-updated-this-session)                 | 4 files updated                    |
-| [Execution Roadmap](#execution-roadmap--next-sessions)       | Waves 1-5 + Deferred               |
-| [Omar Manual Actions](#omar-manual-actions--pending)         | Pending                            |
-| [Triage Reports](#triage-reports-from-phase-3)               | /tmp/ — ephemeral                  |
-| [Key Files](#key-files)                                      | Reference links                    |
-| [Completion Status](#completion-status)                      | Post-audit Linear state            |
+| Section                                                    | Status                             |
+| ---------------------------------------------------------- | ---------------------------------- |
+| [Latest Session (2026-02-21)](#latest-session-2026-02-21)  | 10 work items completed            |
+| [Context](#context)                                        | Background + Linear state snapshot |
+| [Phase 1: Unblock](#phase-1-unblock--completed)            | COMPLETED                          |
+| [Phase 2: Audit](#phase-2-audit--completed)                | COMPLETED                          |
+| [Phase 3: Scan + Triage](#phase-3-scan--triage--completed) | COMPLETED                          |
+| [Rules Updated](#rules-updated-this-session)               | 4 files updated                    |
+| [Execution Roadmap](#execution-roadmap--next-sessions)     | Waves 1-5 + Deferred               |
+| [Omar Manual Actions](#omar-manual-actions--pending)       | Pending                            |
+| [Triage Reports](#triage-reports-from-phase-3)             | /tmp/ — ephemeral                  |
+| [Key Files](#key-files)                                    | Reference links                    |
+| [Completion Status](#completion-status)                    | Post-audit Linear state            |
 
 ---
 
@@ -28,30 +28,30 @@
 
 ### Work Completed
 
-| # | Item | Linear | Type | Outcome |
-| - | ---- | ------ | ---- | ------- |
-| 1 | VT-42 closed | VT-42 | Decision | Branch linking research complete. Linear has NO sidebar feature. Issue sync works correctly. Closed as Done. Research: `~/omar/knowledge/research/development/vt-42-branch-linking-online-research.md` |
-| 2 | VT-77 decomposed | VT-77 | Planning | 22 TODOs audited, split into 4 focused issues: VT-78/79/80/81. All Said-blocked except VT-81 (Omar). |
-| 3 | Linear labels created | VT-46 | Operations | 3 labels created: "Awaiting: Said" (15 issues), "Awaiting: Omar" (6 issues), "Ready" (24 issues). All 46 open issues labeled. |
-| 4 | Linear agent elevated | VT-46 | Infrastructure | Custom `linear-agent.md` created with label management + stale triage. Moved to `~/omar/core/tools/agents/` with symlinks (global + project). Enables delegation pattern. |
-| 5 | Linear docs migrated | VT-46 | Refactoring | `linear-workflow.md` and `linear-github-setup.md` moved from villa-thaifa to `~/omar/operational/productivity/protocols/`. 5 files updated for references. |
-| 6 | Orchestrator rule added | VT-46 | Governance | ALL Linear ops → linear-agent delegated. Added to CLAUDE.md + mcp-memory. Enforces zero-MCP pattern. |
-| 7 | Expedia Step 3 extracted | — | Research | Partner Central policies (VAT risk identified: 10% on top, potential double-charge). Data captured. French questions: `~/omar/artifacts/reports/expedia-etape3-questions-fr.md` |
-| 8 | Expedia Step 4 extracted | — | Research | Amenities: 115 checkboxes, 12 modules, exhaustive capture. Report: `~/omar/knowledge/research/business/expedia-step4-extraction.md` |
-| 9 | Expedia Step 5 analyzed | — | Research | Rooms & rates: EMPTY — zero rooms configured. Blocks steps 6-12. Cross-ref report: `~/omar/knowledge/research/business/expedia-data-crossref-report.md` |
-| 10 | Browser agent plan decided | — | Design | Keep global browser.md, add auto-discovery rule, externalize VT content. NOT YET EXECUTED. |
+| #   | Item                       | Linear | Type           | Outcome                                                                                                                                                                                                |
+| --- | -------------------------- | ------ | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | VT-42 closed               | VT-42  | Decision       | Branch linking research complete. Linear has NO sidebar feature. Issue sync works correctly. Closed as Done. Research: `~/omar/knowledge/research/development/vt-42-branch-linking-online-research.md` |
+| 2   | VT-77 decomposed           | VT-77  | Planning       | 22 TODOs audited, split into 4 focused issues: VT-78/79/80/81. All Said-blocked except VT-81 (Omar).                                                                                                   |
+| 3   | Linear labels created      | VT-46  | Operations     | 3 labels created: "Awaiting: Said" (15 issues), "Awaiting: Omar" (6 issues), "Ready" (24 issues). All 46 open issues labeled.                                                                          |
+| 4   | Linear agent elevated      | VT-46  | Infrastructure | Custom `linear-agent.md` created with label management + stale triage. Moved to `~/omar/core/tools/agents/` with symlinks (global + project). Enables delegation pattern.                              |
+| 5   | Linear docs migrated       | VT-46  | Refactoring    | `linear-workflow.md` and `linear-github-setup.md` moved from villa-thaifa to `~/omar/operational/productivity/protocols/`. 5 files updated for references.                                             |
+| 6   | Orchestrator rule added    | VT-46  | Governance     | ALL Linear ops → linear-agent delegated. Added to CLAUDE.md + mcp-memory. Enforces zero-MCP pattern.                                                                                                   |
+| 7   | Expedia Step 3 extracted   | —      | Research       | Partner Central policies (VAT risk identified: 10% on top, potential double-charge). Data captured. French questions: `~/omar/artifacts/reports/expedia-etape3-questions-fr.md`                        |
+| 8   | Expedia Step 4 extracted   | —      | Research       | Amenities: 115 checkboxes, 12 modules, exhaustive capture. Report: `~/omar/knowledge/research/business/expedia-step4-extraction.md`                                                                    |
+| 9   | Expedia Step 5 analyzed    | —      | Research       | Rooms & rates: EMPTY — zero rooms configured. Blocks steps 6-12. Cross-ref report: `~/omar/knowledge/research/business/expedia-data-crossref-report.md`                                                |
+| 10  | Browser agent plan decided | —      | Design         | Keep global browser.md, add auto-discovery rule, externalize VT content. NOT YET EXECUTED.                                                                                                             |
 
 ### Key Artifacts Created
 
-| File | Purpose |
-| ---- | ------- |
-| `~/omar/knowledge/research/development/vt-42-branch-linking-online-research.md` | Research findings: Linear limitation |
-| `~/omar/knowledge/research/business/expedia-extraction-protocol.md` | Extraction protocol for Steps 3-12 |
-| `~/omar/knowledge/research/business/expedia-step4-extraction.md` | Amenities data (115 checkboxes, 12 modules) |
-| `~/omar/knowledge/research/business/expedia-step5-extraction.md` | Rooms & rates analysis (zero rooms issue) |
-| `~/omar/knowledge/research/business/expedia-data-crossref-report.md` | Cross-reference analysis |
-| `~/omar/artifacts/reports/expedia-etape3-questions-fr.md` | French questions for Omar re: Step 3 VAT |
-| `~/omar/core/tools/agents/linear-agent.md` | Custom linear-agent (canonical, symlinked) |
+| File                                                                            | Purpose                                     |
+| ------------------------------------------------------------------------------- | ------------------------------------------- |
+| `~/omar/knowledge/research/development/vt-42-branch-linking-online-research.md` | Research findings: Linear limitation        |
+| `~/omar/knowledge/research/business/expedia-extraction-protocol.md`             | Extraction protocol for Steps 3-12          |
+| `~/omar/knowledge/research/business/expedia-step4-extraction.md`                | Amenities data (115 checkboxes, 12 modules) |
+| `~/omar/knowledge/research/business/expedia-step5-extraction.md`                | Rooms & rates analysis (zero rooms issue)   |
+| `~/omar/knowledge/research/business/expedia-data-crossref-report.md`            | Cross-reference analysis                    |
+| `~/omar/artifacts/reports/expedia-etape3-questions-fr.md`                       | French questions for Omar re: Step 3 VAT    |
+| `~/omar/core/tools/agents/linear-agent.md`                                      | Custom linear-agent (canonical, symlinked)  |
 
 ### Commits
 
@@ -59,15 +59,15 @@
 
 ### Pending / Next Session
 
-| Item | Blocker | Status |
-| ---- | ------- | ------ |
-| #112: Create VT PROJECT-CONTRACT.md | #114 (template) | Blocked |
-| #113: Create ~/omar/ PROJECT-CONTRACT.md | #114 (template) | Blocked |
-| #116: Merge browser-agent.md | Design phase only | Not executed |
-| #104-110: Expedia Steps 6-12 | Rooms not configured (Step 5) | Blocked |
-| Expedia Step 3 French questions | Omar response | Awaiting |
-| VT-78/79/80/81 | Said input | Awaiting |
-| Said validation checklist | Said input | Awaiting at `data/admin/said-data-validation-checklist.md` |
+| Item                                     | Blocker                       | Status                                                     |
+| ---------------------------------------- | ----------------------------- | ---------------------------------------------------------- |
+| #112: Create VT PROJECT-CONTRACT.md      | #114 (template)               | Blocked                                                    |
+| #113: Create ~/omar/ PROJECT-CONTRACT.md | #114 (template)               | Blocked                                                    |
+| #116: Merge browser-agent.md             | Design phase only             | Not executed                                               |
+| #104-110: Expedia Steps 6-12             | Rooms not configured (Step 5) | Blocked                                                    |
+| Expedia Step 3 French questions          | Omar response                 | Awaiting                                                   |
+| VT-78/79/80/81                           | Said input                    | Awaiting                                                   |
+| Said validation checklist                | Said input                    | Awaiting at `data/admin/said-data-validation-checklist.md` |
 
 ---
 
@@ -141,11 +141,11 @@ The villa-thaifa codebase underwent massive restructuring (200+ files relocated,
 
 **Linear issues created (3c):** 14 new issues (VT-42 through VT-55):
 
-| Batch   | Priority | Issues                                                                                                                                                          |
-| ------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Batch 1 | P1       | VT-42 (GitHub integration fix), VT-43 (gitignore/PII strategy), VT-44 (hook E2E test)                                                                           |
+| Batch   | Priority | Issues                                                                                                                                                                |
+| ------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Batch 1 | P1       | VT-42 (GitHub integration fix), VT-43 (gitignore/PII strategy), VT-44 (hook E2E test)                                                                                 |
 | Batch 2 | P2       | VT-45 (facilities hardening), VT-46 (212-file triage), VT-47 (repath 10 docs), VT-48 (language audit), VT-49 (data/ migration audit), VT-50 (manifest CSV processing) |
-| Batch 3 | P3       | VT-51 (GitHub identity strategy), VT-52 (Said profile consolidation), VT-53 (communications.md review), VT-54 (TTS decision), VT-55 (archive old repo)          |
+| Batch 3 | P3       | VT-51 (GitHub identity strategy), VT-52 (Said profile consolidation), VT-53 (communications.md review), VT-54 (TTS decision), VT-55 (archive old repo)                |
 
 **Deferred items (6):** Not yet promoted to Linear issues:
 
@@ -225,7 +225,7 @@ VT-44 (hook E2E test) — independent, can run anytime
 |                         | VT-51 | GitHub identity strategy        | P2       | 2pts   | **DONE**        | Option B (migrate to org) executed same session                                                                                                                                                                 |
 | **Wave 3 — Deep Work**  | VT-47 | Move 10 misplaced docs          | P2       | 4pts   | **Done**        | All 10 docs already correct, no moves needed                                                                                                                                                                    |
 |                         | VT-48 | Language audit — French removal | P2       | 8pts   | **In Progress** | 8 files translated, OTA titles done. ~80 historical exempt. Said comms exempt.                                                                                                                                  |
-|                         | VT-49 | Post-bootstrap migration audit  | P2       | 8pts   | **In Progress** | Audit complete. missions/ archived (5 issues VT-66-70). docs/reports/ deduped. data/ migration plan ready.                                                                                                          |
+|                         | VT-49 | Post-bootstrap migration audit  | P2       | 8pts   | **In Progress** | Audit complete. missions/ archived (5 issues VT-66-70). docs/reports/ deduped. data/ migration plan ready.                                                                                                      |
 |                         | VT-50 | Process manifest.csv            | P2       | 4pts   | **Done**        | 7 issues created (VT-59-65). CSV archived.                                                                                                                                                                      |
 | **Wave 4 — Epics**      | VT-45 | Harden facilities domain        | P2       | 8pts   | Backlog         | needs Said input                                                                                                                                                                                                |
 |                         | VT-46 | Phase 3 triage — 212 files      | P2       | 16pts  | **Done**        | 185 files archived, credential eval consolidated                                                                                                                                                                |
@@ -271,13 +271,13 @@ The next session MUST:
 
 **Work completed earlier in sub-session:**
 
-| Item                        | Source | Action Taken                                                        | Outcome                                                                          |
-| --------------------------- | ------ | ------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| OTA title translation       | VT-48  | Translated R01-R12 booking_label to English, added booking_label_fr | 12 rooms updated                                                                 |
-| Expand directory contract   | VT-49  | Updated AGENTS.md + STRUCTURE.md to include infra/ + src/           | Directory contract expanded                                                      |
-| Archive missions/           | VT-49  | Capture Before Archive — extracted to Linear, then archived         | 5 issues created (VT-66-70), dir archived                                        |
-| Dedup docs/reports/         | VT-49  | Compared vs ops/audit/, rescued unique files                        | 40 dupes archived, 2 unique rescued                                              |
-| Scope data/ migration | VT-49  | Analyzed 196 files, produced migration plan                         | Plan at ~/omar/knowledge/research/development/vt-49-data-specs-migration-plan.md |
+| Item                      | Source | Action Taken                                                        | Outcome                                                                          |
+| ------------------------- | ------ | ------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| OTA title translation     | VT-48  | Translated R01-R12 booking_label to English, added booking_label_fr | 12 rooms updated                                                                 |
+| Expand directory contract | VT-49  | Updated AGENTS.md + STRUCTURE.md to include infra/ + src/           | Directory contract expanded                                                      |
+| Archive missions/         | VT-49  | Capture Before Archive — extracted to Linear, then archived         | 5 issues created (VT-66-70), dir archived                                        |
+| Dedup docs/reports/       | VT-49  | Compared vs ops/audit/, rescued unique files                        | 40 dupes archived, 2 unique rescued                                              |
+| Scope data/ migration     | VT-49  | Analyzed 196 files, produced migration plan                         | Plan at ~/omar/knowledge/research/development/vt-49-data-specs-migration-plan.md |
 
 **Work completed this sub-session (Wave 3 follow-up):**
 
@@ -293,22 +293,22 @@ The next session MUST:
 
 **Work completed this sub-session (latest):**
 
-| Item | Issue | Description | Status | Outcome |
-| ---- | ----- | ----------- | ------ | ------- |
-| Rename 160 spec images | #85 | Renamed 14 dirs + 160 files to lowercase/hyphenated convention | Done | Commit 5c5d19c — r01-r11, pool-garden, spa-hammam, hall |
-| VT-42 branch linking guide | VT-42 | Gemini researched Linear GitHub branch linking fix | Done | Guide at ~/omar/knowledge/research/development/vt-42-github-branch-linking-guide.md |
-| Browser investigation VT-42 | VT-42 | Browser agent diagnosed root cause: branch prefix mismatch (omar ≠ omar-elmountassir) | Done | Webhook confirmed working (200 OK). Root cause: username prefix. |
-| Option C applied + tested | VT-42 | Omar changed Linear format to identifier-title. Test branch vt-42-test-option-c pushed. | Testing | Branch pushed, awaiting confirmed link on VT-42. Clean up test branch after. |
-| VT-42 deep investigation | VT-42 | Browser + Gemini + researcher: full investigation of branch auto-linking | Done | Root cause: "Branches" sidebar feature doesn't work despite correct config. Issue sync (commits/PR titles) works fine. Tested: Option C format change, lowercase/uppercase branches, Draft PR — none triggered sidebar. Recommendation: close as "good enough" or escalate to Linear support. |
-| Image rename committed | #85 | 160 images + 14 dirs renamed, committed 5c5d19c | Done | Pushed to main |
-| ---------------------------------- | -------- | ---------------------------------------------------------------- | ------ | ----------------------------------------------- |
-| Fix G1 rate mismatches             | VT-49    | Sync R02/R04/R05/R06 profile rates with rates.json               | Done   | 4 rooms corrected, MAD rates also fixed         |
-| Update rates.json from HotelRunner | VT-49    | Capture confirmed pricing for all 12 rooms                       | Done   | Decision recorded in ops/decisions/             |
-| Deprecation notice rooms.md        | VT-49    | Add SSOT notice pointing to R01-R12/profile.md                   | Done   | Read-only summary                               |
-| Merge chambre_et_vue.md            | VT-49    | Extract Said's notes into R03/R06/R07 profiles + property-config | Done   | Terrace sizes, spa policy added                 |
-| Image copy error investigation     | VT-49    | MD5 verify R05-R09 duplicates of R04 images                      | Done   | 45 duplicate files confirmed                    |
-| Validation PDF completeness audit  | VT-48/49 | Check all fields from original sign-off template                 | Done   | 15 gaps found (G1-G15), 7 Linear issues created |
-| Create Linear issues for gaps      | VT-48/49 | G2-G15 tracked as VT-71 through VT-77                            | Done   | 7 issues in backlog                             |
+| Item                               | Issue    | Description                                                                             | Status  | Outcome                                                                                                                                                                                                                                                                                       |
+| ---------------------------------- | -------- | --------------------------------------------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Rename 160 spec images             | #85      | Renamed 14 dirs + 160 files to lowercase/hyphenated convention                          | Done    | Commit 5c5d19c — r01-r11, pool-garden, spa-hammam, hall                                                                                                                                                                                                                                       |
+| VT-42 branch linking guide         | VT-42    | Gemini researched Linear GitHub branch linking fix                                      | Done    | Guide at ~/omar/knowledge/research/development/vt-42-github-branch-linking-guide.md                                                                                                                                                                                                           |
+| Browser investigation VT-42        | VT-42    | Browser agent diagnosed root cause: branch prefix mismatch (omar ≠ omar-elmountassir)   | Done    | Webhook confirmed working (200 OK). Root cause: username prefix.                                                                                                                                                                                                                              |
+| Option C applied + tested          | VT-42    | Omar changed Linear format to identifier-title. Test branch vt-42-test-option-c pushed. | Testing | Branch pushed, awaiting confirmed link on VT-42. Clean up test branch after.                                                                                                                                                                                                                  |
+| VT-42 deep investigation           | VT-42    | Browser + Gemini + researcher: full investigation of branch auto-linking                | Done    | Root cause: "Branches" sidebar feature doesn't work despite correct config. Issue sync (commits/PR titles) works fine. Tested: Option C format change, lowercase/uppercase branches, Draft PR — none triggered sidebar. Recommendation: close as "good enough" or escalate to Linear support. |
+| Image rename committed             | #85      | 160 images + 14 dirs renamed, committed 5c5d19c                                         | Done    | Pushed to main                                                                                                                                                                                                                                                                                |
+| ---------------------------------- | -------- | ----------------------------------------------------------------                        | ------  | -----------------------------------------------                                                                                                                                                                                                                                               |
+| Fix G1 rate mismatches             | VT-49    | Sync R02/R04/R05/R06 profile rates with rates.json                                      | Done    | 4 rooms corrected, MAD rates also fixed                                                                                                                                                                                                                                                       |
+| Update rates.json from HotelRunner | VT-49    | Capture confirmed pricing for all 12 rooms                                              | Done    | Decision recorded in ops/decisions/                                                                                                                                                                                                                                                           |
+| Deprecation notice rooms.md        | VT-49    | Add SSOT notice pointing to R01-R12/profile.md                                          | Done    | Read-only summary                                                                                                                                                                                                                                                                             |
+| Merge chambre_et_vue.md            | VT-49    | Extract Said's notes into R03/R06/R07 profiles + property-config                        | Done    | Terrace sizes, spa policy added                                                                                                                                                                                                                                                               |
+| Image copy error investigation     | VT-49    | MD5 verify R05-R09 duplicates of R04 images                                             | Done    | 45 duplicate files confirmed                                                                                                                                                                                                                                                                  |
+| Validation PDF completeness audit  | VT-48/49 | Check all fields from original sign-off template                                        | Done    | 15 gaps found (G1-G15), 7 Linear issues created                                                                                                                                                                                                                                               |
+| Create Linear issues for gaps      | VT-48/49 | G2-G15 tracked as VT-71 through VT-77                                                   | Done    | 7 issues in backlog                                                                                                                                                                                                                                                                           |
 
 | data/ migration | VT-49 | 36 .md files archived, 160 images left for rename | Done | ops/archive/2026-02/ |
 | Old repo ref cleanup | VT-55 | 3 active files updated to El-Mountassir/villa-thaifa | Done | cliff.toml, linear-workflow, linear-github-setup |
@@ -363,16 +363,16 @@ The next session MUST:
 
 **Remaining open work**:
 
-| Item                      | Linear | Status   | Blocker                                               |
-| ------------------------- | ------ | -------- | ----------------------------------------------------- |
+| Item                      | Linear | Status                          | Blocker                                                                                                                                                            |
+| ------------------------- | ------ | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Branch linking fix        | VT-42  | Investigated — Decision Pending | Omar: close as good-enough (issue sync works) or escalate to Linear support. Research: ~/omar/knowledge/research/development/vt-42-branch-linking-deep-research.md |
-| Facility files completion | VT-71  | Partial  | Said: dimensions, capacity, hours                     |
-| Room sizes confirmation   | VT-72  | Pending  | Said: physical measurements                           |
-| Terrace size conflicts    | VT-74  | Pending  | Said: on-site verification                            |
-| Floor assignments         | VT-76  | Pending  | Said: R04/R10 floor confirmation                      |
-| property-config TODOs     | VT-77  | Partial  | Mixed: some researchable, some Said                   |
-| Facilities hardening      | VT-45  | Pending  | Said meeting                                          |
-| Image rename (160 files)  | #85    | Done     | Commit 5c5d19c                                        |
+| Facility files completion | VT-71  | Partial                         | Said: dimensions, capacity, hours                                                                                                                                  |
+| Room sizes confirmation   | VT-72  | Pending                         | Said: physical measurements                                                                                                                                        |
+| Terrace size conflicts    | VT-74  | Pending                         | Said: on-site verification                                                                                                                                         |
+| Floor assignments         | VT-76  | Pending                         | Said: R04/R10 floor confirmation                                                                                                                                   |
+| property-config TODOs     | VT-77  | Partial                         | Mixed: some researchable, some Said                                                                                                                                |
+| Facilities hardening      | VT-45  | Pending                         | Said meeting                                                                                                                                                       |
+| Image rename (160 files)  | #85    | Done                            | Commit 5c5d19c                                                                                                                                                     |
 
 **Key artifacts**:
 
@@ -406,7 +406,7 @@ These `/tmp/` files are EPHEMERAL — lost on reboot:
 | `AGENTS.md`                                                         | Directory contract + open loops                   |
 | `ops/intake/migration-conflict-check.md`                            | Migration audit from this session                 |
 | `ops/intake/migration-path-validation.md`                           | Path compliance audit                             |
-| `~/omar/operational/productivity/protocols/linear-workflow.md`       | Linear workflow conventions                       |
+| `~/omar/operational/productivity/protocols/linear-workflow.md`      | Linear workflow conventions                       |
 | `ops/handoff/handoff-linear-migration-preparation.md`               | Prior Linear session handoff                      |
 | `/tmp/scan-items-evaluation.md`                                     | Scan evaluation — ephemeral                       |
 | `/tmp/triage-*.md`                                                  | Triage reports — ephemeral (lost on reboot)       |

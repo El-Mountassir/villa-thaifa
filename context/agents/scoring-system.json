@@ -26,7 +26,7 @@
     "documentation": {
       "weight": 20,
       "checks": [
-        "Does 'ROADMAP.md' exist and is it active?",
+        "Does 'project/ROADMAP.md' exist and is it active?",
         "Are ADRs created for major decisions?",
         "Is 'README.md' a clear dashboard?",
         "Do complex functions have JSDoc?"

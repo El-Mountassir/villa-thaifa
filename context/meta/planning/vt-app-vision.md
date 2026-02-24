@@ -269,7 +269,7 @@ Villa Thaifa app = first pilot. If successful, generalize patterns into LHCM-OS 
 
 ## Next Step
 
-Plan the app properly (ROADMAP.md) before building anything. Use /plan or architect agent.
+Plan the app properly (project/ROADMAP.md) before building anything. Use /plan or architect agent.
 
 **Source files consolidated into this document**:
 - `ops/archive/planning/VISION-ENRICHED.md` (2026-01-30)

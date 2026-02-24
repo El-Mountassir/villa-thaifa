@@ -7,9 +7,10 @@
 
 | Directory | Files | Purpose                      |
 | --------- | ----- | ---------------------------- |
+| project/  | 12    | Project constitution         |
 | data/     | 412   | Canonical source-of-truth    |
 | context/  | 156   | Read-only reference material |
-| docs/     | 42    | Operational documentation    |
+| docs/     | 5     | Operational documentation    |
 | ops/      | 18    | Live operational state       |
 | scripts/  | 8     | Validation and tooling       |
 | tests/    | 1     | Test suite                   |
@@ -43,8 +44,14 @@
 │       ├── amenities.md
 │       └── beds.md
 │
+├── project/                    project constitution (identity, governance, operational rules)
+│   ├── MISSION.md              mission statement
+│   ├── PRINCIPLES.md           core principles
+│   ├── CONTRACT.md             operational contract (workflow, policies, task tracking)
+│   ├── STRUCTURE.md            repository structure overview (this file)
+│   └── ROADMAP.md              project roadmap
+│
 ├── docs/                       operational documentation
-│   ├── core/                   foundational definitions (MISSION, PRINCIPLES, STRUCTURE)
 │   ├── client/                 stakeholder profiles, admin notes, support contacts
 │   └── workflows/              operational workflows (pricing)
 │
@@ -89,7 +96,6 @@
 ├── GEMINI.md      Gemini AI project instructions
 ├── README.md      Repository documentation
 ├── CHANGELOG.md   Version history
-├── ROADMAP.md     Project roadmap
 ├── Makefile       build and convenience tasks
 ├── pyproject.toml Python project config
 ├── uv.lock        dependency lock file

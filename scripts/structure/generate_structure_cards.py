@@ -9,7 +9,7 @@ Usage:
     python scripts/structure/generate_structure_cards.py [--role ROLE] [--all]
 
 Outputs:
-    docs/core/STRUCTURE-card-{role}.md for each defined role
+    project/STRUCTURE-card-{role}.md for each defined role
 """
 
 import argparse
@@ -24,7 +24,7 @@ import yaml
 REPO_ROOT = Path(__file__).parent.parent.parent
 AGENTS_DIR = REPO_ROOT / ".claude" / "agents"
 MAPPINGS_FILE = REPO_ROOT / "scripts" / "structure" / "role_mappings.yaml"
-OUTPUT_DIR = REPO_ROOT / "docs" / "core"
+OUTPUT_DIR = REPO_ROOT / "project"
 
 
 def load_role_mappings() -> dict[str, Any]:

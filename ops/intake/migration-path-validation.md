@@ -2,7 +2,7 @@
 
 **Date**: 2026-02-19
 **Purpose**: Validate 18 proposed migration target paths against the Villa Thaifa directory contract (AGENTS.md).
-**Contract sources**: `AGENTS.md` §File Placement Decision Tree + §Directory Contract, `docs/core/STRUCTURE.md`
+**Contract sources**: `AGENTS.md` §File Placement Decision Tree + §Directory Contract, `project/STRUCTURE.md`
 
 ---
 

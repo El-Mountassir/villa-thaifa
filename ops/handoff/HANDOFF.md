@@ -3,7 +3,7 @@
 ## Read Order (fast)
 
 1. `AGENTS.md`
-2. `ROADMAP.md`
+2. `project/ROADMAP.md`
 3. `ops/status/INDEX.md`
 4. `ops/status/working.md`
 5. `ops/status/canonical.md`

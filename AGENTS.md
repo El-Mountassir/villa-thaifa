@@ -1,8 +1,12 @@
-# AGENTS.md — Villa Thaifa Workspace Contract
+# AGENTS.md -- Villa Thaifa Workspace Contract
+
+## Project Contract
+
+@project/CONTRACT.md
 
 ## Repository Structure
 
-@docs/core/STRUCTURE.md
+@project/STRUCTURE.md
 
 ## Structure Documentation System
 
@@ -10,12 +14,12 @@ The codebase uses a tiered structure documentation approach to balance context r
 
 ### Available Structure Files
 
-| File                                 | Token Cost | When to Use                                     |
-| ------------------------------------ | ---------- | ----------------------------------------------- |
-| `docs/core/STRUCTURE.md`             | ~3KB       | General overview (hybrid: curated + auto-stats) |
-| `docs/core/STRUCTURE-card-{role}.md` | 1-2KB      | Role-specific context                           |
-| `docs/core/STRUCTURE-filtered.txt`   | ~15KB      | Detailed exploration                            |
-| `STRUCTURE.txt`                      | ~50KB      | Full tree (deep dive only)                      |
+| File                                   | Token Cost | When to Use                                     |
+| -------------------------------------- | ---------- | ----------------------------------------------- |
+| `project/STRUCTURE.md`                 | ~3KB       | General overview (hybrid: curated + auto-stats) |
+| `project/STRUCTURE-card-{role}.md`     | 1-2KB      | Role-specific context                           |
+| `project/STRUCTURE-filtered.txt`       | ~15KB      | Detailed exploration                            |
+| `STRUCTURE.txt`                        | ~50KB      | Full tree (deep dive only)                      |
 
 ### Role-Based Structure Cards
 
@@ -28,7 +32,7 @@ Structure cards provide pre-filtered context for specific agent roles:
 - **finance**: `data/finance/`, `data/bookings/`
 - **guest-comms**: `data/bookings/requests/`, `context/agents/`
 
-Load the card for your role: `docs/core/STRUCTURE-card-{role}.md`
+Load the card for your role: `project/STRUCTURE-card-{role}.md`
 
 ### Maintenance Commands
 
@@ -73,7 +77,7 @@ Run `make structure-update` to refresh stats. Manually update tree when adding t
 
 **Rationale:** AI agent contract files (AGENTS.md, CLAUDE.md, GEMINI.md) must be at root for AI systems to discover and load them. README.md and CHANGELOG.md follow universal open-source conventions.
 
-**Foundational definitions** (MISSION, STRUCTURE, PRINCIPLES) live in `docs/core/`.
+**Project constitution** (MISSION, STRUCTURE, PRINCIPLES, CONTRACT, ROADMAP) lives in `project/`.
 
 **Data files** (JSON, structured markdown inventories) live in `data/`. Never place data in `docs/` or `context/`.
 
@@ -96,6 +100,10 @@ Run `make structure-update` to refresh stats. Manually update tree when adding t
 Use this flowchart when you are unsure where a new file belongs:
 
 ```
+Is it a project identity or governance file (mission, principles, contract, roadmap)?
+  YES --> project/
+  NO  |
+      v
 Is it structured domain data (JSON, inventory, profiles, rates)?
   YES --> data/
     Is it room data?        --> data/rooms/
@@ -127,7 +135,6 @@ Is it read-only reference material (architecture, planning, templates, agent con
       v
 Is it operational documentation (how-to, workflow, client info)?
   YES --> docs/
-    Is it a foundational definition?     --> docs/core/
     Is it a workflow or procedure?       --> docs/workflows/
     Is it client/stakeholder info?       --> docs/client/
   NO  |
@@ -148,6 +155,16 @@ Is it a test?
 ## Directory Contract
 
 Each top-level directory has a defined purpose, inclusion criteria, and exclusion criteria.
+
+### project/ -- Project Constitution
+
+**Purpose:** The foundational identity, governance, and operational rules for the project.
+
+**What GOES here:** Mission statement, core principles, project structure overview, operational contract (workflow, policies, task tracking), roadmap.
+
+**What does NOT go here:** Structured data (belongs in `data/`), workflow documentation (belongs in `docs/`), operational artifacts (belongs in `ops/`), reference material (belongs in `context/`).
+
+**Example files:** `project/MISSION.md`, `project/CONTRACT.md`, `project/STRUCTURE.md`
 
 ### data/ -- Canonical Source of Truth
 
@@ -175,19 +192,18 @@ Each top-level directory has a defined purpose, inclusion criteria, and exclusio
 
 **Purpose:** Human-readable and agent-readable documentation for operating Villa Thaifa.
 
-**What GOES here:** Foundational definitions (mission, principles, structure), workflow guides, client and stakeholder information, agent operational docs and logs.
+**What GOES here:** Workflow guides, client and stakeholder information, agent operational docs and logs.
 
-**What does NOT go here:** Structured data (belongs in `data/`), live operational state like audits or decisions (belongs in `ops/`), read-only reference material (belongs in `context/`), scripts (belongs in `scripts/`).
+**What does NOT go here:** Structured data (belongs in `data/`), live operational state like audits or decisions (belongs in `ops/`), read-only reference material (belongs in `context/`), scripts (belongs in `scripts/`), project identity files (belongs in `project/`).
 
-**Example files:** `docs/core/MISSION.md`, `docs/workflows/pricing.md`, `docs/client/stakeholders.md`
+**Example files:** `docs/workflows/pricing.md`, `docs/client/stakeholders.md`
 
 **Subdirectories:**
 
-| Directory         | Contents                                                            |
-| ----------------- | ------------------------------------------------------------------- |
-| `docs/core/`      | MISSION.md, PRINCIPLES.md, STRUCTURE.md -- foundational definitions |
-| `docs/workflows/` | Operational procedure guides (pricing, etc.)                        |
-| `docs/client/`    | Stakeholder profiles, admin notes, support contacts                 |
+| Directory         | Contents                                                |
+| ----------------- | ------------------------------------------------------- |
+| `docs/workflows/` | Operational procedure guides (pricing, etc.)            |
+| `docs/client/`    | Stakeholder profiles, admin notes, support contacts     |
 
 ### context/ -- Read-Only Reference Material
 
@@ -286,116 +302,8 @@ Each top-level directory has a defined purpose, inclusion criteria, and exclusio
 
 ## Mission
 
-@docs/core/MISSION.md
-
-## Mandatory Workflow
-
-Use this sequence for every operational task:
-
-1. SCOUT
-2. REPORT
-3. QUESTIONS
-4. ACTION
-5. SYNC — After any state-changing action, identify and update ALL impacted files. Use the checklist below.
-6. COMMIT — Run `make changelog`, then commit silently. Committing is Tier 1 (ACT) — commit proactively after completing a logical batch of work. No announcement needed. Pushing remains Tier 3 (ASK) — always ask before `git push`.
-
-### SYNC Checklist
-
-After ACTION, ask: "What files are impacted by this change?" Then update each:
-
-| If you changed...              | Also update...                                |
-| ------------------------------ | --------------------------------------------- |
-| A decision was made/resolved   | `ops/decisions/`, `ops/decisions/open-conflicts-registry.md`, `ops/status/truth.md` |
-| Data files (rates, rooms, etc) | `ops/status/truth.md`, reconciliation logs    |
-| A conflict was resolved        | `ops/decisions/open-conflicts-registry.md`, `ops/status/truth.md §6` |
-| Repository structure changed   | `docs/core/STRUCTURE.md` (`make structure-update`), AGENTS.md if top-level |
-| A tech stack decision was made | `ops/decisions/tech-decisions.md`, `context/meta/planning/vt-app-vision.md §Tech Stack` |
-| A handoff was created/updated  | `ops/handoff/HANDOFF.md` (index), `ops/status/truth.md` |
-
-**Rule**: If unsure whether a file is impacted, err on the side of checking. Silent drift is worse than an unnecessary update.
-
-## Project Contract
-
-Agents MUST read `PROJECT-CONTRACT.md` at session start. It defines: agent output paths, platform conventions, data flow rules, and external references. See also: `~/omar/PROJECT-CONTRACT.md` for global workspace conventions.
-
-## Scope
-
-This repo is **Villa Thaifa operations** — property data, rooms, bookings, guest comms, WhatsApp integration, Said Thaifa (owner) context.
-
-## LHCM-OS (broader vision)
-
-LHCM-OS (Lightweight Hotel Channel Management OS) is a separate, broader product vision where Villa Thaifa is the first pilot. LHCM-OS lives at `~/omar/professional/projects/lhcm-os/` — NOT in this repo. You may reference LHCM-OS docs but do not duplicate or merge them here.
-
-## Room Schema Change Protocol
-
-When adding, removing, or modifying any field in room profiles (`data/rooms/R*/profile.md`):
-
-**MANDATORY sequence — no exceptions:**
-1. Update `context/meta/templates/room-profile-template.md` FIRST
-2. Get approval (or proceed if autonomous tier allows)
-3. Apply the change to ALL 12 room profiles (R01-R12) in one operation
-4. Verify all 12 profiles match the updated template
-
-**Self-check**: "Am I about to edit a room profile field that isn't reflected in the template?" If yes -> update the template first.
-
-**Why**: The template is the schema contract. Rooms diverging from the template = silent data drift = broken agents downstream.
+@project/MISSION.md
 
 ## Core Principles
 
-@docs/core/PRINCIPLES.md
-
-## Policies
-
-### Contestability Policy (Critical)
-
-1. Treat all unprocessed data as potentially outdated, suboptimal, or contestable.
-2. Do not silently trust legacy sources.
-3. Ask Omar for clarification whenever decisions are ambiguous or high impact.
-4. When asking, provide short options with one recommended default.
-5. Log the chosen decision in status/reconciliation artifacts.
-
-### Data Handling Policy
-
-1. Legacy files are reference-only until reconciled.
-2. Archive with checksum before removal from active scope.
-3. Record accepted/rejected conflicts in domain reconciliation logs.
-4. Do not overwrite conflicting values without trusted evidence.
-
-### Git/GitHub Sync Policy
-
-1. Keep repo synced at least:
-   - start of day
-   - after each completed domain milestone
-   - end of day
-2. Work from short-lived branches with explicit scope.
-3. Never keep critical local-only changes unpushed.
-
-## Definition of Done (Per Domain)
-
-All must be true:
-
-1. Canonical contract is explicit.
-2. Validation scripts pass.
-3. Reconciliation log is updated with evidence.
-4. Legacy files are archived/deleted with explicit justification.
-5. Status files are updated.
-
-## Task Tracking
-
-**Primary backlog**: [Linear](https://linear.app/el-mountassir) — all durable work items live here.
-
-- Teams: `VT` (Villa Thaifa), `EM` (El Mountassir)
-- Issue format: `EM-XXX` or `VT-XXX`
-- Workflow conventions: `~/omar/operational/productivity/protocols/linear-workflow.md`
-
-**Session-local tasks**: Optional. Use `TaskCreate` only for genuinely complex multi-step tasks where tracking provides clear value. Not mandatory.
-
-**Work overview**: `ops/status/work-overview.md` — comprehensive task dashboard with all pending work, priorities (P0-P5 MoSCoW+Eisenhower), dependencies, Omar/Said time estimates, and workstream grouping. Template: `~/omar/Templates/WORK-OVERVIEW.md`. Agents MUST:
-- Read work-overview.md at session start to understand current state
-- Update it after completing tasks (remove completed, update statuses)
-- Follow the priority system defined in the file header
-
-### Open Loops (Migrate to Linear)
-
-1. Pending data domains: `data/pending-domains/` — contains superseded placeholder files. Active facility data lives in `data/property/facilities/`
-2. Large directory triage: `context/meta/knowledge/` (19 files), `context/meta/planning/` (14 files), `ops/audit/quality/` (3 files) need triage for archiving vs reclassification
+@project/PRINCIPLES.md

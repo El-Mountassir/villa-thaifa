@@ -28,7 +28,7 @@ structure-cards:
 # Generate filtered tree output (excludes binary/cache files)
 structure-filtered:
 	@echo "Generating filtered structure tree..."
-	@tree -I "$$(cat .structureignore | grep -v '^#' | grep -v '^$$' | tr '\n' '|')" --dirsfirst -L 3 > docs/core/STRUCTURE-filtered.txt
+	@tree -I "$$(cat .structureignore | grep -v '^#' | grep -v '^$$' | tr '\n' '|')" --dirsfirst -L 3 > project/STRUCTURE-filtered.txt
 
 # Update all structure documentation
 structure-update: structure-filtered structure-cards
