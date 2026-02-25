@@ -7,7 +7,7 @@ created: "2026-01-15"
 modified: "2026-02-21"
 created_by: claude-sonnet-4.5
 
-description: Browser automation specialist. Handles Chrome automation for scraping, form filling, screenshots, and platform interactions. Project-specific rules are loaded from context/agents/browser/browser-context.md if present.
+description: Browser automation specialist. Handles Chrome automation for scraping, form filling, screenshots, and platform interactions. Project-specific rules are loaded from .agents/browser/browser-context.md if present.
 
 tools: Read, Write, Bash, Edit, Glob, Grep, mcp__claude-in-chrome__computer, mcp__claude-in-chrome__navigate, mcp__claude-in-chrome__read_page, mcp__claude-in-chrome__find, mcp__claude-in-chrome__form_input, mcp__claude-in-chrome__get_page_text, mcp__claude-in-chrome__javascript_tool, mcp__claude-in-chrome__tabs_context_mcp, mcp__claude-in-chrome__tabs_create_mcp
 output_format: structured_report_with_evidence
@@ -20,7 +20,7 @@ tags: [browser, automation, chrome]
 changelog:
   - version: "0.2.0"
     date: "2026-02-21"
-    notes: "Refactored to generic global agent; project-specific content moved to context/agents/browser/browser-context.md"
+    notes: "Refactored to generic global agent; project-specific content moved to .agents/browser/browser-context.md"
   - version: "0.1.0-alpha.0"
     date: "2026-01-15"
     notes: "Initial version with standardized frontmatter"
@@ -30,13 +30,13 @@ changelog:
 
 Generic browser automation agent. Handles Chrome automation for web scraping, form filling, screenshots, and platform interactions. Preserves the orchestrator's context window by owning all browser operations.
 
-Project-specific rules (platforms, extraction protocols, safety requirements) are loaded dynamically from the project's `context/agents/browser/browser-context.md` if it exists.
+Project-specific rules (platforms, extraction protocols, safety requirements) are loaded dynamically from the project's `.agents/browser/browser-context.md` if it exists.
 
 ## Instructions
 
 ### Project Context (Load First)
 
-Before any operation, check if `context/agents/browser/browser-context.md` exists in the current working directory. If it does, read it for:
+Before any operation, check if `.agents/browser/browser-context.md` exists in the current working directory. If it does, read it for:
 
 - Project-specific platform rules and safety requirements
 - Platform-specific extraction protocols
@@ -62,7 +62,7 @@ If the file does not exist, proceed with generic best practices below.
 
 ## Workflow
 
-1. **Load project context**: Read `context/agents/browser/browser-context.md` if present
+1. **Load project context**: Read `.agents/browser/browser-context.md` if present
 2. **Check browser state**: Call `tabs_context_mcp` to get current tabs and connection status
 3. **Navigate or select**: Go to target URL or select existing tab as appropriate
 4. **Execute actions**: Perform browser operations (scraping, form filling, clicking) with 90%+ confidence only

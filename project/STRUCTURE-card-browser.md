@@ -2,7 +2,7 @@
 
 > Role: Web browsing and automation agent
 
-_Generated: 2026-02-25 20:26 UTC_
+_Generated: 2026-02-25 23:28 UTC_
 
 ---
 
@@ -10,7 +10,7 @@ _Generated: 2026-02-25 20:26 UTC_
 
 Paths essential for this role:
 
-- `context/agents/browser/` (7 files)
+- `.agents/browser/` (7 files)
 - `data/property/` (113 files)
 - `data/rooms/` (451 files)
 
@@ -36,7 +36,7 @@ Not relevant for this role:
 
 ```bash
 # View critical structure for browser
-tree -L 3 context/agents/browser/ data/property/ data/rooms/
+tree -L 3 .agents/browser/ data/property/ data/rooms/
 
 # Find specific file
 find . -name 'pattern' -type f

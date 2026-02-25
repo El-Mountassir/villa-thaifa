@@ -52,18 +52,18 @@
 | ----------------------------------------------------- | ------------------------ | ---------------------------------------------- | ------------------------------------------------------- | ------- |
 | `docs/agents/AI-SESSION-STARTER.md`                   | Operational guide        | `ops/handoff/`                                 | Session handoff guide, not reference material           | MOVE    |
 | `docs/agents/HANDOFF.md`                              | Operational guide        | `ops/handoff/`                                 | Session handoff guide, not reference material           | MOVE    |
-| `docs/agents/booking/capabilities.json`               | Agent config             | `context/agents/booking/`                      | Reference config, rarely changes                        | MOVE    |
-| `docs/agents/browser/config.json`                     | Agent config             | `context/agents/browser/`                      | Reference config, rarely changes                        | MOVE    |
-| `docs/agents/browser/EXAMPLES.md`                     | Tool reference           | `context/agents/browser/`                      | Reference documentation                                 | MOVE    |
-| `docs/agents/browser/guide.md`                        | Tool reference           | `context/agents/browser/`                      | Reference documentation                                 | MOVE    |
-| `docs/agents/browser/README.md`                       | Tool reference           | `context/agents/browser/`                      | Reference documentation                                 | MOVE    |
-| `docs/agents/hotelrunner/config.json`                 | Agent config             | `context/agents/hotelrunner/`                  | Reference config, rarely changes                        | MOVE    |
+| `docs/agents/booking/capabilities.json`               | Agent config             | `.agents/booking/`                      | Reference config, rarely changes                        | MOVE    |
+| `docs/agents/browser/config.json`                     | Agent config             | `.agents/browser/`                      | Reference config, rarely changes                        | MOVE    |
+| `docs/agents/browser/EXAMPLES.md`                     | Tool reference           | `.agents/browser/`                      | Reference documentation                                 | MOVE    |
+| `docs/agents/browser/guide.md`                        | Tool reference           | `.agents/browser/`                      | Reference documentation                                 | MOVE    |
+| `docs/agents/browser/README.md`                       | Tool reference           | `.agents/browser/`                      | Reference documentation                                 | MOVE    |
+| `docs/agents/hotelrunner/config.json`                 | Agent config             | `.agents/hotelrunner/`                  | Reference config, rarely changes                        | MOVE    |
 | `docs/agents/hotelrunner/DECISION-BRIEF.md`           | Decision record          | `ops/decisions/`                               | Decision artifact, not reference                        | MOVE    |
-| `docs/agents/hotelrunner/EXTRACTION-GUIDE.md`         | Tool reference           | `context/agents/hotelrunner/`                  | Reference documentation                                 | MOVE    |
-| `docs/agents/hotelrunner/guide.md`                    | Tool reference           | `context/agents/hotelrunner/`                  | Reference documentation                                 | MOVE    |
+| `docs/agents/hotelrunner/EXTRACTION-GUIDE.md`         | Tool reference           | `.agents/hotelrunner/`                  | Reference documentation                                 | MOVE    |
+| `docs/agents/hotelrunner/guide.md`                    | Tool reference           | `.agents/hotelrunner/`                  | Reference documentation                                 | MOVE    |
 | `docs/agents/hotelrunner/OPTIONS-ANALYSIS.md`         | Decision record          | `ops/decisions/`                               | Decision artifact, not reference                        | MOVE    |
-| `docs/agents/hotelrunner/README.md`                   | Tool reference           | `context/agents/hotelrunner/`                  | Reference documentation                                 | MOVE    |
-| `docs/agents/hotelrunner/SETUP.md`                    | Tool reference           | `context/agents/hotelrunner/`                  | Reference documentation                                 | MOVE    |
+| `docs/agents/hotelrunner/README.md`                   | Tool reference           | `.agents/hotelrunner/`                  | Reference documentation                                 | MOVE    |
+| `docs/agents/hotelrunner/SETUP.md`                    | Tool reference           | `.agents/hotelrunner/`                  | Reference documentation                                 | MOVE    |
 | `docs/agents/hotelrunner/STATUS-FINAL.md`             | Status report            | `ops/status/archive/`                          | Historical status, not current                          | MOVE    |
 | `docs/agents/hotelrunner/TEST-RESULTS.md`             | Test report              | `ops/audit/`                                   | Test results are audit artifacts                        | MOVE    |
 | `docs/decisions/2026-02-16-database-architecture.md`  | Decision record          | `ops/decisions/`                               | Decision artifact                                       | MOVE    |
@@ -150,7 +150,7 @@
 ### Phase 1: High Priority (Structural Clarity)
 
 1. Move `docs/decisions/` → `ops/decisions/`
-2. Move `docs/agents/` → split between `context/agents/` and `ops/`
+2. Move `docs/agents/` → split between `.agents/` and `ops/`
 3. Move `docs/facilities/images/` → `data/property/facilities/images/`
 4. Move `docs/pending/` → `ops/intake/`
 
@@ -172,26 +172,26 @@
 
 ### docs/agents/ → Split Migration
 
-**To context/agents/ (reference material):**
+**To .agents/ (reference material):**
 
 ```bash
-mkdir -p context/agents/booking context/agents/browser context/agents/hotelrunner
+mkdir -p .agents/booking .agents/browser .agents/hotelrunner
 
 # Booking agent
-mv docs/agents/booking/capabilities.json context/agents/booking/
+mv docs/agents/booking/capabilities.json .agents/booking/
 
 # Browser agent
-mv docs/agents/browser/config.json context/agents/browser/
-mv docs/agents/browser/EXAMPLES.md context/agents/browser/
-mv docs/agents/browser/guide.md context/agents/browser/
-mv docs/agents/browser/README.md context/agents/browser/
+mv docs/agents/browser/config.json .agents/browser/
+mv docs/agents/browser/EXAMPLES.md .agents/browser/
+mv docs/agents/browser/guide.md .agents/browser/
+mv docs/agents/browser/README.md .agents/browser/
 
 # HotelRunner agent
-mv docs/agents/hotelrunner/config.json context/agents/hotelrunner/
-mv docs/agents/hotelrunner/EXTRACTION-GUIDE.md context/agents/hotelrunner/
-mv docs/agents/hotelrunner/guide.md context/agents/hotelrunner/
-mv docs/agents/hotelrunner/README.md context/agents/hotelrunner/
-mv docs/agents/hotelrunner/SETUP.md context/agents/hotelrunner/
+mv docs/agents/hotelrunner/config.json .agents/hotelrunner/
+mv docs/agents/hotelrunner/EXTRACTION-GUIDE.md .agents/hotelrunner/
+mv docs/agents/hotelrunner/guide.md .agents/hotelrunner/
+mv docs/agents/hotelrunner/README.md .agents/hotelrunner/
+mv docs/agents/hotelrunner/SETUP.md .agents/hotelrunner/
 ```
 
 **To ops/ (operational artifacts):**
@@ -313,7 +313,7 @@ After migration:
    ```
    refactor(structure): reorganize docs/ and context/ for clarity
 
-   - Move agent tool docs to context/agents/ (reference material)
+   - Move agent tool docs to .agents/ (reference material)
    - Move audit artifacts to ops/audit/ (operational)
    - Move facility images to data/property/facilities/ (canonical)
    - Move decision records to ops/decisions/ (operational)

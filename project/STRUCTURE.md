@@ -56,10 +56,6 @@
 │   └── workflows/              operational workflows (pricing)
 │
 ├── context/                    read-only reference material (architecture, planning, templates)
-│   ├── agents/                 agent reference configs and READMEs
-│   │   ├── booking/
-│   │   ├── browser/
-│   │   └── hotelrunner/
 │   └── meta/                   architecture, knowledge, planning, templates
 │       ├── architecture/
 │       ├── knowledge/
@@ -128,11 +124,11 @@ The codebase uses a tiered structure documentation approach to balance context r
 Structure cards provide pre-filtered context for specific agent roles:
 
 - **booking**: `data/rooms/`, `data/bookings/`, `data/finance/`
-- **browser**: `context/agents/browser/`, `data/property/`
+- **browser**: `.agents/browser/`, `data/property/`
 - **hotelrunner**: `scripts/hotelrunner/`, `data/rooms/`
 - **admin**: `data/admin/`, `data/operations/`
 - **finance**: `data/finance/`, `data/bookings/`
-- **guest-comms**: `data/bookings/requests/`, `context/agents/`
+- **guest-comms**: `data/bookings/requests/`, `.agents/`
 
 Load the card for your role: `project/STRUCTURE-card-{role}.md`
 

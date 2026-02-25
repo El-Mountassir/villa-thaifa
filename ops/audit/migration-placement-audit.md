@@ -103,11 +103,11 @@ The `context/meta/knowledge/` directory contains 54 files. While the Directory C
 | `chambre_et_vue.md` | Room/view descriptions -- may be data, not reference |
 | `events-privatization.md` | Operational policy -- may belong in `data/operations/` or `docs/workflows/` |
 | `guest-communication.md` | Operational workflow -- may belong in `docs/workflows/` |
-| `gemini-onboarding-prompt.md` | Agent config -- may belong in `context/agents/` |
-| `gemini-system-prompt.md` | Agent config -- may belong in `context/agents/` |
+| `gemini-onboarding-prompt.md` | Agent config -- may belong in `.agents/` |
+| `gemini-system-prompt.md` | Agent config -- may belong in `.agents/` |
 | `protocols.md` | Operational protocols -- may belong in `docs/workflows/` |
 | `rules.md` | Unclear scope vs project rules -- review for duplication |
-| `decision-evaluator-agent-pattern.md` | Agent pattern -- may belong in `context/agents/` |
+| `decision-evaluator-agent-pattern.md` | Agent pattern -- may belong in `.agents/` |
 | `frontmatter-schema.md` | Template/schema -- may belong in `context/meta/templates/` |
 
 **Recommendation**: Triage these 54 files. Many are legitimate reference material, but at least 10 should be reclassified per the Decision Tree.
@@ -227,7 +227,7 @@ All data files are correctly placed:
 
 ### context/ (compliant, with warnings)
 
-- `context/agents/booking/`, `browser/`, `hotelrunner/` -- agent reference configs, correct
+- `.agents/booking/`, `browser/`, `hotelrunner/` -- agent reference configs, correct
 - `context/meta/architecture/` -- architecture reference, correct
 - `context/meta/templates/` -- templates, correct
 - `context/meta/knowledge/` -- knowledge reference, correct (see W1 for triage needs)
@@ -300,7 +300,7 @@ Update references in data/README.md and any handoff docs.
 
 ### Priority 3 -- Triage passes (separate sessions)
 
-1. **context/meta/knowledge/** (54 files) -- classify each as: stays / moves to context/agents/ / moves to docs/workflows/ / moves to data/operations/ / archives
+1. **context/meta/knowledge/** (54 files) -- classify each as: stays / moves to .agents/ / moves to docs/workflows/ / moves to data/operations/ / archives
 2. **context/meta/planning/** (96 files) -- classify each as: active (stays) / completed (archives to ops/archive/)
 3. **ops/audit/quality/** (62 files) -- classify each as: active / completed (archives) / misplaced (relocate)
 4. **ops/status/snapshots/** (21 files) -- classify each as: active / stale (archives)

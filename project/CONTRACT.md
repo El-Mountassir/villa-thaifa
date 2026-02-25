@@ -92,13 +92,13 @@ Each top-level directory has a defined purpose, inclusion criteria, and exclusio
 
 **What does NOT go here:** Live operational state (belongs in `ops/`), canonical data (belongs in `data/`), workflow documentation (belongs in `docs/`).
 
-**Example files:** `context/meta/architecture/system-overview.md`, `context/agents/booking/README.md`
+**Example files:** `context/meta/architecture/system-overview.md`, `.agents/booking/README.md`
 
 **Subdirectories:**
 
 | Directory         | Contents                                                            |
 | ----------------- | ------------------------------------------------------------------- |
-| `context/agents/` | Agent reference configs and READMEs (booking, browser, hotelrunner) |
+| `.agents/` | Agent reference configs and READMEs (booking, browser, hotelrunner) |
 | `context/meta/`   | Architecture, knowledge, planning, and template reference files     |
 
 ### ops/ -- Live Operational State
@@ -199,16 +199,16 @@ Each top-level directory has a defined purpose, inclusion criteria, and exclusio
 
 | Platform    | Credentials location        | Agent guide                               | Safety                                 |
 | ----------- | --------------------------- | ----------------------------------------- | -------------------------------------- |
-| HotelRunner | ~/.hotelrunner (gitignored) | context/agents/hotelrunner/README.md      | Read-only unless explicitly authorized |
-| Booking.com | ~/.booking (gitignored)     | context/agents/booking/README.md          | Read-only                              |
-| Expedia     | (none stored)               | context/agents/browser/browser-context.md | Read-only extraction only              |
-| WhatsApp    | (none stored)               | context/agents/browser/browser-context.md | Read-only unless Omar approves send    |
+| HotelRunner | ~/.hotelrunner (gitignored) | .agents/hotelrunner/README.md      | Read-only unless explicitly authorized |
+| Booking.com | ~/.booking (gitignored)     | .agents/booking/README.md          | Read-only                              |
+| Expedia     | (none stored)               | .agents/browser/browser-context.md | Read-only extraction only              |
+| WhatsApp    | (none stored)               | .agents/browser/browser-context.md | Read-only unless Omar approves send    |
 
 ---
 
 ## 6. Agent Context Discovery
 
-Pattern: `context/agents/{agent-name}/`
+Pattern: `.agents/{agent-name}/`
 
 | File                   | Purpose                                               |
 | ---------------------- | ----------------------------------------------------- |
@@ -217,7 +217,7 @@ Pattern: `context/agents/{agent-name}/`
 | platform-rules.md      | Platform-specific safety and behavioral rules         |
 | capabilities.md        | What this agent can and cannot do in this project     |
 
-Agents MUST read their own `context/agents/{agent-name}/` directory before taking any platform action.
+Agents MUST read their own `.agents/{agent-name}/` directory before taking any platform action.
 
 ---
 

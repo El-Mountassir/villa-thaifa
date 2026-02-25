@@ -46,9 +46,9 @@ If any answer is NO → **STOP** and adjust.
 
 **Reference guides** (read before any HotelRunner operation):
 
-- `context/agents/hotelrunner/EXTRACTION-GUIDE.md` — field-by-field extraction protocol
-- `context/agents/hotelrunner/SETUP.md` — platform setup and configuration
-- `context/agents/hotelrunner/guide.md` — general operational guide
+- `.agents/hotelrunner/EXTRACTION-GUIDE.md` — field-by-field extraction protocol
+- `.agents/hotelrunner/SETUP.md` — platform setup and configuration
+- `.agents/hotelrunner/guide.md` — general operational guide
 
 Key safety rule: A mistake on HotelRunner can affect live guest reservations. Zero tolerance.
 
@@ -56,9 +56,9 @@ Key safety rule: A mistake on HotelRunner can affect live guest reservations. Ze
 
 ## Booking.com
 
-**Reference**: `context/agents/booking/capabilities.json`
+**Reference**: `.agents/booking/capabilities.json`
 
-Read `context/agents/booking/capabilities.json` before any Booking.com operation to understand
+Read `.agents/booking/capabilities.json` before any Booking.com operation to understand
 platform-specific capabilities and constraints.
 
 ---

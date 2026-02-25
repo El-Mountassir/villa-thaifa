@@ -11,7 +11,7 @@ booking:
     - "data/bookings/"
     - "data/operations/channels.json"
     - "data/finance/rates.json"
-    - "context/agents/booking/"
+    - ".agents/booking/"
   reference:
     - "context/meta/knowledge/booking_extranet_guide.md"
     - "context/meta/knowledge/booking_extranet_incidents.md"
@@ -27,7 +27,7 @@ booking:
 browser:
   description: "Web browsing and automation agent"
   critical:
-    - "context/agents/browser/"
+    - ".agents/browser/"
     - "data/property/"
     - "data/rooms/"
   reference:
@@ -43,7 +43,7 @@ hotelrunner:
   description: "HotelRunner PMS integration agent"
   critical:
     - "scripts/hotelrunner/"
-    - "context/agents/hotelrunner/"
+    - ".agents/hotelrunner/"
     - "data/rooms/"
     - "data/operations/"
   reference:

@@ -2,7 +2,7 @@
 
 > Role: HotelRunner PMS integration agent
 
-_Generated: 2026-02-25 20:26 UTC_
+_Generated: 2026-02-25 23:28 UTC_
 
 ---
 
@@ -11,7 +11,7 @@ _Generated: 2026-02-25 20:26 UTC_
 Paths essential for this role:
 
 - `scripts/hotelrunner/` (1 files)
-- `context/agents/hotelrunner/` (10 files)
+- `.agents/hotelrunner/` (10 files)
 - `data/rooms/` (451 files)
 - `data/operations/` (8 files)
 
@@ -37,7 +37,7 @@ Not relevant for this role:
 
 ```bash
 # View critical structure for hotelrunner
-tree -L 3 scripts/hotelrunner/ context/agents/hotelrunner/ data/rooms/
+tree -L 3 scripts/hotelrunner/ .agents/hotelrunner/ data/rooms/
 
 # Find specific file
 find . -name 'pattern' -type f

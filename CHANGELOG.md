@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Added
 
+- unified handoff system + file consolidation — - Design, implement, and migrate to unified handoff system
 - apply Booking.com admin data + Said corrections to room profiles — Merged Booking.com admin extraction (2026-02-21) into all 12 room profiles:
 - ROADMAP app-first strategy — Said validates through app, not Omar — - Add strategic principle: app-first validation, no more chasing Said
 - data foundation audit + corrections + roadmap Linear issues — Phase 4 execution of ROADMAP update + data foundation plan:

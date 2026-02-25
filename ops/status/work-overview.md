@@ -532,7 +532,7 @@ Tasks where Omar's role is not None. Ordered by priority then due date.
 - **Due**: — | **Quality Gate**: Step 6 marked complete in Expedia dashboard; Step 7 unblocked
 - **Initiative**: Expedia Onboarding | **Project**: Expedia Onboarding | **Project Health**: At Risk
 - **Prerequisites**: Expedia platform access (Step 5 unblocked by Expedia tax team — VT-82)
-- **Related Files**: `context/agents/browser/`, `data/rooms/`
+- **Related Files**: `.agents/browser/`, `data/rooms/`
 - **Related Issues**: —
 - **Blocks**: #108 | **Blocked By**: Expedia platform access | **Unlocks**: Step 7 (#108)
 - **Parent**: VT-82 | **Sub-tasks**: None | **Linear**: VT-82 | **Branch**: — | **Cycle**: —
@@ -554,7 +554,7 @@ Tasks where Omar's role is not None. Ordered by priority then due date.
 - **Due**: — | **Quality Gate**: Step 7 complete; Step 8 unblocked
 - **Initiative**: Expedia Onboarding | **Project**: Expedia Onboarding | **Project Health**: At Risk
 - **Prerequisites**: #104 complete
-- **Related Files**: `context/agents/browser/`
+- **Related Files**: `.agents/browser/`
 - **Related Issues**: —
 - **Blocks**: #106 | **Blocked By**: #104 | **Unlocks**: Step 8 (#106)
 - **Parent**: VT-82 | **Sub-tasks**: None | **Linear**: VT-82 | **Branch**: — | **Cycle**: —
@@ -576,7 +576,7 @@ Tasks where Omar's role is not None. Ordered by priority then due date.
 - **Due**: — | **Quality Gate**: Step 8 complete; Step 9 unblocked
 - **Initiative**: Expedia Onboarding | **Project**: Expedia Onboarding | **Project Health**: At Risk
 - **Prerequisites**: #108 complete
-- **Related Files**: `context/agents/browser/`
+- **Related Files**: `.agents/browser/`
 - **Related Issues**: —
 - **Blocks**: #107 | **Blocked By**: #108 | **Unlocks**: Step 9 (#107)
 - **Parent**: VT-82 | **Sub-tasks**: None | **Linear**: VT-82 | **Branch**: — | **Cycle**: —
@@ -598,7 +598,7 @@ Tasks where Omar's role is not None. Ordered by priority then due date.
 - **Due**: — | **Quality Gate**: Step 9 complete; Step 10 unblocked
 - **Initiative**: Expedia Onboarding | **Project**: Expedia Onboarding | **Project Health**: At Risk
 - **Prerequisites**: #106 complete
-- **Related Files**: `context/agents/browser/`
+- **Related Files**: `.agents/browser/`
 - **Related Issues**: —
 - **Blocks**: #105 | **Blocked By**: #106 | **Unlocks**: Step 10 (#105)
 - **Parent**: VT-82 | **Sub-tasks**: None | **Linear**: VT-82 | **Branch**: — | **Cycle**: —
@@ -620,7 +620,7 @@ Tasks where Omar's role is not None. Ordered by priority then due date.
 - **Due**: — | **Quality Gate**: Step 10 complete; Step 11 unblocked
 - **Initiative**: Expedia Onboarding | **Project**: Expedia Onboarding | **Project Health**: At Risk
 - **Prerequisites**: #107 complete
-- **Related Files**: `context/agents/browser/`
+- **Related Files**: `.agents/browser/`
 - **Related Issues**: —
 - **Blocks**: #109 | **Blocked By**: #107 | **Unlocks**: Step 11 (#109)
 - **Parent**: VT-82 | **Sub-tasks**: None | **Linear**: VT-82 | **Branch**: — | **Cycle**: —
@@ -642,7 +642,7 @@ Tasks where Omar's role is not None. Ordered by priority then due date.
 - **Due**: — | **Quality Gate**: Step 11 complete; Step 12 unblocked
 - **Initiative**: Expedia Onboarding | **Project**: Expedia Onboarding | **Project Health**: At Risk
 - **Prerequisites**: #105 complete
-- **Related Files**: `context/agents/browser/`
+- **Related Files**: `.agents/browser/`
 - **Related Issues**: —
 - **Blocks**: #110 | **Blocked By**: #105 | **Unlocks**: Step 12 (#110)
 - **Parent**: VT-82 | **Sub-tasks**: None | **Linear**: VT-82 | **Branch**: — | **Cycle**: —
@@ -664,7 +664,7 @@ Tasks where Omar's role is not None. Ordered by priority then due date.
 - **Due**: — | **Quality Gate**: Step 12 complete; Expedia channel live
 - **Initiative**: Expedia Onboarding | **Project**: Expedia Onboarding | **Project Health**: At Risk
 - **Prerequisites**: #109 complete
-- **Related Files**: `context/agents/browser/`, `data/operations/channels.json`
+- **Related Files**: `.agents/browser/`, `data/operations/channels.json`
 - **Related Issues**: —
 - **Blocks**: None | **Blocked By**: #109 | **Unlocks**: Expedia channel active; update channels.json
 - **Parent**: VT-82 | **Sub-tasks**: None | **Linear**: VT-82 | **Branch**: — | **Cycle**: —

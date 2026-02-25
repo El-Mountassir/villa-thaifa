@@ -9,9 +9,11 @@
 ## Canonical Sources (Active)
 
 ### Property Core
+
 - **Property configuration**: `data/property/property-config.json`
 
 ### Rooms Domain
+
 - **Master table & profiles**: `data/rooms/rooms.md` (12 rooms: R01–R12)
 - **Reconciliation log**: `data/rooms/rooms-reconciliation-log.md`
 - **Individual profiles**: `data/rooms/R01/profile.md` through `data/rooms/R12/profile.md`
@@ -20,6 +22,7 @@
   - `data/rooms/beds.md`
 
 ### Facilities Domain
+
 - `data/property/facilities/garden.md`
 - `data/property/facilities/hall-reception.md`
 - `data/property/facilities/pool.md`
@@ -27,11 +30,13 @@
 - `data/property/facilities/spa-hammam.md`
 
 ### Bookings Domain
+
 - **Exports**: `data/bookings/exports/` (Trip.com GDA, initial scan JSON)
 - **Requests**: `data/bookings/requests/` (guest inquiries, correspondence)
 - **Reservations**: `data/bookings/reservations/reservations.md`
 
 ### Operations Domain
+
 - `data/operations/channels.json` (OTA channel config)
 - `data/operations/check-in-out.json` (procedures)
 - `data/operations/emergency.json` (contacts)
@@ -39,6 +44,7 @@
 - `data/operations/maintenance.json` (logs)
 
 ### Finance Domain
+
 - `data/finance/rates.json` (structure ready, data pending)
 - `data/finance/billing.json` (structure ready, data pending)
 
@@ -47,11 +53,13 @@
 ## Pending Actions
 
 ### Finance Data Population
+
 - **Status**: Schema defined, data awaiting import
 - **Files**: `data/finance/rates.json`, `data/finance/billing.json`
 - **Next**: Import actual rates and billing config from Booking.com/Expedia/owner records
 
 ### Pricing Workflow
+
 - **Status**: Not yet implemented
 - **Scope**: Dynamic pricing rules, seasonal adjustments, occupancy-based logic
 - **Dependency**: Finance data population must complete first
@@ -61,13 +69,16 @@
 ## Archived/Reference Material
 
 ### Legacy Sources (Read-Only)
+
 - `context/` — Architecture, planning, audits (historical reference)
 
 ### Pending Triage
+
 - `data/pending-domains/` — Unprocessed inventory items (amenities, facilities, beds pending verification)
 - `data/archive/` — Older exports and deprecated files
 
 ### Backups
+
 - `data/rooms/backups/` — Pre-consolidation room data snapshots
 
 ---
@@ -75,6 +86,7 @@
 ## Phase A Completion Summary
 
 ✅ **Completed**:
+
 - Room master table consolidated (`data/rooms/rooms.md`)
 - 12 individual room profiles migrated (`data/rooms/R01/` through `R12/`)
 - Reconciliation log established
@@ -84,10 +96,12 @@
 - Property config established at `data/property/property-config.json`
 
 ⏳ **In Progress**:
+
 - Finance data population
 - Pricing workflow design
 
 🔜 **Next**:
+
 - Complete finance domain
 - Test validation scripts against new structure
 - Merge `bootstrap/2026-02-13-baseline` → `main`

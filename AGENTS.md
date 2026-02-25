@@ -50,9 +50,13 @@ For every operational task: **SCOUT -> REPORT -> QUESTIONS -> ACTION -> SYNC -> 
 **Structured domain data** (JSON, inventories, profiles, rates) -> `data/`
 **Operational artifacts** (audits, handoffs, decisions, status) -> `ops/`
 **Archived content** (fully processed, deprecated) -> `archive/`
-**Read-only reference** (architecture, planning, templates, agent configs) -> `context/`
+**Read-only reference** (architecture, planning, templates) -> `context/`
+**Agent knowledge** (cross-platform knowledge bases for booking, browser, hotelrunner, whatsapp) -> `.agents/`
 **Scripts and tooling** -> `scripts/`
-**Workflow docs, client info** -> `docs/`
+**General documentation, client info** -> `docs/`
+
+> `.agents/` = cross-platform agent knowledge (used by Gemini, Kilo, Codex, Claude).
+> `.claude/agents/` = Claude Code sub-agent definitions (Claude-specific).
 
 **Handoff convention**: `ops/handoff/active/` for current session, `ops/handoff/{YYYY}/{MM}/{DD}/` for archived. INDEX.md lists all handoffs. Template at `context/meta/templates/handoff-template.md`.
 
@@ -72,15 +76,36 @@ Live operational artifact?               --> ops/
 Handoff / session state?                 --> ops/handoff/active/
 Fully archived?                          --> archive/
 Read-only reference material?            --> context/
-  agent config/README?                     --> context/agents/{agent-name}/
   architecture/planning?                   --> context/meta/{topic}/
+Agent knowledge base (cross-platform)?  --> .agents/{domain}/
 Operational documentation?               --> docs/
-  workflow/procedure?                      --> docs/workflows/
+  human workflow/procedure?                --> docs/workflows/
   client/stakeholder info?                 --> docs/client/
 Script or automation tool?               --> scripts/
 Test?                                    --> tests/
 None of the above?                       --> Ask Omar.
 ```
+
+## Workflow Documentation Rule
+
+**Trigger**: After resolving any complex operation (multi-step, encountered blockers, required investigation, or took >30 minutes), document it as a reusable workflow.
+
+**Location**: `.agents/workflows/{operation-slug}.md`
+
+**Required sections** in each workflow file:
+
+1. **Title & Purpose** — what operation this covers, when to use it
+2. **Prerequisites** — what must be true before starting
+3. **Procedure** — numbered, specific, copy-pasteable steps
+4. **Platform Notes** — HotelRunner quirks, Booking.com gotchas, channel-specific behavior
+5. **Troubleshooting** — common failures and their fixes
+6. **Last Verified** — date of last successful execution
+
+**Cross-platform**: Workflows are plain English markdown, readable by ANY AI agent CLI (Claude, Gemini, Kilo, Codex). No tool-specific syntax.
+
+**Self-improving**: When an agent encounters a blocker already documented in a workflow, it follows the workflow. When it discovers a NEW blocker or a changed procedure, it updates the workflow before closing the task.
+
+**Existing example**: `.agents/workflows/hotelrunner-stop-sell.md`
 
 ## Structure Maintenance
 
