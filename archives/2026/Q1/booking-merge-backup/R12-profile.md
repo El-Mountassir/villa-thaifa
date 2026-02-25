@@ -8,15 +8,14 @@
 - **Sleeping**:
   - 1 King Bed (200cm)
   - 2 Sofa Beds
-- **View**: [x] Pool view (**VERIFIED**), [x] Garden view <!-- Added: Said Thaifa 2026-02-25 -->
+- **View**: [x] Pool view (**VERIFIED**)
 - **Outdoor**: [x] Furnished patio (**VERIFIED** - Double terrasse/Patio meublé)
 - **Bathroom**: [x] Shower only (**VERIFIED** - Douche Italienne), [x] Hair dryer
 - **Kitchen**: [ ] No
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
 - **Layout**: [x] Laptop friendly workspace, [x] Separate sitting area, [x] Separate dining area, [ ] Desk (No)
 - **Features**: Salon, Dining area, Bar, Mini bar, Safe (Coffre fort)
-- **Amenities**: [x] Cots available, [x] Sofa bed, [x] Sofa, [x] Patio, [x] Terrace <!-- source: Booking.com admin 2026-02-21 -->
-- **Mini bar**: No
+- **Mini bar**: YES <!-- Confirmed presence of in-room mini bar. Source required. -->
 - **Pricing**: 449 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 
@@ -77,25 +76,13 @@ beds:
     count: 2
 views:
   - pool view
-  - garden view  # added: Said Thaifa 2026-02-25
 access: null
 access_notes: null
 outdoor: Furnished patio; Double terrace/patio
 bathroom: Shower only (walk-in shower); Hair dryer
 climate: Independent air conditioning; Heating control
 layout: Laptop-friendly workspace; Separate sitting area; Separate dining area; Mini bar; Safe (Coffre fort)
-amenities: # source: Booking.com admin 2026-02-21
-  cots_available: true
-  sofa_bed: true
-  sofa: true
-  fireplace: false
-  balcony: false
-  patio: true
-  terrace: true
-  bidet: false
-mini_bar: false  # confirmed: Said Thaifa 2026-02-25 — no mini-bar in any room
-coffee_tea_tray: true  # Espresso machine, tea sachets, kettle — Said 2026-02-25
-bathroom_products: "Shampoo, conditioner, soap, body lotion, bathrobes, shower cap"  # Said 2026-02-25
+mini_bar: confirmed # confirmed=verified present, absent=verified absent, owner_pending=awaiting Said
 data_confidence: owner_pending
 status: VERIFIED
 ```

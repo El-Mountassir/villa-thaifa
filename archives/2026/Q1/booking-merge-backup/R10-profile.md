@@ -2,21 +2,20 @@
 
 - **Type**: Suite
 - **Class**: Standard (or Suite)
-- **Floor**: Ground Floor <!-- Confirmed: Booking.com admin 2026-02-21 -->
+- **Floor**: Ground Floor (Implied by Pool Access)
 - **Occupancy**: 3 Adults
-- **Size**: 41 m² <!-- source: Booking.com admin 2026-02-21 -->
+- **Size**: ? m²
 - **Sleeping**:
   - 1 King Bed (200cm)
   - 1 Sofa Bed
-- **View**: [x] Pool view (Accès direct), [x] Garden view <!-- Added: Said Thaifa 2026-02-25 -->
+- **View**: [x] Pool view (Accès direct)
 - **Outdoor**: [x] Furnished patio (Double terrasse)
 - **Bathroom**: [x] Shower/tub combination, [x] Hair dryer
 - **Kitchen**: [ ] No
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
 - **Layout**: [x] Laptop friendly workspace, [ ] Desk (No)
 - **Features**: Safe (Coffre fort) [assumed]
-- **Amenities**: [x] Cots available, [x] Patio, [x] Terrace, [x] Bidet <!-- source: Booking.com admin 2026-02-21 -->
-- **Mini bar**: No <!-- Confirmed: Said Thaifa 2026-02-25. Coffee/tea tray in all rooms. -->
+- **Mini bar**: owner_pending <!-- Confirmed presence of in-room mini bar. Source required. -->
 - **Pricing**: 179 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 
@@ -60,7 +59,7 @@ internal_name: Suite
 expedia_type: Suite
 booking_label: Suite
 booking_label_fr: Suite
-floor: Ground Floor # confirmed: Booking.com admin 2026-02-21
+floor: Ground Floor (implied)
 capacity: "3 adults"
 max_occupancy: 3
 smoking_allowed: false
@@ -76,25 +75,13 @@ beds:
     count: 1
 views:
   - pool view (direct access)
-  - garden view  # added: Said Thaifa 2026-02-25
 access: null
 access_notes: null
 outdoor: Furnished patio; Double terrace
 bathroom: Shower/tub combination; Hair dryer
 climate: Independent air conditioning; Heating control
 layout: Laptop-friendly workspace; Safe (Coffre fort) [assumed]
-amenities: # source: Booking.com admin 2026-02-21
-  cots_available: true
-  sofa_bed: false
-  sofa: true  # corrected: Said Thaifa 2026-02-25
-  fireplace: false
-  balcony: false
-  patio: true
-  terrace: true
-  bidet: true
-mini_bar: false  # confirmed: Said Thaifa 2026-02-25
-coffee_tea_tray: true  # Espresso machine, tea sachets, kettle — Said 2026-02-25
-bathroom_products: "Shampoo, conditioner, soap, body lotion, bathrobes, shower cap"  # Said 2026-02-25
+mini_bar: owner_pending # confirmed=verified present, absent=verified absent, owner_pending=awaiting Said
 data_confidence: owner_pending
 status: VERIFIED
 ```

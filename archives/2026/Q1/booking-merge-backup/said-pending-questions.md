@@ -2,7 +2,7 @@
 
 > **Purpose**: Single consolidated registry of ALL items awaiting Said Thaifa's confirmation.
 > **DRY enforcement**: Source files reference this file. Do not maintain "Awaiting: Said" lists elsewhere.
-> **Last Updated**: 2026-02-25
+> **Last Updated**: 2026-02-21
 > **Status tracking**: Linear label "Awaiting: Said" applied to all corresponding issues.
 >
 > **CANONICAL REGISTRY**: This is the CANONICAL registry for all pending Said items. See also: `data/admin/said-data-validation-checklist.md` (subset formatted for Said's physical walk-through).
@@ -68,25 +68,25 @@ Items with `data_confidence: owner_pending` in room profiles. All rooms R01–R1
 
 | Room | Current Value | Conflict?                                  | Source File                 | Linear | Priority |
 | ---- | ------------- | ------------------------------------------ | --------------------------- | ------ | -------- |
-| ~~R01~~  | ~~44 m²~~         | **RESOLVED**: 44 m² confirmed (Booking.com admin 2026-02-21) | `data/rooms/R01/profile.md` | VT-72  | — |
-| ~~R02~~  | ~~41 m²~~         | **RESOLVED**: 41 m² confirmed (Booking.com admin 2026-02-21) | `data/rooms/R02/profile.md` | VT-72  | — |
-| ~~R03~~  | ~~44 m²~~         | **RESOLVED**: 44 m² confirmed (Booking.com admin 2026-02-21) | `data/rooms/R03/profile.md` | VT-72  | — |
-| ~~R04~~  | ~~24 m²~~         | **RESOLVED**: 24 m² confirmed (Booking.com admin 2026-02-21) | `data/rooms/R04/profile.md` | VT-72  | — |
-| ~~R05~~  | ~~24 m²~~         | **RESOLVED**: 24 m² confirmed (Booking.com admin 2026-02-21) | `data/rooms/R05/profile.md` | VT-72  | — |
-| ~~R06~~  | ~~40 m²~~         | **RESOLVED**: 40 m² confirmed (Booking.com admin 2026-02-21) | `data/rooms/R06/profile.md` | VT-72  | — |
-| ~~R07~~  | ~~61 m²~~         | **RESOLVED**: 61 m² confirmed (Booking.com admin 2026-02-21) | `data/rooms/R07/profile.md` | VT-72  | — |
-| ~~R08~~  | ~~44 m²~~         | **RESOLVED**: 44 m² confirmed (Booking.com admin 2026-02-21) | `data/rooms/R08/profile.md` | VT-72  | — |
-| ~~R09~~  | ~~41 m²~~         | **RESOLVED**: 41 m² confirmed (Booking.com admin 2026-02-21) | `data/rooms/R09/profile.md` | VT-72  | — |
-| ~~R10~~  | ~~41 m²~~         | **RESOLVED**: 41 m² confirmed (Booking.com admin 2026-02-21) | `data/rooms/R10/profile.md` | VT-72  | — |
-| ~~R11~~  | ~~41 m²~~         | **RESOLVED**: 41 m² confirmed (Booking.com admin 2026-02-21) | `data/rooms/R11/profile.md` | VT-72  | — |
-| ~~R12~~  | ~~82 m²~~         | **RESOLVED**: 82 m² confirmed (Booking.com admin 2026-02-21) | `data/rooms/R12/profile.md` | —  | — |
+| R01  | 44 m²         | Yes — 24 m² also exists (Booking.com scan) | `data/rooms/R01/profile.md` | VT-72  | P1       |
+| R02  | 41 m²         | Not confirmed                              | `data/rooms/R02/profile.md` | VT-72  | P1       |
+| R03  | 44 m²         | Assumed from similar rooms                 | `data/rooms/R03/profile.md` | VT-72  | P1       |
+| R04  | 24 m²         | From Booking.com screenshot                | `data/rooms/R04/profile.md` | VT-72  | P1       |
+| R05  | 24 m²         | Assumed from R04                           | `data/rooms/R05/profile.md` | VT-72  | P1       |
+| R06  | 40 m²         | Conflict: 44 m² in OTA short description   | `data/rooms/R06/profile.md` | VT-72  | P1       |
+| R07  | 61 m²         | Not confirmed                              | `data/rooms/R07/profile.md` | VT-72  | P1       |
+| R08  | 44 m²         | Assumed from R01/R03                       | `data/rooms/R08/profile.md` | VT-72  | P1       |
+| R09  | 41 m²         | Not confirmed                              | `data/rooms/R09/profile.md` | VT-72  | P1       |
+| R10  | 41 m²         | Assumed from similar suites                | `data/rooms/R10/profile.md` | VT-72  | P1       |
+| R11  | 41 m²         | Assumed from R09                           | `data/rooms/R11/profile.md` | VT-72  | P1       |
+| R12  | 82 m²         | **Verified** — no action needed            | `data/rooms/R12/profile.md` | —      | —        |
 
 ### 2.2 Floor Assignment
 
 | Room | Current Value          | Issue                    | Source File           | Linear | Priority |
 | ---- | ---------------------- | ------------------------ | --------------------- | ------ | -------- |
-| ~~R04~~  | ~~Ground Floor (implied)~~ | **RESOLVED**: Ground Floor confirmed (Booking.com admin 2026-02-21) | `data/rooms/rooms.md` | VT-76  | — |
-| ~~R10~~  | ~~Ground Floor (implied)~~ | **RESOLVED**: Ground Floor confirmed (Booking.com admin 2026-02-21) | `data/rooms/rooms.md` | VT-76  | — |
+| R04  | Ground Floor (implied) | Not explicitly confirmed | `data/rooms/rooms.md` | VT-76  | P1       |
+| R10  | Ground Floor (implied) | Not explicitly confirmed | `data/rooms/rooms.md` | VT-76  | P1       |
 
 ### 2.3 Other Room-Level Questions
 
@@ -158,7 +158,7 @@ Source: `data/admin/said-data-validation-checklist.md §Rooms`, `data/rooms/room
 | ~~GP10~~ | ~~Heating available in rooms? (listed in amenities as "TODO")~~    | **RESOLVED: YES — "Heating" confirmed in Booking.com Miscellaneous amenities.** (Source: Booking.com public listing 2026-02-21) | `data/property/property-config.json` | VT-77  | ~~P2~~ **RESOLVED** |
 | ~~GP11~~ | ~~In-room safe available?~~ | **RESOLVED (property-wide) — ASSUMED per-room for all 12 rooms. Said to confirm distribution.** "Safe" confirmed on Booking.com Safety & Security section. Assumed present in all rooms. | `data/property/property-config.json` | VT-77 | ~~P2~~ **ASSUMED** |
 | GP11b | **Safe distribution**: Is the in-room safe present in all 12 rooms, or only certain categories? | Assumed: all rooms (Booking.com property-wide) | `data/rooms/R01-R11/profile.md` | VT-77 | P2 |
-| ~~GP12~~ | ~~Mini-bar in rooms?~~                                                 | **RESOLVED: No mini-bar (R01-R11). R12 has private bar. All rooms: coffee/tea tray + bathroom products. Source: Said Thaifa 2026-02-25** | `data/property/property-config.json` | VT-77  | ~~P2~~ **RESOLVED** |
+| GP12 | Mini-bar in rooms?                                                     | "TODO" — not visible on Booking.com public listing                                                                                                                        | `data/property/property-config.json` | VT-77  | P2       |
 | GP13 | ~~GPS coordinates correct? (31.6539756, -7.8778661 from Google Maps)~~ | **RESOLVED: 31.6539756, -7.8778661 — Confirmed via Google Maps (2026-02-19). Said confirmation is courtesy, not blocker.** (Source: `data/property/property-config.json`) | `data/property/property-config.json` | VT-77  | —        |
 
 Source: `data/property/property-config.json §todo[]`, `data/admin/said-data-validation-checklist.md §Property-Wide`
@@ -276,15 +276,6 @@ When Said answers a question, move it here with the answer and date.
 | 2026-02-21 | Overall score                             | Updated 9.3 → 9.2 (Wonderful). Staff ↑ 9.8, Cleanliness ↑ 9.5, others slightly down      | `context/meta/knowledge/booking-com-data.md` |
 | 2026-01-xx | Rates for all 12 rooms                    | Locked via HotelRunner Jan 2026                                                                              | `data/finance/rates.json`                                                      |
 | (ongoing)  | Check-out time                            | 12:00 (Omar decision, Expedia Step 3)                                                                        | `data/property/property-config.json`                                           |
-| 2026-02-25 | Room sizes R01-R12                    | All 12 room sizes confirmed via Booking.com admin (amenities.html) 2026-02-21                          | Booking.com admin extraction                                                   |
-| 2026-02-25 | Floor assignments R04, R10              | Ground Floor confirmed via Booking.com admin 2026-02-21                                                | Booking.com admin extraction                                                   |
-| 2026-02-25 | Room amenities R01-R12                  | Amenities (cots, sofa bed, sofa, fireplace, balcony, patio, terrace, bidet) applied from Booking.com admin | Booking.com admin extraction                                               |
-| 2026-02-25 | GP12 — Mini-bar in rooms              | No mini-bar (R01-R11). R12 has private bar. All rooms: coffee/tea tray + bathroom products. Source: Said Thaifa 2026-02-25 | `data/rooms/R*/profile.md` |
-| 2026-02-25 | R05 floor correction                  | Upper Floor (stairs only) — was incorrectly "Ground Floor" from Booking.com per-type grouping. Source: Said Thaifa 2026-02-25 | `data/rooms/R05/profile.md` |
-| 2026-02-25 | R08 floor correction                  | Upper Floor (stairs only) — same Booking.com per-type grouping issue as R05. Source: Said Thaifa 2026-02-25 | `data/rooms/R08/profile.md` |
-| 2026-02-25 | R10 sofa correction                   | Has sofa (true) — was incorrectly false. Source: Said Thaifa 2026-02-25 | `data/rooms/R10/profile.md` |
-| 2026-02-25 | Bathroom products (all rooms)         | Shampoo, conditioner, soap, body lotion, bathrobes, shower cap — all 12 rooms. Source: Said Thaifa 2026-02-25 | `data/rooms/R*/profile.md` |
-| 2026-02-25 | Definitive floor map                  | RDC: R01,R02,R03,R04,R09,R10,R11,R12. Upper: R05,R06,R07,R08. Source: Said Thaifa 2026-02-25 | `data/rooms/R*/profile.md` |
 
 Full resolved conflicts log: `ops/decisions/open-conflicts-registry.md §Resolved Conflicts`
 

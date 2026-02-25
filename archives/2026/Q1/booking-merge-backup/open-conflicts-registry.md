@@ -30,13 +30,6 @@
 - **Decision record**: `ops/decisions/json-render-evaluation.md`
 - **Label**: Resolved (2026-02-21)
 
-### 4b. Booking.com Per-Type Floor Data Warning (2026-02-25)
-
-- **Issue**: Booking.com admin assigns amenities (including floor/accessibility) per ROOM TYPE, not per individual room. Rooms grouped as one type (e.g., "Chambre Triple de Luxe 1;3;8" = R01+R03+R08) may have different physical characteristics.
-- **Impact**: R05 and R08 were incorrectly set to "Ground Floor" from Booking.com data. Said confirmed they are Upper Floor.
-- **Resolution**: Said's definitive floor map applied. Future Booking.com extractions must be cross-checked against Said's physical data for grouped room types.
-- **Status**: RESOLVED
-
 ### 5. VT App Build Approach
 
 - **Option A**: Start building immediately with chosen stack
@@ -56,12 +49,6 @@
 | 2026-02-21 | Smoking Policy                            | Designated smoking areas                                                                        | Expedia Step 4 extraction               |
 | 2026-02-21 | Pets policy (C1) — Allowed vs Not allowed | Not allowed — confirmed by Omar 2026-02-21, corroborated by Booking.com and Expedia Step 4 data | Omar confirmation 2026-02-21            |
 | 2026-02-21 | Tech stack: json-render vs direct Next.js | json-render REJECTED — direct Next.js + Tailwind + shadcn/ui chosen                             | ops/decisions/json-render-evaluation.md |
-| 2026-02-25 | R01 size conflict (44 vs 24 m²)           | 44 m² confirmed — Booking.com admin (amenities.html) 2026-02-21                 | Booking.com admin extraction            |
-| 2026-02-25 | R04/R10 floor assignment (implied)        | Ground Floor confirmed — Booking.com admin 2026-02-21                            | Booking.com admin extraction            |
-| 2026-02-25 | R06 room size (40 m²)                     | 40 m² confirmed — Booking.com admin 2026-02-21                                   | Booking.com admin extraction            |
-| 2026-02-25 | R05/R08 floor (Booking.com per-type error) | Upper Floor (stairs only) — Said Thaifa definitive floor map                      | Said Thaifa 2026-02-25                  |
-| 2026-02-25 | R10 sofa (false → true)                    | Has sofa — corrected per Said Thaifa                                              | Said Thaifa 2026-02-25                  |
-| 2026-02-25 | Mini-bar (all rooms)                       | No mini-bar R01-R11; R12 has private bar. Coffee/tea tray in all rooms            | Said Thaifa 2026-02-25                  |
 
 ---
 

@@ -2,9 +2,9 @@
 
 - **Type**: Double Room
 - **Class**: Superior
-- **Floor**: Ground Floor <!-- Confirmed: Booking.com admin 2026-02-21 -->
+- **Floor**: Ground Floor (Implied by Pool Access)
 - **Occupancy**: 2 Adults
-- **Size**: 24 m² <!-- source: Booking.com admin 2026-02-21 -->
+- **Size**: ? m²
 - **Sleeping**:
   - 1 King Bed (200cm)
 - **View**: [x] Pool view (Accès direct)
@@ -14,8 +14,7 @@
 - **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
 - **Layout**: [x] Laptop friendly workspace, [ ] Desk (No)
 - **Features**: Safe (Coffre fort) [assumed]
-- **Amenities**: [x] Patio, [x] Terrace <!-- source: Booking.com admin 2026-02-21 -->
-- **Mini bar**: No <!-- Confirmed: Said Thaifa 2026-02-25. Coffee/tea tray in all rooms. -->
+- **Mini bar**: owner_pending <!-- Confirmed presence of in-room mini bar. Source required. -->
 - **Pricing**: 149 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
 
@@ -58,7 +57,7 @@ internal_name: Double Room Superior
 expedia_type: Double Room
 booking_label: Double Room Superior
 booking_label_fr: Chambre Double Superieur
-floor: Ground Floor # confirmed: Booking.com admin 2026-02-21
+floor: Ground Floor (implied)
 capacity: "2 adults"
 max_occupancy: 2
 smoking_allowed: false
@@ -78,18 +77,7 @@ outdoor: Furnished patio
 bathroom: Shower/tub combination; Hair dryer
 climate: Independent air conditioning; Heating control
 layout: Laptop-friendly workspace; Safe (Coffre fort) [assumed]
-amenities: # source: Booking.com admin 2026-02-21
-  cots_available: false
-  sofa_bed: false
-  sofa: false
-  fireplace: false
-  balcony: false
-  patio: true
-  terrace: true
-  bidet: false
-mini_bar: false  # confirmed: Said Thaifa 2026-02-25
-coffee_tea_tray: true  # Espresso machine, tea sachets, kettle — Said 2026-02-25
-bathroom_products: "Shampoo, conditioner, soap, body lotion, bathrobes, shower cap"  # Said 2026-02-25
+mini_bar: owner_pending # confirmed=verified present, absent=verified absent, owner_pending=awaiting Said
 data_confidence: verified
 status: VERIFIED
 ```
