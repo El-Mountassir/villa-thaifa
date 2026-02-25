@@ -42,9 +42,9 @@ When dispatching a `browser_subagent` to perform a Stop Sell on HotelRunner, use
    - Click the **"Mise à jour"** (Update) button to apply the changes.
    - A modal will appear asking to confirm the distribution channels (e.g., Online, Booking.com). Ensure all are selected and click to confirm/continue.
 
-6. **Verification**
+6. **Mandatory Verification**
    - Wait for the page to reload or show a success toast.
-   - Verify that the Stop Sell dropdowns still say **"Oui"** for the target date(s). Look at the visual grid to confirm.
+   - EXPLICITLY VERIFY that the Stop Sell dropdowns still say **"Oui"** for the target date(s). Look at the visual grid to confirm. Do not assume success until visually verified.
 
 7. **Reporting**
    - After confirming success, you MUST prepare a status update for the owner (Said).
@@ -83,7 +83,7 @@ Instead:
 5. Also, for every room, make sure the "Disponibilité" input field is set to 0.
 6. Once you have selected "Oui" for every room's stop sell dropdown, scroll to the bottom right and click the "Mise à jour" (Update) button to apply the changes.
 7. Confirm any channel distribution modals that appear.
-8. Verify that the Stop Sell dropdowns still say "Oui" for [TARGET_DATE].
+8. MANDATORY VERIFICATION: Verify that the Stop Sell dropdowns still say "Oui" for [TARGET_DATE] after the save operation completes. Do not assume it worked.
 
 After successful execution, draft the standard Dutch completion message for Said targeting `ops/status/reports/update/said/README.md`.
 ```

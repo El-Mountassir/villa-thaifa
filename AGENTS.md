@@ -37,9 +37,10 @@ LHCM-OS is a separate broader vision at `~/omar/professional/projects/lhcm-os/` 
 
 ## Mandatory Workflow
 
-For every operational task: **SCOUT -> REPORT -> QUESTIONS -> ACTION -> SYNC -> COMMIT**
+For every operational task: **SCOUT -> REPORT -> QUESTIONS -> ACTION -> VERIFY -> SYNC -> COMMIT**
 
-- **SYNC**: After state-changing actions, update ALL impacted files (see CONTRACT.md §9 for checklist).
+- **VERIFY**: Always explicitly verify state-changing actions on external platforms before assuming success.
+- **SYNC**: After verification, update ALL locally impacted files (see CONTRACT.md §10 for checklist).
 - **COMMIT**: Run `make changelog`, then commit. Committing is Tier 1 (ACT). Pushing is Tier 3 (ASK).
 
 ## File Organization Rules

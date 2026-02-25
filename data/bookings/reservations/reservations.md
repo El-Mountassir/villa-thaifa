@@ -1,6 +1,6 @@
 # Current State — Reservations
 
-**Last updated** : 2025-12-20
+**Last updated** : 2026-02-25
 **Source** : HotelRunner + Booking.com
 **Channel** : 100% Booking.com
 
@@ -42,6 +42,12 @@
 | Arkadiusz Kurowski | Jan 8   | Double Room Superior | 6      | 622.80 € | Pending | ⏳     |
 | Montanez Nuria     | Jan 14  | Double Room Superior | 1      | 116.15 € | Pending | ⏳     |
 | Montanez Nuria     | Jan 17  | Double Room Superior | 2      | 232.30 € | Pending | ⏳     |
+
+### February 2026
+
+| Guest              | Arrival | Room type | Nights | Amount   | Room   | Status      |
+| ------------------ | ------- | --------- | ------ | -------- | ------ | ----------- |
+| Youness El Khodari | Feb 25  | Suite     | 7      | 840.00 € | **10** | ✅ Assigned |
 
 ---
 

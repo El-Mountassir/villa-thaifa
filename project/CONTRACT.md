@@ -75,14 +75,14 @@ Each top-level directory has a defined purpose, inclusion criteria, and exclusio
 
 **What does NOT go here:** Structured data (belongs in `data/`), live operational state like audits or decisions (belongs in `ops/`), read-only reference material (belongs in `context/`), scripts (belongs in `scripts/`), project identity files (belongs in `project/`).
 
-**Example files:** `docs/workflows/pricing.md`, `docs/client/stakeholders.md`
+**Example files:** `.agents/workflows/pricing.md`, `docs/client/stakeholders.md`
 
 **Subdirectories:**
 
-| Directory         | Contents                                                |
-| ----------------- | ------------------------------------------------------- |
-| `docs/workflows/` | Operational procedure guides (pricing, etc.)            |
-| `docs/client/`    | Stakeholder profiles, admin notes, support contacts     |
+| Directory            | Contents                                            |
+| -------------------- | --------------------------------------------------- |
+| `.agents/workflows/` | Operational procedure guides (pricing, etc.)        |
+| `docs/client/`       | Stakeholder profiles, admin notes, support contacts |
 
 ### context/ -- Read-Only Reference Material
 
@@ -96,10 +96,10 @@ Each top-level directory has a defined purpose, inclusion criteria, and exclusio
 
 **Subdirectories:**
 
-| Directory         | Contents                                                            |
-| ----------------- | ------------------------------------------------------------------- |
-| `.agents/` | Agent reference configs and READMEs (booking, browser, hotelrunner) |
-| `context/meta/`   | Architecture, knowledge, planning, and template reference files     |
+| Directory       | Contents                                                            |
+| --------------- | ------------------------------------------------------------------- |
+| `.agents/`      | Agent reference configs and READMEs (booking, browser, hotelrunner) |
+| `context/meta/` | Architecture, knowledge, planning, and template reference files     |
 
 ### ops/ -- Live Operational State
 
@@ -153,7 +153,7 @@ Each top-level directory has a defined purpose, inclusion criteria, and exclusio
 
 **Purpose:** Pytest test files for validating scripts and data contracts.
 
-**What GOES here:** Test files (test_*.py), test fixtures, conftest.py.
+**What GOES here:** Test files (test\_\*.py), test fixtures, conftest.py.
 
 **What does NOT go here:** Production scripts, documentation, data.
 
@@ -197,8 +197,8 @@ Each top-level directory has a defined purpose, inclusion criteria, and exclusio
 
 ## 5. Platform Conventions
 
-| Platform    | Credentials location        | Agent guide                               | Safety                                 |
-| ----------- | --------------------------- | ----------------------------------------- | -------------------------------------- |
+| Platform    | Credentials location        | Agent guide                        | Safety                                 |
+| ----------- | --------------------------- | ---------------------------------- | -------------------------------------- |
 | HotelRunner | ~/.hotelrunner (gitignored) | .agents/hotelrunner/README.md      | Read-only unless explicitly authorized |
 | Booking.com | ~/.booking (gitignored)     | .agents/booking/README.md          | Read-only                              |
 | Expedia     | (none stored)               | .agents/browser/browser-context.md | Read-only extraction only              |
@@ -265,8 +265,9 @@ Use this sequence for every operational task:
 2. REPORT
 3. QUESTIONS
 4. ACTION
-5. SYNC -- After any state-changing action, identify and update ALL impacted files. Use the checklist below.
-6. COMMIT -- Run `make changelog`, then commit silently. Committing is Tier 1 (ACT) -- commit proactively after completing a logical batch of work. No announcement needed. Pushing remains Tier 3 (ASK) -- always ask before `git push`.
+5. VERIFY -- After any state-changing action on an external platform (e.g., clicking Save/Update), you MUST explicitly verify that the platform registered the change. Do not assume success. Reload the page, do a fresh search, or confirm the UI reflects the persisted data.
+6. SYNC -- After verifying the action, identify and update ALL impacted files locally. Use the checklist below.
+7. COMMIT -- Run `make changelog`, then commit silently. Committing is Tier 1 (ACT). No announcement needed. Pushing remains Tier 3 (ASK).
 
 ---
 
@@ -312,6 +313,12 @@ After ACTION, ask: "What files are impacted by this change?" Then update each:
    - end of day
 2. Work from short-lived branches with explicit scope.
 3. Never keep critical local-only changes unpushed.
+
+### Owner Communication Policy
+
+1. **Consolidation**: When writing updates to `ops/status/reports/update/said/README.md`, ALWAYS check if a heading for the current date (e.g., `## 25-02-2026`) already exists.
+2. **Combine**: If the heading exists, append your new update into the existing block. Do not create duplicate date headers or standalone messages. Combine greetings into a single message logically sequenced with numbers (e.g., `1️⃣`, `2️⃣`).
+3. **Template**: Strictly follow the established Dutch template structure when drafting these reports.
 
 ---
 
