@@ -3,8 +3,12 @@
 ## Summary
 <!-- 2-3 sentences: what happened this session, where we are now. -->
 
-## Task Graph
-<!-- Copy of active task graph with statuses. Format: #ID [status] Subject -->
+## Open Work
+<!-- Each item with Linear ID, title, 1-2 lines context. Next instance needs enough info to resume without searching.
+Format: VT-xxx: {title} — {context, blockers, dependencies} -->
+
+## Completed Work
+<!-- Compact list of accomplishments this session. Not actionable — purely for record. -->
 
 ## Decisions Made
 <!-- Bullet list of decisions taken this session -->
