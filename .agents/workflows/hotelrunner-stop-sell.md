@@ -44,7 +44,7 @@ When dispatching a `browser_subagent` to perform a Stop Sell on HotelRunner, use
 
 6. **Mandatory Verification**
    - Wait for the page to reload or show a success toast.
-   - EXPLICITLY VERIFY that the Stop Sell dropdowns still say **"Oui"** for the target date(s). Look at the visual grid to confirm. Do not assume success until visually verified.
+   - EXPLICITLY VERIFY that the availability (Disponibilité) is 0 and the calendar column for the target date is highlighted in RED (indicating a full block). Note: The Stop Sell dropdown may revert to a dash `-` rather than "Oui" when availability is 0. Do not assume success until visually verified.
 
 7. **Reporting**
    - After confirming success, you MUST prepare a status update for the owner (Said).
@@ -52,6 +52,8 @@ When dispatching a `browser_subagent` to perform a Stop Sell on HotelRunner, use
 
    ````markdown
    ## [DD-MM-YYYY]
+
+   **Status:** `Draft`
 
    ```text
    Salam Si Said,
@@ -83,7 +85,7 @@ Instead:
 5. Also, for every room, make sure the "Disponibilité" input field is set to 0.
 6. Once you have selected "Oui" for every room's stop sell dropdown, scroll to the bottom right and click the "Mise à jour" (Update) button to apply the changes.
 7. Confirm any channel distribution modals that appear.
-8. MANDATORY VERIFICATION: Verify that the Stop Sell dropdowns still say "Oui" for [TARGET_DATE] after the save operation completes. Do not assume it worked.
+8. MANDATORY VERIFICATION: Verify that the availability is 0 and the calendar column is RED for [TARGET_DATE] after the save operation completes. Do not assume it worked.
 
-After successful execution, draft the standard Dutch completion message for Said targeting `ops/status/reports/update/said/README.md`.
+After successful execution, draft the standard Dutch completion message for Said targeting `ops/status/reports/update/said/README.md` (remembering to include `**Status:** \`Draft\``).
 ```

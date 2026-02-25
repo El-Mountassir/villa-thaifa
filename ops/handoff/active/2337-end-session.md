@@ -69,6 +69,7 @@ Session productive en deux phases. **Phase A** (pré-compaction) : merge Booking
 **Priority #1 for next session**: #16 — Restructure `data/` directory. This is the critical blocker for the entire VT app chain (#16 → #18 → #19).
 
 Suggested approach:
+
 1. Read current `data/` structure (`make structure-update` first)
 2. Design target structure (rooms, bookings, finance, operations, admin)
 3. Plan migration as atomic steps (git mv, update refs, verify)
@@ -86,11 +87,11 @@ Three uncommitted files exist but are minor — commit or discard at session sta
 
 ## Metadata
 
-| Field | Value |
-|-------|-------|
-| Project | Villa Thaifa |
-| Branch | main |
+| Field       | Value                                                                                        |
+| ----------- | -------------------------------------------------------------------------------------------- |
+| Project     | Villa Thaifa                                                                                 |
+| Branch      | main                                                                                         |
 | Last Commit | `cb0f84c` — feat: migrate context/agents/ → .agents/ cross-platform standard + workflow rule |
-| Session ID | (post-compaction continuation) |
-| Created | 2026-02-25 23:37 |
-| Type | end |
+| Session ID  | (post-compaction continuation)                                                               |
+| Created     | 2026-02-25 23:37                                                                             |
+| Type        | end                                                                                          |

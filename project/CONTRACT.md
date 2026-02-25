@@ -79,10 +79,10 @@ Each top-level directory has a defined purpose, inclusion criteria, and exclusio
 
 **Subdirectories:**
 
-| Directory            | Contents                                            |
-| -------------------- | --------------------------------------------------- |
-| `.agents/workflows/` | Operational procedure guides (pricing, etc.)        |
-| `docs/client/`       | Stakeholder profiles, admin notes, support contacts |
+| Directory            | Contents                                                |
+| -------------------- | ------------------------------------------------------- |
+| `.agents/workflows/` | Workflows, Operational procedure guides (pricing, etc.) |
+| `docs/client/`       | Stakeholder profiles, admin notes, support contacts     |
 
 ### context/ -- Read-Only Reference Material
 
@@ -317,8 +317,9 @@ After ACTION, ask: "What files are impacted by this change?" Then update each:
 ### Owner Communication Policy
 
 1. **Consolidation**: When writing updates to `ops/status/reports/update/said/README.md`, ALWAYS check if a heading for the current date (e.g., `## 25-02-2026`) already exists.
-2. **Combine**: If the heading exists, append your new update into the existing block. Do not create duplicate date headers or standalone messages. Combine greetings into a single message logically sequenced with numbers (e.g., `1️⃣`, `2️⃣`).
-3. **Template**: Strictly follow the established Dutch template structure when drafting these reports.
+2. **Metadata**: Every date heading MUST have a metadata flag immediately below it: `**Status:** \`Draft\``or`**Status:** \`Sent\``.
+3. **Combine**: If the heading exists and the Status is `Draft`, append your new update into the existing block. Do not create duplicate date headers or standalone messages. Combine greetings into a single message logically sequenced with numbers (e.g., `1️⃣`, `2️⃣`). If the Status is `Sent`, create a new block for the same date (e.g., `## 25-02-2026 (Part 2)`).
+4. **Template**: Strictly follow the established Dutch template structure when drafting these reports.
 
 ---
 

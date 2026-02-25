@@ -2,6 +2,8 @@
 
 ## 25-02-2026
 
+**Status:** `Draft`
+
 ```text
 Salam Si Said,
 

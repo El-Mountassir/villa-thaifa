@@ -38,6 +38,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Changed
 
+- mandate verification step globally and consolidate owner communications
 - refresh work-overview, archive intake artifact — - Update work-overview.md generated date to 2026-02-25
 - optimize @reference chain — 691→125 lines always-loaded (82% reduction) — Restructure project instructions for context window efficiency:
 - migrate project identity from docs/core/ to project/ — Establishes project/ as the project constitution directory, separating

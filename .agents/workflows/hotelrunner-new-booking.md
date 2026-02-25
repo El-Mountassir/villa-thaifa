@@ -36,6 +36,7 @@ When dispatching a `browser_subagent` and processing a new booking, follow these
 
    ```text
    ## [DD-MM-YYYY]
+   **Status:** `Draft`
 
    Salam Si Said,
 
