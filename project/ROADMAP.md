@@ -5,6 +5,12 @@
 
 ---
 
+## Strategic Principle
+
+**App-first validation**: Data gaps are flagged, not chased. Said validates through the app interface, not through Omar. This eliminates constant back-and-forth, reduces Said's burden, and makes validation trackable and auditable.
+
+---
+
 ## Table of Contents
 
 - [North Star](#north-star)
@@ -37,7 +43,7 @@ Villa Thaifa is the first property. The app we build here becomes the template f
 ### Key Deliverables
 
 - [ ] Complete data audit: every field in every room profile verified or explicitly marked `owner_pending`
-- [ ] Resolve Said's pending validations (`data/admin/said-data-validation-checklist.md`)
+- [ ] Flag data gaps for in-app validation by Said (Phase 2 deliverable) — mark all `owner_pending` fields, do not chase Said directly
 - [ ] Finalize operational config JSONs (check-in, housekeeping, maintenance, emergency -- currently placeholder)
 - [ ] Reconcile OTA room type mapping (8 HotelRunner types vs 12 physical rooms)
 - [ ] Image inventory cleanup: consistent naming, hero images identified per room
@@ -84,7 +90,7 @@ Villa Thaifa is the first property. The app we build here becomes the template f
 ### Key Deliverables
 
 - [ ] Property and Rooms Dashboard (property overview, 12 room cards, pricing EUR/MAD, policies, facilities)
-- [ ] Said's validation checklist (interactive -- reads `data_confidence: owner_pending` fields, single-tap approval)
+- [ ] Said's validation interface — interactive checklist for Said to confirm/correct data directly in the app (pool access, operational configs, contact details, all `owner_pending` fields — single-tap approval)
 - [ ] HotelRunner reservation extraction viewer (daily batch, 96+ reservations)
 - [ ] DB models for Tier 1 entities deployed and seeded
 - [ ] API layer (REST endpoints for agents and UI)

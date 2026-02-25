@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Added
 
+- data foundation audit + corrections + roadmap Linear issues — Phase 4 execution of ROADMAP update + data foundation plan:
 - room image migration + facilities restructure + archive cleanup — - Rename room images R01-R11 to canonical rXX-NN.jpg format
 - room schema governance + safe/minibar data + price fixes — - Add Room Schema Change Protocol to AGENTS.md (template-first rule)
 - scout Booking.com admin extranet — terrain map, room sizes, session learnings — - Admin extranet scouted via Playwright CLI (2FA + CAPTCHA documented)
