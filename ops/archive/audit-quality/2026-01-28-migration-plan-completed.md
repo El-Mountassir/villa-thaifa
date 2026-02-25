@@ -30,7 +30,7 @@
 - **28 commits non pushés** vers origin/develop
 - **8 fichiers modifiés** non committés
 - **Fichiers gitignored critiques**:
-  - `.env.local` (5.6KB - credentials HotelRunner/Booking)
+  - `.secrets/.env` (5.6KB - credentials HotelRunner/Booking)
   - `node_modules/` (475MB)
   - `.next/` (240MB)
   - `sessions/` (transcriptions)
@@ -77,7 +77,7 @@
 | # | Action | Commande |
 |---|--------|----------|
 | 5.1 | Test Git remote | `git fetch origin` |
-| 5.2 | Vérifier .env intact | `cat .env.local \| head -5` |
+| 5.2 | Vérifier .env intact | `cat .secrets/.env \| head -5` |
 | 5.3 | Test npm/pnpm | `pnpm install --frozen-lockfile` (optionnel) |
 
 ---
@@ -86,7 +86,7 @@
 
 - [x] Git fonctionne (`git status`, `git log`, `git fetch`)
 - [x] Remote GitHub intact
-- [x] `.env.local` présent avec credentials
+- [x] `.secrets/.env` présent avec credentials
 - [x] `node_modules/` présent
 - [x] Structure projet intacte
 

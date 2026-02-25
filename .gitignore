@@ -6,7 +6,7 @@
 # CREDENTIALS & SECRETS (CRITICAL)
 # -----------------------------------------------------------------------------
 .env
-.env.local
+.secrets/.env
 .env.*.local
 .env.production
 .env.staging

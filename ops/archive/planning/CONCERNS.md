@@ -27,7 +27,7 @@
 2. Scrub git history: `git filter-repo --invert-paths --path ".env"`
 3. Use `.env.example` (template-only) for future credentials
 4. Implement environment-variable-based configuration for all auth
-5. Use `.env.local` (gitignored) for real credentials in development
+5. Use `.secrets/.env` (gitignored) for real credentials in development
 6. Document credential rotation policy in `.env.example` (90-day cycle)
 
 **Related files:**
@@ -341,21 +341,21 @@ const room = db.prepare(...).get(id) as any;  // Complete escape hatch
 
 ## Configuration Issues
 
-### Missing `.env.local` Template
+### Missing `.secrets/.env` Template
 
-**Issue:** Development workflow doesn't have a `.env.local` file pattern, creating friction for onboarding.
+**Issue:** Development workflow doesn't have a `.secrets/.env` file pattern, creating friction for onboarding.
 
 **Files:**
 - `.env.example` (good template exists)
-- Missing `.env.local.example`
+- Missing `.secrets/.env.example`
 
 **Impact:**
-- Developers unclear whether to create `.env.local` or modify `.env`
+- Developers unclear whether to create `.secrets/.env` or modify `.env`
 - Risk of accidentally committing real credentials to `.env`
 - Onboarding takes longer
 
 **Fix approach:**
-1. Add `.env.local.example` (copy of `.env.example` with clear instructions)
+1. Add `.secrets/.env.example` (copy of `.env.example` with clear instructions)
 2. Update README with credential setup instructions
 3. Add pre-commit hook to prevent `.env` modifications
 

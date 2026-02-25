@@ -141,10 +141,10 @@ Database (property.db)          JSON (src/data/rooms.json)
 **What goes wrong:** Agent asks human to enter credentials that are already in .env
 **Why it happens:** Over-cautious checkpoint design, assuming all auth needs human
 **How to avoid:**
-- **ALWAYS check .env/.env.local first** for credentials before asking
+- **ALWAYS check .env/.secrets/.env first** for credentials before asking
 - **Enter credentials automatically** using agent-browser type commands
 - **ONLY ask human for:** reCAPTCHA, OTP codes, 2FA - things agent cannot do
-- Credentials location: `.env` or `.env.local` (HOTELRUNNER_OWNER_EMAIL/PASSWORD)
+- Credentials location: `.env` or `.secrets/.env` (HOTELRUNNER_OWNER_EMAIL/PASSWORD)
 **Rule:** If you have the solution, use it. Don't waste human time.
 
 ### Pitfall 7: Small Browser Viewport

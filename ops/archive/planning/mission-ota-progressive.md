@@ -145,7 +145,7 @@
 # Test 1: Accès HotelRunner
 # Question: As-tu login + password HotelRunner?
 # Action: Essayer login sur hotelrunner.com
-# Status: [x] PARTIEL. Credentials .env.local OK. Login bloqué par reCAPTCHA (normal pour IA). Accès confirmé via Browser, mais nécessitera intervention humaine pour passer le captcha.
+# Status: [x] PARTIEL. Credentials .secrets/.env OK. Login bloqué par reCAPTCHA (normal pour IA). Accès confirmé via Browser, mais nécessitera intervention humaine pour passer le captcha.
 
 # Test 2: Photos Room 12
 # Question: Où sont les photos? (Google Drive fournis par HotelRunner (lien à déjà été fourni par Said à Omar); Omar a déjà capturer toutes les photos dans assets/facilities)

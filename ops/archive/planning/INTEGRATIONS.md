@@ -10,7 +10,7 @@
   - Auth: `HOTELRUNNER_TOKEN` (API key), `HOTELRUNNER_HR_ID` (property ID)
   - Rate Limit: 250 requests/day, 5 requests/minute
   - Docs: `sources/hotelrunner-api/guide.md`
-  - Status: Setup in progress (credentials pending in `.env.local`)
+  - Status: Setup in progress (credentials pending in `.secrets/.env`)
 
 - Booking.com - OTA reservations, promotions, guest communication
   - Login: Email + password + OTP
@@ -106,10 +106,10 @@
 **Secrets location:**
 - `.env` (gitignored, never committed)
 - `.env.example` - Template reference with structure and documentation
-- Real credentials loaded from `.env.local` at runtime
+- Real credentials loaded from `.secrets/.env` at runtime
 
 **Credential Priority:**
-1. Read from `.env.local` if exists
+1. Read from `.secrets/.env` if exists
 2. Fallback to `.env` environment variables
 3. Ask user for credentials at runtime if missing
 

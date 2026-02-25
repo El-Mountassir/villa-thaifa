@@ -117,7 +117,7 @@ Deferred to next milestone after v1 operational tasks complete:
 - Database queries: < 100ms for room listings
 
 ### Security
-- Credentials stored in `.env.local` (gitignored)
+- Credentials stored in `.secrets/.env` (gitignored)
 - Never use owner accounts without explicit approval
 - All user input validated with Zod schemas
 - No hardcoded secrets in codebase

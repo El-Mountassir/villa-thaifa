@@ -188,7 +188,7 @@ git branch -a | grep wip
 agent-browser --version
 
 # Vérifier credentials
-cat .env.local | grep HOTELRUNNER
+cat .secrets/.env | grep HOTELRUNNER
 ```
 
 #### 2️⃣ NORMAL : Exécuter Mission Extend Pricing (15-20 min)
@@ -240,7 +240,7 @@ ls -la ~/.hotelrunner-profile/
 
 ### Credentials
 
-**Fichier** : `/home/omar/omar-el-mountassir/projects/clients/villa-thaifa/.env.local`
+**Fichier** : `/home/omar/omar-el-mountassir/projects/clients/villa-thaifa/.secrets/.env`
 
 **Contenu** :
 - `HOTELRUNNER_OWNER_EMAIL=said_thaifa@hotmail.fr`
@@ -249,7 +249,7 @@ ls -la ~/.hotelrunner-profile/
 
 **Vérifier présence** :
 ```bash
-cat .env.local | grep HOTELRUNNER
+cat .secrets/.env | grep HOTELRUNNER
 ```
 
 ---
@@ -308,7 +308,7 @@ cat .env.local | grep HOTELRUNNER
 - [ ] Naviguer vers projet Villa Thaifa
 - [ ] Vérifier git status
 - [ ] Vérifier agent-browser installé
-- [ ] Vérifier .env.local présent
+- [ ] Vérifier .secrets/.env présent
 
 ### Court Terme (Aujourd'hui)
 

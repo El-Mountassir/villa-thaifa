@@ -14,7 +14,7 @@ The API uses TOKEN and HR_ID for authentication via headers.
 
 ### Credentials Location
 
-**Environment Variables** (`.env.local`):
+**Environment Variables** (`.secrets/.env`):
 
 ```bash
 HOTELRUNNER_TOKEN=your_token_here
@@ -31,7 +31,7 @@ HOTELRUNNER_HR_ID=your_hr_id_here
    - **Integration Type**: HR-v1
    - **Permissions**: Check all boxes
 5. After creation, go to **"Identifiants"** tab
-6. Copy TOKEN and HR_ID to `.env.local`
+6. Copy TOKEN and HR_ID to `.secrets/.env`
 
 ## App Configuration
 
@@ -176,7 +176,7 @@ For real-time reservation updates, HotelRunner will POST to your callback URL:
 
 **401 Unauthorized**
 
-- Check TOKEN and HR_ID are correct in `.env.local`
+- Check TOKEN and HR_ID are correct in `.secrets/.env`
 - Verify credentials haven't expired
 
 **429 Too Many Requests**
@@ -199,6 +199,6 @@ For real-time reservation updates, HotelRunner will POST to your callback URL:
 
 1. ⏳ **Waiting**: Complete app creation in HotelRunner dashboard
 2. 📋 **Copy Credentials**: Get TOKEN and HR_ID from "Identifiants" tab
-3. 💾 **Save to .env.local**: Add credentials to environment file
+3. 💾 **Save to .secrets/.env**: Add credentials to environment file
 4. ✅ **Test Connection**: Run a simple API call to verify
 5. 🚀 **Enable Source**: Set `"enabled": true` in config.json

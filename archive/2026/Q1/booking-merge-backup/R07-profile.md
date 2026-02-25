@@ -1,0 +1,101 @@
+# R07: Deluxe King Suite (Golden Record)
+
+- **Type**: Suite
+- **Class**: Deluxe
+- **Floor**: 1st Floor
+- **Occupancy**: 4 Adults
+- **Size**: ? m²
+- **Sleeping**:
+  - 1 King Bed (200cm)
+  - 2 Sofa Beds
+- **View**: [x] Pool view, [x] Mountain view (Atlas), [x] Garden view
+- **Outdoor**: [x] Furnished balcony (~80-100 m² Terrace)
+- **Bathroom**: [x] Shower/tub combination, [x] Hair dryer
+- **Kitchen**: [ ] No
+- **Climate**: [x] Air conditioning (Independent), [x] Heating (Control)
+- **Layout**: [x] Laptop friendly workspace, [x] Separate sitting area, [x] Separate dining area, [ ] Desk (No)
+- **Features**: Fireplace, Safe (Coffre fort) [assumed]
+- **Mini bar**: owner_pending <!-- Confirmed presence of in-room mini bar. Source required. -->
+- **Pricing**: 329 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
+
+
+### R07 — Deluxe King Suite
+
+
+#### Identity
+
+- **FR Name**: Suite Deluxe King
+- **Internal Code**: DELUXE_KING_SUITE
+
+#### Narrative
+
+- **Description (EN)**: Deluxe king suite with separate living room, fireplace, 2 sofa beds, dining room, ~80-100 m² terrace with pool, Atlas, and garden views.
+- **Description (FR)**: Suite de luxe King size avec salon à part et une cheminée et 2 canapés et salle à manger et une terrasse d'environ 80-100 m2 vue piscine, atlas et jardin le top.
+- **Tagline**: The pinnacle of comfort with fireplace and mountain views
+
+#### Marketing Hooks
+
+- **Target Persona**: Luxury seekers, extended families, special occasions, longer stays
+- **Highlights**:
+  - Separate living and dining areas with fireplace
+  - 61 m² suite with ~80-100 m² terrace
+  - Sleeps 4 with king bed and two sofa beds
+  - Pool, Atlas Mountain, and garden views
+
+#### OTA Fields
+
+- **Expedia Title**: Deluxe King Suite, Mountain View (32 chars)
+- **Booking.com Title**: Suite De Luxe King Size (23 chars)
+- **Short Description (EN)**: 61 m² luxury suite with separate living/dining, fireplace, king bed, 2 sofa beds, and ~80-100 m² terrace. (105 chars)
+- **Short Description (FR)**: Suite 61 m² avec salon/salle à manger séparés, cheminée, lit king, 2 canapés-lits et terrasse ~80-100 m². (106 chars)
+
+#### Structured Data (YAML)
+
+```yaml
+room_id: R07
+room_number: "07"
+category_code: DELUXE_KING_SUITE
+internal_name: Deluxe King Suite
+expedia_type: Suite
+booking_label: Deluxe King Suite
+booking_label_fr: Suite De Luxe King Size
+floor: First Floor
+capacity: "4 adults"
+max_occupancy: 4
+smoking_allowed: false
+has_kitchen: false
+size_m2: 61
+base_rate_mad: 3527
+base_rate_eur: 329
+beds:
+  - type: king
+    size_cm: 200
+    count: 1
+  - type: sofa_bed
+    count: 2
+views:
+  - pool view
+  - mountain view
+  - garden view
+access: null
+access_notes: null
+outdoor: Furnished balcony; ~80-100 m² terrace
+bathroom: Shower/tub combination; Hair dryer
+climate: Independent air conditioning; Heating control
+layout: Laptop-friendly workspace; Separate sitting area; Separate dining area; Fireplace; Safe (Coffre fort) [assumed]
+mini_bar: owner_pending # confirmed=verified present, absent=verified absent, owner_pending=awaiting Said
+data_confidence: owner_pending
+status: VERIFIED
+```
+
+#### Provenance
+
+- **Legacy Features (Alias)**: rooms-2: 60 m² Terrace | rooms-4: Piscine, Atlas, 1er étage, 60 m² Terrace
+- **Discrepancy**: Legacy sources say 60 m²; Said's note (chambre_et_vue.md) says ~80-100 m². Updated to ~80-100 m² per owner authority. Verify on-site.
+- **View added**: Garden view added per chambre_et_vue.md (was missing from legacy sources).
+- **Legacy Amenities (Alias)**: Salon, Cheminée, Salle à manger
+- **Profile Source**: rooms-2.md + rooms-4.md (alias enrichment)
+- **Last Verified**: 2026-02-13
+
+---
+

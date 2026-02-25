@@ -18,7 +18,7 @@ See [OPTIONS-ANALYSIS.md](./OPTIONS-ANALYSIS.md) for details.
 ## Authentication
 
 ```bash
-# Environment variables (.env.local)
+# Environment variables (.secrets/.env)
 HOTELRUNNER_TOKEN=<pending>
 HOTELRUNNER_HR_ID=<pending>
 ```

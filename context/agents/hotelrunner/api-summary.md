@@ -40,7 +40,7 @@
 ## ✅ API Action Plan
 
 1.  Retrieve `HR_ID` and `TOKEN` in the dashboard (Manually or Browser Agent).
-2.  Store in `.env.local` (e.g., `HOTELRUNNER_TOKEN`).
+2.  Store in `.secrets/.env` (e.g., `HOTELRUNNER_TOKEN`).
 3.  Create tools (Node Scripts or MCP) to read inventory without a browser.
 
 ![API Auth Details](hr_api_auth_details.png)

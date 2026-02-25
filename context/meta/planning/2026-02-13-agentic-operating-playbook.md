@@ -6,11 +6,11 @@ Provide a practical operating system for Omar, Said, and AI agents to run digita
 
 ## Weekly Cadence
 
-| Day | Focus | Output |
-| --- | --- | --- |
-| Monday | Prioritize domains and risks | weekly backlog lock |
-| Tuesday-Thursday | Consolidation + validation | canonical updates + logs |
-| Friday | Review and freeze | deletion decisions + carry-over list |
+| Day              | Focus                        | Output                               |
+| ---------------- | ---------------------------- | ------------------------------------ |
+| Monday           | Prioritize domains and risks | weekly backlog lock                  |
+| Tuesday-Thursday | Consolidation + validation   | canonical updates + logs             |
+| Friday           | Review and freeze            | deletion decisions + carry-over list |
 
 ## Daily Workflow
 
@@ -47,6 +47,7 @@ Use this structure for each work item:
 
 ```markdown
 ## [ID] Domain - Source file
+
 - Goal:
 - Source:
 - Canonical target:
@@ -90,11 +91,11 @@ uv run pytest tests/test_scripts.py
 
 ## Proposed Script Set (Phase 2)
 
-| Script | Purpose |
-| --- | --- |
+| Script                          | Purpose                                           |
+| ------------------------------- | ------------------------------------------------- |
 | `scripts/validate_contracts.py` | Verify required columns/fields in canonical files |
-| `scripts/check_unique_info.py` | Detect source-only data before deletion |
-| `scripts/domain_verify.py` | One-command domain verification summary |
+| `scripts/check_unique_info.py`  | Detect source-only data before deletion           |
+| `scripts/domain_verify.py`      | One-command domain verification summary           |
 
 ## Reconciliation Log Standard
 
@@ -118,12 +119,12 @@ A source file can be deleted only if:
 
 ## Agent Role Split
 
-| Role | Responsibility |
-| --- | --- |
-| Scout Agent | gather and structure source facts |
-| Builder Agent | mutate canonical safely |
-| Auditor Agent | strict checks and deletion gate |
-| Owner (Omar) | approve final decisions on ambiguous points |
+| Role          | Responsibility                              |
+| ------------- | ------------------------------------------- |
+| Scout Agent   | gather and structure source facts           |
+| Builder Agent | mutate canonical safely                     |
+| Auditor Agent | strict checks and deletion gate             |
+| Owner (Omar)  | approve final decisions on ambiguous points |
 
 ## Escalation and Stop Rules
 

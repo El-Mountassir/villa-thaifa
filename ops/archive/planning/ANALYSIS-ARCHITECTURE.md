@@ -125,7 +125,7 @@ These are **already implemented and working** in the codebase:
    - 15-second extraction time
 
 9. **Environment Configuration**
-   - `.env.local` for credentials (HotelRunner, Booking.com, Expedia)
+   - `.secrets/.env` for credentials (HotelRunner, Booking.com, Expedia)
    - `.env.example` as template
    - Admin vs Owner account separation
 
@@ -234,8 +234,8 @@ These are **already implemented and working** in the codebase:
    - **Strategic**: EM-155 explores direct booking channel
 
 9. **Credential Security**
-   - `.env.local` contains production credentials (gitignored)
-   - **Rule**: NEVER delete credentials from `.env.local`
+   - `.secrets/.env` contains production credentials (gitignored)
+   - **Rule**: NEVER delete credentials from `.secrets/.env`
    - **Rule**: NEVER use owner accounts without explicit approval
    - **Documented**: `docs/operations/.env.rules.md`
 

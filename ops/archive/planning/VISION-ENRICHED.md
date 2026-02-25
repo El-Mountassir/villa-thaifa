@@ -170,7 +170,7 @@ sources:
 ### Integration Capabilities
 
 13. ✅ HotelRunner reservation extraction (96 reservations via browser automation)
-14. ✅ Environment configuration for credentials (.env.local)
+14. ✅ Environment configuration for credentials (.secrets/.env)
 
 ---
 
@@ -293,8 +293,8 @@ From Linear issues + roadmap:
    - **Strategic Goal**: EM-155 (direct booking channel to reduce dependency)
 
 8. **Credential Security**
-   - `.env.local` contains production credentials (gitignored)
-   - **Rule**: NEVER delete credentials from `.env.local`
+   - `.secrets/.env` contains production credentials (gitignored)
+   - **Rule**: NEVER delete credentials from `.secrets/.env`
    - **Rule**: NEVER use owner accounts without explicit approval
    - **Documented**: `docs/operations/.env.rules.md`
 

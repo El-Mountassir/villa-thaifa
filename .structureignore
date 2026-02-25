@@ -39,7 +39,7 @@ tmp/
 .env
 .venv/
 venv/
-.env.local
+.secrets/.env
 *.pyc
 
 # ===========================================

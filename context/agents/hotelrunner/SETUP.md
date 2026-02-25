@@ -133,14 +133,14 @@ python extract_reservations.py
 
 ### 5. Save Credentials
 
-- [ ] Open `.env.local`
+- [ ] Open `.secrets/.env`
 - [ ] Add values:
   ```bash
   HOTELRUNNER_TOKEN=<copied_value>
   HOTELRUNNER_HR_ID=<copied_value>
   ```
 - [ ] Save the file
-- [ ] ⚠️ **DO NOT COMMIT** `.env.local` (already in .gitignore)
+- [ ] ⚠️ **DO NOT COMMIT** `.secrets/.env` (already in .gitignore)
 
 ### 6. Connection Test
 
@@ -218,11 +218,11 @@ HR_ID: <pending>
 1. **Configuration**: `/sources/hotelrunner-api/config.json`
 2. **Usage Guide**: `/sources/hotelrunner-api/guide.md`
 3. **Progress tracking**: `/sources/hotelrunner-api/SETUP.md` (this file)
-4. **Credentials**: `.env.local` (once added)
+4. **Credentials**: `.secrets/.env` (once added)
 
 ### Before using the API
 
-1. Verify credentials exist in `.env.local`
+1. Verify credentials exist in `.secrets/.env`
 2. Read the full guide: `guide.md`
 3. Respect rate limits (250/day, 5/min)
 4. Log all important operations

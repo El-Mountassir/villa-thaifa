@@ -54,6 +54,10 @@ For every operational task: **SCOUT -> REPORT -> QUESTIONS -> ACTION -> SYNC -> 
 **Scripts and tooling** -> `scripts/`
 **Workflow docs, client info** -> `docs/`
 
+**Handoff convention**: `ops/handoff/active/` for current session, `ops/handoff/{YYYY}/{MM}/{DD}/` for archived. INDEX.md lists all handoffs. Template at `context/meta/templates/handoff-template.md`.
+
+**Archive convention**: Always `archive/` (singular). Never `archives/`. This applies to all directories project-wide.
+
 ## File Placement Decision Tree
 
 ```
@@ -65,6 +69,7 @@ Structured domain data?                  --> data/
 Live operational artifact?               --> ops/
   decision / audit / handoff / status /    --> ops/{type}/
   unprocessed incoming?                    --> ops/intake/
+Handoff / session state?                 --> ops/handoff/active/
 Fully archived?                          --> archive/
 Read-only reference material?            --> context/
   agent config/README?                     --> context/agents/{agent-name}/

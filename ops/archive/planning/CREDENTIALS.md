@@ -7,14 +7,14 @@
 
 ## 🔐 Credentials Location
 
-**ALL platform credentials are stored in:** `.env.local`
+**ALL platform credentials are stored in:** `.secrets/.env`
 
 ```bash
 # File path (from project root)
-/home/omar/omar-el-mountassir/projects/clients/villa-thaifa/.env.local
+/home/omar/omar-el-mountassir/projects/clients/villa-thaifa/.secrets/.env
 
 # Read credentials
-Read tool: .env.local
+Read tool: .secrets/.env
 ```
 
 **Reference structure:** `.env.example` (contains documentation and example format)
@@ -32,14 +32,14 @@ Read tool: .env.local
 ```env
 HOTELRUNNER_URL=https://app.hotelrunner.com
 HOTELRUNNER_ADMIN_EMAIL=omar@el-mountassir.com
-HOTELRUNNER_ADMIN_PASSWORD=[stored in .env.local]
+HOTELRUNNER_ADMIN_PASSWORD=[stored in .secrets/.env]
 ```
 
 **Owner Account (Said)** - ⚠️ DO NOT USE unless explicitly requested
 
 ```env
 HOTELRUNNER_OWNER_EMAIL=said_thaifa@hotmail.fr
-HOTELRUNNER_OWNER_PASSWORD=[stored in .env.local]
+HOTELRUNNER_OWNER_PASSWORD=[stored in .secrets/.env]
 ```
 
 **Why use Admin account:**
@@ -57,14 +57,14 @@ HOTELRUNNER_OWNER_PASSWORD=[stored in .env.local]
 ```env
 BOOKING_URL=https://admin.booking.com
 BOOKING_ADMIN_EMAIL=omar@el-mountassir.com
-BOOKING_ADMIN_PASSWORD=[stored in .env.local]
+BOOKING_ADMIN_PASSWORD=[stored in .secrets/.env]
 ```
 
 **Owner Account (Said)** - ⚠️ DO NOT USE unless explicitly requested
 
 ```env
 BOOKING_OWNER_EMAIL=said_thaifa@hotmail.fr
-BOOKING_OWNER_PASSWORD=[stored in .env.local]
+BOOKING_OWNER_PASSWORD=[stored in .secrets/.env]
 ```
 
 ---
@@ -92,7 +92,7 @@ BOOKING_OWNER_PASSWORD=[stored in .env.local]
 
 **DO:**
 
-- ✅ Read credentials from `.env.local` at runtime
+- ✅ Read credentials from `.secrets/.env` at runtime
 - ✅ Keep credentials in memory only during operation
 - ✅ Never log credentials in output or files
 - ✅ Never commit credentials to git
@@ -108,11 +108,11 @@ BOOKING_OWNER_PASSWORD=[stored in .env.local]
 
 ## 🔑 How to Read Credentials
 
-### Step 1: Read .env.local file
+### Step 1: Read .secrets/.env file
 
 ```bash
 # Using Read tool
-Read(".env.local")
+Read(".secrets/.env")
 
 # Parse environment variables
 # Format: KEY=value (one per line)
@@ -123,7 +123,7 @@ Read(".env.local")
 **Example for HotelRunner Admin:**
 
 ```
-1. Read .env.local
+1. Read .secrets/.env
 2. Find line starting with "HOTELRUNNER_ADMIN_EMAIL="
 3. Extract value after "="
 4. Repeat for HOTELRUNNER_ADMIN_PASSWORD
@@ -138,7 +138,7 @@ Read(".env.local")
 # Navigate to login
 agent-browser open "$HOTELRUNNER_URL"
 
-# Fill credentials (read from .env.local)
+# Fill credentials (read from .secrets/.env)
 agent-browser fill "input[name='email']" "$ADMIN_EMAIL"
 agent-browser fill "input[type='password']" "$ADMIN_PASSWORD"
 
@@ -195,7 +195,7 @@ agent-browser click "button[type='submit']"
 
 ## 📖 Credential Structure Reference
 
-### .env.local Format
+### .secrets/.env Format
 
 ```bash
 # Platform credentials (real values)
@@ -220,7 +220,7 @@ BOOKING_OWNER_PASSWORD=actual_password_here
 
 - Contains example/placeholder values only
 - Serves as documentation and structure reference
-- Real credentials are ONLY in .env.local
+- Real credentials are ONLY in .secrets/.env
 
 ---
 
@@ -232,7 +232,7 @@ BOOKING_OWNER_PASSWORD=actual_password_here
 2. **Memory only**: Never persist to disk
 3. **Scrub output**: Never include credentials in logs/reports
 4. **Clear after use**: Don't retain in memory across operations
-5. **Validate source**: Always read from `.env.local`, never user input
+5. **Validate source**: Always read from `.secrets/.env`, never user input
 
 ### For Platform Operations
 
@@ -248,7 +248,7 @@ BOOKING_OWNER_PASSWORD=actual_password_here
 
 ### Checklist Before Platform Operation
 
-- [ ] Read `.env.local` to get credentials
+- [ ] Read `.secrets/.env` to get credentials
 - [ ] Verify using ADMIN (Omar) account
 - [ ] Understand OTP/reCAPTCHA may be required
 - [ ] Prepare to request user input for challenges
@@ -259,7 +259,7 @@ BOOKING_OWNER_PASSWORD=actual_password_here
 **Task: Login to HotelRunner**
 
 ```bash
-1. Read .env.local
+1. Read .secrets/.env
 2. Extract HOTELRUNNER_ADMIN_EMAIL and HOTELRUNNER_ADMIN_PASSWORD
 3. Navigate to HOTELRUNNER_URL
 4. Fill credentials
@@ -271,7 +271,7 @@ BOOKING_OWNER_PASSWORD=actual_password_here
 **Task: Login to Booking.com**
 
 ```bash
-1. Read .env.local
+1. Read .secrets/.env
 2. Extract BOOKING_ADMIN_EMAIL and BOOKING_ADMIN_PASSWORD
 3. Navigate to BOOKING_URL
 4. Fill credentials
@@ -287,7 +287,7 @@ BOOKING_OWNER_PASSWORD=actual_password_here
 | Document                                                                         | Purpose                        |
 | -------------------------------------------------------------------------------- | ------------------------------ |
 | [`.env.example`](../../.env.example)                                             | Credential structure reference |
-| [`.env.local`](../../.env.local)                                                 | Actual credentials (read-only) |
+| [`.secrets/.env`](../../.secrets/.env)                                                 | Actual credentials (read-only) |
 | [`STAKEHOLDERS.md`](../leadership/STAKEHOLDERS.md)                               | Account usage policy           |
 | [`profiles/OMAR-EL-MOUNTASSIR.md`](../leadership/profiles/OMAR-EL-MOUNTASSIR.md) | Admin account ownership        |
 
@@ -296,7 +296,7 @@ BOOKING_OWNER_PASSWORD=actual_password_here
 ## ❓ FAQ for AI Agents
 
 **Q: Where are the credentials?**
-A: In `.env.local` at project root
+A: In `.secrets/.env` at project root
 
 **Q: Which account should I use?**
 A: ADMIN (Omar) by default, OWNER (Said) only if explicitly requested
@@ -305,7 +305,7 @@ A: ADMIN (Omar) by default, OWNER (Said) only if explicitly requested
 A: Stop and request code from Omar
 
 **Q: Can I store credentials for reuse?**
-A: No. Read fresh from `.env.local` each time
+A: No. Read fresh from `.secrets/.env` each time
 
 **Q: What if admin account is locked?**
 A: Ask Omar. Owner account available as backup.

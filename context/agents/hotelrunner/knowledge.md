@@ -11,7 +11,7 @@
   - **Google reCAPTCHA** (Motorcycle/bus images etc.) active on every login attempt.
   - Prevents full automation of login.
 - **PROD Credentials**:
-  - Owner Email: [See .env.local]
+  - Owner Email: [See .secrets/.env]
   - Admin Email (Omar): [Not yet active]
 
 ## ⚠️ Constraints

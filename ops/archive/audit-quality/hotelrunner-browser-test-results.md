@@ -24,7 +24,7 @@ agent-browser --headed --profile ~/.hotelrunner-profile open https://app.hotelru
 
 **Résultat**:
 - ✅ Browser visible ouvert (vous pouvez voir ce que l'agent fait)
-- ✅ Formulaire de login rempli automatiquement (credentials depuis .env.local)
+- ✅ Formulaire de login rempli automatiquement (credentials depuis .secrets/.env)
 - ✅ **Connexion réussie SANS reCAPTCHA !**
 - ✅ Profile persistant créé → Prochaines connexions automatiques
 
@@ -225,7 +225,7 @@ mkdir -p ~/.hotelrunner-profile
 # 2. Lancer browser visible avec profile
 agent-browser --headed --profile ~/.hotelrunner-profile open https://app.hotelrunner.com
 
-# 3. Remplir login (automatique avec credentials .env.local)
+# 3. Remplir login (automatique avec credentials .secrets/.env)
 agent-browser type @e4 "said_thaifa@hotmail.fr"
 agent-browser type @e5 "[REDACTED — see secure credential storage]"
 agent-browser click @e8

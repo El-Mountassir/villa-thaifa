@@ -2,7 +2,7 @@
 
 > Role: Administrative and operations agent
 
-_Generated: 2026-02-24 21:54 UTC_
+_Generated: 2026-02-25 20:26 UTC_
 
 ---
 
@@ -11,14 +11,14 @@ _Generated: 2026-02-24 21:54 UTC_
 Paths essential for this role:
 
 - `data/` (586 files)
-- `ops/` (400 files)
+- `ops/` (399 files)
 - `project/` (13 files)
 
 ## Reference Paths
 
 Useful context (read as needed):
 
-- `context/` (61 files)
+- `context/` (58 files)
 - `scripts/` (13 files)
 
 ## Ignored Paths

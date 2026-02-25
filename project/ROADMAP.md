@@ -240,7 +240,7 @@ This funding could cover app development, OTA integration costs, and initial LHC
 | `project/MISSION.md` | Project mission |
 | `project/CONTRACT.md` | Operational contract, workflow, policies |
 | `ops/decisions/` | Decision records |
-| `context/meta/planning/revenue-management-vision.md` | Revenue management prerequisites and vision |
+| `context/meta/planning/vt-app-vision.md` § Revenue Management Vision | Revenue management prerequisites and vision |
 
 ---
 

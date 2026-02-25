@@ -42,7 +42,7 @@
 - **Framework**: Next.js
 - **APIs**: HotelRunner (HR-v1), Booking.com
 - **Automation**: agent-browser (headless browser)
-- **Credentials**: `.env.local` (HotelRunner, Booking.com)
+- **Credentials**: `.secrets/.env` (HotelRunner, Booking.com)
 
 ## Key Contacts
 
