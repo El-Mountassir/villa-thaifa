@@ -22,4 +22,8 @@ Exception: files, commits, code, and agent prompts remain in English.
 
 ## Linear Delegation
 
-ALL Linear operations (queries, issue creation, status updates, label management, comments, triage) MUST be delegated to the linear-agent sub-agent. If linear-agent MCP tools are unavailable, use general-purpose as fallback. The orchestrator NEVER calls mcp__linear__* tools directly.
+ALL Linear operations MUST use `subagent_type="linear-ops"`. No exceptions. No fallback to general-purpose.
+
+- Agent: `linear-ops` (custom agent at `~/.claude/agents/linear-ops.md`)
+- If `linear-ops` fails or is unavailable: STOP and tell Omar. Do NOT use general-purpose as workaround.
+- The orchestrator NEVER calls `mcp__linear__*` tools directly.

@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Added
 
+- ROADMAP app-first strategy — Said validates through app, not Omar — - Add strategic principle: app-first validation, no more chasing Said
 - data foundation audit + corrections + roadmap Linear issues — Phase 4 execution of ROADMAP update + data foundation plan:
 - room image migration + facilities restructure + archive cleanup — - Rename room images R01-R11 to canonical rXX-NN.jpg format
 - room schema governance + safe/minibar data + price fixes — - Add Room Schema Change Protocol to AGENTS.md (template-first rule)
