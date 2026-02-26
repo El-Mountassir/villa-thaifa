@@ -133,7 +133,7 @@ Example:
 "Completed data foundation audit + validation. Fixed rates, R05/R02 corrections, archived 6 duplicate specs files. 10 new Linear issues created (VT-94 to VT-103). App-first ROADMAP strategy approved by Omar."
 
 ## Task Graph Status
-{Copy current TASKS.md or task list with statuses}
+{Snapshot from Linear + session TaskList for active work}
 
 Format:
 - P0 — [task-id] Task Name [status: done/in-progress/blocked]

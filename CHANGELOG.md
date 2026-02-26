@@ -38,6 +38,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Changed
 
+- inject message metadata rules and correct stop sell visual verification
 - mandate verification step globally and consolidate owner communications
 - refresh work-overview, archive intake artifact — - Update work-overview.md generated date to 2026-02-25
 - optimize @reference chain — 691→125 lines always-loaded (82% reduction) — Restructure project instructions for context window efficiency:
@@ -106,6 +107,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Fixed
 
+- improve handoff template — separate Open Work / Completed Work sections — Replace monolithic Task Graph with two focused sections:
 - enforce linear-ops agent — no general-purpose fallback — - CLAUDE.md: linear-ops mandatory, STOP on failure instead of fallback
 - merge .archived/ into archive/, move LHCM-OS files, redact credentials — - Merge .archived/ into archive/2025/ (strategy doc + 3 workflows preserved, 2 superseded files deleted)
 - Vague A consolidation — misplaced files, duplicates, stale notices — - Add .playwright-cli/ to .gitignore

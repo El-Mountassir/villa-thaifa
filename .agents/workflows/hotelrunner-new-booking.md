@@ -34,10 +34,12 @@ When dispatching a `browser_subagent` and processing a new booking, follow these
    - After confirming HotelRunner and updating the local database, you MUST prepare a status update for the owner (Said).
    - Write this to `ops/status/reports/update/said/README.md` (prepend just under the main heading) using the exact standard Dutch template below, substituting the appropriate variables:
 
-   ```text
+   ```markdown
+
    ## [DD-MM-YYYY]
    **Status:** `Draft`
 
+   ```text
    Salam Si Said,
 
    Missie voltooid ✅.
@@ -51,6 +53,8 @@ When dispatching a `browser_subagent` and processing a new booking, follow these
    Geen zorgen, alles is in orde! 👍
 
    Fijne avond! 🙏
+   ```
+
    ```
 
 ## Example Browser Subagent Prompt

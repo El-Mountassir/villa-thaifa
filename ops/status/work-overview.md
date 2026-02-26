@@ -1,5 +1,7 @@
 # Work Overview — Villa Thaifa
 
+> **Source**: Linear (VT team). This is a read-only derived view. Do NOT edit task statuses here — update Linear instead. Regenerated periodically via `make work-overview` or manually.
+
 > **Generated:** 2026-02-25
 > **Scope:** Pending actionable work only. Completed items excluded.
 > **Total Tasks:** 24 | **Actionable Now:** 10 | **Blocked:** 14

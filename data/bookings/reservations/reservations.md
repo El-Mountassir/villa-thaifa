@@ -49,6 +49,13 @@
 | ------------------ | ------- | --------- | ------ | -------- | ------ | ----------- |
 | Youness El Khodari | Feb 25  | Suite     | 7      | 840.00 € | **10** | ✅ Assigned |
 
+### April 2026
+
+| Guest               | Arrival | Room type      | Nights | Amount | Room  | Status      |
+| ------------------- | ------- | -------------- | ------ | ------ | ----- | ----------- |
+| Elisabeth Delacarte | Apr 23  | Suite Exécutif | 4      | 0.00 € | **6** | ✅ Assigned |
+| Elisabeth Delacarte | Apr 23  | Suite          | 4      | 0.00 € | **7** | ✅ Assigned |
+
 ---
 
 ## Occupancy Forecast

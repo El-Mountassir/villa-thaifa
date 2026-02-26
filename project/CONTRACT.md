@@ -360,9 +360,9 @@ All must be true:
 - Issue format: `EM-XXX` or `VT-XXX`
 - Workflow conventions: `~/omar/operational/productivity/protocols/linear-workflow.md`
 
-**Session-local tasks**: Optional. Use `TaskCreate` only for genuinely complex multi-step tasks where tracking provides clear value. Not mandatory.
+**Session-local tasks**: Mandatory for sub-agent delegations via TaskCreate (ephemeral, session-scoped only). Do not use for persistent work items.
 
-**Work overview**: `ops/status/work-overview.md` -- comprehensive task dashboard with all pending work, priorities (P0-P5 MoSCoW+Eisenhower), dependencies, Omar/Said time estimates, and workstream grouping. Template: `~/omar/Templates/WORK-OVERVIEW.md`. Agents MUST:
+**Work overview**: `ops/status/work-overview.md` -- comprehensive task dashboard with all pending work, priorities (P0-P5 MoSCoW+Eisenhower), dependencies, Omar/Said time estimates, and workstream grouping. work-overview.md is a derived summary -- not an independent registry. Update Linear, not work-overview directly. Template: `~/omar/Templates/WORK-OVERVIEW.md`. Agents MUST:
 
 - Read work-overview.md at session start to understand current state
 - Update it after completing tasks (remove completed, update statuses)
