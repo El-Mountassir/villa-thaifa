@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Added
 
+- sync elisabeth delacarte april reservations to local db
 - migrate context/agents/ → .agents/ cross-platform standard + workflow rule — - Move 35 files from context/agents/ to .agents/ (industry standard for AI agent CLIs)
 - unified handoff system + file consolidation — - Design, implement, and migrate to unified handoff system
 - apply Booking.com admin data + Said corrections to room profiles — Merged Booking.com admin extraction (2026-02-21) into all 12 room profiles:
