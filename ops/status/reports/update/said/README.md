@@ -1,6 +1,6 @@
 # Update pour Said
 
-## 26-02-2026 (Réservations Elisabeth Delacarte)
+## 26-02-2026
 
 **Status:** `Draft`
 
@@ -9,11 +9,17 @@ Salam Si Said,
 
 Missie voltooid ✅.
 
-Ik heb de reserveringen voor *Elisabeth Delacarte* verwerkt op HotelRunner:
+Hier is de update voor vandaag:
+
+1️⃣ Ik heb de reserveringen voor *Elisabeth Delacarte* verwerkt op HotelRunner:
 📅 *23 april - 27 april 2026* (4 nachten)
 🔒 Suite Exécutif (Kamer 6) - 2 Volwassenen
 🔒 Suite (Kamer 7) - 2 Volwassenen, 2 Kinderen
 💶 Totaal: €0.00 (Tarief niet gecommuniceerd)
+
+2️⃣ Ik heb het tarief voor de **Chambre Double de Luxe (Kamer 2)** aangepast op HotelRunner:
+📅 *Geldig tot 31 december 2026*
+💶 Nieuw tarief: €169 (was €149)
 
 Alles staat klaar in het systeem.
 Geen zorgen, alles is in orde! 👍

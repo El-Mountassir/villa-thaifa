@@ -18,9 +18,7 @@
 - **Mini bar**: No <!-- Confirmed: Said Thaifa 2026-02-25. Coffee/tea tray in all rooms. -->
 - **Pricing**: 159 EUR <!-- Rate confirmed and locked until 2026-12-31 -->
 
-
 ### R02 — Deluxe Double Room
-
 
 #### Identity
 
@@ -52,20 +50,20 @@
 
 ```yaml
 room_id: R02
-room_number: "02"
+room_number: '02'
 category_code: DELUXE_DOUBLE
 internal_name: Deluxe Double Room
 expedia_type: Double Room
 booking_label: Deluxe Double Room
 booking_label_fr: Chambre Double De luxe
 floor: Ground Floor
-capacity: "2 adults"
+capacity: '2 adults'
 max_occupancy: 2
 smoking_allowed: false
 has_kitchen: false
 size_m2: 41
-base_rate_mad: 1704
-base_rate_eur: 159
+base_rate_mad: 1829
+base_rate_eur: 169
 beds:
   - type: king
     size_cm: 200
@@ -87,9 +85,9 @@ amenities: # source: Booking.com admin 2026-02-21
   patio: true
   terrace: true
   bidet: true
-mini_bar: false  # confirmed: Said Thaifa 2026-02-25
-coffee_tea_tray: true  # Espresso machine, tea sachets, kettle — Said 2026-02-25
-bathroom_products: "Shampoo, conditioner, soap, body lotion, bathrobes, shower cap"  # Said 2026-02-25
+mini_bar: false # confirmed: Said Thaifa 2026-02-25
+coffee_tea_tray: true # Espresso machine, tea sachets, kettle — Said 2026-02-25
+bathroom_products: 'Shampoo, conditioner, soap, body lotion, bathrobes, shower cap' # Said 2026-02-25
 data_confidence: owner_pending
 status: VERIFIED
 ```
@@ -102,4 +100,3 @@ status: VERIFIED
 - **Last Verified**: 2026-02-13
 
 ---
-
