@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Added
 
+- update room 2 base rate to 169 EUR until end of 2026
 - sync elisabeth delacarte april reservations to local db
 - migrate context/agents/ → .agents/ cross-platform standard + workflow rule — - Move 35 files from context/agents/ to .agents/ (industry standard for AI agent CLIs)
 - unified handoff system + file consolidation — - Design, implement, and migrate to unified handoff system
@@ -80,6 +81,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Documentation
 
+- consolidate pending reports into single draft for Said
+- add multi-room PMS grid booking workflow
 - close VT-54, final handoff with session summary before compaction
 - final session update — handoff Phase 3 complete, 23 issues Done
 - fix handoff Phase 3 status, optimize readability with tables — - Correct Phase 3 from COMPLETED to IN PROGRESS (triage not done)

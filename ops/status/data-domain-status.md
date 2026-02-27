@@ -1,6 +1,6 @@
 # Data Domain Status — Post Phase A Consolidation
 
-**Last Updated**: 2026-02-16
+**Last Updated**: 2026-02-26
 **Phase**: Phase A Complete (Room consolidation)
 **Next Phase**: Finance data population and pricing workflow
 
@@ -42,6 +42,7 @@
 - `data/operations/emergency.json` (contacts)
 - `data/operations/housekeeping.json` (schedules)
 - `data/operations/maintenance.json` (logs)
+- `data/operations/events-privatization.md` (privatization policy, event booking — moved from context/meta/knowledge/ on 2026-02-26)
 
 ### Finance Domain
 
@@ -74,7 +75,7 @@
 
 ### Pending Triage
 
-- `data/pending-domains/` — Unprocessed inventory items (amenities, facilities, beds pending verification)
+- `data/pending-domains/` — Previously held unprocessed inventory items. `facilities.md` archived 2026-02-26 (superseded by `data/property/facilities/`). Directory now contains only redirect pointers.
 - `data/archive/` — Older exports and deprecated files
 
 ### Backups

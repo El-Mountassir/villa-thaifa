@@ -2,7 +2,7 @@
 
 > Role: Guest communication agent
 
-_Generated: 2026-02-25 23:28 UTC_
+_Generated: 2026-02-27 02:26 UTC_
 
 ---
 
@@ -10,7 +10,7 @@ _Generated: 2026-02-25 23:28 UTC_
 
 Paths essential for this role:
 
-- `data/operations/` (8 files)
+- `data/operations/` (9 files)
 - `context/meta/knowledge/guest-communication.md` (1 files)
 - `context/meta/knowledge/communications-README.md`
 
