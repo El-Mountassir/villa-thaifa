@@ -98,3 +98,4 @@ venv/
 tmp/
 logs/
 .playwright-cli/
+.claude/worktrees/

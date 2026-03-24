@@ -2,7 +2,7 @@
 
 > Role: HotelRunner PMS integration agent
 
-_Generated: 2026-02-27 02:26 UTC_
+_Generated: 2026-03-24 23:59 UTC_
 
 ---
 
