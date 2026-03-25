@@ -120,7 +120,7 @@ Each top-level directory has a defined purpose, inclusion criteria, and exclusio
 | `ops/handoff/`   | Session handoff docs (AI-SESSION-STARTER.md, HANDOFF.md) |
 | `ops/status/`    | Status dashboards, snapshots, indexes                    |
 | `ops/intake/`    | Unprocessed incoming items                               |
-| `ops/archive/`   | Unprocessed legacy/historical migrations (WARNING)       |
+| `ops/archive/`   | DEPRECATED — do not add new files. Use `ops/{domain}/archive/` instead |
 
 ### archive/ -- Global Archive
 
