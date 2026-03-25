@@ -4,8 +4,6 @@
 
 - `rooms/` — room inventory, reconciliation log, OTA exports
 - `finance/` — billing and rate data (pending onboarding)
-- `pending-domains/` — amenities, beds, facilities awaiting canonical hardening
-- `status/` — per-domain canonical/pending/archived tracking
 
 ## Authority Principle
 

@@ -15,4 +15,4 @@ make test
 
 ## Governance
 
-Read first: [AGENTS.md](AGENTS.md), then [Operational Status](ops/status/INDEX.md).
+Read first: [AGENTS.md](AGENTS.md), then [Operational Status](ops/handoff/INDEX.md).

@@ -187,7 +187,7 @@ Each top-level directory has a defined purpose, inclusion criteria, and exclusio
 
 | Agent type       | Output directory                                          | Notes                                      |
 | ---------------- | --------------------------------------------------------- | ------------------------------------------ |
-| browser-agent    | /home/director/villa-thaifa/data/pending-domains/browser/ | Screenshots, scraped HTML, raw extractions |
+| browser-agent    | /home/director/villa-thaifa/ops/intake/unprocessed/       | Screenshots, scraped HTML, raw extractions |
 | research-agent   | ~/omar/knowledge/research/{DOMAIN}/                       | Findings and reports (global knowledge)    |
 | general-purpose  | /home/director/villa-thaifa/ops/intake/                   | Unclassified artifacts awaiting triage     |
 | linear-agent     | (in-memory only)                                          | Writes to Linear, no local file output     |

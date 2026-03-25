@@ -71,7 +71,6 @@ Project identity/governance?             --> project/
 Structured domain data?                  --> data/
   room / booking / finance / property /    --> data/{domain}/
   operational config (channels, etc.) /    --> data/operations/
-#   new unhardened domain?                   --> data/pending-domains/  # directory does not exist
 Live operational artifact?               --> ops/
 Operational planning/session plan?       --> ops/planning/
   decision / audit / handoff / status /    --> ops/{type}/

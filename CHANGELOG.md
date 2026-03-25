@@ -40,6 +40,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Changed
 
+- dissolve ops/archive/ — 260 files to domain-scoped archives — ops/archive/ eliminated entirely. All content moved to domain-scoped locations:
+- migrate tmp/ orphans, dissolve audit-quality, track platforms — Step 1: 16 tmp/ orphan files migrated to permanent locations:
+- data cleanup — move misplaced canonical + archive superseded — - Move events-privatization.md from context/meta/ to data/operations/policies/
 - inject message metadata rules and correct stop sell visual verification
 - mandate verification step globally and consolidate owner communications
 - refresh work-overview, archive intake artifact — - Update work-overview.md generated date to 2026-02-25
@@ -111,6 +114,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com).
 
 ### Fixed
 
+- P0 hygiene — gitignore worktrees, dedup INDEX, refresh STRUCTURE — Phase 1 (P0):
+- clarify archive convention — domain-scoped + deprecate ops/archive/ — - AGENTS.md: 3 edits — archive routing now domain-scoped (ops/{domain}/archive/),
+- P0 hygiene — gitignore worktrees, dedup INDEX, refresh STRUCTURE — - Add .claude/worktrees/ to .gitignore (prevents worktree snapshots from tracking)
 - improve handoff template — separate Open Work / Completed Work sections — Replace monolithic Task Graph with two focused sections:
 - enforce linear-ops agent — no general-purpose fallback — - CLAUDE.md: linear-ops mandatory, STOP on failure instead of fallback
 - merge .archived/ into archive/, move LHCM-OS files, redact credentials — - Merge .archived/ into archive/2025/ (strategy doc + 3 workflows preserved, 2 superseded files deleted)
