@@ -1,0 +1,116 @@
+[
+  {
+    "filename": "active.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "Old task checklist (Phase 1.5-2) fully superseded by Linear backlog, AGENTS.md workflow, and current room data. All tasks either done or re-tracked.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "01-01-PLAN.md",
+    "action": "ARCHIVE",
+    "confidence": "HIGH",
+    "justification": "Photo organization execution plan from 2026-01-30. Task completed (127 photos organized). Photo naming convention (main.jpg, bathroom.jpg) and verification patterns are historical record. Room images have since been migrated to data/rooms/R*/images/. No unique patterns not already embedded in current workflow.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "01-01-SUMMARY.md",
+    "action": "ARCHIVE",
+    "confidence": "HIGH",
+    "justification": "Execution summary of photo organization. Contains useful historical data (127 photos, 42 exceeded 2MB, WhatsApp filename issues) but all decisions are completed. Photo structure has since been restructured into data/rooms/R*/images/.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "01-02-PLAN.md",
+    "action": "ARCHIVE",
+    "confidence": "HIGH",
+    "justification": "HotelRunner browser session plan (pricing, Room 11 reservation, Room 12 photos). Tasks completed. Pricing data superseded by rates.json. No unique operational patterns beyond what's in .agents/hotelrunner/knowledge.md and docs/workflows/pricing.md.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "01-RESEARCH.md",
+    "action": "RECYCLE",
+    "confidence": "HIGH",
+    "justification": "Contains 9 detailed HotelRunner pitfalls, several of which are NOT captured in .agents/hotelrunner/knowledge.md. The pitfalls about viewport size, Remember Me checkbox, credential auto-fill, and reservation channel sync delay are operationally valuable.",
+    "recyclable_content": [
+      {
+        "quote": "### Pitfall 7: Small Browser Viewport\n**What goes wrong:** UI elements cut off, forms unusable, agent can't see full page\n**Why it happens:** Default viewport may be small (800x600 or similar)\n**How to avoid:**\n- **ALWAYS set viewport first:** `agent-browser set viewport 1920 1080`\n- Do this BEFORE opening any page or immediately after\n- Standard desktop resolution ensures all UI elements are visible\n**Rule:** First command after opening browser: set viewport 1920 1080",
+        "destination": ".agents/hotelrunner/knowledge.md § Constraints (new subsection: Browser Automation Pitfalls)",
+        "reason": "knowledge.md mentions reCAPTCHA constraint but has zero browser automation pitfalls. This is operationally critical for any agent using browser automation with HotelRunner."
+      },
+      {
+        "quote": "### Pitfall 6: Asking Human for Available Credentials\n**What goes wrong:** Agent asks human to enter credentials that are already in .env\n**Why it happens:** Over-cautious checkpoint design, assuming all auth needs human\n**How to avoid:**\n- **ALWAYS check .env/.secrets/.env first** for credentials before asking\n- **Enter credentials automatically** using agent-browser type commands\n- **ONLY ask human for:** reCAPTCHA, OTP codes, 2FA - things agent cannot do\n**Rule:** If you have the solution, use it. Don't waste human time.",
+        "destination": ".agents/hotelrunner/knowledge.md § Access & Security (append)",
+        "reason": "knowledge.md says 'user must log in manually' but doesn't specify the nuance: credentials CAN be auto-filled, only CAPTCHA/OTP needs human. This prevents agents from over-asking."
+      },
+      {
+        "quote": "### Pitfall 8: Not Checking \"Remember Me\"\n**What goes wrong:** Session expires, need to re-authenticate every time\n**Why it happens:** Forgot to check the remember me checkbox\n**How to avoid:**\n- When logging in, ALWAYS check \"Remember me\" checkbox\n- `agent-browser check \"@e[remember-me-ref]\"` before clicking login\n**Rule:** Always check remember me to reduce future authentication overhead",
+        "destination": ".agents/hotelrunner/knowledge.md § Access & Security (append)",
+        "reason": "Not mentioned anywhere in active docs. Reduces authentication friction for every HotelRunner session."
+      },
+      {
+        "quote": "### Pitfall 9: Reservation Channel Sync\n**What goes wrong:** Room 11 reservation shows on one platform, not others\n**Why it happens:** HotelRunner -> Booking.com sync may have delays\n**How to avoid:**\n- Verify on both HotelRunner AND Booking.com\n- Allow 15-30 minutes for channel sync\n- Check \"Inventory Type\" in HotelRunner\n**Warning signs:** Status differs between platforms",
+        "destination": ".agents/hotelrunner/knowledge.md § OTA Connectivity (append as sync caveat)",
+        "reason": "knowledge.md lists connectivity status but has no information about sync delays or cross-platform verification. Critical for booking operations."
+      },
+      {
+        "quote": "### Pitfall 4: Room Number Mapping\n**What goes wrong:** Wrong photos/prices assigned to rooms\n**Why it happens:** HotelRunner room IDs may differ from local IDs (01 vs R01)\n**How to avoid:**\n- Verify mapping before batch operations\n- Cross-reference HotelRunner room list with local data",
+        "destination": ".agents/hotelrunner/knowledge.md § Room Inventory (append as warning)",
+        "reason": "knowledge.md lists 8 room types but doesn't warn about the ID mapping discrepancy between local (R01-R12) and HotelRunner IDs. Risk of wrong data assignment."
+      }
+    ]
+  },
+  {
+    "filename": "gemini-lux-action-plan.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "One-time procedure from 2026-01-09 for using Gemini 3 Pro to digest a repomix. Entirely session-specific (references claude.ai conversation transcripts, specific file paths on /mnt/, Vibe Kanban which was never adopted). Zero reusable patterns — multi-model delegation is now handled by rules.md AI Model Delegation table. The 'Lux' persona and 'Nexus workstation' context are obsolete.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "generate-structure-map.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "3-step plan to run `tree` and save to STRUCTURE.md. Completely superseded by `make structure-update` command and the current docs/core/STRUCTURE.md system with role-based structure cards. Zero unique content.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "repository_tree.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "Raw `tree` output (1189 lines, 266 directories, 921 files) from a pre-migration repo state. Pure snapshot with zero commentary or analysis. Current structure is maintained via docs/core/STRUCTURE.md + STRUCTURE-filtered.txt + STRUCTURE.txt. This is a stale dump with no unique content.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "villa-thaifa-structure-v5.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "22-line sketch of an early proposed directory structure (ai/, data/specs/, project/). Completely superseded by current AGENTS.md directory contract and docs/core/STRUCTURE.md. Contains typo 'pieplines'. Zero unique ideas — all concepts (archive/, data/, docs/, infra/, src/) are in the current structure.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "villa-thaifa-migration-plan-v0.1.0.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "700-line migration plan from 2025-01-09 for moving from claude.ai to 'Nexus Workstation + Vibe Kanban'. References obsolete tools (Vibe Kanban, Bun, npx vibe-kanban), personas (Lux), and infrastructure (Nexus). Contains OTA activation tickets (T001-T005) but these are fully superseded by Linear backlog (VT-* issues) and the current HotelRunner/OTA knowledge in .agents/hotelrunner/. No unique operational patterns.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "project-BRIEF.md",
+    "action": "RECYCLE",
+    "confidence": "MEDIUM",
+    "justification": "Early project brief from 2026-01-08. Most content superseded by vt-app-vision.md and truth.md. However, contains two unique items: (1) the 'Go Siyaha' government financing lead (90% funding), and (2) the '94% confidence rule' operational pattern.",
+    "recyclable_content": [
+      {
+        "quote": "3. **Go Siyaha** — Financement 90% — Investiguer?",
+        "destination": "ops/intake/ (new file: go-siyaha-financing-lead.md)",
+        "reason": "Government financing program offering 90% funding. Not mentioned anywhere in active docs, vt-app-vision.md, or ROADMAP.md. Could represent significant funding opportunity for Villa Thaifa or LHCM-OS. Should be captured as an intake item for Omar to evaluate."
+      },
+      {
+        "quote": "6. **Anti Tunnel Vision** — Zoom out avant de crier \"bug\"\n... 6. **94% confidence rule** — Si < 94% confiance → STOP & ASK Omar",
+        "destination": "context/meta/knowledge/operational-lessons.md or equivalent knowledge file",
+        "reason": "The '94% confidence rule' is a specific operational threshold Omar established early on. Not captured in any active docs, rules.md, or AGENTS.md. The Anti Tunnel Vision lesson is a good operational principle but is arguably covered by existing verification rules in universal.md."
+      }
+    ]
+  }
+]

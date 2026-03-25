@@ -1,0 +1,127 @@
+[
+  {
+    "filename": "2026-01-08-claude-md-externalization.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "Fully superseded. The externalization of CLAUDE.md into @-pointer files was executed long ago. Current CLAUDE.md + AGENTS.md + rules.md + universal.md represent the completed state of this plan. Multi-CLI readiness (Q6) is now implemented via ~/omar/ Shared Knowledge Layer (universal.md). All 6 decisions (Q1-Q6) are reflected in active docs.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "2026-01-08-core-loop-simplification.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "Fully superseded. The CORE LOOP concept has been replaced by the Mandatory Workflow (SCOUT/REPORT/QUESTIONS/ACTION/SYNC/COMMIT) in AGENTS.md and the Mode System in CLAUDE.md. The 94% confidence rule evolved into the current AskUserQuestion + Autonomy Tiers system. Phase 2 proposed CLAUDE.md structure bears no resemblance to the current one.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "2026-01-08-document-evaluation.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "Meta-evaluation of the externalization document (file #1). The evaluation identified missing sections (risks, rollback, criteria) which were all added to the final version of file #1. Since file #1 itself is fully superseded, this evaluation has zero remaining value. The scoring methodology is ad-hoc and not reusable.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "unified-workspace-governance.md",
+    "action": "RECYCLE",
+    "confidence": "HIGH",
+    "justification": "Contains multiple unique patterns not fully captured in active docs: the .agents/ plan management rules, the session-start protocol concept (partially in AGENTS.md but not as detailed), the cross-reference protocol, and the PR template structure. Also contains early Linear integration patterns that informed current workflow.",
+    "recyclable_content": [
+      {
+        "quote": "RULE #1: Plans Must Be Moved, Not Copied. When you create a plan in your personal space (e.g., `~/.claude/plans/`), you MUST: 1. MOVE it to `.agents/plans/` immediately (not copy) 2. DELETE the original from your personal space 3. All future updates happen ONLY in `.agents/plans/`",
+        "destination": "~/omar/core/resources/rules/universal.md § Move, Don't Copy",
+        "reason": "The Move Don't Copy rule in universal.md is generic. This specific application to agent plans/artifacts (never leave copies in CLI-specific dirs) is a concrete anti-pattern worth capturing as an example or clarification."
+      },
+      {
+        "quote": "Cross-Reference Protocol: When creating files, always update routing: New doc in `docs/architecture/` → Update `AGENTS.md` references. New artifact → Update relevant plan file. New session log → Reference in plan if significant.",
+        "destination": "/home/director/villa-thaifa/AGENTS.md § SYNC Checklist",
+        "reason": "The current SYNC Checklist covers data/decision/structure changes but does NOT mention updating plan files or cross-referencing new artifacts. This routing-on-create pattern is a unique addition."
+      },
+      {
+        "quote": "RULE #4: Never Delete - Always Archive. NEVER delete files or directories. Move to `.agents/artifacts/archive/` instead. Empty directories are intentional scaffolding. They exist by design.",
+        "destination": "~/omar/core/resources/rules/universal.md § Preserve First",
+        "reason": "The 'Empty directories are intentional scaffolding' phrasing is already captured as 'Don't Delete Empty Taxonomy Dirs' in universal.md. This is covered. NOT recyclable after closer inspection — marking for reference only."
+      }
+    ]
+  },
+  {
+    "filename": "workspace.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "100% superseded. The .agents/ workspace structure described here has been entirely replaced by the current repo structure (data/, docs/, context/, ops/, scripts/). The directory permissions table, file naming conventions, and deprecated directories (workstream/, tasks/, missions/) are all obsolete. Linear workflow (RULE #3) is now in AGENTS.md Task Tracking section. Everything unique has been absorbed into current active docs.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "workspace-standardization-plan.md",
+    "action": "ARCHIVE",
+    "confidence": "HIGH",
+    "justification": "1434-line comprehensive plan covering both workspace excellence (Track A) and owner platform (Track B). Track A is fully executed. Track B contains detailed PRD sketches, agent roadmap (5 AI agents with ROI), SaaS pricing model, Morocco market strategy, and multi-tenant architecture plans. While none of this is recyclable into governance rules, it has historical value as the original strategic vision document. The LHCM-OS vision in context/meta/planning/vt-app-vision.md likely captures the surviving elements, but this document's market strategy details (Morocco localization, pricing tiers, HotelRunner partnership) may not be captured elsewhere.",
+    "recyclable_content": [
+      {
+        "quote": "SaaS Pricing Model: Solo (1-5 rooms): €49/month, Boutique (6-15 rooms): €99/month, Premium (16-30 rooms): €199/month, Enterprise (30+): Custom",
+        "destination": "context/meta/planning/vt-app-vision.md or ~/omar/professional/projects/lhcm-os/",
+        "reason": "Early SaaS pricing model for LHCM-OS. May or may not be captured in the LHCM-OS project. Worth checking before archiving — if not captured, extract to LHCM-OS docs."
+      },
+      {
+        "quote": "Morocco Market Strategy: Target 1,500+ riads/villas. Acquisition: HotelRunner Partnership (CNT registry access), Booking.com Partner Network, Morocco Tourism Board, LinkedIn/Facebook Ads. Localization: French/Arabic UI, Morocco tax regulations, Dirham (MAD) support, local payment gateways (CMI, Maroc Telecommerce).",
+        "destination": "~/omar/professional/projects/lhcm-os/",
+        "reason": "Market strategy details specific to LHCM-OS expansion. Should be verified against LHCM-OS project docs before archiving this file."
+      }
+    ]
+  },
+  {
+    "filename": "git.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "641-line git workflow document. Every rule here is either superseded by current AGENTS.md (Git/GitHub Sync Policy, commit workflow in Mandatory Workflow) or by global rules (universal.md § Zero-Loss Operations for safe operations). The conventional commits format, branch naming (agent/<name>/<date>-<task>), PR templates — all superseded. The current project uses git-cliff for changelogs and a simpler main-branch workflow. Multi-agent coordination rules are obsolete (no longer using Gemini/Cursor on same repo with separate branches).",
+    "recyclable_content": []
+  },
+  {
+    "filename": "git-branching-strategy.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "97-line subset of git.md content. Branch naming convention (agent/<name>/<date>-<task>) and multi-agent branching strategy are fully superseded. The current workflow uses main branch directly with conventional commits. All implementation steps marked as completed. Zero unique content not in git.md or current active docs.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "rules-README.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "9-line file with 4 rules (Resilience, Anti-Dodge, SSOT, STOP & ASK). Every one of these is captured in active docs: Resilience/Anti-Dodge → Anti-Circumvention Rule in rules.md; SSOT → DRY in Five Rails + Cascade Update in universal.md; STOP & ASK → Autonomy Tiers + Collaboration-First Protocol. Zero unique content.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "verification.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "215-line verification rules document. Entirely superseded by: Quality & Verification in universal.md (more comprehensive), Agent Output Integrity in rules.md (verification gate, producer != verifier), Completion Integrity in universal.md, Definition of Done in AGENTS.md. The TDD workflow (RED/GREEN/REFACTOR) is covered by Rail 3 (TDD) in Five Rails. Edge cases checklist and security verification are software-dev specific and not applicable to current VT operations scope.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "missions-README.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "103-line missions system README. The entire missions/ concept (drafts → queue → active → archive lifecycle) has been replaced by Linear for task tracking (AGENTS.md § Task Tracking) and TASKS.md as the only task registry (universal.md). The symlink pattern to ~/omar/praxis/ references an obsolete directory structure. File naming conventions and frontmatter metadata format are superseded by Linear issue fields. Zero recyclable content.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "tasks-README.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "Identical content to TODOs.md (same 224 lines). Both contain the same Dec 2025 task list with MoSCoW+Eisenhower priority matrix. The priority system (P0-P5) IS actually used in current work-overview.md, but it is already documented in the work-overview template (~/omar/Templates/WORK-OVERVIEW.md). All tasks listed are from Dec 2025 and fully resolved or migrated to Linear. Zero unique content vs TODOs.md.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "TODOs.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "Identical content to tasks-README.md (same Dec 2025 task list with P0-P5 priority matrix). The MoSCoW+Eisenhower hybrid approach is already implemented in the current work-overview.md priority system. All listed tasks (Arne Cordes assignment, Quentin Warembourg investigation, Booking.com promotion audit) are from Dec 2025 and long resolved. Historical task data has no ongoing value — these were operational tasks, not knowledge.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "specs-README.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "34-line placeholder README for a specs/ directory. References VILLA_THAIFA.json, FACILITIES/, HISTORY.md, ASSETS.md — none of which exist in the current structure. Property data now lives in data/property/ and data/rooms/. The file is a stub with placeholder tags ('to_complete') and broken relative links. Zero content of any kind.",
+    "recyclable_content": []
+  }
+]

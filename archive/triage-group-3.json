@@ -1,0 +1,90 @@
+[
+  {
+    "filename": "ROADMAP-2.md",
+    "action": "RECYCLE",
+    "confidence": "MEDIUM",
+    "justification": "Contains Go Siyaha funding program details (90% digitalization costs up to 1M DH) and specific HotelRunner support contact (Ikram) not captured elsewhere. Also lists target portfolio examples (Riad Bianca, Auberge Azul, Kohinor) for multi-property expansion.",
+    "recyclable_content": [
+      {
+        "quote": "| Programme | Financement | Plafond |\n| Go Siyaha (MarocPME) | Jusqu'à **90%** des coûts digitalisation | 1M DH |",
+        "destination": "~/omar/professional/projects/lhcm-os/ideas/ or a new funding-opportunities file",
+        "reason": "Go Siyaha / Jisr Mokawala government funding program is a concrete business opportunity not captured in vt-app-vision.md or LHCM-OS vision docs. Could fund digitalization costs."
+      },
+      {
+        "quote": "Inspirer des clients HWS existants :\n- Riads (ex: Riad Bianca)\n- Villas de luxe (ex: Villa Thaifa)\n- Maisons d'hôtes (ex: Auberge Azul)\n- Hotels boutique (ex: Kohinor)",
+        "destination": "~/omar/professional/projects/lhcm-os/research/ (market-research or target-portfolio file)",
+        "reason": "Named target properties for LHCM-OS expansion not captured in current vision docs. Useful for future client pipeline."
+      }
+    ]
+  },
+  {
+    "filename": "comprehensive-transformation-plan.md",
+    "action": "ARCHIVE",
+    "confidence": "HIGH",
+    "justification": "Massive 1510-line plan (Jan 29, 2026). Explicitly listed as a consolidated source in vt-app-vision.md line 282. All unique content has been absorbed: tech stack (Next.js/tRPC/SQLite->Postgres), AI agent workforce (5 agents with ROI), SaaS pricing tiers, Morocco market strategy, competitive site URLs, design system CSS, multi-tenant schema, managed service packages. The active vision doc is more current and better organized.",
+    "recyclable_content": [
+      {
+        "quote": "/* Moroccan Luxury Palette */\n--primary: #8b7355; /* Warm taupe (Moroccan earth) */\n--accent: #c19a6b; /* Desert gold */\n--dark: #2c2416; /* Deep brown */\n--light: #f5f1ed; /* Warm white */\n--success: #6b8e4e; /* Olive green (palms) */\n\n/* Typography */\n--heading: \"Cormorant Garamond\", serif; /* Luxury */\n--body: \"Inter\", sans-serif; /* Readability */",
+        "destination": "context/meta/planning/vt-app-vision.md § Tech Stack (or a new design-system seed file)",
+        "reason": "Concrete CSS design system with Moroccan palette and typography choices. vt-app-vision.md has no design system section. Worth capturing as a seed for future branding work."
+      },
+      {
+        "quote": "**Package 1: Platform Only** (€99/month)\n- Owner dashboard\n- Financial reporting\n- HotelRunner sync\n- Self-service support\n\n**Package 2: Platform + Basic Management** (€299/month)\n...\n**Package 3: Full Managed Service** (€799/month + 5% revenue)",
+        "destination": "~/omar/professional/projects/lhcm-os/vision/lhcm-os-product-vision-reframe.md § Pricing",
+        "reason": "Detailed managed service tiers with pricing. LHCM-OS vision has pricing (setup 5-10K MAD + 1.5-3K MAD/month subscription) but not these managed service packages. Worth cross-referencing."
+      },
+      {
+        "quote": "**Acquisition Channels**:\n1. HotelRunner Partnership (CNT registry access)\n2. Booking.com Partner Network\n3. Morocco Tourism Board (official partner)\n4. LinkedIn/Facebook Ads (property owners)\n\n**Localization**:\n- French/Arabic UI\n- Morocco tax regulations built-in\n- Dirham (MAD) support\n- Local payment gateways (CMI, Maroc Telecommerce)",
+        "destination": "~/omar/professional/projects/lhcm-os/research/ (market-strategy or go-to-market file)",
+        "reason": "Concrete go-to-market channels and Morocco-specific localization requirements (CMI, Maroc Telecommerce payment gateways). Not in current LHCM-OS docs."
+      }
+    ]
+  },
+  {
+    "filename": "2026-02-13-agentic-kiss-transformation-plan.md",
+    "action": "ARCHIVE",
+    "confidence": "HIGH",
+    "justification": "This is the foundational philosophy document that shaped the current repo's approach (data-first canonical layer, markdown SSOT, validation scripts, KISS). Its principles are now embedded in AGENTS.md (Directory Contract, Definition of Done) and docs/core/PRINCIPLES.md. The SDLC model (Scout/Consolidate/Verify/Approve/Log) became the Mandatory Workflow. No unique extractable content remains — the philosophy was successfully operationalized.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "strategic_reframing.md",
+    "action": "MOVE-TO-LHCM",
+    "confidence": "HIGH",
+    "justification": "This file already has a copy at ~/omar/professional/projects/lhcm-os/artifacts/strategic_reframing.md (confirmed in LHCM-OS INDEX.md). The VT copy is redundant. However, the 'Concierge MVP' framing and 'Asset Re-Valuation' table contain unique strategic thinking worth preserving in LHCM-OS.",
+    "recyclable_content": [
+      {
+        "quote": "We did not fail to build the app; we executed a **Concierge MVP**.\n- In a Concierge MVP, a human manually performs the service to validate the value proposition before writing code.\n- **Validation:** We proved that dynamic pricing increases revenue (done manually). We proved that quick WhatsApp replies increase conversion (done manually).\n- **The Error:** We stayed in \"Concierge Mode\" too long effectively becoming employees.",
+        "destination": "Already in ~/omar/professional/projects/lhcm-os/artifacts/strategic_reframing.md",
+        "reason": "Already captured in LHCM-OS. The VT repo copy is the duplicate. DELETE the VT copy since the canonical version lives in LHCM-OS."
+      }
+    ]
+  },
+  {
+    "filename": "vision_2026.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "This is a byte-for-byte duplicate of comprehensive-transformation-plan.md (same title 'Comprehensive Transformation Plan (2026)', same date Jan 29 2026, same content — just a shorter 44-line summary version). The full version exists as comprehensive-transformation-plan.md in the same directory. Both are superseded by vt-app-vision.md. Zero unique content.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "VISION-DRAFT.md",
+    "action": "DELETE",
+    "confidence": "HIGH",
+    "justification": "Explicitly listed as a consolidated source in vt-app-vision.md (line 276). This was an intermediate working document (Jan 30, 2026) with hypotheses and gaps that were all resolved in VISION-ENRICHED.md and then further consolidated into vt-app-vision.md. Contains no unique content — all property context, pain points, integration details, and constraints are better captured in the active vision doc.",
+    "recyclable_content": []
+  },
+  {
+    "filename": "VISION-ENRICHED.md",
+    "action": "ARCHIVE",
+    "confidence": "HIGH",
+    "justification": "Explicitly listed as consolidated source in vt-app-vision.md (line 275). The enriched version added property details from public listings (Google Maps, Booking.com, Planet of Hotels), codebase analysis, and technical constraints — all now captured in vt-app-vision.md. However, it has some specific operational details worth noting as historical reference.",
+    "recyclable_content": [
+      {
+        "quote": "**Technology Stack**\n**Core**: Next.js 16.1.3 + React 19.2.3 + TypeScript 5.9.3\n**Database**: SQLite 3 (local-first, `property.db`)\n**Validation**: Zod 4.3.5 (runtime schemas)\n**Automation**: agent-browser (headless browser CLI)\n**Project Management**: Linear (MCP integration)",
+        "destination": "N/A — historical snapshot only",
+        "reason": "These version numbers are from the old codebase (Jan 2026) that no longer exists. Not worth extracting — the current repo has no src/ code. Noted for historical context only."
+      }
+    ]
+  }
+]
