@@ -32,7 +32,6 @@
 │   │   └── reservations/       confirmed reservations
 │   ├── finance/                billing.json, rates.json
 │   ├── operations/             operational configs (channels, check-in, emergency, housekeeping, maintenance)
-│   ├── pending-domains/        domains awaiting hardening
 │   ├── property/               property-level data
 │   │   ├── facilities/         facility descriptions + images (hall, pool-garden, spa-hammam)
 │   │   └── property-config.json
@@ -84,7 +83,6 @@
 ├── logs/                       log files (gitignored)
 ├── tmp/                        temporary files (gitignored)
 ├── .claude/                    Claude Code configuration
-└── .archived/                  old archived content
 
 # Root files (MUST stay at root)
 ├── AGENTS.md      AI agent workspace contract

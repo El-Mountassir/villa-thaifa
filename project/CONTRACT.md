@@ -64,7 +64,7 @@ Each top-level directory has a defined purpose, inclusion criteria, and exclusio
 | `data/finance/`         | billing.json, rates.json                                                                 |
 | `data/operations/`      | Operational config JSON files (channels, check-in, emergency, housekeeping, maintenance) |
 | `data/property/`        | Property-level config and facility data (descriptions + images)                          |
-| `data/pending-domains/` | Domains not yet fully hardened (staging area)                                            |
+| `data/pending-domains/` | **REMOVED** — use `ops/intake/unprocessed/` for unvalidated data                         |
 | `data/archive/`         | Archived data versions                                                                   |
 
 ### docs/ -- Operational Documentation
@@ -227,7 +227,7 @@ Agents MUST read their own `.agents/{agent-name}/` directory before taking any p
 External platform
       |
       v
-Raw extraction --> /home/director/villa-thaifa/data/pending-domains/{DOMAIN}/     (unvalidated)
+Raw extraction --> /home/director/villa-thaifa/ops/intake/unprocessed/{DOMAIN}/   (unvalidated)
       |
       v
 Validated data --> /home/director/villa-thaifa/data/{DOMAIN}/                     (reconciled, sourced)
@@ -372,7 +372,7 @@ All must be true:
 
 ## 15. Open Loops (Migrate to Linear)
 
-1. Pending data domains: `data/pending-domains/` -- contains superseded placeholder files. Active facility data lives in `data/property/facilities/`
+1. Pending data domains: `data/pending-domains/` was removed (2026-03-25). Raw extractions now route to `ops/intake/unprocessed/{DOMAIN}/` before validation. Active facility data lives in `data/property/facilities/`
 2. Large directory triage: `context/meta/knowledge/` (19 files), `context/meta/planning/` (14 files), `ops/audit/quality/` (3 files) need triage for archiving vs reclassification
 
 ---
