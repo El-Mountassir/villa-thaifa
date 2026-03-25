@@ -32,7 +32,7 @@ significant structural concern requiring a decision.
   notes, transcripts, and brainstorming"), a CONTACT section with an empty nested heading, and a
   `kiss_principle_notes` label with no content. Structurally incoherent and adds zero value.
 - `stakeholders.md`: Correctly a pointer-only file (collapsed 2026-02-21). Original 98KB content
-  migrated to `data/admin/client/PROFILE.md` and `data/admin/client/CONTACT.md`. This file now
+  migrated to `data/admin/client/profile.md` and `data/admin/client/contact.md`. This file now
   serves as a cross-reference card. Content is correct and minimal (17 lines). KEEP.
 - `support.md`: Contains HWS/HotelRunner support contact (Ikram). Belongs in docs/client/ per
   directory contract. Content is current (first contact 2025-12-22). Should cross-reference
@@ -180,7 +180,7 @@ the superseded files are archived.
 
 | File | Assessment | Verdict |
 |------|-----------|---------|
-| events-privatization.md | Active privatization policy. Contains room capacity table duplicating data/rooms/rooms.md. Also has broken cross-references to non-existent paths (../../data/rooms/inventory.yaml, ../../../leadership/profiles/SAID-THAIFA.md). | KEEP — fix broken cross-references to correct paths (data/rooms/rooms.md, data/admin/client/PROFILE.md) |
+| events-privatization.md | Active privatization policy. Contains room capacity table duplicating data/rooms/rooms.md. Also has broken cross-references to non-existent paths (../../data/rooms/inventory.yaml, ../../../leadership/profiles/SAID-THAIFA.md). | KEEP — fix broken cross-references to correct paths (data/rooms/rooms.md, data/admin/client/profile.md) |
 | guest-communication.md | Communication workflow (SCOUT→REPORT→QUESTIONS→ACTION). Correctly placed. Output Files section references data/communication/whatsapp/ path which does not exist. | KEEP — flag non-existent output path |
 | lessons-learned.md | 7 operational lessons from Dec 2025. Valuable. Correctly placed. | KEEP |
 
@@ -309,7 +309,7 @@ Line 120 references docs/core/ — superseded by project/ in 2026-02-19 migratio
 
 10. **Fix broken cross-references in `context/meta/knowledge/events-privatization.md`** —
     Links to `../../data/rooms/inventory.yaml` and `../../../leadership/profiles/SAID-THAIFA.md`
-    do not exist. Update to: data/rooms/rooms.md and data/admin/client/PROFILE.md.
+    do not exist. Update to: data/rooms/rooms.md and data/admin/client/profile.md.
 
 11. **Run `make structure-update`** after any of the above moves.
 

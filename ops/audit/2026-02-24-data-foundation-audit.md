@@ -186,14 +186,14 @@ The `Reservation` model can be seeded with the 11 historical records as sample d
 
 **Status: COMPLETE FOR OPERATIONAL USE / STRATEGIC SECTIONS NOT DB-BOUND**
 
-**Said Thaifa profile** (`data/admin/client/PROFILE.md`, 514 lines):
+**Said Thaifa profile** (`data/admin/client/profile.md`, 514 lines):
 - Contact info: WhatsApp (+212 661-134194), email (said_thaifa@hotmail.fr + saidthaifa@gmail.com) — confirmed.
 - Communication protocol: formal register, vouvoiement, WhatsApp preferred — documented.
 - Nezha Thaifa (co-manager/wife): role documented, no direct contact details.
 - Booking.com scores: Staff 9.7, Breakfast 10, Cleanliness 9.4 — seeding ready for `PropertyRating.subcategories`.
 - Sections 4–12 (business context, competitive analysis, financial baseline, risks, strategy): reference-only per codifiability analysis recommendation.
 
-**CONTACT.md**: Clean quick-reference card — no duplication, references PROFILE.md as canonical.
+**contact.md**: Clean quick-reference card — no duplication, references profile.md as canonical.
 
 **said-pending-questions.md**: 284 lines, organized registry of all items awaiting Said's confirmation. Aligned with the `data_confidence: owner_pending` field pattern throughout data files. Well-maintained.
 
@@ -259,21 +259,21 @@ All 12 room `images/` directories are populated. Facility `images/` directories 
 | Rate | 1 | YES (with drift) | data/finance/rates.json | ~95% | All 12 rooms present; drift exists in R02/R05 profile YAML (not rates.json itself) |
 | ExchangeRate | 1 | YES | data/finance/rates.json `exchange_rate` field | ~80% | Single rate embedded; no `effective_date` tracking; no historical records |
 | Property | 1 | PARTIAL | data/property/property-config.json | ~65% | Core identity and location confirmed; legal entity, payment methods, many services: null/TODO |
-| PropertyRating | 1 | YES | property-config.json + data/admin/client/PROFILE.md | ~85% | Three platforms present; Expedia rating absent; `last_scraped` not tracked |
+| PropertyRating | 1 | YES | property-config.json + data/admin/client/profile.md | ~85% | Three platforms present; Expedia rating absent; `last_scraped` not tracked |
 | PropertyPolicy | 1 | PARTIAL | property-config.json `policies` block | ~60% | Check-in/out and cancellation confirmed; payment_methods: TODO |
 | Facility | 1 | PARTIAL | data/property/facilities/*, property-config.json | ~50% | Pool, spa, restaurant, parking, WiFi present; pool size, spa hours, restaurant capacity: TODO |
 | FacilityAttribute | 1 | PARTIAL | data/property/facilities/*.md | ~40% | Sparse structured attributes; most data is narrative markdown |
 | Reservation | 1 | YES (stale) | data/bookings/reservations/reservations.md | ~60% | 11 historical records (Dec 2025); no live data; no source_reservation_id values |
 | Channel | 1 | PARTIAL | data/operations/channels.json + channels_codes.csv | ~55% | 139 codes in CSV usable as seed; channels.json mostly TODO |
-| Contact | 1 | YES | data/admin/client/PROFILE.md + CONTACT.md + facilities/services/services.md | ~80% | Said complete; Nezha role-only; Mr. Zakaria (transport) in facilities/services.md; manager: TODO |
+| Contact | 1 | YES | data/admin/client/profile.md + contact.md + facilities/services/services.md | ~80% | Said complete; Nezha role-only; Mr. Zakaria (transport) in facilities/services.md; manager: TODO |
 | Tax | 1 | PARTIAL | data/finance/billing.json | ~50% | Three tax types with rates present; legal registration numbers: null |
 
 **No model has zero data.** All 15 Tier 1 models have at least partial data representation.
 
 **Structured data outside data/ that seed scripts must read**:
-- `PropertyRating.subcategories` (Staff 9.7, Cleanliness 9.4, etc.) — in `data/admin/client/PROFILE.md` Section 1, not `property-config.json`.
+- `PropertyRating.subcategories` (Staff 9.7, Cleanliness 9.4, etc.) — in `data/admin/client/profile.md` Section 1, not `property-config.json`.
 - Mr. Zakaria (transport contact) — in `data/property/facilities/services/services.md`, not `data/admin/`.
-- Said Thaifa phone — appears consistently in three files (`CONTACT.md`, `PROFILE.md`, `emergency.json`). Seed from `CONTACT.md` as canonical.
+- Said Thaifa phone — appears consistently in three files (`contact.md`, `profile.md`, `emergency.json`). Seed from `contact.md` as canonical.
 
 ---
 
@@ -292,4 +292,4 @@ All 12 room `images/` directories are populated. Facility `images/` directories 
 ---
 
 _Audit conducted 2026-02-24. Read-only. No data files modified._
-_Source evidence: direct file reads of all 12 room profiles, rates.json, billing.json, 5 operations JSONs, property-config.json, reservations.md, initial_scan, PROFILE.md, CONTACT.md, pending-domains/facilities.md, open-conflicts-registry.md, room-pricing-hotelrunner-confirmation.md, truth.md._
+_Source evidence: direct file reads of all 12 room profiles, rates.json, billing.json, 5 operations JSONs, property-config.json, reservations.md, initial_scan, profile.md, contact.md, pending-domains/facilities.md, open-conflicts-registry.md, room-pricing-hotelrunner-confirmation.md, truth.md._

@@ -1,6 +1,6 @@
 # Contact - Client
 
-> **Canonical source**: `data/admin/client/PROFILE.md` — all profile data lives there.
+> **Canonical source**: `data/admin/client/profile.md` — all profile data lives there.
 > This file is a quick-reference card for contact lookup only.
 
 ---
@@ -28,4 +28,4 @@
 
 ---
 
-_Full profile: `data/admin/client/PROFILE.md`_
+_Full profile: `data/admin/client/profile.md`_

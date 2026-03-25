@@ -1,7 +1,7 @@
 # Villa Thaifa — Source of Truth
 
 > **Last Updated:** 2026-02-21 (property-config + truth.md — external listing data applied)
-> **Sources verified from:** rates.json, billing.json, property-config.json, channels.json, check-in-out.json, data/admin/client/PROFILE.md, open-conflicts-registry.md, handoff-repo-consolidation.md, external listing (Omar, 2026-02-21)
+> **Sources verified from:** rates.json, billing.json, property-config.json, channels.json, check-in-out.json, data/admin/client/profile.md, open-conflicts-registry.md, handoff-repo-consolidation.md, external listing (Omar, 2026-02-21)
 
 ---
 
@@ -57,7 +57,7 @@
 | Airport transfer    | Yes — paid shuttle through property. Source: external listing 2026-02-21.           | Confirmed (external)       |
 | Express check-in/out | Mentioned in external listing — not in conflict with 14:00/12:00 times            | Pending: Said              |
 | Sports activities   | Mentioned in external listing — type unknown                                        | Pending: Said              |
-| Security            | 24/7, CCTV, safe, alarm                                                             | Confirmed (PROFILE.md)     |
+| Security            | 24/7, CCTV, safe, alarm                                                             | Confirmed (profile.md)     |
 
 **Pending from Said:** See consolidated registry: `data/admin/said-pending-questions.md §3`
 
@@ -106,7 +106,7 @@
 
 ## 5. Client Info
 
-> **Canonical source: `data/admin/client/PROFILE.md`** (last updated 2026-02-21)
+> **Canonical source: `data/admin/client/profile.md`** (last updated 2026-02-21)
 
 | Field                 | Value                                                                                      |
 | --------------------- | ------------------------------------------------------------------------------------------ |
@@ -155,7 +155,7 @@
 | Property config           | `data/property/property-config.json`                  | PARTIAL — TODOs remain             |
 | Check-in/out workflow     | `data/operations/check-in-out.json`                   | PLACEHOLDER — needs real workflow  |
 | Distribution channels     | `data/operations/channels.json`                       | PLACEHOLDER — most details missing |
-| Client profile            | `data/admin/client/PROFILE.md`                        | ACTIVE — last updated 2026-02-21   |
+| Client profile            | `data/admin/client/profile.md`                        | ACTIVE — last updated 2026-02-21   |
 | Open conflicts            | `ops/decisions/open-conflicts-registry.md`            | ACTIVE — 3 resolved, 2 open       |
 | Bookings / reservations   | `data/bookings/reservations/`                         | ACTIVE                             |
 | Facilities                | `data/property/facilities/`                           | PARTIAL — needs Said               |
@@ -168,7 +168,7 @@
 **Superseded / do not use:**
 
 - `ops/audit/quality/grille-tarifaire-officielle.md` — SUPERSEDED (banner added)
-- `ops/status/MASTER_STATE.md` — SUPERSEDED (banner added)
+- `ops/status/archive/master-state.md` — SUPERSEDED (banner added)
 - `data/archive/inventory.md` — SUPERSEDED (banner added)
 - `data/pending-domains/facilities.md` — SUPERSEDED (banner added)
 - `data/tasks/TODOs-legacy.md` — ARCHIVED (banner added)

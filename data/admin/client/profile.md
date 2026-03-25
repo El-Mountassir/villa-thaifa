@@ -87,7 +87,7 @@
 | **Role** | Co-manager / Mr. Said's wife                                               |
 | **Note** | Warm welcome, generous breakfasts — contributes to the "family" atmosphere |
 
-> Source: Booking.com property profile + `data/admin/client/CONTACT.md`
+> Source: Booking.com property profile + `data/admin/client/contact.md`
 
 ### 2.2 Communication Protocol
 
@@ -371,7 +371,7 @@ _Base: 12 rooms × 365 days × average price ~€200_
 | Date               | Event                         | Objective                        |
 | ------------------ | ----------------------------- | -------------------------------- |
 | **2025-12-22 10h** | Discovery meeting M. Thaifa   | Validate needs, budget, timeline |
-| 2025-12-22 PM      | Document decisions            | Update PROFILE.md                |
+| 2025-12-22 PM      | Document decisions            | Update profile.md                |
 | 2025-12-23-24      | Commercial proposal           | Create quote                     |
 | 2025-12-25-28      | Assign reservations           | 10 rooms to assign               |
 | 2026-01            | Jisr l'Mokawala investigation | Feasibility                      |

@@ -175,7 +175,7 @@ Source: `data/property/property-config.json §todo[]`, `data/admin/said-data-val
 | F4  | Tax registration numbers (RC, ICE, tax ID)                                                             | All null                | `data/finance/billing.json` | VT-79  | P0       |
 | F5  | Invoicing workflow — template and process?                                                             | Not defined             | `data/finance/billing.json` | —      | P2       |
 
-Source: `ops/status/truth.md §3`, `data/finance/billing.json`, `data/admin/client/PROFILE.md §13.3`
+Source: `ops/status/truth.md §3`, `data/finance/billing.json`, `data/admin/client/profile.md §13.3`
 
 ---
 
@@ -184,7 +184,7 @@ Source: `ops/status/truth.md §3`, `data/finance/billing.json`, `data/admin/clie
 | #   | Question                                                                                                | Current Value                                                                                                                                                                                                                              | Source File                                      | Linear | Priority |
 | --- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------ | ------ | -------- |
 | ~~PO1~~ | ~~**Pets policy** — see Conflict C1 above~~                                                                 | ~~Disputed~~ **RESOLVED: Not allowed (Omar 2026-02-21)**                                                                                                                                                                                                                   | `ops/decisions/open-conflicts-registry.md`       | VT-74  | ~~P0~~ **RESOLVED** |
-| PO2 | **Trip.com GDA contract** — sign + provide bank notification letter                                     | Awaiting signature                                                                                                                                                                                                                         | `data/admin/client/PROFILE.md §13.1`             | —      | P0       |
+| PO2 | **Trip.com GDA contract** — sign + provide bank notification letter                                     | Awaiting signature                                                                                                                                                                                                                         | `data/admin/client/profile.md §13.1`             | —      | P0       |
 | PO3 | ~~Cancellation policy details (currently "Free up to 72h" from Expedia — confirmed for all channels?)~~ | **RESOLVED: Free cancellation up to 72h before 18:00 on check-in day. No-show/late cancel: 1st night + taxes. GMT (Casablanca). Active on Expedia Partner Central (confirmed 2026-02-20).** (Source: `data/property/property-config.json`) | `data/property/property-config.json`             | —      | —        |
 | PO4 | Children policy for privatization events: child age limit, extra bed, baby cots?                        | Children policy (stays) confirmed. Events unclear.                                                                                                                                                                                         | `context/meta/knowledge/events-privatization.md` | VT-71  | P1       |
 | PO5 | ~~Smoking policy detail (designated areas — where exactly?)~~                                           | **RESOLVED (existence): "Designated smoking areas" confirmed from Expedia Step 4 (2026-02-21). WHERE exactly = still NEEDS_SAID.** (Source: `data/property/property-config.json`)                                                          | `data/property/property-config.json`             | —      | —        |
@@ -201,10 +201,10 @@ Source: `ops/status/truth.md §3`, `data/finance/billing.json`, `data/admin/clie
 | CH2 | Instagram handle                                                                        | Unknown                                 | `ops/status/truth.md §4`                    | —      | P1       |
 | CH3 | Facebook handle                                                                         | Unknown                                 | `ops/status/truth.md §4`                    | —      | P1       |
 | CH4 | TripAdvisor management access                                                           | Listing exists (3.0/5). Handle unknown. | `ops/status/truth.md §4`                    | —      | P1       |
-| CH5 | Secondary phone (06 62 14 69 49 from Google listing) — is this a valid property number? | Google listing — unverified             | `data/admin/client/PROFILE.md §2.1`         | —      | P1       |
+| CH5 | Secondary phone (06 62 14 69 49 from Google listing) — is this a valid property number? | Google listing — unverified             | `data/admin/client/profile.md §2.1`         | —      | P1       |
 | CH6 | **Expedia tax team** — follow-up (checkbox ticked, awaiting their contact)              | VT-82 created                           | `ops/handoff/handoff-repo-consolidation.md` | VT-82  | P0       |
 
-Source: `ops/status/truth.md §4`, `data/admin/client/PROFILE.md`
+Source: `ops/status/truth.md §4`, `data/admin/client/profile.md`
 
 ---
 
@@ -212,8 +212,8 @@ Source: `ops/status/truth.md §4`, `data/admin/client/PROFILE.md`
 
 | #   | Question                                                                            | Current Value                                                                                                                             | Source File                          | Priority |
 | --- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | -------- |
-| CC1 | Secondary phone (06 62 14 69 49) — confirm ownership and purpose                    | Google listing only — unverified                                                                                                          | `data/admin/client/PROFILE.md §2.1`  | P1       |
-| CC2 | Preferred communication channel for property matters (vs. Said's personal WhatsApp) | Said's personal WhatsApp +212661134194                                                                                                    | `data/admin/client/PROFILE.md §2.2`  | P1       |
+| CC1 | Secondary phone (06 62 14 69 49) — confirm ownership and purpose                    | Google listing only — unverified                                                                                                          | `data/admin/client/profile.md §2.1`  | P1       |
+| CC2 | Preferred communication channel for property matters (vs. Said's personal WhatsApp) | Said's personal WhatsApp +212661134194                                                                                                    | `data/admin/client/profile.md §2.2`  | P1       |
 | CC3 | ~~Current TripAdvisor rating — Said to confirm (system shows 3.0/5)~~               | **RESOLVED: 3.0/5 — Ranked #1078/1284 B&Bs in Marrakech. Public data scraped 2026-02-19.** (Source: `data/property/property-config.json`) | `data/property/property-config.json` | —        |
 | CC4 | ~~Current Google rating — Said to confirm (system shows 4.5/5)~~                    | **RESOLVED: 4.5/5 (22 reviews). Google Maps 2026-02-19.** (Source: `data/property/property-config.json`)                                  | `data/property/property-config.json` | —        |
 
@@ -223,12 +223,12 @@ Source: `ops/status/truth.md §4`, `data/admin/client/PROFILE.md`
 
 | #   | Question                                                           | Current Value          | Source File                          | Linear | Priority |
 | --- | ------------------------------------------------------------------ | ---------------------- | ------------------------------------ | ------ | -------- |
-| WB1 | **Website preferences**: template/examples, color codes, logo file | Blocked — waiting Said | `data/admin/client/PROFILE.md §13.2` | —      | P1       |
-| WB2 | Point-of-sale descriptions (in Said's words)                       | Not provided           | `data/admin/client/PROFILE.md §13.2` | —      | P1       |
-| WB3 | Social media links (Instagram, Facebook, TripAdvisor)              | Unknown                | `data/admin/client/PROFILE.md §13.2` | —      | P1       |
-| WB4 | Logo file (for website and OTA listings)                           | Not provided           | `data/admin/client/PROFILE.md §13.2` | —      | P1       |
+| WB1 | **Website preferences**: template/examples, color codes, logo file | Blocked — waiting Said | `data/admin/client/profile.md §13.2` | —      | P1       |
+| WB2 | Point-of-sale descriptions (in Said's words)                       | Not provided           | `data/admin/client/profile.md §13.2` | —      | P1       |
+| WB3 | Social media links (Instagram, Facebook, TripAdvisor)              | Unknown                | `data/admin/client/profile.md §13.2` | —      | P1       |
+| WB4 | Logo file (for website and OTA listings)                           | Not provided           | `data/admin/client/profile.md §13.2` | —      | P1       |
 
-Source: `data/admin/client/PROFILE.md §13.2`
+Source: `data/admin/client/profile.md §13.2`
 
 ---
 
@@ -290,4 +290,4 @@ Full resolved conflicts log: `ops/decisions/open-conflicts-registry.md §Resolve
 
 ---
 
-_Registry created: 2026-02-21 — Consolidated from: ops/status/truth.md, ops/decisions/open-conflicts-registry.md, data/property/property-config.json, data/finance/billing.json, data/property/facilities/\*.md, data/admin/client/PROFILE.md, context/meta/knowledge/events-privatization.md, data/admin/said-data-validation-checklist.md_
+_Registry created: 2026-02-21 — Consolidated from: ops/status/truth.md, ops/decisions/open-conflicts-registry.md, data/property/property-config.json, data/finance/billing.json, data/property/facilities/\*.md, data/admin/client/profile.md, context/meta/knowledge/events-privatization.md, data/admin/said-data-validation-checklist.md_

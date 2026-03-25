@@ -6,8 +6,8 @@
 
 | What | Location |
 | --- | --- |
-| **Said Thaifa profile** | [`data/admin/client/PROFILE.md`](../../data/admin/client/PROFILE.md) |
-| **Contact card** | [`data/admin/client/CONTACT.md`](../../data/admin/client/CONTACT.md) |
+| **Said Thaifa profile** | [`data/admin/client/profile.md`](../../data/admin/client/profile.md) |
+| **Contact card** | [`data/admin/client/contact.md`](../../data/admin/client/contact.md) |
 
 ## Migration Note
 

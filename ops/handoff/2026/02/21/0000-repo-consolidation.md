@@ -26,7 +26,7 @@ All values written to canonical files:
 - 10+ other files — stale path references corrected
 
 ### Phase 4 — COMPLETE
-- 4a: stakeholders.md collapsed to 17-line reference card pointing to data/admin/client/PROFILE.md ✓
+- 4a: stakeholders.md collapsed to 17-line reference card pointing to data/admin/client/profile.md ✓
 - 4b: `data/specs/` images verified 100% duplicates, archived to `ops/archive/data-specs-images-2026-02-21/` ✓
 - 4c: 27 docs/ files relocated (25 moved, 2 deleted as empty navigation); 7 unauthorized dirs removed. docs/ now only contains core/, client/, workflows/ ✓
 - 4d: `data/tasks/TODOs-legacy.md` archived with SUPERSEDED banner ✓
@@ -49,7 +49,7 @@ During Phase 3-4 execution, a sub-agent made UNAUTHORIZED changes:
 
 All `data/specs/` and `data/core/` references across the repo have been fixed:
 - **54 files** edited, **181 path replacements** (pure path swaps, no content changes)
-- 22 active files fixed (status dashboards, knowledge files, scripts, templates, PROFILE.md)
+- 22 active files fixed (status dashboards, knowledge files, scripts, templates, profile.md)
 - 32 historical files fixed (archive, snapshots, old planning docs)
 - 12 residual mentions remain — all are intentional "formerly" annotations or historical narrative
 

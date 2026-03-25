@@ -16,6 +16,6 @@
 | 2026-02-19 | 0000 | archive-lifecycle-system | archived | Design brief for full file lifecycle system (creation→active→archive→delete) across all projects | `2026/02/19/0000-archive-lifecycle-system.md` |
 | 2026-02-19 | 0000 | linear-audit-and-triage | archived | Linear audit + file triage — Waves 1-5 execution roadmap, phases 1-3 completed, Wave 3 deep work next | `2026/02/19/0000-linear-audit-and-triage.md` |
 | 2026-02-21 | 0000 | repo-consolidation | archived | 4-phase repo consolidation — landmines defused, Expedia answers applied, broken paths fixed, specs archived | `2026/02/21/0000-repo-consolidation.md` |
-| 2026-02-25 | | 2337-end-session | archived | | ops/handoff/2026/02/25/2337-end-session.md |
-| 2026-02-26 | | 0154-linear-mcp-global-audit | archived | | ops/handoff/2026/02/26/0154-linear-mcp-global-audit.md |
+| 2026-02-25 | | 2337-end-session | archived | Handoff system designed and implemented — .agents/ migration complete, workflow documentation rule formalized, Said corrections merged | ops/handoff/2026/02/25/2337-end-session.md |
+| 2026-02-26 | | 0154-linear-mcp-global-audit | archived | Linear MCP plugin activated and configured — TASKS.md references purged globally, Linear-as-SOT rule added to all CLAUDE.md files | ops/handoff/2026/02/26/0154-linear-mcp-global-audit.md |
 | 2026-02-27 | 0227 | linear-plugin-data-cleanup | active | Linear plugin activated, TASKS.md purged globally, data/ cleanup done | ops/handoff/active/0227-linear-plugin-data-cleanup.md |

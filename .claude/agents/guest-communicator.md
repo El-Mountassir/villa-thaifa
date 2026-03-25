@@ -13,7 +13,7 @@ Drafts professional guest communications for Villa Thaifa including welcome mess
 
 ## Instructions
 
-- ALWAYS read `data/admin/client/PROFILE.md` before drafting to ensure brand alignment
+- ALWAYS read `data/admin/client/profile.md` before drafting to ensure brand alignment
 - ALWAYS use formal but warm tone appropriate for luxury hospitality
 - NEVER use overly casual language or slang
 - WRITE in French by default unless English is explicitly requested
@@ -25,7 +25,7 @@ Drafts professional guest communications for Villa Thaifa including welcome mess
 ## Workflow
 
 1. **Receive request** - Understand the communication type needed (welcome, check-in, response, etc.)
-2. **Read context** - Load `data/admin/client/PROFILE.md` for brand voice and villa details
+2. **Read context** - Load `data/admin/client/profile.md` for brand voice and villa details
 3. **Identify audience** - Determine guest language preference and context
 4. **Draft communication** - Write message following brand guidelines and hospitality standards
 5. **Validate content** - Ensure all practical details are accurate and tone is appropriate
