@@ -84,7 +84,7 @@ Read-only reference material?            --> context/
 Agent knowledge base (cross-platform)?  --> .agents/{domain}/
 Operational documentation?               --> docs/
   human workflow/procedure?                --> docs/workflows/
-  client/stakeholder info?                 --> docs/client/
+  client/stakeholder info?                 --> data/admin/client/ [VERIFIED: consolidated 2026-03-25]
 Script or automation tool?               --> scripts/
 Test?                                    --> tests/
 None of the above?                       --> Ask Omar.
