@@ -50,8 +50,7 @@ For every operational task: **SCOUT -> REPORT -> QUESTIONS -> ACTION -> VERIFY -
 **Project constitution** (MISSION, STRUCTURE, PRINCIPLES, CONTRACT, ROADMAP) -> `project/`
 **Structured domain data** (JSON, inventories, profiles, rates) -> `data/`
 **Operational artifacts** (audits, handoffs, decisions, status) -> `ops/`
-**Operational planning** (session plans, historical planning) -> ops/planning/
-**Archived content** (fully processed, deprecated) -> domain `archive/` subdirectory (e.g., `ops/audit/archive/`). Cross-domain legacy only -> `archive/`
+**Archived content** (fully processed, deprecated) -> `archive/{domain}/` (e.g., `archive/audit/`, `archive/data/`). Single location, no domain-scoped archive/ subdirs.
 **Read-only reference** (architecture, planning, templates) -> `context/`
 **Agent knowledge** (cross-platform knowledge bases for booking, browser, hotelrunner, whatsapp) -> `.agents/`
 **Scripts and tooling** -> `scripts/`
@@ -62,7 +61,7 @@ For every operational task: **SCOUT -> REPORT -> QUESTIONS -> ACTION -> VERIFY -
 
 **Handoff convention**: `ops/handoff/active/` for current session, `ops/handoff/{YYYY}/{MM}/{DD}/` for archived. INDEX.md lists all handoffs. Template at `context/meta/templates/handoff-template.md`.
 
-**Archive convention**: Always `archive/` (singular). Never `archives/`. Domain-scoped archives preferred (e.g., `ops/audit/archive/`). Root `archive/` = cross-domain legacy only. `ops/archive/` is REMOVED (dissolved 2026-03-25, domain-scoped archives only) — do not add new files there.
+**Archive convention**: Single `archive/` at root, organized by domain subdirs (`archive/audit/`, `archive/planning/`, etc.). Always singular. Never `archives/`. NEVER create archive/ subdirs inside other directories (e.g., NOT `ops/audit/archive/`). Enforced by hook.
 
 ## File Placement Decision Tree
 
@@ -72,13 +71,10 @@ Structured domain data?                  --> data/
   room / booking / finance / property /    --> data/{domain}/
   operational config (channels, etc.) /    --> data/operations/
 Live operational artifact?               --> ops/
-Operational planning/session plan?       --> ops/planning/
   decision / audit / handoff / status /    --> ops/{type}/
   unprocessed incoming?                    --> ops/intake/
 Handoff / session state?                 --> ops/handoff/active/
-Fully archived operational artifact?     --> ops/{domain}/archive/
-Fully archived cross-domain/legacy?      --> archive/
-ops/archive/ was REMOVED 2026-03-25. Use domain-scoped archives (e.g. ops/audit/archive/).
+Fully archived content?                  --> archive/{domain}/
 Read-only reference material?            --> context/
   architecture/planning?                   --> context/meta/{topic}/
 Agent knowledge base (cross-platform)?  --> .agents/{domain}/
