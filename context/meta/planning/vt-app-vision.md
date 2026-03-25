@@ -346,14 +346,14 @@ Villa Thaifa app = first pilot. If successful, generalize patterns into LHCM-OS 
 Plan the app properly (project/ROADMAP.md) before building anything. Use /plan or architect agent.
 
 **Source files consolidated into this document**:
-- `ops/archive/planning/VISION-ENRICHED.md` (2026-01-30)
-- `ops/archive/planning/VISION-DRAFT.md` (2026-01-30)
-- `ops/archive/planning/villa-thaifa-internal-app-requirements-v0.1.0.md` (2025-01-09)
-- `ops/archive/planning/lhcm-os-strategy-execution-plan-v0.1.0.md` (2025-01-09)
-- `ops/archive/planning/villa-thaifa-workstream-master-v0.1.0.md` (2025-01-09)
-- `ops/archive/planning/villa-thaifa-client-brief-v0.2.0.md` (2026-01-09)
-- `ops/archive/planning/villa-thaifa-deliverables.md` (2026-01)
-- `ops/archive/planning/comprehensive-transformation-plan.md` (2026-01-30)
+- `ops/planning/archive/VISION-ENRICHED.md` (2026-01-30)
+- `ops/planning/archive/VISION-DRAFT.md` (2026-01-30)
+- `ops/planning/archive/villa-thaifa-internal-app-requirements-v0.1.0.md` (2025-01-09)
+- `ops/planning/archive/lhcm-os-strategy-execution-plan-v0.1.0.md` (2025-01-09)
+- `ops/planning/archive/villa-thaifa-workstream-master-v0.1.0.md` (2025-01-09)
+- `ops/planning/archive/villa-thaifa-client-brief-v0.2.0.md` (2026-01-09)
+- `ops/planning/archive/villa-thaifa-deliverables.md` (2026-01)
+- `ops/planning/archive/comprehensive-transformation-plan.md` (2026-01-30)
 - `context/meta/planning/revenue-management-vision.md`
 - `context/meta/planning/villa-thaifa-brief.md`
 - `context/meta/planning/PROJECT.md`

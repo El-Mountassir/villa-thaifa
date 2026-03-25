@@ -2,7 +2,7 @@
 
 > Role: HotelRunner PMS integration agent
 
-_Generated: 2026-03-25 01:36 UTC_
+_Generated: 2026-03-25 14:48 UTC_
 
 ---
 
@@ -11,7 +11,7 @@ _Generated: 2026-03-25 01:36 UTC_
 Paths essential for this role:
 
 - `scripts/hotelrunner/` (1 files)
-- `.agents/hotelrunner/` (10 files)
+- `.agents/hotelrunner/` (12 files)
 - `data/rooms/` (451 files)
 - `data/operations/` (9 files)
 

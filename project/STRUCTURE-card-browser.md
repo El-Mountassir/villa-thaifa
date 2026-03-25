@@ -2,7 +2,7 @@
 
 > Role: Web browsing and automation agent
 
-_Generated: 2026-03-25 01:36 UTC_
+_Generated: 2026-03-25 14:48 UTC_
 
 ---
 
@@ -18,7 +18,7 @@ Paths essential for this role:
 
 Useful context (read as needed):
 
-- `context/meta/knowledge/` (4 files)
+- `context/meta/knowledge/` (3 files)
 - `docs/workflows/` (2 files)
 
 ## Ignored Paths

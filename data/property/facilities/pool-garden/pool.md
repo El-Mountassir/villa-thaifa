@@ -39,7 +39,7 @@ Featured as a key differentiator on all OTA listings.
 
 ## Views & Access
 
-- Rooms 4 and 5 have direct pool views — Source: ops/archive/data-specs/chambre-et-vue-said-notes.md (Said)
+- Rooms 4 and 5 have direct pool views — Source: data/archive/chambre-et-vue-said-notes.md (Said)
 - Rooms 9, 10, 11, 12 have double terrace with pool view and pool access — Source: same
 
 ---

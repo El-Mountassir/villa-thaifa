@@ -37,7 +37,7 @@ See consolidated registry: `data/admin/said-pending-questions.md §H1–H4`
 
 ## Notes
 
-- Booking.com: "Salon commun/espace TV" and "Bar" listed as on-site — Source: ops/archive/data-specs/booking-com-data.md
+- Booking.com: "Salon commun/espace TV" and "Bar" listed as on-site — Source: data/archive/booking-com-data.md
 - Photo set: 18 images in `data/property/facilities/hall/images/`
 
 ---

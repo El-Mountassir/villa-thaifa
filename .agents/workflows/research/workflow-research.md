@@ -23,7 +23,7 @@
 
 | # | Name | Location | Scope | Phases | Status |
 |---|------|----------|-------|--------|--------|
-| 1 | **Original Core Loop** | `villa-thaifa/ops/archive/planning/2026-01-08-core-loop-simplification.md` | Universal (VT) | 6 phases | Archived — superseded |
+| 1 | **Original Core Loop** | `villa-thaifa/ops/planning/archive/2026-01-08-core-loop-simplification.md` | Universal (VT) | 6 phases | Archived — superseded |
 | 2 | **VT Mandatory Workflow** | `villa-thaifa/AGENTS.md` §Mandatory Workflow | VT operations | 6 phases | Active |
 | 3 | **Kael Core Loop** | `~/omar/operational/el-mountassir/members/silicon/kael/sys/core/prompt/README.md` §3 | Universal (EM) | 10 phases | Active (Kael-specific) |
 | 4 | **Unified Workflow Guide** | `~/omar/intent/workflow/unified-guide.md` | Universal (all work) | 5 phases | Active — v1.0 |
@@ -63,7 +63,7 @@
 
 ### WF-01: Original Core Loop (2026-01-08)
 
-**Location**: `/home/director/villa-thaifa/ops/archive/planning/2026-01-08-core-loop-simplification.md`
+**Location**: `/home/director/villa-thaifa/ops/planning/archive/2026-01-08-core-loop-simplification.md`
 **Status**: ARCHIVED — the genesis document
 
 **Phases**:
