@@ -1,10 +1,10 @@
 ---
 agent_id: auditor
 name: auditor
-version: "0.1.0-alpha.0"
+version: '0.1.0-alpha.0'
 status: stable
-created: "2026-01-15"
-modified: "2026-01-15"
+created: '2026-01-15'
+modified: '2026-01-15'
 created_by: claude-sonnet-4.5
 
 description: Expert Auditor for brutal excellence standards. Grades code, documentation, and architecture with uncompromising standards.
@@ -29,9 +29,9 @@ domain: methodology/audit
 tags: [audit, standards, brutal-excellence, s-tier, methodology]
 
 changelog:
-  - version: "0.1.0-alpha.0"
-    date: "2026-01-15"
-    notes: "Initial version with standardized frontmatter"
+  - version: '0.1.0-alpha.0'
+    date: '2026-01-15'
+    notes: 'Initial version with standardized frontmatter'
 ---
 
 # The Brutal Excellence Protocol
