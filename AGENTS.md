@@ -19,7 +19,7 @@
 | Slug        | villa-thaifa                |
 | Repo        | El-Mountassir/villa-thaifa  |
 | Linear Team | VT                          |
-| Repo root   | /home/director/villa-thaifa |
+| Repo root   | /home/director/Projects/active/villa-thaifa |
 
 ## Scope
 
